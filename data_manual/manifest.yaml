@@ -1,0 +1,629 @@
+manual_sources:
+  - journal: Science
+    source_type: homepage_or_scope
+    url: "https://www.science.org/journal/science"
+    local_file: "data_manual/pages/science_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Science
+    source_type: author_instructions
+    url: "https://www.science.org/content/page/science-information-authors"
+    local_file: "data_manual/pages/science_information_for_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Science Advances
+    source_type: homepage_or_scope
+    url: "https://www.science.org/journal/sciadv"
+    local_file: "data_manual/pages/science_advances_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Science Advances
+    source_type: author_instructions
+    url: "https://www.science.org/content/page/science-advances-information-authors"
+    local_file: "data_manual/pages/science_advances_information_for_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - open_access
+      - editorial_notes
+
+  - journal: Cell
+    source_type: homepage_or_scope
+    url: "https://www.cell.com/cell/home"
+    local_file: "data_manual/pages/cell_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Cell
+    source_type: guide_for_authors
+    url: "https://www.cell.com/cell/authors"
+    local_file: "data_manual/pages/cell_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Cell Host & Microbe
+    source_type: homepage_or_scope
+    url: "https://www.cell.com/cell-host-microbe/home"
+    local_file: "data_manual/pages/cell_host_microbe_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Cell Host & Microbe
+    source_type: guide_for_authors
+    url: "https://www.cell.com/cell-host-microbe/authors"
+    local_file: "data_manual/pages/cell_host_microbe_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: PNAS
+    source_type: homepage_or_scope
+    url: "https://www.pnas.org/"
+    local_file: "data_manual/pages/pnas_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: PNAS
+    source_type: author_instructions
+    url: "https://www.pnas.org/author-center/submitting-your-manuscript"
+    local_file: "data_manual/pages/pnas_submitting_your_manuscript.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - open_access
+      - editorial_notes
+
+  - journal: mBio
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/mbio"
+    local_file: "data_manual/pages/mbio_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: mBio
+    source_type: apc
+    url: "https://journals.asm.org/publication-fees"
+    local_file: "data_manual/pages/asm_publishing_fees.html"
+    target_fields:
+      - open_access
+
+  - journal: mBio
+    source_type: author_instructions
+    url: "https://journals.asm.org/authors"
+    local_file: "data_manual/pages/asm_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: mSystems
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/msystems"
+    local_file: "data_manual/pages/msystems_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: mSystems
+    source_type: apc
+    url: "https://journals.asm.org/publication-fees"
+    local_file: "data_manual/pages/asm_publishing_fees.html"
+    target_fields:
+      - open_access
+
+  - journal: mSystems
+    source_type: author_instructions
+    url: "https://journals.asm.org/authors"
+    local_file: "data_manual/pages/asm_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Microbiology Spectrum
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/spectrum"
+    local_file: "data_manual/pages/microbiology_spectrum_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Microbiology Spectrum
+    source_type: apc
+    url: "https://journals.asm.org/publication-fees"
+    local_file: "data_manual/pages/asm_publishing_fees.html"
+    target_fields:
+      - open_access
+
+  - journal: Microbiology Spectrum
+    source_type: author_instructions
+    url: "https://journals.asm.org/authors"
+    local_file: "data_manual/pages/asm_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Applied and Environmental Microbiology
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/aem"
+    local_file: "data_manual/pages/aem_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Applied and Environmental Microbiology
+    source_type: apc
+    url: "https://journals.asm.org/publication-fees"
+    local_file: "data_manual/pages/asm_publishing_fees.html"
+    target_fields:
+      - open_access
+
+  - journal: Applied and Environmental Microbiology
+    source_type: author_instructions
+    url: "https://journals.asm.org/authors"
+    local_file: "data_manual/pages/asm_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: ASM Animal Microbiology
+    url: "https://journals.asm.org/journal/asm-animal-microbiology/article-types"
+    source_type: homepage_or_scope
+    local_file: "data_manual/pages/asm_am_art.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: ASM Animal Microbiology
+    source_type: apc
+    url: "https://journals.asm.org/publication-fees"
+    local_file: "data_manual/pages/asm_publishing_fees.html"
+    target_fields:
+      - open_access
+
+  - journal: ASM Animal Microbiology
+    source_type: author_instructions
+    url: "https://journals.asm.org/authors"
+    local_file: "data_manual/pages/asm_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Journal of Virology
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/jvi"
+    local_file: "data_manual/pages/journal_of_virology_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Journal of Virology
+    source_type: author_instructions
+    url: "https://journals.asm.org/authors"
+    local_file: "data_manual/pages/asm_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Journal of Virology
+    source_type: apc
+    url: "https://journals.asm.org/publication-fees"
+    local_file: "data_manual/pages/asm_publishing_fees.html"
+    target_fields:
+      - open_access
+
+
+
+
+  - journal: Journal of Clinical Microbiology
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/jcm/article-types"
+    local_file: "data_manual/pages/jcm_art.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Journal of Clinical Microbiology
+    source_type: author_instructions
+    url: "https://journals.asm.org/authors"
+    local_file: "data_manual/pages/asm_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Journal of Clinical Microbiology
+    source_type: apc
+    url: "https://journals.asm.org/publication-fees"
+    local_file: "data_manual/pages/asm_publishing_fees.html"
+    target_fields:
+      - open_access
+
+
+
+
+  - journal: Microbiology Spectrum
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/spectrum/article-types"
+    local_file: "data_manual/pages/ms_art.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+     
+
+  - journal: mSystems
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/msystems/article-types"
+    local_file: "data_manual/pages/msystems_art.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: mSphere
+    source_type: author_instructions
+    url: "https://journals.asm.org/journal/msphere/article-types"
+    local_file: "data_manual/pages/msphere_art.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Applied and Environmental Microbiology
+    source_type: homepage_or_scope
+    url: "https://journals.asm.org/journal/aem/article-types"
+    local_file: "data_manual/pages/aem_art.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Applied and Environmental Microbiology
+    source_type: author_instructions
+    url: "https://journals.asm.org/authors"
+    local_file: "data_manual/pages/asm_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Applied and Environmental Microbiology
+    source_type: apc
+    url: "https://journals.asm.org/publication-fees"
+    local_file: "data_manual/pages/asm_publishing_fees.html"
+    target_fields:
+      - open_access
+
+
+
+
+  - journal: Bioinformatics
+    source_type: homepage_or_scope
+    url: "https://academic.oup.com/bioinformatics"
+    local_file: "data_manual/pages/bioinformatics_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Briefings in Bioinformatics
+    source_type: homepage_or_scope
+    url: "https://academic.oup.com/bib"
+    local_file: "data_manual/pages/briefings_in_bioinformatics_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: NAR Genomics and Bioinformatics
+    source_type: homepage_or_scope
+    url: "https://academic.oup.com/nargab"
+    local_file: "data_manual/pages/nar_genomics_and_bioinformatics_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: GigaScience
+    source_type: homepage_or_scope
+    url: "https://academic.oup.com/gigascience"
+    local_file: "data_manual/pages/gigascience_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Virus Evolution
+    source_type: homepage_or_scope
+    url: "https://academic.oup.com/ve"
+    local_file: "data_manual/pages/virus_evolution_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: FEMS Microbiology Ecology
+    source_type: homepage_or_scope
+    url: "https://academic.oup.com/femsec"
+    local_file: "data_manual/pages/fems_microbiology_ecology_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Microbial Genomics
+    source_type: homepage_or_scope
+    url: "https://www.microbiologyresearch.org/content/journal/mgen"
+    local_file: "data_manual/pages/microbial_genomics_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Environmental Microbiology
+    source_type: homepage_or_scope
+    url: "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920"
+    local_file: "data_manual/pages/environmental_microbiology_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Viruses
+    source_type: homepage_or_scope
+    url: "https://www.mdpi.com/journal/viruses"
+    local_file: "data_manual/pages/viruses_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Viruses
+    source_type: author_instructions
+    url: "https://www.mdpi.com/journal/viruses/instructions"
+    local_file: "data_manual/pages/viruses_instructions.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Viruses
+    source_type: apc
+    url: "https://www.mdpi.com/journal/viruses/apc"
+    local_file: "data_manual/pages/viruses_apc.html"
+    target_fields:
+      - open_access
+
+  - journal: Phage
+    source_type: homepage_or_scope
+    url: "https://www.liebertpub.com/journal/phage"
+    local_file: "data_manual/pages/phage_home.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - open_access
+      - editorial_notes
+
+  - journal: Phage
+    source_type: author_instructions
+    url: "https://www.sagepub.com/journals/information-for-authors"
+    local_file: "data_manual/pages/phage_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Virology
+    source_type: homepage_or_scope
+    url: "https://www.sciencedirect.com/journal/virology"
+    local_file: "data_manual/pages/virology_home.html"
+    target_fields:
+      - homepage_url
+      - scope_tags
+      - manuscript_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Virology
+    source_type: aims_scope
+    url: "https://www.sciencedirect.com/journal/virology/about/aims-and-scope"
+    local_file: "data_manual/pages/virology_aims_and_scope.html"
+    target_fields:
+      - aims_scope_url
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Virology
+    source_type: guide_for_authors
+    url: "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
+    local_file: "data_manual/pages/virology_guide_for_authors.html"
+    target_fields:
+      - author_instructions_url
+      - article_types
+      - data_policy
+      - code_policy
+      - editorial_notes
+
+  - journal: Virology
+    source_type: open_access
+    url: "https://www.elsevier.com/journals/virology/0042-6822/open-access-options"
+    local_file: "data_manual/pages/virology_open_access_options.html"
+    target_fields:
+      - open_access
