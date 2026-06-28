@@ -1537,6 +1537,57 @@
       Background The rapid advancement in single-cell, spatial omics, imaging, and
       genomic technologies r'
   warnings: []
+- journal: Virus Evolution
+  source_type: homepage_or_scope
+  source_url: https://academic.oup.com/ve
+  local_file: data_manual/pages/virus_evolution_home.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://academic.oup.com/ve
+    aims_scope_url: https://academic.oup.com/ve
+    article_types:
+      add:
+      - Method
+    scope_tags:
+      add:
+      - bioinformatics
+      - clinical_microbiology
+      - computational_biology
+      - database
+      - environmental_microbiology
+      - evolution
+      - genomics
+      - methods
+      - microbial_ecology
+      - microbial_genomics
+      - microbiology
+      - microbiome
+      - phage_biology
+      - viromics
+    manuscript_tags:
+      add:
+      - database_resource
+      - methods_paper
+      - phage_genomics
+      - review
+      - specialist_audience
+      - virome_analysis
+    editorial_notes:
+      add:
+      - 'Manual source suggests scope note: gy homepage_or_scope data_manual/pages/virology_home.html
+        14 Virology aims_scope data_manual/pages/virology_aims_and_scope.html 6 Virology
+        guide_for_authors data_manual/pages/virology_guide_for_authors.html 10 Virology
+        open_access data_manual/pages/v'
+  evidence:
+  - field: article_types
+    snippet: 'picious content: looks_valid, duplicate_hash_across_many_urls. Nature
+      Methods homepage_or_scope 200 suspicious https://www.nature.com/nmeth/ data_manual/pages/nature_methods_homepage_or_scope.html
+      Automated fetch produced suspicious content: looks_va'
+  - field: scope_tags
+    snippet: nmental Microbiology apc data_manual/pages/asm_publishing_fees.html 1
+      Bioinformatics homepage_or_scope data_manual/pages/bioinformatics_home.html
+      22 Briefings in Bioinformatics homepage_or_scope data_manual/pages/briefings_in_bioinformatics_home.html
+  warnings: []
 - journal: FEMS Microbiology Ecology
   source_type: homepage_or_scope
   source_url: https://academic.oup.com/femsec

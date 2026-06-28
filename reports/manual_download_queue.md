@@ -3,11 +3,11 @@
 ## Summary
 
 - Manifest entries: 54
-- Local files found: 53
-- Local files parsed: 53
-- Local files missing: 1
+- Local files found: 54
+- Local files parsed: 54
+- Local files missing: 0
 - Local files failed parsing: 0
-- URLs still needing manual download: 21
+- URLs still needing manual download: 19
 
 ## Files Parsed This Run
 
@@ -54,6 +54,7 @@
 | Briefings in Bioinformatics | homepage_or_scope | data_manual/pages/briefings_in_bioinformatics_home.html | 17 |
 | NAR Genomics and Bioinformatics | homepage_or_scope | data_manual/pages/nar_genomics_and_bioinformatics_home.html | 19 |
 | GigaScience | homepage_or_scope | data_manual/pages/gigascience_home.html | 25 |
+| Virus Evolution | homepage_or_scope | data_manual/pages/virus_evolution_home.html | 24 |
 | FEMS Microbiology Ecology | homepage_or_scope | data_manual/pages/fems_microbiology_ecology_home.html | 12 |
 | Microbial Genomics | homepage_or_scope | data_manual/pages/microbial_genomics_home.html | 29 |
 | Environmental Microbiology | homepage_or_scope | data_manual/pages/environmental_microbiology_home.html | 11 |
@@ -71,7 +72,7 @@
 
 | Journal | Source type | URL | Expected local file |
 | --- | --- | --- | --- |
-| Virus Evolution | homepage_or_scope | https://academic.oup.com/ve | data_manual/pages/virus_evolution_home.html |
+|  |  |  |  |
 
 ## New URLs To Add To Manifest
 
@@ -84,7 +85,6 @@
 | ISME Communications | homepage_or_scope | 200 | suspicious | https://www.nature.com/ismecomms/ | data_manual/pages/isme_communications_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
 | ISME Journal | homepage_or_scope | 200 | suspicious | https://www.nature.com/ismej/ | data_manual/pages/isme_journal_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
 | Journal of Virology | aims_scope | 403 | blocked | https://journals.asm.org/journal/jvi/about | data_manual/pages/journal_of_virology_aims_scope.html | Automated fetch returned HTTP 403. |
-| Journal of Virology | apc | 403 | blocked | https://journals.asm.org/publication-fees | data_manual/pages/journal_of_virology_apc.html | Automated fetch returned HTTP 403. |
 | Journal of Virology | data_policy | 403 | blocked | https://journals.asm.org/open-data-policy | data_manual/pages/journal_of_virology_data_policy.html | Automated fetch returned HTTP 403. |
 | Microbiome | homepage_or_scope | 200 | suspicious | https://microbiomejournal.biomedcentral.com/ | data_manual/pages/microbiome_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
 | Nature | homepage_or_scope | 200 | suspicious | https://www.nature.com/nature/ | data_manual/pages/nature_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
