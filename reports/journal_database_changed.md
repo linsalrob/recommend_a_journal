@@ -8,9 +8,9 @@
 - Journals checked: 35
 - URLs checked: 99
 - New URLs: 0
-- Changed URLs: 2
+- Changed URLs: 1
 - Unchanged URLs: 51
-- Failed URLs: 1
+- Failed URLs: 2
 - Blocked URLs: 32
 - Suspicious fetched pages: 13
 - Skipped manual-curation URLs: 0
@@ -29,19 +29,19 @@
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nature | suspicious | 200 | https://www.nature.com/nature/ | 514b8c9ae738 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Microbiology | suspicious | 200 | https://www.nature.com/nmicrobiol/ | 1420e139f4de | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Biotechnology | suspicious | 200 | https://www.nature.com/nbt/ | 0de315835962 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Methods | suspicious | 200 | https://www.nature.com/nmeth/ | efb2184b6930 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Communications | suspicious | 200 | https://www.nature.com/ncomms/ | 217cd66e9f90 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Genome Biology | suspicious | 200 | https://genomebiology.biomedcentral.com/ | 75514be25997 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Microbiome | suspicious | 200 | https://microbiomejournal.biomedcentral.com/ | 062b3cac3608 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| ISME Journal | suspicious | 200 | https://www.nature.com/ismej/ | df214a2c3880 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| ISME Communications | suspicious | 200 | https://www.nature.com/ismecomms/ | 5936ff5d0d13 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | 0ef4357025cf | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | 985c7a307615 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature | suspicious | 200 | https://www.nature.com/nature/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Microbiology | suspicious | 200 | https://www.nature.com/nmicrobiol/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Biotechnology | suspicious | 200 | https://www.nature.com/nbt/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Methods | suspicious | 200 | https://www.nature.com/nmeth/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Communications | suspicious | 200 | https://www.nature.com/ncomms/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Genome Biology | suspicious | 200 | https://genomebiology.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Microbiome | suspicious | 200 | https://microbiomejournal.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| ISME Journal | suspicious | 200 | https://www.nature.com/ismej/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| ISME Communications | suspicious | 200 | https://www.nature.com/ismecomms/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ | 9498eee98cab | 9498eee98cab | very_short_body |  |
-| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 9264bcebfcbc | 41dbf1a16c8a | very_short_body |  |
+| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 41dbf1a16c8a | 5cea86e2b84c | very_short_body |  |
 
 ## Blocked URLs
 
@@ -84,14 +84,14 @@
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | f5a09619ffd2 | 5326ba5a998c | looks_valid |  |
-| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 6a7a1a6b123c | 39758aff0a40 | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 39758aff0a40 | fe07a3ebc9f6 | looks_valid |  |
 
 ## Failed URLs
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Genome Research | failed | 302 | https://genome.cshlp.org/ |  |  |  | HTTP 302: The HTTP server returned a redirect error that would lead to an infinite loop. The last 30x error message was: Found |
+| PLOS Computational Biology | failed |  | https://journals.plos.org/ploscompbiol/ | 5326ba5a998c | 5326ba5a998c | looks_valid | The read operation timed out |
 
 ## Skipped Manual-Curation URLs
 
