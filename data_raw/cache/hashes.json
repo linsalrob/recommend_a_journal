@@ -1,1 +1,17 @@
-{}
+{
+  "https://bmcbioinformatics.biomedcentral.com/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://environmentalmicrobiome.biomedcentral.com/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://genomebiology.biomedcentral.com/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://journals.plos.org/ploscompbiol/": "d109c0fb7bd9f6235bf1c37409e00cf43c934cd3c023243f85d70f155f455406",
+  "https://microbiomejournal.biomedcentral.com/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://peerj.com/about/author-instructions/": "2baca2eacfc879ad58526ebde1059f8bb6581d2289dbeee0efad332f9373347a",
+  "https://peerj.com/computer-science/": "9498eee98caba60f195ac4fb874e2a5bd7995b5c3dc5a64c75ce61cc324ff9ee",
+  "https://peerj.com/pricing/": "f1a118bb9ac35dca35d2cea70526997b0c59712ac3d47bdfa7a14002fc6809b4",
+  "https://www.nature.com/ismecomms/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://www.nature.com/ismej/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://www.nature.com/nature/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://www.nature.com/nbt/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://www.nature.com/ncomms/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://www.nature.com/nmeth/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+  "https://www.nature.com/nmicrobiol/": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0"
+}
