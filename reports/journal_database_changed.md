@@ -67,8 +67,8 @@
 | Journal of Virology | blocked | 403 | https://journals.asm.org/journal/jvi |  |  |  | HTTP 403 |
 | Journal of Virology | blocked | 403 | https://journals.asm.org/journal/jvi/about |  |  |  | HTTP 403 |
 | Journal of Virology | blocked | 403 | https://journals.asm.org/authors |  |  |  | HTTP 403 |
-| Journal of Virology | blocked | 403 | https://journals.asm.org/data-policy |  |  |  | HTTP 403 |
-| Journal of Virology | blocked | 403 | https://journals.asm.org/publishing-fees |  |  |  | HTTP 403 |
+| Journal of Virology | blocked | 403 | https://journals.asm.org/open-data-policy |  |  |  | HTTP 403 |
+| Journal of Virology | blocked | 403 | https://journals.asm.org/publication-fees |  |  |  | HTTP 403 |
 | Viruses | blocked | 403 | https://www.mdpi.com/journal/viruses |  |  |  | HTTP 403 |
 | Viruses | blocked | 403 | https://www.mdpi.com/journal/viruses/about |  |  |  | HTTP 403 |
 | Viruses | blocked | 403 | https://www.mdpi.com/journal/viruses/instructions |  |  |  | HTTP 403 |
@@ -172,7 +172,7 @@ No entries.
 | BMC Bioinformatics | skipped |  |  |  |  | No open-access/APC URL available. |
 | Virus Evolution | skipped |  |  |  |  | No open-access/APC URL available. |
 | PeerJ Computer Science | blocked_or_suspicious | https://peerj.com/pricing/ |  |  |  | APC source was blocked or suspicious; manual review required. |
-| Journal of Virology | blocked_or_suspicious | https://journals.asm.org/publishing-fees |  |  |  | APC source was blocked or suspicious; manual review required. |
+| Journal of Virology | blocked_or_suspicious | https://journals.asm.org/publication-fees |  |  |  | APC source was blocked or suspicious; manual review required. |
 | Viruses | blocked_or_suspicious | https://www.mdpi.com/journal/viruses/apc |  |  |  | APC source was blocked or suspicious; manual review required. |
 | Phage | blocked_or_suspicious | https://www.liebertpub.com/journal/phage |  |  |  | APC source was blocked or suspicious; manual review required. |
 | Virology | blocked_or_suspicious | https://www.elsevier.com/journals/virology/0042-6822/open-access-options |  |  |  | APC source was blocked or suspicious; manual review required. |

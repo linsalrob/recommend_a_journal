@@ -2632,16 +2632,16 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: https://journals.asm.org/data-policy
+    url: https://journals.asm.org/open-data-policy
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: https://journals.asm.org/data-policy
+    url: https://journals.asm.org/open-data-policy
   open_access:
     model: hybrid
     apc: null
     currency: ''
-    url: https://journals.asm.org/publishing-fees
+    url: https://journals.asm.org/publication-fees
   prestige_metrics:
     impact_factor: null
     cite_score: null
@@ -2671,11 +2671,11 @@
     accessed: '2026-06-28'
     notes: Official ASM author information page.
   - label: Data policy
-    url: https://journals.asm.org/data-policy
+    url: https://journals.asm.org/open-data-policy
     accessed: '2026-06-28'
     notes: Official ASM data policy page; summary not yet curated.
   - label: Publishing fees
-    url: https://journals.asm.org/publishing-fees
+    url: https://journals.asm.org/publication-fees
     accessed: '2026-06-28'
     notes: Official ASM publishing fees page; APC amount not yet curated.
   - label: ISSN Portal print ISSN

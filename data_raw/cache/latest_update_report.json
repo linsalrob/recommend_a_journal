@@ -285,7 +285,7 @@
       "new_apc": null,
       "note": "APC source was blocked or suspicious; manual review required.",
       "previous_apc": null,
-      "source_url": "https://journals.asm.org/publishing-fees",
+      "source_url": "https://journals.asm.org/publication-fees",
       "status": "blocked_or_suspicious"
     },
     {
@@ -1826,7 +1826,7 @@
       "status": "blocked",
       "status_code": 403,
       "text_length": 0,
-      "url": "https://journals.asm.org/data-policy"
+      "url": "https://journals.asm.org/open-data-policy"
     },
     {
       "blocked_repeatedly": true,
@@ -1840,7 +1840,7 @@
       "status": "blocked",
       "status_code": 403,
       "text_length": 0,
-      "url": "https://journals.asm.org/publishing-fees"
+      "url": "https://journals.asm.org/publication-fees"
     },
     {
       "blocked_repeatedly": false,

@@ -133,7 +133,7 @@ manual_download_queue:
   status: needs_manual_download
 - journal: Journal of Virology
   source_type: apc
-  url: https://journals.asm.org/publishing-fees
+  url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/journal_of_virology_apc.html
   automated_status: blocked
   status_code: 403
@@ -144,7 +144,7 @@ manual_download_queue:
   status: needs_manual_download
 - journal: Journal of Virology
   source_type: data_policy
-  url: https://journals.asm.org/data-policy
+  url: https://journals.asm.org/open-data-policy
   local_file: data_manual/pages/journal_of_virology_data_policy.html
   automated_status: blocked
   status_code: 403

@@ -125,13 +125,13 @@
     "status_code": 403,
     "url": "https://journals.asm.org/authors"
   },
-  "https://journals.asm.org/data-policy": {
+  "https://journals.asm.org/open-data-policy": {
     "blocked_count": 5,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
-    "url": "https://journals.asm.org/data-policy"
+    "url": "https://journals.asm.org/open-data-policy"
   },
   "https://journals.asm.org/journal/aem": {
     "blocked_count": 5,
@@ -181,13 +181,13 @@
     "status_code": 403,
     "url": "https://journals.asm.org/journal/spectrum"
   },
-  "https://journals.asm.org/publishing-fees": {
+  "https://journals.asm.org/publication-fees": {
     "blocked_count": 5,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
-    "url": "https://journals.asm.org/publishing-fees"
+    "url": "https://journals.asm.org/publication-fees"
   },
   "https://journals.plos.org/ploscompbiol/": {
     "blocked_count": 0,
