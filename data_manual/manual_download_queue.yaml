@@ -273,6 +273,25 @@ manual_download_queue:
   - less_suitable_for
   - editorial_notes
   status: needs_manual_download
+- journal: PLOS Computational Biology
+  source_type: homepage_or_scope
+  url: https://journals.plos.org/ploscompbiol/
+  local_file: data_manual/pages/plos_computational_biology_homepage_or_scope.html
+  automated_status: failed
+  status_code: null
+  quality_flags:
+  - looks_valid
+  reason: Automated fetch failed and no parsed local file is available.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: needs_manual_download
 - journal: PeerJ Computer Science
   source_type: apc
   url: https://peerj.com/pricing/

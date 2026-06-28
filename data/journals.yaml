@@ -80,17 +80,19 @@
     print: 0036-8075
     online: 1095-9203
   homepage_url: https://www.science.org/journal/science
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://www.science.org/journal/science
+  author_instructions_url: https://www.science.org/content/page/science-information-authors
   article_types:
   - Research Article
   - Report
   - Review
+  - Method
   scope_tags:
   - broad_science
   - biology
   - genomics
   - microbiology
+  - environmental_microbiology
   manuscript_tags:
   - high_concept_discovery
   - broad_interest
@@ -104,11 +106,11 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://www.science.org/content/page/science-information-authors
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://www.science.org/content/page/science-information-authors
   open_access:
     model: hybrid
     apc: null
@@ -124,6 +126,10 @@
     metric_sources: []
   editorial_notes:
   - Aspirational broad-science target; requires broad conceptual significance.
+  - 'Manual source suggests scope note: rent Issue First release papers Archive About
+    About Science Mission & Scope Editors & Advisory Boards Editorial Policies Information
+    for Authors Information for Reviewers Journal Metrics Staff Contact Us TOC Alerts
+    and RSS Feeds science advances scie'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -144,6 +150,14 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.science.org/journal/science
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/science_home.html.
+  - label: 'Manual source: author_instructions'
+    url: https://www.science.org/content/page/science-information-authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/science_information_for_authors.html.
   last_checked: '2026-06-28'
 - journal: Cell
   abbreviated_title: Cell
@@ -152,17 +166,27 @@
     print: 0092-8674
     online: 1097-4172
   homepage_url: https://www.cell.com/cell/home
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://www.cell.com/cell/home
+  author_instructions_url: https://www.cell.com/cell/authors
   article_types:
   - Article
   - Short Article
   - Review
+  - Method
+  - Research Article
+  - Resource
   scope_tags:
   - broad_science
   - molecular_biology
   - systems_biology
   - host_microbe_interactions
+  - clinical_microbiology
+  - evolution
+  - genomics
+  - methods
+  - microbial_ecology
+  - microbiology
+  - microbiome
   manuscript_tags:
   - high_concept_discovery
   - broad_interest
@@ -176,11 +200,11 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://www.cell.com/cell/authors
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://www.cell.com/cell/authors
   open_access:
     model: hybrid
     apc: null
@@ -197,6 +221,10 @@
   editorial_notes:
   - Aspirational life-science target; fit depends on mechanistic depth and conceptual
     advance.
+  - 'Manual source suggests scope note: neak Peek - preprints Collections Special
+    issues About Advisory board Aims and scope Contact Editors and staff Ethics Permissions
+    Reviewer instructions 50th anniversary Access Subscribe Activate online access
+    Connect Bluesky External Link Instagram E'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -217,6 +245,14 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.cell.com/cell/home
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/cell_home.html.
+  - label: 'Manual source: guide_for_authors'
+    url: https://www.cell.com/cell/authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/cell_authors.html.
   last_checked: '2026-06-28'
 - journal: Nature Microbiology
   abbreviated_title: Nat Microbiol
@@ -517,17 +553,21 @@
     print: ''
     online: 2375-2548
   homepage_url: https://www.science.org/journal/sciadv
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://www.science.org/journal/sciadv
+  author_instructions_url: https://www.science.org/content/page/science-advances-information-authors
   article_types:
   - Research Article
   - Review
+  - Database
+  - Method
   scope_tags:
   - broad_science
   - biology
   - microbiology
   - genomics
   - computational_biology
+  - evolution
+  - viromics
   manuscript_tags:
   - broad_interest
   - high_concept_discovery
@@ -540,16 +580,16 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://www.science.org/content/page/science-advances-information-authors
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://www.science.org/content/page/science-advances-information-authors
   open_access:
     model: fully_open_access
     apc: null
     currency: ''
-    url: ''
+    url: https://www.science.org/content/page/science-advances-information-authors
   prestige_metrics:
     impact_factor: null
     cite_score: null
@@ -560,6 +600,10 @@
     metric_sources: []
   editorial_notes:
   - Aspirational open-access broad-science option.
+  - 'Manual source suggests scope note: e First release papers Archive About About
+    Science Advances Mission & Scope Editorial Board Editorial Working Groups Information
+    for Authors Information for Reviewers Editorial Policies Licensing and Charges
+    Journal Metrics Journal Webinars Frequentl'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -576,6 +620,14 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.science.org/journal/sciadv
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/science_advances_home.html.
+  - label: 'Manual source: author_instructions'
+    url: https://www.science.org/content/page/science-advances-information-authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/science_advances_information_for_authors.html.
   last_checked: '2026-06-28'
 - journal: Cell Host & Microbe
   abbreviated_title: Cell Host Microbe
@@ -584,24 +636,35 @@
     print: 1931-3128
     online: 1934-6069
   homepage_url: https://www.cell.com/cell-host-microbe/home
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://www.cell.com/cell-host-microbe/home
+  author_instructions_url: https://www.cell.com/cell-host-microbe/authors
   article_types:
   - Article
   - Short Article
   - Resource
   - Review
+  - Method
+  - Research Article
   scope_tags:
   - host_microbe_interactions
   - microbiology
   - microbiome
   - infectious_disease
   - clinical_microbiology
+  - evolution
+  - genomics
+  - methods
+  - microbial_ecology
+  - viromics
   manuscript_tags:
   - mechanistic_study
   - translational
   - clinical_cohort
   - high_concept_discovery
+  - methods_paper
+  - review
+  - specialist_audience
+  - virome_analysis
   suitable_for:
   - mechanistic host-microbe studies
   - translational microbiome or infection studies
@@ -611,11 +674,11 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://www.cell.com/cell-host-microbe/authors
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://www.cell.com/cell-host-microbe/authors
   open_access:
     model: hybrid
     apc: null
@@ -631,6 +694,10 @@
     metric_sources: []
   editorial_notes:
   - Strong fit for mechanistic host-microbe and infection biology.
+  - 'Manual source suggests scope note: cation alerts Sneak Peak - preprints Collections
+    About Advisory board Aims and scope Contact Editors and staff Ethics Permissions
+    Reviewer instructions Access Subscribe Activate online access Connect Alerts Bluesky
+    External Link LinkedIn External Lin'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -651,6 +718,14 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.cell.com/cell-host-microbe/home
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/cell_host_microbe_home.html.
+  - label: 'Manual source: guide_for_authors'
+    url: https://www.cell.com/cell-host-microbe/authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/cell_host_microbe_authors.html.
   last_checked: '2026-06-28'
 - journal: Genome Biology
   abbreviated_title: Genome Biol
@@ -812,17 +887,24 @@
     print: 0027-8424
     online: 1091-6490
   homepage_url: https://www.pnas.org/
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://www.pnas.org/
+  author_instructions_url: https://www.pnas.org/author-center/submitting-your-manuscript
   article_types:
   - Research Article
   - Brief Report
+  - Review
+  - Method
+  - Software
   scope_tags:
   - broad_science
   - biology
   - microbiology
   - genomics
   - evolution
+  - computational_biology
+  - environmental_microbiology
+  - machine_learning
+  - microbial_ecology
   manuscript_tags:
   - broad_interest
   - high_concept_discovery
@@ -836,16 +918,16 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://www.pnas.org/author-center/submitting-your-manuscript
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://www.pnas.org/author-center/submitting-your-manuscript
   open_access:
     model: hybrid
     apc: null
     currency: ''
-    url: ''
+    url: https://www.pnas.org/author-center/submitting-your-manuscript
   prestige_metrics:
     impact_factor: null
     cite_score: null
@@ -856,6 +938,10 @@
     metric_sources: []
   editorial_notes:
   - Broad selective venue; significance beyond specialty audience is important.
+  - 'Manual source suggests scope note: e biological, physical, and social sciences.
+    The journal is global in scope and submission is open to all researchers worldwide.
+    Read More In the News Research Article January 26, 2026 Large declines in organofluorine
+    contamination indicated by subar'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -876,6 +962,14 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.pnas.org/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/pnas_home.html.
+  - label: 'Manual source: author_instructions'
+    url: https://www.pnas.org/author-center/submitting-your-manuscript
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/pnas_submitting_your_manuscript.html.
   last_checked: '2026-06-28'
 - journal: Microbiome
   abbreviated_title: Microbiome
@@ -1101,19 +1195,32 @@
     print: ''
     online: 2150-7511
   homepage_url: https://journals.asm.org/journal/mbio
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://journals.asm.org/journal/mbio
+  author_instructions_url: https://journals.asm.org/authors
   article_types:
   - Research Article
   - Observation
   - Perspective
   - Review
+  - Resource
+  - Database
+  - Method
+  - Software
   scope_tags:
   - microbiology
   - infectious_disease
   - microbial_genomics
   - host_microbe_interactions
   - microbial_ecology
+  - bacteriophage
+  - clinical_microbiology
+  - environmental_microbiology
+  - evolution
+  - genomics
+  - microbiome
+  - phage_biology
+  - resource
+  - viromics
   manuscript_tags:
   - mechanistic_study
   - specialist_audience
@@ -1127,16 +1234,16 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://journals.asm.org/authors
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://journals.asm.org/authors
   open_access:
     model: fully_open_access
     apc: null
     currency: ''
-    url: ''
+    url: https://journals.asm.org/publication-fees
   prestige_metrics:
     impact_factor: null
     cite_score: null
@@ -1147,6 +1254,10 @@
     metric_sources: []
   editorial_notes:
   - Selective ASM journal for significant microbiology.
+  - 'Manual source suggests scope note: CURRENT ISSUE COLLECTIONS ARCHIVE ABOUT THE
+    JOURNAL ABOUT MBIO SUBMIT SCOPE BOARD OF EDITORS ARTICLE TYPES AND FORMATTING
+    SUBMISSION AND REVIEW PROCESS AAM FELLOWS FOR REVIEWERS FAQ CONTACT US FOR SUBSCRIBERS
+    MEMBERS INSTITUTIONS ALERTS RSS JOURNAL H'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1163,6 +1274,18 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://journals.asm.org/journal/mbio
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/mbio_home.html.
+  - label: 'Manual source: apc'
+    url: https://journals.asm.org/publication-fees
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_publishing_fees.html.
+  - label: 'Manual source: author_instructions'
+    url: https://journals.asm.org/authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_authors.html.
   last_checked: '2026-06-28'
 - journal: mSystems
   abbreviated_title: mSystems
@@ -1171,13 +1294,16 @@
     print: ''
     online: 2379-5077
   homepage_url: https://journals.asm.org/journal/msystems
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://journals.asm.org/journal/msystems
+  author_instructions_url: https://journals.asm.org/authors
   article_types:
   - Research Article
   - Methods and Protocols
   - Resource
   - Review
+  - Method
+  - Database
+  - Software
   scope_tags:
   - systems_biology
   - microbiome
@@ -1185,6 +1311,21 @@
   - microbial_genomics
   - computational_biology
   - bioinformatics
+  - clinical_microbiology
+  - environmental_microbiology
+  - genomics
+  - infectious_disease
+  - methods
+  - microbial_ecology
+  - microbiology
+  - resource
+  - viromics
+  - bacteriophage
+  - database
+  - evolution
+  - open_science
+  - phage_biology
+  - software
   manuscript_tags:
   - multi_omics
   - methods_paper
@@ -1199,16 +1340,16 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://journals.asm.org/authors
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://journals.asm.org/authors
   open_access:
     model: fully_open_access
     apc: null
     currency: ''
-    url: ''
+    url: https://journals.asm.org/publication-fees
   prestige_metrics:
     impact_factor: null
     cite_score: null
@@ -1219,6 +1360,14 @@
     metric_sources: []
   editorial_notes:
   - Strong fit for systems microbiology and microbiome informatics.
+  - 'Manual source suggests scope note: ch Ashley Shade is the Director of Research
+    at CNRS. Shade’s research aims to understand, predict, and manage microbial communities
+    to achieve resilience to climate change and other environmental disturbances.
+    Board of Editors Most Read Most Cited Ex'
+  - 'Manual source suggests scope note: ENT ISSUE COLLECTIONS ARCHIVE ABOUT THE JOURNAL
+    ABOUT MSYSTEMS SUBMIT SCOPE BOARD OF EDITORS ARTICLE TYPES AND FORMATTING SUBMISSION
+    AND REVIEW PROCESS AUTHOR VIDEOS FOR REVIEWERS FAQ CONTACT US FOR SUBSCRIBERS
+    MEMBERS INSTITUTIONS ALERTS RSS JOURNAL'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1235,6 +1384,22 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://journals.asm.org/journal/msystems
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/msystems_home.html.
+  - label: 'Manual source: apc'
+    url: https://journals.asm.org/publication-fees
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_publishing_fees.html.
+  - label: 'Manual source: author_instructions'
+    url: https://journals.asm.org/authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_authors.html.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://journals.asm.org/journal/msystems/article-types
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/msystems_art.html.
   last_checked: '2026-06-28'
 - journal: Microbiology Spectrum
   abbreviated_title: Microbiol Spectr
@@ -1243,18 +1408,34 @@
     print: ''
     online: 2165-0497
   homepage_url: https://journals.asm.org/journal/spectrum
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://journals.asm.org/journal/spectrum
+  author_instructions_url: https://journals.asm.org/authors
   article_types:
   - Research Article
   - Review
   - Observation
+  - Resource
+  - Database
+  - Method
+  - Software
   scope_tags:
   - microbiology
   - clinical_microbiology
   - microbial_genomics
   - infectious_disease
   - environmental_microbiology
+  - genomics
+  - microbiome
+  - resource
+  - viromics
+  - bacteriophage
+  - database
+  - evolution
+  - methods
+  - microbial_ecology
+  - open_science
+  - phage_biology
+  - software
   manuscript_tags:
   - descriptive_study
   - clinical_cohort
@@ -1268,16 +1449,16 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://journals.asm.org/authors
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://journals.asm.org/authors
   open_access:
     model: fully_open_access
     apc: null
     currency: ''
-    url: ''
+    url: https://journals.asm.org/publication-fees
   prestige_metrics:
     impact_factor: null
     cite_score: null
@@ -1288,6 +1469,10 @@
     metric_sources: []
   editorial_notes:
   - Broad ASM specialist venue and safer credible option for many microbiology manuscripts.
+  - 'Manual source suggests scope note: ENT ISSUE COLLECTIONS ARCHIVE ABOUT THE JOURNAL
+    ABOUT SPECTRUM SUBMIT SCOPE BOARD OF EDITORS ARTICLE TYPES AND FORMATTING SUBMISSION
+    AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US FOR SUBSCRIBERS MEMBERS INSTITUTIONS
+    ALERTS RSS JOURNAL HOME FOR AUTH'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1304,6 +1489,22 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://journals.asm.org/journal/spectrum
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/microbiology_spectrum_home.html.
+  - label: 'Manual source: apc'
+    url: https://journals.asm.org/publication-fees
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_publishing_fees.html.
+  - label: 'Manual source: author_instructions'
+    url: https://journals.asm.org/authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_authors.html.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://journals.asm.org/journal/spectrum/article-types
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/ms_art.html.
   last_checked: '2026-06-28'
 - journal: Microbial Genomics
   abbreviated_title: Microb Genom
@@ -1312,25 +1513,41 @@
     print: ''
     online: 2057-5858
   homepage_url: https://www.microbiologyresearch.org/content/journal/mgen
-  aims_scope_url: ''
+  aims_scope_url: https://www.microbiologyresearch.org/content/journal/mgen
   author_instructions_url: ''
   article_types:
   - Research Article
   - Methods
   - Data Note
   - Review
+  - Method
+  - Resource
+  - Software
   scope_tags:
   - microbial_genomics
   - genomics
   - bioinformatics
   - microbiology
   - evolution
+  - clinical_microbiology
+  - environmental_microbiology
+  - infectious_disease
+  - metagenomics
+  - methods
+  - microbiome
+  - resource
+  - software
+  - viromics
   manuscript_tags:
   - genome_resource
   - methods_paper
   - phage_genomics
   - metagenome_assembled_genomes
   - specialist_audience
+  - database_resource
+  - review
+  - software_tool
+  - virome_analysis
   suitable_for:
   - bacterial, archaeal, viral, and microbial genomic analyses
   - genomic epidemiology and comparative genomics
@@ -1339,11 +1556,11 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://www.microbiologyresearch.org/content/journal/mgen
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://www.microbiologyresearch.org/content/journal/mgen
   open_access:
     model: fully_open_access
     apc: null
@@ -1359,6 +1576,10 @@
     metric_sources: []
   editorial_notes:
   - Good fit for microbial genome analysis and genomic methods.
+  - 'Manual source suggests scope note: ith clinical, veterinary or environmental
+    relevance. See full journal scope For everything you need to know when preparing
+    a submission check out our new submission checklist . Browse these key collections:
+    Microbial Genomics of Eukaryotes Genomics,'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1375,6 +1596,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.microbiologyresearch.org/content/journal/mgen
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/microbial_genomics_home.html.
   last_checked: '2026-06-28'
 - journal: Environmental Microbiology
   abbreviated_title: Environ Microbiol
@@ -1383,7 +1608,7 @@
     print: 1462-2912
     online: 1462-2920
   homepage_url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
-  aims_scope_url: ''
+  aims_scope_url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
   author_instructions_url: ''
   article_types:
   - Research Article
@@ -1393,6 +1618,9 @@
   - microbial_ecology
   - microbiology
   - microbial_genomics
+  - genomics
+  - microbiome
+  - resource
   manuscript_tags:
   - environmental_survey
   - mechanistic_study
@@ -1426,6 +1654,10 @@
     metric_sources: []
   editorial_notes:
   - Specialist environmental microbiology target.
+  - 'Manual source suggests scope note: microbial interactions and microbial processes
+    in the environment and publishes cutting-edge original research reporting significant
+    advances in or relating to this subject. Journal Metrics understand journal metrics
+    9.0 CiteScore 4.0 Journal Impact'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1446,6 +1678,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/environmental_microbiology_home.html.
   last_checked: '2026-06-28'
 - journal: Environmental Microbiome
   abbreviated_title: Environ Microbiome
@@ -1518,16 +1754,32 @@
     print: 0099-2240
     online: 1098-5336
   homepage_url: https://journals.asm.org/journal/aem
-  aims_scope_url: ''
-  author_instructions_url: ''
+  aims_scope_url: https://journals.asm.org/journal/aem
+  author_instructions_url: https://journals.asm.org/authors
   article_types:
   - Research Article
   - Minireview
+  - Resource
+  - Review
+  - Database
+  - Method
+  - Software
   scope_tags:
   - environmental_microbiology
   - microbiology
   - biotechnology
   - microbial_ecology
+  - clinical_microbiology
+  - infectious_disease
+  - resource
+  - bacteriophage
+  - database
+  - evolution
+  - methods
+  - microbiome
+  - open_science
+  - phage_biology
+  - software
   manuscript_tags:
   - mechanistic_study
   - environmental_survey
@@ -1541,16 +1793,16 @@
   data_policy:
     summary: Availability statements for data and materials should be checked against
       the journal author instructions.
-    url: ''
+    url: https://journals.asm.org/authors
   code_policy:
     summary: Code availability expectations should be checked against the journal
       author instructions, especially for software or computational methods.
-    url: ''
+    url: https://journals.asm.org/authors
   open_access:
     model: hybrid
     apc: null
     currency: ''
-    url: ''
+    url: https://journals.asm.org/publication-fees
   prestige_metrics:
     impact_factor: null
     cite_score: null
@@ -1561,6 +1813,14 @@
     metric_sources: []
   editorial_notes:
   - Established applied/environmental microbiology venue.
+  - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT THE
+    JOURNAL ABOUT AEM SUBMIT SCOPE EDITORIAL BOARD EDITORIAL BOARD CONTRIBUTIONS ARTICLE
+    TYPES AND FORMATTING SUBMISSION AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US
+    FOR SUBSCRIBERS MEMBERS INSTITUTIONS ALE'
+  - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT THE
+    JOURNAL ABOUT AEM SUBMIT SCOPE EDITORIAL BOARD EDITORIAL BOARD CONTRIBUTIONS ARTICLE
+    TYPES AND FORMATTING SUBMISSION AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US
+    SUBSCRIBE MEMBERS INSTITUTIONS ALERTS RS'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1581,6 +1841,22 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://journals.asm.org/journal/aem
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/aem_home.html.
+  - label: 'Manual source: apc'
+    url: https://journals.asm.org/publication-fees
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_publishing_fees.html.
+  - label: 'Manual source: author_instructions'
+    url: https://journals.asm.org/authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_authors.html.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://journals.asm.org/journal/aem/article-types
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/aem_art.html.
   last_checked: '2026-06-28'
 - journal: FEMS Microbiology Ecology
   abbreviated_title: FEMS Microbiol Ecol
@@ -1589,17 +1865,21 @@
     print: 0168-6496
     online: 1574-6941
   homepage_url: https://academic.oup.com/femsec
-  aims_scope_url: ''
+  aims_scope_url: https://academic.oup.com/femsec
   author_instructions_url: ''
   article_types:
   - Research Article
   - Minireview
   - Method
+  - Review
   scope_tags:
   - microbial_ecology
   - environmental_microbiology
   - microbiome
   - evolution
+  - genomics
+  - metagenomics
+  - microbiology
   manuscript_tags:
   - environmental_survey
   - descriptive_study
@@ -1634,6 +1914,10 @@
     metric_sources: []
   editorial_notes:
   - Specialist microbial ecology journal.
+  - 'Manual source suggests scope note: ration instructions Instructions to authors
+    FEMS Microbiology Ecology aims to ensure efficient publication of high-quality
+    papers that are original and provide a significant contribution to the understanding
+    of microbial ecology. The journal contains'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1654,6 +1938,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://academic.oup.com/femsec
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/fems_microbiology_ecology_home.html.
   last_checked: '2026-06-28'
 - journal: Bioinformatics
   abbreviated_title: Bioinformatics
@@ -1662,12 +1950,16 @@
     print: 1367-4803
     online: 1460-2059
   homepage_url: https://academic.oup.com/bioinformatics
-  aims_scope_url: ''
+  aims_scope_url: https://academic.oup.com/bioinformatics
   author_instructions_url: ''
   article_types:
   - Original Paper
   - Application Note
   - Review
+  - Database
+  - Method
+  - Research Article
+  - Resource
   scope_tags:
   - bioinformatics
   - software
@@ -1675,12 +1967,19 @@
   - computational_biology
   - machine_learning
   - genomics
+  - database
+  - evolution
+  - metagenomics
+  - microbiology
+  - microbiome
+  - resource
   manuscript_tags:
   - software_tool
   - methods_paper
   - benchmark
   - database_resource
   - specialist_audience
+  - review
   suitable_for:
   - bioinformatics methods and software with validation
   - computational genomics tools
@@ -1729,6 +2028,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://academic.oup.com/bioinformatics
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/bioinformatics_home.html.
   last_checked: '2026-06-28'
 - journal: Briefings in Bioinformatics
   abbreviated_title: Brief Bioinform
@@ -1737,23 +2040,30 @@
     print: 1467-5463
     online: 1477-4054
   homepage_url: https://academic.oup.com/bib
-  aims_scope_url: ''
+  aims_scope_url: https://academic.oup.com/bib
   author_instructions_url: ''
   article_types:
   - Review
   - Original Research
   - Application Note
+  - Database
+  - Method
+  - Research Article
   scope_tags:
   - bioinformatics
   - computational_biology
   - machine_learning
   - genomics
   - systems_biology
+  - database
+  - evolution
+  - methods
   manuscript_tags:
   - review
   - methods_paper
   - benchmark
   - software_tool
+  - database_resource
   suitable_for:
   - substantial bioinformatics reviews, benchmarks, and computational studies
   - machine-learning analyses with broad bioinformatics interest
@@ -1783,6 +2093,10 @@
     metric_sources: []
   editorial_notes:
   - Strong fit for reviews and high-level computational biology manuscripts.
+  - 'Manual source suggests scope note: Issues In addition to its regular issues,
+    Briefings in Bioinformatics publishes special issues featuring papers based on
+    different subjects from across the discipline. Browse past special issues Learn
+    more here Committee on Publication Ethics (COPE)'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1803,6 +2117,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://academic.oup.com/bib
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/briefings_in_bioinformatics_home.html.
   last_checked: '2026-06-28'
 - journal: PLOS Computational Biology
   abbreviated_title: PLoS Comput Biol
@@ -1886,13 +2204,14 @@
     print: ''
     online: 2631-9268
   homepage_url: https://academic.oup.com/nargab
-  aims_scope_url: ''
+  aims_scope_url: https://academic.oup.com/nargab
   author_instructions_url: ''
   article_types:
   - Research Article
   - Methods
   - Database
   - Software
+  - Method
   scope_tags:
   - bioinformatics
   - genomics
@@ -1900,12 +2219,17 @@
   - software
   - methods
   - computational_biology
+  - evolution
+  - infectious_disease
+  - machine_learning
+  - resource
   manuscript_tags:
   - software_tool
   - database_resource
   - methods_paper
   - benchmark
   - genome_resource
+  - specialist_audience
   suitable_for:
   - genomics software, databases, and computational methods
   - resource papers with clear utility
@@ -1934,6 +2258,10 @@
     metric_sources: []
   editorial_notes:
   - Strong target for genomics and bioinformatics resources.
+  - 'Manual source suggests scope note: focused on genomics and bioinformatics large-scale
+    data analysis. It aims at providing the community with high quality results, analysis
+    and methods in all aspects of genomics and bioinformatics. Reproducibility is
+    a strong focus of the journal, and'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1950,6 +2278,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://academic.oup.com/nargab
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/nar_genomics_and_bioinformatics_home.html.
   last_checked: '2026-06-28'
 - journal: GigaScience
   abbreviated_title: GigaScience
@@ -1958,13 +2290,17 @@
     print: ''
     online: 2047-217X
   homepage_url: https://academic.oup.com/gigascience
-  aims_scope_url: ''
+  aims_scope_url: https://academic.oup.com/gigascience
   author_instructions_url: ''
   article_types:
   - Research
   - Data Note
   - Technical Note
   - Review
+  - Database
+  - Method
+  - Research Article
+  - Resource
   scope_tags:
   - open_science
   - database
@@ -1972,12 +2308,20 @@
   - bioinformatics
   - genomics
   - methods
+  - clinical_microbiology
+  - evolution
+  - machine_learning
+  - metagenomics
+  - microbial_ecology
+  - microbiology
   manuscript_tags:
   - database_resource
   - software_tool
   - genome_resource
   - benchmark
   - methods_paper
+  - review
+  - specialist_audience
   suitable_for:
   - open-science data, software, and resource manuscripts
   - large datasets with reusable workflows
@@ -2006,6 +2350,10 @@
     metric_sources: []
   editorial_notes:
   - Good fit for data-rich open-science resources.
+  - 'Manual source suggests scope note: his review systematically examines how the
+    integration of AI with ... ScopeViewer: A Browser-Based Solution for Visualizing
+    Large Biological Images Danni Luo and others Background Spatial transcriptomics
+    (ST) enables a high-resolution interrogation o'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -2022,6 +2370,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://academic.oup.com/gigascience
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/gigascience_home.html.
   last_checked: '2026-06-28'
 - journal: BMC Bioinformatics
   abbreviated_title: BMC Bioinformatics
@@ -2253,12 +2605,20 @@
   - Research Article
   - Minireview
   - Commentary
+  - Resource
+  - Review
+  - Database
+  - Method
+  - Software
   scope_tags:
   - viromics
   - infectious_disease
   - molecular_biology
   - phage_biology
   - microbiology
+  - clinical_microbiology
+  - environmental_microbiology
+  - resource
   manuscript_tags:
   - mechanistic_study
   - phage_genomics
@@ -2292,6 +2652,10 @@
     metric_sources: []
   editorial_notes:
   - Established specialist virology target.
+  - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT THE
+    JOURNAL ABOUT JVI SUBMIT SCOPE EDITORIAL BOARD ARTICLE TYPES AND FORMATTING SUBMISSION
+    AND REVIEW PROCESS ACTIVE CONTRIBUTOR TRACK FOR REVIEWERS NEW VOICES IN VIROLOGY
+    SEMINAR SERIES FAQ CONTACT US FOR SUB'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -2328,6 +2692,18 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://journals.asm.org/journal/jvi
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/journal_of_virology_home.html.
+  - label: 'Manual source: author_instructions'
+    url: https://journals.asm.org/authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_authors.html.
+  - label: 'Manual source: apc'
+    url: https://journals.asm.org/publication-fees
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/asm_publishing_fees.html.
   last_checked: '2026-06-28'
 - journal: Viruses
   abbreviated_title: Viruses
@@ -2342,18 +2718,41 @@
   - Article
   - Review
   - Communication
+  - Brief Report
+  - Database
+  - Method
+  - Research Article
+  - Software
+  - Resource
   scope_tags:
   - viromics
   - infectious_disease
   - phage_biology
   - bacteriophage
   - evolution
+  - bioinformatics
+  - clinical_microbiology
+  - computational_biology
+  - database
+  - environmental_microbiology
+  - genomics
+  - machine_learning
+  - metagenomics
+  - methods
+  - microbial_ecology
+  - microbiology
+  - resource
+  - software
   manuscript_tags:
   - phage_genomics
   - virome_analysis
   - genome_resource
   - review
   - specialist_audience
+  - database_resource
+  - methods_paper
+  - short_report
+  - software_tool
   suitable_for:
   - virus, virome, and phage studies
   - descriptive viral genomics with clear context
@@ -2382,6 +2781,10 @@
     metric_sources: []
   editorial_notes:
   - Broad open-access virology journal.
+  - 'Manual source suggests scope note: s Review for Viruses Share Journal Menu ►
+    ▼ Journal Menu Viruses Home Aims & Scope Editorial Board Reviewer Board Topical
+    Advisory Panel Instructions for Authors Special Issues Topics Sections & Collections
+    Article Processing Charge Indexing & Archiv'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -2414,6 +2817,18 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.mdpi.com/journal/viruses
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/viruses_home.html.
+  - label: 'Manual source: author_instructions'
+    url: https://www.mdpi.com/journal/viruses/instructions
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/viruses_instructions.html.
+  - label: 'Manual source: apc'
+    url: https://www.mdpi.com/journal/viruses/apc
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/viruses_apc.html.
   last_checked: '2026-06-28'
 - journal: Phage
   abbreviated_title: Phage
@@ -2428,16 +2843,31 @@
   - Research Article
   - Review
   - Commentary
+  - Method
+  - Database
+  - Resource
   scope_tags:
   - phage_biology
   - bacteriophage
   - therapeutic
   - microbiology
+  - clinical_microbiology
+  - environmental_microbiology
+  - genomics
+  - infectious_disease
+  - methods
+  - microbial_ecology
+  - resource
+  - viromics
   manuscript_tags:
   - phage_genomics
   - therapeutic
   - short_report
   - specialist_audience
+  - database_resource
+  - methods_paper
+  - review
+  - virome_analysis
   suitable_for:
   - bacteriophage biology, applications, and therapy
   - focused phage genomics studies
@@ -2480,6 +2910,14 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.liebertpub.com/journal/phage
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/phage_home.html.
+  - label: 'Manual source: author_instructions'
+    url: https://www.sagepub.com/journals/information-for-authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/phage_authors.html.
   last_checked: '2026-06-28'
 - journal: Virology
   abbreviated_title: Virology
@@ -2494,16 +2932,28 @@
   - Research Article
   - Short Communication
   - Review
+  - Brief Report
+  - Database
+  - Method
+  - Software
   scope_tags:
   - viromics
   - infectious_disease
   - molecular_biology
   - evolution
+  - clinical_microbiology
+  - genomics
+  - metagenomics
+  - microbiology
+  - resource
   manuscript_tags:
   - mechanistic_study
   - virome_analysis
   - phage_genomics
   - specialist_audience
+  - database_resource
+  - review
+  - short_report
   suitable_for:
   - virus biology and viral molecular mechanisms
   - viral genomics with virology framing
@@ -2519,8 +2969,8 @@
     url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
   open_access:
     model: hybrid
-    apc: null
-    currency: ''
+    apc: 3000
+    currency: USD
     url: https://www.elsevier.com/journals/virology/0042-6822/open-access-options
   prestige_metrics:
     impact_factor: null
@@ -2532,6 +2982,13 @@
     metric_sources: []
   editorial_notes:
   - Established specialist virology venue.
+  - 'Manual source suggests scope note: Order journal Submit your article Guide for
+    authors About the journal Aims & Scope An Affiliated Journal of the World Society
+    for Virology Launched in 1955, Virology is a broad and inclusive journal that
+    welcomes submissions on all aspects of virolog'
+  - 'Manual source suggests scope note: Aims and scope - Virology | ScienceDirect.com
+    by Elsevier Skip to main content ScienceDirect Journals & Books Help Search My
+    account Sign in Virology Supports open access 4.2 CiteS'
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -2565,4 +3022,20 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.sciencedirect.com/journal/virology
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/virology_home.html.
+  - label: 'Manual source: aims_scope'
+    url: https://www.sciencedirect.com/journal/virology/about/aims-and-scope
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/virology_aims_and_scope.html.
+  - label: 'Manual source: guide_for_authors'
+    url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/virology_guide_for_authors.html.
+  - label: 'Manual source: open_access'
+    url: https://www.elsevier.com/journals/virology/0042-6822/open-access-options
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/virology_open_access_options.html.
   last_checked: '2026-06-28'

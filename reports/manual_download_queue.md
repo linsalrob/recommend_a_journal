@@ -7,7 +7,7 @@
 - Local files parsed: 53
 - Local files missing: 1
 - Local files failed parsing: 0
-- URLs still needing manual download: 20
+- URLs still needing manual download: 21
 
 ## Files Parsed This Run
 
@@ -92,6 +92,7 @@
 | Nature Communications | homepage_or_scope | 200 | suspicious | https://www.nature.com/ncomms/ | data_manual/pages/nature_communications_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
 | Nature Methods | homepage_or_scope | 200 | suspicious | https://www.nature.com/nmeth/ | data_manual/pages/nature_methods_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
 | Nature Microbiology | homepage_or_scope | 200 | suspicious | https://www.nature.com/nmicrobiol/ | data_manual/pages/nature_microbiology_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
+| PLOS Computational Biology | homepage_or_scope |  | failed | https://journals.plos.org/ploscompbiol/ | data_manual/pages/plos_computational_biology_homepage_or_scope.html | Automated fetch failed and no parsed local file is available. |
 | PeerJ Computer Science | apc | 200 | suspicious | https://peerj.com/pricing/ | data_manual/pages/peerj_computer_science_apc.html | Automated fetch produced suspicious content: very_short_body. |
 | PeerJ Computer Science | homepage_or_scope | 201 | suspicious | https://peerj.com/computer-science/ | data_manual/pages/peerj_computer_science_homepage_or_scope.html | Automated fetch produced suspicious content: very_short_body. |
 | Viruses | aims_scope | 403 | blocked | https://www.mdpi.com/journal/viruses/about | data_manual/pages/viruses_aims_scope.html | Automated fetch returned HTTP 403. |
