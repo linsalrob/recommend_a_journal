@@ -41,7 +41,7 @@
 | Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ | 9498eee98cab | 9498eee98cab | very_short_body |  |
-| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 1f37538507ad | 96e72ce0f358 | very_short_body |  |
+| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 96e72ce0f358 | 3245a92b57b6 | very_short_body |  |
 
 ## Blocked URLs
 
@@ -100,9 +100,9 @@
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | 730d0528d6d7 | 217353b685ed | looks_valid |  |
-| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 1fb6adbeefda | 945803028bfe | looks_valid |  |
-| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 5628b4df8d73 | 399615fe6202 | looks_valid |  |
+| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | 217353b685ed | f047199b85aa | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 945803028bfe | 437425033cd1 | looks_valid |  |
+| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 399615fe6202 | 35aa86fe3942 | looks_valid |  |
 
 ## Failed URLs
 
