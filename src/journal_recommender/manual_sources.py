@@ -975,6 +975,7 @@ def write_review_report(
     suggestions: list[dict[str, Any]],
     parsed_sources: list[ParsedManualSource],
     path: Path,
+    journals_path: Path | None = None,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     high_count = sum(
@@ -1041,12 +1042,24 @@ def write_review_report(
     )
     append_review_section(lines, "Low-confidence Or Noisy Suggestions", low_or_noisy)
     append_review_section(lines, "Missing Relevant Sections", missing_sections)
+    if journals_path is not None:
+        append_missing_field_summary(lines, journals_path)
+    safe_to_apply, reason = safe_to_apply_decision(suggestions)
     lines.extend(
         [
             "",
             "## Recommended Action",
             "",
-            recommended_action(suggestions),
+            reason,
+            "",
+            "## Machine-readable Recommendation",
+            "",
+            "```yaml",
+            *yaml.safe_dump(
+                {"safe_to_apply": safe_to_apply, "reason": reason},
+                sort_keys=False,
+            ).strip().splitlines(),
+            "```",
             "",
         ]
     )
@@ -1104,6 +1117,10 @@ def is_url_only_suggestion(suggestion: dict[str, Any]) -> bool:
 
 
 def recommended_action(suggestions: list[dict[str, Any]]) -> str:
+    return safe_to_apply_decision(suggestions)[1]
+
+
+def safe_to_apply_decision(suggestions: list[dict[str, Any]]) -> tuple[bool, str]:
     risky = [
         suggestion
         for suggestion in suggestions
@@ -1119,11 +1136,53 @@ def recommended_action(suggestions: list[dict[str, Any]]) -> str:
         )
     ]
     if risky or substantive:
-        return (
+        return False, (
             "More review is needed before running `--apply`; inspect the dry-run "
             "report and manually check substantive suggestions first."
         )
-    return "It is safe to run `--apply` for URL-only suggestions."
+    return True, "It is safe to run `--apply` for URL-only suggestions."
+
+
+def append_missing_field_summary(lines: list[str], journals_path: Path) -> None:
+    with journals_path.open("r", encoding="utf-8") as handle:
+        records = yaml.safe_load(handle) or []
+    lines.extend(
+        [
+            "## Missing Field Summary",
+            "",
+            "| Journal | Missing useful fields |",
+            "| --- | --- |",
+        ]
+    )
+    for record in records:
+        missing = missing_useful_fields(record)
+        if missing:
+            lines.append(
+                "| "
+                + " | ".join(
+                    [
+                        markdown_cell(record.get("journal", "")),
+                        markdown_cell(", ".join(missing)),
+                    ]
+                )
+                + " |"
+            )
+    lines.append("")
+
+
+def missing_useful_fields(record: dict[str, Any]) -> list[str]:
+    missing: list[str] = []
+    if not record.get("scope_tags"):
+        missing.append("scope_tags")
+    if not record.get("article_types"):
+        missing.append("article_types")
+    if not record.get("data_policy", {}).get("summary"):
+        missing.append("data_policy.summary")
+    if not record.get("code_policy", {}).get("summary"):
+        missing.append("code_policy.summary")
+    if not record.get("open_access", {}).get("url"):
+        missing.append("open_access.url")
+    return missing
 
 
 def markdown_cell(value: Any) -> str:
@@ -1174,13 +1233,14 @@ def build_dry_run_report(
     journals_path: Path,
     report_path: Path,
     include_low_confidence: bool = False,
+    verbose: bool = False,
 ) -> dict[str, Any]:
     with journals_path.open("r", encoding="utf-8") as handle:
         records = yaml.safe_load(handle)
     by_journal = {record["journal"]: record for record in records}
     rows: list[dict[str, Any]] = []
     skipped_unknown: list[str] = []
-    skipped_low = 0
+    skipped_low_rows: list[dict[str, Any]] = []
 
     for suggestion in suggestions:
         record = by_journal.get(suggestion["journal"])
@@ -1189,12 +1249,14 @@ def build_dry_run_report(
             continue
         updates = suggestion.get("candidate_updates", {})
         confidence = suggestion.get("confidence", {})
-        for field_name in updates:
+        for field_name, value in updates.items():
             if not confidence_allowed(
                 confidence.get(field_name, ""),
                 include_low_confidence,
             ):
-                skipped_low += 1
+                skipped_low_rows.extend(
+                    collect_skipped_low_rows(record, field_name, value, suggestion)
+                )
         allowed_updates = filter_updates_by_confidence(
             updates,
             confidence,
@@ -1204,23 +1266,34 @@ def build_dry_run_report(
             collect_dry_run_rows(record, allowed_updates, confidence, suggestion)
         )
 
-    applied_count = sum(1 for row in rows if row["action"] == "apply")
-    preserved_count = sum(1 for row in rows if row["action"] == "preserve_existing")
+    visible_rows = [
+        row
+        for row in [*rows, *skipped_low_rows]
+        if verbose or row["action"] != "identical_existing"
+    ]
+    change_count = sum(1 for row in rows if row["action"] == "would_change")
+    identical_count = sum(1 for row in rows if row["action"] == "identical_existing")
+    conflict_count = sum(1 for row in rows if row["action"] == "preserve_conflict")
+    skipped_low_count = len(skipped_low_rows)
     report_path.parent.mkdir(parents=True, exist_ok=True)
     write_dry_run_markdown(
         report_path,
         suggestions_considered=len(suggestions),
-        would_apply=applied_count,
-        skipped_low=skipped_low,
+        would_change=change_count,
+        identical=identical_count,
+        skipped_low=skipped_low_count,
         skipped_unknown=sorted(set(skipped_unknown)),
-        preserved=preserved_count,
-        rows=rows,
+        preserved_conflicts=conflict_count,
+        rows=visible_rows,
+        verbose=verbose,
     )
     return {
-        "would_apply": applied_count,
-        "skipped_low_confidence": skipped_low,
+        "would_apply": change_count,
+        "would_change": change_count,
+        "identical_existing": identical_count,
+        "skipped_low_confidence": skipped_low_count,
         "skipped_unknown": sorted(set(skipped_unknown)),
-        "preserved_existing": preserved_count,
+        "preserved_existing": conflict_count,
         "report": str(report_path),
     }
 
@@ -1247,7 +1320,9 @@ def collect_dry_run_rows(
         }:
             existing = record.setdefault(field_name, [])
             for proposed in value.get("add", []):
-                action = "preserve_existing" if proposed in existing else "apply"
+                action = (
+                    "identical_existing" if proposed in existing else "would_change"
+                )
                 rows.append(
                     dry_run_row(
                         suggestion,
@@ -1264,7 +1339,7 @@ def collect_dry_run_rows(
                 if proposed in {"", None}:
                     continue
                 existing = target.get(key)
-                action = "apply" if is_empty_value(existing) else "preserve_existing"
+                action = action_for_scalar(existing, proposed)
                 rows.append(
                     dry_run_row(
                         suggestion,
@@ -1278,7 +1353,7 @@ def collect_dry_run_rows(
                 )
         elif field_name in record and value:
             existing = record.get(field_name)
-            action = "apply" if is_empty_value(existing) else "preserve_existing"
+            action = action_for_scalar(existing, value)
             rows.append(
                 dry_run_row(
                     suggestion,
@@ -1290,6 +1365,74 @@ def collect_dry_run_rows(
                 )
             )
     return rows
+
+
+def collect_skipped_low_rows(
+    record: dict[str, Any],
+    field_name: str,
+    value: Any,
+    suggestion: dict[str, Any],
+) -> list[dict[str, Any]]:
+    confidence = suggestion.get("confidence", {})
+    rows: list[dict[str, Any]] = []
+    if field_name in {
+        "article_types",
+        "scope_tags",
+        "manuscript_tags",
+        "editorial_notes",
+    }:
+        existing = record.get(field_name, [])
+        for proposed in value.get("add", []):
+            rows.append(
+                dry_run_row(
+                    suggestion,
+                    field_name,
+                    "skipped_low_confidence",
+                    existing,
+                    proposed,
+                    confidence,
+                )
+            )
+    elif field_name in {"data_policy", "code_policy", "open_access"}:
+        target = record.get(field_name, {})
+        for key, proposed in value.items():
+            if proposed in {"", None}:
+                continue
+            rows.append(
+                dry_run_row(
+                    suggestion,
+                    f"{field_name}.{key}",
+                    "skipped_low_confidence",
+                    target.get(key),
+                    proposed,
+                    confidence,
+                    confidence_field=field_name,
+                )
+            )
+    elif field_name in record and value:
+        rows.append(
+            dry_run_row(
+                suggestion,
+                field_name,
+                "skipped_low_confidence",
+                record.get(field_name),
+                value,
+                confidence,
+            )
+        )
+    return rows
+
+
+def action_for_scalar(existing: Any, proposed: Any) -> str:
+    if is_empty_value(existing):
+        return "would_change"
+    if normalise_compare_value(existing) == normalise_compare_value(proposed):
+        return "identical_existing"
+    return "preserve_conflict"
+
+
+def normalise_compare_value(value: Any) -> str:
+    return normalise_whitespace(str(value or ""))
 
 
 def dry_run_row(
@@ -1315,11 +1458,13 @@ def dry_run_row(
 def write_dry_run_markdown(
     path: Path,
     suggestions_considered: int,
-    would_apply: int,
+    would_change: int,
+    identical: int,
     skipped_low: int,
     skipped_unknown: list[str],
-    preserved: int,
+    preserved_conflicts: int,
     rows: list[dict[str, Any]],
+    verbose: bool = False,
 ) -> None:
     lines = [
         "# Manual Apply Dry Run",
@@ -1327,10 +1472,13 @@ def write_dry_run_markdown(
         "## Summary",
         "",
         f"- Suggestions considered: {suggestions_considered}",
-        f"- High-confidence fields that would be applied: {would_apply}",
-        f"- Medium/low-confidence fields skipped: {skipped_low}",
+        f"- Fields that would actually change: {would_change}",
+        f"- Fields already identical: {identical}",
+        "- Fields skipped because existing curated values are non-empty: "
+        f"{preserved_conflicts}",
+        f"- Fields skipped because confidence is too low: {skipped_low}",
         f"- Unknown journals skipped: {len(skipped_unknown)}",
-        f"- Existing non-empty fields preserved: {preserved}",
+        f"- Verbose identical rows shown: {str(verbose).lower()}",
         "",
     ]
     if skipped_unknown:
@@ -1519,6 +1667,7 @@ def process_manual_sources(
     apply_low_confidence: bool = False,
     dry_run: bool = False,
     dry_run_report_path: Path | None = None,
+    verbose: bool = False,
 ) -> tuple[
     list[ManualSource],
     list[ParsedManualSource],
@@ -1531,7 +1680,12 @@ def process_manual_sources(
     suggestions = generate_curation_suggestions(parsed)
     write_suggestions(suggestions, suggestions_path)
     if review_report_path is not None:
-        write_review_report(suggestions, parsed, review_report_path)
+        write_review_report(
+            suggestions,
+            parsed,
+            review_report_path,
+            journals_path=journals_path,
+        )
     apply_result: dict[str, Any] = {
         "applied": 0,
         "skipped_unknown": [],
@@ -1544,6 +1698,7 @@ def process_manual_sources(
             journals_path,
             dry_run_report_path,
             include_low_confidence=apply_low_confidence,
+            verbose=verbose,
         )
         apply_result.update(dry_run_result)
     if apply or dry_run:

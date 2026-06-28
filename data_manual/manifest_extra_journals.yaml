@@ -1,0 +1,67 @@
+manual_sources:
+- journal: ASM Animal Microbiology
+  url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
+  source_type: homepage_or_scope
+  local_file: data_manual/pages/asm_am_art.html
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+- journal: ASM Animal Microbiology
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  target_fields:
+  - open_access
+- journal: ASM Animal Microbiology
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+- journal: Journal of Clinical Microbiology
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/jcm/article-types
+  local_file: data_manual/pages/jcm_art.html
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+- journal: Journal of Clinical Microbiology
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+- journal: Journal of Clinical Microbiology
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  target_fields:
+  - open_access
+- journal: mSphere
+  source_type: author_instructions
+  url: https://journals.asm.org/journal/msphere/article-types
+  local_file: data_manual/pages/msphere_art.html
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes

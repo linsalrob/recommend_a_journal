@@ -2,9 +2,9 @@
 
 ## Summary
 
-- Manifest entries: 54
-- Local files found: 54
-- Local files parsed: 54
+- Manifest entries: 47
+- Local files found: 47
+- Local files parsed: 47
 - Local files missing: 0
 - Local files failed parsing: 0
 - URLs still needing manual download: 18
@@ -35,18 +35,11 @@
 | Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_home.html | 2 |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
-| ASM Animal Microbiology | homepage_or_scope | data_manual/pages/asm_am_art.html | 4 |
-| ASM Animal Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| ASM Animal Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Journal of Virology | homepage_or_scope | data_manual/pages/journal_of_virology_home.html | 2 |
 | Journal of Virology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Journal of Virology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| Journal of Clinical Microbiology | homepage_or_scope | data_manual/pages/jcm_art.html | 2 |
-| Journal of Clinical Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
-| Journal of Clinical Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | Microbiology Spectrum | homepage_or_scope | data_manual/pages/ms_art.html | 2 |
 | mSystems | homepage_or_scope | data_manual/pages/msystems_art.html | 2 |
-| mSphere | author_instructions | data_manual/pages/msphere_art.html | 1 |
 | Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_art.html | 2 |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |

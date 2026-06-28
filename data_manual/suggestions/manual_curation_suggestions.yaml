@@ -355,61 +355,6 @@
   evidence: []
   warnings:
   - Rejected article-type evidence because it looked noisy.
-- journal: ASM Animal Microbiology
-  source_type: homepage_or_scope
-  status: ready_for_review
-  source_url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
-  local_file: data_manual/pages/asm_am_art.html
-  extracted_text_path: ''
-  candidate_updates:
-    homepage_url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
-    aims_scope_url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
-    scope_tags:
-      add:
-      - microbiology
-    editorial_notes:
-      add:
-      - Manual source indicates journal scope includes microbiology.
-  confidence:
-    homepage_url: high
-    aims_scope_url: high
-    scope_tags: high
-    editorial_notes: high
-  evidence:
-  - field: scope_tags
-    snippet: ABOUT ASM ANIMAL MICROBIOLOGY SUBMIT ABOUT ASM ANIMAL MICROBIOLOGY SUBMIT
-  warnings:
-  - Rejected article-type evidence because it looked noisy.
-- journal: ASM Animal Microbiology
-  source_type: apc
-  status: low_confidence
-  source_url: https://journals.asm.org/publication-fees
-  local_file: data_manual/pages/asm_publishing_fees.html
-  extracted_text_path: ''
-  candidate_updates:
-    open_access:
-      model: ''
-      apc: null
-      currency: ''
-      url: https://journals.asm.org/publication-fees
-  confidence:
-    open_access: low
-  evidence: []
-  warnings:
-  - APC amount not extracted confidently.
-- journal: ASM Animal Microbiology
-  source_type: author_instructions
-  status: rejected_noise
-  source_url: https://journals.asm.org/authors
-  local_file: data_manual/pages/asm_authors.html
-  extracted_text_path: ''
-  candidate_updates:
-    author_instructions_url: https://journals.asm.org/authors
-  confidence:
-    author_instructions_url: high
-  evidence: []
-  warnings:
-  - Rejected article-type evidence because it looked noisy.
 - journal: Journal of Virology
   source_type: homepage_or_scope
   status: rejected_noise
@@ -440,52 +385,6 @@
   warnings:
   - Rejected article-type evidence because it looked noisy.
 - journal: Journal of Virology
-  source_type: apc
-  status: low_confidence
-  source_url: https://journals.asm.org/publication-fees
-  local_file: data_manual/pages/asm_publishing_fees.html
-  extracted_text_path: ''
-  candidate_updates:
-    open_access:
-      model: ''
-      apc: null
-      currency: ''
-      url: https://journals.asm.org/publication-fees
-  confidence:
-    open_access: low
-  evidence: []
-  warnings:
-  - APC amount not extracted confidently.
-- journal: Journal of Clinical Microbiology
-  source_type: homepage_or_scope
-  status: rejected_noise
-  source_url: https://journals.asm.org/journal/jcm/article-types
-  local_file: data_manual/pages/jcm_art.html
-  extracted_text_path: ''
-  candidate_updates:
-    homepage_url: https://journals.asm.org/journal/jcm/article-types
-    aims_scope_url: https://journals.asm.org/journal/jcm/article-types
-  confidence:
-    homepage_url: high
-    aims_scope_url: high
-  evidence: []
-  warnings:
-  - Rejected article-type evidence because it looked noisy.
-  - No clean aims/scope/about section found; scope tags omitted.
-- journal: Journal of Clinical Microbiology
-  source_type: author_instructions
-  status: rejected_noise
-  source_url: https://journals.asm.org/authors
-  local_file: data_manual/pages/asm_authors.html
-  extracted_text_path: ''
-  candidate_updates:
-    author_instructions_url: https://journals.asm.org/authors
-  confidence:
-    author_instructions_url: high
-  evidence: []
-  warnings:
-  - Rejected article-type evidence because it looked noisy.
-- journal: Journal of Clinical Microbiology
   source_type: apc
   status: low_confidence
   source_url: https://journals.asm.org/publication-fees
@@ -534,21 +433,6 @@
   warnings:
   - Rejected article-type evidence because it looked noisy.
   - No clean aims/scope/about section found; scope tags omitted.
-- journal: mSphere
-  source_type: author_instructions
-  status: rejected_noise
-  source_url: https://journals.asm.org/journal/msphere/article-types
-  local_file: data_manual/pages/msphere_art.html
-  extracted_text_path: ''
-  candidate_updates:
-    author_instructions_url: https://journals.asm.org/journal/msphere/article-types
-  confidence:
-    author_instructions_url: high
-  evidence: []
-  warnings:
-  - Rejected article-type evidence because it looked noisy.
-  - Rejected data-policy candidate because summary was empty.
-  - Rejected code-policy candidate because summary was empty.
 - journal: Applied and Environmental Microbiology
   source_type: homepage_or_scope
   status: rejected_noise

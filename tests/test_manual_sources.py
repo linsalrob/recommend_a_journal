@@ -370,11 +370,16 @@ def test_review_report_is_generated(tmp_path: Path) -> None:
     ]
     report = tmp_path / "manual_curation_review.md"
 
-    write_review_report(suggestions, [], report)
+    journals = tmp_path / "journals.yaml"
+    write_minimal_journals(journals)
+
+    write_review_report(suggestions, [], report, journals_path=journals)
 
     text = report.read_text(encoding="utf-8")
     assert "# Manual Curation Review" in text
     assert "## URL-only Suggestions" in text
+    assert "## Missing Field Summary" in text
+    assert "safe_to_apply:" in text
     assert "scope_tags" in text
 
 
@@ -430,7 +435,36 @@ def test_dry_run_report_creation_and_no_journal_edit(tmp_path: Path) -> None:
     assert result["would_apply"] == 1
     assert result["skipped_low_confidence"] == 1
     assert "# Manual Apply Dry Run" in report.read_text(encoding="utf-8")
+    assert "Fields that would actually change: 1" in report.read_text(
+        encoding="utf-8"
+    )
     assert journals.read_text(encoding="utf-8") == before
+
+
+def test_dry_run_suppresses_identical_preserves_by_default(tmp_path: Path) -> None:
+    journals = tmp_path / "journals.yaml"
+    write_minimal_journals(journals)
+    suggestions = [
+        {
+            "journal": "Example Journal",
+            "source_type": "homepage_or_scope",
+            "source_url": "https://example.org",
+            "local_file": "manual.html",
+            "candidate_updates": {
+                "article_types": {"add": ["Research Article"]},
+                "homepage_url": "https://example.org",
+            },
+            "confidence": {"article_types": "high", "homepage_url": "high"},
+        }
+    ]
+    report = tmp_path / "dry_run.md"
+
+    build_dry_run_report(suggestions, journals, report)
+
+    text = report.read_text(encoding="utf-8")
+    assert "Fields already identical: 1" in text
+    assert "Research Article" not in text
+    assert "homepage_url" in text
 
 
 def test_process_manual_sources_dry_run_does_not_edit_journals(tmp_path: Path) -> None:

@@ -116,6 +116,7 @@ def build_parser() -> argparse.ArgumentParser:
     manual_parser.add_argument("--apply", action="store_true")
     manual_parser.add_argument("--apply-low-confidence", action="store_true")
     manual_parser.add_argument("--dry-run", action="store_true")
+    manual_parser.add_argument("--verbose", action="store_true")
     manual_parser.add_argument("--strict", action="store_true")
     manual_parser.add_argument("--text-out-dir", type=Path)
     manual_parser.add_argument("--report", default=DEFAULT_REPORT_PATH, type=Path)
@@ -206,6 +207,7 @@ def main(argv: list[str] | None = None) -> int:
                 apply_low_confidence=args.apply_low_confidence,
                 dry_run=args.dry_run,
                 dry_run_report_path=args.dry_run_report,
+                verbose=args.verbose,
             )
             queue = generate_manual_download_queue(
                 manifest_sources=sources,
