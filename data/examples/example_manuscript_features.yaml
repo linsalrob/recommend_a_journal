@@ -1,0 +1,35 @@
+title: "Synthetic microbiome manuscript feature example"
+abstract: "Synthetic example only. This file mirrors the microbiome cohort example for CLI demonstrations."
+central_claim: "A host-associated microbiome cohort shows reproducible metagenomic signatures."
+field:
+  - microbiome
+  - metagenomics
+organisms:
+  - human gut microbiota
+sample_type:
+  - stool
+data_types:
+  - shotgun metagenomics
+methods:
+  - cohort analysis
+study_type: cohort_study
+novelty_type:
+  - clinical_cohort
+mechanistic_depth: moderate
+cohort_size: 200
+validation:
+  wet_lab: false
+  computational: true
+  independent_dataset: true
+code_available: true
+data_available: true
+clinical_relevance: clinical
+ecological_relevance: host-associated microbiome
+bioinformatics_method_novelty: ""
+likely_article_type: research article
+editorial_risks: []
+constraints:
+  open_access_required: null
+  max_apc: null
+  preferred_audience: specialist_audience
+  avoid_publishers: []

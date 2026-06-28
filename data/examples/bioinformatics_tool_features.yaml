@@ -1,0 +1,41 @@
+title: "Synthetic benchmarked workflow for microbial genome bin quality assessment"
+abstract: "Synthetic example only. A reusable command-line tool benchmarks microbial genome bin quality across simulated and public datasets."
+central_claim: "A validated open-source workflow improves microbial genomics quality control and reporting."
+field:
+  - bioinformatics
+  - microbial_genomics
+organisms:
+  - bacteria
+  - archaea
+sample_type:
+  - public genomes
+data_types:
+  - microbial_genomics
+  - metagenome_assembled_genomes
+methods:
+  - software_tool
+  - benchmark
+  - machine_learning
+study_type: methods_paper
+novelty_type:
+  - software_tool
+  - benchmark
+mechanistic_depth: not_applicable
+cohort_size: null
+validation:
+  wet_lab: false
+  computational: true
+  independent_dataset: true
+code_available: true
+data_available: true
+clinical_relevance: ""
+ecological_relevance: ""
+bioinformatics_method_novelty: software_tool
+likely_article_type: software_tool
+editorial_risks:
+  - Biological discovery is secondary to method validation.
+constraints:
+  open_access_required: null
+  max_apc: null
+  preferred_audience: specialist_audience
+  avoid_publishers: []

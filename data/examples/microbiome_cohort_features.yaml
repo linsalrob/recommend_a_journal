@@ -1,0 +1,42 @@
+title: "Synthetic gut microbiome cohort identifies reproducible multi-omic disease signatures"
+abstract: "Synthetic example only. A multi-site cohort study profiles gut metagenomes and metatranscriptomes with independent validation."
+central_claim: "Host-associated microbiome multi-omics identifies reproducible disease-associated functional shifts."
+field:
+  - microbiome
+  - metagenomics
+  - host_microbe_interactions
+organisms:
+  - human gut microbiota
+sample_type:
+  - stool
+data_types:
+  - shotgun metagenomics
+  - metatranscriptomics
+  - multi_omics
+methods:
+  - differential abundance
+  - functional profiling
+  - cohort analysis
+study_type: cohort_study
+novelty_type:
+  - clinical_cohort
+  - multi_omics
+mechanistic_depth: moderate
+cohort_size: 420
+validation:
+  wet_lab: false
+  computational: true
+  independent_dataset: true
+code_available: true
+data_available: true
+clinical_relevance: clinical
+ecological_relevance: host-associated microbiome
+bioinformatics_method_novelty: ""
+likely_article_type: research article
+editorial_risks:
+  - Mechanistic validation is limited.
+constraints:
+  open_access_required: null
+  max_apc: null
+  preferred_audience: specialist_audience
+  avoid_publishers: []

@@ -1,0 +1,41 @@
+title: "Synthetic comparative genomics of bacteriophages from wastewater metagenomes"
+abstract: "Synthetic example only. The study reconstructs phage genomes from wastewater metagenomes and compares host range and evolutionary structure."
+central_claim: "Wastewater viromes contain diverse bacteriophage lineages with distinct host-associated genome features."
+field:
+  - viromics
+  - phage_biology
+  - microbial_genomics
+organisms:
+  - bacteriophage
+sample_type:
+  - wastewater
+data_types:
+  - viromics
+  - metagenomics
+  - phage_genomics
+methods:
+  - comparative genomics
+  - metagenome assembly
+study_type: descriptive_study
+novelty_type:
+  - phage_genomics
+  - genome_resource
+mechanistic_depth: low
+cohort_size: null
+validation:
+  wet_lab: false
+  computational: true
+  independent_dataset: false
+code_available: true
+data_available: true
+clinical_relevance: ""
+ecological_relevance: environmental virome
+bioinformatics_method_novelty: ""
+likely_article_type: research article
+editorial_risks:
+  - Host-range predictions are computational only.
+constraints:
+  open_access_required: null
+  max_apc: null
+  preferred_audience: specialist_audience
+  avoid_publishers: []
