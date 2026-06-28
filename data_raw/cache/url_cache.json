@@ -1,6 +1,6 @@
 {
   "https://academic.oup.com/bib": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -8,7 +8,7 @@
     "url": "https://academic.oup.com/bib"
   },
   "https://academic.oup.com/bioinformatics": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -16,7 +16,7 @@
     "url": "https://academic.oup.com/bioinformatics"
   },
   "https://academic.oup.com/femsec": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -24,7 +24,7 @@
     "url": "https://academic.oup.com/femsec"
   },
   "https://academic.oup.com/gigascience": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -32,7 +32,7 @@
     "url": "https://academic.oup.com/gigascience"
   },
   "https://academic.oup.com/nargab": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -40,7 +40,7 @@
     "url": "https://academic.oup.com/nargab"
   },
   "https://academic.oup.com/ve": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -50,22 +50,23 @@
   "https://bmcbioinformatics.biomedcentral.com/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "985c7a30761511c2d58eba50fc15001bbb69db2a10e128adf22f5be490c38072",
-    "content_length": 217372,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/a4947e030ff397fd814b96f23a41e648f8a0bcb11ca942ff49f638deb61376c0.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"6ce79ed3694aee8340b305ec6851e628\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 5350,
+    "text_length": 303,
     "url": "https://bmcbioinformatics.biomedcentral.com/"
   },
   "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -75,18 +76,19 @@
   "https://environmentalmicrobiome.biomedcentral.com/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "0ef4357025cf0f3d773106e2515621346ad3cb95d10c462c655c656086982586",
-    "content_length": 225898,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/47c6b68be658ac26a4da405157cc4dc7a9cfd1a456337da177f763580a3a69a4.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"862e2c6c798ac4c62fd5bb88be3845be\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 6487,
+    "text_length": 303,
     "url": "https://environmentalmicrobiome.biomedcentral.com/"
   },
   "https://genome.cshlp.org/": {
@@ -100,22 +102,23 @@
   "https://genomebiology.biomedcentral.com/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "75514be259971483e59d8346c6a938d2f0ea0e10fd0216985b96975923c8e13e",
-    "content_length": 216396,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/bfbd39dd2f8de0adf92c4abf3aa4225323d64a4e11fb10fe240b2d7cd5d96bd7.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"062537bc2dcb0fcdb22e8019f6f60fe8\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 5743,
+    "text_length": 303,
     "url": "https://genomebiology.biomedcentral.com/"
   },
   "https://journals.asm.org/authors": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -123,7 +126,7 @@
     "url": "https://journals.asm.org/authors"
   },
   "https://journals.asm.org/data-policy": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -131,7 +134,7 @@
     "url": "https://journals.asm.org/data-policy"
   },
   "https://journals.asm.org/journal/aem": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -139,7 +142,7 @@
     "url": "https://journals.asm.org/journal/aem"
   },
   "https://journals.asm.org/journal/jvi": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -147,7 +150,7 @@
     "url": "https://journals.asm.org/journal/jvi"
   },
   "https://journals.asm.org/journal/jvi/about": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -155,7 +158,7 @@
     "url": "https://journals.asm.org/journal/jvi/about"
   },
   "https://journals.asm.org/journal/mbio": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -163,7 +166,7 @@
     "url": "https://journals.asm.org/journal/mbio"
   },
   "https://journals.asm.org/journal/msystems": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -171,7 +174,7 @@
     "url": "https://journals.asm.org/journal/msystems"
   },
   "https://journals.asm.org/journal/spectrum": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -179,7 +182,7 @@
     "url": "https://journals.asm.org/journal/spectrum"
   },
   "https://journals.asm.org/publishing-fees": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -189,8 +192,8 @@
   "https://journals.plos.org/ploscompbiol/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "f5a09619ffd2117bfbdbfc0fbf6ce0ef9c36804cf3515a6cf24705cabc0e26ac",
-    "content_length": 73434,
+    "content_hash": "5326ba5a998cefdb2bd68decf4a30d5a51f0ebef0527e406586effe647c2473d",
+    "content_length": 73022,
     "content_path": "data_raw/cache/pages/2c391714bd3ab1ac2056d75d870db5ad30fdf3020bfa2a5c7858385920ac6e2a.html",
     "content_quality_flags": [
       "looks_valid"
@@ -200,30 +203,31 @@
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 8677,
+    "text_length": 8317,
     "url": "https://journals.plos.org/ploscompbiol/"
   },
   "https://microbiomejournal.biomedcentral.com/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "062b3cac360868020fd0fc072fd632dfe7eca9be90d17afc2c3ec7aa37815c63",
-    "content_length": 226568,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/a030d2b1c185072c999fce614b4bd7714638441969462c18ccc56e5a88f46b45.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"0b1f1f76c352b8f41a8e80edd14d1d84\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 6037,
+    "text_length": 303,
     "url": "https://microbiomejournal.biomedcentral.com/"
   },
   "https://peerj.com/about/author-instructions/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "6a7a1a6b123c59a9ea45bf95d807b360aec7d20db31d06340158b5a772d04795",
+    "content_hash": "39758aff0a40520ed8bba3bf905f5663ab42a10ef4b163509aa90e5d9559b5c3",
     "content_length": 132228,
     "content_path": "data_raw/cache/pages/c0baff90da84f9f15dc99db5d0aaa14135dd535d2583938f3100701b19f72c67.html",
     "content_quality_flags": [
@@ -232,7 +236,7 @@
     "error": "",
     "etag": "",
     "last_checked": "2026-06-28",
-    "last_modified": "Sun, 28 Jun 2026 15:54:59 GMT",
+    "last_modified": "Sun, 28 Jun 2026 16:06:59 GMT",
     "status_code": 200,
     "text_length": 29768,
     "url": "https://peerj.com/about/author-instructions/"
@@ -257,7 +261,7 @@
   "https://peerj.com/pricing/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "9264bcebfcbcea3bf2c48aeedca0dfb77f57598f9282afd62c44f58df1e0d426",
+    "content_hash": "41dbf1a16c8a623cc334ef341fd95eb951d91f820d61a6ffe3c93ba3d351011e",
     "content_length": 35058,
     "content_path": "data_raw/cache/pages/c3ffa49c8887753069c5723ef895a6363ee28d0f13eb1d07824c68b80748ddea.html",
     "content_quality_flags": [
@@ -1139,7 +1143,7 @@
     "url": "https://portal.issn.org/resource/ISSN/2730-6151"
   },
   "https://www.cell.com/cell-host-microbe/home": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1147,7 +1151,7 @@
     "url": "https://www.cell.com/cell-host-microbe/home"
   },
   "https://www.cell.com/cell/home": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1155,7 +1159,7 @@
     "url": "https://www.cell.com/cell/home"
   },
   "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1163,7 +1167,7 @@
     "url": "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
   },
   "https://www.elsevier.com/journals/virology/0042-6822/open-access-options": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1171,7 +1175,7 @@
     "url": "https://www.elsevier.com/journals/virology/0042-6822/open-access-options"
   },
   "https://www.liebertpub.com/journal/phage": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1179,7 +1183,7 @@
     "url": "https://www.liebertpub.com/journal/phage"
   },
   "https://www.mdpi.com/ethics": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1187,7 +1191,7 @@
     "url": "https://www.mdpi.com/ethics"
   },
   "https://www.mdpi.com/journal/viruses": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1195,7 +1199,7 @@
     "url": "https://www.mdpi.com/journal/viruses"
   },
   "https://www.mdpi.com/journal/viruses/about": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1203,7 +1207,7 @@
     "url": "https://www.mdpi.com/journal/viruses/about"
   },
   "https://www.mdpi.com/journal/viruses/apc": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1211,7 +1215,7 @@
     "url": "https://www.mdpi.com/journal/viruses/apc"
   },
   "https://www.mdpi.com/journal/viruses/instructions": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1219,7 +1223,7 @@
     "url": "https://www.mdpi.com/journal/viruses/instructions"
   },
   "https://www.microbiologyresearch.org/content/journal/mgen": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1229,124 +1233,131 @@
   "https://www.nature.com/ismecomms/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "5936ff5d0d138ec6d9e08d1fdfd08725aed4c615dcb31f12351d72914225d20d",
-    "content_length": 127131,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/1da6ed7fadeb042b5948f8b7d4c0cfe6af08f408bc2318d96da07cb78578bd4b.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"d2ca2ac4966050134d8ecbd9b4e53723\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 3853,
+    "text_length": 303,
     "url": "https://www.nature.com/ismecomms/"
   },
   "https://www.nature.com/ismej/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "df214a2c388095afaea69b9faff76ec47319fa5420f9b10a15f2af7b4124b92e",
-    "content_length": 132320,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/c1328968b9d97ae0287d4463784d35380914442e7db7e0c153447b78826383c9.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"dc5825e93db9fccb54765b0c3c5572b8\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 4209,
+    "text_length": 303,
     "url": "https://www.nature.com/ismej/"
   },
   "https://www.nature.com/nature/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "514b8c9ae7387ae24bf1c1576d252f73b8108540e185e4938a59db3b28dea48c",
-    "content_length": 223653,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/b2909e3d8c157544d30dd92380e5b63437df64bc50bba4dce97eb68be04e388b.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"05daa1fe05ea033a954f14bf461517d0\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 9754,
+    "text_length": 303,
     "url": "https://www.nature.com/nature/"
   },
   "https://www.nature.com/nbt/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "0de31583596295a6ebacd0478b4bc08fbddc4d4fcc50f31930f5e76181d2d9c9",
-    "content_length": 231275,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/abccb93327230b5b07c6176275f1c126e1e2a47d6b967ffc36fac9b95e5a9260.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"b8560ac6b38d90f3cc4fd340a4cb82d1\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 11555,
+    "text_length": 303,
     "url": "https://www.nature.com/nbt/"
   },
   "https://www.nature.com/ncomms/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "217cd66e9f90d9a0b6f64330253945c2dc8bad6c2aa66317e598350b4baa66c5",
-    "content_length": 308532,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/3c1ddffa65450e4f4f4cbba7bb9bd128bd823ac9badff83c0d8b891e7e2707c2.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"b1facce4497da0354e0aa07a6cdfd371\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 24659,
+    "text_length": 303,
     "url": "https://www.nature.com/ncomms/"
   },
   "https://www.nature.com/nmeth/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "efb2184b69301345d2d11f872755f9e271758c82cf0e577403dc8cbf618d0ad8",
-    "content_length": 246508,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/f52060b71a464eda622e0c6d5c34e518b58cceaa4f756b4cfb53a5135dc5fcdc.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"285cbd60457e02b1f9fe37c8bd6a6249\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 13971,
+    "text_length": 303,
     "url": "https://www.nature.com/nmeth/"
   },
   "https://www.nature.com/nmicrobiol/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "1420e139f4deca017b13f4379063daf9a40048d1cbbe525128250741505c76ab",
-    "content_length": 248034,
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_length": 3038,
     "content_path": "data_raw/cache/pages/a9e98cae3e87c54b0cd676d2ef0dafc4f36d99df15811c04d0fb24192fa7ec51.html",
     "content_quality_flags": [
-      "looks_valid"
+      "looks_valid",
+      "duplicate_hash_across_many_urls"
     ],
     "error": "",
-    "etag": "W/\"6d379da1c3f7d4f7cb92b0d57d7880d5\"",
+    "etag": "",
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 14899,
+    "text_length": 303,
     "url": "https://www.nature.com/nmicrobiol/"
   },
   "https://www.pnas.org/": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1354,7 +1365,7 @@
     "url": "https://www.pnas.org/"
   },
   "https://www.science.org/journal/sciadv": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1362,7 +1373,7 @@
     "url": "https://www.science.org/journal/sciadv"
   },
   "https://www.science.org/journal/science": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1370,7 +1381,7 @@
     "url": "https://www.science.org/journal/science"
   },
   "https://www.sciencedirect.com/journal/virology": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
@@ -1378,7 +1389,7 @@
     "url": "https://www.sciencedirect.com/journal/virology"
   },
   "https://www.sciencedirect.com/journal/virology/about/aims-and-scope": {
-    "blocked_count": 3,
+    "blocked_count": 4,
     "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
