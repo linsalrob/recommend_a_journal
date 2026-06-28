@@ -15,6 +15,12 @@ requests where servers provide `ETag` or `Last-Modified`, waits between
 publisher-page requests, and treats blocking or temporary server failures as
 reportable events rather than hard failures.
 
+Fetched pages are classified for basic quality. Empty pages, very short pages,
+generic error pages, bot challenges, consent/redirect pages, and identical
+content hashes across three or more unrelated URLs are reported as suspicious.
+Do not use suspicious fetched content as evidence for APCs, scope summaries, or
+policy updates.
+
 To run it locally:
 
 ```bash
@@ -32,12 +38,26 @@ mean the publisher page content hash changed; they do not mean the curated YAML
 should be updated automatically. Open the official source page, confirm the
 changed fact, then update the relevant structured field and `source_evidence`.
 
+HTTP 403 and 429 responses are reported as blocked. If a URL blocks automated
+checks for repeated runs, the report recommends manual curation. Do not attempt
+to bypass publisher protections.
+
 ## APC Sources
 
 Prefer official journal APC pages, publisher open-access pages, or curated URLs
 already present in `open_access.url`. Do not copy APCs from unofficial metric or
 aggregator sites. If the report lists an APC as needing review, verify the
 amount, currency, source URL, and access date before editing `data/journals.yaml`.
+The updater will not parse APCs from blocked, failed, or suspicious pages.
+
+## ISSNs And Crossref
+
+Prefer official journal pages, ISSN Portal, NLM Catalog, Crossref, or publisher
+bibliographic pages for ISSNs. Add only print or online ISSNs that can be
+confidently sourced; leave uncertain values blank. Crossref lookup uses ISSN
+first. If no ISSN is present, exact normalized title matching can produce a
+report note, but weak matches are marked `needs_review` and must not overwrite
+curated fields.
 
 ## Skipping Blocked URLs
 

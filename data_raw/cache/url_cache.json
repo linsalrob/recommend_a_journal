@@ -1,287 +1,791 @@
 {
   "https://academic.oup.com/bib": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://academic.oup.com/bib"
   },
   "https://academic.oup.com/bioinformatics": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://academic.oup.com/bioinformatics"
   },
   "https://academic.oup.com/femsec": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://academic.oup.com/femsec"
   },
   "https://academic.oup.com/gigascience": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://academic.oup.com/gigascience"
   },
   "https://academic.oup.com/nargab": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://academic.oup.com/nargab"
   },
   "https://academic.oup.com/ve": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://academic.oup.com/ve"
   },
   "https://bmcbioinformatics.biomedcentral.com/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://bmcbioinformatics.biomedcentral.com/"
   },
   "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920"
   },
   "https://environmentalmicrobiome.biomedcentral.com/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://environmentalmicrobiome.biomedcentral.com/"
   },
   "https://genome.cshlp.org/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://genome.cshlp.org/"
   },
   "https://genomebiology.biomedcentral.com/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://genomebiology.biomedcentral.com/"
   },
   "https://journals.asm.org/authors": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/authors"
   },
   "https://journals.asm.org/data-policy": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/data-policy"
   },
   "https://journals.asm.org/journal/aem": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/journal/aem"
   },
   "https://journals.asm.org/journal/jvi": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/journal/jvi"
   },
   "https://journals.asm.org/journal/jvi/about": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/journal/jvi/about"
   },
   "https://journals.asm.org/journal/mbio": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/journal/mbio"
   },
   "https://journals.asm.org/journal/msystems": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/journal/msystems"
   },
   "https://journals.asm.org/journal/spectrum": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/journal/spectrum"
   },
   "https://journals.asm.org/publishing-fees": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.asm.org/publishing-fees"
   },
   "https://journals.plos.org/ploscompbiol/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://journals.plos.org/ploscompbiol/"
   },
   "https://microbiomejournal.biomedcentral.com/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://microbiomejournal.biomedcentral.com/"
   },
   "https://peerj.com/about/author-instructions/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://peerj.com/about/author-instructions/"
   },
   "https://peerj.com/computer-science/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://peerj.com/computer-science/"
   },
   "https://peerj.com/pricing/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://peerj.com/pricing/"
   },
+  "https://portal.issn.org/resource/ISSN/0022-538X": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/0022-538X"
+  },
+  "https://portal.issn.org/resource/ISSN/0027-8424": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/0027-8424"
+  },
+  "https://portal.issn.org/resource/ISSN/0028-0836": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/0028-0836"
+  },
+  "https://portal.issn.org/resource/ISSN/0036-8075": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/0036-8075"
+  },
+  "https://portal.issn.org/resource/ISSN/0042-6822": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/0042-6822"
+  },
+  "https://portal.issn.org/resource/ISSN/0092-8674": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/0092-8674"
+  },
+  "https://portal.issn.org/resource/ISSN/0099-2240": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/0099-2240"
+  },
+  "https://portal.issn.org/resource/ISSN/0168-6496": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/0168-6496"
+  },
+  "https://portal.issn.org/resource/ISSN/1087-0156": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1087-0156"
+  },
+  "https://portal.issn.org/resource/ISSN/1088-9051": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1088-9051"
+  },
+  "https://portal.issn.org/resource/ISSN/1091-6490": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1091-6490"
+  },
+  "https://portal.issn.org/resource/ISSN/1095-9203": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1095-9203"
+  },
+  "https://portal.issn.org/resource/ISSN/1096-0341": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1096-0341"
+  },
+  "https://portal.issn.org/resource/ISSN/1097-4172": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1097-4172"
+  },
+  "https://portal.issn.org/resource/ISSN/1098-5336": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1098-5336"
+  },
+  "https://portal.issn.org/resource/ISSN/1098-5514": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1098-5514"
+  },
+  "https://portal.issn.org/resource/ISSN/1367-4803": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1367-4803"
+  },
+  "https://portal.issn.org/resource/ISSN/1460-2059": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1460-2059"
+  },
+  "https://portal.issn.org/resource/ISSN/1462-2912": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1462-2912"
+  },
+  "https://portal.issn.org/resource/ISSN/1462-2920": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1462-2920"
+  },
+  "https://portal.issn.org/resource/ISSN/1467-5463": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1467-5463"
+  },
+  "https://portal.issn.org/resource/ISSN/1471-2105": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1471-2105"
+  },
+  "https://portal.issn.org/resource/ISSN/1474-7596": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1474-7596"
+  },
+  "https://portal.issn.org/resource/ISSN/1474-760X": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1474-760X"
+  },
+  "https://portal.issn.org/resource/ISSN/1476-4687": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1476-4687"
+  },
+  "https://portal.issn.org/resource/ISSN/1477-4054": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1477-4054"
+  },
+  "https://portal.issn.org/resource/ISSN/1546-1696": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1546-1696"
+  },
+  "https://portal.issn.org/resource/ISSN/1548-7091": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1548-7091"
+  },
+  "https://portal.issn.org/resource/ISSN/1548-7105": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1548-7105"
+  },
+  "https://portal.issn.org/resource/ISSN/1549-5469": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1549-5469"
+  },
+  "https://portal.issn.org/resource/ISSN/1553-734X": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1553-734X"
+  },
+  "https://portal.issn.org/resource/ISSN/1553-7358": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1553-7358"
+  },
+  "https://portal.issn.org/resource/ISSN/1574-6941": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1574-6941"
+  },
+  "https://portal.issn.org/resource/ISSN/1751-7362": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1751-7362"
+  },
+  "https://portal.issn.org/resource/ISSN/1751-7370": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1751-7370"
+  },
+  "https://portal.issn.org/resource/ISSN/1931-3128": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1931-3128"
+  },
+  "https://portal.issn.org/resource/ISSN/1934-6069": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1934-6069"
+  },
+  "https://portal.issn.org/resource/ISSN/1999-4915": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/1999-4915"
+  },
+  "https://portal.issn.org/resource/ISSN/2041-1723": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2041-1723"
+  },
+  "https://portal.issn.org/resource/ISSN/2047-217X": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2047-217X"
+  },
+  "https://portal.issn.org/resource/ISSN/2049-2618": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2049-2618"
+  },
+  "https://portal.issn.org/resource/ISSN/2057-1577": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2057-1577"
+  },
+  "https://portal.issn.org/resource/ISSN/2057-5858": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2057-5858"
+  },
+  "https://portal.issn.org/resource/ISSN/2058-5276": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2058-5276"
+  },
+  "https://portal.issn.org/resource/ISSN/2150-7511": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2150-7511"
+  },
+  "https://portal.issn.org/resource/ISSN/2165-0497": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2165-0497"
+  },
+  "https://portal.issn.org/resource/ISSN/2375-2548": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2375-2548"
+  },
+  "https://portal.issn.org/resource/ISSN/2376-5992": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2376-5992"
+  },
+  "https://portal.issn.org/resource/ISSN/2379-5077": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2379-5077"
+  },
+  "https://portal.issn.org/resource/ISSN/2631-9268": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2631-9268"
+  },
+  "https://portal.issn.org/resource/ISSN/2730-6151": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "last_checked": "2026-06-28",
+    "status_code": null,
+    "url": "https://portal.issn.org/resource/ISSN/2730-6151"
+  },
   "https://www.cell.com/cell-host-microbe/home": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.cell.com/cell-host-microbe/home"
   },
   "https://www.cell.com/cell/home": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.cell.com/cell/home"
   },
   "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
   },
   "https://www.elsevier.com/journals/virology/0042-6822/open-access-options": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.elsevier.com/journals/virology/0042-6822/open-access-options"
   },
   "https://www.liebertpub.com/journal/phage": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.liebertpub.com/journal/phage"
   },
   "https://www.mdpi.com/ethics": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.mdpi.com/ethics"
   },
   "https://www.mdpi.com/journal/viruses": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.mdpi.com/journal/viruses"
   },
   "https://www.mdpi.com/journal/viruses/about": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.mdpi.com/journal/viruses/about"
   },
   "https://www.mdpi.com/journal/viruses/apc": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.mdpi.com/journal/viruses/apc"
   },
   "https://www.mdpi.com/journal/viruses/instructions": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.mdpi.com/journal/viruses/instructions"
   },
   "https://www.microbiologyresearch.org/content/journal/mgen": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.microbiologyresearch.org/content/journal/mgen"
   },
   "https://www.nature.com/ismecomms/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.nature.com/ismecomms/"
   },
   "https://www.nature.com/ismej/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.nature.com/ismej/"
   },
   "https://www.nature.com/nature/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.nature.com/nature/"
   },
   "https://www.nature.com/nbt/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.nature.com/nbt/"
   },
   "https://www.nature.com/ncomms/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.nature.com/ncomms/"
   },
   "https://www.nature.com/nmeth/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.nature.com/nmeth/"
   },
   "https://www.nature.com/nmicrobiol/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.nature.com/nmicrobiol/"
   },
   "https://www.pnas.org/": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.pnas.org/"
   },
   "https://www.science.org/journal/sciadv": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.science.org/journal/sciadv"
   },
   "https://www.science.org/journal/science": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.science.org/journal/science"
   },
   "https://www.sciencedirect.com/journal/virology": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,
     "url": "https://www.sciencedirect.com/journal/virology"
   },
   "https://www.sciencedirect.com/journal/virology/about/aims-and-scope": {
+    "blocked_count": 0,
+    "blocked_repeatedly": false,
     "error": "[Errno -3] Temporary failure in name resolution",
     "last_checked": "2026-06-28",
     "status_code": null,

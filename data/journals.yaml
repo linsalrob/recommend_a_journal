@@ -1,1487 +1,1694 @@
-- journal: "Nature"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+- journal: Nature
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.nature.com/nature/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 0028-0836
+    online: 1476-4687
+  homepage_url: https://www.nature.com/nature/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.nature.com/nature/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Science"
-  abbreviated_title: ""
-  publisher: "American Association for the Advancement of Science"
+  - label: Homepage
+    url: https://www.nature.com/nature/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/0028-0836
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 0028-0836.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1476-4687
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1476-4687.
+  last_checked: '2026-06-28'
+- journal: Science
+  abbreviated_title: ''
+  publisher: American Association for the Advancement of Science
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.science.org/journal/science"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 0036-8075
+    online: 1095-9203
+  homepage_url: https://www.science.org/journal/science
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.science.org/journal/science"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Cell"
-  abbreviated_title: ""
-  publisher: "Cell Press"
+  - label: Homepage
+    url: https://www.science.org/journal/science
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/0036-8075
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 0036-8075.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1095-9203
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1095-9203.
+  last_checked: '2026-06-28'
+- journal: Cell
+  abbreviated_title: ''
+  publisher: Cell Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.cell.com/cell/home"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 0092-8674
+    online: 1097-4172
+  homepage_url: https://www.cell.com/cell/home
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.cell.com/cell/home"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Nature Microbiology"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://www.cell.com/cell/home
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/0092-8674
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 0092-8674.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1097-4172
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1097-4172.
+  last_checked: '2026-06-28'
+- journal: Nature Microbiology
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.nature.com/nmicrobiol/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2058-5276
+  homepage_url: https://www.nature.com/nmicrobiol/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.nature.com/nmicrobiol/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Nature Biotechnology"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://www.nature.com/nmicrobiol/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2058-5276
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2058-5276.
+  last_checked: '2026-06-28'
+- journal: Nature Biotechnology
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.nature.com/nbt/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1087-0156
+    online: 1546-1696
+  homepage_url: https://www.nature.com/nbt/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.nature.com/nbt/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Nature Methods"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://www.nature.com/nbt/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1087-0156
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1087-0156.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1546-1696
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1546-1696.
+  last_checked: '2026-06-28'
+- journal: Nature Methods
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.nature.com/nmeth/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1548-7091
+    online: 1548-7105
+  homepage_url: https://www.nature.com/nmeth/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.nature.com/nmeth/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Nature Communications"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://www.nature.com/nmeth/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1548-7091
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1548-7091.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1548-7105
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1548-7105.
+  last_checked: '2026-06-28'
+- journal: Nature Communications
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.nature.com/ncomms/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2041-1723
+  homepage_url: https://www.nature.com/ncomms/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.nature.com/ncomms/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Science Advances"
-  abbreviated_title: ""
-  publisher: "American Association for the Advancement of Science"
+  - label: Homepage
+    url: https://www.nature.com/ncomms/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2041-1723
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2041-1723.
+  last_checked: '2026-06-28'
+- journal: Science Advances
+  abbreviated_title: ''
+  publisher: American Association for the Advancement of Science
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.science.org/journal/sciadv"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2375-2548
+  homepage_url: https://www.science.org/journal/sciadv
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.science.org/journal/sciadv"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Cell Host & Microbe"
-  abbreviated_title: ""
-  publisher: "Cell Press"
+  - label: Homepage
+    url: https://www.science.org/journal/sciadv
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2375-2548
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2375-2548.
+  last_checked: '2026-06-28'
+- journal: Cell Host & Microbe
+  abbreviated_title: ''
+  publisher: Cell Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.cell.com/cell-host-microbe/home"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1931-3128
+    online: 1934-6069
+  homepage_url: https://www.cell.com/cell-host-microbe/home
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.cell.com/cell-host-microbe/home"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Genome Biology"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://www.cell.com/cell-host-microbe/home
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1931-3128
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1931-3128.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1934-6069
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1934-6069.
+  last_checked: '2026-06-28'
+- journal: Genome Biology
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://genomebiology.biomedcentral.com/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1474-7596
+    online: 1474-760X
+  homepage_url: https://genomebiology.biomedcentral.com/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://genomebiology.biomedcentral.com/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Genome Research"
-  abbreviated_title: ""
-  publisher: "Cold Spring Harbor Laboratory Press"
+  - label: Homepage
+    url: https://genomebiology.biomedcentral.com/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1474-7596
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1474-7596.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1474-760X
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1474-760X.
+  last_checked: '2026-06-28'
+- journal: Genome Research
+  abbreviated_title: ''
+  publisher: Cold Spring Harbor Laboratory Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://genome.cshlp.org/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1088-9051
+    online: 1549-5469
+  homepage_url: https://genome.cshlp.org/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://genome.cshlp.org/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "PNAS"
-  abbreviated_title: ""
-  publisher: "National Academy of Sciences"
+  - label: Homepage
+    url: https://genome.cshlp.org/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1088-9051
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1088-9051.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1549-5469
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1549-5469.
+  last_checked: '2026-06-28'
+- journal: PNAS
+  abbreviated_title: ''
+  publisher: National Academy of Sciences
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.pnas.org/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 0027-8424
+    online: 1091-6490
+  homepage_url: https://www.pnas.org/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.pnas.org/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Microbiome"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://www.pnas.org/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/0027-8424
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 0027-8424.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1091-6490
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1091-6490.
+  last_checked: '2026-06-28'
+- journal: Microbiome
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://microbiomejournal.biomedcentral.com/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2049-2618
+  homepage_url: https://microbiomejournal.biomedcentral.com/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://microbiomejournal.biomedcentral.com/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "ISME Journal"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://microbiomejournal.biomedcentral.com/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2049-2618
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2049-2618.
+  last_checked: '2026-06-28'
+- journal: ISME Journal
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.nature.com/ismej/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1751-7362
+    online: 1751-7370
+  homepage_url: https://www.nature.com/ismej/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.nature.com/ismej/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "ISME Communications"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://www.nature.com/ismej/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1751-7362
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1751-7362.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1751-7370
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1751-7370.
+  last_checked: '2026-06-28'
+- journal: ISME Communications
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.nature.com/ismecomms/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2730-6151
+  homepage_url: https://www.nature.com/ismecomms/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.nature.com/ismecomms/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "mBio"
-  abbreviated_title: ""
-  publisher: "American Society for Microbiology"
+  - label: Homepage
+    url: https://www.nature.com/ismecomms/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2730-6151
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2730-6151.
+  last_checked: '2026-06-28'
+- journal: mBio
+  abbreviated_title: ''
+  publisher: American Society for Microbiology
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://journals.asm.org/journal/mbio"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2150-7511
+  homepage_url: https://journals.asm.org/journal/mbio
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://journals.asm.org/journal/mbio"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "mSystems"
-  abbreviated_title: ""
-  publisher: "American Society for Microbiology"
+  - label: Homepage
+    url: https://journals.asm.org/journal/mbio
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2150-7511
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2150-7511.
+  last_checked: '2026-06-28'
+- journal: mSystems
+  abbreviated_title: ''
+  publisher: American Society for Microbiology
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://journals.asm.org/journal/msystems"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2379-5077
+  homepage_url: https://journals.asm.org/journal/msystems
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://journals.asm.org/journal/msystems"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Microbiology Spectrum"
-  abbreviated_title: ""
-  publisher: "American Society for Microbiology"
+  - label: Homepage
+    url: https://journals.asm.org/journal/msystems
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2379-5077
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2379-5077.
+  last_checked: '2026-06-28'
+- journal: Microbiology Spectrum
+  abbreviated_title: ''
+  publisher: American Society for Microbiology
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://journals.asm.org/journal/spectrum"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2165-0497
+  homepage_url: https://journals.asm.org/journal/spectrum
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://journals.asm.org/journal/spectrum"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Microbial Genomics"
-  abbreviated_title: ""
-  publisher: "Microbiology Society"
+  - label: Homepage
+    url: https://journals.asm.org/journal/spectrum
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2165-0497
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2165-0497.
+  last_checked: '2026-06-28'
+- journal: Microbial Genomics
+  abbreviated_title: ''
+  publisher: Microbiology Society
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.microbiologyresearch.org/content/journal/mgen"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2057-5858
+  homepage_url: https://www.microbiologyresearch.org/content/journal/mgen
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.microbiologyresearch.org/content/journal/mgen"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Environmental Microbiology"
-  abbreviated_title: ""
-  publisher: "Wiley"
+  - label: Homepage
+    url: https://www.microbiologyresearch.org/content/journal/mgen
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2057-5858
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2057-5858.
+  last_checked: '2026-06-28'
+- journal: Environmental Microbiology
+  abbreviated_title: ''
+  publisher: Wiley
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1462-2912
+    online: 1462-2920
+  homepage_url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Environmental Microbiome"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1462-2912
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1462-2912.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1462-2920
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1462-2920.
+  last_checked: '2026-06-28'
+- journal: Environmental Microbiome
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://environmentalmicrobiome.biomedcentral.com/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: ''
+  homepage_url: https://environmentalmicrobiome.biomedcentral.com/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://environmentalmicrobiome.biomedcentral.com/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Applied and Environmental Microbiology"
-  abbreviated_title: ""
-  publisher: "American Society for Microbiology"
+  - label: Homepage
+    url: https://environmentalmicrobiome.biomedcentral.com/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  last_checked: '2026-06-28'
+- journal: Applied and Environmental Microbiology
+  abbreviated_title: ''
+  publisher: American Society for Microbiology
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://journals.asm.org/journal/aem"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 0099-2240
+    online: 1098-5336
+  homepage_url: https://journals.asm.org/journal/aem
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://journals.asm.org/journal/aem"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "FEMS Microbiology Ecology"
-  abbreviated_title: ""
-  publisher: "Oxford University Press"
+  - label: Homepage
+    url: https://journals.asm.org/journal/aem
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/0099-2240
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 0099-2240.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1098-5336
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1098-5336.
+  last_checked: '2026-06-28'
+- journal: FEMS Microbiology Ecology
+  abbreviated_title: ''
+  publisher: Oxford University Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://academic.oup.com/femsec"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 0168-6496
+    online: 1574-6941
+  homepage_url: https://academic.oup.com/femsec
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://academic.oup.com/femsec"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Bioinformatics"
-  abbreviated_title: ""
-  publisher: "Oxford University Press"
+  - label: Homepage
+    url: https://academic.oup.com/femsec
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/0168-6496
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 0168-6496.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1574-6941
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1574-6941.
+  last_checked: '2026-06-28'
+- journal: Bioinformatics
+  abbreviated_title: ''
+  publisher: Oxford University Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://academic.oup.com/bioinformatics"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1367-4803
+    online: 1460-2059
+  homepage_url: https://academic.oup.com/bioinformatics
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://academic.oup.com/bioinformatics"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Briefings in Bioinformatics"
-  abbreviated_title: ""
-  publisher: "Oxford University Press"
+  - label: Homepage
+    url: https://academic.oup.com/bioinformatics
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1367-4803
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1367-4803.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1460-2059
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1460-2059.
+  last_checked: '2026-06-28'
+- journal: Briefings in Bioinformatics
+  abbreviated_title: ''
+  publisher: Oxford University Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://academic.oup.com/bib"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1467-5463
+    online: 1477-4054
+  homepage_url: https://academic.oup.com/bib
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://academic.oup.com/bib"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "PLOS Computational Biology"
-  abbreviated_title: ""
-  publisher: "Public Library of Science"
+  - label: Homepage
+    url: https://academic.oup.com/bib
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1467-5463
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1467-5463.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1477-4054
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1477-4054.
+  last_checked: '2026-06-28'
+- journal: PLOS Computational Biology
+  abbreviated_title: ''
+  publisher: Public Library of Science
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://journals.plos.org/ploscompbiol/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: 1553-734X
+    online: 1553-7358
+  homepage_url: https://journals.plos.org/ploscompbiol/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://journals.plos.org/ploscompbiol/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "NAR Genomics and Bioinformatics"
-  abbreviated_title: ""
-  publisher: "Oxford University Press"
+  - label: Homepage
+    url: https://journals.plos.org/ploscompbiol/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/1553-734X
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 1553-734X.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1553-7358
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1553-7358.
+  last_checked: '2026-06-28'
+- journal: NAR Genomics and Bioinformatics
+  abbreviated_title: ''
+  publisher: Oxford University Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://academic.oup.com/nargab"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2631-9268
+  homepage_url: https://academic.oup.com/nargab
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://academic.oup.com/nargab"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "GigaScience"
-  abbreviated_title: ""
-  publisher: "Oxford University Press"
+  - label: Homepage
+    url: https://academic.oup.com/nargab
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2631-9268
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2631-9268.
+  last_checked: '2026-06-28'
+- journal: GigaScience
+  abbreviated_title: ''
+  publisher: Oxford University Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://academic.oup.com/gigascience"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2047-217X
+  homepage_url: https://academic.oup.com/gigascience
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://academic.oup.com/gigascience"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "BMC Bioinformatics"
-  abbreviated_title: ""
-  publisher: "Springer Nature"
+  - label: Homepage
+    url: https://academic.oup.com/gigascience
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2047-217X
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2047-217X.
+  last_checked: '2026-06-28'
+- journal: BMC Bioinformatics
+  abbreviated_title: ''
+  publisher: Springer Nature
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://bmcbioinformatics.biomedcentral.com/"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 1471-2105
+  homepage_url: https://bmcbioinformatics.biomedcentral.com/
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://bmcbioinformatics.biomedcentral.com/"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Virus Evolution"
-  abbreviated_title: ""
-  publisher: "Oxford University Press"
+  - label: Homepage
+    url: https://bmcbioinformatics.biomedcentral.com/
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1471-2105
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1471-2105.
+  last_checked: '2026-06-28'
+- journal: Virus Evolution
+  abbreviated_title: ''
+  publisher: Oxford University Press
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://academic.oup.com/ve"
-  aims_scope_url: ""
-  author_instructions_url: ""
+    print: ''
+    online: 2057-1577
+  homepage_url: https://academic.oup.com/ve
+  aims_scope_url: ''
+  author_instructions_url: ''
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   code_policy:
-    summary: ""
-    url: ""
+    summary: ''
+    url: ''
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: ""
+    currency: ''
+    url: ''
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://academic.oup.com/ve"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope and policy fields not yet curated."
-  last_checked: "2026-06-28"
-- journal: "PeerJ Computer Science"
-  abbreviated_title: ""
-  publisher: "PeerJ"
+  - label: Homepage
+    url: https://academic.oup.com/ve
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2057-1577
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2057-1577.
+  last_checked: '2026-06-28'
+- journal: PeerJ Computer Science
+  abbreviated_title: ''
+  publisher: PeerJ
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://peerj.com/computer-science/"
-  aims_scope_url: "https://peerj.com/computer-science/"
-  author_instructions_url: "https://peerj.com/about/author-instructions/"
+    print: ''
+    online: 2376-5992
+  homepage_url: https://peerj.com/computer-science/
+  aims_scope_url: https://peerj.com/computer-science/
+  author_instructions_url: https://peerj.com/about/author-instructions/
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: "https://peerj.com/about/author-instructions/"
+    summary: ''
+    url: https://peerj.com/about/author-instructions/
   code_policy:
-    summary: ""
-    url: "https://peerj.com/about/author-instructions/"
+    summary: ''
+    url: https://peerj.com/about/author-instructions/
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: "https://peerj.com/pricing/"
+    currency: ''
+    url: https://peerj.com/pricing/
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage and scope"
-      url: "https://peerj.com/computer-science/"
-      accessed: "2026-06-28"
-      notes: "Official journal page; detailed scope fields not yet curated."
-    - label: "Author instructions"
-      url: "https://peerj.com/about/author-instructions/"
-      accessed: "2026-06-28"
-      notes: "Official author instructions page; data and code policy summaries not yet curated."
-    - label: "Pricing"
-      url: "https://peerj.com/pricing/"
-      accessed: "2026-06-28"
-      notes: "Official pricing page; APC amount not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Journal of Virology"
-  abbreviated_title: ""
-  publisher: "American Society for Microbiology"
+  - label: Homepage and scope
+    url: https://peerj.com/computer-science/
+    accessed: '2026-06-28'
+    notes: Official journal page; detailed scope fields not yet curated.
+  - label: Author instructions
+    url: https://peerj.com/about/author-instructions/
+    accessed: '2026-06-28'
+    notes: Official author instructions page; data and code policy summaries not yet
+      curated.
+  - label: Pricing
+    url: https://peerj.com/pricing/
+    accessed: '2026-06-28'
+    notes: Official pricing page; APC amount not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/2376-5992
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 2376-5992.
+  last_checked: '2026-06-28'
+- journal: Journal of Virology
+  abbreviated_title: ''
+  publisher: American Society for Microbiology
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://journals.asm.org/journal/jvi"
-  aims_scope_url: "https://journals.asm.org/journal/jvi/about"
-  author_instructions_url: "https://journals.asm.org/authors"
+    print: 0022-538X
+    online: 1098-5514
+  homepage_url: https://journals.asm.org/journal/jvi
+  aims_scope_url: https://journals.asm.org/journal/jvi/about
+  author_instructions_url: https://journals.asm.org/authors
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: "https://journals.asm.org/data-policy"
+    summary: ''
+    url: https://journals.asm.org/data-policy
   code_policy:
-    summary: ""
-    url: "https://journals.asm.org/data-policy"
+    summary: ''
+    url: https://journals.asm.org/data-policy
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: "https://journals.asm.org/publishing-fees"
+    currency: ''
+    url: https://journals.asm.org/publishing-fees
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://journals.asm.org/journal/jvi"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope fields not yet curated."
-    - label: "Aims and scope"
-      url: "https://journals.asm.org/journal/jvi/about"
-      accessed: "2026-06-28"
-      notes: "Official journal information page; scope summary not yet curated."
-    - label: "Author instructions"
-      url: "https://journals.asm.org/authors"
-      accessed: "2026-06-28"
-      notes: "Official ASM author information page."
-    - label: "Data policy"
-      url: "https://journals.asm.org/data-policy"
-      accessed: "2026-06-28"
-      notes: "Official ASM data policy page; summary not yet curated."
-    - label: "Publishing fees"
-      url: "https://journals.asm.org/publishing-fees"
-      accessed: "2026-06-28"
-      notes: "Official ASM publishing fees page; APC amount not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Viruses"
-  abbreviated_title: ""
-  publisher: "MDPI"
+  - label: Homepage
+    url: https://journals.asm.org/journal/jvi
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope fields not yet curated.
+  - label: Aims and scope
+    url: https://journals.asm.org/journal/jvi/about
+    accessed: '2026-06-28'
+    notes: Official journal information page; scope summary not yet curated.
+  - label: Author instructions
+    url: https://journals.asm.org/authors
+    accessed: '2026-06-28'
+    notes: Official ASM author information page.
+  - label: Data policy
+    url: https://journals.asm.org/data-policy
+    accessed: '2026-06-28'
+    notes: Official ASM data policy page; summary not yet curated.
+  - label: Publishing fees
+    url: https://journals.asm.org/publishing-fees
+    accessed: '2026-06-28'
+    notes: Official ASM publishing fees page; APC amount not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/0022-538X
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 0022-538X.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1098-5514
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1098-5514.
+  last_checked: '2026-06-28'
+- journal: Viruses
+  abbreviated_title: ''
+  publisher: MDPI
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.mdpi.com/journal/viruses"
-  aims_scope_url: "https://www.mdpi.com/journal/viruses/about"
-  author_instructions_url: "https://www.mdpi.com/journal/viruses/instructions"
+    print: ''
+    online: 1999-4915
+  homepage_url: https://www.mdpi.com/journal/viruses
+  aims_scope_url: https://www.mdpi.com/journal/viruses/about
+  author_instructions_url: https://www.mdpi.com/journal/viruses/instructions
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: "https://www.mdpi.com/ethics"
+    summary: ''
+    url: https://www.mdpi.com/ethics
   code_policy:
-    summary: ""
-    url: "https://www.mdpi.com/ethics"
+    summary: ''
+    url: https://www.mdpi.com/ethics
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: "https://www.mdpi.com/journal/viruses/apc"
+    currency: ''
+    url: https://www.mdpi.com/journal/viruses/apc
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.mdpi.com/journal/viruses"
-      accessed: "2026-06-28"
-      notes: "Official journal homepage; detailed scope fields not yet curated."
-    - label: "Aims and scope"
-      url: "https://www.mdpi.com/journal/viruses/about"
-      accessed: "2026-06-28"
-      notes: "Official journal about page; scope summary not yet curated."
-    - label: "Instructions for authors"
-      url: "https://www.mdpi.com/journal/viruses/instructions"
-      accessed: "2026-06-28"
-      notes: "Official journal instructions page."
-    - label: "APC"
-      url: "https://www.mdpi.com/journal/viruses/apc"
-      accessed: "2026-06-28"
-      notes: "Official journal APC page; APC amount not yet curated."
-    - label: "Publication ethics and policies"
-      url: "https://www.mdpi.com/ethics"
-      accessed: "2026-06-28"
-      notes: "Official MDPI policy page; policy summaries not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Phage"
-  abbreviated_title: ""
-  publisher: "Mary Ann Liebert"
+  - label: Homepage
+    url: https://www.mdpi.com/journal/viruses
+    accessed: '2026-06-28'
+    notes: Official journal homepage; detailed scope fields not yet curated.
+  - label: Aims and scope
+    url: https://www.mdpi.com/journal/viruses/about
+    accessed: '2026-06-28'
+    notes: Official journal about page; scope summary not yet curated.
+  - label: Instructions for authors
+    url: https://www.mdpi.com/journal/viruses/instructions
+    accessed: '2026-06-28'
+    notes: Official journal instructions page.
+  - label: APC
+    url: https://www.mdpi.com/journal/viruses/apc
+    accessed: '2026-06-28'
+    notes: Official journal APC page; APC amount not yet curated.
+  - label: Publication ethics and policies
+    url: https://www.mdpi.com/ethics
+    accessed: '2026-06-28'
+    notes: Official MDPI policy page; policy summaries not yet curated.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1999-4915
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1999-4915.
+  last_checked: '2026-06-28'
+- journal: Phage
+  abbreviated_title: ''
+  publisher: Mary Ann Liebert
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.liebertpub.com/journal/phage"
-  aims_scope_url: "https://www.liebertpub.com/journal/phage"
-  author_instructions_url: "https://www.liebertpub.com/journal/phage"
+    print: ''
+    online: ''
+  homepage_url: https://www.liebertpub.com/journal/phage
+  aims_scope_url: https://www.liebertpub.com/journal/phage
+  author_instructions_url: https://www.liebertpub.com/journal/phage
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: "https://www.liebertpub.com/journal/phage"
+    summary: ''
+    url: https://www.liebertpub.com/journal/phage
   code_policy:
-    summary: ""
-    url: "https://www.liebertpub.com/journal/phage"
+    summary: ''
+    url: https://www.liebertpub.com/journal/phage
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: "https://www.liebertpub.com/journal/phage"
+    currency: ''
+    url: https://www.liebertpub.com/journal/phage
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage and journal information"
-      url: "https://www.liebertpub.com/journal/phage"
-      accessed: "2026-06-28"
-      notes: "Official journal page; separate scope, instruction, policy, and APC summaries not yet curated."
-  last_checked: "2026-06-28"
-- journal: "Virology"
-  abbreviated_title: ""
-  publisher: "Elsevier"
+  - label: Homepage and journal information
+    url: https://www.liebertpub.com/journal/phage
+    accessed: '2026-06-28'
+    notes: Official journal page; separate scope, instruction, policy, and APC summaries
+      not yet curated.
+  last_checked: '2026-06-28'
+- journal: Virology
+  abbreviated_title: ''
+  publisher: Elsevier
   issn:
-    print: ""
-    online: ""
-  homepage_url: "https://www.sciencedirect.com/journal/virology"
-  aims_scope_url: "https://www.sciencedirect.com/journal/virology/about/aims-and-scope"
-  author_instructions_url: "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
+    print: 0042-6822
+    online: 1096-0341
+  homepage_url: https://www.sciencedirect.com/journal/virology
+  aims_scope_url: https://www.sciencedirect.com/journal/virology/about/aims-and-scope
+  author_instructions_url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
   article_types: []
   scope_tags: []
   manuscript_tags: []
   suitable_for: []
   less_suitable_for: []
   data_policy:
-    summary: ""
-    url: "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
+    summary: ''
+    url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
   code_policy:
-    summary: ""
-    url: "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
+    summary: ''
+    url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
   open_access:
-    model: ""
+    model: ''
     apc: null
-    currency: ""
-    url: "https://www.elsevier.com/journals/virology/0042-6822/open-access-options"
+    currency: ''
+    url: https://www.elsevier.com/journals/virology/0042-6822/open-access-options
   prestige_metrics:
     impact_factor: null
     cite_score: null
     sjr: null
     h_index: null
-    quartile: ""
+    quartile: ''
     metric_year: null
     metric_sources: []
   editorial_notes: []
   example_papers: []
   source_evidence:
-    - label: "Homepage"
-      url: "https://www.sciencedirect.com/journal/virology"
-      accessed: "2026-06-28"
-      notes: "Official ScienceDirect journal homepage; detailed scope fields not yet curated."
-    - label: "Aims and scope"
-      url: "https://www.sciencedirect.com/journal/virology/about/aims-and-scope"
-      accessed: "2026-06-28"
-      notes: "Official aims and scope page; summary not yet curated."
-    - label: "Guide for authors"
-      url: "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
-      accessed: "2026-06-28"
-      notes: "Official Elsevier author guide; policy summaries not yet curated."
-    - label: "Open access options"
-      url: "https://www.elsevier.com/journals/virology/0042-6822/open-access-options"
-      accessed: "2026-06-28"
-      notes: "Official Elsevier open access options page; APC amount not yet curated."
-  last_checked: "2026-06-28"
+  - label: Homepage
+    url: https://www.sciencedirect.com/journal/virology
+    accessed: '2026-06-28'
+    notes: Official ScienceDirect journal homepage; detailed scope fields not yet
+      curated.
+  - label: Aims and scope
+    url: https://www.sciencedirect.com/journal/virology/about/aims-and-scope
+    accessed: '2026-06-28'
+    notes: Official aims and scope page; summary not yet curated.
+  - label: Guide for authors
+    url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
+    accessed: '2026-06-28'
+    notes: Official Elsevier author guide; policy summaries not yet curated.
+  - label: Open access options
+    url: https://www.elsevier.com/journals/virology/0042-6822/open-access-options
+    accessed: '2026-06-28'
+    notes: Official Elsevier open access options page; APC amount not yet curated.
+  - label: ISSN Portal print ISSN
+    url: https://portal.issn.org/resource/ISSN/0042-6822
+    accessed: '2026-06-28'
+    notes: Bibliographic source for print ISSN 0042-6822.
+  - label: ISSN Portal online ISSN
+    url: https://portal.issn.org/resource/ISSN/1096-0341
+    accessed: '2026-06-28'
+    notes: Bibliographic source for online ISSN 1096-0341.
+  last_checked: '2026-06-28'

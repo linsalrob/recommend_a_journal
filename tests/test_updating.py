@@ -7,6 +7,7 @@ from urllib.error import HTTPError
 import yaml
 
 from journal_recommender.cli import main
+from journal_recommender.indexing import index_record
 from journal_recommender.schema import JournalRecord
 from journal_recommender.updating import (
     ApcResult,
@@ -15,10 +16,12 @@ from journal_recommender.updating import (
     UpdateReport,
     UrlCache,
     apply_crossref_updates,
+    classify_content_quality,
     classify_url_result,
     crossref_matches_journal,
     fetch_crossref_metadata,
     generate_report_from_latest,
+    mark_duplicate_hashes,
     parse_apc_amount,
     render_change_report,
     run_journal_update,
@@ -118,6 +121,23 @@ def test_stable_content_hash_normalises_whitespace() -> None:
     assert stable_content_hash("alpha   beta") == stable_content_hash("alpha beta")
 
 
+def test_content_quality_flags_very_short_blocked_and_valid() -> None:
+    short = classify_content_quality("<html><body>Hi</body></html>")
+    blocked = classify_content_quality(
+        "<html><body>Access denied. Verify you are human.</body></html>"
+    )
+    valid = classify_content_quality(
+        "<html><body><h1>Example Journal</h1>"
+        "<p>This journal publishes microbiology and computational biology "
+        "research articles, methods, resources, reviews, and policy-relevant "
+        "work for a specialist scientific audience.</p></body></html>"
+    )
+
+    assert "very_short_body" in short["content_quality_flags"]
+    assert "blocked_or_challenge_page" in blocked["content_quality_flags"]
+    assert valid["content_quality_flags"] == ["looks_valid"]
+
+
 def test_url_detection_unchanged_changed_and_new() -> None:
     unchanged = classify_url_result(
         "Journal",
@@ -146,6 +166,32 @@ def test_url_detection_unchanged_changed_and_new() -> None:
     assert new.status == "new"
 
 
+def test_duplicate_hash_across_many_urls_is_suspicious() -> None:
+    results = [
+        classify_url_result(
+            "Journal",
+            f"https://example.org/{index}",
+            {},
+            {
+                "content_hash": "same",
+                "status_code": 200,
+                "error": "",
+                "content_quality_flags": ["looks_valid"],
+            },
+            "2026-06-28",
+        )
+        for index in range(3)
+    ]
+
+    mark_duplicate_hashes(results)
+
+    assert {result.status for result in results} == {"suspicious"}
+    assert all(
+        "duplicate_hash_across_many_urls" in result.content_quality_flags
+        for result in results
+    )
+
+
 def test_non_fatal_http_failure_is_recorded(tmp_path: Path) -> None:
     def opener(*args, **kwargs):
         raise HTTPError(
@@ -164,6 +210,98 @@ def test_non_fatal_http_failure_is_recorded(tmp_path: Path) -> None:
 
     assert entry["status_code"] == 503
     assert entry["error"] == "HTTP 503"
+
+
+def test_403_and_429_are_blocked(tmp_path: Path) -> None:
+    for code in [403, 429]:
+        cache = UrlCache(tmp_path / f"cache-{code}")
+        cache.load()
+
+        def opener(*args, status_code=code, **kwargs):
+            raise HTTPError(
+                url="https://example.org",
+                code=status_code,
+                msg="Blocked",
+                hdrs={},
+                fp=None,
+            )
+
+        entry = PoliteFetcher(cache, delay_seconds=0, opener=opener).fetch(
+            "https://example.org",
+            "2026-06-28",
+        )
+        result = classify_url_result(
+            "Journal",
+            "https://example.org",
+            {},
+            entry,
+            "2026-06-28",
+        )
+
+        assert result.status == "blocked"
+
+
+def test_repeated_block_is_recorded(tmp_path: Path) -> None:
+    cache = UrlCache(tmp_path / "cache")
+    cache.load()
+
+    def opener(*args, **kwargs):
+        raise HTTPError(
+            url="https://example.org",
+            code=403,
+            msg="Blocked",
+            hdrs={},
+            fp=None,
+        )
+
+    fetcher = PoliteFetcher(cache, delay_seconds=0, opener=opener)
+    fetcher.fetch("https://example.org", "2026-06-28")
+    fetcher.fetched_this_run.clear()
+    entry = fetcher.fetch("https://example.org", "2026-07-01")
+
+    assert entry["blocked_repeatedly"] is True
+
+
+def test_redirect_loop_is_failed(tmp_path: Path) -> None:
+    cache = UrlCache(tmp_path / "cache")
+    cache.load()
+
+    def opener(*args, **kwargs):
+        raise OSError("redirect loop: too many redirects")
+
+    entry = PoliteFetcher(cache, delay_seconds=0, opener=opener).fetch(
+        "https://example.org",
+        "2026-06-28",
+    )
+    result = classify_url_result("Journal", "https://example.org", {}, entry, "today")
+
+    assert result.status == "failed"
+    assert "redirect loop" in result.error
+
+
+def test_manual_curation_source_url_is_skipped(tmp_path: Path) -> None:
+    journals_path = tmp_path / "journals.yaml"
+    record = complete_record("Example Journal", url="")
+    record["source_evidence"] = [
+        {
+            "label": "Homepage",
+            "url": "https://example.org/manual",
+            "accessed": "2026-06-28",
+            "notes": "manually curated only",
+        }
+    ]
+    journals_path.write_text(yaml.safe_dump([record]), encoding="utf-8")
+
+    report = run_journal_update(
+        journals_path=journals_path,
+        cache_dir=tmp_path / "cache",
+        report_path=tmp_path / "report.md",
+        delay_seconds=0,
+        opener=lambda *args, **kwargs: FakeResponse(b"should not fetch"),
+        sleeper=lambda seconds: None,
+    )
+
+    assert report.url_results[0].status == "skipped_manual"
 
 
 def test_crossref_matching_logic_uses_issn_or_title() -> None:
@@ -203,6 +341,50 @@ def test_crossref_fetch_with_mocked_response() -> None:
     assert result.updates["publisher"] == "Example Publisher"
 
 
+def test_crossref_title_fallback_with_mocked_response() -> None:
+    def opener(request, timeout):
+        assert "query.title=Example%20Journal" in request.full_url
+        payload = {
+            "message": {
+                "items": [
+                    {
+                        "title": "Example Journal",
+                        "publisher": "Example Publisher",
+                    }
+                ]
+            }
+        }
+        return FakeResponse(json.dumps(payload).encode("utf-8"))
+
+    journal = JournalRecord.model_validate({"journal": "Example Journal"})
+
+    result = fetch_crossref_metadata(journal, opener=opener)
+
+    assert result.status == "matched"
+    assert result.updates["publisher"] == "Example Publisher"
+
+
+def test_crossref_title_fallback_needs_review_on_weak_match() -> None:
+    def opener(request, timeout):
+        payload = {
+            "message": {
+                "items": [
+                    {
+                        "title": "Example Journal Reviews",
+                        "publisher": "Example Publisher",
+                    }
+                ]
+            }
+        }
+        return FakeResponse(json.dumps(payload).encode("utf-8"))
+
+    journal = JournalRecord.model_validate({"journal": "Example Journal"})
+
+    result = fetch_crossref_metadata(journal, opener=opener)
+
+    assert result.status == "needs_review"
+
+
 def test_crossref_updates_apply_only_missing_fields(tmp_path: Path) -> None:
     journals_path = tmp_path / "journals.yaml"
     record = complete_record("Example Journal")
@@ -231,11 +413,71 @@ def test_apc_parsing_is_conservative() -> None:
     assert parse_apc_amount("No amount here") is None
 
 
+def test_apc_parsing_skips_suspicious_pages(tmp_path: Path) -> None:
+    cache = UrlCache(tmp_path / "cache")
+    cache.load()
+    page = tmp_path / "cache" / "pages" / "apc.html"
+    page.parent.mkdir(parents=True, exist_ok=True)
+    page.write_text("Article processing charge: USD 1250", encoding="utf-8")
+    cache.set(
+        "https://example.org/apc",
+        {
+            "url": "https://example.org/apc",
+            "status_code": 200,
+            "content_path": str(page),
+            "content_quality_flags": ["blocked_or_challenge_page"],
+            "error": "",
+        },
+    )
+    journal = JournalRecord.model_validate(
+        {
+            "journal": "Example Journal",
+            "open_access": {
+                "model": "",
+                "apc": None,
+                "currency": "",
+                "url": "https://example.org/apc",
+            },
+        }
+    )
+
+    from journal_recommender.updating import check_apc
+
+    result = check_apc(journal, cache, "2026-06-28")
+
+    assert result.status == "blocked_or_suspicious"
+
+
 def test_report_generation_contains_summary() -> None:
     report = UpdateReport(
         run_date="2026-06-28",
         trigger="local",
         journals_checked=1,
+        url_results=[
+            classify_url_result(
+                "Example Journal",
+                "https://example.org",
+                {},
+                {
+                    "status_code": 403,
+                    "error": "HTTP 403",
+                    "content_quality_flags": [],
+                },
+                "2026-06-28",
+            ),
+            classify_url_result(
+                "Example Journal",
+                "https://example.org/suspicious",
+                {},
+                {
+                    "status_code": 200,
+                    "error": "",
+                    "content_hash": "abc",
+                    "content_quality_flags": ["very_short_body"],
+                },
+                "2026-06-28",
+            ),
+        ],
         crossref_results=[
             CrossrefResult(
                 journal="Example Journal",
@@ -256,6 +498,8 @@ def test_report_generation_contains_summary() -> None:
     markdown = render_change_report(report)
 
     assert "Journals checked: 1" in markdown
+    assert "Blocked URLs: 1" in markdown
+    assert "Suspicious fetched pages: 1" in markdown
     assert "Crossref records updated: 1" in markdown
     assert "APCs needing review: 1" in markdown
 
@@ -271,7 +515,11 @@ def test_run_journal_update_with_mocked_http(tmp_path: Path) -> None:
         url = request.full_url
         if "api.crossref.org" in url:
             return FakeResponse(json.dumps({"message": {}}).encode("utf-8"))
-        return FakeResponse(b"<html>Example page</html>")
+        return FakeResponse(
+            b"<html><body><h1>Example Journal</h1><p>This is a substantial "
+            b"journal page with aims scope instructions and policy text for "
+            b"testing a valid-looking publisher response.</p></body></html>"
+        )
 
     report = run_journal_update(
         journals_path=journals_path,
@@ -286,6 +534,38 @@ def test_run_journal_update_with_mocked_http(tmp_path: Path) -> None:
     assert report.url_results[0].status == "new"
     assert (tmp_path / "cache" / "url_cache.json").exists()
     assert (tmp_path / "report.md").exists()
+
+
+def test_index_record_contains_rich_structured_fields() -> None:
+    journal = JournalRecord.model_validate(
+        {
+            "journal": "Example Journal",
+            "abbreviated_title": "Ex J",
+            "publisher": "Example Publisher",
+            "issn": {"print": "1234-5678", "online": "8765-4321"},
+            "article_types": ["Research Article"],
+            "scope_tags": ["microbiome"],
+            "manuscript_tags": ["metagenomics"],
+            "suitable_for": ["shotgun metagenomics"],
+            "less_suitable_for": ["clinical trial"],
+            "data_policy": {"summary": "Data required.", "url": ""},
+            "code_policy": {"summary": "Code encouraged.", "url": ""},
+            "open_access": {
+                "model": "hybrid",
+                "apc": 1200,
+                "currency": "USD",
+                "url": "",
+            },
+            "editorial_notes": ["Specialist audience."],
+        }
+    )
+
+    record = index_record(journal)
+
+    assert record["issn"]["print"] == "1234-5678"
+    assert record["article_types"] == ["Research Article"]
+    assert record["open_access"]["apc"] == 1200
+    assert "shotgun metagenomics" in record["text"]
 
 
 def test_generate_report_from_latest_records_index_status(tmp_path: Path) -> None:

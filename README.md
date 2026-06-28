@@ -26,9 +26,10 @@ empty lists, and `null` values are valid placeholders for unknown facts.
 ## Automated Journal Updates
 
 The monthly GitHub Action in `.github/workflows/update-journal-database.yml`
-checks curated journal URLs, records content hashes, queries Crossref when an
-ISSN is available, conservatively checks APC source pages, rebuilds a lightweight
-retrieval corpus, and writes `reports/journal_database_changed.md`.
+checks curated journal URLs, records content hashes and content-quality flags,
+queries Crossref by ISSN with a cautious exact-title fallback, conservatively
+checks APC source pages, rebuilds a lightweight retrieval corpus, and writes
+`reports/journal_database_changed.md`.
 
 Run the same workflow locally with:
 
@@ -55,10 +56,10 @@ Raw cached page bodies are stored under `data_raw/cache/pages/` and ignored by
 git. Structured cache metadata, hashes, the report, and the JSONL index are safe
 to review and commit.
 
-The updater is intentionally conservative. It flags changed publisher pages for
-human review instead of rewriting scope summaries from HTML. APC values are not
-written automatically unless future code can parse a single high-confidence
-amount from a reliable source.
+The updater is intentionally conservative. It flags changed, blocked, or
+suspicious publisher pages for human review instead of rewriting scope summaries
+from HTML. APC values are reported as candidates only and are not written
+automatically.
 
 ## Add A Journal
 

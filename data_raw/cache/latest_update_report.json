@@ -274,7 +274,7 @@
       "currency": "",
       "journal": "PeerJ Computer Science",
       "new_apc": null,
-      "note": "APC source was not fetched; manual review required.",
+      "note": "APC source fetch failed; manual review required.",
       "previous_apc": null,
       "source_url": "https://peerj.com/pricing/",
       "status": "needs_review"
@@ -283,7 +283,7 @@
       "currency": "",
       "journal": "Journal of Virology",
       "new_apc": null,
-      "note": "APC source was not fetched; manual review required.",
+      "note": "APC source fetch failed; manual review required.",
       "previous_apc": null,
       "source_url": "https://journals.asm.org/publishing-fees",
       "status": "needs_review"
@@ -292,7 +292,7 @@
       "currency": "",
       "journal": "Viruses",
       "new_apc": null,
-      "note": "APC source was not fetched; manual review required.",
+      "note": "APC source fetch failed; manual review required.",
       "previous_apc": null,
       "source_url": "https://www.mdpi.com/journal/viruses/apc",
       "status": "needs_review"
@@ -301,7 +301,7 @@
       "currency": "",
       "journal": "Phage",
       "new_apc": null,
-      "note": "APC source was not fetched; manual review required.",
+      "note": "APC source fetch failed; manual review required.",
       "previous_apc": null,
       "source_url": "https://www.liebertpub.com/journal/phage",
       "status": "needs_review"
@@ -310,19 +310,233 @@
       "currency": "",
       "journal": "Virology",
       "new_apc": null,
-      "note": "APC source was not fetched; manual review required.",
+      "note": "APC source fetch failed; manual review required.",
       "previous_apc": null,
       "source_url": "https://www.elsevier.com/journals/virology/0042-6822/open-access-options",
       "status": "needs_review"
     }
   ],
-  "crossref_results": [],
+  "crossref_results": [
+    {
+      "journal": "Nature",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Science",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Cell",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Nature Microbiology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Nature Biotechnology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Nature Methods",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Nature Communications",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Science Advances",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Cell Host & Microbe",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Genome Biology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Genome Research",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "PNAS",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Microbiome",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "ISME Journal",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "ISME Communications",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "mBio",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "mSystems",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Microbiology Spectrum",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Microbial Genomics",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Environmental Microbiology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Environmental Microbiome",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Applied and Environmental Microbiology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "FEMS Microbiology Ecology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Bioinformatics",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Briefings in Bioinformatics",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "PLOS Computational Biology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "NAR Genomics and Bioinformatics",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "GigaScience",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "BMC Bioinformatics",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Virus Evolution",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "PeerJ Computer Science",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Journal of Virology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Viruses",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Phage",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    },
+    {
+      "journal": "Virology",
+      "note": "Crossref lookup failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "status": "failed",
+      "updates": {}
+    }
+  ],
   "index_status": "Rebuilt index at `data/index/journal_corpus.jsonl`.",
   "journals_checked": 35,
   "run_date": "2026-06-28",
   "trigger": "local",
   "url_results": [
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Nature",
       "last_checked": "2026-06-28",
@@ -330,9 +544,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.nature.com/nature/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Nature",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/0028-0836"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Nature",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1476-4687"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Science",
       "last_checked": "2026-06-28",
@@ -340,9 +586,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.science.org/journal/science"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Science",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/0036-8075"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Science",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1095-9203"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Cell",
       "last_checked": "2026-06-28",
@@ -350,9 +628,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.cell.com/cell/home"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Cell",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/0092-8674"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Cell",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1097-4172"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Nature Microbiology",
       "last_checked": "2026-06-28",
@@ -360,9 +670,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.nature.com/nmicrobiol/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Nature Microbiology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2058-5276"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Nature Biotechnology",
       "last_checked": "2026-06-28",
@@ -370,9 +698,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.nature.com/nbt/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Nature Biotechnology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1087-0156"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Nature Biotechnology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1546-1696"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Nature Methods",
       "last_checked": "2026-06-28",
@@ -380,9 +740,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.nature.com/nmeth/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Nature Methods",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1548-7091"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Nature Methods",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1548-7105"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Nature Communications",
       "last_checked": "2026-06-28",
@@ -390,9 +782,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.nature.com/ncomms/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Nature Communications",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2041-1723"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Science Advances",
       "last_checked": "2026-06-28",
@@ -400,9 +810,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.science.org/journal/sciadv"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Science Advances",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2375-2548"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Cell Host & Microbe",
       "last_checked": "2026-06-28",
@@ -410,9 +838,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.cell.com/cell-host-microbe/home"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Cell Host & Microbe",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1931-3128"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Cell Host & Microbe",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1934-6069"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Genome Biology",
       "last_checked": "2026-06-28",
@@ -420,9 +880,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://genomebiology.biomedcentral.com/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Genome Biology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1474-7596"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Genome Biology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1474-760X"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Genome Research",
       "last_checked": "2026-06-28",
@@ -430,9 +922,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://genome.cshlp.org/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Genome Research",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1088-9051"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Genome Research",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1549-5469"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "PNAS",
       "last_checked": "2026-06-28",
@@ -440,9 +964,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.pnas.org/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "PNAS",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/0027-8424"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "PNAS",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1091-6490"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Microbiome",
       "last_checked": "2026-06-28",
@@ -450,9 +1006,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://microbiomejournal.biomedcentral.com/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Microbiome",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2049-2618"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "ISME Journal",
       "last_checked": "2026-06-28",
@@ -460,9 +1034,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.nature.com/ismej/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "ISME Journal",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1751-7362"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "ISME Journal",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1751-7370"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "ISME Communications",
       "last_checked": "2026-06-28",
@@ -470,9 +1076,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.nature.com/ismecomms/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "ISME Communications",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2730-6151"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "mBio",
       "last_checked": "2026-06-28",
@@ -480,9 +1104,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/journal/mbio"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "mBio",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2150-7511"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "mSystems",
       "last_checked": "2026-06-28",
@@ -490,9 +1132,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/journal/msystems"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "mSystems",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2379-5077"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Microbiology Spectrum",
       "last_checked": "2026-06-28",
@@ -500,9 +1160,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/journal/spectrum"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Microbiology Spectrum",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2165-0497"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Microbial Genomics",
       "last_checked": "2026-06-28",
@@ -510,9 +1188,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.microbiologyresearch.org/content/journal/mgen"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Microbial Genomics",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2057-5858"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Environmental Microbiology",
       "last_checked": "2026-06-28",
@@ -520,9 +1216,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Environmental Microbiology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1462-2912"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Environmental Microbiology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1462-2920"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Environmental Microbiome",
       "last_checked": "2026-06-28",
@@ -530,9 +1258,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://environmentalmicrobiome.biomedcentral.com/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Applied and Environmental Microbiology",
       "last_checked": "2026-06-28",
@@ -540,9 +1272,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/journal/aem"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Applied and Environmental Microbiology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/0099-2240"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Applied and Environmental Microbiology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1098-5336"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "FEMS Microbiology Ecology",
       "last_checked": "2026-06-28",
@@ -550,9 +1314,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://academic.oup.com/femsec"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "FEMS Microbiology Ecology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/0168-6496"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "FEMS Microbiology Ecology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1574-6941"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Bioinformatics",
       "last_checked": "2026-06-28",
@@ -560,9 +1356,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://academic.oup.com/bioinformatics"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Bioinformatics",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1367-4803"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Bioinformatics",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1460-2059"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Briefings in Bioinformatics",
       "last_checked": "2026-06-28",
@@ -570,9 +1398,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://academic.oup.com/bib"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Briefings in Bioinformatics",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1467-5463"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Briefings in Bioinformatics",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1477-4054"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "PLOS Computational Biology",
       "last_checked": "2026-06-28",
@@ -580,9 +1440,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.plos.org/ploscompbiol/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "PLOS Computational Biology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1553-734X"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "PLOS Computational Biology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1553-7358"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "NAR Genomics and Bioinformatics",
       "last_checked": "2026-06-28",
@@ -590,9 +1482,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://academic.oup.com/nargab"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "NAR Genomics and Bioinformatics",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2631-9268"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "GigaScience",
       "last_checked": "2026-06-28",
@@ -600,9 +1510,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://academic.oup.com/gigascience"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "GigaScience",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2047-217X"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "BMC Bioinformatics",
       "last_checked": "2026-06-28",
@@ -610,9 +1538,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://bmcbioinformatics.biomedcentral.com/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "BMC Bioinformatics",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1471-2105"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Virus Evolution",
       "last_checked": "2026-06-28",
@@ -620,9 +1566,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://academic.oup.com/ve"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Virus Evolution",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2057-1577"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-28",
@@ -630,9 +1594,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://peerj.com/computer-science/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-28",
@@ -640,9 +1608,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://peerj.com/about/author-instructions/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-28",
@@ -650,9 +1622,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://peerj.com/pricing/"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "PeerJ Computer Science",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/2376-5992"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Journal of Virology",
       "last_checked": "2026-06-28",
@@ -660,9 +1650,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/journal/jvi"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Journal of Virology",
       "last_checked": "2026-06-28",
@@ -670,9 +1664,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/journal/jvi/about"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Journal of Virology",
       "last_checked": "2026-06-28",
@@ -680,9 +1678,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/authors"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Journal of Virology",
       "last_checked": "2026-06-28",
@@ -690,9 +1692,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/data-policy"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Journal of Virology",
       "last_checked": "2026-06-28",
@@ -700,9 +1706,41 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://journals.asm.org/publishing-fees"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Journal of Virology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/0022-538X"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Journal of Virology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1098-5514"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Viruses",
       "last_checked": "2026-06-28",
@@ -710,9 +1748,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.mdpi.com/journal/viruses"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Viruses",
       "last_checked": "2026-06-28",
@@ -720,9 +1762,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.mdpi.com/journal/viruses/about"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Viruses",
       "last_checked": "2026-06-28",
@@ -730,9 +1776,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.mdpi.com/journal/viruses/instructions"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Viruses",
       "last_checked": "2026-06-28",
@@ -740,9 +1790,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.mdpi.com/ethics"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Viruses",
       "last_checked": "2026-06-28",
@@ -750,9 +1804,27 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.mdpi.com/journal/viruses/apc"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Viruses",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1999-4915"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Phage",
       "last_checked": "2026-06-28",
@@ -760,9 +1832,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.liebertpub.com/journal/phage"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Virology",
       "last_checked": "2026-06-28",
@@ -770,9 +1846,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.sciencedirect.com/journal/virology"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Virology",
       "last_checked": "2026-06-28",
@@ -780,9 +1860,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.sciencedirect.com/journal/virology/about/aims-and-scope"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Virology",
       "last_checked": "2026-06-28",
@@ -790,9 +1874,13 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
       "error": "[Errno -3] Temporary failure in name resolution",
       "journal": "Virology",
       "last_checked": "2026-06-28",
@@ -800,7 +1888,36 @@
       "previous_hash": "",
       "status": "failed",
       "status_code": null,
+      "text_length": 0,
       "url": "https://www.elsevier.com/journals/virology/0042-6822/open-access-options"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Virology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/0042-6822"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "journal": "Virology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "failed",
+      "status_code": null,
+      "text_length": 0,
+      "url": "https://portal.issn.org/resource/ISSN/1096-0341"
     }
   ]
 }

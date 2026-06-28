@@ -27,31 +27,67 @@ def rebuild_index(
 
 def index_record(journal: JournalRecord) -> dict:
     source_urls = collect_source_urls(journal)
+    prestige_metrics = journal.prestige_metrics.model_dump()
+    curated_apc = (
+        f"{journal.open_access.apc} {journal.open_access.currency}".strip()
+        if journal.open_access.apc is not None
+        else ""
+    )
     text_parts = [
-        journal.journal,
-        journal.abbreviated_title,
-        journal.publisher,
-        " ".join(journal.scope_tags),
-        " ".join(journal.manuscript_tags),
-        " ".join(journal.suitable_for),
-        " ".join(journal.less_suitable_for),
-        journal.data_policy.summary,
-        journal.code_policy.summary,
-        " ".join(journal.editorial_notes),
-        " ".join(source_urls),
+        f"Journal: {journal.journal}",
+        f"Abbreviated title: {journal.abbreviated_title}",
+        f"Publisher: {journal.publisher}",
+        f"Print ISSN: {journal.issn.print}",
+        f"Online ISSN: {journal.issn.online}",
+        f"Article types: {', '.join(journal.article_types)}",
+        f"Scope tags: {', '.join(journal.scope_tags)}",
+        f"Manuscript tags: {', '.join(journal.manuscript_tags)}",
+        f"Suitable for: {', '.join(journal.suitable_for)}",
+        f"Less suitable for: {', '.join(journal.less_suitable_for)}",
+        f"Data policy: {journal.data_policy.summary}",
+        f"Code policy: {journal.code_policy.summary}",
+        f"Open access model: {journal.open_access.model}",
+        f"Curated APC: {curated_apc}",
+        f"Prestige metrics: {format_prestige_metrics(prestige_metrics)}",
+        f"Editorial notes: {' '.join(journal.editorial_notes)}",
+        f"Source URLs: {' '.join(source_urls)}",
     ]
-    text = "\n".join(part for part in text_parts if part)
+    text = "\n".join(part for part in text_parts if not part.endswith(": "))
 
     return {
         "journal": journal.journal,
+        "abbreviated_title": journal.abbreviated_title,
+        "publisher": journal.publisher,
+        "issn": journal.issn.model_dump(),
+        "article_types": journal.article_types,
+        "scope_tags": journal.scope_tags,
+        "manuscript_tags": journal.manuscript_tags,
+        "suitable_for": journal.suitable_for,
+        "less_suitable_for": journal.less_suitable_for,
+        "data_policy": journal.data_policy.model_dump(),
+        "code_policy": journal.code_policy.model_dump(),
+        "open_access": journal.open_access.model_dump(),
+        "prestige_metrics": prestige_metrics,
+        "editorial_notes": journal.editorial_notes,
+        "source_urls": source_urls,
+        "last_checked": journal.last_checked,
         "document_type": "journal_profile",
         "text": text,
         "metadata": {
             "publisher": journal.publisher,
+            "issn": journal.issn.model_dump(),
             "source_urls": source_urls,
             "last_checked": journal.last_checked,
         },
     }
+
+
+def format_prestige_metrics(metrics: dict) -> str:
+    return ", ".join(
+        f"{key}={value}"
+        for key, value in metrics.items()
+        if value != [] and value not in {None, ""}
+    )
 
 
 def collect_source_urls(journal: JournalRecord) -> list[str]:
