@@ -207,6 +207,7 @@ tempCodeRunnerFile.py
 manuscripts/
 reports/private/
 data_raw/private/
+data_raw/cache/pages/
 *.docx
 *.pdf
 

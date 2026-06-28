@@ -23,6 +23,43 @@ The primary database is `data/journals.yaml`. Every journal must include the
 complete structured record, even when fields are not yet curated. Empty strings,
 empty lists, and `null` values are valid placeholders for unknown facts.
 
+## Automated Journal Updates
+
+The monthly GitHub Action in `.github/workflows/update-journal-database.yml`
+checks curated journal URLs, records content hashes, queries Crossref when an
+ISSN is available, conservatively checks APC source pages, rebuilds a lightweight
+retrieval corpus, and writes `reports/journal_database_changed.md`.
+
+Run the same workflow locally with:
+
+```bash
+python -m journal_recommender.cli update-journals \
+  --journals data/journals.yaml \
+  --cache-dir data_raw/cache \
+  --report reports/journal_database_changed.md \
+  --delay-seconds 5
+
+python -m journal_recommender.cli validate-journals data/journals.yaml
+
+python -m journal_recommender.cli rebuild-index \
+  --journals data/journals.yaml \
+  --out data/index/journal_corpus.jsonl
+
+python -m journal_recommender.cli report-changes \
+  --cache-dir data_raw/cache \
+  --report reports/journal_database_changed.md \
+  --index data/index/journal_corpus.jsonl
+```
+
+Raw cached page bodies are stored under `data_raw/cache/pages/` and ignored by
+git. Structured cache metadata, hashes, the report, and the JSONL index are safe
+to review and commit.
+
+The updater is intentionally conservative. It flags changed publisher pages for
+human review instead of rewriting scope summaries from HTML. APC values are not
+written automatically unless future code can parse a single high-confidence
+amount from a reliable source.
+
 ## Add A Journal
 
 Add a complete structured record to `data/journals.yaml`, even when many fields
@@ -32,6 +69,7 @@ guessing.
 
 ## Current Scope
 
-This initial repository contains the schema, seed journal records, and validation
-tests. Manuscript parsing, scoring, and report generation are intentionally left
-as explicit future implementation areas.
+This repository contains the journal schema, seed records, validation tests,
+automated database-change checks, and a lightweight JSONL retrieval corpus.
+Manuscript parsing and full recommendation scoring are intentionally left as
+explicit future implementation areas.
