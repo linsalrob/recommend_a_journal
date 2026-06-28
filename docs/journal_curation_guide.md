@@ -91,9 +91,10 @@ reviewing `data_manual/suggestions/manual_curation_suggestions.yaml` and
 Suggestions include field-level confidence. Regular `--apply` applies only
 high-confidence fields from relevant sections, updates empty scalar fields,
 appends list values without duplicates, preserves existing APCs, and adds
-source-evidence entries for used manual sources. Use `--dry-run` to preview
-changes. Use `--apply-low-confidence` only after reviewing medium/low-confidence
-fields manually.
+source-evidence entries for used manual sources. Use `--dry-run` to write
+`data_manual/suggestions/manual_apply_dry_run.md` before editing
+`data/journals.yaml`. Use `--apply-low-confidence` only after reviewing
+medium/low-confidence fields manually.
 
 The parser intentionally ignores navigation, latest-article feeds,
 related-journal lists, footer text, cookie notices, and publisher-wide

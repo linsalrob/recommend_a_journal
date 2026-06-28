@@ -74,6 +74,8 @@ def test_process_manual_sources_cli(tmp_path, capsys) -> None:
             str(tmp_path / "index.jsonl"),
             "--review-report",
             str(tmp_path / "review.md"),
+            "--dry-run-report",
+            str(tmp_path / "dry_run.md"),
             "--dry-run",
         ]
     )
@@ -84,3 +86,4 @@ def test_process_manual_sources_cli(tmp_path, capsys) -> None:
     assert "(dry run)" in captured.out
     assert (tmp_path / "suggestions.yaml").exists()
     assert (tmp_path / "review.md").exists()
+    assert (tmp_path / "dry_run.md").exists()

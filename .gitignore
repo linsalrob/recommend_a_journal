@@ -208,6 +208,7 @@ manuscripts/
 reports/private/
 data_raw/private/
 data_raw/cache/pages/
+data_manual/pages/
 data_manual/extracted/
 *.docx
 *.pdf

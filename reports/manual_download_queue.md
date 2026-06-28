@@ -14,40 +14,40 @@
 | Journal | Source type | Local file | Suggestions generated |
 | --- | --- | --- | ---: |
 | Science | homepage_or_scope | data_manual/pages/science_home.html | 2 |
-| Science | author_instructions | data_manual/pages/science_information_for_authors.html | 6 |
+| Science | author_instructions | data_manual/pages/science_information_for_authors.html | 3 |
 | Science Advances | homepage_or_scope | data_manual/pages/science_advances_home.html | 2 |
-| Science Advances | author_instructions | data_manual/pages/science_advances_information_for_authors.html | 3 |
+| Science Advances | author_instructions | data_manual/pages/science_advances_information_for_authors.html | 1 |
 | Cell | homepage_or_scope | data_manual/pages/cell_home.html | 2 |
-| Cell | guide_for_authors | data_manual/pages/cell_authors.html | 2 |
+| Cell | guide_for_authors | data_manual/pages/cell_authors.html | 1 |
 | Cell Host & Microbe | homepage_or_scope | data_manual/pages/cell_host_microbe_home.html | 2 |
-| Cell Host & Microbe | guide_for_authors | data_manual/pages/cell_host_microbe_authors.html | 2 |
+| Cell Host & Microbe | guide_for_authors | data_manual/pages/cell_host_microbe_authors.html | 1 |
 | PNAS | homepage_or_scope | data_manual/pages/pnas_home.html | 2 |
-| PNAS | author_instructions | data_manual/pages/pnas_submitting_your_manuscript.html | 7 |
-| mBio | homepage_or_scope | data_manual/pages/mbio_home.html | 3 |
+| PNAS | author_instructions | data_manual/pages/pnas_submitting_your_manuscript.html | 1 |
+| mBio | homepage_or_scope | data_manual/pages/mbio_home.html | 2 |
 | mBio | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | mBio | author_instructions | data_manual/pages/asm_authors.html | 1 |
-| mSystems | homepage_or_scope | data_manual/pages/msystems_home.html | 3 |
+| mSystems | homepage_or_scope | data_manual/pages/msystems_home.html | 2 |
 | mSystems | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | mSystems | author_instructions | data_manual/pages/asm_authors.html | 1 |
-| Microbiology Spectrum | homepage_or_scope | data_manual/pages/microbiology_spectrum_home.html | 3 |
+| Microbiology Spectrum | homepage_or_scope | data_manual/pages/microbiology_spectrum_home.html | 2 |
 | Microbiology Spectrum | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | Microbiology Spectrum | author_instructions | data_manual/pages/asm_authors.html | 1 |
-| Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_home.html | 3 |
+| Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_home.html | 2 |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
-| ASM Animal Microbiology | homepage_or_scope | data_manual/pages/asm_am_art.html | 9 |
+| ASM Animal Microbiology | homepage_or_scope | data_manual/pages/asm_am_art.html | 4 |
 | ASM Animal Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | ASM Animal Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
-| Journal of Virology | homepage_or_scope | data_manual/pages/journal_of_virology_home.html | 3 |
+| Journal of Virology | homepage_or_scope | data_manual/pages/journal_of_virology_home.html | 2 |
 | Journal of Virology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Journal of Virology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| Journal of Clinical Microbiology | homepage_or_scope | data_manual/pages/jcm_art.html | 4 |
+| Journal of Clinical Microbiology | homepage_or_scope | data_manual/pages/jcm_art.html | 2 |
 | Journal of Clinical Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Journal of Clinical Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| Microbiology Spectrum | homepage_or_scope | data_manual/pages/ms_art.html | 4 |
-| mSystems | homepage_or_scope | data_manual/pages/msystems_art.html | 4 |
-| mSphere | author_instructions | data_manual/pages/msphere_art.html | 5 |
-| Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_art.html | 4 |
+| Microbiology Spectrum | homepage_or_scope | data_manual/pages/ms_art.html | 2 |
+| mSystems | homepage_or_scope | data_manual/pages/msystems_art.html | 2 |
+| mSphere | author_instructions | data_manual/pages/msphere_art.html | 1 |
+| Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_art.html | 2 |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | Bioinformatics | homepage_or_scope | data_manual/pages/bioinformatics_home.html | 2 |
@@ -56,13 +56,13 @@
 | GigaScience | homepage_or_scope | data_manual/pages/gigascience_home.html | 7 |
 | Virus Evolution | homepage_or_scope | data_manual/pages/virus_evolution_home.html | 6 |
 | FEMS Microbiology Ecology | homepage_or_scope | data_manual/pages/fems_microbiology_ecology_home.html | 2 |
-| Microbial Genomics | homepage_or_scope | data_manual/pages/microbial_genomics_home.html | 6 |
+| Microbial Genomics | homepage_or_scope | data_manual/pages/microbial_genomics_home.html | 4 |
 | Environmental Microbiology | homepage_or_scope | data_manual/pages/environmental_microbiology_home.html | 2 |
 | Viruses | homepage_or_scope | data_manual/pages/viruses_home.html | 2 |
-| Viruses | author_instructions | data_manual/pages/viruses_instructions.html | 4 |
+| Viruses | author_instructions | data_manual/pages/viruses_instructions.html | 3 |
 | Viruses | apc | data_manual/pages/viruses_apc.html | 1 |
-| Phage | homepage_or_scope | data_manual/pages/phage_home.html | 4 |
-| Phage | author_instructions | data_manual/pages/phage_authors.html | 3 |
+| Phage | homepage_or_scope | data_manual/pages/phage_home.html | 3 |
+| Phage | author_instructions | data_manual/pages/phage_authors.html | 1 |
 | Virology | homepage_or_scope | data_manual/pages/virology_home.html | 10 |
 | Virology | aims_scope | data_manual/pages/virology_aims_and_scope.html | 1 |
 | Virology | guide_for_authors | data_manual/pages/virology_guide_for_authors.html | 4 |

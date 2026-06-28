@@ -6,11 +6,13 @@ import yaml
 
 from journal_recommender.manual_sources import (
     apply_suggestions_to_journals,
+    build_dry_run_report,
     extract_relevant_sections,
     extract_text_from_file,
     generate_curation_suggestions,
     load_manual_manifest,
     parse_manual_sources,
+    process_manual_sources,
     section_text_for_field,
     write_review_report,
 )
@@ -180,6 +182,7 @@ def test_apply_does_not_overwrite_curated_scalar(tmp_path: Path) -> None:
                 "source_url": "https://new.example.org",
                 "local_file": "manual.html",
                 "candidate_updates": {"homepage_url": "https://new.example.org"},
+                "confidence": {"homepage_url": "high"},
             }
         ],
         journals,
@@ -371,7 +374,94 @@ def test_review_report_is_generated(tmp_path: Path) -> None:
 
     text = report.read_text(encoding="utf-8")
     assert "# Manual Curation Review" in text
+    assert "## URL-only Suggestions" in text
     assert "scope_tags" in text
+
+
+def test_gitignore_contains_manual_raw_paths() -> None:
+    gitignore = (REPO_ROOT / ".gitignore").read_text(encoding="utf-8")
+
+    assert "data_manual/pages/" in gitignore
+    assert "data_manual/extracted/" in gitignore
+
+
+def test_url_only_suggestions_are_grouped_in_review_report(tmp_path: Path) -> None:
+    suggestions = [
+        {
+            "journal": "Example Journal",
+            "source_type": "homepage_or_scope",
+            "local_file": "manual.html",
+            "status": "ready_for_review",
+            "candidate_updates": {"homepage_url": "https://example.org"},
+            "confidence": {"homepage_url": "high"},
+            "warnings": [],
+        }
+    ]
+    report = tmp_path / "review.md"
+
+    write_review_report(suggestions, [], report)
+
+    text = report.read_text(encoding="utf-8")
+    assert "## URL-only Suggestions" in text
+    assert "Example Journal" in text
+
+
+def test_dry_run_report_creation_and_no_journal_edit(tmp_path: Path) -> None:
+    journals = tmp_path / "journals.yaml"
+    write_minimal_journals(journals)
+    before = journals.read_text(encoding="utf-8")
+    suggestions = [
+        {
+            "journal": "Example Journal",
+            "source_type": "aims_scope",
+            "source_url": "https://example.org/scope",
+            "local_file": "manual.html",
+            "candidate_updates": {
+                "scope_tags": {"add": ["microbiology"]},
+                "manuscript_tags": {"add": ["specialist_audience"]},
+            },
+            "confidence": {"scope_tags": "high", "manuscript_tags": "low"},
+        }
+    ]
+    report = tmp_path / "manual_apply_dry_run.md"
+
+    result = build_dry_run_report(suggestions, journals, report)
+
+    assert result["would_apply"] == 1
+    assert result["skipped_low_confidence"] == 1
+    assert "# Manual Apply Dry Run" in report.read_text(encoding="utf-8")
+    assert journals.read_text(encoding="utf-8") == before
+
+
+def test_process_manual_sources_dry_run_does_not_edit_journals(tmp_path: Path) -> None:
+    html = tmp_path / "manual.html"
+    html.write_text(
+        """
+        <html><body><h1>Aims and scope</h1>
+        <p>This journal publishes microbiology research.</p></body></html>
+        """,
+        encoding="utf-8",
+    )
+    manifest = write_manifest(
+        tmp_path,
+        [{"local_file": str(html), "url": "https://example.org/journal"}],
+    )
+    journals = tmp_path / "journals.yaml"
+    write_minimal_journals(journals)
+    before = journals.read_text(encoding="utf-8")
+
+    process_manual_sources(
+        manifest_path=manifest,
+        journals_path=journals,
+        suggestions_path=tmp_path / "suggestions.yaml",
+        index_path=tmp_path / "index.jsonl",
+        dry_run=True,
+        review_report_path=tmp_path / "review.md",
+        dry_run_report_path=tmp_path / "dry_run.md",
+    )
+
+    assert (tmp_path / "dry_run.md").exists()
+    assert journals.read_text(encoding="utf-8") == before
 
 
 def test_apply_only_high_confidence_by_default(tmp_path: Path) -> None:
@@ -423,3 +513,80 @@ def test_apply_low_confidence_requires_flag(tmp_path: Path) -> None:
     records = yaml.safe_load(journals.read_text(encoding="utf-8"))
 
     assert records[0]["manuscript_tags"] == ["specialist_audience"]
+
+
+def test_homepage_does_not_infer_article_types_from_author_section(
+    tmp_path: Path,
+) -> None:
+    html = tmp_path / "homepage.html"
+    html.write_text(
+        """
+        <html><body>
+        <h1>Information for authors</h1>
+        <p>The journal accepts Research Articles and Reviews.</p>
+        </body></html>
+        """,
+        encoding="utf-8",
+    )
+    manifest = write_manifest(
+        tmp_path,
+        [{"local_file": str(html), "url": "https://example.org/home"}],
+    )
+
+    suggestion = generate_curation_suggestions(
+        parse_manual_sources(load_manual_manifest(manifest))
+    )[0]
+
+    assert "article_types" not in suggestion["candidate_updates"]
+
+
+def test_noisy_reviewer_text_rejects_article_types(tmp_path: Path) -> None:
+    html = tmp_path / "authors.html"
+    html.write_text(
+        """
+        <html><body>
+        <h1>Article types</h1>
+        <p>Reviewers FAQ contact us submit manuscript latest current issue
+        Review Research Article 12 Jun 2026.</p>
+        </body></html>
+        """,
+        encoding="utf-8",
+    )
+    source = load_manual_manifest(
+        write_manifest(
+            tmp_path,
+            [{"local_file": str(html), "url": "https://example.org/authors"}],
+        )
+    )[0]
+    source.source_type = "author_instructions"
+
+    suggestion = generate_curation_suggestions(parse_manual_sources([source]))[0]
+
+    assert "article_types" not in suggestion["candidate_updates"]
+    assert suggestion["status"] == "rejected_noise"
+
+
+def test_empty_policy_summary_is_not_high_confidence(tmp_path: Path) -> None:
+    html = tmp_path / "authors.html"
+    html.write_text(
+        """
+        <html><body>
+        <h1>Data policy</h1>
+        <p>Authors should follow the instructions for authors carefully.</p>
+        </body></html>
+        """,
+        encoding="utf-8",
+    )
+    source = load_manual_manifest(
+        write_manifest(
+            tmp_path,
+            [{"local_file": str(html), "url": "https://example.org/authors"}],
+        )
+    )[0]
+    source.source_type = "author_instructions"
+    source.target_fields = ["data_policy"]
+
+    suggestion = generate_curation_suggestions(parse_manual_sources([source]))[0]
+
+    assert "data_policy" not in suggestion["candidate_updates"]
+    assert suggestion["status"] in {"missing_relevant_section", "rejected_noise"}

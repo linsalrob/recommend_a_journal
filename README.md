@@ -97,10 +97,14 @@ python -m journal_recommender.cli process-manual-sources \
 ```
 
 Use `--dry-run` to preview what would be applied. Lower-confidence suggestions
-require the explicit `--apply-low-confidence` flag.
+require the explicit `--apply-low-confidence` flag. Dry-run mode writes
+`data_manual/suggestions/manual_apply_dry_run.md` with each proposed change and
+each preserved non-empty field.
 
 Raw downloaded publisher pages and extracted text stay local under
-`data_manual/pages/` and `data_manual/extracted/`.
+`data_manual/pages/` and `data_manual/extracted/`; these paths are ignored by
+git. The manifest, manual-download queue, suggestions YAML, review report, and
+dry-run report are intended for review and version control.
 
 ## Add A Journal
 

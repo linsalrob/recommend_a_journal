@@ -28,7 +28,8 @@ python -m journal_recommender.cli process-manual-sources \
 
 Suggestions are section-aware and include field-level confidence plus a review
 status. Regular `--apply` applies only high-confidence fields; use `--dry-run`
-to preview and `--apply-low-confidence` only after manual review.
+to write `data_manual/suggestions/manual_apply_dry_run.md` before editing the
+journal database. Use `--apply-low-confidence` only after manual review.
 
 Raw downloaded pages should be saved under `data_manual/pages/`. Extracted text
 can be written to `data_manual/extracted/` with `--text-out-dir`; both paths are

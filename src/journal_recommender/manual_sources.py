@@ -134,6 +134,18 @@ NOISE_HEADING_PATTERNS = [
     "advertising",
 ]
 
+NOISY_EVIDENCE_PHRASES = [
+    "reviewers",
+    "faq",
+    "contact us",
+    "submit manuscript",
+    "submit your manuscript",
+    "latest",
+    "current issue",
+    "article alerts",
+    "author services",
+]
+
 SECTION_FIELD_MAP = {
     "article_types": [
         "article_types",
@@ -152,6 +164,17 @@ SECTION_FIELD_MAP = {
         "article_publishing_charge",
         "publication_fees",
     ],
+}
+
+URL_FIELDS = {"homepage_url", "aims_scope_url", "author_instructions_url"}
+SUBSTANTIVE_FIELDS = {
+    "article_types",
+    "scope_tags",
+    "manuscript_tags",
+    "data_policy",
+    "code_policy",
+    "open_access",
+    "editorial_notes",
 }
 
 SECTION_CONFIDENCE = {
@@ -419,6 +442,11 @@ def section_text_with_confidence(
     source_type: str,
 ) -> tuple[str, str, str]:
     for section_key in SECTION_FIELD_MAP.get(field_name, []):
+        if field_name == "article_types" and not can_use_article_type_section(
+            section_key,
+            source_type,
+        ):
+            continue
         text = sections.get(section_key, "")
         if is_usable_section(text):
             return text, confidence_for_section(field_name, section_key), section_key
@@ -427,6 +455,12 @@ def section_text_with_confidence(
     if can_use_full_page_fallback(field_name, source_type, full_page):
         return full_page, "low", "full_page"
     return "", "", ""
+
+
+def can_use_article_type_section(section_key: str, source_type: str) -> bool:
+    if section_key == "article_types":
+        return True
+    return source_type in {"author_instructions", "guide_for_authors"}
 
 
 def confidence_for_section(field_name: str, section_key: str) -> str:
@@ -511,16 +545,42 @@ def suggestion_for_parsed_source(parsed: ParsedManualSource) -> dict[str, Any]:
         candidates["author_instructions_url"] = source.url
         confidence["author_instructions_url"] = "high"
 
-    article_text, article_confidence, _section = section_text_with_confidence(
+    article_text, article_confidence, article_section = section_text_with_confidence(
         sections,
         "article_types",
         source.source_type,
     )
     article_types = detect_article_types(article_text)
-    if article_types and "article_types" in source.target_fields:
+    article_snippet = snippet_for_terms(article_text, article_types)
+    if (
+        article_types
+        and "article_types" in source.target_fields
+        and article_snippet
+        and not has_noisy_article_type_context(article_text)
+    ):
         candidates["article_types"] = {"add": article_types}
-        confidence["article_types"] = article_confidence
-        add_evidence(evidence, "article_types", article_text, article_types)
+        confidence["article_types"] = quality_gate_confidence(
+            source,
+            "article_types",
+            article_confidence,
+            article_snippet,
+            article_section,
+        )
+        evidence.append({"field": "article_types", "snippet": article_snippet})
+    elif article_types and "article_types" in source.target_fields:
+        warnings.append("Rejected article-type evidence because it looked noisy.")
+    elif (
+        "article_types" in source.target_fields
+        and "article_types" in sections
+        and not article_text
+    ):
+        warnings.append("Rejected article-type evidence because it looked noisy.")
+    elif (
+        "article_types" in source.target_fields
+        and "article type" in parsed.text.lower()
+        and has_noisy_article_type_context(parsed.text)
+    ):
+        warnings.append("Rejected article-type evidence because it looked noisy.")
     elif "article_types" in source.target_fields and not article_text:
         warnings.append("No relevant article-type or author-instruction section found.")
 
@@ -530,22 +590,39 @@ def suggestion_for_parsed_source(parsed: ParsedManualSource) -> dict[str, Any]:
         source.source_type,
     )
     scope_tags = detect_tags(scope_text, SCOPE_KEYWORDS)
+    scope_snippet = snippet_for_terms(scope_text, scope_tags)
     if scope_tags and "scope_tags" in source.target_fields:
         candidates["scope_tags"] = {"add": scope_tags}
-        confidence["scope_tags"] = scope_confidence
-        add_evidence(evidence, "scope_tags", scope_text, scope_tags)
+        confidence["scope_tags"] = quality_gate_confidence(
+            source,
+            "scope_tags",
+            scope_confidence,
+            scope_snippet,
+            _section,
+        )
+        if scope_snippet:
+            evidence.append({"field": "scope_tags", "snippet": scope_snippet})
     elif "scope_tags" in source.target_fields and not scope_text:
         warnings.append("No clean aims/scope/about section found; scope tags omitted.")
 
-    manuscript_text, manuscript_confidence, _section = section_text_with_confidence(
-        sections,
-        "manuscript_tags",
-        source.source_type,
+    manuscript_text, manuscript_confidence, manuscript_section = (
+        section_text_with_confidence(
+            sections,
+            "manuscript_tags",
+            source.source_type,
+        )
     )
     manuscript_tags = detect_tags(manuscript_text, MANUSCRIPT_KEYWORDS)
+    manuscript_snippet = snippet_for_terms(manuscript_text, manuscript_tags)
     if manuscript_tags and "manuscript_tags" in source.target_fields:
         candidates["manuscript_tags"] = {"add": manuscript_tags}
-        confidence["manuscript_tags"] = manuscript_confidence
+        confidence["manuscript_tags"] = quality_gate_confidence(
+            source,
+            "manuscript_tags",
+            manuscript_confidence,
+            manuscript_snippet,
+            manuscript_section,
+        )
 
     if "data_policy" in source.target_fields:
         policy_text, policy_confidence, _section = section_text_with_confidence(
@@ -555,25 +632,53 @@ def suggestion_for_parsed_source(parsed: ParsedManualSource) -> dict[str, Any]:
         )
         summary = policy_summary(
             policy_text,
-            ["data availability", "data sharing", "data"],
+            [
+                "data availability",
+                "data availability statement",
+                "data sharing",
+                "data and code deposition",
+            ],
         )
-        if policy_text:
-            candidates["data_policy"] = {"summary": summary, "url": source.url}
-            confidence["data_policy"] = policy_confidence
         if summary:
+            candidates["data_policy"] = {"summary": summary, "url": source.url}
+            confidence["data_policy"] = quality_gate_confidence(
+                source,
+                "data_policy",
+                policy_confidence,
+                summary,
+                _section,
+            )
             evidence.append({"field": "data_policy", "snippet": summary})
+        elif policy_text:
+            warnings.append("Rejected data-policy candidate because summary was empty.")
     if "code_policy" in source.target_fields:
         policy_text, policy_confidence, _section = section_text_with_confidence(
             sections,
             "code_policy",
             source.source_type,
         )
-        summary = policy_summary(policy_text, ["code availability", "software", "code"])
-        if policy_text:
-            candidates["code_policy"] = {"summary": summary, "url": source.url}
-            confidence["code_policy"] = policy_confidence
+        summary = policy_summary(
+            policy_text,
+            [
+                "code availability",
+                "software availability",
+                "software and code",
+                "source code",
+                "data and code deposition",
+            ],
+        )
         if summary:
+            candidates["code_policy"] = {"summary": summary, "url": source.url}
+            confidence["code_policy"] = quality_gate_confidence(
+                source,
+                "code_policy",
+                policy_confidence,
+                summary,
+                _section,
+            )
             evidence.append({"field": "code_policy", "snippet": summary})
+        elif policy_text:
+            warnings.append("Rejected code-policy candidate because summary was empty.")
     if "open_access" in source.target_fields or source.source_type in {
         "apc",
         "open_access",
@@ -585,7 +690,16 @@ def suggestion_for_parsed_source(parsed: ParsedManualSource) -> dict[str, Any]:
         )
         if oa_text:
             candidates["open_access"] = open_access_candidate(source, oa_text)
-            confidence["open_access"] = oa_confidence
+            confidence["open_access"] = quality_gate_confidence(
+                source,
+                "open_access",
+                oa_confidence,
+                snippet_for_terms(
+                    oa_text,
+                    ["open access", "article processing charge", "publication fees"],
+                ),
+                _section,
+            )
         if not oa_text or candidates.get("open_access", {}).get("apc") is None:
             warnings.append("APC amount not extracted confidently.")
 
@@ -696,6 +810,62 @@ def add_evidence(
         evidence.append({"field": field, "snippet": snippet})
 
 
+def quality_gate_confidence(
+    source: ManualSource,
+    field_name: str,
+    initial_confidence: str,
+    evidence_snippet: str,
+    section_key: str,
+) -> str:
+    if field_name in {"article_types", "scope_tags", "manuscript_tags"}:
+        if not evidence_snippet or looks_like_noise_snippet(evidence_snippet):
+            return "low"
+    if field_name in {"data_policy", "code_policy"} and not evidence_snippet:
+        return "low"
+    if field_name == "article_types" and section_key != "article_types":
+        if source.source_type == "homepage_or_scope":
+            return "low"
+        return initial_confidence
+    if is_likely_publisher_wide_source(source) and field_name in SUBSTANTIVE_FIELDS:
+        return "low"
+    return initial_confidence
+
+
+def has_noisy_article_type_context(text: str) -> bool:
+    lowered = text.lower()
+    if any(phrase in lowered for phrase in NOISY_EVIDENCE_PHRASES):
+        return True
+    if re.search(
+        r"\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+"
+        r"\d{1,2},?\s+\d{4}\b",
+        lowered,
+    ):
+        return True
+    return bool(
+        re.search(
+            r"\b\d{1,2}\s+"
+            r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+"
+            r"\d{4}\b",
+            lowered,
+        )
+    )
+
+
+def is_likely_publisher_wide_source(source: ManualSource) -> bool:
+    path_name = source.local_file.name.lower()
+    url = source.url.lower()
+    return any(
+        marker in path_name or marker in url
+        for marker in [
+            "asm_authors",
+            "asm_publishing_fees",
+            "publishing-fees",
+            "author-center",
+            "for-authors",
+        ]
+    )
+
+
 def suggestion_status(
     candidates: dict[str, Any],
     confidence: dict[str, str],
@@ -703,21 +873,38 @@ def suggestion_status(
     target_fields: list[str],
 ) -> str:
     if not candidates:
+        if any("rejected" in warning.lower() for warning in warnings):
+            return "rejected_noise"
         if any(
             field in target_fields
             for field in ["scope_tags", "article_types", "data_policy", "code_policy"]
         ):
             return "missing_relevant_section"
         return "parsed_no_updates"
+    if any("rejected" in warning.lower() for warning in warnings):
+        if not any(field in SUBSTANTIVE_FIELDS for field in candidates):
+            return "rejected_noise"
     if any(
         "omitted" in warning.lower() or "no relevant" in warning.lower()
         for warning in warnings
     ):
-        if not any(level in {"high", "medium"} for level in confidence.values()):
+        if not any(
+            field in SUBSTANTIVE_FIELDS and level in {"high", "medium"}
+            for field, level in confidence.items()
+        ):
             return "missing_relevant_section"
-    if any(level == "low" for level in confidence.values()):
+    if any(
+        field in SUBSTANTIVE_FIELDS and level == "low"
+        for field, level in confidence.items()
+    ):
         return "low_confidence"
-    if all(level == "high" for level in confidence.values()):
+    high_substantive = any(
+        field in SUBSTANTIVE_FIELDS and level == "high"
+        for field, level in confidence.items()
+    )
+    if high_substantive:
+        return "ready_for_review"
+    if candidates and all(field in URL_FIELDS for field in candidates):
         return "ready_for_review"
     return "ready_for_review"
 
@@ -812,6 +999,28 @@ def write_review_report(
         if suggestion.get("status") == "parsed_no_updates"
     )
     parsed_count = sum(1 for item in parsed_sources if item.status == "parsed")
+    url_only = [
+        suggestion for suggestion in suggestions if is_url_only_suggestion(suggestion)
+    ]
+    substantive_high = [
+        suggestion
+        for suggestion in suggestions
+        if not is_url_only_suggestion(suggestion)
+        and any(
+            field in SUBSTANTIVE_FIELDS and level == "high"
+            for field, level in suggestion.get("confidence", {}).items()
+        )
+    ]
+    low_or_noisy = [
+        suggestion
+        for suggestion in suggestions
+        if suggestion.get("status") in {"low_confidence", "rejected_noise"}
+    ]
+    missing_sections = [
+        suggestion
+        for suggestion in suggestions
+        if suggestion.get("status") == "missing_relevant_section"
+    ]
     lines = [
         "# Manual Curation Review",
         "",
@@ -823,12 +1032,45 @@ def write_review_report(
         f"- Rejected/noisy or missing-section suggestions: {rejected_count}",
         f"- Sources with no useful updates: {no_update_count}",
         "",
-        "## Suggestion Review",
-        "",
-        "| Journal | Source type | Local file | Status | "
-        "High-confidence fields | Low-confidence fields | Warnings |",
-        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
+    append_review_section(lines, "URL-only Suggestions", url_only)
+    append_review_section(
+        lines,
+        "Substantive High-confidence Suggestions",
+        substantive_high,
+    )
+    append_review_section(lines, "Low-confidence Or Noisy Suggestions", low_or_noisy)
+    append_review_section(lines, "Missing Relevant Sections", missing_sections)
+    lines.extend(
+        [
+            "",
+            "## Recommended Action",
+            "",
+            recommended_action(suggestions),
+            "",
+        ]
+    )
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def append_review_section(
+    lines: list[str],
+    title: str,
+    suggestions: list[dict[str, Any]],
+) -> None:
+    lines.extend(
+        [
+            f"## {title}",
+            "",
+            "| Journal | Source type | Local file | Status | "
+            "High-confidence fields | Low-confidence fields | Warnings |",
+            "| --- | --- | --- | --- | --- | --- | --- |",
+        ]
+    )
+    if not suggestions:
+        lines.append("| - | - | - | - | - | - | - |")
+        lines.append("")
+        return
     for suggestion in suggestions:
         confidence = suggestion.get("confidence", {})
         high_fields = ", ".join(
@@ -853,20 +1095,35 @@ def write_review_report(
             )
             + " |"
         )
-    lines.extend(
-        [
-            "",
-            "## Follow-up",
-            "",
-            "- Review low-confidence suggestions before applying them.",
-            "- Add or improve manual files for entries marked missing relevant "
-            "section.",
-            "- Do not apply suggestions sourced only from navigation, feeds, or "
-            "publisher boilerplate.",
-            "",
-        ]
-    )
-    path.write_text("\n".join(lines), encoding="utf-8")
+    lines.append("")
+
+
+def is_url_only_suggestion(suggestion: dict[str, Any]) -> bool:
+    candidates = suggestion.get("candidate_updates", {})
+    return bool(candidates) and all(field in URL_FIELDS for field in candidates)
+
+
+def recommended_action(suggestions: list[dict[str, Any]]) -> str:
+    risky = [
+        suggestion
+        for suggestion in suggestions
+        if suggestion.get("status") in {"low_confidence", "rejected_noise"}
+    ]
+    substantive = [
+        suggestion
+        for suggestion in suggestions
+        if not is_url_only_suggestion(suggestion)
+        and any(
+            field in SUBSTANTIVE_FIELDS
+            for field in suggestion.get("confidence", {})
+        )
+    ]
+    if risky or substantive:
+        return (
+            "More review is needed before running `--apply`; inspect the dry-run "
+            "report and manually check substantive suggestions first."
+        )
+    return "It is safe to run `--apply` for URL-only suggestions."
 
 
 def markdown_cell(value: Any) -> str:
@@ -910,6 +1167,214 @@ def apply_suggestions_to_journals(
         "skipped_unknown": sorted(set(skipped_unknown)),
         "dry_run": dry_run,
     }
+
+
+def build_dry_run_report(
+    suggestions: list[dict[str, Any]],
+    journals_path: Path,
+    report_path: Path,
+    include_low_confidence: bool = False,
+) -> dict[str, Any]:
+    with journals_path.open("r", encoding="utf-8") as handle:
+        records = yaml.safe_load(handle)
+    by_journal = {record["journal"]: record for record in records}
+    rows: list[dict[str, Any]] = []
+    skipped_unknown: list[str] = []
+    skipped_low = 0
+
+    for suggestion in suggestions:
+        record = by_journal.get(suggestion["journal"])
+        if record is None:
+            skipped_unknown.append(suggestion["journal"])
+            continue
+        updates = suggestion.get("candidate_updates", {})
+        confidence = suggestion.get("confidence", {})
+        for field_name in updates:
+            if not confidence_allowed(
+                confidence.get(field_name, ""),
+                include_low_confidence,
+            ):
+                skipped_low += 1
+        allowed_updates = filter_updates_by_confidence(
+            updates,
+            confidence,
+            include_low_confidence=include_low_confidence,
+        )
+        rows.extend(
+            collect_dry_run_rows(record, allowed_updates, confidence, suggestion)
+        )
+
+    applied_count = sum(1 for row in rows if row["action"] == "apply")
+    preserved_count = sum(1 for row in rows if row["action"] == "preserve_existing")
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    write_dry_run_markdown(
+        report_path,
+        suggestions_considered=len(suggestions),
+        would_apply=applied_count,
+        skipped_low=skipped_low,
+        skipped_unknown=sorted(set(skipped_unknown)),
+        preserved=preserved_count,
+        rows=rows,
+    )
+    return {
+        "would_apply": applied_count,
+        "skipped_low_confidence": skipped_low,
+        "skipped_unknown": sorted(set(skipped_unknown)),
+        "preserved_existing": preserved_count,
+        "report": str(report_path),
+    }
+
+
+def confidence_allowed(confidence: str, include_low_confidence: bool) -> bool:
+    if include_low_confidence:
+        return confidence in {"high", "medium", "low"}
+    return confidence == "high"
+
+
+def collect_dry_run_rows(
+    record: dict[str, Any],
+    updates: dict[str, Any],
+    confidence: dict[str, str],
+    suggestion: dict[str, Any],
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for field_name, value in updates.items():
+        if field_name in {
+            "article_types",
+            "scope_tags",
+            "manuscript_tags",
+            "editorial_notes",
+        }:
+            existing = record.setdefault(field_name, [])
+            for proposed in value.get("add", []):
+                action = "preserve_existing" if proposed in existing else "apply"
+                rows.append(
+                    dry_run_row(
+                        suggestion,
+                        field_name,
+                        action,
+                        existing,
+                        proposed,
+                        confidence,
+                    )
+                )
+        elif field_name in {"data_policy", "code_policy", "open_access"}:
+            target = record.get(field_name, {})
+            for key, proposed in value.items():
+                if proposed in {"", None}:
+                    continue
+                existing = target.get(key)
+                action = "apply" if is_empty_value(existing) else "preserve_existing"
+                rows.append(
+                    dry_run_row(
+                        suggestion,
+                        f"{field_name}.{key}",
+                        action,
+                        existing,
+                        proposed,
+                        confidence,
+                        confidence_field=field_name,
+                    )
+                )
+        elif field_name in record and value:
+            existing = record.get(field_name)
+            action = "apply" if is_empty_value(existing) else "preserve_existing"
+            rows.append(
+                dry_run_row(
+                    suggestion,
+                    field_name,
+                    action,
+                    existing,
+                    value,
+                    confidence,
+                )
+            )
+    return rows
+
+
+def dry_run_row(
+    suggestion: dict[str, Any],
+    field_name: str,
+    action: str,
+    existing: Any,
+    proposed: Any,
+    confidence: dict[str, str],
+    confidence_field: str | None = None,
+) -> dict[str, Any]:
+    return {
+        "journal": suggestion.get("journal", ""),
+        "field": field_name,
+        "action": action,
+        "existing": existing,
+        "proposed": proposed,
+        "confidence": confidence.get(confidence_field or field_name, ""),
+        "source": suggestion.get("source_url", ""),
+    }
+
+
+def write_dry_run_markdown(
+    path: Path,
+    suggestions_considered: int,
+    would_apply: int,
+    skipped_low: int,
+    skipped_unknown: list[str],
+    preserved: int,
+    rows: list[dict[str, Any]],
+) -> None:
+    lines = [
+        "# Manual Apply Dry Run",
+        "",
+        "## Summary",
+        "",
+        f"- Suggestions considered: {suggestions_considered}",
+        f"- High-confidence fields that would be applied: {would_apply}",
+        f"- Medium/low-confidence fields skipped: {skipped_low}",
+        f"- Unknown journals skipped: {len(skipped_unknown)}",
+        f"- Existing non-empty fields preserved: {preserved}",
+        "",
+    ]
+    if skipped_unknown:
+        lines.extend(["Unknown journals: " + ", ".join(skipped_unknown), ""])
+    lines.extend(
+        [
+            "## Proposed Changes",
+            "",
+            "| Journal | Field | Action | Existing value | Proposed value | "
+            "Confidence | Source |",
+            "| --- | --- | --- | --- | --- | --- | --- |",
+        ]
+    )
+    for row in rows:
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    markdown_cell(row["journal"]),
+                    markdown_cell(row["field"]),
+                    markdown_cell(row["action"]),
+                    markdown_cell(short_value(row["existing"])),
+                    markdown_cell(short_value(row["proposed"])),
+                    markdown_cell(row["confidence"]),
+                    markdown_cell(row["source"]),
+                ]
+            )
+            + " |"
+        )
+    lines.append("")
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def short_value(value: Any, limit: int = 120) -> str:
+    if is_empty_value(value):
+        return ""
+    text = normalise_whitespace(str(value))
+    if len(text) <= limit:
+        return text
+    return text[: limit - 3] + "..."
+
+
+def is_empty_value(value: Any) -> bool:
+    return value is None or value == "" or value == []
 
 
 def filter_updates_by_confidence(
@@ -1053,6 +1518,7 @@ def process_manual_sources(
     review_report_path: Path | None = None,
     apply_low_confidence: bool = False,
     dry_run: bool = False,
+    dry_run_report_path: Path | None = None,
 ) -> tuple[
     list[ManualSource],
     list[ParsedManualSource],
@@ -1071,6 +1537,15 @@ def process_manual_sources(
         "skipped_unknown": [],
         "dry_run": dry_run,
     }
+    dry_run_result: dict[str, Any] = {}
+    if dry_run and dry_run_report_path is not None:
+        dry_run_result = build_dry_run_report(
+            suggestions,
+            journals_path,
+            dry_run_report_path,
+            include_low_confidence=apply_low_confidence,
+        )
+        apply_result.update(dry_run_result)
     if apply or dry_run:
         apply_result = apply_suggestions_to_journals(
             suggestions,
@@ -1078,6 +1553,7 @@ def process_manual_sources(
             include_low_confidence=apply_low_confidence,
             dry_run=dry_run,
         )
+        apply_result.update(dry_run_result)
     validate_journal_file(journals_path)
     rebuild_index(journals_path, index_path)
     return sources, parsed, suggestions, apply_result

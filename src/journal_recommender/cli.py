@@ -26,6 +26,7 @@ DEFAULT_MANUAL_SUGGESTIONS = Path(
     "data_manual/suggestions/manual_curation_suggestions.yaml"
 )
 DEFAULT_MANUAL_REVIEW = Path("data_manual/suggestions/manual_curation_review.md")
+DEFAULT_MANUAL_DRY_RUN = Path("data_manual/suggestions/manual_apply_dry_run.md")
 DEFAULT_MANUAL_QUEUE_REPORT = Path("reports/manual_download_queue.md")
 DEFAULT_MANUAL_QUEUE_YAML = Path("data_manual/manual_download_queue.yaml")
 
@@ -123,6 +124,11 @@ def build_parser() -> argparse.ArgumentParser:
         default=DEFAULT_MANUAL_REVIEW,
         type=Path,
     )
+    manual_parser.add_argument(
+        "--dry-run-report",
+        default=DEFAULT_MANUAL_DRY_RUN,
+        type=Path,
+    )
 
     return parser
 
@@ -199,6 +205,7 @@ def main(argv: list[str] | None = None) -> int:
                 review_report_path=args.review_report,
                 apply_low_confidence=args.apply_low_confidence,
                 dry_run=args.dry_run,
+                dry_run_report_path=args.dry_run_report,
             )
             queue = generate_manual_download_queue(
                 manifest_sources=sources,
