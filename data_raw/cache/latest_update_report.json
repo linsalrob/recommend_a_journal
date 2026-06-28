@@ -67,10 +67,10 @@
       "currency": "",
       "journal": "Science Advances",
       "new_apc": null,
-      "note": "No open-access/APC URL available.",
+      "note": "APC source was blocked or suspicious; manual review required.",
       "previous_apc": null,
-      "source_url": "",
-      "status": "skipped"
+      "source_url": "https://www.science.org/content/page/science-advances-information-authors",
+      "status": "blocked_or_suspicious"
     },
     {
       "currency": "",
@@ -103,10 +103,10 @@
       "currency": "",
       "journal": "PNAS",
       "new_apc": null,
-      "note": "No open-access/APC URL available.",
+      "note": "APC source was blocked or suspicious; manual review required.",
       "previous_apc": null,
-      "source_url": "",
-      "status": "skipped"
+      "source_url": "https://www.pnas.org/author-center/submitting-your-manuscript",
+      "status": "blocked_or_suspicious"
     },
     {
       "currency": "",
@@ -139,28 +139,28 @@
       "currency": "",
       "journal": "mBio",
       "new_apc": null,
-      "note": "No open-access/APC URL available.",
+      "note": "APC source was blocked or suspicious; manual review required.",
       "previous_apc": null,
-      "source_url": "",
-      "status": "skipped"
+      "source_url": "https://journals.asm.org/publication-fees",
+      "status": "blocked_or_suspicious"
     },
     {
       "currency": "",
       "journal": "mSystems",
       "new_apc": null,
-      "note": "No open-access/APC URL available.",
+      "note": "APC source was blocked or suspicious; manual review required.",
       "previous_apc": null,
-      "source_url": "",
-      "status": "skipped"
+      "source_url": "https://journals.asm.org/publication-fees",
+      "status": "blocked_or_suspicious"
     },
     {
       "currency": "",
       "journal": "Microbiology Spectrum",
       "new_apc": null,
-      "note": "No open-access/APC URL available.",
+      "note": "APC source was blocked or suspicious; manual review required.",
       "previous_apc": null,
-      "source_url": "",
-      "status": "skipped"
+      "source_url": "https://journals.asm.org/publication-fees",
+      "status": "blocked_or_suspicious"
     },
     {
       "currency": "",
@@ -193,10 +193,10 @@
       "currency": "",
       "journal": "Applied and Environmental Microbiology",
       "new_apc": null,
-      "note": "No open-access/APC URL available.",
+      "note": "APC source was blocked or suspicious; manual review required.",
       "previous_apc": null,
-      "source_url": "",
-      "status": "skipped"
+      "source_url": "https://journals.asm.org/publication-fees",
+      "status": "blocked_or_suspicious"
     },
     {
       "currency": "",
@@ -598,6 +598,20 @@
     },
     {
       "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Science",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://www.science.org/content/page/science-information-authors"
+    },
+    {
+      "blocked_repeatedly": false,
       "content_length": 45636,
       "content_quality_flags": [
         "looks_valid"
@@ -641,6 +655,20 @@
       "status_code": 403,
       "text_length": 0,
       "url": "https://www.cell.com/cell/home"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Cell",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://www.cell.com/cell/authors"
     },
     {
       "blocked_repeatedly": false,
@@ -854,6 +882,20 @@
     },
     {
       "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Science Advances",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://www.science.org/content/page/science-advances-information-authors"
+    },
+    {
+      "blocked_repeatedly": false,
       "content_length": 90440,
       "content_quality_flags": [
         "looks_valid"
@@ -881,6 +923,20 @@
       "status_code": 403,
       "text_length": 0,
       "url": "https://www.cell.com/cell-host-microbe/home"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Cell Host & Microbe",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://www.cell.com/cell-host-microbe/authors"
     },
     {
       "blocked_repeatedly": false,
@@ -1022,6 +1078,20 @@
       "status_code": 403,
       "text_length": 0,
       "url": "https://www.pnas.org/"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "PNAS",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://www.pnas.org/author-center/submitting-your-manuscript"
     },
     {
       "blocked_repeatedly": false,
@@ -1185,6 +1255,34 @@
       "url": "https://journals.asm.org/journal/mbio"
     },
     {
+      "blocked_repeatedly": true,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "mBio",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/authors"
+    },
+    {
+      "blocked_repeatedly": true,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "mBio",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/publication-fees"
+    },
+    {
       "blocked_repeatedly": false,
       "content_length": 62964,
       "content_quality_flags": [
@@ -1215,6 +1313,34 @@
       "url": "https://journals.asm.org/journal/msystems"
     },
     {
+      "blocked_repeatedly": true,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "mSystems",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/authors"
+    },
+    {
+      "blocked_repeatedly": true,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "mSystems",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/publication-fees"
+    },
+    {
       "blocked_repeatedly": false,
       "content_length": 71240,
       "content_quality_flags": [
@@ -1231,6 +1357,20 @@
       "url": "https://portal.issn.org/resource/ISSN/2379-5077"
     },
     {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "mSystems",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/journal/msystems/article-types"
+    },
+    {
       "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
@@ -1243,6 +1383,34 @@
       "status_code": 403,
       "text_length": 0,
       "url": "https://journals.asm.org/journal/spectrum"
+    },
+    {
+      "blocked_repeatedly": true,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Microbiology Spectrum",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/authors"
+    },
+    {
+      "blocked_repeatedly": true,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Microbiology Spectrum",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/publication-fees"
     },
     {
       "blocked_repeatedly": false,
@@ -1259,6 +1427,20 @@
       "status_code": 200,
       "text_length": 3742,
       "url": "https://portal.issn.org/resource/ISSN/2165-0497"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Microbiology Spectrum",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/journal/spectrum/article-types"
     },
     {
       "blocked_repeatedly": true,
@@ -1368,6 +1550,34 @@
       "url": "https://journals.asm.org/journal/aem"
     },
     {
+      "blocked_repeatedly": true,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Applied and Environmental Microbiology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/authors"
+    },
+    {
+      "blocked_repeatedly": true,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Applied and Environmental Microbiology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/publication-fees"
+    },
+    {
       "blocked_repeatedly": false,
       "content_length": 43501,
       "content_quality_flags": [
@@ -1398,6 +1608,20 @@
       "status_code": 200,
       "text_length": 3190,
       "url": "https://portal.issn.org/resource/ISSN/1098-5336"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 0,
+      "content_quality_flags": [],
+      "error": "HTTP 403",
+      "journal": "Applied and Environmental Microbiology",
+      "last_checked": "2026-06-28",
+      "new_hash": "",
+      "previous_hash": "",
+      "status": "blocked",
+      "status_code": 403,
+      "text_length": 0,
+      "url": "https://journals.asm.org/journal/aem/article-types"
     },
     {
       "blocked_repeatedly": true,
@@ -1539,18 +1763,18 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 73022,
+      "content_length": 73070,
       "content_quality_flags": [
         "looks_valid"
       ],
-      "error": "The read operation timed out",
+      "error": "",
       "journal": "PLOS Computational Biology",
       "last_checked": "2026-06-28",
-      "new_hash": "5326ba5a998cefdb2bd68decf4a30d5a51f0ebef0527e406586effe647c2473d",
+      "new_hash": "c194dfddc3a26cd333fcf10f6fd5771e8b200e74a55680738d5b49dbcc8c05e3",
       "previous_hash": "5326ba5a998cefdb2bd68decf4a30d5a51f0ebef0527e406586effe647c2473d",
-      "status": "failed",
-      "status_code": null,
-      "text_length": 8317,
+      "status": "changed",
+      "status_code": 200,
+      "text_length": 8341,
       "url": "https://journals.plos.org/ploscompbiol/"
     },
     {
@@ -1733,8 +1957,8 @@
       "error": "",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-28",
-      "new_hash": "fe07a3ebc9f69c54051c3c119bdeafd70589ecd3d2211bd0621d67be75613da2",
-      "previous_hash": "39758aff0a40520ed8bba3bf905f5663ab42a10ef4b163509aa90e5d9559b5c3",
+      "new_hash": "76998fbccc37946dc73c83bb03f45c80a506cfb74ff28623ab0fe87dfea81b48",
+      "previous_hash": "fe07a3ebc9f69c54051c3c119bdeafd70589ecd3d2211bd0621d67be75613da2",
       "status": "changed",
       "status_code": 200,
       "text_length": 29768,
@@ -1749,8 +1973,8 @@
       "error": "",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-28",
-      "new_hash": "5cea86e2b84c16370c3ba1ebe356e702881ef609c0306347da6a6f264ef22d0c",
-      "previous_hash": "41dbf1a16c8a623cc334ef341fd95eb951d91f820d61a6ffe3c93ba3d351011e",
+      "new_hash": "62bd8de2e79f895340fb4539fcc2c968314c68c1277a7ac3936a50109a7c3c13",
+      "previous_hash": "5cea86e2b84c16370c3ba1ebe356e702881ef609c0306347da6a6f264ef22d0c",
       "status": "suspicious",
       "status_code": 200,
       "text_length": 95,
@@ -1973,6 +2197,22 @@
       "status_code": 403,
       "text_length": 0,
       "url": "https://www.liebertpub.com/journal/phage"
+    },
+    {
+      "blocked_repeatedly": false,
+      "content_length": 60477,
+      "content_quality_flags": [
+        "looks_valid"
+      ],
+      "error": "",
+      "journal": "Phage",
+      "last_checked": "2026-06-28",
+      "new_hash": "5628b4df8d73cb111f164bb6bc5546223a966b9258804ae37d1402a3d2b15c12",
+      "previous_hash": "",
+      "status": "new",
+      "status_code": 200,
+      "text_length": 2469,
+      "url": "https://www.sagepub.com/journals/information-for-authors"
     },
     {
       "blocked_repeatedly": true,

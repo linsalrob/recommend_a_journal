@@ -6,12 +6,12 @@
 ## Summary
 
 - Journals checked: 35
-- URLs checked: 99
-- New URLs: 0
-- Changed URLs: 1
+- URLs checked: 116
+- New URLs: 1
+- Changed URLs: 2
 - Unchanged URLs: 51
-- Failed URLs: 2
-- Blocked URLs: 32
+- Failed URLs: 1
+- Blocked URLs: 48
 - Suspicious fetched pages: 13
 - Skipped manual-curation URLs: 0
 - Crossref matched: 32
@@ -21,8 +21,8 @@
 - Crossref failed: 3
 - APC candidates: 0
 - APCs unchanged: 0
-- APCs skipped: 30
-- APCs blocked or suspicious: 5
+- APCs skipped: 24
+- APCs blocked or suspicious: 11
 - APCs needing review: 0
 
 ## Suspicious Fetched Pages
@@ -41,23 +41,39 @@
 | Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ | 9498eee98cab | 9498eee98cab | very_short_body |  |
-| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 41dbf1a16c8a | 5cea86e2b84c | very_short_body |  |
+| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 5cea86e2b84c | 62bd8de2e79f | very_short_body |  |
 
 ## Blocked URLs
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Science | blocked | 403 | https://www.science.org/journal/science |  |  |  | HTTP 403 |
+| Science | blocked | 403 | https://www.science.org/content/page/science-information-authors |  |  |  | HTTP 403 |
 | Cell | blocked | 403 | https://www.cell.com/cell/home |  |  |  | HTTP 403 |
+| Cell | blocked | 403 | https://www.cell.com/cell/authors |  |  |  | HTTP 403 |
 | Science Advances | blocked | 403 | https://www.science.org/journal/sciadv |  |  |  | HTTP 403 |
+| Science Advances | blocked | 403 | https://www.science.org/content/page/science-advances-information-authors |  |  |  | HTTP 403 |
 | Cell Host & Microbe | blocked | 403 | https://www.cell.com/cell-host-microbe/home |  |  |  | HTTP 403 |
+| Cell Host & Microbe | blocked | 403 | https://www.cell.com/cell-host-microbe/authors |  |  |  | HTTP 403 |
 | PNAS | blocked | 403 | https://www.pnas.org/ |  |  |  | HTTP 403 |
+| PNAS | blocked | 403 | https://www.pnas.org/author-center/submitting-your-manuscript |  |  |  | HTTP 403 |
 | mBio | blocked | 403 | https://journals.asm.org/journal/mbio |  |  |  | HTTP 403 |
+| mBio | blocked | 403 | https://journals.asm.org/authors |  |  |  | HTTP 403 |
+| mBio | blocked | 403 | https://journals.asm.org/publication-fees |  |  |  | HTTP 403 |
 | mSystems | blocked | 403 | https://journals.asm.org/journal/msystems |  |  |  | HTTP 403 |
+| mSystems | blocked | 403 | https://journals.asm.org/authors |  |  |  | HTTP 403 |
+| mSystems | blocked | 403 | https://journals.asm.org/publication-fees |  |  |  | HTTP 403 |
+| mSystems | blocked | 403 | https://journals.asm.org/journal/msystems/article-types |  |  |  | HTTP 403 |
 | Microbiology Spectrum | blocked | 403 | https://journals.asm.org/journal/spectrum |  |  |  | HTTP 403 |
+| Microbiology Spectrum | blocked | 403 | https://journals.asm.org/authors |  |  |  | HTTP 403 |
+| Microbiology Spectrum | blocked | 403 | https://journals.asm.org/publication-fees |  |  |  | HTTP 403 |
+| Microbiology Spectrum | blocked | 403 | https://journals.asm.org/journal/spectrum/article-types |  |  |  | HTTP 403 |
 | Microbial Genomics | blocked | 403 | https://www.microbiologyresearch.org/content/journal/mgen |  |  |  | HTTP 403 |
 | Environmental Microbiology | blocked | 403 | https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920 |  |  |  | HTTP 403 |
 | Applied and Environmental Microbiology | blocked | 403 | https://journals.asm.org/journal/aem |  |  |  | HTTP 403 |
+| Applied and Environmental Microbiology | blocked | 403 | https://journals.asm.org/authors |  |  |  | HTTP 403 |
+| Applied and Environmental Microbiology | blocked | 403 | https://journals.asm.org/publication-fees |  |  |  | HTTP 403 |
+| Applied and Environmental Microbiology | blocked | 403 | https://journals.asm.org/journal/aem/article-types |  |  |  | HTTP 403 |
 | FEMS Microbiology Ecology | blocked | 403 | https://academic.oup.com/femsec |  |  |  | HTTP 403 |
 | Bioinformatics | blocked | 403 | https://academic.oup.com/bioinformatics |  |  |  | HTTP 403 |
 | Briefings in Bioinformatics | blocked | 403 | https://academic.oup.com/bib |  |  |  | HTTP 403 |
@@ -84,14 +100,15 @@
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 39758aff0a40 | fe07a3ebc9f6 | looks_valid |  |
+| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | 5326ba5a998c | c194dfddc3a2 | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | fe07a3ebc9f6 | 76998fbccc37 | looks_valid |  |
+| Phage | new | 200 | https://www.sagepub.com/journals/information-for-authors |  | 5628b4df8d73 | looks_valid |  |
 
 ## Failed URLs
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Genome Research | failed | 302 | https://genome.cshlp.org/ |  |  |  | HTTP 302: The HTTP server returned a redirect error that would lead to an infinite loop. The last 30x error message was: Found |
-| PLOS Computational Biology | failed |  | https://journals.plos.org/ploscompbiol/ | 5326ba5a998c | 5326ba5a998c | looks_valid | The read operation timed out |
 
 ## Skipped Manual-Curation URLs
 
@@ -148,21 +165,21 @@ No entries.
 | Nature Biotechnology | skipped |  |  |  |  | No open-access/APC URL available. |
 | Nature Methods | skipped |  |  |  |  | No open-access/APC URL available. |
 | Nature Communications | skipped |  |  |  |  | No open-access/APC URL available. |
-| Science Advances | skipped |  |  |  |  | No open-access/APC URL available. |
+| Science Advances | blocked_or_suspicious | https://www.science.org/content/page/science-advances-information-authors |  |  |  | APC source was blocked or suspicious; manual review required. |
 | Cell Host & Microbe | skipped |  |  |  |  | No open-access/APC URL available. |
 | Genome Biology | skipped |  |  |  |  | No open-access/APC URL available. |
 | Genome Research | skipped |  |  |  |  | No open-access/APC URL available. |
-| PNAS | skipped |  |  |  |  | No open-access/APC URL available. |
+| PNAS | blocked_or_suspicious | https://www.pnas.org/author-center/submitting-your-manuscript |  |  |  | APC source was blocked or suspicious; manual review required. |
 | Microbiome | skipped |  |  |  |  | No open-access/APC URL available. |
 | ISME Journal | skipped |  |  |  |  | No open-access/APC URL available. |
 | ISME Communications | skipped |  |  |  |  | No open-access/APC URL available. |
-| mBio | skipped |  |  |  |  | No open-access/APC URL available. |
-| mSystems | skipped |  |  |  |  | No open-access/APC URL available. |
-| Microbiology Spectrum | skipped |  |  |  |  | No open-access/APC URL available. |
+| mBio | blocked_or_suspicious | https://journals.asm.org/publication-fees |  |  |  | APC source was blocked or suspicious; manual review required. |
+| mSystems | blocked_or_suspicious | https://journals.asm.org/publication-fees |  |  |  | APC source was blocked or suspicious; manual review required. |
+| Microbiology Spectrum | blocked_or_suspicious | https://journals.asm.org/publication-fees |  |  |  | APC source was blocked or suspicious; manual review required. |
 | Microbial Genomics | skipped |  |  |  |  | No open-access/APC URL available. |
 | Environmental Microbiology | skipped |  |  |  |  | No open-access/APC URL available. |
 | Environmental Microbiome | skipped |  |  |  |  | No open-access/APC URL available. |
-| Applied and Environmental Microbiology | skipped |  |  |  |  | No open-access/APC URL available. |
+| Applied and Environmental Microbiology | blocked_or_suspicious | https://journals.asm.org/publication-fees |  |  |  | APC source was blocked or suspicious; manual review required. |
 | FEMS Microbiology Ecology | skipped |  |  |  |  | No open-access/APC URL available. |
 | Bioinformatics | skipped |  |  |  |  | No open-access/APC URL available. |
 | Briefings in Bioinformatics | skipped |  |  |  |  | No open-access/APC URL available. |
