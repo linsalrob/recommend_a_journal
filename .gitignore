@@ -203,6 +203,13 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# Confidential manuscripts and generated private outputs
+manuscripts/
+reports/private/
+data_raw/private/
+*.docx
+*.pdf
+
 # Ruff stuff:
 .ruff_cache/
 

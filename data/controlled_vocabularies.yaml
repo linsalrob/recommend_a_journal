@@ -1,0 +1,19 @@
+manuscript_types:
+  - biology_first_discovery
+  - methods
+  - software_tool
+  - database_resource
+  - genome_resource
+  - clinical_cohort
+  - mechanistic_experimental
+  - descriptive_microbial_ecology
+  - phage_virome
+  - translational_microbiome
+
+scoring_dimensions:
+  scope_alignment: 0.30
+  significance_fit: 0.25
+  audience_match: 0.15
+  methods_and_policy_fit: 0.10
+  prestige: 0.10
+  practical_constraints: 0.10

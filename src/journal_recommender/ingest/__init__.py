@@ -1,0 +1,1 @@
+"""Journal metadata ingestion helpers."""
