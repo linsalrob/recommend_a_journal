@@ -8,8 +8,8 @@
 - Journals checked: 35
 - URLs checked: 116
 - New URLs: 0
-- Changed URLs: 2
-- Unchanged URLs: 52
+- Changed URLs: 3
+- Unchanged URLs: 51
 - Failed URLs: 1
 - Blocked URLs: 48
 - Suspicious fetched pages: 13
@@ -41,7 +41,7 @@
 | Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ | 9498eee98cab | 9498eee98cab | very_short_body |  |
-| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 62bd8de2e79f | 1f37538507ad | very_short_body |  |
+| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 1f37538507ad | 96e72ce0f358 | very_short_body |  |
 
 ## Blocked URLs
 
@@ -100,8 +100,9 @@
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | c194dfddc3a2 | 730d0528d6d7 | looks_valid |  |
-| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 76998fbccc37 | 1fb6adbeefda | looks_valid |  |
+| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | 730d0528d6d7 | 217353b685ed | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 1fb6adbeefda | 945803028bfe | looks_valid |  |
+| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 5628b4df8d73 | 399615fe6202 | looks_valid |  |
 
 ## Failed URLs
 
