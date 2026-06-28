@@ -1,6 +1,7 @@
 # Manuscript Feature Schema
 
-Planned extracted manuscript features:
+Structured manuscript feature files are YAML mappings validated by
+`journal_recommender.manuscript.ManuscriptFeatures`.
 
 ```yaml
 title: ""
@@ -26,4 +27,9 @@ ecological_relevance: ""
 bioinformatics_method_novelty: ""
 likely_article_type: ""
 editorial_risks: []
+constraints:
+  open_access_required: null
+  max_apc: null
+  preferred_audience: ""
+  avoid_publishers: []
 ```

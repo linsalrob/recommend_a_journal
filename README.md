@@ -68,9 +68,29 @@ are unknown. Record official source URLs under `source_evidence` and leave
 uncurated metrics, policies, APCs, and editorial notes empty rather than
 guessing.
 
+## Rank Journals For A Manuscript
+
+Create a structured manuscript feature YAML file using the schema in
+`docs/manuscript_feature_schema.md`, then validate and rank:
+
+```bash
+python -m journal_recommender.cli validate-manuscript \
+  data/examples/microbiome_cohort_features.yaml
+
+python -m journal_recommender.cli rank-journals \
+  --manuscript data/examples/microbiome_cohort_features.yaml \
+  --journals data/journals.yaml \
+  --out reports/example_journal_recommendation.md
+```
+
+The first scoring engine is deterministic and transparent. It uses curated
+journal tags, manuscript feature tags, policy summaries, practical constraints,
+and conservative prestige tiers. It does not call an LLM or scrape publisher
+pages during recommendation.
+
 ## Current Scope
 
 This repository contains the journal schema, seed records, validation tests,
 automated database-change checks, and a lightweight JSONL retrieval corpus.
-Manuscript parsing and full recommendation scoring are intentionally left as
-explicit future implementation areas.
+It also includes a first deterministic manuscript-to-journal scoring engine.
+Automated manuscript parsing from DOCX/PDF remains future work.

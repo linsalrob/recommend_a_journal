@@ -1,1 +1,0 @@
-"""Journal scoring helpers."""

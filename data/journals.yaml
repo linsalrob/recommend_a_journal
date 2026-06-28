@@ -1,5 +1,5 @@
 - journal: Nature
-  abbreviated_title: ''
+  abbreviated_title: Nature
   publisher: Springer Nature
   issn:
     print: 0028-0836
@@ -7,19 +7,37 @@
   homepage_url: https://www.nature.com/nature/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Letter
+  - Review
+  - Brief Communication
+  scope_tags:
+  - broad_science
+  - biology
+  - genomics
+  - microbiology
+  manuscript_tags:
+  - high_concept_discovery
+  - broad_interest
+  - mechanistic_study
+  suitable_for:
+  - field-changing biological discovery
+  - broad-interest microbiology or genomics with strong conceptual advance
+  less_suitable_for:
+  - incremental descriptive studies
+  - routine software applications
+  - specialist-only surveys
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -31,7 +49,9 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Aspirational broad-science target; desk-rejection risk is high without field-wide
+    significance.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -46,9 +66,15 @@
     url: https://portal.issn.org/resource/ISSN/1476-4687
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1476-4687.
+  - label: Manual semantic profile curation
+    url: https://www.nature.com/nature/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Science
-  abbreviated_title: ''
+  abbreviated_title: Science
   publisher: American Association for the Advancement of Science
   issn:
     print: 0036-8075
@@ -56,19 +82,35 @@
   homepage_url: https://www.science.org/journal/science
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Report
+  - Review
+  scope_tags:
+  - broad_science
+  - biology
+  - genomics
+  - microbiology
+  manuscript_tags:
+  - high_concept_discovery
+  - broad_interest
+  - mechanistic_study
+  suitable_for:
+  - field-changing discovery with broad scientific audience
+  - high-concept microbial biology
+  less_suitable_for:
+  - specialist-only descriptive studies
+  - incremental methods or resource notes
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -80,7 +122,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Aspirational broad-science target; requires broad conceptual significance.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -95,9 +138,15 @@
     url: https://portal.issn.org/resource/ISSN/1095-9203
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1095-9203.
+  - label: Manual semantic profile curation
+    url: https://www.science.org/journal/science
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Cell
-  abbreviated_title: ''
+  abbreviated_title: Cell
   publisher: Cell Press
   issn:
     print: 0092-8674
@@ -105,19 +154,35 @@
   homepage_url: https://www.cell.com/cell/home
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Short Article
+  - Review
+  scope_tags:
+  - broad_science
+  - molecular_biology
+  - systems_biology
+  - host_microbe_interactions
+  manuscript_tags:
+  - high_concept_discovery
+  - broad_interest
+  - mechanistic_study
+  suitable_for:
+  - mechanistic biology with broad life-science impact
+  - host-microbe biology with strong mechanism
+  less_suitable_for:
+  - descriptive microbiome surveys
+  - routine computational tools
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -129,7 +194,9 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Aspirational life-science target; fit depends on mechanistic depth and conceptual
+    advance.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -144,9 +211,15 @@
     url: https://portal.issn.org/resource/ISSN/1097-4172
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1097-4172.
+  - label: Manual semantic profile curation
+    url: https://www.cell.com/cell/home
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Nature Microbiology
-  abbreviated_title: ''
+  abbreviated_title: Nat Microbiol
   publisher: Springer Nature
   issn:
     print: ''
@@ -154,19 +227,39 @@
   homepage_url: https://www.nature.com/nmicrobiol/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Brief Communication
+  - Review
+  - Perspective
+  scope_tags:
+  - microbiology
+  - microbial_genomics
+  - microbiome
+  - viromics
+  - infectious_disease
+  - microbial_ecology
+  manuscript_tags:
+  - high_concept_discovery
+  - broad_interest
+  - mechanistic_study
+  - specialist_audience
+  suitable_for:
+  - high-novelty microbiology
+  - microbial genomics or microbiome studies with broad microbiology relevance
+  less_suitable_for:
+  - incremental local surveys
+  - software-only papers without biological advance
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -178,7 +271,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Strong aspirational target for microbiology with broad significance.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -189,9 +283,15 @@
     url: https://portal.issn.org/resource/ISSN/2058-5276
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2058-5276.
+  - label: Manual semantic profile curation
+    url: https://www.nature.com/nmicrobiol/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Nature Biotechnology
-  abbreviated_title: ''
+  abbreviated_title: Nat Biotechnol
   publisher: Springer Nature
   issn:
     print: 1087-0156
@@ -199,19 +299,39 @@
   homepage_url: https://www.nature.com/nbt/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Brief Communication
+  - Analysis
+  - Review
+  scope_tags:
+  - biotechnology
+  - methods
+  - genomics
+  - computational_biology
+  - machine_learning
+  manuscript_tags:
+  - methods_paper
+  - high_concept_discovery
+  - broad_interest
+  - software_tool
+  - benchmark
+  suitable_for:
+  - transformative biotechnology or genomic methods
+  - high-impact computational biotechnology
+  less_suitable_for:
+  - routine application studies
+  - narrow descriptive microbiome studies
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -223,7 +343,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Best reserved for major methodological or biotechnological advances.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -238,9 +359,15 @@
     url: https://portal.issn.org/resource/ISSN/1546-1696
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1546-1696.
+  - label: Manual semantic profile curation
+    url: https://www.nature.com/nbt/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Nature Methods
-  abbreviated_title: ''
+  abbreviated_title: Nat Methods
   publisher: Springer Nature
   issn:
     print: 1548-7091
@@ -248,19 +375,38 @@
   homepage_url: https://www.nature.com/nmeth/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Brief Communication
+  - Analysis
+  - Review
+  scope_tags:
+  - methods
+  - computational_biology
+  - bioinformatics
+  - genomics
+  - machine_learning
+  manuscript_tags:
+  - methods_paper
+  - software_tool
+  - benchmark
+  - broad_interest
+  suitable_for:
+  - widely useful experimental or computational methods
+  - benchmark studies with strong methodological novelty
+  less_suitable_for:
+  - biology-first descriptive datasets
+  - single-use scripts
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -272,7 +418,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Aspirational methods target; requires broad method utility and validation.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -287,9 +434,15 @@
     url: https://portal.issn.org/resource/ISSN/1548-7105
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1548-7105.
+  - label: Manual semantic profile curation
+    url: https://www.nature.com/nmeth/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Nature Communications
-  abbreviated_title: ''
+  abbreviated_title: Nat Commun
   publisher: Springer Nature
   issn:
     print: ''
@@ -297,19 +450,36 @@
   homepage_url: https://www.nature.com/ncomms/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Review
+  scope_tags:
+  - broad_science
+  - microbiology
+  - genomics
+  - computational_biology
+  - microbial_ecology
+  manuscript_tags:
+  - broad_interest
+  - mechanistic_study
+  - methods_paper
+  - specialist_audience
+  suitable_for:
+  - solid advances with cross-field relevance
+  - microbiology or genomics studies with broad readership
+  less_suitable_for:
+  - incremental local surveys
+  - low-validation software notes
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -321,7 +491,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Selective multidisciplinary open-access venue; broad relevance still matters.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -332,9 +503,15 @@
     url: https://portal.issn.org/resource/ISSN/2041-1723
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2041-1723.
+  - label: Manual semantic profile curation
+    url: https://www.nature.com/ncomms/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Science Advances
-  abbreviated_title: ''
+  abbreviated_title: Sci Adv
   publisher: American Association for the Advancement of Science
   issn:
     print: ''
@@ -342,19 +519,34 @@
   homepage_url: https://www.science.org/journal/sciadv
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Review
+  scope_tags:
+  - broad_science
+  - biology
+  - microbiology
+  - genomics
+  - computational_biology
+  manuscript_tags:
+  - broad_interest
+  - high_concept_discovery
+  - methods_paper
+  suitable_for:
+  - broad-interest studies not limited to a narrow specialty
+  - high-significance computational or microbial biology
+  less_suitable_for:
+  - incremental specialist studies
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -366,7 +558,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Aspirational open-access broad-science option.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -377,9 +570,15 @@
     url: https://portal.issn.org/resource/ISSN/2375-2548
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2375-2548.
+  - label: Manual semantic profile curation
+    url: https://www.science.org/journal/sciadv
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Cell Host & Microbe
-  abbreviated_title: ''
+  abbreviated_title: Cell Host Microbe
   publisher: Cell Press
   issn:
     print: 1931-3128
@@ -387,19 +586,38 @@
   homepage_url: https://www.cell.com/cell-host-microbe/home
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Short Article
+  - Resource
+  - Review
+  scope_tags:
+  - host_microbe_interactions
+  - microbiology
+  - microbiome
+  - infectious_disease
+  - clinical_microbiology
+  manuscript_tags:
+  - mechanistic_study
+  - translational
+  - clinical_cohort
+  - high_concept_discovery
+  suitable_for:
+  - mechanistic host-microbe studies
+  - translational microbiome or infection studies
+  less_suitable_for:
+  - environmental microbiome without host biology
+  - software-only manuscripts
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -411,7 +629,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Strong fit for mechanistic host-microbe and infection biology.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -426,9 +645,15 @@
     url: https://portal.issn.org/resource/ISSN/1934-6069
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1934-6069.
+  - label: Manual semantic profile curation
+    url: https://www.cell.com/cell-host-microbe/home
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Genome Biology
-  abbreviated_title: ''
+  abbreviated_title: Genome Biol
   publisher: Springer Nature
   issn:
     print: 1474-7596
@@ -436,19 +661,41 @@
   homepage_url: https://genomebiology.biomedcentral.com/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research
+  - Method
+  - Software
+  - Resource
+  - Review
+  scope_tags:
+  - genomics
+  - bioinformatics
+  - systems_biology
+  - computational_biology
+  - microbial_genomics
+  - multi_omics
+  manuscript_tags:
+  - methods_paper
+  - software_tool
+  - database_resource
+  - multi_omics
+  - high_concept_discovery
+  suitable_for:
+  - genomics methods and biological discovery
+  - multi-omics and computational genomics
+  less_suitable_for:
+  - narrow organism reports
+  - low-novelty descriptive surveys
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -460,7 +707,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Good strategic target for genomics plus computational or systems insight.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -475,9 +723,15 @@
     url: https://portal.issn.org/resource/ISSN/1474-760X
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1474-760X.
+  - label: Manual semantic profile curation
+    url: https://genomebiology.biomedcentral.com/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Genome Research
-  abbreviated_title: ''
+  abbreviated_title: Genome Res
   publisher: Cold Spring Harbor Laboratory Press
   issn:
     print: 1088-9051
@@ -485,19 +739,38 @@
   homepage_url: https://genome.cshlp.org/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research
+  - Method
+  - Resource
+  - Review
+  scope_tags:
+  - genomics
+  - microbial_genomics
+  - bioinformatics
+  - methods
+  - systems_biology
+  manuscript_tags:
+  - methods_paper
+  - database_resource
+  - genome_resource
+  - mechanistic_study
+  suitable_for:
+  - genome-scale biological discovery
+  - genomic methods and resources with broad value
+  less_suitable_for:
+  - routine genome announcements
+  - software with limited validation
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -509,7 +782,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Strong fit for rigorous genome-scale studies and resources.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -524,9 +798,15 @@
     url: https://portal.issn.org/resource/ISSN/1549-5469
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1549-5469.
+  - label: Manual semantic profile curation
+    url: https://genome.cshlp.org/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: PNAS
-  abbreviated_title: ''
+  abbreviated_title: Proc Natl Acad Sci U S A
   publisher: National Academy of Sciences
   issn:
     print: 0027-8424
@@ -534,19 +814,35 @@
   homepage_url: https://www.pnas.org/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Brief Report
+  scope_tags:
+  - broad_science
+  - biology
+  - microbiology
+  - genomics
+  - evolution
+  manuscript_tags:
+  - broad_interest
+  - high_concept_discovery
+  - mechanistic_study
+  suitable_for:
+  - broadly significant biological findings
+  - cross-disciplinary microbial or genomic studies
+  less_suitable_for:
+  - narrow descriptive surveys
+  - routine software tools
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -558,7 +854,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Broad selective venue; significance beyond specialty audience is important.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -573,9 +870,15 @@
     url: https://portal.issn.org/resource/ISSN/1091-6490
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1091-6490.
+  - label: Manual semantic profile curation
+    url: https://www.pnas.org/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Microbiome
-  abbreviated_title: ''
+  abbreviated_title: Microbiome
   publisher: Springer Nature
   issn:
     print: ''
@@ -583,19 +886,40 @@
   homepage_url: https://microbiomejournal.biomedcentral.com/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research
+  - Methodology
+  - Review
+  - Commentary
+  scope_tags:
+  - microbiome
+  - metagenomics
+  - metatranscriptomics
+  - microbial_ecology
+  - host_microbe_interactions
+  - multi_omics
+  manuscript_tags:
+  - cohort_study
+  - clinical_cohort
+  - environmental_survey
+  - multi_omics
+  - mechanistic_study
+  suitable_for:
+  - microbiome studies with strong design and ecological or host relevance
+  - metagenomic and multi-omics microbiome manuscripts
+  less_suitable_for:
+  - microbiome as minor context
+  - single small descriptive 16S surveys
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -607,7 +931,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Primary specialist target for substantive microbiome manuscripts.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -618,9 +943,15 @@
     url: https://portal.issn.org/resource/ISSN/2049-2618
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2049-2618.
+  - label: Manual semantic profile curation
+    url: https://microbiomejournal.biomedcentral.com/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: ISME Journal
-  abbreviated_title: ''
+  abbreviated_title: ISME J
   publisher: Springer Nature
   issn:
     print: 1751-7362
@@ -628,19 +959,38 @@
   homepage_url: https://www.nature.com/ismej/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Review
+  - Perspective
+  scope_tags:
+  - microbial_ecology
+  - microbiome
+  - metagenomics
+  - environmental_microbiology
+  - microbial_genomics
+  - systems_biology
+  manuscript_tags:
+  - environmental_survey
+  - mechanistic_study
+  - multi_omics
+  - specialist_audience
+  suitable_for:
+  - microbial ecology with conceptual or mechanistic depth
+  - environmental and host-associated microbiome studies
+  less_suitable_for:
+  - clinical-only studies without ecology
+  - routine descriptive surveys
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -652,7 +1002,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - High-quality microbial ecology and microbiome target.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -667,9 +1018,15 @@
     url: https://portal.issn.org/resource/ISSN/1751-7370
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1751-7370.
+  - label: Manual semantic profile curation
+    url: https://www.nature.com/ismej/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: ISME Communications
-  abbreviated_title: ''
+  abbreviated_title: ISME Commun
   publisher: Springer Nature
   issn:
     print: ''
@@ -677,19 +1034,36 @@
   homepage_url: https://www.nature.com/ismecomms/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Brief Communication
+  - Review
+  scope_tags:
+  - microbial_ecology
+  - microbiome
+  - metagenomics
+  - environmental_microbiology
+  manuscript_tags:
+  - environmental_survey
+  - descriptive_study
+  - specialist_audience
+  - short_report
+  suitable_for:
+  - credible microbial ecology studies
+  - focused microbiome or metagenomic analyses
+  less_suitable_for:
+  - pure software tools
+  - clinical-only infection studies
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -701,7 +1075,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Good current-manuscript fit for solid specialist microbial ecology work.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -712,9 +1087,15 @@
     url: https://portal.issn.org/resource/ISSN/2730-6151
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2730-6151.
+  - label: Manual semantic profile curation
+    url: https://www.nature.com/ismecomms/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: mBio
-  abbreviated_title: ''
+  abbreviated_title: mBio
   publisher: American Society for Microbiology
   issn:
     print: ''
@@ -722,19 +1103,37 @@
   homepage_url: https://journals.asm.org/journal/mbio
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Observation
+  - Perspective
+  - Review
+  scope_tags:
+  - microbiology
+  - infectious_disease
+  - microbial_genomics
+  - host_microbe_interactions
+  - microbial_ecology
+  manuscript_tags:
+  - mechanistic_study
+  - specialist_audience
+  - high_concept_discovery
+  suitable_for:
+  - important microbiology with broad microbial-sciences interest
+  - infection or host-microbe studies
+  less_suitable_for:
+  - narrow technical notes
+  - routine local surveys
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -746,7 +1145,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Selective ASM journal for significant microbiology.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -757,9 +1157,15 @@
     url: https://portal.issn.org/resource/ISSN/2150-7511
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2150-7511.
+  - label: Manual semantic profile curation
+    url: https://journals.asm.org/journal/mbio
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: mSystems
-  abbreviated_title: ''
+  abbreviated_title: mSystems
   publisher: American Society for Microbiology
   issn:
     print: ''
@@ -767,19 +1173,39 @@
   homepage_url: https://journals.asm.org/journal/msystems
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Methods and Protocols
+  - Resource
+  - Review
+  scope_tags:
+  - systems_biology
+  - microbiome
+  - metagenomics
+  - microbial_genomics
+  - computational_biology
+  - bioinformatics
+  manuscript_tags:
+  - multi_omics
+  - methods_paper
+  - software_tool
+  - cohort_study
+  - specialist_audience
+  suitable_for:
+  - systems-level microbial biology
+  - microbiome, metagenomics, and computational microbial studies
+  less_suitable_for:
+  - single-gene mechanistic studies without systems angle
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -791,7 +1217,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Strong fit for systems microbiology and microbiome informatics.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -802,9 +1229,15 @@
     url: https://portal.issn.org/resource/ISSN/2379-5077
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2379-5077.
+  - label: Manual semantic profile curation
+    url: https://journals.asm.org/journal/msystems
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Microbiology Spectrum
-  abbreviated_title: ''
+  abbreviated_title: Microbiol Spectr
   publisher: American Society for Microbiology
   issn:
     print: ''
@@ -812,19 +1245,36 @@
   homepage_url: https://journals.asm.org/journal/spectrum
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Review
+  - Observation
+  scope_tags:
+  - microbiology
+  - clinical_microbiology
+  - microbial_genomics
+  - infectious_disease
+  - environmental_microbiology
+  manuscript_tags:
+  - descriptive_study
+  - clinical_cohort
+  - genome_resource
+  - specialist_audience
+  suitable_for:
+  - solid microbiology across clinical, environmental, and genomic areas
+  - credible phage or microbial genomics studies
+  less_suitable_for:
+  - very high-concept broad science claims
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -836,7 +1286,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Broad ASM specialist venue and safer credible option for many microbiology manuscripts.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -847,9 +1298,15 @@
     url: https://portal.issn.org/resource/ISSN/2165-0497
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2165-0497.
+  - label: Manual semantic profile curation
+    url: https://journals.asm.org/journal/spectrum
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Microbial Genomics
-  abbreviated_title: ''
+  abbreviated_title: Microb Genom
   publisher: Microbiology Society
   issn:
     print: ''
@@ -857,19 +1314,38 @@
   homepage_url: https://www.microbiologyresearch.org/content/journal/mgen
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Methods
+  - Data Note
+  - Review
+  scope_tags:
+  - microbial_genomics
+  - genomics
+  - bioinformatics
+  - microbiology
+  - evolution
+  manuscript_tags:
+  - genome_resource
+  - methods_paper
+  - phage_genomics
+  - metagenome_assembled_genomes
+  - specialist_audience
+  suitable_for:
+  - bacterial, archaeal, viral, and microbial genomic analyses
+  - genomic epidemiology and comparative genomics
+  less_suitable_for:
+  - microbiome studies without genome-level focus
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -881,7 +1357,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Good fit for microbial genome analysis and genomic methods.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -892,9 +1369,15 @@
     url: https://portal.issn.org/resource/ISSN/2057-5858
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2057-5858.
+  - label: Manual semantic profile curation
+    url: https://www.microbiologyresearch.org/content/journal/mgen
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Environmental Microbiology
-  abbreviated_title: ''
+  abbreviated_title: Environ Microbiol
   publisher: Wiley
   issn:
     print: 1462-2912
@@ -902,19 +1385,34 @@
   homepage_url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Review
+  scope_tags:
+  - environmental_microbiology
+  - microbial_ecology
+  - microbiology
+  - microbial_genomics
+  manuscript_tags:
+  - environmental_survey
+  - mechanistic_study
+  - specialist_audience
+  suitable_for:
+  - environmental microbiology with ecological or mechanistic insight
+  - microbial community function in environments
+  less_suitable_for:
+  - clinical-only microbiology
+  - software-only papers
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -926,7 +1424,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Specialist environmental microbiology target.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -941,9 +1440,15 @@
     url: https://portal.issn.org/resource/ISSN/1462-2920
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1462-2920.
+  - label: Manual semantic profile curation
+    url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Environmental Microbiome
-  abbreviated_title: ''
+  abbreviated_title: Environ Microbiome
   publisher: Springer Nature
   issn:
     print: ''
@@ -951,19 +1456,35 @@
   homepage_url: https://environmentalmicrobiome.biomedcentral.com/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research
+  - Methodology
+  - Review
+  scope_tags:
+  - environmental_microbiology
+  - microbiome
+  - metagenomics
+  - microbial_ecology
+  manuscript_tags:
+  - environmental_survey
+  - descriptive_study
+  - metagenome_assembled_genomes
+  - specialist_audience
+  suitable_for:
+  - environmental microbiome surveys and analyses
+  - metagenomic community profiling with ecological interpretation
+  less_suitable_for:
+  - human clinical cohort studies without environmental focus
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -975,16 +1496,23 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Specialist open-access target for environmental microbiome manuscripts.
   example_papers: []
   source_evidence:
   - label: Homepage
     url: https://environmentalmicrobiome.biomedcentral.com/
     accessed: '2026-06-28'
     notes: Official journal homepage; detailed scope and policy fields not yet curated.
+  - label: Manual semantic profile curation
+    url: https://environmentalmicrobiome.biomedcentral.com/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Applied and Environmental Microbiology
-  abbreviated_title: ''
+  abbreviated_title: Appl Environ Microbiol
   publisher: American Society for Microbiology
   issn:
     print: 0099-2240
@@ -992,19 +1520,34 @@
   homepage_url: https://journals.asm.org/journal/aem
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Minireview
+  scope_tags:
+  - environmental_microbiology
+  - microbiology
+  - biotechnology
+  - microbial_ecology
+  manuscript_tags:
+  - mechanistic_study
+  - environmental_survey
+  - specialist_audience
+  suitable_for:
+  - applied microbiology and environmental microbial function
+  - experimental microbial ecology
+  less_suitable_for:
+  - pure bioinformatics tools
+  - high-concept clinical microbiome
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -1016,7 +1559,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Established applied/environmental microbiology venue.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1031,9 +1575,15 @@
     url: https://portal.issn.org/resource/ISSN/1098-5336
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1098-5336.
+  - label: Manual semantic profile curation
+    url: https://journals.asm.org/journal/aem
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: FEMS Microbiology Ecology
-  abbreviated_title: ''
+  abbreviated_title: FEMS Microbiol Ecol
   publisher: Oxford University Press
   issn:
     print: 0168-6496
@@ -1041,19 +1591,36 @@
   homepage_url: https://academic.oup.com/femsec
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Minireview
+  - Method
+  scope_tags:
+  - microbial_ecology
+  - environmental_microbiology
+  - microbiome
+  - evolution
+  manuscript_tags:
+  - environmental_survey
+  - descriptive_study
+  - mechanistic_study
+  - specialist_audience
+  suitable_for:
+  - microbial ecology and environmental community studies
+  - ecological interpretation of microbiome data
+  less_suitable_for:
+  - clinical-only translational microbiome
+  - software-only resources
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -1065,7 +1632,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Specialist microbial ecology journal.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1080,9 +1648,15 @@
     url: https://portal.issn.org/resource/ISSN/1574-6941
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1574-6941.
+  - label: Manual semantic profile curation
+    url: https://academic.oup.com/femsec
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Bioinformatics
-  abbreviated_title: ''
+  abbreviated_title: Bioinformatics
   publisher: Oxford University Press
   issn:
     print: 1367-4803
@@ -1090,19 +1664,38 @@
   homepage_url: https://academic.oup.com/bioinformatics
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Original Paper
+  - Application Note
+  - Review
+  scope_tags:
+  - bioinformatics
+  - software
+  - methods
+  - computational_biology
+  - machine_learning
+  - genomics
+  manuscript_tags:
+  - software_tool
+  - methods_paper
+  - benchmark
+  - database_resource
+  - specialist_audience
+  suitable_for:
+  - bioinformatics methods and software with validation
+  - computational genomics tools
+  less_suitable_for:
+  - biology-only discovery without method novelty
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -1114,7 +1707,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Primary target for concise bioinformatics tools and methods.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1129,9 +1723,15 @@
     url: https://portal.issn.org/resource/ISSN/1460-2059
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1460-2059.
+  - label: Manual semantic profile curation
+    url: https://academic.oup.com/bioinformatics
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Briefings in Bioinformatics
-  abbreviated_title: ''
+  abbreviated_title: Brief Bioinform
   publisher: Oxford University Press
   issn:
     print: 1467-5463
@@ -1139,19 +1739,37 @@
   homepage_url: https://academic.oup.com/bib
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Review
+  - Original Research
+  - Application Note
+  scope_tags:
+  - bioinformatics
+  - computational_biology
+  - machine_learning
+  - genomics
+  - systems_biology
+  manuscript_tags:
+  - review
+  - methods_paper
+  - benchmark
+  - software_tool
+  suitable_for:
+  - substantial bioinformatics reviews, benchmarks, and computational studies
+  - machine-learning analyses with broad bioinformatics interest
+  less_suitable_for:
+  - narrow wet-lab microbiology
+  - small descriptive cohorts
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: ''
@@ -1163,7 +1781,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Strong fit for reviews and high-level computational biology manuscripts.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1178,9 +1797,15 @@
     url: https://portal.issn.org/resource/ISSN/1477-4054
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1477-4054.
+  - label: Manual semantic profile curation
+    url: https://academic.oup.com/bib
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: PLOS Computational Biology
-  abbreviated_title: ''
+  abbreviated_title: PLoS Comput Biol
   publisher: Public Library of Science
   issn:
     print: 1553-734X
@@ -1188,19 +1813,38 @@
   homepage_url: https://journals.plos.org/ploscompbiol/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Methods
+  - Software
+  - Education
+  - Review
+  scope_tags:
+  - computational_biology
+  - bioinformatics
+  - methods
+  - machine_learning
+  - systems_biology
+  manuscript_tags:
+  - methods_paper
+  - software_tool
+  - benchmark
+  - broad_interest
+  suitable_for:
+  - computational biology with biological insight
+  - methods or models of broad computational biology interest
+  less_suitable_for:
+  - routine pipelines without conceptual or biological insight
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -1212,7 +1856,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Good target for computational biology with clear biological relevance.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1227,9 +1872,15 @@
     url: https://portal.issn.org/resource/ISSN/1553-7358
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1553-7358.
+  - label: Manual semantic profile curation
+    url: https://journals.plos.org/ploscompbiol/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: NAR Genomics and Bioinformatics
-  abbreviated_title: ''
+  abbreviated_title: NAR Genom Bioinform
   publisher: Oxford University Press
   issn:
     print: ''
@@ -1237,19 +1888,39 @@
   homepage_url: https://academic.oup.com/nargab
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Methods
+  - Database
+  - Software
+  scope_tags:
+  - bioinformatics
+  - genomics
+  - database
+  - software
+  - methods
+  - computational_biology
+  manuscript_tags:
+  - software_tool
+  - database_resource
+  - methods_paper
+  - benchmark
+  - genome_resource
+  suitable_for:
+  - genomics software, databases, and computational methods
+  - resource papers with clear utility
+  less_suitable_for:
+  - biology-only microbiome surveys
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -1261,7 +1932,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Strong target for genomics and bioinformatics resources.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1272,9 +1944,15 @@
     url: https://portal.issn.org/resource/ISSN/2631-9268
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2631-9268.
+  - label: Manual semantic profile curation
+    url: https://academic.oup.com/nargab
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: GigaScience
-  abbreviated_title: ''
+  abbreviated_title: GigaScience
   publisher: Oxford University Press
   issn:
     print: ''
@@ -1282,19 +1960,39 @@
   homepage_url: https://academic.oup.com/gigascience
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research
+  - Data Note
+  - Technical Note
+  - Review
+  scope_tags:
+  - open_science
+  - database
+  - resource
+  - bioinformatics
+  - genomics
+  - methods
+  manuscript_tags:
+  - database_resource
+  - software_tool
+  - genome_resource
+  - benchmark
+  - methods_paper
+  suitable_for:
+  - open-science data, software, and resource manuscripts
+  - large datasets with reusable workflows
+  less_suitable_for:
+  - small studies without reusable data or tools
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -1306,7 +2004,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Good fit for data-rich open-science resources.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1317,9 +2016,15 @@
     url: https://portal.issn.org/resource/ISSN/2047-217X
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2047-217X.
+  - label: Manual semantic profile curation
+    url: https://academic.oup.com/gigascience
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: BMC Bioinformatics
-  abbreviated_title: ''
+  abbreviated_title: BMC Bioinformatics
   publisher: Springer Nature
   issn:
     print: ''
@@ -1327,19 +2032,38 @@
   homepage_url: https://bmcbioinformatics.biomedcentral.com/
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research
+  - Software
+  - Database
+  - Methodology
+  scope_tags:
+  - bioinformatics
+  - software
+  - database
+  - methods
+  - computational_biology
+  manuscript_tags:
+  - software_tool
+  - database_resource
+  - methods_paper
+  - benchmark
+  - specialist_audience
+  suitable_for:
+  - bioinformatics tools and workflows
+  - software or database resources with practical utility
+  less_suitable_for:
+  - wet-lab-only microbiology
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -1351,7 +2075,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Safer credible option for bioinformatics software and methods.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1362,9 +2087,15 @@
     url: https://portal.issn.org/resource/ISSN/1471-2105
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1471-2105.
+  - label: Manual semantic profile curation
+    url: https://bmcbioinformatics.biomedcentral.com/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Virus Evolution
-  abbreviated_title: ''
+  abbreviated_title: Virus Evol
   publisher: Oxford University Press
   issn:
     print: ''
@@ -1372,19 +2103,36 @@
   homepage_url: https://academic.oup.com/ve
   aims_scope_url: ''
   author_instructions_url: ''
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Review
+  - Short Communication
+  scope_tags:
+  - viromics
+  - evolution
+  - infectious_disease
+  - microbial_genomics
+  - phage_biology
+  manuscript_tags:
+  - virome_analysis
+  - phage_genomics
+  - genome_resource
+  - specialist_audience
+  suitable_for:
+  - viral evolution, virus genomics, and phylodynamics
+  - virome or phage evolution analyses
+  less_suitable_for:
+  - non-evolutionary microbiome surveys
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: ''
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: ''
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: ''
@@ -1396,7 +2144,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Specialist target for viral evolution and genomics.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1407,9 +2156,15 @@
     url: https://portal.issn.org/resource/ISSN/2057-1577
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2057-1577.
+  - label: Manual semantic profile curation
+    url: https://academic.oup.com/ve
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: PeerJ Computer Science
-  abbreviated_title: ''
+  abbreviated_title: PeerJ Comput Sci
   publisher: PeerJ
   issn:
     print: ''
@@ -1417,19 +2172,35 @@
   homepage_url: https://peerj.com/computer-science/
   aims_scope_url: https://peerj.com/computer-science/
   author_instructions_url: https://peerj.com/about/author-instructions/
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Literature Review
+  - Method
+  scope_tags:
+  - bioinformatics
+  - software
+  - machine_learning
+  - computational_biology
+  manuscript_tags:
+  - software_tool
+  - methods_paper
+  - benchmark
+  - specialist_audience
+  suitable_for:
+  - computer science and bioinformatics software studies
+  - machine-learning method papers
+  less_suitable_for:
+  - biology-first wet-lab studies without computational contribution
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: https://peerj.com/about/author-instructions/
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: https://peerj.com/about/author-instructions/
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: https://peerj.com/pricing/
@@ -1441,7 +2212,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Broad computer-science venue; fit depends on computational novelty.
   example_papers: []
   source_evidence:
   - label: Homepage and scope
@@ -1461,9 +2233,15 @@
     url: https://portal.issn.org/resource/ISSN/2376-5992
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 2376-5992.
+  - label: Manual semantic profile curation
+    url: https://peerj.com/computer-science/
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Journal of Virology
-  abbreviated_title: ''
+  abbreviated_title: J Virol
   publisher: American Society for Microbiology
   issn:
     print: 0022-538X
@@ -1471,19 +2249,36 @@
   homepage_url: https://journals.asm.org/journal/jvi
   aims_scope_url: https://journals.asm.org/journal/jvi/about
   author_instructions_url: https://journals.asm.org/authors
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Minireview
+  - Commentary
+  scope_tags:
+  - viromics
+  - infectious_disease
+  - molecular_biology
+  - phage_biology
+  - microbiology
+  manuscript_tags:
+  - mechanistic_study
+  - phage_genomics
+  - virome_analysis
+  - specialist_audience
+  suitable_for:
+  - virus biology, viral genomics, and mechanistic virology
+  - phage genomics with virology relevance
+  less_suitable_for:
+  - general microbiome surveys without viral focus
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: https://journals.asm.org/data-policy
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: https://journals.asm.org/data-policy
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: https://journals.asm.org/publishing-fees
@@ -1495,7 +2290,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Established specialist virology target.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1526,9 +2322,15 @@
     url: https://portal.issn.org/resource/ISSN/1098-5514
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1098-5514.
+  - label: Manual semantic profile curation
+    url: https://journals.asm.org/journal/jvi/about
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Viruses
-  abbreviated_title: ''
+  abbreviated_title: Viruses
   publisher: MDPI
   issn:
     print: ''
@@ -1536,19 +2338,37 @@
   homepage_url: https://www.mdpi.com/journal/viruses
   aims_scope_url: https://www.mdpi.com/journal/viruses/about
   author_instructions_url: https://www.mdpi.com/journal/viruses/instructions
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Article
+  - Review
+  - Communication
+  scope_tags:
+  - viromics
+  - infectious_disease
+  - phage_biology
+  - bacteriophage
+  - evolution
+  manuscript_tags:
+  - phage_genomics
+  - virome_analysis
+  - genome_resource
+  - review
+  - specialist_audience
+  suitable_for:
+  - virus, virome, and phage studies
+  - descriptive viral genomics with clear context
+  less_suitable_for:
+  - non-viral microbial ecology
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: https://www.mdpi.com/ethics
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: https://www.mdpi.com/ethics
   open_access:
-    model: ''
+    model: fully_open_access
     apc: null
     currency: ''
     url: https://www.mdpi.com/journal/viruses/apc
@@ -1560,7 +2380,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Broad open-access virology journal.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1587,9 +2408,15 @@
     url: https://portal.issn.org/resource/ISSN/1999-4915
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1999-4915.
+  - label: Manual semantic profile curation
+    url: https://www.mdpi.com/journal/viruses/about
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Phage
-  abbreviated_title: ''
+  abbreviated_title: Phage
   publisher: Mary Ann Liebert
   issn:
     print: ''
@@ -1597,19 +2424,36 @@
   homepage_url: https://www.liebertpub.com/journal/phage
   aims_scope_url: https://www.liebertpub.com/journal/phage
   author_instructions_url: https://www.liebertpub.com/journal/phage
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Review
+  - Commentary
+  scope_tags:
+  - phage_biology
+  - bacteriophage
+  - therapeutic
+  - microbiology
+  manuscript_tags:
+  - phage_genomics
+  - therapeutic
+  - short_report
+  - specialist_audience
+  suitable_for:
+  - bacteriophage biology, applications, and therapy
+  - focused phage genomics studies
+  less_suitable_for:
+  - general virology without phage focus
+  - microbiome studies without phages
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: https://www.liebertpub.com/journal/phage
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: https://www.liebertpub.com/journal/phage
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: https://www.liebertpub.com/journal/phage
@@ -1621,7 +2465,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Niche specialist target for phage-focused manuscripts.
   example_papers: []
   source_evidence:
   - label: Homepage and journal information
@@ -1629,9 +2474,15 @@
     accessed: '2026-06-28'
     notes: Official journal page; separate scope, instruction, policy, and APC summaries
       not yet curated.
+  - label: Manual semantic profile curation
+    url: https://www.liebertpub.com/journal/phage
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
 - journal: Virology
-  abbreviated_title: ''
+  abbreviated_title: Virology
   publisher: Elsevier
   issn:
     print: 0042-6822
@@ -1639,19 +2490,35 @@
   homepage_url: https://www.sciencedirect.com/journal/virology
   aims_scope_url: https://www.sciencedirect.com/journal/virology/about/aims-and-scope
   author_instructions_url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
-  article_types: []
-  scope_tags: []
-  manuscript_tags: []
-  suitable_for: []
-  less_suitable_for: []
+  article_types:
+  - Research Article
+  - Short Communication
+  - Review
+  scope_tags:
+  - viromics
+  - infectious_disease
+  - molecular_biology
+  - evolution
+  manuscript_tags:
+  - mechanistic_study
+  - virome_analysis
+  - phage_genomics
+  - specialist_audience
+  suitable_for:
+  - virus biology and viral molecular mechanisms
+  - viral genomics with virology framing
+  less_suitable_for:
+  - non-viral microbiome studies
   data_policy:
-    summary: ''
+    summary: Availability statements for data and materials should be checked against
+      the journal author instructions.
     url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
   code_policy:
-    summary: ''
+    summary: Code availability expectations should be checked against the journal
+      author instructions, especially for software or computational methods.
     url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
   open_access:
-    model: ''
+    model: hybrid
     apc: null
     currency: ''
     url: https://www.elsevier.com/journals/virology/0042-6822/open-access-options
@@ -1663,7 +2530,8 @@
     quartile: ''
     metric_year: null
     metric_sources: []
-  editorial_notes: []
+  editorial_notes:
+  - Established specialist virology venue.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -1691,4 +2559,10 @@
     url: https://portal.issn.org/resource/ISSN/1096-0341
     accessed: '2026-06-28'
     notes: Bibliographic source for online ISSN 1096-0341.
+  - label: Manual semantic profile curation
+    url: https://www.sciencedirect.com/journal/virology/about/aims-and-scope
+    accessed: '2026-06-28'
+    notes: Curated controlled-vocabulary tags from journal title, publisher identity,
+      and official journal/source URLs already recorded; verify details before changing
+      factual policy fields.
   last_checked: '2026-06-28'
