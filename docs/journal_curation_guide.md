@@ -65,3 +65,27 @@ If a publisher blocks automated checks or a page should remain human-curated
 only, keep the URL for auditability but add `manually curated only` to the
 matching `source_evidence` label or notes. The updater will skip source-evidence
 URLs marked that way and will not attempt to bypass anti-bot protections.
+
+## Manual Source Workflow
+
+Use the combined local workflow after saving blocked publisher pages manually:
+
+```bash
+python -m journal_recommender.cli process-manual-sources \
+  --manifest data_manual/manifest.yaml \
+  --journals data/journals.yaml \
+  --suggestions data_manual/suggestions/manual_curation_suggestions.yaml \
+  --manual-download-report reports/manual_download_queue.md \
+  --manual-download-yaml data_manual/manual_download_queue.yaml
+```
+
+The command parses existing local files first, writes reviewable curation
+suggestions, validates the journal database, rebuilds the index, and only then
+generates the next manual-download queue. It never fetches publisher URLs.
+
+Default mode does not edit `data/journals.yaml`. Use `--apply` only after
+reviewing `data_manual/suggestions/manual_curation_suggestions.yaml`; apply mode
+updates empty scalar fields, appends list values without duplicates, preserves
+existing APCs, and adds source-evidence entries for used manual sources.
+
+PDF parsing is not implemented. Save pages as HTML or convert them to text.

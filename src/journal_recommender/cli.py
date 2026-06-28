@@ -7,6 +7,8 @@ import os
 from pathlib import Path
 
 from journal_recommender.indexing import DEFAULT_INDEX_PATH, rebuild_index
+from journal_recommender.manual_downloads import generate_manual_download_queue
+from journal_recommender.manual_sources import process_manual_sources
 from journal_recommender.manuscript import validate_manuscript_file
 from journal_recommender.schema import validate_journal_file
 from journal_recommender.scoring import rank_journals_from_files
@@ -19,6 +21,12 @@ DEFAULT_JOURNAL_PATH = Path("data/journals.yaml")
 DEFAULT_CACHE_DIR = Path("data_raw/cache")
 DEFAULT_REPORT_PATH = Path("reports/journal_database_changed.md")
 DEFAULT_RECOMMENDATION_PATH = Path("reports/example_journal_recommendation.md")
+DEFAULT_MANUAL_MANIFEST = Path("data_manual/manifest.yaml")
+DEFAULT_MANUAL_SUGGESTIONS = Path(
+    "data_manual/suggestions/manual_curation_suggestions.yaml"
+)
+DEFAULT_MANUAL_QUEUE_REPORT = Path("reports/manual_download_queue.md")
+DEFAULT_MANUAL_QUEUE_YAML = Path("data_manual/manual_download_queue.yaml")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -80,6 +88,34 @@ def build_parser() -> argparse.ArgumentParser:
     rank_parser.add_argument("--journals", default=DEFAULT_JOURNAL_PATH, type=Path)
     rank_parser.add_argument("--out", default=DEFAULT_RECOMMENDATION_PATH, type=Path)
 
+    manual_parser = subparsers.add_parser(
+        "process-manual-sources",
+        help="Parse local manual pages, write suggestions, and update download queue.",
+    )
+    manual_parser.add_argument("--manifest", default=DEFAULT_MANUAL_MANIFEST, type=Path)
+    manual_parser.add_argument("--journals", default=DEFAULT_JOURNAL_PATH, type=Path)
+    manual_parser.add_argument("--cache-dir", default=DEFAULT_CACHE_DIR, type=Path)
+    manual_parser.add_argument(
+        "--suggestions",
+        default=DEFAULT_MANUAL_SUGGESTIONS,
+        type=Path,
+    )
+    manual_parser.add_argument(
+        "--manual-download-report",
+        default=DEFAULT_MANUAL_QUEUE_REPORT,
+        type=Path,
+    )
+    manual_parser.add_argument(
+        "--manual-download-yaml",
+        default=DEFAULT_MANUAL_QUEUE_YAML,
+        type=Path,
+    )
+    manual_parser.add_argument("--index", default=DEFAULT_INDEX_PATH, type=Path)
+    manual_parser.add_argument("--apply", action="store_true")
+    manual_parser.add_argument("--strict", action="store_true")
+    manual_parser.add_argument("--text-out-dir", type=Path)
+    manual_parser.add_argument("--report", default=DEFAULT_REPORT_PATH, type=Path)
+
     return parser
 
 
@@ -140,6 +176,40 @@ def main(argv: list[str] | None = None) -> int:
             f"{len(recommendations.scores)} journals; "
             f"top recommendation is {recommendations.scores[0].journal}; "
             f"report written to {args.out}"
+        )
+        return 0
+
+    if args.command == "process-manual-sources":
+        try:
+            sources, parsed, suggestions, apply_result = process_manual_sources(
+                manifest_path=args.manifest,
+                journals_path=args.journals,
+                suggestions_path=args.suggestions,
+                index_path=args.index,
+                apply=args.apply,
+                text_out_dir=args.text_out_dir,
+            )
+            queue = generate_manual_download_queue(
+                manifest_sources=sources,
+                parsed_sources=parsed,
+                journals_path=args.journals,
+                cache_dir=args.cache_dir,
+                queue_yaml=args.manual_download_yaml,
+                queue_report=args.manual_download_report,
+            )
+        except Exception:
+            if args.strict:
+                raise
+            raise
+        parsed_count = sum(1 for item in parsed if item.status == "parsed")
+        missing_count = sum(1 for item in parsed if item.status == "missing_local_file")
+        print(
+            "Processed manual sources: "
+            f"{parsed_count} parsed, "
+            f"{missing_count} missing, "
+            f"{len(suggestions)} suggestions, "
+            f"{len(queue)} queued; "
+            f"applied updates: {apply_result['applied']}"
         )
         return 0
 

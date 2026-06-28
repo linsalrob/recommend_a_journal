@@ -61,6 +61,36 @@ suspicious publisher pages for human review instead of rewriting scope summaries
 from HTML. APC values are reported as candidates only and are not written
 automatically.
 
+## Manual Source Curation
+
+When publisher pages block automation, download pages manually in a browser and
+record them in `data_manual/manifest.yaml`. Then run the combined local-only
+workflow:
+
+```bash
+python -m journal_recommender.cli process-manual-sources \
+  --manifest data_manual/manifest.yaml \
+  --journals data/journals.yaml \
+  --suggestions data_manual/suggestions/manual_curation_suggestions.yaml \
+  --manual-download-report reports/manual_download_queue.md \
+  --manual-download-yaml data_manual/manual_download_queue.yaml
+```
+
+Review the suggestions before applying. To apply only conservative safe updates:
+
+```bash
+python -m journal_recommender.cli process-manual-sources \
+  --manifest data_manual/manifest.yaml \
+  --journals data/journals.yaml \
+  --suggestions data_manual/suggestions/manual_curation_suggestions.yaml \
+  --manual-download-report reports/manual_download_queue.md \
+  --manual-download-yaml data_manual/manual_download_queue.yaml \
+  --apply
+```
+
+Raw downloaded publisher pages and extracted text stay local under
+`data_manual/pages/` and `data_manual/extracted/`.
+
 ## Add A Journal
 
 Add a complete structured record to `data/journals.yaml`, even when many fields
