@@ -1,290 +1,350 @@
 {
   "https://academic.oup.com/bib": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://academic.oup.com/bib"
   },
   "https://academic.oup.com/bioinformatics": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://academic.oup.com/bioinformatics"
   },
   "https://academic.oup.com/femsec": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://academic.oup.com/femsec"
   },
   "https://academic.oup.com/gigascience": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://academic.oup.com/gigascience"
   },
   "https://academic.oup.com/nargab": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://academic.oup.com/nargab"
   },
   "https://academic.oup.com/ve": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://academic.oup.com/ve"
   },
   "https://bmcbioinformatics.biomedcentral.com/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/a4947e030ff397fd814b96f23a41e648f8a0bcb11ca942ff49f638deb61376c0.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://bmcbioinformatics.biomedcentral.com/"
   },
   "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920"
   },
   "https://environmentalmicrobiome.biomedcentral.com/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/47c6b68be658ac26a4da405157cc4dc7a9cfd1a456337da177f763580a3a69a4.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://environmentalmicrobiome.biomedcentral.com/"
   },
   "https://genome.cshlp.org/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 302,
     "url": "https://genome.cshlp.org/"
   },
   "https://genomebiology.biomedcentral.com/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/bfbd39dd2f8de0adf92c4abf3aa4225323d64a4e11fb10fe240b2d7cd5d96bd7.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://genomebiology.biomedcentral.com/"
   },
   "https://journals.asm.org/authors": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/authors"
   },
   "https://journals.asm.org/data-policy": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/data-policy"
   },
   "https://journals.asm.org/journal/aem": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/journal/aem"
   },
   "https://journals.asm.org/journal/jvi": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/journal/jvi"
   },
   "https://journals.asm.org/journal/jvi/about": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/journal/jvi/about"
   },
   "https://journals.asm.org/journal/mbio": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/journal/mbio"
   },
   "https://journals.asm.org/journal/msystems": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/journal/msystems"
   },
   "https://journals.asm.org/journal/spectrum": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/journal/spectrum"
   },
   "https://journals.asm.org/publishing-fees": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://journals.asm.org/publishing-fees"
   },
   "https://journals.plos.org/ploscompbiol/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "d109c0fb7bd9f6235bf1c37409e00cf43c934cd3c023243f85d70f155f455406",
+    "content_path": "data_raw/cache/pages/2c391714bd3ab1ac2056d75d870db5ad30fdf3020bfa2a5c7858385920ac6e2a.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://journals.plos.org/ploscompbiol/"
   },
   "https://microbiomejournal.biomedcentral.com/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/a030d2b1c185072c999fce614b4bd7714638441969462c18ccc56e5a88f46b45.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://microbiomejournal.biomedcentral.com/"
   },
   "https://peerj.com/about/author-instructions/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "2baca2eacfc879ad58526ebde1059f8bb6581d2289dbeee0efad332f9373347a",
+    "content_path": "data_raw/cache/pages/c0baff90da84f9f15dc99db5d0aaa14135dd535d2583938f3100701b19f72c67.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "Sun, 28 Jun 2026 13:20:40 GMT",
+    "status_code": 200,
     "url": "https://peerj.com/about/author-instructions/"
   },
   "https://peerj.com/computer-science/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "9498eee98caba60f195ac4fb874e2a5bd7995b5c3dc5a64c75ce61cc324ff9ee",
+    "content_path": "data_raw/cache/pages/789d6968d6382149b959adf376fc47ee5136d97b9dd34d9d4e08292be1c4c6de.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 201,
     "url": "https://peerj.com/computer-science/"
   },
   "https://peerj.com/pricing/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "f1a118bb9ac35dca35d2cea70526997b0c59712ac3d47bdfa7a14002fc6809b4",
+    "content_path": "data_raw/cache/pages/c3ffa49c8887753069c5723ef895a6363ee28d0f13eb1d07824c68b80748ddea.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://peerj.com/pricing/"
   },
   "https://www.cell.com/cell-host-microbe/home": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.cell.com/cell-host-microbe/home"
   },
   "https://www.cell.com/cell/home": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.cell.com/cell/home"
   },
   "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
   },
   "https://www.elsevier.com/journals/virology/0042-6822/open-access-options": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.elsevier.com/journals/virology/0042-6822/open-access-options"
   },
   "https://www.liebertpub.com/journal/phage": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.liebertpub.com/journal/phage"
   },
   "https://www.mdpi.com/ethics": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.mdpi.com/ethics"
   },
   "https://www.mdpi.com/journal/viruses": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.mdpi.com/journal/viruses"
   },
   "https://www.mdpi.com/journal/viruses/about": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.mdpi.com/journal/viruses/about"
   },
   "https://www.mdpi.com/journal/viruses/apc": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.mdpi.com/journal/viruses/apc"
   },
   "https://www.mdpi.com/journal/viruses/instructions": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.mdpi.com/journal/viruses/instructions"
   },
   "https://www.microbiologyresearch.org/content/journal/mgen": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.microbiologyresearch.org/content/journal/mgen"
   },
   "https://www.nature.com/ismecomms/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/1da6ed7fadeb042b5948f8b7d4c0cfe6af08f408bc2318d96da07cb78578bd4b.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://www.nature.com/ismecomms/"
   },
   "https://www.nature.com/ismej/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/c1328968b9d97ae0287d4463784d35380914442e7db7e0c153447b78826383c9.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://www.nature.com/ismej/"
   },
   "https://www.nature.com/nature/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/b2909e3d8c157544d30dd92380e5b63437df64bc50bba4dce97eb68be04e388b.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://www.nature.com/nature/"
   },
   "https://www.nature.com/nbt/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/abccb93327230b5b07c6176275f1c126e1e2a47d6b967ffc36fac9b95e5a9260.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://www.nature.com/nbt/"
   },
   "https://www.nature.com/ncomms/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/3c1ddffa65450e4f4f4cbba7bb9bd128bd823ac9badff83c0d8b891e7e2707c2.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://www.nature.com/ncomms/"
   },
   "https://www.nature.com/nmeth/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/f52060b71a464eda622e0c6d5c34e518b58cceaa4f756b4cfb53a5135dc5fcdc.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://www.nature.com/nmeth/"
   },
   "https://www.nature.com/nmicrobiol/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "content_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+    "content_path": "data_raw/cache/pages/a9e98cae3e87c54b0cd676d2ef0dafc4f36d99df15811c04d0fb24192fa7ec51.html",
+    "error": "",
+    "etag": "",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "last_modified": "",
+    "status_code": 200,
     "url": "https://www.nature.com/nmicrobiol/"
   },
   "https://www.pnas.org/": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.pnas.org/"
   },
   "https://www.science.org/journal/sciadv": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.science.org/journal/sciadv"
   },
   "https://www.science.org/journal/science": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.science.org/journal/science"
   },
   "https://www.sciencedirect.com/journal/virology": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.sciencedirect.com/journal/virology"
   },
   "https://www.sciencedirect.com/journal/virology/about/aims-and-scope": {
-    "error": "[Errno -3] Temporary failure in name resolution",
+    "error": "HTTP 403",
     "last_checked": "2026-06-28",
-    "status_code": null,
+    "status_code": 403,
     "url": "https://www.sciencedirect.com/journal/virology/about/aims-and-scope"
   }
 }
