@@ -72,21 +72,32 @@ python -m journal_recommender.cli process-manual-sources \
   --manifest data_manual/manifest.yaml \
   --journals data/journals.yaml \
   --suggestions data_manual/suggestions/manual_curation_suggestions.yaml \
+  --review-report data_manual/suggestions/manual_curation_review.md \
   --manual-download-report reports/manual_download_queue.md \
   --manual-download-yaml data_manual/manual_download_queue.yaml
 ```
 
-Review the suggestions before applying. To apply only conservative safe updates:
+The parser is section-aware: it prefers aims/scope, article-type,
+author-instruction, data-policy, code-policy, and APC sections over whole-page
+keyword matches, and labels each candidate field with a confidence value.
+
+Review both the YAML suggestions and
+`data_manual/suggestions/manual_curation_review.md` before applying. To apply
+only high-confidence safe updates:
 
 ```bash
 python -m journal_recommender.cli process-manual-sources \
   --manifest data_manual/manifest.yaml \
   --journals data/journals.yaml \
   --suggestions data_manual/suggestions/manual_curation_suggestions.yaml \
+  --review-report data_manual/suggestions/manual_curation_review.md \
   --manual-download-report reports/manual_download_queue.md \
   --manual-download-yaml data_manual/manual_download_queue.yaml \
   --apply
 ```
+
+Use `--dry-run` to preview what would be applied. Lower-confidence suggestions
+require the explicit `--apply-low-confidence` flag.
 
 Raw downloaded publisher pages and extracted text stay local under
 `data_manual/pages/` and `data_manual/extracted/`.

@@ -6,10 +6,13 @@ import yaml
 
 from journal_recommender.manual_sources import (
     apply_suggestions_to_journals,
+    extract_relevant_sections,
     extract_text_from_file,
     generate_curation_suggestions,
     load_manual_manifest,
     parse_manual_sources,
+    section_text_for_field,
+    write_review_report,
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -153,7 +156,9 @@ def test_suggestion_generation_and_apply(tmp_path: Path) -> None:
     result = apply_suggestions_to_journals(suggestions, journals)
     records = yaml.safe_load(journals.read_text(encoding="utf-8"))
 
-    assert suggestions[0]["candidate_updates"]["article_types"]["add"]
+    assert "article_types" not in suggestions[0]["candidate_updates"]
+    assert suggestions[0]["confidence"]["scope_tags"] == "high"
+    assert suggestions[0]["status"] == "ready_for_review"
     assert result["applied"] > 0
     assert records[0]["article_types"].count("Research Article") == 1
     assert records[0]["scope_tags"]
@@ -189,3 +194,232 @@ def test_extract_text_from_txt(tmp_path: Path) -> None:
     path.write_text("Aims   and   scope", encoding="utf-8")
 
     assert extract_text_from_file(path) == "Aims and scope"
+
+
+def test_extracts_clean_scope_section_from_noisy_html(tmp_path: Path) -> None:
+    path = tmp_path / "noisy.html"
+    path.write_text(
+        """
+        <html><body>
+        <nav>Related journals Microbiome Virology Bioinformatics</nav>
+        <h1>Aims and scope</h1>
+        <p>This journal publishes research in microbial ecology and
+        environmental microbiology.</p>
+        <h2>Latest articles</h2>
+        <p>Research Article: machine learning for bacteriophages. 12 Jun 2026</p>
+        </body></html>
+        """,
+        encoding="utf-8",
+    )
+
+    text = extract_text_from_file(path)
+    sections = extract_relevant_sections(text, "homepage_or_scope")
+
+    assert "microbial ecology" in sections["aims_scope"]
+    assert "machine learning" not in sections["aims_scope"]
+
+
+def test_scope_tags_do_not_come_from_related_journal_navigation(tmp_path: Path) -> None:
+    html = tmp_path / "cell_like.html"
+    html.write_text(
+        """
+        <html><body>
+        <nav>Related journals Microbiome Virology Bioinformatics
+        Cell Host & Microbe</nav>
+        <h1>Mission and Scope</h1>
+        <p>The journal publishes substantial advances of broad interest across
+        life sciences.</p>
+        </body></html>
+        """,
+        encoding="utf-8",
+    )
+    manifest = write_manifest(
+        tmp_path,
+        [{"local_file": str(html), "url": "https://example.org/cell"}],
+    )
+
+    suggestions = generate_curation_suggestions(
+        parse_manual_sources(load_manual_manifest(manifest))
+    )
+    tags = suggestions[0]["candidate_updates"].get("scope_tags", {}).get("add", [])
+
+    assert "microbiome" not in tags
+    assert "bioinformatics" not in tags
+
+
+def test_article_types_do_not_come_from_latest_article_feed(tmp_path: Path) -> None:
+    html = tmp_path / "science_like.html"
+    html.write_text(
+        """
+        <html><body>
+        <h1>Aims and scope</h1>
+        <p>Science publishes original research of broad scientific importance.</p>
+        <h2>Latest articles</h2>
+        <p>Review: microbial genomics in hospitals. 4 May 2026</p>
+        <p>Research Article: new method for virome analysis. 5 May 2026</p>
+        </body></html>
+        """,
+        encoding="utf-8",
+    )
+    manifest = write_manifest(
+        tmp_path,
+        [{"local_file": str(html), "url": "https://example.org/science"}],
+    )
+
+    suggestion = generate_curation_suggestions(
+        parse_manual_sources(load_manual_manifest(manifest))
+    )[0]
+
+    assert "article_types" not in suggestion["candidate_updates"]
+
+
+def test_article_types_from_true_article_types_section(tmp_path: Path) -> None:
+    html = tmp_path / "authors.html"
+    html.write_text(
+        """
+        <html><body>
+        <h1>Article types</h1>
+        <p>The journal accepts Research Articles, Reviews, Brief Reports, and
+        Short Communications.</p>
+        </body></html>
+        """,
+        encoding="utf-8",
+    )
+    source = load_manual_manifest(
+        write_manifest(
+            tmp_path,
+            [{"local_file": str(html), "url": "https://example.org/authors"}],
+        )
+    )[0]
+    source.source_type = "author_instructions"
+
+    suggestion = generate_curation_suggestions(parse_manual_sources([source]))[0]
+
+    assert suggestion["candidate_updates"]["article_types"]["add"] == [
+        "Brief Report",
+        "Research Article",
+        "Review",
+        "Short Communication",
+    ]
+    assert suggestion["confidence"]["article_types"] == "high"
+
+
+def test_data_and_code_policy_from_author_instructions(tmp_path: Path) -> None:
+    html = tmp_path / "authors.html"
+    html.write_text(
+        """
+        <html><body>
+        <h1>Information for authors</h1>
+        <p>Authors must include a data availability statement. Software and code
+        used for central analyses should be made available.</p>
+        </body></html>
+        """,
+        encoding="utf-8",
+    )
+    source = load_manual_manifest(
+        write_manifest(
+            tmp_path,
+            [{"local_file": str(html), "url": "https://example.org/authors"}],
+        )
+    )[0]
+    source.source_type = "author_instructions"
+    source.target_fields = ["data_policy", "code_policy"]
+
+    suggestion = generate_curation_suggestions(parse_manual_sources([source]))[0]
+
+    assert suggestion["candidate_updates"]["data_policy"]["summary"]
+    assert suggestion["candidate_updates"]["code_policy"]["summary"]
+    assert suggestion["confidence"]["data_policy"] == "medium"
+
+
+def test_full_page_fallback_is_low_confidence(tmp_path: Path) -> None:
+    text = (
+        "This journal publishes research in microbiology and microbial genomics "
+        "and includes aims and scope information without a clean heading."
+    )
+    sections = extract_relevant_sections(text, "aims_scope")
+
+    assert section_text_for_field(sections, "scope_tags", "aims_scope")
+    source = load_manual_manifest(
+        write_manifest(
+            tmp_path,
+            [{"local_file": str(tmp_path / "source.txt"), "url": "https://example.org/scope"}],
+        )
+    )[0]
+    source.source_type = "aims_scope"
+    source.target_fields = ["scope_tags"]
+    source.local_file.write_text(text, encoding="utf-8")
+    suggestion = generate_curation_suggestions(parse_manual_sources([source]))[0]
+    assert suggestion["confidence"]["scope_tags"] == "low"
+    assert suggestion["status"] == "low_confidence"
+
+
+def test_review_report_is_generated(tmp_path: Path) -> None:
+    suggestions = [
+        {
+            "journal": "Example Journal",
+            "source_type": "aims_scope",
+            "local_file": "manual.html",
+            "status": "ready_for_review",
+            "confidence": {"scope_tags": "high"},
+            "warnings": [],
+        }
+    ]
+    report = tmp_path / "manual_curation_review.md"
+
+    write_review_report(suggestions, [], report)
+
+    text = report.read_text(encoding="utf-8")
+    assert "# Manual Curation Review" in text
+    assert "scope_tags" in text
+
+
+def test_apply_only_high_confidence_by_default(tmp_path: Path) -> None:
+    journals = tmp_path / "journals.yaml"
+    write_minimal_journals(journals)
+    suggestions = [
+        {
+            "journal": "Example Journal",
+            "source_type": "aims_scope",
+            "source_url": "https://example.org/scope",
+            "local_file": "manual.html",
+            "candidate_updates": {
+                "scope_tags": {"add": ["microbiology"]},
+                "manuscript_tags": {"add": ["specialist_audience"]},
+            },
+            "confidence": {"scope_tags": "high", "manuscript_tags": "low"},
+        }
+    ]
+
+    apply_suggestions_to_journals(suggestions, journals)
+    records = yaml.safe_load(journals.read_text(encoding="utf-8"))
+
+    assert records[0]["scope_tags"] == ["microbiology"]
+    assert records[0]["manuscript_tags"] == []
+
+
+def test_apply_low_confidence_requires_flag(tmp_path: Path) -> None:
+    journals = tmp_path / "journals.yaml"
+    write_minimal_journals(journals)
+    suggestions = [
+        {
+            "journal": "Example Journal",
+            "source_type": "aims_scope",
+            "source_url": "https://example.org/scope",
+            "local_file": "manual.html",
+            "candidate_updates": {
+                "scope_tags": {"add": ["microbiology"]},
+                "manuscript_tags": {"add": ["specialist_audience"]},
+            },
+            "confidence": {"scope_tags": "high", "manuscript_tags": "low"},
+        }
+    ]
+
+    apply_suggestions_to_journals(
+        suggestions,
+        journals,
+        include_low_confidence=True,
+    )
+    records = yaml.safe_load(journals.read_text(encoding="utf-8"))
+
+    assert records[0]["manuscript_tags"] == ["specialist_audience"]

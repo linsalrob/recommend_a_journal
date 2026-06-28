@@ -72,10 +72,15 @@ def test_process_manual_sources_cli(tmp_path, capsys) -> None:
             str(tmp_path / "queue.yaml"),
             "--index",
             str(tmp_path / "index.jsonl"),
+            "--review-report",
+            str(tmp_path / "review.md"),
+            "--dry-run",
         ]
     )
 
     captured = capsys.readouterr()
     assert exit_code == 0
     assert "Processed manual sources" in captured.out
+    assert "(dry run)" in captured.out
     assert (tmp_path / "suggestions.yaml").exists()
+    assert (tmp_path / "review.md").exists()

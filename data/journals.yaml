@@ -2354,6 +2354,7 @@
     integration of AI with ... ScopeViewer: A Browser-Based Solution for Visualizing
     Large Biological Images Danni Luo and others Background Spatial transcriptomics
     (ST) enables a high-resolution interrogation o'
+  - Manual source indicates journal scope includes methods, open science.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -2516,6 +2517,7 @@
     14 Virology aims_scope data_manual/pages/virology_aims_and_scope.html 6 Virology
     guide_for_authors data_manual/pages/virology_guide_for_authors.html 10 Virology
     open_access data_manual/pages/v'
+  - Manual source indicates journal scope includes viromics.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -3011,6 +3013,8 @@
   - 'Manual source suggests scope note: Aims and scope - Virology | ScienceDirect.com
     by Elsevier Skip to main content ScienceDirect Journals & Books Help Search My
     account Sign in Virology Supports open access 4.2 CiteS'
+  - Manual source indicates journal scope includes clinical microbiology, infectious
+    disease, microbiology, viromics.
   example_papers: []
   source_evidence:
   - label: Homepage

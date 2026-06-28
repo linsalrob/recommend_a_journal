@@ -75,6 +75,7 @@ python -m journal_recommender.cli process-manual-sources \
   --manifest data_manual/manifest.yaml \
   --journals data/journals.yaml \
   --suggestions data_manual/suggestions/manual_curation_suggestions.yaml \
+  --review-report data_manual/suggestions/manual_curation_review.md \
   --manual-download-report reports/manual_download_queue.md \
   --manual-download-yaml data_manual/manual_download_queue.yaml
 ```
@@ -84,8 +85,19 @@ suggestions, validates the journal database, rebuilds the index, and only then
 generates the next manual-download queue. It never fetches publisher URLs.
 
 Default mode does not edit `data/journals.yaml`. Use `--apply` only after
-reviewing `data_manual/suggestions/manual_curation_suggestions.yaml`; apply mode
-updates empty scalar fields, appends list values without duplicates, preserves
-existing APCs, and adds source-evidence entries for used manual sources.
+reviewing `data_manual/suggestions/manual_curation_suggestions.yaml` and
+`data_manual/suggestions/manual_curation_review.md`.
+
+Suggestions include field-level confidence. Regular `--apply` applies only
+high-confidence fields from relevant sections, updates empty scalar fields,
+appends list values without duplicates, preserves existing APCs, and adds
+source-evidence entries for used manual sources. Use `--dry-run` to preview
+changes. Use `--apply-low-confidence` only after reviewing medium/low-confidence
+fields manually.
+
+The parser intentionally ignores navigation, latest-article feeds,
+related-journal lists, footer text, cookie notices, and publisher-wide
+boilerplate for journal facts unless a relevant source section supports the
+field.
 
 PDF parsing is not implemented. Save pages as HTML or convert them to text.

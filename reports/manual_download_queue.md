@@ -7,65 +7,65 @@
 - Local files parsed: 54
 - Local files missing: 0
 - Local files failed parsing: 0
-- URLs still needing manual download: 19
+- URLs still needing manual download: 18
 
 ## Files Parsed This Run
 
 | Journal | Source type | Local file | Suggestions generated |
 | --- | --- | --- | ---: |
-| Science | homepage_or_scope | data_manual/pages/science_home.html | 5 |
+| Science | homepage_or_scope | data_manual/pages/science_home.html | 2 |
 | Science | author_instructions | data_manual/pages/science_information_for_authors.html | 6 |
-| Science Advances | homepage_or_scope | data_manual/pages/science_advances_home.html | 6 |
-| Science Advances | author_instructions | data_manual/pages/science_advances_information_for_authors.html | 8 |
-| Cell | homepage_or_scope | data_manual/pages/cell_home.html | 13 |
-| Cell | guide_for_authors | data_manual/pages/cell_authors.html | 7 |
-| Cell Host & Microbe | homepage_or_scope | data_manual/pages/cell_host_microbe_home.html | 20 |
-| Cell Host & Microbe | guide_for_authors | data_manual/pages/cell_host_microbe_authors.html | 7 |
-| PNAS | homepage_or_scope | data_manual/pages/pnas_home.html | 12 |
-| PNAS | author_instructions | data_manual/pages/pnas_submitting_your_manuscript.html | 9 |
-| mBio | homepage_or_scope | data_manual/pages/mbio_home.html | 17 |
+| Science Advances | homepage_or_scope | data_manual/pages/science_advances_home.html | 2 |
+| Science Advances | author_instructions | data_manual/pages/science_advances_information_for_authors.html | 3 |
+| Cell | homepage_or_scope | data_manual/pages/cell_home.html | 2 |
+| Cell | guide_for_authors | data_manual/pages/cell_authors.html | 2 |
+| Cell Host & Microbe | homepage_or_scope | data_manual/pages/cell_host_microbe_home.html | 2 |
+| Cell Host & Microbe | guide_for_authors | data_manual/pages/cell_host_microbe_authors.html | 2 |
+| PNAS | homepage_or_scope | data_manual/pages/pnas_home.html | 2 |
+| PNAS | author_instructions | data_manual/pages/pnas_submitting_your_manuscript.html | 7 |
+| mBio | homepage_or_scope | data_manual/pages/mbio_home.html | 3 |
 | mBio | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| mBio | author_instructions | data_manual/pages/asm_authors.html | 9 |
-| mSystems | homepage_or_scope | data_manual/pages/msystems_home.html | 19 |
+| mBio | author_instructions | data_manual/pages/asm_authors.html | 1 |
+| mSystems | homepage_or_scope | data_manual/pages/msystems_home.html | 3 |
 | mSystems | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| mSystems | author_instructions | data_manual/pages/asm_authors.html | 9 |
-| Microbiology Spectrum | homepage_or_scope | data_manual/pages/microbiology_spectrum_home.html | 15 |
+| mSystems | author_instructions | data_manual/pages/asm_authors.html | 1 |
+| Microbiology Spectrum | homepage_or_scope | data_manual/pages/microbiology_spectrum_home.html | 3 |
 | Microbiology Spectrum | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| Microbiology Spectrum | author_instructions | data_manual/pages/asm_authors.html | 9 |
-| Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_home.html | 12 |
+| Microbiology Spectrum | author_instructions | data_manual/pages/asm_authors.html | 1 |
+| Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_home.html | 3 |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 9 |
-| ASM Animal Microbiology | homepage_or_scope | data_manual/pages/asm_am_art.html | 17 |
+| Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
+| ASM Animal Microbiology | homepage_or_scope | data_manual/pages/asm_am_art.html | 9 |
 | ASM Animal Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| ASM Animal Microbiology | author_instructions | data_manual/pages/asm_authors.html | 9 |
-| Journal of Virology | homepage_or_scope | data_manual/pages/journal_of_virology_home.html | 12 |
-| Journal of Virology | author_instructions | data_manual/pages/asm_authors.html | 9 |
+| ASM Animal Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
+| Journal of Virology | homepage_or_scope | data_manual/pages/journal_of_virology_home.html | 3 |
+| Journal of Virology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Journal of Virology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| Journal of Clinical Microbiology | homepage_or_scope | data_manual/pages/jcm_art.html | 16 |
-| Journal of Clinical Microbiology | author_instructions | data_manual/pages/asm_authors.html | 9 |
+| Journal of Clinical Microbiology | homepage_or_scope | data_manual/pages/jcm_art.html | 4 |
+| Journal of Clinical Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Journal of Clinical Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| Microbiology Spectrum | homepage_or_scope | data_manual/pages/ms_art.html | 23 |
-| mSystems | homepage_or_scope | data_manual/pages/msystems_art.html | 24 |
-| mSphere | author_instructions | data_manual/pages/msphere_art.html | 9 |
-| Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_art.html | 23 |
-| Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 9 |
+| Microbiology Spectrum | homepage_or_scope | data_manual/pages/ms_art.html | 4 |
+| mSystems | homepage_or_scope | data_manual/pages/msystems_art.html | 4 |
+| mSphere | author_instructions | data_manual/pages/msphere_art.html | 5 |
+| Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_art.html | 4 |
+| Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
-| Bioinformatics | homepage_or_scope | data_manual/pages/bioinformatics_home.html | 22 |
-| Briefings in Bioinformatics | homepage_or_scope | data_manual/pages/briefings_in_bioinformatics_home.html | 17 |
-| NAR Genomics and Bioinformatics | homepage_or_scope | data_manual/pages/nar_genomics_and_bioinformatics_home.html | 19 |
-| GigaScience | homepage_or_scope | data_manual/pages/gigascience_home.html | 25 |
-| Virus Evolution | homepage_or_scope | data_manual/pages/virus_evolution_home.html | 24 |
-| FEMS Microbiology Ecology | homepage_or_scope | data_manual/pages/fems_microbiology_ecology_home.html | 12 |
-| Microbial Genomics | homepage_or_scope | data_manual/pages/microbial_genomics_home.html | 29 |
-| Environmental Microbiology | homepage_or_scope | data_manual/pages/environmental_microbiology_home.html | 11 |
-| Viruses | homepage_or_scope | data_manual/pages/viruses_home.html | 34 |
-| Viruses | author_instructions | data_manual/pages/viruses_instructions.html | 10 |
+| Bioinformatics | homepage_or_scope | data_manual/pages/bioinformatics_home.html | 2 |
+| Briefings in Bioinformatics | homepage_or_scope | data_manual/pages/briefings_in_bioinformatics_home.html | 2 |
+| NAR Genomics and Bioinformatics | homepage_or_scope | data_manual/pages/nar_genomics_and_bioinformatics_home.html | 2 |
+| GigaScience | homepage_or_scope | data_manual/pages/gigascience_home.html | 7 |
+| Virus Evolution | homepage_or_scope | data_manual/pages/virus_evolution_home.html | 6 |
+| FEMS Microbiology Ecology | homepage_or_scope | data_manual/pages/fems_microbiology_ecology_home.html | 2 |
+| Microbial Genomics | homepage_or_scope | data_manual/pages/microbial_genomics_home.html | 6 |
+| Environmental Microbiology | homepage_or_scope | data_manual/pages/environmental_microbiology_home.html | 2 |
+| Viruses | homepage_or_scope | data_manual/pages/viruses_home.html | 2 |
+| Viruses | author_instructions | data_manual/pages/viruses_instructions.html | 4 |
 | Viruses | apc | data_manual/pages/viruses_apc.html | 1 |
-| Phage | homepage_or_scope | data_manual/pages/phage_home.html | 22 |
-| Phage | author_instructions | data_manual/pages/phage_authors.html | 8 |
-| Virology | homepage_or_scope | data_manual/pages/virology_home.html | 14 |
-| Virology | aims_scope | data_manual/pages/virology_aims_and_scope.html | 6 |
-| Virology | guide_for_authors | data_manual/pages/virology_guide_for_authors.html | 10 |
+| Phage | homepage_or_scope | data_manual/pages/phage_home.html | 4 |
+| Phage | author_instructions | data_manual/pages/phage_authors.html | 3 |
+| Virology | homepage_or_scope | data_manual/pages/virology_home.html | 10 |
+| Virology | aims_scope | data_manual/pages/virology_aims_and_scope.html | 1 |
+| Virology | guide_for_authors | data_manual/pages/virology_guide_for_authors.html | 4 |
 | Virology | open_access | data_manual/pages/virology_open_access_options.html | 1 |
 
 ## Missing Local Files From Manifest
@@ -92,7 +92,6 @@
 | Nature Communications | homepage_or_scope | 200 | suspicious | https://www.nature.com/ncomms/ | data_manual/pages/nature_communications_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
 | Nature Methods | homepage_or_scope | 200 | suspicious | https://www.nature.com/nmeth/ | data_manual/pages/nature_methods_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
 | Nature Microbiology | homepage_or_scope | 200 | suspicious | https://www.nature.com/nmicrobiol/ | data_manual/pages/nature_microbiology_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| PLOS Computational Biology | homepage_or_scope |  | failed | https://journals.plos.org/ploscompbiol/ | data_manual/pages/plos_computational_biology_homepage_or_scope.html | Automated fetch failed and no parsed local file is available. |
 | PeerJ Computer Science | apc | 200 | suspicious | https://peerj.com/pricing/ | data_manual/pages/peerj_computer_science_apc.html | Automated fetch produced suspicious content: very_short_body. |
 | PeerJ Computer Science | homepage_or_scope | 201 | suspicious | https://peerj.com/computer-science/ | data_manual/pages/peerj_computer_science_homepage_or_scope.html | Automated fetch produced suspicious content: very_short_body. |
 | Viruses | aims_scope | 403 | blocked | https://www.mdpi.com/journal/viruses/about | data_manual/pages/viruses_aims_scope.html | Automated fetch returned HTTP 403. |

@@ -1,32 +1,20 @@
 - journal: Science
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.science.org/journal/science
   local_file: data_manual/pages/science_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://www.science.org/journal/science
     aims_scope_url: https://www.science.org/journal/science
-    article_types:
-      add:
-      - Research Article
-    scope_tags:
-      add:
-      - environmental_microbiology
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: rent Issue First release papers Archive
-        About About Science Mission & Scope Editors & Advisory Boards Editorial Policies
-        Information for Authors Information for Reviewers Journal Metrics Staff Contact
-        Us TOC Alerts and RSS Feeds science advances scie'
-  evidence:
-  - field: article_types
-    snippet: RSS Feeds Submit manuscript GET OUR E-ALERTS Main content starts here
-      Research Article 25 Jun 2026 Both innate and environmental drivers affect songbird
-      ranges Books et al. 25 Jun 2026 Dartmouth’s AI summer and what came next Feature
-      25 Jun 2026 Word
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
   warnings: []
 - journal: Science
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://www.science.org/content/page/science-information-authors
   local_file: data_manual/pages/science_information_for_authors.html
   extracted_text_path: ''
@@ -38,10 +26,10 @@
       - Research Article
       - Review
     data_policy:
-      summary: able, or will be deposited, and whether there are any restrictions
-        on data availability, such as an MTA. Information on any reference material
-        or additional data files (see below for uploading items to the Auxiliary files
-        section). Your editor will f
+      summary: rstanding. Selected papers should present novel and broadly important
+        data, syntheses, or concepts. We welcome submissions from all fields of science
+        and from any source. Manuscripts should be submitted at our manuscript submission
+        and information po
       url: https://www.science.org/content/page/science-information-authors
     code_policy:
       summary: g information on our partnership with Dryad, please see the “Data and
@@ -49,6 +37,11 @@
         are not a good fit for our print format (often those with more than 4 figures)
         will be included in all d
       url: https://www.science.org/content/page/science-information-authors
+  confidence:
+    author_instructions_url: high
+    article_types: medium
+    data_policy: medium
+    code_policy: medium
   evidence:
   - field: article_types
     snippet: should be divided into sections with brief subheadings. Materials and
@@ -56,10 +49,10 @@
       detail to allow replication of the study. This should be followed by additional
       data and figures n
   - field: data_policy
-    snippet: able, or will be deposited, and whether there are any restrictions on
-      data availability, such as an MTA. Information on any reference material or
-      additional data files (see below for uploading items to the Auxiliary files
-      section). Your editor will f
+    snippet: rstanding. Selected papers should present novel and broadly important
+      data, syntheses, or concepts. We welcome submissions from all fields of science
+      and from any source. Manuscripts should be submitted at our manuscript submission
+      and information po
   - field: code_policy
     snippet: g information on our partnership with Dryad, please see the “Data and
       Code Deposition” section of our Editorial Policies . Research Articles that
@@ -68,127 +61,58 @@
   warnings: []
 - journal: Science Advances
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.science.org/journal/sciadv
   local_file: data_manual/pages/science_advances_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://www.science.org/journal/sciadv
     aims_scope_url: https://www.science.org/journal/sciadv
-    article_types:
-      add:
-      - Research Article
-    scope_tags:
-      add:
-      - evolution
-      - viromics
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: e First release papers Archive About About
-        Science Advances Mission & Scope Editorial Board Editorial Working Groups
-        Information for Authors Information for Reviewers Editorial Policies Licensing
-        and Charges Journal Metrics Journal Webinars Frequentl'
-  evidence:
-  - field: article_types
-    snippet: RSS Feeds Submit manuscript GET OUR E-ALERTS Main content starts here
-      Research Article 24 Jun 2026 Small changes reshape water behavior at the nanoscale
-      Research Article 24 Jun 2026 Protein-centered module regulates rice photosynthesis
-      Research Artic
-  - field: scope_tags
-    snippet: ger and NLRP3-mediated myopathy via lower protein-prenylation and YAP
-      Evolution of a ZW sex determination system in sticklebacks Noninvasive whole-brain
-      imaging of glymphatic dynamics Featured Videos play 27 Jan 2026 The biggest
-      science breakthroughs
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
   warnings: []
 - journal: Science Advances
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://www.science.org/content/page/science-advances-information-authors
   local_file: data_manual/pages/science_advances_information_for_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://www.science.org/content/page/science-advances-information-authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Review
     data_policy:
-      summary: able, or will be deposited, and whether there are any restrictions
-        on data availability such as a materials transfer agreement (MTA) Information
-        on any reference material or additional data files uploaded to the Auxiliary
-        files section (see below) A
+      summary: ''
       url: https://www.science.org/content/page/science-advances-information-authors
     code_policy:
-      summary: 'itle (135 character maximum) Short title (50 character maximum) Field
-        codes (select one or two fields/disciplines that best describe your manuscript)
-        Cover letter (PDF or Word) which includes: Article title Describe briefly
-        why your work is appropria'
+      summary: ''
       url: https://www.science.org/content/page/science-advances-information-authors
-    open_access:
-      model: open_access
-      apc: null
-      currency: ''
-      url: https://www.science.org/content/page/science-advances-information-authors
-  evidence:
-  - field: article_types
-    snippet: These articles present a validated technique, tool, or informational
-      database without substantial analysis that results in a new research insight.
-      Research Resources describing new methods or techniques should include appropriately
-      controlled valida
-  - field: data_policy
-    snippet: able, or will be deposited, and whether there are any restrictions on
-      data availability such as a materials transfer agreement (MTA) Information on
-      any reference material or additional data files uploaded to the Auxiliary files
-      section (see below) A
-  - field: code_policy
-    snippet: 'itle (135 character maximum) Short title (50 character maximum) Field
-      codes (select one or two fields/disciplines that best describe your manuscript)
-      Cover letter (PDF or Word) which includes: Article title Describe briefly why
-      your work is appropria'
+  confidence:
+    author_instructions_url: high
+    data_policy: medium
+    code_policy: medium
+  evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: Cell
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.cell.com/cell/home
   local_file: data_manual/pages/cell_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://www.cell.com/cell/home
     aims_scope_url: https://www.cell.com/cell/home
-    article_types:
-      add:
-      - Method
-      - Research Article
-      - Review
-    scope_tags:
-      add:
-      - clinical_microbiology
-      - evolution
-      - genomics
-      - methods
-      - microbial_ecology
-      - microbiology
-      - microbiome
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: neak Peek - preprints Collections Special
-        issues About Advisory board Aims and scope Contact Editors and staff Ethics
-        Permissions Reviewer instructions 50th anniversary Access Subscribe Activate
-        online access Connect Bluesky External Link Instagram E'
-  evidence:
-  - field: article_types
-    snippet: on Trends in Chemistry Multidisciplinary Cell Press Blue Cell Reports
-      Methods Cell Reports Sustainability Heliyon iScience One Earth Patterns STAR
-      Protocols Nexus ( partner ) The Innovation ( partner ) Trends in Biotechnology
-      Trends in Cognitive Scie
-  - field: scope_tags
-    snippet: Sciences Trends in Cancer Trends in Cell Biology Trends in Ecology &
-      Evolution Trends in Endocrinology & Metabolism Trends in Genetics Trends in
-      Immunology Trends in Microbiology Trends in Molecular Medicine Trends in Neurosciences
-      Trends in Parasit
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Cell
   source_type: guide_for_authors
+  status: ready_for_review
   source_url: https://www.cell.com/cell/authors
   local_file: data_manual/pages/cell_authors.html
   extracted_text_path: ''
@@ -196,82 +120,31 @@
     author_instructions_url: https://www.cell.com/cell/authors
     article_types:
       add:
-      - Method
       - Research Article
-      - Resource
-      - Review
-    data_policy:
-      summary: in scientific writing Generative AI and figures, images, and artwork
-        Data and image processing Image screening Studies involving humans and animals
-        Reporting sex- and gender-based analyses (SGBA) Clinical trials Human embryos
-        and embryo models, game
-      url: https://www.cell.com/cell/authors
-    code_policy:
-      summary: ''
-      url: https://www.cell.com/cell/authors
-  evidence:
-  - field: article_types
-    snippet: on Trends in Chemistry Multidisciplinary Cell Press Blue Cell Reports
-      Methods Cell Reports Sustainability Heliyon iScience One Earth Patterns STAR
-      Protocols Nexus ( partner ) The Innovation ( partner ) Trends in Biotechnology
-      Trends in Cognitive Scie
-  - field: data_policy
-    snippet: in scientific writing Generative AI and figures, images, and artwork
-      Data and image processing Image screening Studies involving humans and animals
-      Reporting sex- and gender-based analyses (SGBA) Clinical trials Human embryos
-      and embryo models, game
+  confidence:
+    author_instructions_url: high
+    article_types: high
+  evidence: []
   warnings: []
 - journal: Cell Host & Microbe
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.cell.com/cell-host-microbe/home
   local_file: data_manual/pages/cell_host_microbe_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://www.cell.com/cell-host-microbe/home
     aims_scope_url: https://www.cell.com/cell-host-microbe/home
-    article_types:
-      add:
-      - Method
-      - Research Article
-      - Review
-    scope_tags:
-      add:
-      - clinical_microbiology
-      - evolution
-      - genomics
-      - host_microbe_interactions
-      - infectious_disease
-      - methods
-      - microbial_ecology
-      - microbiology
-      - microbiome
-      - viromics
-    manuscript_tags:
-      add:
-      - methods_paper
-      - review
-      - specialist_audience
-      - virome_analysis
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: cation alerts Sneak Peak - preprints Collections
-        About Advisory board Aims and scope Contact Editors and staff Ethics Permissions
-        Reviewer instructions Access Subscribe Activate online access Connect Alerts
-        Bluesky External Link LinkedIn External Lin'
-  evidence:
-  - field: article_types
-    snippet: on Trends in Chemistry Multidisciplinary Cell Press Blue Cell Reports
-      Methods Cell Reports Sustainability Heliyon iScience One Earth Patterns STAR
-      Protocols Nexus ( partner ) The Innovation ( partner ) Trends in Biotechnology
-      Trends in Cognitive Scie
-  - field: scope_tags
-    snippet: Sciences Trends in Cancer Trends in Cell Biology Trends in Ecology &
-      Evolution Trends in Endocrinology & Metabolism Trends in Genetics Trends in
-      Immunology Trends in Microbiology Trends in Molecular Medicine Trends in Neurosciences
-      Trends in Parasit
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Cell Host & Microbe
   source_type: guide_for_authors
+  status: ready_for_review
   source_url: https://www.cell.com/cell-host-microbe/authors
   local_file: data_manual/pages/cell_host_microbe_authors.html
   extracted_text_path: ''
@@ -279,72 +152,30 @@
     author_instructions_url: https://www.cell.com/cell-host-microbe/authors
     article_types:
       add:
-      - Method
       - Research Article
-      - Resource
-      - Review
-    data_policy:
-      summary: in scientific writing Generative AI and figures, images, and artwork
-        Data and image processing Image screening Studies involving humans and animals
-        Reporting sex- and gender-based analyses (SGBA) Clinical trials Human embryos
-        and embryo models, game
-      url: https://www.cell.com/cell-host-microbe/authors
-    code_policy:
-      summary: ''
-      url: https://www.cell.com/cell-host-microbe/authors
-  evidence:
-  - field: article_types
-    snippet: on Trends in Chemistry Multidisciplinary Cell Press Blue Cell Reports
-      Methods Cell Reports Sustainability Heliyon iScience One Earth Patterns STAR
-      Protocols Nexus ( partner ) The Innovation ( partner ) Trends in Biotechnology
-      Trends in Cognitive Scie
-  - field: data_policy
-    snippet: in scientific writing Generative AI and figures, images, and artwork
-      Data and image processing Image screening Studies involving humans and animals
-      Reporting sex- and gender-based analyses (SGBA) Clinical trials Human embryos
-      and embryo models, game
+  confidence:
+    author_instructions_url: high
+    article_types: high
+  evidence: []
   warnings: []
 - journal: PNAS
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.pnas.org/
   local_file: data_manual/pages/pnas_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://www.pnas.org/
     aims_scope_url: https://www.pnas.org/
-    article_types:
-      add:
-      - Brief Report
-      - Research Article
-      - Review
-    scope_tags:
-      add:
-      - computational_biology
-      - environmental_microbiology
-      - evolution
-      - machine_learning
-      - microbial_ecology
-      - microbiology
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: e biological, physical, and social sciences.
-        The journal is global in scope and submission is open to all researchers worldwide.
-        Read More In the News Research Article January 26, 2026 Large declines in
-        organofluorine contamination indicated by subar'
-  evidence:
-  - field: article_types
-    snippet: d doubly helical polymeric liquids from general rigid bead-rod theory
-      Brief Report January 26, 2026 Behavioral tuning of spider silk thread stiffness
-      circumvents biomaterial trade-offs Jonas O. Wolff , Daniela C. Rößler , Anna-Christin
-      Joel , Vincent
-  - field: scope_tags
-    snippet: ogy Cell Biology Developmental Biology Ecology Environmental Sciences
-      Evolution Genetics Immunology and Inflammation Medical Sciences Microbiology
-      Neuroscience Pharmacology Physiology Plant Biology Population Biology Psychological
-      and Cognitive Scien
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: PNAS
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://www.pnas.org/author-center/submitting-your-manuscript
   local_file: data_manual/pages/pnas_submitting_your_manuscript.html
   extracted_text_path: ''
@@ -356,44 +187,28 @@
       - Method
       - Research Article
       - Review
-      - Software
     data_policy:
-      summary: eparately) contact and competing interest information for all authors
-        data sharing plans (for all data, documentation, and code used in analysis)
-        funding information and whether an open access license has been selected list
-        of appropriate Editorial B
+      summary: ''
       url: https://www.pnas.org/author-center/submitting-your-manuscript
     code_policy:
-      summary: 'MB in size. Include a brief legend for each movie in the SI Appendix.
-        Software : Supply source code or scripts in native file types. When preparing
-        SI files, please note the following: The main text of the paper must stand
-        on its own without the SI.'
+      summary: ''
       url: https://www.pnas.org/author-center/submitting-your-manuscript
-    open_access:
-      model: open_access
-      apc: null
-      currency: ''
-      url: https://www.pnas.org/author-center/submitting-your-manuscript
+  confidence:
+    author_instructions_url: high
+    article_types: high
+    data_policy: high
+    code_policy: medium
   evidence:
   - field: article_types
     snippet: on of the work. Learn more about the Contributed submissions process.
       Brief Reports describe observations of immediate impact that may hold potential
       to initiate new avenues of research, provide compelling new data on controversies
       of broad interest
-  - field: data_policy
-    snippet: eparately) contact and competing interest information for all authors
-      data sharing plans (for all data, documentation, and code used in analysis)
-      funding information and whether an open access license has been selected list
-      of appropriate Editorial B
-  - field: code_policy
-    snippet: 'MB in size. Include a brief legend for each movie in the SI Appendix.
-      Software : Supply source code or scripts in native file types. When preparing
-      SI files, please note the following: The main text of the paper must stand on
-      its own without the SI.'
   warnings:
   - APC amount not extracted confidently.
 - journal: mBio
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/mbio
   local_file: data_manual/pages/mbio_home.html
   extracted_text_path: ''
@@ -402,100 +217,50 @@
     aims_scope_url: https://journals.asm.org/journal/mbio
     article_types:
       add:
-      - Research Article
-      - Resource
       - Review
-    scope_tags:
-      add:
-      - bacteriophage
-      - clinical_microbiology
-      - environmental_microbiology
-      - evolution
-      - genomics
-      - infectious_disease
-      - microbiology
-      - microbiome
-      - phage_biology
-      - resource
-      - viromics
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: CURRENT ISSUE COLLECTIONS ARCHIVE ABOUT
-        THE JOURNAL ABOUT MBIO SUBMIT SCOPE BOARD OF EDITORS ARTICLE TYPES AND FORMATTING
-        SUBMISSION AND REVIEW PROCESS AAM FELLOWS FOR REVIEWERS FAQ CONTACT US FOR
-        SUBSCRIBERS MEMBERS INSTITUTIONS ALERTS RSS JOURNAL H'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: Median Days to First Peer Review Decision 43,100 Total Citations 97%
-      Research Articles Cited within 2 Years of Publication 6,563,302 Full-Text Views/Downloads
-      ASM Journals mBio View CURRENT ISSUE Volume 17 Issue 6 June 2026 View Current
-      Issue Get al
-  - field: scope_tags
-    snippet: 'age with a Twist: Discovery of JS1 and Rethinking the Architecture of
-      Bacteriophage Tails April 29, 2026 Phage JS1, a bacteriophage that challenges
-      long-standing assumptions about phage structure. Bacteriophages, or phages,
-      are viruses that infect ba'
-  warnings: []
+    snippet: SUBMISSION AND REVIEW PROCESS AAM FELLOWS FOR REVIEWERS FAQ CONTACT US
+      SUBMISSION AND REVIEW PROCESS AAM FELLOWS FOR REVIEWERS FAQ CONTACT US
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: mBio
   source_type: apc
+  status: ready_for_review
   source_url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/asm_publishing_fees.html
   extracted_text_path: ''
   candidate_updates:
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: mBio
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/authors
   local_file: data_manual/pages/asm_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://journals.asm.org/authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-      - Software
-    data_policy:
-      summary: nts Chemother 33:1829–1830, 1989). Trial data For more information
-        on data availability, see " https://journals.asm.org/availability-materials-and-data
-        ." Delays on data availability from clinical studies will be acceptable with
-        appropriate justifica
-      url: https://journals.asm.org/authors
-    code_policy:
-      summary: mplete name of the data set, database or repository, URL, or analysis
-        software name (including the version and the related project, if applicable)
-        Publisher (where applicable) Persistent unique identifier(s) (for example,
-        URL or accession number) Nes
-      url: https://journals.asm.org/authors
-  evidence:
-  - field: article_types
-    snippet: el allele, must be submitted to the International Nucleotide Sequence
-      Database Collaboration (INSDC) which includes GenBank, DNA Databank of Japan
-      (DDBJ), and the European Nucleotide Archive (ENA), and the accession number
-      should be referred to in th
-  - field: data_policy
-    snippet: nts Chemother 33:1829–1830, 1989). Trial data For more information on
-      data availability, see " https://journals.asm.org/availability-materials-and-data
-      ." Delays on data availability from clinical studies will be acceptable with
-      appropriate justifica
-  - field: code_policy
-    snippet: mplete name of the data set, database or repository, URL, or analysis
-      software name (including the version and the related project, if applicable)
-      Publisher (where applicable) Persistent unique identifier(s) (for example, URL
-      or accession number) Nes
-  warnings: []
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: mSystems
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/msystems
   local_file: data_manual/pages/msystems_home.html
   extracted_text_path: ''
@@ -504,102 +269,50 @@
     aims_scope_url: https://journals.asm.org/journal/msystems
     article_types:
       add:
-      - Method
-      - Research Article
-      - Resource
       - Review
-    scope_tags:
-      add:
-      - clinical_microbiology
-      - computational_biology
-      - environmental_microbiology
-      - genomics
-      - infectious_disease
-      - metagenomics
-      - methods
-      - microbial_ecology
-      - microbiology
-      - microbiome
-      - resource
-      - viromics
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ch Ashley Shade is the Director of Research
-        at CNRS. Shade’s research aims to understand, predict, and manage microbial
-        communities to achieve resilience to climate change and other environmental
-        disturbances. Board of Editors Most Read Most Cited Ex'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: K. Jansson , … SHOW ALL Open Access Open Peer Review Human Microbiome
-      Methods and Protocols mSystems Article 19 Aug 2025 Metagenomic estimation of
-      absolute bacterial biomass in the mammalian gut through host-derived read normalization
-      Gechlang Tang ,
-  - field: scope_tags
-    snippet: K. Jansson , … SHOW ALL Open Access Open Peer Review Human Microbiome
-      Methods and Protocols mSystems Article 19 Aug 2025 Metagenomic estimation of
-      absolute bacterial biomass in the mammalian gut through host-derived read normalization
-      Gechlang Tang ,
-  warnings: []
+    snippet: SUBMISSION AND REVIEW PROCESS AUTHOR VIDEOS FOR REVIEWERS FAQ CONTACT
+      US SUBMISSION AND REVIEW PROCESS AUTHOR VIDEOS FOR REVIEWERS FAQ CONTACT US
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: mSystems
   source_type: apc
+  status: ready_for_review
   source_url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/asm_publishing_fees.html
   extracted_text_path: ''
   candidate_updates:
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: mSystems
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/authors
   local_file: data_manual/pages/asm_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://journals.asm.org/authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-      - Software
-    data_policy:
-      summary: nts Chemother 33:1829–1830, 1989). Trial data For more information
-        on data availability, see " https://journals.asm.org/availability-materials-and-data
-        ." Delays on data availability from clinical studies will be acceptable with
-        appropriate justifica
-      url: https://journals.asm.org/authors
-    code_policy:
-      summary: mplete name of the data set, database or repository, URL, or analysis
-        software name (including the version and the related project, if applicable)
-        Publisher (where applicable) Persistent unique identifier(s) (for example,
-        URL or accession number) Nes
-      url: https://journals.asm.org/authors
-  evidence:
-  - field: article_types
-    snippet: el allele, must be submitted to the International Nucleotide Sequence
-      Database Collaboration (INSDC) which includes GenBank, DNA Databank of Japan
-      (DDBJ), and the European Nucleotide Archive (ENA), and the accession number
-      should be referred to in th
-  - field: data_policy
-    snippet: nts Chemother 33:1829–1830, 1989). Trial data For more information on
-      data availability, see " https://journals.asm.org/availability-materials-and-data
-      ." Delays on data availability from clinical studies will be acceptable with
-      appropriate justifica
-  - field: code_policy
-    snippet: mplete name of the data set, database or repository, URL, or analysis
-      software name (including the version and the related project, if applicable)
-      Publisher (where applicable) Persistent unique identifier(s) (for example, URL
-      or accession number) Nes
-  warnings: []
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: Microbiology Spectrum
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/spectrum
   local_file: data_manual/pages/microbiology_spectrum_home.html
   extracted_text_path: ''
@@ -608,98 +321,50 @@
     aims_scope_url: https://journals.asm.org/journal/spectrum
     article_types:
       add:
-      - Research Article
-      - Resource
       - Review
-    scope_tags:
-      add:
-      - clinical_microbiology
-      - environmental_microbiology
-      - genomics
-      - infectious_disease
-      - microbial_genomics
-      - microbiology
-      - microbiome
-      - resource
-      - viromics
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ENT ISSUE COLLECTIONS ARCHIVE ABOUT THE
-        JOURNAL ABOUT SPECTRUM SUBMIT SCOPE BOARD OF EDITORS ARTICLE TYPES AND FORMATTING
-        SUBMISSION AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US FOR SUBSCRIBERS
-        MEMBERS INSTITUTIONS ALERTS RSS JOURNAL HOME FOR AUTH'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: tem Login / Register Microbiology Spectrum 34,555 Total Citations 94%
-      Research Articles Cited within 2 Years of Publication 7,148,590 Full-Text Views/Downloads
-      ASM Journals Microbiology Spectrum View CURRENT ISSUE Volume 14 Issue 6 June
-      2026 View Cur
-  - field: scope_tags
-    snippet: al Microbiology Resource Announcements and as an editor for Microbial
-      Genomics . Board of Editors Most Read Most Cited Open Access Bacteriology Research
-      Article Microbiol Spectr Article 7 Jan 2025 Antimicrobial susceptibility testing
-      of Dermabacter h
-  warnings: []
+    snippet: SUBMISSION AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US SUBMISSION
+      AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Microbiology Spectrum
   source_type: apc
+  status: ready_for_review
   source_url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/asm_publishing_fees.html
   extracted_text_path: ''
   candidate_updates:
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: Microbiology Spectrum
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/authors
   local_file: data_manual/pages/asm_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://journals.asm.org/authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-      - Software
-    data_policy:
-      summary: nts Chemother 33:1829–1830, 1989). Trial data For more information
-        on data availability, see " https://journals.asm.org/availability-materials-and-data
-        ." Delays on data availability from clinical studies will be acceptable with
-        appropriate justifica
-      url: https://journals.asm.org/authors
-    code_policy:
-      summary: mplete name of the data set, database or repository, URL, or analysis
-        software name (including the version and the related project, if applicable)
-        Publisher (where applicable) Persistent unique identifier(s) (for example,
-        URL or accession number) Nes
-      url: https://journals.asm.org/authors
-  evidence:
-  - field: article_types
-    snippet: el allele, must be submitted to the International Nucleotide Sequence
-      Database Collaboration (INSDC) which includes GenBank, DNA Databank of Japan
-      (DDBJ), and the European Nucleotide Archive (ENA), and the accession number
-      should be referred to in th
-  - field: data_policy
-    snippet: nts Chemother 33:1829–1830, 1989). Trial data For more information on
-      data availability, see " https://journals.asm.org/availability-materials-and-data
-      ." Delays on data availability from clinical studies will be acceptable with
-      appropriate justifica
-  - field: code_policy
-    snippet: mplete name of the data set, database or repository, URL, or analysis
-      software name (including the version and the related project, if applicable)
-      Publisher (where applicable) Persistent unique identifier(s) (for example, URL
-      or accession number) Nes
-  warnings: []
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: Applied and Environmental Microbiology
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/aem
   local_file: data_manual/pages/aem_home.html
   extracted_text_path: ''
@@ -708,94 +373,50 @@
     aims_scope_url: https://journals.asm.org/journal/aem
     article_types:
       add:
-      - Research Article
-      - Resource
       - Review
-    scope_tags:
-      add:
-      - clinical_microbiology
-      - environmental_microbiology
-      - infectious_disease
-      - microbial_ecology
-      - microbiology
-      - resource
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT
-        THE JOURNAL ABOUT AEM SUBMIT SCOPE EDITORIAL BOARD EDITORIAL BOARD CONTRIBUTIONS
-        ARTICLE TYPES AND FORMATTING SUBMISSION AND REVIEW PROCESS FOR REVIEWERS FAQ
-        CONTACT US FOR SUBSCRIBERS MEMBERS INSTITUTIONS ALE'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: Median Days to First Peer Review Decision 90,637 Total Citations 94%
-      Research Articles Cited within 2 Years of Publication 9,511,741 Full-Text Views/Downloads
-      ASM Journals Applied and Environmental Microbiology View CURRENT ISSUE Volume
-      92 Issue 6 J
-  - field: scope_tags
-    snippet: Applied and Environmental Microbiology Journal Homepage Request Username
-      Can't sign in? Forgot your username? Enter your email address below and we will
-      send you your username Email* Close If the address ma
-  warnings: []
+    snippet: SUBMISSION AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US SUBMISSION
+      AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Applied and Environmental Microbiology
   source_type: apc
+  status: ready_for_review
   source_url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/asm_publishing_fees.html
   extracted_text_path: ''
   candidate_updates:
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: Applied and Environmental Microbiology
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/authors
   local_file: data_manual/pages/asm_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://journals.asm.org/authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-      - Software
-    data_policy:
-      summary: nts Chemother 33:1829–1830, 1989). Trial data For more information
-        on data availability, see " https://journals.asm.org/availability-materials-and-data
-        ." Delays on data availability from clinical studies will be acceptable with
-        appropriate justifica
-      url: https://journals.asm.org/authors
-    code_policy:
-      summary: mplete name of the data set, database or repository, URL, or analysis
-        software name (including the version and the related project, if applicable)
-        Publisher (where applicable) Persistent unique identifier(s) (for example,
-        URL or accession number) Nes
-      url: https://journals.asm.org/authors
-  evidence:
-  - field: article_types
-    snippet: el allele, must be submitted to the International Nucleotide Sequence
-      Database Collaboration (INSDC) which includes GenBank, DNA Databank of Japan
-      (DDBJ), and the European Nucleotide Archive (ENA), and the accession number
-      should be referred to in th
-  - field: data_policy
-    snippet: nts Chemother 33:1829–1830, 1989). Trial data For more information on
-      data availability, see " https://journals.asm.org/availability-materials-and-data
-      ." Delays on data availability from clinical studies will be acceptable with
-      appropriate justifica
-  - field: code_policy
-    snippet: mplete name of the data set, database or repository, URL, or analysis
-      software name (including the version and the related project, if applicable)
-      Publisher (where applicable) Persistent unique identifier(s) (for example, URL
-      or accession number) Nes
-  warnings: []
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: ASM Animal Microbiology
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
   local_file: data_manual/pages/asm_am_art.html
   extracted_text_path: ''
@@ -811,21 +432,16 @@
       - Review
     scope_tags:
       add:
-      - bacteriophage
-      - clinical_microbiology
-      - environmental_microbiology
-      - evolution
-      - infectious_disease
-      - methods
       - microbiology
-      - phage_biology
-      - resource
     editorial_notes:
       add:
-      - 'Manual source suggests scope note: TICLES ARCHIVE ABOUT THE JOURNAL ABOUT
-        ASM ANIMAL MICROBIOLOGY SUBMIT SCOPE EDITORIAL BOARD ARTICLE TYPES AND FORMATTING
-        SUBMISSION AND REVIEW PROCESS FOR REVIEWERS CONTACT US FOR SUBSCRIBERS MEMBERS
-        INSTITUTIONS ALERTS RSS JOURNAL HOME FOR AUTHORS W'
+      - Manual source indicates journal scope includes microbiology.
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
+    scope_tags: high
+    editorial_notes: high
   evidence:
   - field: article_types
     snippet: erial; abstract limited to 250 words; importance limited to 150 words
@@ -833,71 +449,41 @@
       Submit these in the same way as Research Articles. They receive the same review
       and are published on t
   - field: scope_tags
-    snippet: m whom the strains were obtained) and properties of strains, mutants,
-      bacteriophages, and plasmids used in large numbers. Data and Method Description
-      in Results Describe methods used in only one experiment in the Results section
-      or briefly in a table
+    snippet: ABOUT ASM ANIMAL MICROBIOLOGY SUBMIT ABOUT ASM ANIMAL MICROBIOLOGY SUBMIT
   warnings: []
 - journal: ASM Animal Microbiology
   source_type: apc
+  status: ready_for_review
   source_url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/asm_publishing_fees.html
   extracted_text_path: ''
   candidate_updates:
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: ASM Animal Microbiology
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/authors
   local_file: data_manual/pages/asm_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://journals.asm.org/authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-      - Software
-    data_policy:
-      summary: nts Chemother 33:1829–1830, 1989). Trial data For more information
-        on data availability, see " https://journals.asm.org/availability-materials-and-data
-        ." Delays on data availability from clinical studies will be acceptable with
-        appropriate justifica
-      url: https://journals.asm.org/authors
-    code_policy:
-      summary: mplete name of the data set, database or repository, URL, or analysis
-        software name (including the version and the related project, if applicable)
-        Publisher (where applicable) Persistent unique identifier(s) (for example,
-        URL or accession number) Nes
-      url: https://journals.asm.org/authors
-  evidence:
-  - field: article_types
-    snippet: el allele, must be submitted to the International Nucleotide Sequence
-      Database Collaboration (INSDC) which includes GenBank, DNA Databank of Japan
-      (DDBJ), and the European Nucleotide Archive (ENA), and the accession number
-      should be referred to in th
-  - field: data_policy
-    snippet: nts Chemother 33:1829–1830, 1989). Trial data For more information on
-      data availability, see " https://journals.asm.org/availability-materials-and-data
-      ." Delays on data availability from clinical studies will be acceptable with
-      appropriate justifica
-  - field: code_policy
-    snippet: mplete name of the data set, database or repository, URL, or analysis
-      software name (including the version and the related project, if applicable)
-      Publisher (where applicable) Persistent unique identifier(s) (for example, URL
-      or accession number) Nes
-  warnings: []
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: Journal of Virology
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/jvi
   local_file: data_manual/pages/journal_of_virology_home.html
   extracted_text_path: ''
@@ -906,95 +492,51 @@
     aims_scope_url: https://journals.asm.org/journal/jvi
     article_types:
       add:
-      - Research Article
-      - Resource
       - Review
-    scope_tags:
-      add:
-      - clinical_microbiology
-      - environmental_microbiology
-      - infectious_disease
-      - microbiology
-      - resource
-      - viromics
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT
-        THE JOURNAL ABOUT JVI SUBMIT SCOPE EDITORIAL BOARD ARTICLE TYPES AND FORMATTING
-        SUBMISSION AND REVIEW PROCESS ACTIVE CONTRIBUTOR TRACK FOR REVIEWERS NEW VOICES
-        IN VIROLOGY SEMINAR SERIES FAQ CONTACT US FOR SUB'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: Median Days to First Peer Review Decision 77,299 Total Citations 94%
-      Research Articles Cited within 2 Years of Publication 9,776,895 Full-Text Views/Downloads
-      ASM Journals Journal of Virology View CURRENT ISSUE Volume 100 Issue 6 June
-      2026 View Curr
-  - field: scope_tags
-    snippet: BACK Antimicrobial Agents and Chemotherapy Applied and Environmental
-      Microbiology ASM Animal Microbiology ASM Case Reports ASM Food Microbiology
-      Clinical Microbiology Reviews Infection and Immunity Journal of Bacteriology
-      Journal of Clinical Microbi
-  warnings: []
+    snippet: SUBMISSION AND REVIEW PROCESS ACTIVE CONTRIBUTOR TRACK FOR REVIEWERS
+      NEW VOICES IN VIROLOGY SEMINAR SERIES FAQ CONTACT US SUBMISSION AND REVIEW PROCESS
+      ACTIVE CONTRIBUTOR TRACK FOR REVIEWERS NEW
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Journal of Virology
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/authors
   local_file: data_manual/pages/asm_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://journals.asm.org/authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-      - Software
-    data_policy:
-      summary: nts Chemother 33:1829–1830, 1989). Trial data For more information
-        on data availability, see " https://journals.asm.org/availability-materials-and-data
-        ." Delays on data availability from clinical studies will be acceptable with
-        appropriate justifica
-      url: https://journals.asm.org/authors
-    code_policy:
-      summary: mplete name of the data set, database or repository, URL, or analysis
-        software name (including the version and the related project, if applicable)
-        Publisher (where applicable) Persistent unique identifier(s) (for example,
-        URL or accession number) Nes
-      url: https://journals.asm.org/authors
-  evidence:
-  - field: article_types
-    snippet: el allele, must be submitted to the International Nucleotide Sequence
-      Database Collaboration (INSDC) which includes GenBank, DNA Databank of Japan
-      (DDBJ), and the European Nucleotide Archive (ENA), and the accession number
-      should be referred to in th
-  - field: data_policy
-    snippet: nts Chemother 33:1829–1830, 1989). Trial data For more information on
-      data availability, see " https://journals.asm.org/availability-materials-and-data
-      ." Delays on data availability from clinical studies will be acceptable with
-      appropriate justifica
-  - field: code_policy
-    snippet: mplete name of the data set, database or repository, URL, or analysis
-      software name (including the version and the related project, if applicable)
-      Publisher (where applicable) Persistent unique identifier(s) (for example, URL
-      or accession number) Nes
-  warnings: []
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: Journal of Virology
   source_type: apc
+  status: ready_for_review
   source_url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/asm_publishing_fees.html
   extracted_text_path: ''
   candidate_updates:
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: Journal of Clinical Microbiology
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/jcm/article-types
   local_file: data_manual/pages/jcm_art.html
   extracted_text_path: ''
@@ -1003,99 +545,52 @@
     aims_scope_url: https://journals.asm.org/journal/jcm/article-types
     article_types:
       add:
-      - Method
-      - Research Article
       - Resource
       - Review
-    scope_tags:
-      add:
-      - bacteriophage
-      - clinical_microbiology
-      - environmental_microbiology
-      - evolution
-      - infectious_disease
-      - methods
-      - microbiology
-      - phage_biology
-      - resource
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT
-        THE JOURNAL ABOUT JCM SUBMIT SCOPE EDITORIAL BOARD ARTICLE TYPES AND FORMATTING
-        SUBMISSION AND REVIEW PROCESS FOR REVIEWERS PODCAST FAQ CONTACT US FOR SUBSCRIBERS
-        MEMBERS INSTITUTIONS ALERTS RSS JOURNAL HOME F'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: of infections. 3,000 words, exclusive of the abstract, Materials and
-      Methods, references, tables, and figure legends; abstract limited to 250 words
-      Minireviews Focused discussions of topics relevant to clinical microbiologists.
-      By invitation only. S
-  - field: scope_tags
-    snippet: m whom the strains were obtained) and properties of strains, mutants,
-      bacteriophages, and plasmids used in large numbers. Data and Method Description
-      in Results Describe methods used in only one experiment in the Results section
-      or briefly in a table
-  warnings: []
+    snippet: Virology mBio Microbiology and Molecular Biology Reviews Microbiology
+      Resource Announcements Microbiology Spectrum mSphere mSystems RESOURCES About
+      Us Author Center Permissions ASM Journal Collections Publishing Ethics
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Journal of Clinical Microbiology
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/authors
   local_file: data_manual/pages/asm_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://journals.asm.org/authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-      - Software
-    data_policy:
-      summary: nts Chemother 33:1829–1830, 1989). Trial data For more information
-        on data availability, see " https://journals.asm.org/availability-materials-and-data
-        ." Delays on data availability from clinical studies will be acceptable with
-        appropriate justifica
-      url: https://journals.asm.org/authors
-    code_policy:
-      summary: mplete name of the data set, database or repository, URL, or analysis
-        software name (including the version and the related project, if applicable)
-        Publisher (where applicable) Persistent unique identifier(s) (for example,
-        URL or accession number) Nes
-      url: https://journals.asm.org/authors
-  evidence:
-  - field: article_types
-    snippet: el allele, must be submitted to the International Nucleotide Sequence
-      Database Collaboration (INSDC) which includes GenBank, DNA Databank of Japan
-      (DDBJ), and the European Nucleotide Archive (ENA), and the accession number
-      should be referred to in th
-  - field: data_policy
-    snippet: nts Chemother 33:1829–1830, 1989). Trial data For more information on
-      data availability, see " https://journals.asm.org/availability-materials-and-data
-      ." Delays on data availability from clinical studies will be acceptable with
-      appropriate justifica
-  - field: code_policy
-    snippet: mplete name of the data set, database or repository, URL, or analysis
-      software name (including the version and the related project, if applicable)
-      Publisher (where applicable) Persistent unique identifier(s) (for example, URL
-      or accession number) Nes
-  warnings: []
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: Journal of Clinical Microbiology
   source_type: apc
+  status: ready_for_review
   source_url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/asm_publishing_fees.html
   extracted_text_path: ''
   candidate_updates:
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: Microbiology Spectrum
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/spectrum/article-types
   local_file: data_manual/pages/ms_art.html
   extracted_text_path: ''
@@ -1104,48 +599,22 @@
     aims_scope_url: https://journals.asm.org/journal/spectrum/article-types
     article_types:
       add:
-      - Database
-      - Method
-      - Research Article
       - Resource
       - Review
-      - Software
-    scope_tags:
-      add:
-      - bacteriophage
-      - clinical_microbiology
-      - database
-      - environmental_microbiology
-      - evolution
-      - infectious_disease
-      - methods
-      - microbial_ecology
-      - microbiology
-      - microbiome
-      - open_science
-      - phage_biology
-      - resource
-      - software
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ENT ISSUE COLLECTIONS ARCHIVE ABOUT THE
-        JOURNAL ABOUT SPECTRUM SUBMIT SCOPE BOARD OF EDITORS ARTICLE TYPES AND FORMATTING
-        SUBMISSION AND REVIEW PROCESS FOR REVIEWERS FAQ CONTACT US FOR SUBSCRIBERS
-        MEMBERS INSTITUTIONS ALERTS RSS JOURNAL HOME FOR AUTH'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: rts Resource Reports describe technical advances and/or informational
-      databases that would be of interest in microbiology or allied fields. The manuscripts
-      should include detailed methods and illustration of proof-of-principle so that
-      the new methodo
-  - field: scope_tags
-    snippet: om the strains were obtained) and properties of the strains, mutants,
-      bacteriophages, and plasmids, etc. A method or strain, etc., used in only one
-      of several experiments reported in the paper may be described in the Results
-      section or very briefly (
-  warnings: []
+    snippet: Virology mBio Microbiology and Molecular Biology Reviews Microbiology
+      Resource Announcements Microbiology Spectrum mSphere mSystems RESOURCES About
+      Us Author Center Permissions
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: mSystems
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/msystems/article-types
   local_file: data_manual/pages/msystems_art.html
   extracted_text_path: ''
@@ -1154,49 +623,22 @@
     aims_scope_url: https://journals.asm.org/journal/msystems/article-types
     article_types:
       add:
-      - Database
-      - Method
-      - Research Article
       - Resource
       - Review
-      - Software
-    scope_tags:
-      add:
-      - bacteriophage
-      - clinical_microbiology
-      - database
-      - environmental_microbiology
-      - evolution
-      - infectious_disease
-      - methods
-      - microbial_ecology
-      - microbiology
-      - microbiome
-      - open_science
-      - phage_biology
-      - resource
-      - software
-      - viromics
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ENT ISSUE COLLECTIONS ARCHIVE ABOUT THE
-        JOURNAL ABOUT MSYSTEMS SUBMIT SCOPE BOARD OF EDITORS ARTICLE TYPES AND FORMATTING
-        SUBMISSION AND REVIEW PROCESS AUTHOR VIDEOS FOR REVIEWERS FAQ CONTACT US FOR
-        SUBSCRIBERS MEMBERS INSTITUTIONS ALERTS RSS JOURNAL'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: Reports describe major technical advances and/or major informational
-      databases that would be of interest in microbiology or allied fields. The manuscripts
-      should include detailed methods and illustration of proof-of-principle so that
-      the new methodo
-  - field: scope_tags
-    snippet: om the strains were obtained) and properties of the strains, mutants,
-      bacteriophages, and plasmids, etc. A method or strain, etc., used in only one
-      of several experiments reported in the paper may be described in the Results
-      section or very briefly (
-  warnings: []
+    snippet: Virology mBio Microbiology and Molecular Biology Reviews Microbiology
+      Resource Announcements Microbiology Spectrum mSphere mSystems RESOURCES About
+      Us Author Center Permissions ASM Journal Collections Publishing Ethics
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: mSphere
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/msphere/article-types
   local_file: data_manual/pages/msphere_art.html
   extracted_text_path: ''
@@ -1204,43 +646,28 @@
     author_instructions_url: https://journals.asm.org/journal/msphere/article-types
     article_types:
       add:
-      - Database
-      - Method
-      - Research Article
       - Resource
       - Review
-      - Software
     data_policy:
-      summary: ppear at the end of Materials and Methods with the paragraph lead-in
-        "Data availability." Please also provide references (with URLs) for the accession
-        numbers Acknowledgments. Statements regarding sources of direct financial
-        support (e.g., grants, fe
+      summary: ''
       url: https://journals.asm.org/journal/msphere/article-types
     code_policy:
-      summary: if desired; URLs for citations of database accession numbers and code/software
-        should be provided by you. Follow the styles shown in the examples below.
-        Caserta E, Haemig HAH, Manias DA, Tomsic J, Grundy FJ, Henkin TM, Dunny GM.
-        2012. In vivo and in
+      summary: ''
       url: https://journals.asm.org/journal/msphere/article-types
+  confidence:
+    author_instructions_url: high
+    article_types: high
+    data_policy: medium
+    code_policy: medium
   evidence:
   - field: article_types
-    snippet: Reports describe major technical advances and/or major informational
-      databases that would be of interest in microbiology or allied fields. The manuscripts
-      should include detailed methods and illustration of proof-of-principle so that
-      the new methodo
-  - field: data_policy
-    snippet: ppear at the end of Materials and Methods with the paragraph lead-in
-      "Data availability." Please also provide references (with URLs) for the accession
-      numbers Acknowledgments. Statements regarding sources of direct financial support
-      (e.g., grants, fe
-  - field: code_policy
-    snippet: if desired; URLs for citations of database accession numbers and code/software
-      should be provided by you. Follow the styles shown in the examples below. Caserta
-      E, Haemig HAH, Manias DA, Tomsic J, Grundy FJ, Henkin TM, Dunny GM. 2012. In
-      vivo and in
+    snippet: Virology mBio Microbiology and Molecular Biology Reviews Microbiology
+      Resource Announcements Microbiology Spectrum mSphere mSystems RESOURCES About
+      Us Author Center Permissions ASM Journal Collections Publishing Ethics
   warnings: []
 - journal: Applied and Environmental Microbiology
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://journals.asm.org/journal/aem/article-types
   local_file: data_manual/pages/aem_art.html
   extracted_text_path: ''
@@ -1249,386 +676,175 @@
     aims_scope_url: https://journals.asm.org/journal/aem/article-types
     article_types:
       add:
-      - Database
-      - Method
-      - Research Article
       - Resource
       - Review
-      - Software
-    scope_tags:
-      add:
-      - bacteriophage
-      - clinical_microbiology
-      - database
-      - environmental_microbiology
-      - evolution
-      - infectious_disease
-      - methods
-      - microbial_ecology
-      - microbiology
-      - microbiome
-      - open_science
-      - phage_biology
-      - resource
-      - software
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT
-        THE JOURNAL ABOUT AEM SUBMIT SCOPE EDITORIAL BOARD EDITORIAL BOARD CONTRIBUTIONS
-        ARTICLE TYPES AND FORMATTING SUBMISSION AND REVIEW PROCESS FOR REVIEWERS FAQ
-        CONTACT US SUBSCRIBE MEMBERS INSTITUTIONS ALERTS RS'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: Reports describe major technical advances and/or major informational
-      databases that would be of interest in microbiology or allied fields. The manuscripts
-      should include detailed methods and illustration of proof-of-principle so that
-      the new methodo
-  - field: scope_tags
-    snippet: om the strains were obtained) and properties of the strains, mutants,
-      bacteriophages, and plasmids, etc. Parameters such as temperature, pH, and salinity
-      (or conductivity) must be reported for environmental samples that are extracted
-      for molecular an
-  warnings: []
+    snippet: Virology mBio Microbiology and Molecular Biology Reviews Microbiology
+      Resource Announcements Microbiology Spectrum mSphere mSystems RESOURCES About
+      Us Author Center Permissions ASM Journal Collections Publishing Ethics
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Applied and Environmental Microbiology
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://journals.asm.org/authors
   local_file: data_manual/pages/asm_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://journals.asm.org/authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-      - Software
-    data_policy:
-      summary: nts Chemother 33:1829–1830, 1989). Trial data For more information
-        on data availability, see " https://journals.asm.org/availability-materials-and-data
-        ." Delays on data availability from clinical studies will be acceptable with
-        appropriate justifica
-      url: https://journals.asm.org/authors
-    code_policy:
-      summary: mplete name of the data set, database or repository, URL, or analysis
-        software name (including the version and the related project, if applicable)
-        Publisher (where applicable) Persistent unique identifier(s) (for example,
-        URL or accession number) Nes
-      url: https://journals.asm.org/authors
-  evidence:
-  - field: article_types
-    snippet: el allele, must be submitted to the International Nucleotide Sequence
-      Database Collaboration (INSDC) which includes GenBank, DNA Databank of Japan
-      (DDBJ), and the European Nucleotide Archive (ENA), and the accession number
-      should be referred to in th
-  - field: data_policy
-    snippet: nts Chemother 33:1829–1830, 1989). Trial data For more information on
-      data availability, see " https://journals.asm.org/availability-materials-and-data
-      ." Delays on data availability from clinical studies will be acceptable with
-      appropriate justifica
-  - field: code_policy
-    snippet: mplete name of the data set, database or repository, URL, or analysis
-      software name (including the version and the related project, if applicable)
-      Publisher (where applicable) Persistent unique identifier(s) (for example, URL
-      or accession number) Nes
-  warnings: []
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: Applied and Environmental Microbiology
   source_type: apc
+  status: ready_for_review
   source_url: https://journals.asm.org/publication-fees
   local_file: data_manual/pages/asm_publishing_fees.html
   extracted_text_path: ''
   candidate_updates:
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: Bioinformatics
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://academic.oup.com/bioinformatics
   local_file: data_manual/pages/bioinformatics_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://academic.oup.com/bioinformatics
     aims_scope_url: https://academic.oup.com/bioinformatics
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
-    scope_tags:
-      add:
-      - bioinformatics
-      - computational_biology
-      - database
-      - evolution
-      - genomics
-      - machine_learning
-      - metagenomics
-      - methods
-      - microbiology
-      - microbiome
-      - resource
-    manuscript_tags:
-      add:
-      - database_resource
-      - methods_paper
-      - review
-      - software_tool
-  evidence:
-  - field: article_types
-    snippet: 't is applicable to a wide range of organisms, ... Interacting Species
-      Database (ISDB): Comprehensive Resource for Interspecies Interactions at the
-      Molecular Level Michael Mederer and others Bioinformatics , btag419, https://doi.org/10.1093/bioinforma'
-  - field: scope_tags
-    snippet: Bioinformatics | Oxford Academic Skip to Main Content Advertisement Search
-      Menu AI Discovery Assistant Menu Sign in through your institution Remember my
-      institution Navbar Search F
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Briefings in Bioinformatics
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://academic.oup.com/bib
   local_file: data_manual/pages/briefings_in_bioinformatics_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://academic.oup.com/bib
     aims_scope_url: https://academic.oup.com/bib
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Review
-    scope_tags:
-      add:
-      - bioinformatics
-      - computational_biology
-      - database
-      - evolution
-      - genomics
-      - methods
-    manuscript_tags:
-      add:
-      - database_resource
-      - methods_paper
-      - review
-      - software_tool
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: Issues In addition to its regular issues,
-        Briefings in Bioinformatics publishes special issues featuring papers based
-        on different subjects from across the discipline. Browse past special issues
-        Learn more here Committee on Publication Ethics (COPE)'
-  evidence:
-  - field: article_types
-    snippet: Biochemistry Journal of the American Medical Informatics Association
-      Database JAMIA Open Genome Biology and Evolution Advertisement close advertisement
-      Advertisement About Briefings in Bioinformatics Editorial Board Author Guidelines
-      Facebook X (for
-  - field: scope_tags
-    snippet: Briefings in Bioinformatics | Oxford Academic Skip to Main Content Advertisement
-      Search Menu AI Discovery Assistant Menu Sign in through your institution Remember
-      my institution Navbar Search F
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: NAR Genomics and Bioinformatics
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://academic.oup.com/nargab
   local_file: data_manual/pages/nar_genomics_and_bioinformatics_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://academic.oup.com/nargab
     aims_scope_url: https://academic.oup.com/nargab
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-    scope_tags:
-      add:
-      - bioinformatics
-      - computational_biology
-      - database
-      - evolution
-      - genomics
-      - infectious_disease
-      - machine_learning
-      - methods
-      - resource
-    manuscript_tags:
-      add:
-      - database_resource
-      - methods_paper
-      - software_tool
-      - specialist_audience
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: focused on genomics and bioinformatics
-        large-scale data analysis. It aims at providing the community with high quality
-        results, analysis and methods in all aspects of genomics and bioinformatics.
-        Reproducibility is a strong focus of the journal, and'
-  evidence:
-  - field: article_types
-    snippet: ioinformatics Bioinformatics Advances Molecular Biology and Evolution
-      Database Genome Biology and Evolution Biology Methods and Protocols Genomics,
-      Proteomics & Bioinformatics Research Connections Advertisement close advertisement
-      Advertisement About
-  - field: scope_tags
-    snippet: NAR Genomics and Bioinformatics | Oxford Academic Skip to Main Content
-      Advertisement Search Menu AI Discovery Assistant Menu Sign in through your institution
-      Remember my institution Navbar Search F
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: GigaScience
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://academic.oup.com/gigascience
   local_file: data_manual/pages/gigascience_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://academic.oup.com/gigascience
     aims_scope_url: https://academic.oup.com/gigascience
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
     scope_tags:
       add:
-      - bioinformatics
-      - clinical_microbiology
-      - database
-      - evolution
-      - genomics
-      - machine_learning
-      - metagenomics
       - methods
-      - microbial_ecology
-      - microbiology
       - open_science
-      - resource
     manuscript_tags:
       add:
-      - database_resource
       - methods_paper
       - review
-      - software_tool
-      - specialist_audience
     editorial_notes:
       add:
-      - 'Manual source suggests scope note: his review systematically examines how
-        the integration of AI with ... ScopeViewer: A Browser-Based Solution for Visualizing
-        Large Biological Images Danni Luo and others Background Spatial transcriptomics
-        (ST) enables a high-resolution interrogation o'
+      - Manual source indicates journal scope includes methods, open science.
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    scope_tags: high
+    manuscript_tags: high
+    editorial_notes: high
   evidence:
-  - field: article_types
-    snippet: 'research and articles, events, and journal updates GigaDB: integrated
-      database for research objects supporting GigaScience papers GigaBlog: data driven
-      blogging from the GigaScience editors and guests GigaScience Jobs : Open positions
-      and freelance w'
   - field: scope_tags
-    snippet: 'effects of photobleaching ... ChatMDV: Reducing Technical Barriers in
-      Bioinformatics Analysis using Large Language Models Maria Kiourlappou and others
-      Background The rapid advancement in single-cell, spatial omics, imaging, and
-      genomic technologies r'
-  warnings: []
+    snippet: to make published research and all of the supporting data, code, and
+      methods open and stably shared. Built upon the principles of open and FAIR data;
+      reproducibility, usability and utility are our key criteria for publication.
+      Showcasing an “integra
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: Virus Evolution
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://academic.oup.com/ve
   local_file: data_manual/pages/virus_evolution_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://academic.oup.com/ve
     aims_scope_url: https://academic.oup.com/ve
-    article_types:
-      add:
-      - Method
     scope_tags:
       add:
-      - bioinformatics
-      - clinical_microbiology
-      - computational_biology
-      - database
-      - environmental_microbiology
-      - evolution
-      - genomics
-      - methods
-      - microbial_ecology
-      - microbial_genomics
-      - microbiology
-      - microbiome
-      - phage_biology
       - viromics
     manuscript_tags:
       add:
-      - database_resource
-      - methods_paper
-      - phage_genomics
-      - review
       - specialist_audience
       - virome_analysis
     editorial_notes:
       add:
-      - 'Manual source suggests scope note: gy homepage_or_scope data_manual/pages/virology_home.html
-        14 Virology aims_scope data_manual/pages/virology_aims_and_scope.html 6 Virology
-        guide_for_authors data_manual/pages/virology_guide_for_authors.html 10 Virology
-        open_access data_manual/pages/v'
-  evidence:
-  - field: article_types
-    snippet: 'picious content: looks_valid, duplicate_hash_across_many_urls. Nature
-      Methods homepage_or_scope 200 suspicious https://www.nature.com/nmeth/ data_manual/pages/nature_methods_homepage_or_scope.html
-      Automated fetch produced suspicious content: looks_va'
-  - field: scope_tags
-    snippet: nmental Microbiology apc data_manual/pages/asm_publishing_fees.html 1
-      Bioinformatics homepage_or_scope data_manual/pages/bioinformatics_home.html
-      22 Briefings in Bioinformatics homepage_or_scope data_manual/pages/briefings_in_bioinformatics_home.html
+      - Manual source indicates journal scope includes viromics.
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    scope_tags: high
+    manuscript_tags: high
+    editorial_notes: high
+  evidence: []
   warnings: []
 - journal: FEMS Microbiology Ecology
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://academic.oup.com/femsec
   local_file: data_manual/pages/fems_microbiology_ecology_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://academic.oup.com/femsec
     aims_scope_url: https://academic.oup.com/femsec
-    article_types:
-      add:
-      - Research Article
-      - Review
-    scope_tags:
-      add:
-      - environmental_microbiology
-      - evolution
-      - genomics
-      - metagenomics
-      - microbial_ecology
-      - microbiology
-      - microbiome
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ration instructions Instructions to authors
-        FEMS Microbiology Ecology aims to ensure efficient publication of high-quality
-        papers that are original and provide a significant contribution to the understanding
-        of microbial ecology. The journal contains'
-  evidence:
-  - field: article_types
-    snippet: ution to the understanding of microbial ecology. The journal contains
-      Research Articles and MiniReviews on fundamental aspects of the ecology of microorganisms
-      in natural soil, aquatic and atmospheric habitats, including extreme environments,
-      and in
-  - field: scope_tags
-    snippet: CoA pathway, is a time capsule that uncovers primordial traits in the
-      evolution of life. Latest articles Desiccation, but not shading, substantially
-      shifts the microbial community composition of benthic microbial mats in meltwater
-      ponds near Bratina
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Microbial Genomics
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.microbiologyresearch.org/content/journal/mgen
   local_file: data_manual/pages/microbial_genomics_home.html
   extracted_text_path: ''
@@ -1637,177 +853,60 @@
     aims_scope_url: https://www.microbiologyresearch.org/content/journal/mgen
     article_types:
       add:
-      - Method
       - Research Article
-      - Resource
       - Review
-      - Software
-    scope_tags:
-      add:
-      - clinical_microbiology
-      - environmental_microbiology
-      - evolution
-      - genomics
-      - infectious_disease
-      - metagenomics
-      - methods
-      - microbial_genomics
-      - microbiology
-      - microbiome
-      - resource
-      - software
-      - viromics
-    manuscript_tags:
-      add:
-      - database_resource
-      - methods_paper
-      - review
-      - software_tool
-      - specialist_audience
-      - virome_analysis
     data_policy:
-      summary: cess Open Access costs Publish and Read Institutional Agreements Open
-        data Publishing Fundamentals Publishing Fundamentals resources Information
-        for librarians Licensing and access options Licence agreements Manage your
-        subscription Publish and Read
+      summary: ''
       url: https://www.microbiologyresearch.org/content/journal/mgen
     code_policy:
-      summary: 'n , Sebastian Beyvers , Jochen Blom and Alexander Goesmann MOB-suite:
-        software tools for clustering, reconstruction and typing of plasmids from
-        draft assemblies James Robertson and John H. E. Nash ResFinder – an open online
-        resource for identificatio'
+      summary: ''
       url: https://www.microbiologyresearch.org/content/journal/mgen
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: ith clinical, veterinary or environmental
-        relevance. See full journal scope For everything you need to know when preparing
-        a submission check out our new submission checklist . Browse these key collections:
-        Microbial Genomics of Eukaryotes Genomics,'
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: high
+    data_policy: medium
+    code_policy: medium
   evidence:
   - field: article_types
-    snippet: 'and Markus List ClermonTyping: an easy-to-use and accurate in silico
-      method for Escherichia genus strain phylotyping Johann Beghain , Antoine Bridier-Nahmias
-      , Hervé Le Nagard , Erick Denamur and Olivier Clermont chewBBACA: A complete
-      suite for gene'
-  - field: scope_tags
-    snippet: gy, an open research platform International Journal of Systematic and
-      Evolutionary Microbiology Journal of General Virology Journal of Medical Microbiology
-      Microbial Genomics Microbiology Microbiology Horizons Microbiology Outlooks
-      Our resources Info
-  - field: data_policy
-    snippet: cess Open Access costs Publish and Read Institutional Agreements Open
-      data Publishing Fundamentals Publishing Fundamentals resources Information for
-      librarians Licensing and access options Licence agreements Manage your subscription
-      Publish and Read
-  - field: code_policy
-    snippet: 'n , Sebastian Beyvers , Jochen Blom and Alexander Goesmann MOB-suite:
-      software tools for clustering, reconstruction and typing of plasmids from draft
-      assemblies James Robertson and John H. E. Nash ResFinder – an open online resource
-      for identificatio'
-  warnings: []
+    snippet: Prepare an article Submission and peer review Post-acceptance and publication
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Environmental Microbiology
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
   local_file: data_manual/pages/environmental_microbiology_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
     aims_scope_url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
-    article_types:
-      add:
-      - Research Article
-      - Review
-    scope_tags:
-      add:
-      - environmental_microbiology
-      - genomics
-      - microbial_ecology
-      - microbiology
-      - microbiome
-      - resource
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: microbial interactions and microbial processes
-        in the environment and publishes cutting-edge original research reporting
-        significant advances in or relating to this subject. Journal Metrics understand
-        journal metrics 9.0 CiteScore 4.0 Journal Impact'
-  evidence:
-  - field: article_types
-    snippet: orial Board Become a Wiley Editor OA Advantages Advertise Permissions
-      Reviewer Resources Authors Author Guidelines Open Access Submit a Manuscript
-      Call for Papers More from this journal --> Articles Browse Current Issue All
-      Issues Actions Tools Submi
-  - field: scope_tags
-    snippet: on Soil Ecology EMI 20 Anniversary collection Mini Reviews Highlights
-      Genomics Update Web Alerts Crystal Ball Articles Annual Lectures Special & Thematic
-      Issues Call for Papers back © 2026 John Wiley & Sons Ltd © 2026 Applied Microbiology
-      Internation
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Viruses
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.mdpi.com/journal/viruses
   local_file: data_manual/pages/viruses_home.html
   extracted_text_path: ''
   candidate_updates:
     homepage_url: https://www.mdpi.com/journal/viruses
     aims_scope_url: https://www.mdpi.com/journal/viruses
-    article_types:
-      add:
-      - Brief Report
-      - Database
-      - Method
-      - Research Article
-      - Review
-      - Software
-    scope_tags:
-      add:
-      - bioinformatics
-      - clinical_microbiology
-      - computational_biology
-      - database
-      - environmental_microbiology
-      - evolution
-      - genomics
-      - infectious_disease
-      - machine_learning
-      - metagenomics
-      - methods
-      - microbial_ecology
-      - microbiology
-      - phage_biology
-      - resource
-      - software
-      - viromics
-    manuscript_tags:
-      add:
-      - database_resource
-      - methods_paper
-      - phage_genomics
-      - review
-      - short_report
-      - software_tool
-      - specialist_audience
-      - virome_analysis
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: s Review for Viruses Share Journal Menu
-        ► ▼ Journal Menu Viruses Home Aims & Scope Editorial Board Reviewer Board
-        Topical Advisory Panel Instructions for Authors Special Issues Topics Sections
-        & Collections Article Processing Charge Indexing & Archiv'
-  evidence:
-  - field: article_types
-    snippet: view Communication Editorial Abstract Book Review Brief Communication
-      Brief Report Case Report Clinicopathological Challenge Comment Commentary Concept
-      Paper Conference Report Correction Creative Data Descriptor Discussion Entry
-      Essay Expression of C
-  - field: scope_tags
-    snippet: Virus Replication Applications of CRISPR Technology in Virology 2018
-      Bioinformatics and Computational Approaches in Viral Genomics and Evolution
-      Bioinformatics and Computational Biology of Viruses Breakthroughs in Viral Replication
-      Computational Bio
-  warnings: []
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Viruses
   source_type: author_instructions
+  status: ready_for_review
   source_url: https://www.mdpi.com/journal/viruses/instructions
   local_file: data_manual/pages/viruses_instructions.html
   extracted_text_path: ''
@@ -1815,44 +914,35 @@
     author_instructions_url: https://www.mdpi.com/journal/viruses/instructions
     article_types:
       add:
-      - Brief Report
-      - Database
-      - Method
-      - Research Article
-      - Resource
       - Review
-      - Software
     data_policy:
-      summary: 'Back matter : Supplementary Materials, Author Contributions, Funding,
-        Data Availability Statement, Acknowledgments, Conflicts of Interest, References
-        . Review manuscripts should comprise: Front matter : Title, Author list, Affiliations,
-        Abstract, Key'
+      summary: 'ictions, a statement is still required. Please refer to the suggested
+        Data Availability Statements in the section “ MDPI Research Data Policies
+        ”. Acknowledgments: In this section you can acknowledge any support given
+        which is not covered by the auth'
       url: https://www.mdpi.com/journal/viruses/instructions
     code_policy:
-      summary: l Sciences Société Internationale d’Urologie Journal (SIUJ) Societies
-        Software Soil Systems Solar Solids Spectroscopy Journal Sports Standards Stats
-        Stratigraphy and Sedimentology Stresses Surfaces Surgeries Surgical Techniques
-        Development Sustainabi
+      summary: ''
       url: https://www.mdpi.com/journal/viruses/instructions
+  confidence:
+    author_instructions_url: high
+    article_types: medium
+    data_policy: high
+    code_policy: medium
   evidence:
   - field: article_types
-    snippet: view Communication Editorial Abstract Book Review Brief Communication
-      Brief Report Case Report Clinicopathological Challenge Comment Commentary Concept
-      Paper Conference Report Correction Creative Data Descriptor Discussion Entry
-      Essay Expression of C
+    snippet: Submit to Viruses Review for Viruses Journal Menu ► ▼ Journal Menu Viruses
+      Home Special Issues Topics Sections & Collections Shortcuts Manuscript Submission
+      Overview www.mdpi.com/journal/viruses/ins
   - field: data_policy
-    snippet: 'Back matter : Supplementary Materials, Author Contributions, Funding,
-      Data Availability Statement, Acknowledgments, Conflicts of Interest, References
-      . Review manuscripts should comprise: Front matter : Title, Author list, Affiliations,
-      Abstract, Key'
-  - field: code_policy
-    snippet: l Sciences Société Internationale d’Urologie Journal (SIUJ) Societies
-      Software Soil Systems Solar Solids Spectroscopy Journal Sports Standards Stats
-      Stratigraphy and Sedimentology Stresses Surfaces Surgeries Surgical Techniques
-      Development Sustainabi
+    snippet: 'ictions, a statement is still required. Please refer to the suggested
+      Data Availability Statements in the section “ MDPI Research Data Policies ”.
+      Acknowledgments: In this section you can acknowledge any support given which
+      is not covered by the auth'
   warnings: []
 - journal: Viruses
   source_type: apc
+  status: ready_for_review
   source_url: https://www.mdpi.com/journal/viruses/apc
   local_file: data_manual/pages/viruses_apc.html
   extracted_text_path: ''
@@ -1862,11 +952,14 @@
       apc: null
       currency: ''
       url: https://www.mdpi.com/journal/viruses/apc
+  confidence:
+    open_access: high
   evidence: []
   warnings:
   - APC amount not extracted confidently.
 - journal: Phage
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.liebertpub.com/journal/phage
   local_file: data_manual/pages/phage_home.html
   extracted_text_path: ''
@@ -1875,84 +968,45 @@
     aims_scope_url: https://www.liebertpub.com/journal/phage
     article_types:
       add:
-      - Method
       - Research Article
-      - Review
-    scope_tags:
-      add:
-      - bacteriophage
-      - clinical_microbiology
-      - environmental_microbiology
-      - genomics
-      - infectious_disease
-      - methods
-      - microbial_ecology
-      - microbiology
-      - phage_biology
-      - resource
-      - viromics
-    manuscript_tags:
-      add:
-      - database_resource
-      - methods_paper
-      - phage_genomics
-      - review
-      - virome_analysis
     open_access:
-      model: open_access
+      model: ''
       apc: null
       currency: ''
       url: https://www.liebertpub.com/journal/phage
-  evidence:
-  - field: article_types
-    snippet: ogy Public Health Pulmonary & Respiratory Medicine Radiology Research
-      Methods & Evaluation Rheumatology Surgery Tropical Medicine Veterinary Medicine
-      Cell Biology Clinical Biochemistry Environmental Science Life Sciences Neuroscience
-      Pharmacology & T
-  - field: scope_tags
-    snippet: ion Guidelines This peer-reviewed journal is dedicated to fundamental
-      bacteriophage research and its applications in medicine, agriculture, aquaculture,
-      veterinary applications, animal production, food safety, and food production.
-      The journal showcas
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    article_types: medium
+    open_access: high
+  evidence: []
   warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
   - APC amount not extracted confidently.
 - journal: Phage
   source_type: author_instructions
+  status: low_confidence
   source_url: https://www.sagepub.com/journals/information-for-authors
   local_file: data_manual/pages/phage_authors.html
   extracted_text_path: ''
   candidate_updates:
     author_instructions_url: https://www.sagepub.com/journals/information-for-authors
-    article_types:
-      add:
-      - Database
-      - Method
-      - Research Article
-      - Resource
-      - Review
     data_policy:
       summary: ''
       url: https://www.sagepub.com/journals/information-for-authors
     code_policy:
-      summary: 'nk-hover-colo= r: #001554; --bs-link-hover-color-rgb: 0, 21, 84; --bs-code-color:
-        #d63384;= --bs-highlight-color: #333333; --bs-highlight-bg: #fff3cd; --bs-border-wid=
-        th: 1px; --bs-border-style: solid; --bs-border-color: #DDDDDD; --bs-border-=
-        color'
+      summary: ''
       url: https://www.sagepub.com/journals/information-for-authors
-  evidence:
-  - field: article_types
-    snippet: 'content: "=EF=A2=AD"; } .bi-amd::before { content: "=EF=A2=AE"; } .bi-database-add::before
-      { content: "=EF=A2=AF"; } .bi-database-check::before { content: "=EF=A2=B0";
-      } .bi-database-dash::before { content: "=EF=A2=B1"; } .bi-database-down::before
-      {'
-  - field: code_policy
-    snippet: 'nk-hover-colo= r: #001554; --bs-link-hover-color-rgb: 0, 21, 84; --bs-code-color:
-      #d63384;= --bs-highlight-color: #333333; --bs-highlight-bg: #fff3cd; --bs-border-wid=
-      th: 1px; --bs-border-style: solid; --bs-border-color: #DDDDDD; --bs-border-=
-      color'
-  warnings: []
+  confidence:
+    author_instructions_url: high
+    data_policy: low
+    code_policy: low
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
 - journal: Virology
   source_type: homepage_or_scope
+  status: ready_for_review
   source_url: https://www.sciencedirect.com/journal/virology
   local_file: data_manual/pages/virology_home.html
   extracted_text_path: ''
@@ -1961,54 +1015,42 @@
     scope_tags:
       add:
       - clinical_microbiology
-      - genomics
       - infectious_disease
-      - metagenomics
       - microbiology
-      - resource
       - viromics
     manuscript_tags:
       add:
-      - database_resource
       - review
       - short_report
       - specialist_audience
       - virome_analysis
     editorial_notes:
       add:
-      - 'Manual source suggests scope note: Order journal Submit your article Guide
-        for authors About the journal Aims & Scope An Affiliated Journal of the World
-        Society for Virology Launched in 1955, Virology is a broad and inclusive journal
-        that welcomes submissions on all aspects of virolog'
-  evidence:
-  - field: scope_tags
-    snippet: t and data mining, AI training, and similar technologies. For authors
-      Resources for authors Track your accepted paper Journal Finder Researcher Academy
-      Rights and permissions Journal Article Publishing Support Center For editors
-      Resources for editors
+      - Manual source indicates journal scope includes clinical microbiology, infectious
+        disease, microbiology, viromics.
+  confidence:
+    homepage_url: high
+    scope_tags: high
+    manuscript_tags: high
+    editorial_notes: high
+  evidence: []
   warnings: []
 - journal: Virology
   source_type: aims_scope
+  status: ready_for_review
   source_url: https://www.sciencedirect.com/journal/virology/about/aims-and-scope
   local_file: data_manual/pages/virology_aims_and_scope.html
   extracted_text_path: ''
   candidate_updates:
     aims_scope_url: https://www.sciencedirect.com/journal/virology/about/aims-and-scope
-    scope_tags:
-      add:
-      - clinical_microbiology
-      - infectious_disease
-      - microbiology
-      - viromics
-    editorial_notes:
-      add:
-      - 'Manual source suggests scope note: Aims and scope - Virology | ScienceDirect.com
-        by Elsevier Skip to main content ScienceDirect Journals & Books Help Search
-        My account Sign in Virology Supports open access 4.2 CiteS'
+  confidence:
+    aims_scope_url: high
   evidence: []
-  warnings: []
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
 - journal: Virology
   source_type: guide_for_authors
+  status: ready_for_review
   source_url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
   local_file: data_manual/pages/virology_guide_for_authors.html
   extracted_text_path: ''
@@ -2017,43 +1059,20 @@
     article_types:
       add:
       - Brief Report
-      - Database
-      - Method
       - Research Article
       - Review
-      - Short Communication
-      - Software
-    data_policy:
-      summary: ssues Articles in press Special issues and article collections Linked
-        datasets Sign in to set up alerts RSS About Publish Order journal Submit your
-        article Guide for authors Guide for authors Print Guide as PDF Compare journals
-        About the journal Aims
-      url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
-    code_policy:
-      summary: balance, which should only be done using established image processing
-        software. This policy does not prevent the use of AI tools in formal research
-        design or research methods (such as in AI-assisted imaging approaches used
-        for collection and/or inter
-      url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
+  confidence:
+    author_instructions_url: high
+    article_types: high
   evidence:
   - field: article_types
-    snippet: 'our article through the use of identifiers. Use the following format:
-      Database: 12345 (e.g. TAIR: AT1G01020; CCDC: 734053; PDB: 1XFN). Learn more
-      about linking research data and research articles in ScienceDirect . Co-submission
-      of related data, meth'
-  - field: data_policy
-    snippet: ssues Articles in press Special issues and article collections Linked
-      datasets Sign in to set up alerts RSS About Publish Order journal Submit your
-      article Guide for authors Guide for authors Print Guide as PDF Compare journals
-      About the journal Aims
-  - field: code_policy
-    snippet: balance, which should only be done using established image processing
-      software. This policy does not prevent the use of AI tools in formal research
-      design or research methods (such as in AI-assisted imaging approaches used for
-      collection and/or inter
+    snippet: 'Peer review Virology publishes four forms of manuscripts: (a) research
+      manuscripts; (b) brief communications consisting of short but complete studies;
+      (c) reviews; (d) registered report'
   warnings: []
 - journal: Virology
   source_type: open_access
+  status: ready_for_review
   source_url: https://www.elsevier.com/journals/virology/0042-6822/open-access-options
   local_file: data_manual/pages/virology_open_access_options.html
   extracted_text_path: ''
@@ -2063,5 +1082,7 @@
       apc: 3000
       currency: USD
       url: https://www.elsevier.com/journals/virology/0042-6822/open-access-options
+  confidence:
+    open_access: high
   evidence: []
   warnings: []

@@ -25,6 +25,7 @@ DEFAULT_MANUAL_MANIFEST = Path("data_manual/manifest.yaml")
 DEFAULT_MANUAL_SUGGESTIONS = Path(
     "data_manual/suggestions/manual_curation_suggestions.yaml"
 )
+DEFAULT_MANUAL_REVIEW = Path("data_manual/suggestions/manual_curation_review.md")
 DEFAULT_MANUAL_QUEUE_REPORT = Path("reports/manual_download_queue.md")
 DEFAULT_MANUAL_QUEUE_YAML = Path("data_manual/manual_download_queue.yaml")
 
@@ -112,9 +113,16 @@ def build_parser() -> argparse.ArgumentParser:
     )
     manual_parser.add_argument("--index", default=DEFAULT_INDEX_PATH, type=Path)
     manual_parser.add_argument("--apply", action="store_true")
+    manual_parser.add_argument("--apply-low-confidence", action="store_true")
+    manual_parser.add_argument("--dry-run", action="store_true")
     manual_parser.add_argument("--strict", action="store_true")
     manual_parser.add_argument("--text-out-dir", type=Path)
     manual_parser.add_argument("--report", default=DEFAULT_REPORT_PATH, type=Path)
+    manual_parser.add_argument(
+        "--review-report",
+        default=DEFAULT_MANUAL_REVIEW,
+        type=Path,
+    )
 
     return parser
 
@@ -188,6 +196,9 @@ def main(argv: list[str] | None = None) -> int:
                 index_path=args.index,
                 apply=args.apply,
                 text_out_dir=args.text_out_dir,
+                review_report_path=args.review_report,
+                apply_low_confidence=args.apply_low_confidence,
+                dry_run=args.dry_run,
             )
             queue = generate_manual_download_queue(
                 manifest_sources=sources,
@@ -210,6 +221,7 @@ def main(argv: list[str] | None = None) -> int:
             f"{len(suggestions)} suggestions, "
             f"{len(queue)} queued; "
             f"applied updates: {apply_result['applied']}"
+            + (" (dry run)" if apply_result.get("dry_run") else "")
         )
         return 0
 
