@@ -1,47 +1,47 @@
 {
   "https://academic.oup.com/bib": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://academic.oup.com/bib"
   },
   "https://academic.oup.com/bioinformatics": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://academic.oup.com/bioinformatics"
   },
   "https://academic.oup.com/femsec": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://academic.oup.com/femsec"
   },
   "https://academic.oup.com/gigascience": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://academic.oup.com/gigascience"
   },
   "https://academic.oup.com/nargab": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://academic.oup.com/nargab"
   },
   "https://academic.oup.com/ve": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
@@ -66,8 +66,8 @@
     "url": "https://bmcbioinformatics.biomedcentral.com/"
   },
   "https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
@@ -118,72 +118,72 @@
     "url": "https://genomebiology.biomedcentral.com/"
   },
   "https://journals.asm.org/authors": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://journals.asm.org/authors"
   },
   "https://journals.asm.org/data-policy": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://journals.asm.org/data-policy"
   },
   "https://journals.asm.org/journal/aem": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://journals.asm.org/journal/aem"
   },
   "https://journals.asm.org/journal/jvi": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://journals.asm.org/journal/jvi"
   },
   "https://journals.asm.org/journal/jvi/about": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://journals.asm.org/journal/jvi/about"
   },
   "https://journals.asm.org/journal/mbio": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://journals.asm.org/journal/mbio"
   },
   "https://journals.asm.org/journal/msystems": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://journals.asm.org/journal/msystems"
   },
   "https://journals.asm.org/journal/spectrum": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://journals.asm.org/journal/spectrum"
   },
   "https://journals.asm.org/publishing-fees": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
@@ -192,8 +192,8 @@
   "https://journals.plos.org/ploscompbiol/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "1fc20b374dd110edb0496e90512a22d1a653795a7000bc929dd65638fd7d5a9c",
-    "content_length": 72976,
+    "content_hash": "7a97ff602a5938b5e47eaa6d1dac06a62e6bd55991cd2b2de7996b55f4e83a61",
+    "content_length": 73092,
     "content_path": "data_raw/cache/pages/2c391714bd3ab1ac2056d75d870db5ad30fdf3020bfa2a5c7858385920ac6e2a.html",
     "content_quality_flags": [
       "looks_valid"
@@ -203,7 +203,7 @@
     "last_checked": "2026-06-28",
     "last_modified": "",
     "status_code": 200,
-    "text_length": 8294,
+    "text_length": 8352,
     "url": "https://journals.plos.org/ploscompbiol/"
   },
   "https://microbiomejournal.biomedcentral.com/": {
@@ -227,7 +227,7 @@
   "https://peerj.com/about/author-instructions/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "77d9c254a4e3f88a5e38a2a55a03d0893cb043393876f2fd9ca8fff04c299a71",
+    "content_hash": "2a736826891418755811c2fda7c20dbbc44819589441cd2e3a7994b7c8884720",
     "content_length": 132228,
     "content_path": "data_raw/cache/pages/c0baff90da84f9f15dc99db5d0aaa14135dd535d2583938f3100701b19f72c67.html",
     "content_quality_flags": [
@@ -236,7 +236,7 @@
     "error": "",
     "etag": "",
     "last_checked": "2026-06-28",
-    "last_modified": "Sun, 28 Jun 2026 14:45:26 GMT",
+    "last_modified": "Sun, 28 Jun 2026 15:39:57 GMT",
     "status_code": 200,
     "text_length": 29768,
     "url": "https://peerj.com/about/author-instructions/"
@@ -261,7 +261,7 @@
   "https://peerj.com/pricing/": {
     "blocked_count": 0,
     "blocked_repeatedly": false,
-    "content_hash": "4a85fa237e88d1efd4bec12cc317c80b55ab8f212a66b63747ebac8d0e0c708c",
+    "content_hash": "3ac90603d563b7dd8d223e3cfd8230d507b6f7e1bb0fda6dcc83e7efbc86d203",
     "content_length": 35058,
     "content_path": "data_raw/cache/pages/c3ffa49c8887753069c5723ef895a6363ee28d0f13eb1d07824c68b80748ddea.html",
     "content_quality_flags": [
@@ -1143,88 +1143,88 @@
     "url": "https://portal.issn.org/resource/ISSN/2730-6151"
   },
   "https://www.cell.com/cell-host-microbe/home": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.cell.com/cell-host-microbe/home"
   },
   "https://www.cell.com/cell/home": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.cell.com/cell/home"
   },
   "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
   },
   "https://www.elsevier.com/journals/virology/0042-6822/open-access-options": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.elsevier.com/journals/virology/0042-6822/open-access-options"
   },
   "https://www.liebertpub.com/journal/phage": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.liebertpub.com/journal/phage"
   },
   "https://www.mdpi.com/ethics": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.mdpi.com/ethics"
   },
   "https://www.mdpi.com/journal/viruses": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.mdpi.com/journal/viruses"
   },
   "https://www.mdpi.com/journal/viruses/about": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.mdpi.com/journal/viruses/about"
   },
   "https://www.mdpi.com/journal/viruses/apc": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.mdpi.com/journal/viruses/apc"
   },
   "https://www.mdpi.com/journal/viruses/instructions": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.mdpi.com/journal/viruses/instructions"
   },
   "https://www.microbiologyresearch.org/content/journal/mgen": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
@@ -1357,40 +1357,40 @@
     "url": "https://www.nature.com/nmicrobiol/"
   },
   "https://www.pnas.org/": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.pnas.org/"
   },
   "https://www.science.org/journal/sciadv": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.science.org/journal/sciadv"
   },
   "https://www.science.org/journal/science": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.science.org/journal/science"
   },
   "https://www.sciencedirect.com/journal/virology": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,
     "url": "https://www.sciencedirect.com/journal/virology"
   },
   "https://www.sciencedirect.com/journal/virology/about/aims-and-scope": {
-    "blocked_count": 1,
-    "blocked_repeatedly": false,
+    "blocked_count": 2,
+    "blocked_repeatedly": true,
     "error": "HTTP 403",
     "last_checked": "2026-06-28",
     "status_code": 403,

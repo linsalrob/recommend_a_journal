@@ -7,9 +7,9 @@
 
 - Journals checked: 35
 - URLs checked: 99
-- New URLs: 53
-- Changed URLs: 0
-- Unchanged URLs: 0
+- New URLs: 0
+- Changed URLs: 2
+- Unchanged URLs: 51
 - Failed URLs: 1
 - Blocked URLs: 32
 - Suspicious fetched pages: 13
@@ -29,19 +29,19 @@
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nature | suspicious | 200 | https://www.nature.com/nature/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Microbiology | suspicious | 200 | https://www.nature.com/nmicrobiol/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Biotechnology | suspicious | 200 | https://www.nature.com/nbt/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Methods | suspicious | 200 | https://www.nature.com/nmeth/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Communications | suspicious | 200 | https://www.nature.com/ncomms/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Genome Biology | suspicious | 200 | https://genomebiology.biomedcentral.com/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Microbiome | suspicious | 200 | https://microbiomejournal.biomedcentral.com/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| ISME Journal | suspicious | 200 | https://www.nature.com/ismej/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| ISME Communications | suspicious | 200 | https://www.nature.com/ismecomms/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ |  | 9498eee98cab | very_short_body |  |
-| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ |  | 4a85fa237e88 | very_short_body |  |
+| Nature | suspicious | 200 | https://www.nature.com/nature/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Microbiology | suspicious | 200 | https://www.nature.com/nmicrobiol/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Biotechnology | suspicious | 200 | https://www.nature.com/nbt/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Methods | suspicious | 200 | https://www.nature.com/nmeth/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Communications | suspicious | 200 | https://www.nature.com/ncomms/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Genome Biology | suspicious | 200 | https://genomebiology.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Microbiome | suspicious | 200 | https://microbiomejournal.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| ISME Journal | suspicious | 200 | https://www.nature.com/ismej/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| ISME Communications | suspicious | 200 | https://www.nature.com/ismecomms/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ | 9498eee98cab | 9498eee98cab | very_short_body |  |
+| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 4a85fa237e88 | 3ac90603d563 | very_short_body |  |
 
 ## Blocked URLs
 
@@ -84,59 +84,8 @@
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nature | new | 200 | https://portal.issn.org/resource/ISSN/0028-0836 |  | 05c8164cfcb2 | looks_valid |  |
-| Nature | new | 200 | https://portal.issn.org/resource/ISSN/1476-4687 |  | f59976c470ca | looks_valid |  |
-| Science | new | 200 | https://portal.issn.org/resource/ISSN/0036-8075 |  | cf2b37c0dafa | looks_valid |  |
-| Science | new | 200 | https://portal.issn.org/resource/ISSN/1095-9203 |  | b6269aaa52bb | looks_valid |  |
-| Cell | new | 200 | https://portal.issn.org/resource/ISSN/0092-8674 |  | 8ef8211c5300 | looks_valid |  |
-| Cell | new | 200 | https://portal.issn.org/resource/ISSN/1097-4172 |  | d095c30ddaeb | looks_valid |  |
-| Nature Microbiology | new | 200 | https://portal.issn.org/resource/ISSN/2058-5276 |  | 6cb3a4d092fd | looks_valid |  |
-| Nature Biotechnology | new | 200 | https://portal.issn.org/resource/ISSN/1087-0156 |  | a125b667c00d | looks_valid |  |
-| Nature Biotechnology | new | 200 | https://portal.issn.org/resource/ISSN/1546-1696 |  | 1c9594a01e15 | looks_valid |  |
-| Nature Methods | new | 200 | https://portal.issn.org/resource/ISSN/1548-7091 |  | 1192f7eb555c | looks_valid |  |
-| Nature Methods | new | 200 | https://portal.issn.org/resource/ISSN/1548-7105 |  | 21c6e4a8f09b | looks_valid |  |
-| Nature Communications | new | 200 | https://portal.issn.org/resource/ISSN/2041-1723 |  | 8cc27e094c9c | looks_valid |  |
-| Science Advances | new | 200 | https://portal.issn.org/resource/ISSN/2375-2548 |  | 0881005fb4f8 | looks_valid |  |
-| Cell Host & Microbe | new | 200 | https://portal.issn.org/resource/ISSN/1931-3128 |  | 4a8ddc82d396 | looks_valid |  |
-| Cell Host & Microbe | new | 200 | https://portal.issn.org/resource/ISSN/1934-6069 |  | 0fca1d253af7 | looks_valid |  |
-| Genome Biology | new | 200 | https://portal.issn.org/resource/ISSN/1474-7596 |  | 848b805b673d | looks_valid |  |
-| Genome Biology | new | 200 | https://portal.issn.org/resource/ISSN/1474-760X |  | f2511eab772c | looks_valid |  |
-| Genome Research | new | 200 | https://portal.issn.org/resource/ISSN/1088-9051 |  | 2bfb99196d59 | looks_valid |  |
-| Genome Research | new | 200 | https://portal.issn.org/resource/ISSN/1549-5469 |  | 27b064f2c38a | looks_valid |  |
-| PNAS | new | 200 | https://portal.issn.org/resource/ISSN/0027-8424 |  | c54de66479df | looks_valid |  |
-| PNAS | new | 200 | https://portal.issn.org/resource/ISSN/1091-6490 |  | 7329cf7c4968 | looks_valid |  |
-| Microbiome | new | 200 | https://portal.issn.org/resource/ISSN/2049-2618 |  | e6dd6ba47fd2 | looks_valid |  |
-| ISME Journal | new | 200 | https://portal.issn.org/resource/ISSN/1751-7362 |  | 8b64a392715e | looks_valid |  |
-| ISME Journal | new | 200 | https://portal.issn.org/resource/ISSN/1751-7370 |  | 0b3bba510af5 | looks_valid |  |
-| ISME Communications | new | 200 | https://portal.issn.org/resource/ISSN/2730-6151 |  | 0334c3e86c2f | looks_valid |  |
-| mBio | new | 200 | https://portal.issn.org/resource/ISSN/2150-7511 |  | 511a899605aa | looks_valid |  |
-| mSystems | new | 200 | https://portal.issn.org/resource/ISSN/2379-5077 |  | 762a535d44a3 | looks_valid |  |
-| Microbiology Spectrum | new | 200 | https://portal.issn.org/resource/ISSN/2165-0497 |  | 553152623ed8 | looks_valid |  |
-| Microbial Genomics | new | 200 | https://portal.issn.org/resource/ISSN/2057-5858 |  | 87bb4b08c91f | looks_valid |  |
-| Environmental Microbiology | new | 200 | https://portal.issn.org/resource/ISSN/1462-2912 |  | dc561a92df7c | looks_valid |  |
-| Environmental Microbiology | new | 200 | https://portal.issn.org/resource/ISSN/1462-2920 |  | c80108741989 | looks_valid |  |
-| Applied and Environmental Microbiology | new | 200 | https://portal.issn.org/resource/ISSN/0099-2240 |  | 089c43aa7458 | looks_valid |  |
-| Applied and Environmental Microbiology | new | 200 | https://portal.issn.org/resource/ISSN/1098-5336 |  | cb60952c4290 | looks_valid |  |
-| FEMS Microbiology Ecology | new | 200 | https://portal.issn.org/resource/ISSN/0168-6496 |  | 3bc4afc9f1d9 | looks_valid |  |
-| FEMS Microbiology Ecology | new | 200 | https://portal.issn.org/resource/ISSN/1574-6941 |  | 0dfef6bc6db7 | looks_valid |  |
-| Bioinformatics | new | 200 | https://portal.issn.org/resource/ISSN/1367-4803 |  | 595dea99995f | looks_valid |  |
-| Bioinformatics | new | 200 | https://portal.issn.org/resource/ISSN/1460-2059 |  | 0088ee86248f | looks_valid |  |
-| Briefings in Bioinformatics | new | 200 | https://portal.issn.org/resource/ISSN/1467-5463 |  | 138609a02d3e | looks_valid |  |
-| Briefings in Bioinformatics | new | 200 | https://portal.issn.org/resource/ISSN/1477-4054 |  | b94365185551 | looks_valid |  |
-| PLOS Computational Biology | new | 200 | https://journals.plos.org/ploscompbiol/ |  | 1fc20b374dd1 | looks_valid |  |
-| PLOS Computational Biology | new | 200 | https://portal.issn.org/resource/ISSN/1553-734X |  | 14d88582df4d | looks_valid |  |
-| PLOS Computational Biology | new | 200 | https://portal.issn.org/resource/ISSN/1553-7358 |  | cc617ed591d2 | looks_valid |  |
-| NAR Genomics and Bioinformatics | new | 200 | https://portal.issn.org/resource/ISSN/2631-9268 |  | 3dade75716c1 | looks_valid |  |
-| GigaScience | new | 200 | https://portal.issn.org/resource/ISSN/2047-217X |  | b5850ad51eac | looks_valid |  |
-| BMC Bioinformatics | new | 200 | https://portal.issn.org/resource/ISSN/1471-2105 |  | 7add9739e75e | looks_valid |  |
-| Virus Evolution | new | 200 | https://portal.issn.org/resource/ISSN/2057-1577 |  | cb897496954a | looks_valid |  |
-| PeerJ Computer Science | new | 200 | https://peerj.com/about/author-instructions/ |  | 77d9c254a4e3 | looks_valid |  |
-| PeerJ Computer Science | new | 200 | https://portal.issn.org/resource/ISSN/2376-5992 |  | 95e2831163bd | looks_valid |  |
-| Journal of Virology | new | 200 | https://portal.issn.org/resource/ISSN/0022-538X |  | 09317e92efea | looks_valid |  |
-| Journal of Virology | new | 200 | https://portal.issn.org/resource/ISSN/1098-5514 |  | 3746907ad5fa | looks_valid |  |
-| Viruses | new | 200 | https://portal.issn.org/resource/ISSN/1999-4915 |  | 7a90c0c31b00 | looks_valid |  |
-| Virology | new | 200 | https://portal.issn.org/resource/ISSN/0042-6822 |  | 2fa766ab60bb | looks_valid |  |
-| Virology | new | 200 | https://portal.issn.org/resource/ISSN/1096-0341 |  | e3b9199b6615 | looks_valid |  |
+| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | 1fc20b374dd1 | 7a97ff602a59 | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 77d9c254a4e3 | 2a7368268914 | looks_valid |  |
 
 ## Failed URLs
 
