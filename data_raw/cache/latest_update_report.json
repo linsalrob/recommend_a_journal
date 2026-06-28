@@ -597,7 +597,7 @@
       "url": "https://www.science.org/journal/science"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -657,7 +657,7 @@
       "url": "https://www.cell.com/cell/home"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -881,7 +881,7 @@
       "url": "https://www.science.org/journal/sciadv"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -925,7 +925,7 @@
       "url": "https://www.cell.com/cell-host-microbe/home"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -1080,7 +1080,7 @@
       "url": "https://www.pnas.org/"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -1357,7 +1357,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2379-5077"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -1429,7 +1429,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2165-0497"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -1610,7 +1610,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1098-5336"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -1763,18 +1763,18 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 73070,
+      "content_length": 73196,
       "content_quality_flags": [
         "looks_valid"
       ],
       "error": "",
       "journal": "PLOS Computational Biology",
       "last_checked": "2026-06-28",
-      "new_hash": "c194dfddc3a26cd333fcf10f6fd5771e8b200e74a55680738d5b49dbcc8c05e3",
-      "previous_hash": "5326ba5a998cefdb2bd68decf4a30d5a51f0ebef0527e406586effe647c2473d",
+      "new_hash": "730d0528d6d7741a23f4f381d43912220ef72e0c00041be470b46a5938bd137a",
+      "previous_hash": "c194dfddc3a26cd333fcf10f6fd5771e8b200e74a55680738d5b49dbcc8c05e3",
       "status": "changed",
       "status_code": 200,
-      "text_length": 8341,
+      "text_length": 8443,
       "url": "https://journals.plos.org/ploscompbiol/"
     },
     {
@@ -1957,8 +1957,8 @@
       "error": "",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-28",
-      "new_hash": "76998fbccc37946dc73c83bb03f45c80a506cfb74ff28623ab0fe87dfea81b48",
-      "previous_hash": "fe07a3ebc9f69c54051c3c119bdeafd70589ecd3d2211bd0621d67be75613da2",
+      "new_hash": "1fb6adbeefdaf5e1cd59f48d1ad0c1454bebd734b092055fb3e6cd01f01e640b",
+      "previous_hash": "76998fbccc37946dc73c83bb03f45c80a506cfb74ff28623ab0fe87dfea81b48",
       "status": "changed",
       "status_code": 200,
       "text_length": 29768,
@@ -1973,8 +1973,8 @@
       "error": "",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-28",
-      "new_hash": "62bd8de2e79f895340fb4539fcc2c968314c68c1277a7ac3936a50109a7c3c13",
-      "previous_hash": "5cea86e2b84c16370c3ba1ebe356e702881ef609c0306347da6a6f264ef22d0c",
+      "new_hash": "1f37538507ad68af13ec1705a3a933d1fffc1526bc61e9b4c5f2d286a9c02b65",
+      "previous_hash": "62bd8de2e79f895340fb4539fcc2c968314c68c1277a7ac3936a50109a7c3c13",
       "status": "suspicious",
       "status_code": 200,
       "text_length": 95,
@@ -2208,8 +2208,8 @@
       "journal": "Phage",
       "last_checked": "2026-06-28",
       "new_hash": "5628b4df8d73cb111f164bb6bc5546223a966b9258804ae37d1402a3d2b15c12",
-      "previous_hash": "",
-      "status": "new",
+      "previous_hash": "5628b4df8d73cb111f164bb6bc5546223a966b9258804ae37d1402a3d2b15c12",
+      "status": "unchanged",
       "status_code": 200,
       "text_length": 2469,
       "url": "https://www.sagepub.com/journals/information-for-authors"
