@@ -17,73 +17,89 @@ The manuscript appears to be a cohort_study study with signals for clinical_coho
 
 ## Top Recommendation
 
-**mSystems** scored 62.9/100.
+**Cell Host & Microbe** scored 64.5/100.
 
-- Matches curated tags: cohort_study, metagenomics, microbiome, multi_omics.
+- Matches curated tags: clinical_cohort, clinical_microbiology, host_microbe_interactions, microbiome.
+- High-prestige outlet; use as aspirational unless fit is strong.
+
+Prestige score source: SJR + h_index + quartile + OpenAlex proxy.
+Key metrics used: SJR=9.892, h_index=270, quartile=Q1, OpenAlex citation proxy=119.47.
 
 Risks:
 - Mechanistic validation is limited.
 
 ## Ranked Shortlist
 
-| Rank | Journal | Category | Score | Main reason | Main risk |
-| --- | --- | --- | ---: | --- | --- |
-| 1 | mSystems | best strategic target | 62.9 | Matches curated tags: cohort_study, metagenomics, microbiome, multi_omics. | Mechanistic validation is limited. |
-| 2 | ISME Journal | ranked | 62.4 | Matches curated tags: metagenomics, microbiome, multi_omics. | Weak tag-level scope alignment. |
-| 3 | Nature Microbiology | ranked | 60.8 | Matches curated tags: microbiome. | Weak tag-level scope alignment. |
-| 4 | Microbiome | safest credible journal | 59.6 | Matches curated tags: clinical_cohort, cohort_study, host_microbe_interactions, metagenomics, metatranscriptomics, microbiome. | Mechanistic validation is limited. |
-| 5 | ISME Communications | ranked | 59.0 | Matches curated tags: metagenomics, microbiome. | Weak tag-level scope alignment. |
-| 6 | Microbiology Spectrum | ranked | 59.0 | Matches curated tags: clinical_cohort, clinical_microbiology. | Weak tag-level scope alignment. |
-| 7 | Environmental Microbiome | ranked | 59.0 | Matches curated tags: metagenomics, microbiome. | Weak tag-level scope alignment. |
-| 8 | mBio | ranked | 58.8 | Matches curated tags: host_microbe_interactions. | Weak tag-level scope alignment. |
-| 9 | Nature Communications | ranked | 58.7 | High-prestige outlet; use as aspirational unless fit is strong. | Weak tag-level scope alignment. |
-| 10 | Bioinformatics | ranked | 57.7 | Limited positive evidence from current structured fields. | Weak tag-level scope alignment. |
+| Rank | Journal | Category | Score | Prestige source | Main reason | Main risk |
+| --- | --- | --- | ---: | --- | --- | --- |
+| 1 | Cell Host & Microbe | best strategic target | 64.5 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: clinical_cohort, clinical_microbiology, host_microbe_interactions, microbiome. | Mechanistic validation is limited. |
+| 2 | mSystems | ranked | 62.3 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: clinical_microbiology, cohort_study, metagenomics, microbiome, multi_omics. | Mechanistic validation is limited. |
+| 3 | ISME Journal | ranked | 62.0 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: metagenomics, microbiome, multi_omics. | Weak tag-level scope alignment. |
+| 4 | Bioinformatics | ranked | 61.0 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: metagenomics, microbiome. | Weak tag-level scope alignment. |
+| 5 | mBio | ranked | 60.2 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: clinical_microbiology, host_microbe_interactions, microbiome. | Weak tag-level scope alignment. |
+| 6 | Nature Microbiology | ranked | 59.1 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: microbiome. | Weak tag-level scope alignment. |
+| 7 | Microbial Genomics | ranked | 59.0 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: clinical_microbiology, metagenomics, microbiome. | Weak tag-level scope alignment. |
+| 8 | Microbiome | safest credible journal | 58.9 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: clinical_cohort, cohort_study, host_microbe_interactions, metagenomics, metatranscriptomics, microbiome. | Mechanistic validation is limited. |
+| 9 | Nature Communications | ranked | 58.6 | SJR + h_index + quartile + OpenAlex proxy | High-prestige outlet; use as aspirational unless fit is strong. | Weak tag-level scope alignment. |
+| 10 | Applied and Environmental Microbiology | ranked | 58.6 | SJR + h_index + quartile + OpenAlex proxy | Matches curated tags: clinical_microbiology, microbiome. | Weak tag-level scope alignment. |
 
 ## Best Strategic Target
 
-**mSystems** scored 62.9/100.
+**Cell Host & Microbe** scored 64.5/100.
 
-- Matches curated tags: cohort_study, metagenomics, microbiome, multi_omics.
+- Matches curated tags: clinical_cohort, clinical_microbiology, host_microbe_interactions, microbiome.
+- High-prestige outlet; use as aspirational unless fit is strong.
+
+Prestige score source: SJR + h_index + quartile + OpenAlex proxy.
+Key metrics used: SJR=9.892, h_index=270, quartile=Q1, OpenAlex citation proxy=119.47.
 
 Risks:
 - Mechanistic validation is limited.
 
 ## Best Current-Manuscript Fit
 
-**Microbiome** scored 59.6/100.
+**Microbiome** scored 58.9/100.
 
 - Matches curated tags: clinical_cohort, cohort_study, host_microbe_interactions, metagenomics, metatranscriptomics, microbiome.
+
+Prestige score source: SJR + h_index + quartile + OpenAlex proxy.
+Key metrics used: SJR=4.166, h_index=186, quartile=Q1, OpenAlex citation proxy=95.038.
 
 Risks:
 - Mechanistic validation is limited.
 
 ## Safest Credible Journal
 
-**Microbiome** scored 59.6/100.
+**Microbiome** scored 58.9/100.
 
 - Matches curated tags: clinical_cohort, cohort_study, host_microbe_interactions, metagenomics, metatranscriptomics, microbiome.
+
+Prestige score source: SJR + h_index + quartile + OpenAlex proxy.
+Key metrics used: SJR=4.166, h_index=186, quartile=Q1, OpenAlex citation proxy=95.038.
 
 Risks:
 - Mechanistic validation is limited.
 
 ## Aspirational Journal
 
-**Nature** scored 40.5/100.
+**Cell** scored 47.2/100.
 
+- Matches curated tags: clinical_microbiology, host_microbe_interactions, microbiome.
 - High-prestige outlet; use as aspirational unless fit is strong.
 
+Prestige score source: SJR + h_index + quartile + OpenAlex proxy.
+Key metrics used: SJR=24.592, h_index=956, quartile=Q1, OpenAlex citation proxy=332.07.
+
 Risks:
-- Weak tag-level scope alignment.
 - Broad journal likely requires wider conceptual significance.
 - Mechanistic validation is limited.
 
 ## Journals Not Recommended
 
-- Cell: Weak tag-level scope alignment. (score 41.6).
-- Nature: Weak tag-level scope alignment. (score 40.5).
-- Science: Weak tag-level scope alignment. (score 40.5).
-- Science Advances: Weak tag-level scope alignment. (score 38.5).
+- Nature: Weak tag-level scope alignment. (score 39.4).
+- Science: Weak tag-level scope alignment. (score 39.0).
 - PNAS: Weak tag-level scope alignment. (score 38.3).
+- Science Advances: Weak tag-level scope alignment. (score 37.6).
 
 ## Required Reframing For Higher-Tier Journals
 
@@ -91,13 +107,13 @@ Risks:
 
 ## Evidence Used
 
-- mSystems: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: cohort_study, metagenomics, microbiome, multi_omics.
-- ISME Journal: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: metagenomics, microbiome, multi_omics.
-- Nature Microbiology: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: microbiome.
-- Microbiome: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: clinical_cohort, cohort_study, host_microbe_interactions, metagenomics, metatranscriptomics, microbiome, multi_omics.
-- ISME Communications: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: metagenomics, microbiome.
-- Microbiology Spectrum: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: clinical_cohort, clinical_microbiology.
-- Environmental Microbiome: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: metagenomics, microbiome.
-- mBio: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: host_microbe_interactions.
-- Nature Communications: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: none.
-- Bioinformatics: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: none.
+- Cell Host & Microbe: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: clinical_cohort, clinical_microbiology, host_microbe_interactions, microbiome; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=9.892, h_index=270, quartile=Q1, OpenAlex citation proxy=119.47).
+- mSystems: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: clinical_microbiology, cohort_study, metagenomics, microbiome, multi_omics; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=1.671, h_index=101, quartile=Q1, OpenAlex citation proxy=31.444).
+- ISME Journal: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: metagenomics, microbiome, multi_omics; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=3.415, h_index=267, quartile=Q1, OpenAlex citation proxy=116.903).
+- Bioinformatics: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: metagenomics, microbiome; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=2.527, h_index=511, quartile=Q1, OpenAlex citation proxy=143.951).
+- mBio: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: clinical_microbiology, host_microbe_interactions, microbiome; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=2.002, h_index=193, quartile=Q1, OpenAlex citation proxy=45.495).
+- Nature Microbiology: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: microbiome; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=7.44, h_index=176, quartile=Q1, OpenAlex citation proxy=85.68).
+- Microbial Genomics: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: clinical_microbiology, metagenomics, microbiome; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=1.575, h_index=62, quartile=Q1, OpenAlex citation proxy=24.661).
+- Microbiome: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: clinical_cohort, cohort_study, host_microbe_interactions, metagenomics, metatranscriptomics, microbiome, multi_omics; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=4.166, h_index=186, quartile=Q1, OpenAlex citation proxy=95.038).
+- Nature Communications: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: none; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=4.904, h_index=634, quartile=Q1, OpenAlex citation proxy=83.43).
+- Applied and Environmental Microbiology: scope_tags, manuscript_tags, suitable_for, less_suitable_for, source_evidence; matched tags: clinical_microbiology, microbiome; prestige: SJR + h_index + quartile + OpenAlex proxy (SJR=1.203, h_index=392, quartile=Q1, OpenAlex citation proxy=80.546).

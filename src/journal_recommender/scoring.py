@@ -91,9 +91,27 @@ class JournalScore:
     rationale_bullets: list[str] = field(default_factory=list)
     desk_rejection_risks: list[str] = field(default_factory=list)
     evidence_fields_used: list[str] = field(default_factory=list)
+    prestige_score_source: str = ""
+    key_metrics_used: list[str] = field(default_factory=list)
+    prestige_fallback_warning: str = ""
     category: str = "ranked"
     main_reason: str = ""
     main_risk: str = ""
+
+
+@dataclass
+class PrestigeScoreDetail:
+    score: float
+    source: str
+    key_metrics: list[str] = field(default_factory=list)
+    fallback_warning: str = ""
+
+
+@dataclass
+class PrestigeContext:
+    sjr_values: list[float]
+    h_index_values: list[float]
+    openalex_proxy_values: list[float]
 
 
 @dataclass
@@ -114,8 +132,15 @@ def score_journals(
 ) -> RecommendationSet:
     active_weights = weights or DEFAULT_WEIGHTS
     manuscript_tags = derive_manuscript_tags(manuscript)
+    prestige_context = build_prestige_context(journals)
     scores = [
-        score_single_journal(manuscript, manuscript_tags, journal, active_weights)
+        score_single_journal(
+            manuscript,
+            manuscript_tags,
+            journal,
+            active_weights,
+            prestige_context,
+        )
         for journal in journals
     ]
     scores.sort(key=lambda score: score.total_score, reverse=True)
@@ -174,17 +199,22 @@ def score_single_journal(
     manuscript_tags: set[str],
     journal: JournalRecord,
     weights: dict[str, float],
+    prestige_context: PrestigeContext | None = None,
 ) -> JournalScore:
     journal_tags = set(journal.scope_tags) | set(journal.manuscript_tags)
     matched_tags = sorted(manuscript_tags & journal_tags)
     weak_tags = sorted(manuscript_tags - journal_tags)
 
+    prestige_detail = prestige_score_detail(
+        journal,
+        prestige_context or build_prestige_context([journal]),
+    )
     component_scores = {
         "scope_alignment": scope_alignment_score(manuscript_tags, journal_tags),
         "significance_fit": significance_fit_score(manuscript, journal),
         "audience_match": audience_match_score(manuscript, journal),
         "methods_and_policy_fit": methods_policy_score(manuscript, journal),
-        "prestige": prestige_score(journal),
+        "prestige": prestige_detail.score,
         "practical_constraints": practical_constraints_score(manuscript, journal),
     }
     total = sum(component_scores[key] * weights[key] for key in weights)
@@ -202,6 +232,9 @@ def score_single_journal(
         rationale_bullets=rationale,
         desk_rejection_risks=risks,
         evidence_fields_used=evidence_fields(journal),
+        prestige_score_source=prestige_detail.source,
+        key_metrics_used=prestige_detail.key_metrics,
+        prestige_fallback_warning=prestige_detail.fallback_warning,
         main_reason=rationale[0] if rationale else "No strong positive evidence.",
         main_risk=risks[0] if risks else "No major desk-rejection risk from tags.",
     )
@@ -336,7 +369,123 @@ def methods_policy_score(
     return clamp(score)
 
 
+def build_prestige_context(journals: list[JournalRecord]) -> PrestigeContext:
+    return PrestigeContext(
+        sjr_values=sorted(
+            float(journal.prestige_metrics.sjr)
+            for journal in journals
+            if journal.prestige_metrics.sjr is not None
+        ),
+        h_index_values=sorted(
+            float(journal.prestige_metrics.h_index)
+            for journal in journals
+            if journal.prestige_metrics.h_index is not None
+        ),
+        openalex_proxy_values=sorted(
+            value
+            for journal in journals
+            if (value := openalex_citation_proxy(journal)) is not None
+        ),
+    )
+
+
 def prestige_score(journal: JournalRecord) -> float:
+    return prestige_score_detail(journal, build_prestige_context([journal])).score
+
+
+def prestige_score_detail(
+    journal: JournalRecord,
+    context: PrestigeContext,
+) -> PrestigeScoreDetail:
+    metrics = journal.prestige_metrics
+    components: list[tuple[str, float, float, str]] = []
+
+    if metrics.sjr is not None and context.sjr_values:
+        components.append(
+            (
+                "SJR",
+                0.45,
+                percentile_score(float(metrics.sjr), context.sjr_values),
+                f"SJR={metrics.sjr}",
+            )
+        )
+    if metrics.h_index is not None and context.h_index_values:
+        components.append(
+            (
+                "h_index",
+                0.25,
+                percentile_score(float(metrics.h_index), context.h_index_values),
+                f"h_index={metrics.h_index}",
+            )
+        )
+    if metrics.quartile:
+        components.append(
+            (
+                "quartile",
+                0.15,
+                quartile_score(metrics.quartile),
+                f"quartile={metrics.quartile}",
+            )
+        )
+    openalex_proxy = openalex_citation_proxy(journal)
+    if openalex_proxy is not None and context.openalex_proxy_values:
+        components.append(
+            (
+                "OpenAlex proxy",
+                0.15,
+                percentile_score(openalex_proxy, context.openalex_proxy_values),
+                f"OpenAlex citation proxy={round(openalex_proxy, 3)}",
+            )
+        )
+
+    if components:
+        total_weight = sum(weight for _name, weight, _score, _metric in components)
+        score = sum(weight * value for _name, weight, value, _metric in components)
+        score = score / total_weight
+        source_names = [name for name, _weight, _score, _metric in components]
+        return PrestigeScoreDetail(
+            score=clamp(score),
+            source=" + ".join(source_names),
+            key_metrics=[metric for _name, _weight, _score, metric in components],
+        )
+
+    fallback = fallback_prestige_score(journal)
+    return PrestigeScoreDetail(
+        score=fallback,
+        source="fallback tier",
+        key_metrics=[],
+        fallback_warning=(
+            "Prestige score used fallback tier because curated metrics are missing."
+        ),
+    )
+
+
+def percentile_score(value: float, sorted_values: list[float]) -> float:
+    if not sorted_values:
+        return 50.0
+    if len(sorted_values) == 1:
+        return 75.0
+    lower_or_equal = sum(candidate <= value for candidate in sorted_values)
+    return 100.0 * ((lower_or_equal - 1) / (len(sorted_values) - 1))
+
+
+def quartile_score(quartile: str) -> float:
+    return {"Q1": 95.0, "Q2": 72.0, "Q3": 48.0, "Q4": 25.0}.get(
+        quartile.upper(),
+        50.0,
+    )
+
+
+def openalex_citation_proxy(journal: JournalRecord) -> float | None:
+    openalex = journal.prestige_metrics.openalex
+    if openalex.works_count and openalex.works_count > 0 and openalex.cited_by_count:
+        return openalex.cited_by_count / openalex.works_count
+    if openalex.cited_by_count:
+        return float(openalex.cited_by_count)
+    return None
+
+
+def fallback_prestige_score(journal: JournalRecord) -> float:
     if journal.journal in PRESTIGE_TIERS:
         return float(PRESTIGE_TIERS[journal.journal])
     if "broad_science" in journal.scope_tags:
@@ -485,13 +634,15 @@ def render_recommendation_report(recommendations: RecommendationSet) -> str:
         "",
         "## Ranked Shortlist",
         "",
-        "| Rank | Journal | Category | Score | Main reason | Main risk |",
-        "| --- | --- | --- | ---: | --- | --- |",
+        "| Rank | Journal | Category | Score | Prestige source | Main reason | "
+        "Main risk |",
+        "| --- | --- | --- | ---: | --- | --- | --- |",
     ]
     for rank, score in enumerate(shortlist, start=1):
         lines.append(
             f"| {rank} | {score.journal} | {score.category} | "
-            f"{score.total_score:.1f} | {escape_cell(score.main_reason)} | "
+            f"{score.total_score:.1f} | {escape_cell(score.prestige_score_source)} | "
+            f"{escape_cell(score.main_reason)} | "
             f"{escape_cell(score.main_risk)} |"
         )
     lines.extend(
@@ -563,9 +714,23 @@ def render_score_summary(score: JournalScore) -> str:
     risks = "\n".join(f"- {risk}" for risk in score.desk_rejection_risks)
     if not risks:
         risks = "- No major desk-rejection risk from current tags."
+    metrics = (
+        ", ".join(score.key_metrics_used)
+        if score.key_metrics_used
+        else "No curated metric values used."
+    )
+    warning = (
+        f"\n\nPrestige warning: {score.prestige_fallback_warning}"
+        if score.prestige_fallback_warning
+        else ""
+    )
     return (
         f"**{score.journal}** scored {score.total_score:.1f}/100.\n\n"
-        f"{bullets}\n\nRisks:\n{risks}"
+        f"{bullets}\n\n"
+        f"Prestige score source: {score.prestige_score_source}.\n"
+        f"Key metrics used: {metrics}.\n\n"
+        f"Risks:\n{risks}"
+        f"{warning}"
     )
 
 
@@ -602,7 +767,9 @@ def render_evidence(scores: list[JournalScore]) -> str:
     for score in scores:
         lines.append(
             f"- {score.journal}: {', '.join(score.evidence_fields_used) or 'none'}; "
-            f"matched tags: {', '.join(score.matched_tags) or 'none'}."
+            f"matched tags: {', '.join(score.matched_tags) or 'none'}; "
+            f"prestige: {score.prestige_score_source}"
+            f" ({', '.join(score.key_metrics_used) or 'fallback/no metrics'})."
         )
     return "\n".join(lines)
 

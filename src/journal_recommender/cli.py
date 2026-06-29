@@ -10,6 +10,7 @@ from journal_recommender.indexing import DEFAULT_INDEX_PATH, rebuild_index
 from journal_recommender.manual_downloads import generate_manual_download_queue
 from journal_recommender.manual_sources import process_manual_sources
 from journal_recommender.manuscript import validate_manuscript_file
+from journal_recommender.metrics import audit_metrics
 from journal_recommender.schema import validate_journal_file
 from journal_recommender.scoring import rank_journals_from_files
 from journal_recommender.updating import (
@@ -21,6 +22,7 @@ DEFAULT_JOURNAL_PATH = Path("data/journals.yaml")
 DEFAULT_CACHE_DIR = Path("data_raw/cache")
 DEFAULT_REPORT_PATH = Path("reports/journal_database_changed.md")
 DEFAULT_RECOMMENDATION_PATH = Path("reports/example_journal_recommendation.md")
+DEFAULT_METRICS_AUDIT_PATH = Path("reports/metrics_audit.md")
 DEFAULT_MANUAL_MANIFEST = Path("data_manual/manifest.yaml")
 DEFAULT_MANUAL_SUGGESTIONS = Path(
     "data_manual/suggestions/manual_curation_suggestions.yaml"
@@ -80,6 +82,13 @@ def build_parser() -> argparse.ArgumentParser:
     report_parser.add_argument("--cache-dir", default=DEFAULT_CACHE_DIR, type=Path)
     report_parser.add_argument("--report", default=DEFAULT_REPORT_PATH, type=Path)
     report_parser.add_argument("--index", default=DEFAULT_INDEX_PATH, type=Path)
+
+    audit_parser = subparsers.add_parser(
+        "audit-metrics",
+        help="Audit curated journal metric coverage and provenance.",
+    )
+    audit_parser.add_argument("--journals", default=DEFAULT_JOURNAL_PATH, type=Path)
+    audit_parser.add_argument("--out", default=DEFAULT_METRICS_AUDIT_PATH, type=Path)
 
     manuscript_parser = subparsers.add_parser(
         "validate-manuscript",
@@ -177,6 +186,16 @@ def main(argv: list[str] | None = None) -> int:
         print(
             "Generated journal database change report "
             f"for {report.journals_checked} journals at {args.report}"
+        )
+        return 0
+
+    if args.command == "audit-metrics":
+        audit = audit_metrics(args.journals, args.out)
+        print(
+            "Audited "
+            f"{audit.total_journals} journals; "
+            f"{len(audit.missing_scimago)} missing SCImago metrics; "
+            f"report written to {args.out}"
         )
         return 0
 

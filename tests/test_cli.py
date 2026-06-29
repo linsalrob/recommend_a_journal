@@ -42,6 +42,24 @@ def test_rank_journals_cli(tmp_path, capsys) -> None:
     assert out.exists()
 
 
+def test_audit_metrics_cli(tmp_path, capsys) -> None:
+    out = tmp_path / "metrics_audit.md"
+    exit_code = main(
+        [
+            "audit-metrics",
+            "--journals",
+            "data/journals.yaml",
+            "--out",
+            str(out),
+        ]
+    )
+
+    captured = capsys.readouterr()
+    assert exit_code == 0
+    assert "Audited 35 journals" in captured.out
+    assert out.exists()
+
+
 def test_process_manual_sources_cli(tmp_path, capsys) -> None:
     html = tmp_path / "manual.html"
     html.write_text(
