@@ -3,8 +3,7 @@ name: Update journal database
 on:
   push:
     branches:
-      - main
-      - master
+      - dev # change this to main or master to run on every push
   release:
     types: [published]
   schedule:
