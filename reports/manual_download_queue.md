@@ -2,9 +2,9 @@
 
 ## Summary
 
-- Manifest entries: 72
-- Local files found: 72
-- Local files parsed: 72
+- Manifest entries: 76
+- Local files found: 76
+- Local files parsed: 76
 - Local files missing: 0
 - Local files failed parsing: 0
 - URLs still needing manual download: 0
@@ -85,6 +85,10 @@
 | PeerJ Computer Science | homepage_or_scope | data_manual/pages/peerj_computer_science_homepage_or_scope.html | 2 |
 | Viruses | aims_scope | data_manual/pages/viruses_aims_scope.html | 3 |
 | Viruses | homepage_or_scope | data_manual/pages/viruses_homepage_or_scope.html | 2 |
+| BMC Microbiology | homepage_or_scope | data_manual/pages/bmc_microbiology_homepage_or_scope.html | 6 |
+| BMC Genomics | homepage_or_scope | data_manual/pages/bmc_genomics_homepage_or_scope.html | 4 |
+| Nature Computational Science | homepage_or_scope | data_manual/pages/nat_compsci_homepage_or_scope.html | 2 |
+| PLoS Biology | homepage_or_scope | data_manual/pages/plos_bio_homepage_or_scope.html | 2 |
 
 ## Missing Local Files From Manifest
 

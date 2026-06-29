@@ -1263,3 +1263,93 @@
   warnings:
   - Rejected article-type evidence because it looked noisy.
   - No clean aims/scope/about section found; scope tags omitted.
+- journal: BMC Microbiology
+  source_type: homepage_or_scope
+  status: ready_for_review
+  source_url: https://link.springer.com/journal/12866
+  local_file: data_manual/pages/bmc_microbiology_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://link.springer.com/journal/12866
+    aims_scope_url: https://link.springer.com/journal/12866
+    scope_tags:
+      add:
+      - infectious_disease
+      - microbiology
+      - viromics
+    editorial_notes:
+      add:
+      - Manual source indicates journal scope includes infectious disease, microbiology,
+        viromics.
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    scope_tags: high
+    editorial_notes: high
+  evidence:
+  - field: scope_tags
+    snippet: Articles For authors Journal updates Overview BMC Microbiology is an
+      open access, peer-reviewed journal that considers articles on all aspects of
+      microbiology, covering bacteria, archaea, algae and fungi, viruses, unicellular
+      para
+  warnings:
+  - No relevant article-type or author-instruction section found.
+- journal: BMC Genomics
+  source_type: homepage_or_scope
+  status: ready_for_review
+  source_url: https://link.springer.com/journal/12864
+  local_file: data_manual/pages/bmc_genomics_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://link.springer.com/journal/12864
+    aims_scope_url: https://link.springer.com/journal/12864
+    scope_tags:
+      add:
+      - genomics
+    editorial_notes:
+      add:
+      - Manual source indicates journal scope includes genomics.
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    scope_tags: high
+    editorial_notes: high
+  evidence:
+  - field: scope_tags
+    snippet: Articles For authors Journal updates Overview BMC Genomics is an open
+      access, peer-reviewed journal that considers articles on all aspects of genetics,
+      genomics and proteomics. Articles For authors Journal updates Journal updates
+  warnings:
+  - No relevant article-type or author-instruction section found.
+- journal: Nature Computational Science
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://www.nature.com/natcomputsci
+  local_file: data_manual/pages/nat_compsci_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.nature.com/natcomputsci
+    aims_scope_url: https://www.nature.com/natcomputsci
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: PLoS Biology
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://journals.plos.org/plosbiology/
+  local_file: data_manual/pages/plos_bio_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://journals.plos.org/plosbiology/
+    aims_scope_url: https://journals.plos.org/plosbiology/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.

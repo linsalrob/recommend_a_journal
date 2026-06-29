@@ -2,10 +2,10 @@
 
 ## Summary
 
-- Total manual sources parsed: 72
-- High-confidence suggestions: 64
+- Total manual sources parsed: 76
+- High-confidence suggestions: 68
 - Low-confidence suggestions: 13
-- Rejected/noisy or missing-section suggestions: 48
+- Rejected/noisy or missing-section suggestions: 50
 - Sources with no useful updates: 0
 
 ## URL-only Suggestions
@@ -60,6 +60,8 @@
 | Nature Microbiology | homepage_or_scope | data_manual/pages/nature_microbiology_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
 | PeerJ Computer Science | homepage_or_scope | data_manual/pages/peerj_computer_science_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found. |
 | Viruses | homepage_or_scope | data_manual/pages/viruses_homepage_or_scope.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Computational Science | homepage_or_scope | data_manual/pages/nat_compsci_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| PLoS Biology | homepage_or_scope | data_manual/pages/plos_bio_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
 
 ## Substantive High-confidence Suggestions
 
@@ -79,6 +81,8 @@
 | Journal of Virology | data_policy | data_manual/pages/journal_of_virology_data_policy.html | ready_for_review | data_policy | - | - |
 | PeerJ Computer Science | apc | data_manual/pages/peerj_computer_science_apc.html | ready_for_review | open_access | - | APC amount not extracted confidently. |
 | Viruses | aims_scope | data_manual/pages/viruses_aims_scope.html | low_confidence | aims_scope_url, editorial_notes | scope_tags | - |
+| BMC Microbiology | homepage_or_scope | data_manual/pages/bmc_microbiology_homepage_or_scope.html | ready_for_review | homepage_url, aims_scope_url, scope_tags, editorial_notes | - | No relevant article-type or author-instruction section found. |
+| BMC Genomics | homepage_or_scope | data_manual/pages/bmc_genomics_homepage_or_scope.html | ready_for_review | homepage_url, aims_scope_url, scope_tags, editorial_notes | - | No relevant article-type or author-instruction section found. |
 
 ## Low-confidence Or Noisy Suggestions
 
@@ -150,6 +154,8 @@
 | Nature Methods | homepage_or_scope | data_manual/pages/nature_methods_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
 | Nature Microbiology | homepage_or_scope | data_manual/pages/nature_microbiology_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
 | PeerJ Computer Science | homepage_or_scope | data_manual/pages/peerj_computer_science_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found. |
+| Nature Computational Science | homepage_or_scope | data_manual/pages/nat_compsci_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| PLoS Biology | homepage_or_scope | data_manual/pages/plos_bio_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
 
 ## Missing Field Summary
 
