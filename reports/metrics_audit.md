@@ -12,6 +12,13 @@
 - Journals missing OpenAlex metrics: 0
 - Journals with missing/empty metric source files: 0
 - Journals with official impact_factor or cite_score: 0
+- Manual protected fields changed by this run: 0
+
+## Manual Curation Protection
+
+Manual protected fields changed by this run: 0
+
+Protected fields: `article_types`, `code_policy.summary`, `data_policy.summary`, `editorial_notes`, `example_papers`, `less_suitable_for`, `manuscript_tags`, `open_access.apc`, `open_access.currency`, `open_access.model`, `scope_tags`, `source_evidence`, `suitable_for`
 
 ## Missing SCImago Metrics
 

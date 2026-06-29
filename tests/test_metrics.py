@@ -72,6 +72,7 @@ def test_metric_audit_report_flags_missing_source_file(tmp_path: Path) -> None:
     assert audit.total_journals == 1
     assert audit.with_sjr == 1
     assert "Journals with missing/empty metric source files: 1" in markdown
+    assert "Manual protected fields changed by this run: 0" in markdown
     assert "Example Journal" in markdown
 
 

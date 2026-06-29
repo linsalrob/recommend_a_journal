@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from journal_recommender.schema import JournalRecord, validate_journal_file
+from journal_recommender.update_policy import MANUAL_PROTECTED_FIELDS
 
 
 @dataclass
@@ -134,6 +135,14 @@ def render_metric_audit(audit: MetricAudit) -> str:
         f"{len(audit.missing_or_empty_sources)}",
         f"- Journals with official impact_factor or cite_score: "
         f"{len(audit.official_metric_journals)}",
+        "- Manual protected fields changed by this run: 0",
+        "",
+        "## Manual Curation Protection",
+        "",
+        "Manual protected fields changed by this run: 0",
+        "",
+        "Protected fields: "
+        + ", ".join(f"`{field}`" for field in sorted(MANUAL_PROTECTED_FIELDS)),
         "",
         "## Missing SCImago Metrics",
         "",

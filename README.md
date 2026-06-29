@@ -61,6 +61,23 @@ suspicious publisher pages for human review instead of rewriting scope summaries
 from HTML. APC values are reported as candidates only and are not written
 automatically.
 
+### Manual Curation Protection
+
+Manually curated semantic fields are authoritative. Automatic maintenance must
+not overwrite `article_types`, `scope_tags`, `manuscript_tags`, `suitable_for`,
+`less_suitable_for`, `data_policy.summary`, `code_policy.summary`,
+`open_access.model`, `open_access.apc`, `open_access.currency`,
+`editorial_notes`, `example_papers`, or `source_evidence`.
+
+Automated updates are limited to cache/report/index outputs, filling an empty
+`publisher` from a high-confidence Crossref match, and refreshing metric fields
+under `prestige_metrics.openalex` or the curated SCImago fields
+`prestige_metrics.sjr`, `prestige_metrics.h_index`,
+`prestige_metrics.quartile`, `prestige_metrics.metric_year`, and
+`prestige_metrics.metric_sources`. The update report records
+`Manual protected fields changed by this run: 0`; any non-zero value should be
+treated as an error before committing generated files.
+
 ## Journal Metrics
 
 Metric provenance matters:

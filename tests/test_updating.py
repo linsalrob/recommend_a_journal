@@ -9,6 +9,11 @@ import yaml
 from journal_recommender.cli import main
 from journal_recommender.indexing import index_record
 from journal_recommender.schema import JournalRecord
+from journal_recommender.update_policy import (
+    AUTOMATED_UPDATE_FIELDS,
+    MANUAL_PROTECTED_FIELDS,
+    protected_field_snapshot,
+)
 from journal_recommender.updating import (
     ApcResult,
     CrossrefResult,
@@ -110,6 +115,47 @@ def complete_record(journal: str, url: str = "https://example.org") -> dict:
         "source_evidence": [],
         "last_checked": "",
     }
+
+
+def record_with_manual_fields(journal: str = "Example Journal") -> dict:
+    record = complete_record(journal)
+    record["article_types"] = ["Research Article"]
+    record["scope_tags"] = ["microbiology"]
+    record["manuscript_tags"] = ["specialist_audience"]
+    record["suitable_for"] = ["Curated fit"]
+    record["less_suitable_for"] = ["Curated mismatch"]
+    record["data_policy"]["summary"] = "Curated data policy."
+    record["code_policy"]["summary"] = "Curated code policy."
+    record["open_access"]["model"] = "hybrid"
+    record["open_access"]["apc"] = 1000
+    record["open_access"]["currency"] = "USD"
+    record["editorial_notes"] = ["Curated editorial note."]
+    record["example_papers"] = [
+        {
+            "title": "Curated example",
+            "doi": "10.1000/example",
+            "url": "https://example.org/paper",
+            "reason_relevant": "Curated relevance.",
+        }
+    ]
+    record["source_evidence"] = [
+        {
+            "label": "Curated source",
+            "url": "https://example.org/source",
+            "accessed": "2026-06-29",
+            "notes": "manual curation",
+        }
+    ]
+    return record
+
+
+def test_update_policy_lists_manual_and_automated_fields() -> None:
+    assert "scope_tags" in MANUAL_PROTECTED_FIELDS
+    assert "data_policy.summary" in MANUAL_PROTECTED_FIELDS
+    assert "source_evidence" in MANUAL_PROTECTED_FIELDS
+    assert "publisher" in AUTOMATED_UPDATE_FIELDS
+    assert "prestige_metrics.openalex" in AUTOMATED_UPDATE_FIELDS
+    assert "prestige_metrics.sjr" in AUTOMATED_UPDATE_FIELDS
 
 
 def test_url_cache_load_save(tmp_path: Path) -> None:
@@ -427,6 +473,36 @@ def test_crossref_updates_apply_only_missing_fields(tmp_path: Path) -> None:
     assert records[0]["publisher"] == "Example Publisher"
 
 
+def test_crossref_does_not_overwrite_non_empty_publisher_or_manual_fields(
+    tmp_path: Path,
+) -> None:
+    journals_path = tmp_path / "journals.yaml"
+    record = record_with_manual_fields("Example Journal")
+    record["publisher"] = "Curated Publisher"
+    before_manual = protected_field_snapshot(record)
+    journals_path.write_text(yaml.safe_dump([record]), encoding="utf-8")
+
+    updated = apply_crossref_updates(
+        journals_path,
+        [
+            CrossrefResult(
+                journal="Example Journal",
+                status="matched",
+                updates={
+                    "publisher": "Crossref Publisher",
+                    "scope_tags": ["should_not_apply"],
+                    "article_types": ["Review"],
+                },
+            )
+        ],
+    )
+
+    records = yaml.safe_load(journals_path.read_text(encoding="utf-8"))
+    assert updated == 0
+    assert records[0]["publisher"] == "Curated Publisher"
+    assert protected_field_snapshot(records[0]) == before_manual
+
+
 def test_openalex_matching_logic_uses_issn_or_exact_title() -> None:
     journal = JournalRecord.model_validate(
         {
@@ -529,8 +605,10 @@ def test_openalex_metrics_from_source_computes_rates() -> None:
 
 def test_openalex_updates_do_not_overwrite_official_metrics(tmp_path: Path) -> None:
     journals_path = tmp_path / "journals.yaml"
-    record = complete_record("Example Journal")
+    record = record_with_manual_fields("Example Journal")
     record["prestige_metrics"]["impact_factor"] = 9.9
+    record["prestige_metrics"]["sjr"] = 1.2
+    before_manual = protected_field_snapshot(record)
     journals_path.write_text(yaml.safe_dump([record]), encoding="utf-8")
 
     updated = apply_openalex_updates(
@@ -560,7 +638,9 @@ def test_openalex_updates_do_not_overwrite_official_metrics(tmp_path: Path) -> N
     records = yaml.safe_load(journals_path.read_text(encoding="utf-8"))
     assert updated == 1
     assert records[0]["prestige_metrics"]["impact_factor"] == 9.9
+    assert records[0]["prestige_metrics"]["sjr"] == 1.2
     assert records[0]["prestige_metrics"]["openalex"]["openalex_source_id"] == "S123"
+    assert protected_field_snapshot(records[0]) == before_manual
 
 
 def test_scimago_float_parses_decimal_comma() -> None:
@@ -616,10 +696,11 @@ def test_scimago_short_title_fallback_requires_publisher() -> None:
 
 def test_apply_scimago_metrics_preserves_jif_and_citescore(tmp_path: Path) -> None:
     journals_path = tmp_path / "journals.yaml"
-    record = complete_record("Example Journal")
+    record = record_with_manual_fields("Example Journal")
     record["issn"] = {"print": "1234-5678", "online": ""}
     record["prestige_metrics"]["impact_factor"] = 5.5
     record["prestige_metrics"]["cite_score"] = 6.6
+    before_manual = protected_field_snapshot(record)
     journals_path.write_text(yaml.safe_dump([record]), encoding="utf-8")
     scimago_path = tmp_path / "scimagojr_2025.csv"
     scimago_path.write_text(
@@ -641,6 +722,7 @@ def test_apply_scimago_metrics_preserves_jif_and_citescore(tmp_path: Path) -> No
     assert metrics["h_index"] == 42
     assert metrics["metric_year"] == 2025
     assert "SCImago Journal Rank 2025 dataset" in metrics["metric_sources"][0]
+    assert protected_field_snapshot(records[0]) == before_manual
 
 
 def test_apc_parsing_is_conservative() -> None:
@@ -754,23 +836,30 @@ def test_report_generation_contains_summary() -> None:
     assert "OpenAlex records updated: 1" in markdown
     assert "S123" in markdown
     assert "APCs needing review: 1" in markdown
+    assert "Manual protected fields changed by this run: 0" in markdown
 
 
 def test_run_journal_update_with_mocked_http(tmp_path: Path) -> None:
     journals_path = tmp_path / "journals.yaml"
-    journals_path.write_text(
-        yaml.safe_dump([complete_record("Example Journal")]),
-        encoding="utf-8",
-    )
+    record = record_with_manual_fields("Example Journal")
+    before_manual = protected_field_snapshot(record)
+    journals_path.write_text(yaml.safe_dump([record]), encoding="utf-8")
 
     def opener(request, timeout):
         url = request.full_url
         if "api.crossref.org" in url:
             return FakeResponse(json.dumps({"message": {}}).encode("utf-8"))
         return FakeResponse(
-            b"<html><body><h1>Example Journal</h1><p>This is a substantial "
-            b"journal page with aims scope instructions and policy text for "
-            b"testing a valid-looking publisher response.</p></body></html>"
+            (
+                "<html><body><h1>Example Journal</h1><p>This is a substantial "
+                "journal page with aims scope instructions and policy text for "
+                "testing a valid-looking publisher response. The page describes "
+                "journal scope, author guidance, publication policies, research "
+                "articles, review process information, data availability guidance, "
+                "and enough journal-specific body text to avoid short-page quality "
+                f"flags in the automated content classifier. URL: {url}</p></body>"
+                "</html>"
+            ).encode()
         )
 
     report = run_journal_update(
@@ -783,9 +872,12 @@ def test_run_journal_update_with_mocked_http(tmp_path: Path) -> None:
     )
 
     assert report.journals_checked == 1
+    assert report.protected_field_changes == {}
     assert report.url_results[0].status == "new"
     assert (tmp_path / "cache" / "url_cache.json").exists()
     assert (tmp_path / "report.md").exists()
+    records = yaml.safe_load(journals_path.read_text(encoding="utf-8"))
+    assert protected_field_snapshot(records[0]) == before_manual
 
 
 def test_index_record_contains_rich_structured_fields() -> None:

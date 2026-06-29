@@ -42,6 +42,22 @@ HTTP 403 and 429 responses are reported as blocked. If a URL blocks automated
 checks for repeated runs, the report recommends manual curation. Do not attempt
 to bypass publisher protections.
 
+## Manual Curation Protection
+
+Manual semantic fields are authoritative. Automated maintenance must not rewrite
+`article_types`, `scope_tags`, `manuscript_tags`, `suitable_for`,
+`less_suitable_for`, `data_policy.summary`, `code_policy.summary`,
+`open_access.model`, `open_access.apc`, `open_access.currency`,
+`editorial_notes`, `example_papers`, or `source_evidence`.
+
+The automatic updater may fill an empty `publisher` from a high-confidence
+Crossref match and may refresh `prestige_metrics.openalex`, `prestige_metrics.sjr`,
+`prestige_metrics.h_index`, `prestige_metrics.quartile`,
+`prestige_metrics.metric_year`, and `prestige_metrics.metric_sources`. It may
+also update cache, report, and index outputs. The update and metrics audit
+reports include `Manual protected fields changed by this run: 0`; any non-zero
+count should block review until the cause is fixed.
+
 ## APC Sources
 
 Prefer official journal APC pages, publisher open-access pages, or curated URLs

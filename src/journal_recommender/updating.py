@@ -8,6 +8,7 @@ import json
 import re
 import time
 from collections.abc import Callable
+from copy import deepcopy
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
@@ -19,6 +20,13 @@ from urllib.request import Request, urlopen
 import yaml
 
 from journal_recommender.schema import JournalRecord, validate_journal_file
+from journal_recommender.update_policy import (
+    AUTOMATED_UPDATE_FIELDS,
+    SCIMAGO_UPDATE_FIELDS,
+    assert_no_protected_field_changes,
+    changed_protected_fields,
+    count_protected_field_changes,
+)
 
 USER_AGENT = (
     "journal-recommender/0.1 "
@@ -91,6 +99,7 @@ class UpdateReport:
     crossref_results: list[CrossrefResult] = field(default_factory=list)
     openalex_results: list[OpenAlexResult] = field(default_factory=list)
     apc_results: list[ApcResult] = field(default_factory=list)
+    protected_field_changes: dict[str, list[str]] = field(default_factory=dict)
     index_status: str = "not rebuilt"
 
     @property
@@ -949,6 +958,7 @@ def apply_crossref_updates(
         return 0
 
     records = load_raw_yaml(journals_path)
+    before_records = deepcopy(records)
     updated = 0
     for record in records:
         journal_name = record.get("journal")
@@ -956,11 +966,14 @@ def apply_crossref_updates(
         if not updates:
             continue
         for field_name, value in updates.items():
-            if field_name in record and not record[field_name]:
+            if field_name not in AUTOMATED_UPDATE_FIELDS:
+                continue
+            if field_name == "publisher" and not record.get("publisher"):
                 record[field_name] = value
                 updated += 1
 
     if updated:
+        assert_no_protected_field_changes(before_records, records)
         with journals_path.open("w", encoding="utf-8") as handle:
             yaml.safe_dump(records, handle, sort_keys=False, allow_unicode=True)
     return updated
@@ -979,6 +992,7 @@ def apply_openalex_updates(
         return 0
 
     records = load_raw_yaml(journals_path)
+    before_records = deepcopy(records)
     updated = 0
     for record in records:
         journal_name = record.get("journal")
@@ -992,6 +1006,7 @@ def apply_openalex_updates(
             updated += 1
 
     if updated:
+        assert_no_protected_field_changes(before_records, records)
         with journals_path.open("w", encoding="utf-8") as handle:
             yaml.safe_dump(records, handle, sort_keys=False, allow_unicode=True)
     return updated
@@ -1004,6 +1019,7 @@ def apply_scimago_metrics(
 ) -> dict[str, Any]:
     rows = load_scimago_rows(scimago_path)
     records = load_raw_yaml(journals_path)
+    before_records = deepcopy(records)
     updated = 0
     matched: list[str] = []
     unmatched: list[str] = []
@@ -1017,12 +1033,15 @@ def apply_scimago_metrics(
         metrics = scimago_metrics_from_row(row, metric_year, scimago_path)
         prestige_metrics = record.setdefault("prestige_metrics", {})
         for field_name, value in metrics.items():
+            if field_name not in SCIMAGO_UPDATE_FIELDS:
+                continue
             if prestige_metrics.get(field_name) != value:
                 prestige_metrics[field_name] = value
                 updated += 1
         matched.append(journal.journal)
 
     if updated:
+        assert_no_protected_field_changes(before_records, records)
         with journals_path.open("w", encoding="utf-8") as handle:
             yaml.safe_dump(records, handle, sort_keys=False, allow_unicode=True)
     return {"updated_fields": updated, "matched": matched, "unmatched": unmatched}
@@ -1123,6 +1142,7 @@ def run_journal_update(
     sleeper: Callable[[float], None] = time.sleep,
 ) -> UpdateReport:
     now = datetime.now(UTC).date().isoformat()
+    before_records = load_raw_yaml(journals_path)
     journals = validate_journal_file(journals_path)
     cache = UrlCache(cache_dir)
     cache.load()
@@ -1190,6 +1210,10 @@ def run_journal_update(
     journals = validate_journal_file(journals_path)
     apc_results = [check_apc(journal, cache, now) for journal in journals]
     cache.save()
+    protected_field_changes = changed_protected_fields(
+        before_records,
+        load_raw_yaml(journals_path),
+    )
 
     report = UpdateReport(
         run_date=now,
@@ -1199,6 +1223,7 @@ def run_journal_update(
         crossref_results=crossref_results,
         openalex_results=openalex_results,
         apc_results=apc_results,
+        protected_field_changes=protected_field_changes,
     )
     write_report_json(report, cache_dir / LATEST_REPORT_FILE)
     write_change_report(report, report_path)
@@ -1219,6 +1244,7 @@ def write_report_json(report: UpdateReport, path: Path) -> None:
         "crossref_results": [result.__dict__ for result in report.crossref_results],
         "openalex_results": [result.__dict__ for result in report.openalex_results],
         "apc_results": [result.__dict__ for result in report.apc_results],
+        "protected_field_changes": report.protected_field_changes,
         "index_status": report.index_status,
     }
     write_json_object(path, data)
@@ -1240,6 +1266,10 @@ def read_report_json(path: Path) -> UpdateReport:
             OpenAlexResult(**result) for result in data.get("openalex_results", [])
         ],
         apc_results=[ApcResult(**result) for result in data.get("apc_results", [])],
+        protected_field_changes={
+            str(journal): list(fields)
+            for journal, fields in data.get("protected_field_changes", {}).items()
+        },
         index_status=str(data.get("index_status", "not rebuilt")),
     )
 
@@ -1293,6 +1323,12 @@ def render_change_report(report: UpdateReport) -> str:
         f"- APCs skipped: {len(report.apc_skipped)}",
         f"- APCs blocked or suspicious: {len(report.apc_blocked_or_suspicious)}",
         f"- APCs needing review: {len(report.apc_review_needed)}",
+        "- Manual protected fields changed by this run: "
+        f"{count_protected_field_changes(report.protected_field_changes)}",
+        "",
+        "## Manual Curation Protection",
+        "",
+        render_protected_change_table(report.protected_field_changes),
         "",
         "## Suspicious Fetched Pages",
         "",
@@ -1428,6 +1464,20 @@ def render_apc_table(results: list[ApcResult]) -> str:
             f"{result.currency} | "
             f"{escape_cell(result.note)} |"
         )
+    return "\n".join(lines)
+
+
+def render_protected_change_table(changes: dict[str, list[str]]) -> str:
+    if not changes:
+        return "Manual protected fields changed by this run: 0"
+    lines = [
+        "**Error: automatic maintenance changed manual protected fields.**",
+        "",
+        "| Journal | Protected fields changed |",
+        "| --- | --- |",
+    ]
+    for journal, fields in sorted(changes.items()):
+        lines.append(f"| {escape_cell(journal)} | {escape_cell(', '.join(fields))} |")
     return "\n".join(lines)
 
 
