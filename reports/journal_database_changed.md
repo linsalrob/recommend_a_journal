@@ -1,6 +1,6 @@
 # Journal Database Changed Report
 
-- Run date: 2026-06-28
+- Run date: 2026-06-29
 - Workflow trigger: push
 
 ## Summary
@@ -14,11 +14,11 @@
 - Blocked URLs: 48
 - Suspicious fetched pages: 13
 - Skipped manual-curation URLs: 0
-- Crossref matched: 32
+- Crossref matched: 31
 - Crossref records updated: 0
 - Crossref skipped: 0
 - Crossref needs review: 0
-- Crossref failed: 3
+- Crossref failed: 4
 - APC candidates: 0
 - APCs unchanged: 0
 - APCs skipped: 24
@@ -41,7 +41,7 @@
 | Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ | 9498eee98cab | 9498eee98cab | very_short_body |  |
-| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 96e72ce0f358 | 3245a92b57b6 | very_short_body |  |
+| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 3245a92b57b6 | e74b912da29b | very_short_body |  |
 
 ## Blocked URLs
 
@@ -100,9 +100,9 @@
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | 217353b685ed | f047199b85aa | looks_valid |  |
-| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 945803028bfe | 437425033cd1 | looks_valid |  |
-| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 399615fe6202 | 35aa86fe3942 | looks_valid |  |
+| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | f047199b85aa | 78eff223b312 | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | 437425033cd1 | d388f3cf5c6f | looks_valid |  |
+| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 35aa86fe3942 | 7a06c4542a48 | looks_valid |  |
 
 ## Failed URLs
 
@@ -152,7 +152,7 @@ No entries.
 | Journal of Virology | matched |  | Matched by ISSN. |
 | Viruses | matched |  | Matched by ISSN. |
 | Phage | failed |  | Crossref lookup failed: HTTP Error 400: Bad Request |
-| Virology | matched |  | Matched by ISSN. |
+| Virology | failed |  | Crossref lookup failed: HTTP Error 500: Server Error |
 
 ## APC Updates And Review Needed
 
