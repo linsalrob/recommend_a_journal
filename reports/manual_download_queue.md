@@ -2,12 +2,12 @@
 
 ## Summary
 
-- Manifest entries: 47
-- Local files found: 47
-- Local files parsed: 47
+- Manifest entries: 72
+- Local files found: 72
+- Local files parsed: 72
 - Local files missing: 0
 - Local files failed parsing: 0
-- URLs still needing manual download: 18
+- URLs still needing manual download: 0
 
 ## Files Parsed This Run
 
@@ -35,11 +35,18 @@
 | Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_home.html | 2 |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
+| ASM Animal Microbiology | homepage_or_scope | data_manual/pages/asm_am_art.html | 4 |
+| ASM Animal Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
+| ASM Animal Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Journal of Virology | homepage_or_scope | data_manual/pages/journal_of_virology_home.html | 2 |
 | Journal of Virology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Journal of Virology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
+| Journal of Clinical Microbiology | homepage_or_scope | data_manual/pages/jcm_art.html | 2 |
+| Journal of Clinical Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
+| Journal of Clinical Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
 | Microbiology Spectrum | homepage_or_scope | data_manual/pages/ms_art.html | 2 |
 | mSystems | homepage_or_scope | data_manual/pages/msystems_art.html | 2 |
+| mSphere | author_instructions | data_manual/pages/msphere_art.html | 1 |
 | Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_art.html | 2 |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | 1 |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | 1 |
@@ -60,6 +67,24 @@
 | Virology | aims_scope | data_manual/pages/virology_aims_and_scope.html | 1 |
 | Virology | guide_for_authors | data_manual/pages/virology_guide_for_authors.html | 4 |
 | Virology | open_access | data_manual/pages/virology_open_access_options.html | 1 |
+| BMC Bioinformatics | homepage_or_scope | data_manual/pages/bmc_bioinformatics_homepage_or_scope.html | 8 |
+| Environmental Microbiome | homepage_or_scope | data_manual/pages/environmental_microbiome_homepage_or_scope.html | 2 |
+| Genome Biology | homepage_or_scope | data_manual/pages/genome_biology_homepage_or_scope.html | 4 |
+| Genome Research | homepage_or_scope | data_manual/pages/genome_research_homepage_or_scope.html | 2 |
+| ISME Communications | homepage_or_scope | data_manual/pages/isme_communications_homepage_or_scope.html | 2 |
+| ISME Journal | homepage_or_scope | data_manual/pages/isme_journal_homepage_or_scope.html | 2 |
+| Journal of Virology | aims_scope | data_manual/pages/journal_of_virology_aims_scope.html | 1 |
+| Journal of Virology | data_policy | data_manual/pages/journal_of_virology_data_policy.html | 1 |
+| Microbiome | homepage_or_scope | data_manual/pages/microbiome_homepage_or_scope.html | 2 |
+| Nature | homepage_or_scope | data_manual/pages/nature_homepage_or_scope.html | 2 |
+| Nature Biotechnology | homepage_or_scope | data_manual/pages/nature_biotechnology_homepage_or_scope.html | 2 |
+| Nature Communications | homepage_or_scope | data_manual/pages/nature_communications_homepage_or_scope.html | 2 |
+| Nature Methods | homepage_or_scope | data_manual/pages/nature_methods_homepage_or_scope.html | 2 |
+| Nature Microbiology | homepage_or_scope | data_manual/pages/nature_microbiology_homepage_or_scope.html | 2 |
+| PeerJ Computer Science | apc | data_manual/pages/peerj_computer_science_apc.html | 1 |
+| PeerJ Computer Science | homepage_or_scope | data_manual/pages/peerj_computer_science_homepage_or_scope.html | 2 |
+| Viruses | aims_scope | data_manual/pages/viruses_aims_scope.html | 3 |
+| Viruses | homepage_or_scope | data_manual/pages/viruses_homepage_or_scope.html | 2 |
 
 ## Missing Local Files From Manifest
 
@@ -71,24 +96,7 @@
 
 | Journal | Source type | HTTP | Status | URL | Suggested local file | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
-| BMC Bioinformatics | homepage_or_scope | 200 | suspicious | https://bmcbioinformatics.biomedcentral.com/ | data_manual/pages/bmc_bioinformatics_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Environmental Microbiome | homepage_or_scope | 200 | suspicious | https://environmentalmicrobiome.biomedcentral.com/ | data_manual/pages/environmental_microbiome_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Genome Biology | homepage_or_scope | 200 | suspicious | https://genomebiology.biomedcentral.com/ | data_manual/pages/genome_biology_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Genome Research | homepage_or_scope | 302 | failed | https://genome.cshlp.org/ | data_manual/pages/genome_research_homepage_or_scope.html | Automated fetch failed and no parsed local file is available. |
-| ISME Communications | homepage_or_scope | 200 | suspicious | https://www.nature.com/ismecomms/ | data_manual/pages/isme_communications_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| ISME Journal | homepage_or_scope | 200 | suspicious | https://www.nature.com/ismej/ | data_manual/pages/isme_journal_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Journal of Virology | aims_scope | 403 | blocked | https://journals.asm.org/journal/jvi/about | data_manual/pages/journal_of_virology_aims_scope.html | Automated fetch returned HTTP 403. |
-| Journal of Virology | data_policy | 403 | blocked | https://journals.asm.org/open-data-policy | data_manual/pages/journal_of_virology_data_policy.html | Automated fetch returned HTTP 403. |
-| Microbiome | homepage_or_scope | 200 | suspicious | https://microbiomejournal.biomedcentral.com/ | data_manual/pages/microbiome_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Nature | homepage_or_scope | 200 | suspicious | https://www.nature.com/nature/ | data_manual/pages/nature_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Nature Biotechnology | homepage_or_scope | 200 | suspicious | https://www.nature.com/nbt/ | data_manual/pages/nature_biotechnology_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Nature Communications | homepage_or_scope | 200 | suspicious | https://www.nature.com/ncomms/ | data_manual/pages/nature_communications_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Nature Methods | homepage_or_scope | 200 | suspicious | https://www.nature.com/nmeth/ | data_manual/pages/nature_methods_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| Nature Microbiology | homepage_or_scope | 200 | suspicious | https://www.nature.com/nmicrobiol/ | data_manual/pages/nature_microbiology_homepage_or_scope.html | Automated fetch produced suspicious content: looks_valid, duplicate_hash_across_many_urls. |
-| PeerJ Computer Science | apc | 200 | suspicious | https://peerj.com/pricing/ | data_manual/pages/peerj_computer_science_apc.html | Automated fetch produced suspicious content: very_short_body. |
-| PeerJ Computer Science | homepage_or_scope | 201 | suspicious | https://peerj.com/computer-science/ | data_manual/pages/peerj_computer_science_homepage_or_scope.html | Automated fetch produced suspicious content: very_short_body. |
-| Viruses | aims_scope | 403 | blocked | https://www.mdpi.com/journal/viruses/about | data_manual/pages/viruses_aims_scope.html | Automated fetch returned HTTP 403. |
-| Viruses | homepage_or_scope | 403 | blocked | https://www.mdpi.com/ethics | data_manual/pages/viruses_homepage_or_scope.html | Automated fetch returned HTTP 403. |
+|  |  |  |  |  |  |  |
 
 ## Next Steps
 

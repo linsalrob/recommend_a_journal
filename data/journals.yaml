@@ -5,7 +5,7 @@
     print: 0028-0836
     online: 1476-4687
   homepage_url: https://www.nature.com/nature/
-  aims_scope_url: ''
+  aims_scope_url: https://www.nature.com/nature/
   author_instructions_url: ''
   article_types:
   - Article
@@ -72,6 +72,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.nature.com/nature/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/nature_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: Science
   abbreviated_title: Science
@@ -261,7 +265,7 @@
     print: ''
     online: 2058-5276
   homepage_url: https://www.nature.com/nmicrobiol/
-  aims_scope_url: ''
+  aims_scope_url: https://www.nature.com/nmicrobiol/
   author_instructions_url: ''
   article_types:
   - Article
@@ -325,6 +329,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.nature.com/nmicrobiol/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/nature_microbiology_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: Nature Biotechnology
   abbreviated_title: Nat Biotechnol
@@ -333,7 +341,7 @@
     print: 1087-0156
     online: 1546-1696
   homepage_url: https://www.nature.com/nbt/
-  aims_scope_url: ''
+  aims_scope_url: https://www.nature.com/nbt/
   author_instructions_url: ''
   article_types:
   - Article
@@ -401,6 +409,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.nature.com/nbt/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/nature_biotechnology_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: Nature Methods
   abbreviated_title: Nat Methods
@@ -409,7 +421,7 @@
     print: 1548-7091
     online: 1548-7105
   homepage_url: https://www.nature.com/nmeth/
-  aims_scope_url: ''
+  aims_scope_url: https://www.nature.com/nmeth/
   author_instructions_url: ''
   article_types:
   - Article
@@ -476,6 +488,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.nature.com/nmeth/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/nature_methods_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: Nature Communications
   abbreviated_title: Nat Commun
@@ -484,7 +500,7 @@
     print: ''
     online: 2041-1723
   homepage_url: https://www.nature.com/ncomms/
-  aims_scope_url: ''
+  aims_scope_url: https://www.nature.com/ncomms/
   author_instructions_url: ''
   article_types:
   - Article
@@ -545,6 +561,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.nature.com/ncomms/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/nature_communications_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: Science Advances
   abbreviated_title: Sci Adv
@@ -734,7 +754,7 @@
     print: 1474-7596
     online: 1474-760X
   homepage_url: https://genomebiology.biomedcentral.com/
-  aims_scope_url: ''
+  aims_scope_url: https://genomebiology.biomedcentral.com/
   author_instructions_url: ''
   article_types:
   - Research
@@ -784,6 +804,7 @@
     metric_sources: []
   editorial_notes:
   - Good strategic target for genomics plus computational or systems insight.
+  - Manual source indicates journal scope includes genomics.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -804,6 +825,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://genomebiology.biomedcentral.com/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/genome_biology_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: Genome Research
   abbreviated_title: Genome Res
@@ -812,7 +837,7 @@
     print: 1088-9051
     online: 1549-5469
   homepage_url: https://genome.cshlp.org/
-  aims_scope_url: ''
+  aims_scope_url: https://genome.cshlp.org/
   author_instructions_url: ''
   article_types:
   - Research
@@ -879,6 +904,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://genome.cshlp.org/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/genome_research_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: PNAS
   abbreviated_title: Proc Natl Acad Sci U S A
@@ -978,7 +1007,7 @@
     print: ''
     online: 2049-2618
   homepage_url: https://microbiomejournal.biomedcentral.com/
-  aims_scope_url: ''
+  aims_scope_url: https://microbiomejournal.biomedcentral.com/
   author_instructions_url: ''
   article_types:
   - Research
@@ -1043,6 +1072,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://microbiomejournal.biomedcentral.com/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/microbiome_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: ISME Journal
   abbreviated_title: ISME J
@@ -1051,7 +1084,7 @@
     print: 1751-7362
     online: 1751-7370
   homepage_url: https://www.nature.com/ismej/
-  aims_scope_url: ''
+  aims_scope_url: https://www.nature.com/ismej/
   author_instructions_url: ''
   article_types:
   - Article
@@ -1118,6 +1151,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.nature.com/ismej/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/isme_journal_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: ISME Communications
   abbreviated_title: ISME Commun
@@ -1126,7 +1163,7 @@
     print: ''
     online: 2730-6151
   homepage_url: https://www.nature.com/ismecomms/
-  aims_scope_url: ''
+  aims_scope_url: https://www.nature.com/ismecomms/
   author_instructions_url: ''
   article_types:
   - Article
@@ -1187,6 +1224,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://www.nature.com/ismecomms/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/isme_communications_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: mBio
   abbreviated_title: mBio
@@ -1690,7 +1731,7 @@
     print: ''
     online: ''
   homepage_url: https://environmentalmicrobiome.biomedcentral.com/
-  aims_scope_url: ''
+  aims_scope_url: https://environmentalmicrobiome.biomedcentral.com/
   author_instructions_url: ''
   article_types:
   - Research
@@ -1746,6 +1787,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://environmentalmicrobiome.biomedcentral.com/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/environmental_microbiome_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: Applied and Environmental Microbiology
   abbreviated_title: Appl Environ Microbiol
@@ -2383,7 +2428,7 @@
     print: ''
     online: 1471-2105
   homepage_url: https://bmcbioinformatics.biomedcentral.com/
-  aims_scope_url: ''
+  aims_scope_url: https://bmcbioinformatics.biomedcentral.com/
   author_instructions_url: ''
   article_types:
   - Research
@@ -2396,6 +2441,7 @@
   - database
   - methods
   - computational_biology
+  - machine_learning
   manuscript_tags:
   - software_tool
   - database_resource
@@ -2430,6 +2476,8 @@
     metric_sources: []
   editorial_notes:
   - Safer credible option for bioinformatics software and methods.
+  - Manual source indicates journal scope includes bioinformatics, computational biology,
+    machine learning, methods.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -2446,6 +2494,10 @@
     notes: Curated controlled-vocabulary tags from journal title, publisher identity,
       and official journal/source URLs already recorded; verify details before changing
       factual policy fields.
+  - label: 'Manual source: homepage_or_scope'
+    url: https://bmcbioinformatics.biomedcentral.com/
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/bmc_bioinformatics_homepage_or_scope.html.
   last_checked: '2026-06-28'
 - journal: Virus Evolution
   abbreviated_title: Virus Evol
@@ -2809,6 +2861,7 @@
     ▼ Journal Menu Viruses Home Aims & Scope Editorial Board Reviewer Board Topical
     Advisory Panel Instructions for Authors Special Issues Topics Sections & Collections
     Article Processing Charge Indexing & Archiv'
+  - Manual source indicates journal scope includes viromics.
   example_papers: []
   source_evidence:
   - label: Homepage
@@ -2853,6 +2906,10 @@
     url: https://www.mdpi.com/journal/viruses/apc
     accessed: '2026-06-29'
     notes: Parsed from local file data_manual/pages/viruses_apc.html.
+  - label: 'Manual source: aims_scope'
+    url: https://www.mdpi.com/journal/viruses/about
+    accessed: '2026-06-29'
+    notes: Parsed from local file data_manual/pages/viruses_aims_scope.html.
   last_checked: '2026-06-28'
 - journal: Phage
   abbreviated_title: Phage

@@ -355,6 +355,61 @@
   evidence: []
   warnings:
   - Rejected article-type evidence because it looked noisy.
+- journal: ASM Animal Microbiology
+  source_type: homepage_or_scope
+  status: ready_for_review
+  source_url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
+  local_file: data_manual/pages/asm_am_art.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
+    aims_scope_url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
+    scope_tags:
+      add:
+      - microbiology
+    editorial_notes:
+      add:
+      - Manual source indicates journal scope includes microbiology.
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    scope_tags: high
+    editorial_notes: high
+  evidence:
+  - field: scope_tags
+    snippet: ABOUT ASM ANIMAL MICROBIOLOGY SUBMIT ABOUT ASM ANIMAL MICROBIOLOGY SUBMIT
+  warnings:
+  - Rejected article-type evidence because it looked noisy.
+- journal: ASM Animal Microbiology
+  source_type: apc
+  status: low_confidence
+  source_url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  extracted_text_path: ''
+  candidate_updates:
+    open_access:
+      model: ''
+      apc: null
+      currency: ''
+      url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: low
+  evidence: []
+  warnings:
+  - APC amount not extracted confidently.
+- journal: ASM Animal Microbiology
+  source_type: author_instructions
+  status: rejected_noise
+  source_url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  extracted_text_path: ''
+  candidate_updates:
+    author_instructions_url: https://journals.asm.org/authors
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - Rejected article-type evidence because it looked noisy.
 - journal: Journal of Virology
   source_type: homepage_or_scope
   status: rejected_noise
@@ -385,6 +440,52 @@
   warnings:
   - Rejected article-type evidence because it looked noisy.
 - journal: Journal of Virology
+  source_type: apc
+  status: low_confidence
+  source_url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  extracted_text_path: ''
+  candidate_updates:
+    open_access:
+      model: ''
+      apc: null
+      currency: ''
+      url: https://journals.asm.org/publication-fees
+  confidence:
+    open_access: low
+  evidence: []
+  warnings:
+  - APC amount not extracted confidently.
+- journal: Journal of Clinical Microbiology
+  source_type: homepage_or_scope
+  status: rejected_noise
+  source_url: https://journals.asm.org/journal/jcm/article-types
+  local_file: data_manual/pages/jcm_art.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://journals.asm.org/journal/jcm/article-types
+    aims_scope_url: https://journals.asm.org/journal/jcm/article-types
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - Rejected article-type evidence because it looked noisy.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: Journal of Clinical Microbiology
+  source_type: author_instructions
+  status: rejected_noise
+  source_url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  extracted_text_path: ''
+  candidate_updates:
+    author_instructions_url: https://journals.asm.org/authors
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - Rejected article-type evidence because it looked noisy.
+- journal: Journal of Clinical Microbiology
   source_type: apc
   status: low_confidence
   source_url: https://journals.asm.org/publication-fees
@@ -433,6 +534,21 @@
   warnings:
   - Rejected article-type evidence because it looked noisy.
   - No clean aims/scope/about section found; scope tags omitted.
+- journal: mSphere
+  source_type: author_instructions
+  status: rejected_noise
+  source_url: https://journals.asm.org/journal/msphere/article-types
+  local_file: data_manual/pages/msphere_art.html
+  extracted_text_path: ''
+  candidate_updates:
+    author_instructions_url: https://journals.asm.org/journal/msphere/article-types
+  confidence:
+    author_instructions_url: high
+  evidence: []
+  warnings:
+  - Rejected article-type evidence because it looked noisy.
+  - Rejected data-policy candidate because summary was empty.
+  - Rejected code-policy candidate because summary was empty.
 - journal: Applied and Environmental Microbiology
   source_type: homepage_or_scope
   status: rejected_noise
@@ -830,3 +946,320 @@
     open_access: high
   evidence: []
   warnings: []
+- journal: BMC Bioinformatics
+  source_type: homepage_or_scope
+  status: ready_for_review
+  source_url: https://bmcbioinformatics.biomedcentral.com/
+  local_file: data_manual/pages/bmc_bioinformatics_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://bmcbioinformatics.biomedcentral.com/
+    aims_scope_url: https://bmcbioinformatics.biomedcentral.com/
+    scope_tags:
+      add:
+      - bioinformatics
+      - computational_biology
+      - machine_learning
+      - methods
+      - software
+    editorial_notes:
+      add:
+      - Manual source indicates journal scope includes bioinformatics, computational
+        biology, machine learning, methods.
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    scope_tags: high
+    editorial_notes: high
+  evidence:
+  - field: scope_tags
+    snippet: Articles For authors Journal updates Overview BMC Bioinformatics is an
+      open access, peer-reviewed journal that considers articles describing novel
+      computational algorithms and software, models and tools, including statistical
+      meth
+  warnings:
+  - No relevant article-type or author-instruction section found.
+- journal: Environmental Microbiome
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://environmentalmicrobiome.biomedcentral.com/
+  local_file: data_manual/pages/environmental_microbiome_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://environmentalmicrobiome.biomedcentral.com/
+    aims_scope_url: https://environmentalmicrobiome.biomedcentral.com/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+- journal: Genome Biology
+  source_type: homepage_or_scope
+  status: low_confidence
+  source_url: https://genomebiology.biomedcentral.com/
+  local_file: data_manual/pages/genome_biology_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://genomebiology.biomedcentral.com/
+    aims_scope_url: https://genomebiology.biomedcentral.com/
+    scope_tags:
+      add:
+      - genomics
+    editorial_notes:
+      add:
+      - Manual source indicates journal scope includes genomics.
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+    scope_tags: low
+    editorial_notes: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+- journal: Genome Research
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://genome.cshlp.org/
+  local_file: data_manual/pages/genome_research_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://genome.cshlp.org/
+    aims_scope_url: https://genome.cshlp.org/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: ISME Communications
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://www.nature.com/ismecomms/
+  local_file: data_manual/pages/isme_communications_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.nature.com/ismecomms/
+    aims_scope_url: https://www.nature.com/ismecomms/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: ISME Journal
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://www.nature.com/ismej/
+  local_file: data_manual/pages/isme_journal_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.nature.com/ismej/
+    aims_scope_url: https://www.nature.com/ismej/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: Journal of Virology
+  source_type: aims_scope
+  status: missing_relevant_section
+  source_url: https://journals.asm.org/journal/jvi/about
+  local_file: data_manual/pages/journal_of_virology_aims_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    aims_scope_url: https://journals.asm.org/journal/jvi/about
+  confidence:
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: Journal of Virology
+  source_type: data_policy
+  status: ready_for_review
+  source_url: https://journals.asm.org/open-data-policy
+  local_file: data_manual/pages/journal_of_virology_data_policy.html
+  extracted_text_path: ''
+  candidate_updates:
+    data_policy:
+      summary: o the conclusions of the submitted manuscript are included under this
+        data availability policy. Acceptable data-sharing methods are provided below.
+        Should restrictions to data access become apparent, the matter will be referred
+        to the journal's Edito
+      url: https://journals.asm.org/open-data-policy
+  confidence:
+    data_policy: high
+  evidence:
+  - field: data_policy
+    snippet: o the conclusions of the submitted manuscript are included under this
+      data availability policy. Acceptable data-sharing methods are provided below.
+      Should restrictions to data access become apparent, the matter will be referred
+      to the journal's Edito
+  warnings: []
+- journal: Microbiome
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://microbiomejournal.biomedcentral.com/
+  local_file: data_manual/pages/microbiome_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://microbiomejournal.biomedcentral.com/
+    aims_scope_url: https://microbiomejournal.biomedcentral.com/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+- journal: Nature
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://www.nature.com/nature/
+  local_file: data_manual/pages/nature_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.nature.com/nature/
+    aims_scope_url: https://www.nature.com/nature/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: Nature Biotechnology
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://www.nature.com/nbt/
+  local_file: data_manual/pages/nature_biotechnology_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.nature.com/nbt/
+    aims_scope_url: https://www.nature.com/nbt/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: Nature Communications
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://www.nature.com/ncomms/
+  local_file: data_manual/pages/nature_communications_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.nature.com/ncomms/
+    aims_scope_url: https://www.nature.com/ncomms/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: Nature Methods
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://www.nature.com/nmeth/
+  local_file: data_manual/pages/nature_methods_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.nature.com/nmeth/
+    aims_scope_url: https://www.nature.com/nmeth/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: Nature Microbiology
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://www.nature.com/nmicrobiol/
+  local_file: data_manual/pages/nature_microbiology_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.nature.com/nmicrobiol/
+    aims_scope_url: https://www.nature.com/nmicrobiol/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+  - No clean aims/scope/about section found; scope tags omitted.
+- journal: PeerJ Computer Science
+  source_type: apc
+  status: ready_for_review
+  source_url: https://peerj.com/pricing/
+  local_file: data_manual/pages/peerj_computer_science_apc.html
+  extracted_text_path: ''
+  candidate_updates:
+    open_access:
+      model: open_access
+      apc: null
+      currency: ''
+      url: https://peerj.com/pricing/
+  confidence:
+    open_access: high
+  evidence: []
+  warnings:
+  - APC amount not extracted confidently.
+- journal: PeerJ Computer Science
+  source_type: homepage_or_scope
+  status: missing_relevant_section
+  source_url: https://peerj.com/computer-science/
+  local_file: data_manual/pages/peerj_computer_science_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://peerj.com/computer-science/
+    aims_scope_url: https://peerj.com/computer-science/
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - No relevant article-type or author-instruction section found.
+- journal: Viruses
+  source_type: aims_scope
+  status: low_confidence
+  source_url: https://www.mdpi.com/journal/viruses/about
+  local_file: data_manual/pages/viruses_aims_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    aims_scope_url: https://www.mdpi.com/journal/viruses/about
+    scope_tags:
+      add:
+      - viromics
+    editorial_notes:
+      add:
+      - Manual source indicates journal scope includes viromics.
+  confidence:
+    aims_scope_url: high
+    scope_tags: low
+    editorial_notes: high
+  evidence: []
+  warnings: []
+- journal: Viruses
+  source_type: homepage_or_scope
+  status: rejected_noise
+  source_url: https://www.mdpi.com/ethics
+  local_file: data_manual/pages/viruses_homepage_or_scope.html
+  extracted_text_path: ''
+  candidate_updates:
+    homepage_url: https://www.mdpi.com/ethics
+    aims_scope_url: https://www.mdpi.com/ethics
+  confidence:
+    homepage_url: high
+    aims_scope_url: high
+  evidence: []
+  warnings:
+  - Rejected article-type evidence because it looked noisy.
+  - No clean aims/scope/about section found; scope tags omitted.

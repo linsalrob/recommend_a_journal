@@ -2,10 +2,10 @@
 
 ## Summary
 
-- Total manual sources parsed: 47
-- High-confidence suggestions: 41
-- Low-confidence suggestions: 9
-- Rejected/noisy or missing-section suggestions: 31
+- Total manual sources parsed: 72
+- High-confidence suggestions: 64
+- Low-confidence suggestions: 13
+- Rejected/noisy or missing-section suggestions: 48
 - Sources with no useful updates: 0
 
 ## URL-only Suggestions
@@ -29,10 +29,14 @@
 | Microbiology Spectrum | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
 | Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_home.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
+| ASM Animal Microbiology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
 | Journal of Virology | homepage_or_scope | data_manual/pages/journal_of_virology_home.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | Journal of Virology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
+| Journal of Clinical Microbiology | homepage_or_scope | data_manual/pages/jcm_art.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
+| Journal of Clinical Microbiology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
 | Microbiology Spectrum | homepage_or_scope | data_manual/pages/ms_art.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | mSystems | homepage_or_scope | data_manual/pages/msystems_art.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
+| mSphere | author_instructions | data_manual/pages/msphere_art.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy.; Rejected data-policy candidate because summary was empty.; Rejected code-policy candidate because summary was empty. |
 | Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_art.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
 | Bioinformatics | homepage_or_scope | data_manual/pages/bioinformatics_home.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
@@ -43,11 +47,25 @@
 | Viruses | homepage_or_scope | data_manual/pages/viruses_home.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | Phage | author_instructions | data_manual/pages/phage_authors.html | rejected_noise | author_instructions_url | - | No relevant article-type or author-instruction section found.; Rejected data-policy candidate because summary was empty.; Rejected code-policy candidate because summary was empty. |
 | Virology | aims_scope | data_manual/pages/virology_aims_and_scope.html | missing_relevant_section | aims_scope_url | - | No clean aims/scope/about section found; scope tags omitted. |
+| Environmental Microbiome | homepage_or_scope | data_manual/pages/environmental_microbiome_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found. |
+| Genome Research | homepage_or_scope | data_manual/pages/genome_research_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| ISME Communications | homepage_or_scope | data_manual/pages/isme_communications_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| ISME Journal | homepage_or_scope | data_manual/pages/isme_journal_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Journal of Virology | aims_scope | data_manual/pages/journal_of_virology_aims_scope.html | missing_relevant_section | aims_scope_url | - | No clean aims/scope/about section found; scope tags omitted. |
+| Microbiome | homepage_or_scope | data_manual/pages/microbiome_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found. |
+| Nature | homepage_or_scope | data_manual/pages/nature_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Biotechnology | homepage_or_scope | data_manual/pages/nature_biotechnology_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Communications | homepage_or_scope | data_manual/pages/nature_communications_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Methods | homepage_or_scope | data_manual/pages/nature_methods_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Microbiology | homepage_or_scope | data_manual/pages/nature_microbiology_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| PeerJ Computer Science | homepage_or_scope | data_manual/pages/peerj_computer_science_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found. |
+| Viruses | homepage_or_scope | data_manual/pages/viruses_homepage_or_scope.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 
 ## Substantive High-confidence Suggestions
 
 | Journal | Source type | Local file | Status | High-confidence fields | Low-confidence fields | Warnings |
 | --- | --- | --- | --- | --- | --- | --- |
+| ASM Animal Microbiology | homepage_or_scope | data_manual/pages/asm_am_art.html | ready_for_review | homepage_url, aims_scope_url, scope_tags, editorial_notes | - | Rejected article-type evidence because it looked noisy. |
 | GigaScience | homepage_or_scope | data_manual/pages/gigascience_home.html | ready_for_review | homepage_url, aims_scope_url, scope_tags, manuscript_tags, editorial_notes | - | No relevant article-type or author-instruction section found. |
 | Virus Evolution | homepage_or_scope | data_manual/pages/virus_evolution_home.html | low_confidence | homepage_url, aims_scope_url, editorial_notes | scope_tags, manuscript_tags | No relevant article-type or author-instruction section found. |
 | Microbial Genomics | homepage_or_scope | data_manual/pages/microbial_genomics_home.html | ready_for_review | homepage_url, aims_scope_url, article_types | - | No clean aims/scope/about section found; scope tags omitted.; Rejected data-policy candidate because summary was empty.; Rejected code-policy candidate because summary was empty. |
@@ -56,6 +74,11 @@
 | Phage | homepage_or_scope | data_manual/pages/phage_home.html | ready_for_review | homepage_url, aims_scope_url, open_access | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted.; APC amount not extracted confidently. |
 | Virology | homepage_or_scope | data_manual/pages/virology_home.html | low_confidence | homepage_url, manuscript_tags, editorial_notes | scope_tags | - |
 | Virology | open_access | data_manual/pages/virology_open_access_options.html | ready_for_review | open_access | - | - |
+| BMC Bioinformatics | homepage_or_scope | data_manual/pages/bmc_bioinformatics_homepage_or_scope.html | ready_for_review | homepage_url, aims_scope_url, scope_tags, editorial_notes | - | No relevant article-type or author-instruction section found. |
+| Genome Biology | homepage_or_scope | data_manual/pages/genome_biology_homepage_or_scope.html | low_confidence | homepage_url, aims_scope_url, editorial_notes | scope_tags | No relevant article-type or author-instruction section found. |
+| Journal of Virology | data_policy | data_manual/pages/journal_of_virology_data_policy.html | ready_for_review | data_policy | - | - |
+| PeerJ Computer Science | apc | data_manual/pages/peerj_computer_science_apc.html | ready_for_review | open_access | - | APC amount not extracted confidently. |
+| Viruses | aims_scope | data_manual/pages/viruses_aims_scope.html | low_confidence | aims_scope_url, editorial_notes | scope_tags | - |
 
 ## Low-confidence Or Noisy Suggestions
 
@@ -78,11 +101,17 @@
 | Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_home.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | low_confidence | - | open_access | APC amount not extracted confidently. |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
+| ASM Animal Microbiology | apc | data_manual/pages/asm_publishing_fees.html | low_confidence | - | open_access | APC amount not extracted confidently. |
+| ASM Animal Microbiology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
 | Journal of Virology | homepage_or_scope | data_manual/pages/journal_of_virology_home.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | Journal of Virology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
 | Journal of Virology | apc | data_manual/pages/asm_publishing_fees.html | low_confidence | - | open_access | APC amount not extracted confidently. |
+| Journal of Clinical Microbiology | homepage_or_scope | data_manual/pages/jcm_art.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
+| Journal of Clinical Microbiology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
+| Journal of Clinical Microbiology | apc | data_manual/pages/asm_publishing_fees.html | low_confidence | - | open_access | APC amount not extracted confidently. |
 | Microbiology Spectrum | homepage_or_scope | data_manual/pages/ms_art.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | mSystems | homepage_or_scope | data_manual/pages/msystems_art.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
+| mSphere | author_instructions | data_manual/pages/msphere_art.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy.; Rejected data-policy candidate because summary was empty.; Rejected code-policy candidate because summary was empty. |
 | Applied and Environmental Microbiology | homepage_or_scope | data_manual/pages/aem_art.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 | Applied and Environmental Microbiology | author_instructions | data_manual/pages/asm_authors.html | rejected_noise | author_instructions_url | - | Rejected article-type evidence because it looked noisy. |
 | Applied and Environmental Microbiology | apc | data_manual/pages/asm_publishing_fees.html | low_confidence | - | open_access | APC amount not extracted confidently. |
@@ -91,6 +120,9 @@
 | Phage | author_instructions | data_manual/pages/phage_authors.html | rejected_noise | author_instructions_url | - | No relevant article-type or author-instruction section found.; Rejected data-policy candidate because summary was empty.; Rejected code-policy candidate because summary was empty. |
 | Virology | homepage_or_scope | data_manual/pages/virology_home.html | low_confidence | homepage_url, manuscript_tags, editorial_notes | scope_tags | - |
 | Virology | guide_for_authors | data_manual/pages/virology_guide_for_authors.html | low_confidence | author_instructions_url | article_types | - |
+| Genome Biology | homepage_or_scope | data_manual/pages/genome_biology_homepage_or_scope.html | low_confidence | homepage_url, aims_scope_url, editorial_notes | scope_tags | No relevant article-type or author-instruction section found. |
+| Viruses | aims_scope | data_manual/pages/viruses_aims_scope.html | low_confidence | aims_scope_url, editorial_notes | scope_tags | - |
+| Viruses | homepage_or_scope | data_manual/pages/viruses_homepage_or_scope.html | rejected_noise | homepage_url, aims_scope_url | - | Rejected article-type evidence because it looked noisy.; No clean aims/scope/about section found; scope tags omitted. |
 
 ## Missing Relevant Sections
 
@@ -106,6 +138,18 @@
 | FEMS Microbiology Ecology | homepage_or_scope | data_manual/pages/fems_microbiology_ecology_home.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
 | Environmental Microbiology | homepage_or_scope | data_manual/pages/environmental_microbiology_home.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
 | Virology | aims_scope | data_manual/pages/virology_aims_and_scope.html | missing_relevant_section | aims_scope_url | - | No clean aims/scope/about section found; scope tags omitted. |
+| Environmental Microbiome | homepage_or_scope | data_manual/pages/environmental_microbiome_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found. |
+| Genome Research | homepage_or_scope | data_manual/pages/genome_research_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| ISME Communications | homepage_or_scope | data_manual/pages/isme_communications_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| ISME Journal | homepage_or_scope | data_manual/pages/isme_journal_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Journal of Virology | aims_scope | data_manual/pages/journal_of_virology_aims_scope.html | missing_relevant_section | aims_scope_url | - | No clean aims/scope/about section found; scope tags omitted. |
+| Microbiome | homepage_or_scope | data_manual/pages/microbiome_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found. |
+| Nature | homepage_or_scope | data_manual/pages/nature_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Biotechnology | homepage_or_scope | data_manual/pages/nature_biotechnology_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Communications | homepage_or_scope | data_manual/pages/nature_communications_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Methods | homepage_or_scope | data_manual/pages/nature_methods_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| Nature Microbiology | homepage_or_scope | data_manual/pages/nature_microbiology_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found.; No clean aims/scope/about section found; scope tags omitted. |
+| PeerJ Computer Science | homepage_or_scope | data_manual/pages/peerj_computer_science_homepage_or_scope.html | missing_relevant_section | homepage_url, aims_scope_url | - | No relevant article-type or author-instruction section found. |
 
 ## Missing Field Summary
 
