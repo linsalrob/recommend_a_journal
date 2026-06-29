@@ -1,0 +1,48 @@
+title: Synthetic gut microbiome cohort identifies reproducible signatures
+abstract: 'This synthetic cohort study profiles stool metagenomes and metatranscriptomes
+  from patients and controls.
+
+  Independent validation confirms reproducible microbiome signatures.'
+central_claim: This synthetic cohort study profiles stool metagenomes and metatranscriptomes
+  from patients and controls.
+field:
+- microbiome
+- metagenomics
+- clinical_microbiology
+- host_microbe_interactions
+- computational_biology
+organisms:
+- bacteria
+sample_type:
+- stool
+- gut
+data_types:
+- shotgun metagenomics
+- metatranscriptomics
+methods:
+- differential abundance
+- functional profiling
+- database construction
+study_type: cohort_study
+novelty_type:
+- clinical_cohort
+mechanistic_depth: moderate
+cohort_size: null
+validation:
+  wet_lab: null
+  computational: true
+  independent_dataset: true
+code_available: true
+data_available: true
+clinical_relevance: clinical
+ecological_relevance: host-associated
+bioinformatics_method_novelty: ''
+likely_article_type: research article
+editorial_risks:
+- Mechanistic validation not detected.
+- Feature YAML was generated heuristically and should be reviewed before ranking.
+constraints:
+  open_access_required: null
+  max_apc: null
+  preferred_audience: specialist_audience
+  avoid_publishers: []

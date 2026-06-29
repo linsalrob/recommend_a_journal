@@ -17,9 +17,9 @@ novelty_type: []
 mechanistic_depth: ""
 cohort_size: null
 validation:
-  wet_lab: false
-  computational: false
-  independent_dataset: false
+  wet_lab: null
+  computational: null
+  independent_dataset: null
 code_available: null
 data_available: null
 clinical_relevance: ""

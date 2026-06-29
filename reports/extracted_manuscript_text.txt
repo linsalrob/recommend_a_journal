@@ -1,0 +1,19 @@
+Synthetic gut microbiome cohort identifies reproducible signatures
+Alice Example, Bob Example
+
+Abstract
+This synthetic cohort study profiles stool metagenomes and metatranscriptomes from patients and controls.
+Independent validation confirms reproducible microbiome signatures.
+
+Introduction
+The gut microbiome is linked to host microbe interactions and clinical microbiology questions.
+
+Methods
+We used shotgun metagenomics, differential abundance analysis, and functional profiling.
+The study included independent validation and computational analysis.
+
+Data Availability
+Sequencing data are available in a public repository.
+
+Code Availability
+Analysis code is available on GitHub.

@@ -6,6 +6,10 @@ import argparse
 import os
 from pathlib import Path
 
+from journal_recommender.feature_drafting import (
+    extract_and_draft_features,
+    manuscript_features_to_yaml,
+)
 from journal_recommender.indexing import DEFAULT_INDEX_PATH, rebuild_index
 from journal_recommender.manual_downloads import generate_manual_download_queue
 from journal_recommender.manual_sources import process_manual_sources
@@ -95,6 +99,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="Validate a structured manuscript feature YAML file.",
     )
     manuscript_parser.add_argument("path", type=Path)
+
+    extract_parser = subparsers.add_parser(
+        "extract-features",
+        help="Extract manuscript text and draft structured feature YAML.",
+    )
+    extract_parser.add_argument("--manuscript", required=True, type=Path)
+    extract_parser.add_argument("--out", required=True, type=Path)
+    extract_parser.add_argument("--text-out", required=True, type=Path)
 
     rank_parser = subparsers.add_parser(
         "rank-journals",
@@ -203,6 +215,21 @@ def main(argv: list[str] | None = None) -> int:
         manuscript = validate_manuscript_file(args.path)
         title = manuscript.title or args.path.name
         print(f"Validated manuscript feature file for {title}")
+        return 0
+
+    if args.command == "extract-features":
+        extracted, features = extract_and_draft_features(args.manuscript)
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(manuscript_features_to_yaml(features), encoding="utf-8")
+        args.text_out.parent.mkdir(parents=True, exist_ok=True)
+        args.text_out.write_text(extracted.full_text, encoding="utf-8")
+        for warning in extracted.warnings + features.editorial_risks:
+            print(warning)
+        validate_manuscript_file(args.out)
+        print(
+            "Extracted manuscript features for "
+            f"{args.manuscript.name}; report written to {args.out}"
+        )
         return 0
 
     if args.command == "rank-journals":

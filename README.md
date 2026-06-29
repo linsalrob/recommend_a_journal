@@ -187,6 +187,26 @@ DOCX/PDF manuscripts, or call an LLM. Do not upload confidential DOCX/PDF
 manuscripts unless running locally and you understand where files are stored;
 this first app version expects structured YAML only.
 
+## Uploading Manuscripts
+
+The app can also extract a first-pass `manuscript_features.yaml` from local
+DOCX, PDF, TXT, or MD files. PDFs are extracted with `pypdf`; scanned PDFs are
+not OCRed in this milestone, so extraction may be incomplete. Uploaded files are
+processed locally in the Streamlit session and are not written to disk by
+default.
+
+The generated feature YAML is only a draft. Review and edit it in the UI before
+ranking. Structured YAML remains the source of truth for the ranking engine.
+
+You can also run the same local extraction from the CLI:
+
+```bash
+python -m journal_recommender.cli extract-features \
+  --manuscript manuscript.docx \
+  --out reports/draft_manuscript_features.yaml \
+  --text-out reports/extracted_manuscript_text.txt
+```
+
 ## Current Scope
 
 This repository contains the journal schema, seed records, validation tests,

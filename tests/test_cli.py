@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 from journal_recommender.cli import main
 from tests.test_manual_sources import write_manifest, write_minimal_journals
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_validate_journals_cli(capsys) -> None:
@@ -105,3 +109,33 @@ def test_process_manual_sources_cli(tmp_path, capsys) -> None:
     assert (tmp_path / "suggestions.yaml").exists()
     assert (tmp_path / "review.md").exists()
     assert (tmp_path / "dry_run.md").exists()
+
+
+def test_extract_features_cli(tmp_path, capsys) -> None:
+    manuscript = tmp_path / "microbiome_cohort.txt"
+    manuscript.write_text(
+        (REPO_ROOT / "tests/fixtures/manuscripts/microbiome_cohort.txt").read_text(
+            encoding="utf-8"
+        ),
+        encoding="utf-8",
+    )
+    out = tmp_path / "draft.yaml"
+    text_out = tmp_path / "extracted.txt"
+
+    exit_code = main(
+        [
+            "extract-features",
+            "--manuscript",
+            str(manuscript),
+            "--out",
+            str(out),
+            "--text-out",
+            str(text_out),
+        ]
+    )
+
+    captured = capsys.readouterr()
+    assert exit_code == 0
+    assert out.exists()
+    assert text_out.exists()
+    assert "Extracted manuscript features" in captured.out

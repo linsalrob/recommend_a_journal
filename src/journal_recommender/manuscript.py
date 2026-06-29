@@ -13,9 +13,9 @@ class StrictSchema(BaseModel):
 
 
 class ValidationFeatures(StrictSchema):
-    wet_lab: bool = False
-    computational: bool = False
-    independent_dataset: bool = False
+    wet_lab: bool | None = None
+    computational: bool | None = None
+    independent_dataset: bool | None = None
 
 
 class ManuscriptConstraints(StrictSchema):

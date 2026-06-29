@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 from pathlib import Path
 from typing import Any
 
@@ -20,8 +21,8 @@ from journal_recommender.streamlit_helpers import (
     parse_manuscript_yaml_text,
     recommendation_markdown,
     recommendation_table_rows,
-    score_manuscript_yaml_text,
 )
+from journal_recommender.streamlit_uploads import prepare_uploaded_manuscript
 
 DEFAULT_JOURNALS_PATH = Path("data/journals.yaml")
 DEFAULT_EXAMPLES_DIR = Path("data/examples")
@@ -52,9 +53,9 @@ def main() -> None:
     )
 
     st.sidebar.info(
-        "This first app version expects structured manuscript-feature YAML. "
-        "Do not upload confidential DOCX/PDF manuscripts unless running locally "
-        "and you understand where files are stored."
+        "Manuscripts are processed locally in this Streamlit session. "
+        "Uploaded files are not written to disk by default. Review the generated "
+        "feature YAML before ranking."
     )
 
     if page == "Home / Overview":
@@ -87,7 +88,7 @@ def render_home(journals_path: Path, journals: list[Any]) -> None:
     )
     st.warning(
         "This app is read-only. It does not modify `data/journals.yaml`, run "
-        "publisher updates, parse DOCX/PDF manuscripts, or call an LLM."
+        "publisher updates, or call an LLM."
     )
 
     last_checked = sorted(
@@ -163,11 +164,89 @@ def render_journal_detail(detail: dict[str, Any]) -> None:
 def render_rank_manuscript(journals: list[Any], examples_dir: Path) -> None:
     st.title("Rank Manuscript")
     st.info(
-        "Provide structured manuscript-feature YAML only. DOCX/PDF parsing is "
-        "not implemented in this app version."
+        "Manuscripts are processed locally in this Streamlit session. "
+        "Uploaded files are not written to disk by default. Review the generated "
+        "feature YAML before ranking."
     )
 
-    yaml_text = manuscript_yaml_input(examples_dir)
+    input_method = st.radio(
+        "Choose input method",
+        [
+            "Upload manuscript DOCX/PDF/TXT/MD",
+            "Upload manuscript_features.yaml",
+            "Paste manuscript_features.yaml",
+            "Use example manuscript",
+        ],
+        horizontal=False,
+    )
+
+    extracted_text = ""
+    manuscript_name = "manuscript"
+    yaml_text = ""
+
+    if input_method == "Upload manuscript DOCX/PDF/TXT/MD":
+        uploaded = st.file_uploader(
+            "Upload manuscript",
+            type=["docx", "pdf", "txt", "md"],
+        )
+        if uploaded is None:
+            st.stop()
+        manuscript_name = uploaded.name
+        upload_key = hashlib.sha256(uploaded.getvalue()).hexdigest()
+        state_key = "manuscript_upload_state"
+        state = st.session_state
+        if state.get("upload_key") != upload_key:
+            draft = prepare_uploaded_manuscript(uploaded.name, uploaded.getvalue())
+            state["upload_key"] = upload_key
+            state[state_key] = draft
+            state["manuscript_yaml_text"] = draft.yaml_text
+        draft = state[state_key]
+        extracted_text = draft.extracted.full_text
+        manuscript_name = draft.extracted.filename
+        render_extraction_summary(draft.extracted)
+        st.download_button(
+            "Download extracted text",
+            extracted_text,
+            file_name=f"{Path(manuscript_name).stem}.txt",
+            mime="text/plain",
+        )
+        yaml_text = render_yaml_editor()
+
+    elif input_method == "Upload manuscript_features.yaml":
+        uploaded = st.file_uploader(
+            "Upload manuscript_features.yaml", type=["yaml", "yml"]
+        )
+        if uploaded is None:
+            st.stop()
+        state = st.session_state
+        source_key = f"yaml_upload:{uploaded.name}:{uploaded.size}"
+        if state.get("yaml_source_key") != source_key:
+            state["yaml_source_key"] = source_key
+            state["manuscript_yaml_text"] = uploaded.getvalue().decode("utf-8")
+        yaml_text = render_yaml_editor()
+
+    elif input_method == "Paste manuscript_features.yaml":
+        source_key = "pasted_yaml"
+        state = st.session_state
+        if state.get("yaml_source_key") != source_key:
+            state["yaml_source_key"] = source_key
+            state["manuscript_yaml_text"] = ""
+        yaml_text = render_yaml_editor()
+
+    else:
+        examples = example_feature_files(examples_dir)
+        if not examples:
+            st.error(f"No example YAML files found in `{examples_dir}`.")
+            st.stop()
+        selected = st.selectbox("Example file", examples, format_func=lambda p: p.name)
+        state = st.session_state
+        source_key = f"example:{selected.name}"
+        if state.get("yaml_source_key") != source_key:
+            state["yaml_source_key"] = source_key
+            state["manuscript_yaml_text"] = selected.read_text(encoding="utf-8")
+        yaml_text = render_yaml_editor()
+        manuscript_name = selected.name
+
     if not yaml_text.strip():
         st.stop()
 
@@ -175,18 +254,43 @@ def render_rank_manuscript(journals: list[Any], examples_dir: Path) -> None:
         manuscript = parse_manuscript_yaml_text(yaml_text)
     except Exception as exc:
         st.error(f"Invalid manuscript feature YAML: {exc}")
+        st.download_button(
+            "Download edited manuscript_features.yaml",
+            yaml_text,
+            file_name="manuscript_features.yaml",
+            mime="text/yaml",
+        )
+        if extracted_text:
+            st.download_button(
+                "Download extracted text",
+                extracted_text,
+                file_name=f"{Path(manuscript_name).stem}.txt",
+                mime="text/plain",
+            )
         st.stop()
 
     st.success(f"Validated manuscript features for: {manuscript.title or 'untitled'}")
+    st.download_button(
+        "Download edited manuscript_features.yaml",
+        yaml_text,
+        file_name="manuscript_features.yaml",
+        mime="text/yaml",
+    )
+
+    if extracted_text:
+        with st.expander("Extracted manuscript text"):
+            st.text_area("Extracted text", extracted_text, height=280, disabled=True)
+    if input_method == "Upload manuscript DOCX/PDF/TXT/MD":
+        draft = st.session_state.get("manuscript_upload_state")
+        if draft is not None:
+            render_extracted_sections(draft.extracted)
 
     if not st.button("Rank journals", type="primary"):
-        st.stop()
+        return
 
-    try:
-        recommendations = score_manuscript_yaml_text(yaml_text, journals)
-    except Exception as exc:  # pragma: no cover - defensive UI error
-        st.error(f"Could not rank journals: {exc}")
-        st.stop()
+    from journal_recommender.scoring import score_journals
+
+    recommendations = score_journals(manuscript, journals)
 
     st.subheader("Summary")
     top = recommendations.scores[0]
@@ -229,31 +333,30 @@ def render_rank_manuscript(journals: list[Any], examples_dir: Path) -> None:
         st.markdown(markdown)
 
 
-def manuscript_yaml_input(examples_dir: Path) -> str:
-    source = st.radio(
-        "Manuscript feature source",
-        ["Example file", "Upload YAML", "Paste YAML"],
-        horizontal=True,
+def render_yaml_editor() -> str:
+    return st.text_area(
+        "Review and edit manuscript_features.yaml",
+        key="manuscript_yaml_text",
+        height=420,
     )
 
-    if source == "Example file":
-        examples = example_feature_files(examples_dir)
-        if not examples:
-            st.error(f"No example YAML files found in `{examples_dir}`.")
-            return ""
-        selected = st.selectbox("Example file", examples, format_func=lambda p: p.name)
-        return selected.read_text(encoding="utf-8")
 
-    if source == "Upload YAML":
-        uploaded = st.file_uploader(
-            "Upload manuscript-feature YAML",
-            type=["yaml", "yml"],
-        )
-        if uploaded is None:
-            return ""
-        return uploaded.getvalue().decode("utf-8")
+def render_extraction_summary(extracted) -> None:
+    st.write(f"Uploaded file: `{extracted.filename}`")
+    st.write(f"Detected file type: `{extracted.file_type}`")
+    st.write(f"Detected title: {extracted.title or 'not detected'}")
+    st.write(
+        f"Detected abstract: {'present' if extracted.abstract else 'not detected'}"
+    )
+    if extracted.warnings:
+        st.warning("\n".join(extracted.warnings))
 
-    return st.text_area("Paste manuscript-feature YAML", height=360)
+
+def render_extracted_sections(extracted) -> None:
+    with st.expander("Extracted sections"):
+        for name, text in extracted.sections.items():
+            with st.expander(name):
+                st.text_area(name, text, height=220, disabled=True)
 
 
 def render_metrics_audit(journals: list[Any]) -> None:
