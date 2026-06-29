@@ -415,8 +415,8 @@
     },
     {
       "journal": "mSystems",
-      "note": "Matched by ISSN.",
-      "status": "matched",
+      "note": "Crossref lookup failed: HTTP Error 500: Server Error",
+      "status": "failed",
       "updates": {}
     },
     {
@@ -528,7 +528,7 @@
       "updates": {}
     }
   ],
-  "index_status": "not rebuilt",
+  "index_status": "Rebuilt index at `data/index/journal_corpus.jsonl`.",
   "journals_checked": 35,
   "openalex_results": [
     {
@@ -9344,22 +9344,23 @@
   ],
   "protected_field_changes": {},
   "run_date": "2026-06-29",
-  "trigger": "local",
+  "trigger": "push",
   "url_results": [
     {
       "blocked_repeatedly": false,
-      "content_length": 223677,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "Nature",
       "last_checked": "2026-06-29",
-      "new_hash": "fb4565aace3d920aa708e3cad15734b7ade6500eff97db6f1f51d07181652c8a",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "fb4565aace3d920aa708e3cad15734b7ade6500eff97db6f1f51d07181652c8a",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 9955,
+      "text_length": 303,
       "url": "https://www.nature.com/nature/"
     },
     {
@@ -9395,7 +9396,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1476-4687"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9409,7 +9410,7 @@
       "url": "https://www.science.org/journal/science"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9455,7 +9456,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1095-9203"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9469,7 +9470,7 @@
       "url": "https://www.cell.com/cell/home"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9516,18 +9517,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 248036,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "Nature Microbiology",
       "last_checked": "2026-06-29",
-      "new_hash": "5247a85a4fc2ec341eff5efbd8314df1f36947d1892a69494e53da2c69739614",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "5247a85a4fc2ec341eff5efbd8314df1f36947d1892a69494e53da2c69739614",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 14899,
+      "text_length": 303,
       "url": "https://www.nature.com/nmicrobiol/"
     },
     {
@@ -9548,18 +9550,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 231110,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "Nature Biotechnology",
       "last_checked": "2026-06-29",
-      "new_hash": "bbef3769987b8e778044f2f140e8371dda5b75ce2f984bfddc0e0531721d8b06",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "bbef3769987b8e778044f2f140e8371dda5b75ce2f984bfddc0e0531721d8b06",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 11319,
+      "text_length": 303,
       "url": "https://www.nature.com/nbt/"
     },
     {
@@ -9596,18 +9599,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 246511,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "Nature Methods",
       "last_checked": "2026-06-29",
-      "new_hash": "a7b490c52cab4d11344d2fe5ea07e15fe4e92fa006e354d4a4dfc56bd4894686",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "a7b490c52cab4d11344d2fe5ea07e15fe4e92fa006e354d4a4dfc56bd4894686",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 13970,
+      "text_length": 303,
       "url": "https://www.nature.com/nmeth/"
     },
     {
@@ -9644,18 +9648,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 313554,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "Nature Communications",
       "last_checked": "2026-06-29",
-      "new_hash": "5824bd1bbcbfedc11fcfd4380a4f7b40f0c5377590a002fc16ca99a4f45309e5",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "5824bd1bbcbfedc11fcfd4380a4f7b40f0c5377590a002fc16ca99a4f45309e5",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 24423,
+      "text_length": 303,
       "url": "https://www.nature.com/ncomms/"
     },
     {
@@ -9675,7 +9680,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2041-1723"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9689,7 +9694,7 @@
       "url": "https://www.science.org/journal/sciadv"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9719,7 +9724,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2375-2548"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9733,7 +9738,7 @@
       "url": "https://www.cell.com/cell-host-microbe/home"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9780,18 +9785,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 213234,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "Genome Biology",
       "last_checked": "2026-06-29",
-      "new_hash": "0aecb5ceb68abe0d64dd2991fe02728d27da6065359aaf74ab312989a0e3c522",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "0aecb5ceb68abe0d64dd2991fe02728d27da6065359aaf74ab312989a0e3c522",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 5536,
+      "text_length": 303,
       "url": "https://genomebiology.biomedcentral.com/"
     },
     {
@@ -9873,7 +9879,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1549-5469"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9887,7 +9893,7 @@
       "url": "https://www.pnas.org/"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -9934,18 +9940,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 226584,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "Microbiome",
       "last_checked": "2026-06-29",
-      "new_hash": "a17d1b292e9132e152075e3fbb9a7b54bfb169c5aa1aeb5a9104c6b6db6651f9",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "a17d1b292e9132e152075e3fbb9a7b54bfb169c5aa1aeb5a9104c6b6db6651f9",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 6037,
+      "text_length": 303,
       "url": "https://microbiomejournal.biomedcentral.com/"
     },
     {
@@ -9966,18 +9973,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 132320,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "ISME Journal",
       "last_checked": "2026-06-29",
-      "new_hash": "348bb8d235fb61ce48ff4a286e9e6c99298c1078be7dba3578ef44f6acde675b",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "348bb8d235fb61ce48ff4a286e9e6c99298c1078be7dba3578ef44f6acde675b",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 4209,
+      "text_length": 303,
       "url": "https://www.nature.com/ismej/"
     },
     {
@@ -10014,18 +10022,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 127131,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "ISME Communications",
       "last_checked": "2026-06-29",
-      "new_hash": "9b481a6b8cc3ace956d1588c595893e253292341a9a0a6bc54b556d416c85285",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "9b481a6b8cc3ace956d1588c595893e253292341a9a0a6bc54b556d416c85285",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 3853,
+      "text_length": 303,
       "url": "https://www.nature.com/ismecomms/"
     },
     {
@@ -10045,7 +10054,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2730-6151"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10059,7 +10068,7 @@
       "url": "https://journals.asm.org/journal/mbio"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10073,7 +10082,7 @@
       "url": "https://journals.asm.org/authors"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10103,7 +10112,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2150-7511"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10117,7 +10126,7 @@
       "url": "https://journals.asm.org/journal/msystems"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10131,7 +10140,7 @@
       "url": "https://journals.asm.org/authors"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10161,7 +10170,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2379-5077"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10175,7 +10184,7 @@
       "url": "https://journals.asm.org/journal/msystems/article-types"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10189,7 +10198,7 @@
       "url": "https://journals.asm.org/journal/spectrum"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10203,7 +10212,7 @@
       "url": "https://journals.asm.org/authors"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10233,7 +10242,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2165-0497"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10247,7 +10256,7 @@
       "url": "https://journals.asm.org/journal/spectrum/article-types"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10277,7 +10286,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2057-5858"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10324,22 +10333,23 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 225889,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "Environmental Microbiome",
       "last_checked": "2026-06-29",
-      "new_hash": "406918f8b5bb1c96a2353912147885da855363f9c0978e3794986f6fd523229f",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "406918f8b5bb1c96a2353912147885da855363f9c0978e3794986f6fd523229f",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 6461,
+      "text_length": 303,
       "url": "https://environmentalmicrobiome.biomedcentral.com/"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10353,7 +10363,7 @@
       "url": "https://journals.asm.org/journal/aem"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10367,7 +10377,7 @@
       "url": "https://journals.asm.org/authors"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10413,7 +10423,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1098-5336"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10427,7 +10437,7 @@
       "url": "https://journals.asm.org/journal/aem/article-types"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10473,7 +10483,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1574-6941"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10519,7 +10529,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1460-2059"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10566,18 +10576,18 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 73128,
+      "content_length": 73106,
       "content_quality_flags": [
         "looks_valid"
       ],
       "error": "",
       "journal": "PLOS Computational Biology",
       "last_checked": "2026-06-29",
-      "new_hash": "b970a6ab805ebfc5c72f023a325e385006a7dd9ebcbb4dbd87e0479be8b273d1",
-      "previous_hash": "8481ae45a1db09b53119b7740ded70e5203af16856ffc7eeb1cc2df067b46fe2",
+      "new_hash": "fb9ce3896e60099a011328ced392241aa02d28591b0f370b6fd01efc7538e619",
+      "previous_hash": "b970a6ab805ebfc5c72f023a325e385006a7dd9ebcbb4dbd87e0479be8b273d1",
       "status": "changed",
       "status_code": 200,
-      "text_length": 8454,
+      "text_length": 8357,
       "url": "https://journals.plos.org/ploscompbiol/"
     },
     {
@@ -10613,7 +10623,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1553-7358"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10643,7 +10653,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2631-9268"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10674,18 +10684,19 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 217388,
+      "content_length": 3038,
       "content_quality_flags": [
-        "looks_valid"
+        "looks_valid",
+        "duplicate_hash_across_many_urls"
       ],
       "error": "",
       "journal": "BMC Bioinformatics",
       "last_checked": "2026-06-29",
-      "new_hash": "5c6b322ac18e70ffcc4a9686647cffe5337ee5be2635582bb423f4e8ee414e66",
-      "previous_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
-      "status": "changed",
+      "new_hash": "b86aed68e7af0c1840052dbdaa2dbfe7adf3a8e8d3052f91792d11694a5d12e0",
+      "previous_hash": "5c6b322ac18e70ffcc4a9686647cffe5337ee5be2635582bb423f4e8ee414e66",
+      "status": "suspicious",
       "status_code": 200,
-      "text_length": 5350,
+      "text_length": 303,
       "url": "https://bmcbioinformatics.biomedcentral.com/"
     },
     {
@@ -10705,7 +10716,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1471-2105"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10759,8 +10770,8 @@
       "error": "",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-29",
-      "new_hash": "ad4eb4aa8fb2ac04f355c456a3c2a624ac388c28b53b22f43977488e200aaf1f",
-      "previous_hash": "271e4de7b8f39fe96a46299c351b0464eb450143d947d1fb31724065be908755",
+      "new_hash": "b987c4080189a866df928cafdcd57fb0ce6720b46384a042c3e9d754d09794cd",
+      "previous_hash": "ad4eb4aa8fb2ac04f355c456a3c2a624ac388c28b53b22f43977488e200aaf1f",
       "status": "changed",
       "status_code": 200,
       "text_length": 29768,
@@ -10775,8 +10786,8 @@
       "error": "",
       "journal": "PeerJ Computer Science",
       "last_checked": "2026-06-29",
-      "new_hash": "101a53e0cc9f81dbe71ba3d3445b394c546eead14416c865aedc609a54d0541f",
-      "previous_hash": "c29230414f9c68ebefe25165caf0c55f8e19cd048e7c56c26892c80cef446c0e",
+      "new_hash": "b5d564a7c3beebe2dfb31f7e2b89a5cb3188a5dce573b298cecd4a64bd289b50",
+      "previous_hash": "101a53e0cc9f81dbe71ba3d3445b394c546eead14416c865aedc609a54d0541f",
       "status": "suspicious",
       "status_code": 200,
       "text_length": 95,
@@ -10799,7 +10810,7 @@
       "url": "https://portal.issn.org/resource/ISSN/2376-5992"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10813,7 +10824,7 @@
       "url": "https://journals.asm.org/journal/jvi"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10827,7 +10838,7 @@
       "url": "https://journals.asm.org/journal/jvi/about"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10841,7 +10852,7 @@
       "url": "https://journals.asm.org/authors"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10855,7 +10866,7 @@
       "url": "https://journals.asm.org/open-data-policy"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10901,7 +10912,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1098-5514"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10915,7 +10926,7 @@
       "url": "https://www.mdpi.com/journal/viruses"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10929,7 +10940,7 @@
       "url": "https://www.mdpi.com/journal/viruses/about"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10943,7 +10954,7 @@
       "url": "https://www.mdpi.com/journal/viruses/instructions"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10957,7 +10968,7 @@
       "url": "https://www.mdpi.com/ethics"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -10987,7 +10998,7 @@
       "url": "https://portal.issn.org/resource/ISSN/1999-4915"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -11002,22 +11013,22 @@
     },
     {
       "blocked_repeatedly": false,
-      "content_length": 60682,
+      "content_length": 60476,
       "content_quality_flags": [
         "looks_valid"
       ],
       "error": "",
       "journal": "Phage",
       "last_checked": "2026-06-29",
-      "new_hash": "5498ee597483e845c0fc4a5a25954db489a9cfdd37def6553d138c5581464cf0",
-      "previous_hash": "7a06c4542a48b2f48450ddc774cdf6554b500c47fcc5a1186a542b15491d9fc1",
+      "new_hash": "32d833229db7ab65175d8779a4268eb5395481d7624123837ded27994af4d81f",
+      "previous_hash": "5498ee597483e845c0fc4a5a25954db489a9cfdd37def6553d138c5581464cf0",
       "status": "changed",
       "status_code": 200,
-      "text_length": 2487,
+      "text_length": 2469,
       "url": "https://www.sagepub.com/journals/information-for-authors"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -11031,7 +11042,7 @@
       "url": "https://www.sciencedirect.com/journal/virology"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -11045,7 +11056,7 @@
       "url": "https://www.sciencedirect.com/journal/virology/about/aims-and-scope"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
@@ -11059,7 +11070,7 @@
       "url": "https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors"
     },
     {
-      "blocked_repeatedly": false,
+      "blocked_repeatedly": true,
       "content_length": 0,
       "content_quality_flags": [],
       "error": "HTTP 403",
