@@ -838,3 +838,54 @@ manual_sources:
       - less_suitable_for
       - editorial_notes
 
+  - journal: BMC Microbiology
+    source_type: homepage_or_scope
+    url: "https://link.springer.com/journal/12866"
+    local_file: "data_manual/pages/bmc_microbiology_homepage_or_scope.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: BMC Genomics
+    source_type: homepage_or_scope
+    url: "https://link.springer.com/journal/12864"
+    local_file: "data_manual/pages/bmc_genomics_homepage_or_scope.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: Nature Computational Science
+    source_type: homepage_or_scope
+    url: "https://www.nature.com/natcomputsci"
+    local_file: "data_manual/pages/nat_compsci_homepage_or_scope.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
+
+  - journal: PLoS Biology
+    source_type: homepage_or_scope
+    url: "https://journals.plos.org/plosbiology/"
+    local_file: "data_manual/pages/plos_bio_homepage_or_scope.html"
+    target_fields:
+      - homepage_url
+      - aims_scope_url
+      - article_types
+      - scope_tags
+      - suitable_for
+      - less_suitable_for
+      - editorial_notes
