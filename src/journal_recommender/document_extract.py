@@ -106,7 +106,7 @@ def extract_from_docx(
             paragraphs.append(text)
     text = "\n".join(paragraphs)
     extracted = extract_from_text(text, path.name, "docx")
-    if len(extracted.full_text) < 500:
+    if len(extracted.full_text) < 120:
         extracted.warnings.append("DOCX text extraction produced a short text body.")
     return extracted
 

@@ -132,4 +132,12 @@ related-journal lists, footer text, cookie notices, and publisher-wide
 boilerplate for journal facts unless a relevant source section supports the
 field.
 
+## Optional LLM Refinement
+
+The Streamlit app can optionally refine a deterministic manuscript feature
+draft after you explicitly click the refinement control and provide an OpenAI
+API key. The refinement step rewrites only the manuscript feature YAML for user
+review; it does not rank journals directly and does not bypass the manual
+validation step before ranking.
+
 PDF parsing is not implemented. Save pages as HTML or convert them to text.

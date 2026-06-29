@@ -182,10 +182,11 @@ accepts structured manuscript-feature YAML by example file, upload, or paste,
 and renders a downloadable Markdown recommendation report. It also displays
 metric-audit coverage from the loaded journal records.
 
-The app does not edit `data/journals.yaml`, run publisher updates, parse
-DOCX/PDF manuscripts, or call an LLM. Do not upload confidential DOCX/PDF
-manuscripts unless running locally and you understand where files are stored;
-this first app version expects structured YAML only.
+The app does not edit `data/journals.yaml`, run publisher updates, or rank from
+unreviewed LLM output. It can optionally refine manuscript features from local
+DOCX/PDF text after you explicitly click the refinement button and provide an
+OpenAI API key. Do not upload confidential DOCX/PDF manuscripts unless running
+locally and you understand where files are stored.
 
 ## Uploading Manuscripts
 
@@ -197,6 +198,8 @@ default.
 
 The generated feature YAML is only a draft. Review and edit it in the UI before
 ranking. Structured YAML remains the source of truth for the ranking engine.
+If you use the optional LLM refinement step, it rewrites the draft YAML only;
+you still need to validate and review the result before ranking.
 
 You can also run the same local extraction from the CLI:
 

@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import hashlib
+import os
 from pathlib import Path
 from typing import Any
 
 import streamlit as st
 
+from journal_recommender.feature_drafting import manuscript_features_to_yaml
+from journal_recommender.llm_refinement import refine_manuscript_features_with_llm
 from journal_recommender.streamlit_helpers import (
     build_metrics_audit_for_app,
     example_feature_files,
@@ -210,6 +213,7 @@ def render_rank_manuscript(journals: list[Any], examples_dir: Path) -> None:
             file_name=f"{Path(manuscript_name).stem}.txt",
             mime="text/plain",
         )
+        render_optional_llm_refinement(draft)
         yaml_text = render_yaml_editor()
 
     elif input_method == "Upload manuscript_features.yaml":
@@ -284,6 +288,9 @@ def render_rank_manuscript(journals: list[Any], examples_dir: Path) -> None:
         draft = st.session_state.get("manuscript_upload_state")
         if draft is not None:
             render_extracted_sections(draft.extracted)
+    refinement_result = st.session_state.get("llm_refinement_result")
+    if refinement_result is not None:
+        render_llm_refinement_result(refinement_result)
 
     if not st.button("Rank journals", type="primary"):
         return
@@ -357,6 +364,61 @@ def render_extracted_sections(extracted) -> None:
         for name, text in extracted.sections.items():
             with st.expander(name):
                 st.text_area(name, text, height=220, disabled=True)
+
+
+def render_optional_llm_refinement(draft) -> None:
+    with st.expander("Optional LLM refinement", expanded=False):
+        st.write(
+            "This step sends the extracted title, abstract, selected sections, "
+            "and current draft feature YAML to a configured OpenAI model. "
+            "The deterministic draft remains the source of truth until you "
+            "review the edited YAML and rank manually."
+        )
+        api_key = st.text_input(
+            "OpenAI API key",
+            value=os.environ.get("OPENAI_API_KEY", ""),
+            type="password",
+        )
+        model = st.text_input(
+            "Model",
+            value=os.environ.get("JOURNAL_RECOMMENDER_LLM_MODEL", "gpt-4.1-mini"),
+        )
+        if st.button("Refine draft features with LLM"):
+            if not api_key and not os.environ.get("OPENAI_API_KEY"):
+                st.error("Set `OPENAI_API_KEY` or paste a key before refining.")
+            else:
+                try:
+                    result = refine_manuscript_features_with_llm(
+                        draft.extracted,
+                        draft.features,
+                        model=model,
+                        api_key=api_key or None,
+                    )
+                except Exception as exc:  # pragma: no cover - UI error rendering
+                    st.error(f"LLM refinement failed: {exc}")
+                else:
+                    st.session_state["manuscript_yaml_text"] = (
+                        manuscript_features_to_yaml(result.features)
+                    )
+                    st.session_state["llm_refinement_result"] = result.model_dump(
+                        mode="python"
+                    )
+                    st.success(
+                        "LLM refinement completed. Review the updated YAML before "
+                        "ranking."
+                    )
+                    st.rerun()
+
+
+def render_llm_refinement_result(result: dict[str, Any]) -> None:
+    with st.expander("LLM refinement result", expanded=False):
+        st.write("Field confidence")
+        st.json(result.get("confidence", {}), expanded=False)
+        st.write("Evidence snippets")
+        st.json(result.get("evidence", {}), expanded=False)
+        warnings = result.get("warnings", [])
+        if warnings:
+            st.warning("\n".join(str(item) for item in warnings))
 
 
 def render_metrics_audit(journals: list[Any]) -> None:
