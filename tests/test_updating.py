@@ -12,17 +12,25 @@ from journal_recommender.schema import JournalRecord
 from journal_recommender.updating import (
     ApcResult,
     CrossrefResult,
+    OpenAlexResult,
     PoliteFetcher,
     UpdateReport,
     UrlCache,
     apply_crossref_updates,
+    apply_openalex_updates,
+    apply_scimago_metrics,
     classify_content_quality,
     classify_url_result,
     crossref_matches_journal,
     fetch_crossref_metadata,
+    fetch_openalex_metadata,
     generate_report_from_latest,
     mark_duplicate_hashes,
+    match_scimago_row,
+    openalex_matches_journal,
+    openalex_metrics_from_source,
     parse_apc_amount,
+    parse_scimago_float,
     render_change_report,
     run_journal_update,
     stable_content_hash,
@@ -84,6 +92,18 @@ def complete_record(journal: str, url: str = "https://example.org") -> dict:
             "quartile": "",
             "metric_year": None,
             "metric_sources": [],
+            "openalex": {
+                "openalex_source_id": "",
+                "works_count": None,
+                "cited_by_count": None,
+                "counts_by_year": [],
+                "openalex_h_index": None,
+                "openalex_2yr_citation_rate": None,
+                "openalex_4yr_citation_rate": None,
+                "metric_year": None,
+                "source_url": "",
+                "last_checked": "",
+            },
         },
         "editorial_notes": [],
         "example_papers": [],
@@ -407,6 +427,222 @@ def test_crossref_updates_apply_only_missing_fields(tmp_path: Path) -> None:
     assert records[0]["publisher"] == "Example Publisher"
 
 
+def test_openalex_matching_logic_uses_issn_or_exact_title() -> None:
+    journal = JournalRecord.model_validate(
+        {
+            "journal": "Example Journal",
+            "issn": {"print": "1234-5678", "online": ""},
+        }
+    )
+
+    assert openalex_matches_journal(
+        journal,
+        {"issn": ["1234-5678"], "display_name": "Different Title"},
+    )
+    assert openalex_matches_journal(journal, {"display_name": "Example Journal"})
+    assert not openalex_matches_journal(
+        journal,
+        {"display_name": "Example Journal Reviews"},
+    )
+
+
+def test_openalex_fetch_by_issn_with_mocked_response() -> None:
+    def opener(request, timeout):
+        assert "sources/issn:1234-5678" in request.full_url
+        payload = {
+            "id": "https://openalex.org/S123",
+            "display_name": "Example Journal",
+            "issn": ["1234-5678"],
+            "works_count": 100,
+            "cited_by_count": 250,
+            "summary_stats": {"h_index": 12},
+            "counts_by_year": [
+                {"year": 2026, "works_count": 10, "cited_by_count": 50},
+                {"year": 2025, "works_count": 20, "cited_by_count": 40},
+                {"year": 2024, "works_count": 30, "cited_by_count": 60},
+                {"year": 2023, "works_count": 40, "cited_by_count": 80},
+            ],
+        }
+        return FakeResponse(json.dumps(payload).encode("utf-8"))
+
+    journal = JournalRecord.model_validate(
+        {
+            "journal": "Example Journal",
+            "issn": {"print": "1234-5678", "online": ""},
+        }
+    )
+
+    result = fetch_openalex_metadata(journal, now="2026-06-29", opener=opener)
+    metrics = result.updates["prestige_metrics.openalex"]
+
+    assert result.status == "matched"
+    assert metrics["openalex_source_id"] == "S123"
+    assert metrics["works_count"] == 100
+    assert metrics["openalex_h_index"] == 12
+    assert metrics["openalex_2yr_citation_rate"] == 3.0
+    assert metrics["openalex_4yr_citation_rate"] == 2.3
+    assert metrics["metric_year"] == 2026
+
+
+def test_openalex_title_fallback_requires_exact_match() -> None:
+    def opener(request, timeout):
+        assert "search=Example%20Journal" in request.full_url
+        payload = {
+            "results": [
+                {
+                    "id": "https://openalex.org/S123",
+                    "display_name": "Example Journal Reviews",
+                    "works_count": 10,
+                    "cited_by_count": 20,
+                    "counts_by_year": [],
+                }
+            ]
+        }
+        return FakeResponse(json.dumps(payload).encode("utf-8"))
+
+    journal = JournalRecord.model_validate({"journal": "Example Journal"})
+
+    result = fetch_openalex_metadata(journal, now="2026-06-29", opener=opener)
+
+    assert result.status == "needs_review"
+
+
+def test_openalex_metrics_from_source_computes_rates() -> None:
+    metrics = openalex_metrics_from_source(
+        {
+            "id": "https://openalex.org/S999",
+            "works_count": 60,
+            "cited_by_count": 120,
+            "summary_stats": {"h_index": 8},
+            "counts_by_year": [
+                {"year": 2025, "works_count": 10, "cited_by_count": 15},
+                {"year": 2024, "works_count": 20, "cited_by_count": 45},
+            ],
+        },
+        "2026-06-29",
+    )
+
+    assert metrics["openalex_source_id"] == "S999"
+    assert metrics["openalex_2yr_citation_rate"] == 2.0
+    assert metrics["last_checked"] == "2026-06-29"
+
+
+def test_openalex_updates_do_not_overwrite_official_metrics(tmp_path: Path) -> None:
+    journals_path = tmp_path / "journals.yaml"
+    record = complete_record("Example Journal")
+    record["prestige_metrics"]["impact_factor"] = 9.9
+    journals_path.write_text(yaml.safe_dump([record]), encoding="utf-8")
+
+    updated = apply_openalex_updates(
+        journals_path,
+        [
+            OpenAlexResult(
+                journal="Example Journal",
+                status="matched",
+                updates={
+                    "prestige_metrics.openalex": {
+                        "openalex_source_id": "S123",
+                        "works_count": 10,
+                        "cited_by_count": 20,
+                        "counts_by_year": [],
+                        "openalex_h_index": 3,
+                        "openalex_2yr_citation_rate": None,
+                        "openalex_4yr_citation_rate": None,
+                        "metric_year": None,
+                        "source_url": "https://openalex.org/S123",
+                        "last_checked": "2026-06-29",
+                    }
+                },
+            )
+        ],
+    )
+
+    records = yaml.safe_load(journals_path.read_text(encoding="utf-8"))
+    assert updated == 1
+    assert records[0]["prestige_metrics"]["impact_factor"] == 9.9
+    assert records[0]["prestige_metrics"]["openalex"]["openalex_source_id"] == "S123"
+
+
+def test_scimago_float_parses_decimal_comma() -> None:
+    assert parse_scimago_float("1,234") == 1.234
+
+
+def test_scimago_match_uses_issn_before_title() -> None:
+    journal = JournalRecord.model_validate(
+        {
+            "journal": "Example Journal",
+            "publisher": "Example Publisher",
+            "issn": {"print": "1234-5678", "online": ""},
+        }
+    )
+    rows = [
+        {
+            "Sourceid": "1",
+            "Title": "Different Title",
+            "Issn": "12345678",
+            "Publisher": "Example Publisher",
+            "SJR": "1,234",
+            "SJR Best Quartile": "Q1",
+            "H index": "42",
+        }
+    ]
+
+    assert match_scimago_row(journal, rows) == rows[0]
+
+
+def test_scimago_short_title_fallback_requires_publisher() -> None:
+    journal = JournalRecord.model_validate(
+        {
+            "journal": "Phage",
+            "publisher": "Mary Ann Liebert",
+        }
+    )
+    rows = [
+        {
+            "Sourceid": "1",
+            "Title": "PHAGE: Therapy, Applications, and Research",
+            "Issn": "26416549, 26416530",
+            "Publisher": "Mary Ann Liebert Inc.",
+            "SJR": "0,462",
+            "SJR Best Quartile": "Q3",
+            "H index": "17",
+        }
+    ]
+
+    assert match_scimago_row(journal, rows) == rows[0]
+    other = JournalRecord.model_validate({"journal": "Phage", "publisher": "Other"})
+    assert match_scimago_row(other, rows) is None
+
+
+def test_apply_scimago_metrics_preserves_jif_and_citescore(tmp_path: Path) -> None:
+    journals_path = tmp_path / "journals.yaml"
+    record = complete_record("Example Journal")
+    record["issn"] = {"print": "1234-5678", "online": ""}
+    record["prestige_metrics"]["impact_factor"] = 5.5
+    record["prestige_metrics"]["cite_score"] = 6.6
+    journals_path.write_text(yaml.safe_dump([record]), encoding="utf-8")
+    scimago_path = tmp_path / "scimagojr_2025.csv"
+    scimago_path.write_text(
+        "Rank;Sourceid;Title;Type;Issn;Publisher;Open Access;"
+        "Open Access Diamond;SJR;SJR Best Quartile;H index\n"
+        '1;1;"Example Journal";journal;"12345678";"Example";No;No;1,234;Q1;42\n',
+        encoding="utf-8",
+    )
+
+    result = apply_scimago_metrics(journals_path, scimago_path, metric_year=2025)
+    records = yaml.safe_load(journals_path.read_text(encoding="utf-8"))
+    metrics = records[0]["prestige_metrics"]
+
+    assert result["matched"] == ["Example Journal"]
+    assert metrics["impact_factor"] == 5.5
+    assert metrics["cite_score"] == 6.6
+    assert metrics["sjr"] == 1.234
+    assert metrics["quartile"] == "Q1"
+    assert metrics["h_index"] == 42
+    assert metrics["metric_year"] == 2025
+    assert "SCImago Journal Rank 2025 dataset" in metrics["metric_sources"][0]
+
+
 def test_apc_parsing_is_conservative() -> None:
     assert parse_apc_amount("Article processing charge: USD 1,250") == (1250, "USD")
     assert parse_apc_amount("APC: USD 1000 or EUR 900") is None
@@ -485,6 +721,20 @@ def test_report_generation_contains_summary() -> None:
                 updates={"publisher": "Example Publisher"},
             )
         ],
+        openalex_results=[
+            OpenAlexResult(
+                journal="Example Journal",
+                status="matched",
+                updates={
+                    "prestige_metrics.openalex": {
+                        "openalex_source_id": "S123",
+                        "works_count": 10,
+                        "cited_by_count": 20,
+                        "metric_year": 2026,
+                    }
+                },
+            )
+        ],
         apc_results=[
             ApcResult(
                 journal="Example Journal",
@@ -501,6 +751,8 @@ def test_report_generation_contains_summary() -> None:
     assert "Blocked URLs: 1" in markdown
     assert "Suspicious fetched pages: 1" in markdown
     assert "Crossref records updated: 1" in markdown
+    assert "OpenAlex records updated: 1" in markdown
+    assert "S123" in markdown
     assert "APCs needing review: 1" in markdown
 
 

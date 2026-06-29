@@ -86,8 +86,18 @@ def format_prestige_metrics(metrics: dict) -> str:
     return ", ".join(
         f"{key}={value}"
         for key, value in metrics.items()
-        if value != [] and value not in {None, ""}
+        if not is_empty_metric_value(value)
     )
+
+
+def is_empty_metric_value(value: object) -> bool:
+    if isinstance(value, dict):
+        return all(is_empty_metric_value(item) for item in value.values())
+    if isinstance(value, list):
+        return not value
+    if value in {None, ""}:
+        return True
+    return False
 
 
 def collect_source_urls(journal: JournalRecord) -> list[str]:

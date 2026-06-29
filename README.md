@@ -61,6 +61,24 @@ suspicious publisher pages for human review instead of rewriting scope summaries
 from HTML. APC values are reported as candidates only and are not written
 automatically.
 
+## Journal Metrics
+
+Metric provenance matters:
+
+- Journal Impact Factor is a Clarivate/JCR metric. Keep it manually curated from
+  licensed or institutional sources; do not infer it from open metadata.
+- CiteScore is a Scopus/Elsevier metric. Keep it manually curated or populate it
+  only through an approved API/licence path.
+- SJR, SCImago h-index, and quartile values can be manually curated from
+  SCImago where licensing permits.
+- OpenAlex values under `prestige_metrics.openalex` are open proxy metrics
+  derived from OpenAlex venue metadata. They must not be labelled as official
+  Impact Factor, CiteScore, SJR, SCImago h-index, or quartile values.
+
+The updater may populate `prestige_metrics.openalex` by matching venues by ISSN
+first, with exact normalized title fallback only when no ISSN is available. It
+does not overwrite the official metric fields.
+
 ## Manual Source Curation
 
 When publisher pages block automation, download pages manually in a browser and

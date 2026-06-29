@@ -59,6 +59,21 @@ first. If no ISSN is present, exact normalized title matching can produce a
 report note, but weak matches are marked `needs_review` and must not overwrite
 curated fields.
 
+## Metrics And OpenAlex
+
+Keep official and proxy metrics separate.
+
+Journal Impact Factor is Clarivate/JCR and should remain manually curated from
+licensed or institutional sources. CiteScore is Scopus/Elsevier and should
+remain manually curated or populated only through an approved API/licence path.
+SJR, SCImago h-index, and quartile values can be manually curated from SCImago
+where the licence permits.
+
+OpenAlex venue values live only under `prestige_metrics.openalex`. They are open
+proxy metrics and must not be labelled as official Impact Factor, CiteScore,
+SJR, SCImago h-index, or quartile values. OpenAlex matching uses ISSN first and
+falls back to exact normalized title matching only when an ISSN is unavailable.
+
 ## Skipping Blocked URLs
 
 If a publisher blocks automated checks or a page should remain human-curated

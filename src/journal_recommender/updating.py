@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import csv
 import hashlib
 import json
 import re
@@ -63,6 +64,14 @@ class CrossrefResult:
 
 
 @dataclass
+class OpenAlexResult:
+    journal: str
+    status: str
+    updates: dict[str, Any] = field(default_factory=dict)
+    note: str = ""
+
+
+@dataclass
 class ApcResult:
     journal: str
     status: str
@@ -80,6 +89,7 @@ class UpdateReport:
     journals_checked: int
     url_results: list[UrlCheckResult] = field(default_factory=list)
     crossref_results: list[CrossrefResult] = field(default_factory=list)
+    openalex_results: list[OpenAlexResult] = field(default_factory=list)
     apc_results: list[ApcResult] = field(default_factory=list)
     index_status: str = "not rebuilt"
 
@@ -140,6 +150,34 @@ class UpdateReport:
     @property
     def crossref_failed(self) -> list[CrossrefResult]:
         return [result for result in self.crossref_results if result.status == "failed"]
+
+    @property
+    def openalex_matched(self) -> list[OpenAlexResult]:
+        return [
+            result for result in self.openalex_results if result.status == "matched"
+        ]
+
+    @property
+    def openalex_updates(self) -> list[OpenAlexResult]:
+        return [result for result in self.openalex_results if result.updates]
+
+    @property
+    def openalex_skipped(self) -> list[OpenAlexResult]:
+        return [
+            result for result in self.openalex_results if result.status == "skipped"
+        ]
+
+    @property
+    def openalex_needs_review(self) -> list[OpenAlexResult]:
+        return [
+            result
+            for result in self.openalex_results
+            if result.status == "needs_review"
+        ]
+
+    @property
+    def openalex_failed(self) -> list[OpenAlexResult]:
+        return [result for result in self.openalex_results if result.status == "failed"]
 
     @property
     def apc_updates(self) -> list[ApcResult]:
@@ -623,6 +661,163 @@ def normalize_title(title: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", title.lower())
 
 
+def fetch_openalex_metadata(
+    journal: JournalRecord,
+    now: str,
+    opener: Callable[..., Any] = urlopen,
+    timeout_seconds: float = 20.0,
+) -> OpenAlexResult:
+    url = openalex_url_for_journal(journal)
+    if not url:
+        return OpenAlexResult(
+            journal=journal.journal,
+            status="skipped",
+            note="No ISSN or title available for OpenAlex lookup.",
+        )
+
+    request = Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with opener(request, timeout=timeout_seconds) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError, OSError, json.JSONDecodeError) as exc:
+        return OpenAlexResult(
+            journal=journal.journal,
+            status="failed",
+            note=f"OpenAlex lookup failed: {exc}",
+        )
+
+    by_issn = bool(first_journal_issn(journal))
+    source = extract_openalex_source(payload, by_issn)
+    if not source:
+        return OpenAlexResult(
+            journal=journal.journal,
+            status="skipped",
+            note="OpenAlex returned no source record.",
+        )
+    if not openalex_matches_journal(journal, source):
+        return OpenAlexResult(
+            journal=journal.journal,
+            status="needs_review",
+            note="OpenAlex response did not confidently match the journal record.",
+        )
+
+    return OpenAlexResult(
+        journal=journal.journal,
+        status="matched",
+        updates={
+            "prestige_metrics.openalex": openalex_metrics_from_source(source, now)
+        },
+        note="Matched by ISSN." if by_issn else "Matched by exact normalized title.",
+    )
+
+
+def openalex_url_for_journal(journal: JournalRecord) -> str:
+    issn = first_journal_issn(journal)
+    if issn:
+        return f"https://api.openalex.org/sources/issn:{quote(issn)}"
+    if journal.journal:
+        return (
+            "https://api.openalex.org/sources?"
+            f"search={quote(journal.journal)}&per-page=5"
+        )
+    return ""
+
+
+def first_journal_issn(journal: JournalRecord) -> str:
+    return next(
+        (value for value in [journal.issn.print, journal.issn.online] if value),
+        "",
+    )
+
+
+def extract_openalex_source(payload: dict[str, Any], by_issn: bool) -> dict[str, Any]:
+    if by_issn:
+        return payload
+    results = payload.get("results", []) or []
+    return results[0] if results else {}
+
+
+def openalex_matches_journal(journal: JournalRecord, source: dict[str, Any]) -> bool:
+    journal_issns = {
+        normalize_issn(value)
+        for value in [journal.issn.print, journal.issn.online]
+        if value
+    }
+    source_issns = {
+        normalize_issn(value)
+        for value in [
+            source.get("issn_l", ""),
+            *(source.get("issn", []) or []),
+        ]
+        if value
+    }
+    if journal_issns and journal_issns & source_issns:
+        return True
+
+    title = str(source.get("display_name", ""))
+    return bool(title and normalize_title(title) == normalize_title(journal.journal))
+
+
+def normalize_issn(value: str) -> str:
+    return re.sub(r"[^0-9Xx]+", "", value).upper()
+
+
+def openalex_metrics_from_source(source: dict[str, Any], now: str) -> dict[str, Any]:
+    counts_by_year = normalize_counts_by_year(source.get("counts_by_year", []) or [])
+    metric_year = max((entry["year"] for entry in counts_by_year), default=None)
+    source_url = str(source.get("id", ""))
+    summary_stats = source.get("summary_stats", {}) or {}
+    return {
+        "openalex_source_id": openalex_source_id(source_url),
+        "works_count": source.get("works_count"),
+        "cited_by_count": source.get("cited_by_count"),
+        "counts_by_year": counts_by_year,
+        "openalex_h_index": summary_stats.get("h_index"),
+        "openalex_2yr_citation_rate": citation_rate(counts_by_year, 2),
+        "openalex_4yr_citation_rate": citation_rate(counts_by_year, 4),
+        "metric_year": metric_year,
+        "source_url": source_url,
+        "last_checked": now,
+    }
+
+
+def normalize_counts_by_year(raw_counts: list[dict[str, Any]]) -> list[dict[str, int]]:
+    normalized: list[dict[str, int]] = []
+    for entry in raw_counts:
+        try:
+            year = int(entry.get("year"))
+            works_count = int(entry.get("works_count") or 0)
+            cited_by_count = int(entry.get("cited_by_count") or 0)
+        except (TypeError, ValueError):
+            continue
+        normalized.append(
+            {
+                "year": year,
+                "works_count": works_count,
+                "cited_by_count": cited_by_count,
+            }
+        )
+    return sorted(normalized, key=lambda item: item["year"], reverse=True)
+
+
+def citation_rate(
+    counts_by_year: list[dict[str, int]],
+    year_window: int,
+) -> float | None:
+    recent = sorted(counts_by_year, key=lambda item: item["year"], reverse=True)[
+        :year_window
+    ]
+    works = sum(entry.get("works_count", 0) for entry in recent)
+    if works <= 0:
+        return None
+    citations = sum(entry.get("cited_by_count", 0) for entry in recent)
+    return round(citations / works, 3)
+
+
+def openalex_source_id(source_url: str) -> str:
+    return source_url.rstrip("/").split("/")[-1] if source_url else ""
+
+
 APC_PATTERNS = [
     re.compile(r"\b(USD|US\$|\$)\s?([0-9][0-9,]*(?:\.\d+)?)", re.IGNORECASE),
     re.compile(r"\b(EUR|€)\s?([0-9][0-9,]*(?:\.\d+)?)", re.IGNORECASE),
@@ -771,6 +966,151 @@ def apply_crossref_updates(
     return updated
 
 
+def apply_openalex_updates(
+    journals_path: Path,
+    openalex_results: list[OpenAlexResult],
+) -> int:
+    updates_by_journal = {
+        result.journal: result.updates.get("prestige_metrics.openalex")
+        for result in openalex_results
+        if result.updates.get("prestige_metrics.openalex")
+    }
+    if not updates_by_journal:
+        return 0
+
+    records = load_raw_yaml(journals_path)
+    updated = 0
+    for record in records:
+        journal_name = record.get("journal")
+        openalex_update = updates_by_journal.get(journal_name)
+        if not openalex_update:
+            continue
+        prestige_metrics = record.setdefault("prestige_metrics", {})
+        previous = prestige_metrics.get("openalex", {})
+        if previous != openalex_update:
+            prestige_metrics["openalex"] = openalex_update
+            updated += 1
+
+    if updated:
+        with journals_path.open("w", encoding="utf-8") as handle:
+            yaml.safe_dump(records, handle, sort_keys=False, allow_unicode=True)
+    return updated
+
+
+def apply_scimago_metrics(
+    journals_path: Path,
+    scimago_path: Path,
+    metric_year: int = 2025,
+) -> dict[str, Any]:
+    rows = load_scimago_rows(scimago_path)
+    records = load_raw_yaml(journals_path)
+    updated = 0
+    matched: list[str] = []
+    unmatched: list[str] = []
+
+    for record in records:
+        journal = JournalRecord.model_validate(record)
+        row = match_scimago_row(journal, rows)
+        if not row:
+            unmatched.append(journal.journal)
+            continue
+        metrics = scimago_metrics_from_row(row, metric_year, scimago_path)
+        prestige_metrics = record.setdefault("prestige_metrics", {})
+        for field_name, value in metrics.items():
+            if prestige_metrics.get(field_name) != value:
+                prestige_metrics[field_name] = value
+                updated += 1
+        matched.append(journal.journal)
+
+    if updated:
+        with journals_path.open("w", encoding="utf-8") as handle:
+            yaml.safe_dump(records, handle, sort_keys=False, allow_unicode=True)
+    return {"updated_fields": updated, "matched": matched, "unmatched": unmatched}
+
+
+def load_scimago_rows(path: Path) -> list[dict[str, str]]:
+    with path.open("r", encoding="utf-8-sig", errors="ignore", newline="") as handle:
+        return list(csv.DictReader(handle, delimiter=";"))
+
+
+def match_scimago_row(
+    journal: JournalRecord,
+    rows: list[dict[str, str]],
+) -> dict[str, str] | None:
+    journal_issns = {
+        normalize_issn(value)
+        for value in [journal.issn.print, journal.issn.online]
+        if value
+    }
+    if journal_issns:
+        issn_matches = [
+            row
+            for row in rows
+            if journal_issns
+            & {normalize_issn(value) for value in row.get("Issn", "").split(",")}
+        ]
+        row = unique_scimago_source(issn_matches)
+        if row:
+            return row
+
+    exact_title_matches = [
+        row
+        for row in rows
+        if normalize_title(row.get("Title", "")) == normalize_title(journal.journal)
+    ]
+    row = unique_scimago_source(exact_title_matches)
+    if row:
+        return row
+
+    publisher = normalize_title(journal.publisher)
+    if len(normalize_title(journal.journal)) < 8 and publisher:
+        normalized_journal_title = normalize_title(journal.journal)
+        contained_matches = [
+            row
+            for row in rows
+            if normalized_journal_title
+            and normalized_journal_title in normalize_title(row.get("Title", ""))
+            and publisher in normalize_title(row.get("Publisher", ""))
+        ]
+        return unique_scimago_source(contained_matches)
+    return None
+
+
+def unique_scimago_source(rows: list[dict[str, str]]) -> dict[str, str] | None:
+    by_source = {row.get("Sourceid", ""): row for row in rows if row.get("Sourceid")}
+    if len(by_source) == 1:
+        return next(iter(by_source.values()))
+    return None
+
+
+def scimago_metrics_from_row(
+    row: dict[str, str],
+    metric_year: int,
+    scimago_path: Path,
+) -> dict[str, Any]:
+    return {
+        "sjr": parse_scimago_float(row.get("SJR", "")),
+        "h_index": parse_optional_int(row.get("H index", "")),
+        "quartile": row.get("SJR Best Quartile", ""),
+        "metric_year": metric_year,
+        "metric_sources": [
+            f"SCImago Journal Rank {metric_year} dataset: {scimago_path.as_posix()}"
+        ],
+    }
+
+
+def parse_scimago_float(value: str) -> float | None:
+    value = value.strip()
+    if not value:
+        return None
+    return float(value.replace(",", "."))
+
+
+def parse_optional_int(value: str) -> int | None:
+    value = value.strip()
+    return int(value) if value else None
+
+
 def run_journal_update(
     journals_path: Path,
     cache_dir: Path,
@@ -778,6 +1118,7 @@ def run_journal_update(
     delay_seconds: float = 5.0,
     trigger: str = "local",
     check_crossref: bool = True,
+    check_openalex: bool = True,
     opener: Callable[..., Any] = urlopen,
     sleeper: Callable[[float], None] = time.sleep,
 ) -> UpdateReport:
@@ -838,6 +1179,15 @@ def run_journal_update(
         ]
         apply_crossref_updates(journals_path, crossref_results)
 
+    openalex_results = []
+    if check_openalex:
+        openalex_results = [
+            fetch_openalex_metadata(journal, now=now, opener=opener)
+            for journal in validate_journal_file(journals_path)
+        ]
+        apply_openalex_updates(journals_path, openalex_results)
+
+    journals = validate_journal_file(journals_path)
     apc_results = [check_apc(journal, cache, now) for journal in journals]
     cache.save()
 
@@ -847,6 +1197,7 @@ def run_journal_update(
         journals_checked=len(journals),
         url_results=url_results,
         crossref_results=crossref_results,
+        openalex_results=openalex_results,
         apc_results=apc_results,
     )
     write_report_json(report, cache_dir / LATEST_REPORT_FILE)
@@ -866,6 +1217,7 @@ def write_report_json(report: UpdateReport, path: Path) -> None:
         "journals_checked": report.journals_checked,
         "url_results": [result.__dict__ for result in report.url_results],
         "crossref_results": [result.__dict__ for result in report.crossref_results],
+        "openalex_results": [result.__dict__ for result in report.openalex_results],
         "apc_results": [result.__dict__ for result in report.apc_results],
         "index_status": report.index_status,
     }
@@ -883,6 +1235,9 @@ def read_report_json(path: Path) -> UpdateReport:
         ],
         crossref_results=[
             CrossrefResult(**result) for result in data.get("crossref_results", [])
+        ],
+        openalex_results=[
+            OpenAlexResult(**result) for result in data.get("openalex_results", [])
         ],
         apc_results=[ApcResult(**result) for result in data.get("apc_results", [])],
         index_status=str(data.get("index_status", "not rebuilt")),
@@ -928,6 +1283,11 @@ def render_change_report(report: UpdateReport) -> str:
         f"- Crossref skipped: {len(report.crossref_skipped)}",
         f"- Crossref needs review: {len(report.crossref_needs_review)}",
         f"- Crossref failed: {len(report.crossref_failed)}",
+        f"- OpenAlex matched: {len(report.openalex_matched)}",
+        f"- OpenAlex records updated: {len(report.openalex_updates)}",
+        f"- OpenAlex skipped: {len(report.openalex_skipped)}",
+        f"- OpenAlex needs review: {len(report.openalex_needs_review)}",
+        f"- OpenAlex failed: {len(report.openalex_failed)}",
         f"- APC candidates: {len(report.apc_candidates)}",
         f"- APCs unchanged: {len(report.apc_unchanged)}",
         f"- APCs skipped: {len(report.apc_skipped)}",
@@ -957,6 +1317,10 @@ def render_change_report(report: UpdateReport) -> str:
         "## Crossref Updates",
         "",
         render_crossref_table(report.crossref_results),
+        "",
+        "## OpenAlex Venue Metrics",
+        "",
+        render_openalex_table(report.openalex_results),
         "",
         "## APC Updates And Review Needed",
         "",
@@ -1019,6 +1383,28 @@ def render_crossref_table(results: list[CrossrefResult]) -> str:
             f"{escape_cell(result.journal)} | "
             f"{result.status} | "
             f"{escape_cell(updates)} | "
+            f"{escape_cell(result.note)} |"
+        )
+    return "\n".join(lines)
+
+
+def render_openalex_table(results: list[OpenAlexResult]) -> str:
+    if not results:
+        return "No OpenAlex lookups were run."
+    lines = [
+        "| Journal | Status | Source ID | Works | Cited by | Metric year | Note |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
+    ]
+    for result in results:
+        metrics = result.updates.get("prestige_metrics.openalex", {})
+        lines.append(
+            "| "
+            f"{escape_cell(result.journal)} | "
+            f"{result.status} | "
+            f"{escape_cell(str(metrics.get('openalex_source_id', '')))} | "
+            f"{metrics.get('works_count', '') if metrics else ''} | "
+            f"{metrics.get('cited_by_count', '') if metrics else ''} | "
+            f"{metrics.get('metric_year', '') if metrics else ''} | "
             f"{escape_cell(result.note)} |"
         )
     return "\n".join(lines)

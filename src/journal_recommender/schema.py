@@ -41,6 +41,24 @@ class OpenAccess(StrictSchema):
         return validate_optional_url(value)
 
 
+class OpenAlexMetrics(StrictSchema):
+    openalex_source_id: str = ""
+    works_count: int | None = None
+    cited_by_count: int | None = None
+    counts_by_year: list[dict[str, int]] = Field(default_factory=list)
+    openalex_h_index: int | None = None
+    openalex_2yr_citation_rate: float | None = None
+    openalex_4yr_citation_rate: float | None = None
+    metric_year: int | None = None
+    source_url: str | None = ""
+    last_checked: str = ""
+
+    @field_validator("source_url")
+    @classmethod
+    def validate_url(cls, value: str | None) -> str | None:
+        return validate_optional_url(value)
+
+
 class PrestigeMetrics(StrictSchema):
     impact_factor: float | None = None
     cite_score: float | None = None
@@ -49,6 +67,7 @@ class PrestigeMetrics(StrictSchema):
     quartile: str = ""
     metric_year: int | None = None
     metric_sources: list[str] = Field(default_factory=list)
+    openalex: OpenAlexMetrics = Field(default_factory=OpenAlexMetrics)
 
 
 class ExamplePaper(StrictSchema):

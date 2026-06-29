@@ -60,6 +60,11 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Skip Crossref API lookups.",
     )
+    update_parser.add_argument(
+        "--skip-openalex",
+        action="store_true",
+        help="Skip OpenAlex venue metric lookups.",
+    )
 
     index_parser = subparsers.add_parser(
         "rebuild-index",
@@ -152,6 +157,7 @@ def main(argv: list[str] | None = None) -> int:
             delay_seconds=args.delay_seconds,
             trigger=trigger,
             check_crossref=not args.skip_crossref,
+            check_openalex=not args.skip_openalex,
         )
         print(
             "Checked "

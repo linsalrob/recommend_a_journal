@@ -60,6 +60,18 @@ def complete_record(journal: str) -> dict:
             "quartile": "",
             "metric_year": None,
             "metric_sources": [],
+            "openalex": {
+                "openalex_source_id": "",
+                "works_count": None,
+                "cited_by_count": None,
+                "counts_by_year": [],
+                "openalex_h_index": None,
+                "openalex_2yr_citation_rate": None,
+                "openalex_4yr_citation_rate": None,
+                "metric_year": None,
+                "source_url": "",
+                "last_checked": "",
+            },
         },
         "editorial_notes": [],
         "example_papers": [],
@@ -105,6 +117,19 @@ def test_seed_records_keep_required_fields() -> None:
             "quartile",
             "metric_year",
             "metric_sources",
+            "openalex",
+        }
+        assert set(record["prestige_metrics"]["openalex"]) == {
+            "openalex_source_id",
+            "works_count",
+            "cited_by_count",
+            "counts_by_year",
+            "openalex_h_index",
+            "openalex_2yr_citation_rate",
+            "openalex_4yr_citation_rate",
+            "metric_year",
+            "source_url",
+            "last_checked",
         }
         assert record["source_evidence"], record["journal"]
 
