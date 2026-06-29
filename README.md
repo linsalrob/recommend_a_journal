@@ -168,6 +168,25 @@ journal tags, manuscript feature tags, policy summaries, practical constraints,
 and conservative prestige tiers. It does not call an LLM or scrape publisher
 pages during recommendation.
 
+## Streamlit App
+
+Install the optional app dependency and launch the read-only interface:
+
+```bash
+pip install -e ".[app]"
+streamlit run streamlit_app.py
+```
+
+The app loads `data/journals.yaml`, shows searchable/filterable journal records,
+accepts structured manuscript-feature YAML by example file, upload, or paste,
+and renders a downloadable Markdown recommendation report. It also displays
+metric-audit coverage from the loaded journal records.
+
+The app does not edit `data/journals.yaml`, run publisher updates, parse
+DOCX/PDF manuscripts, or call an LLM. Do not upload confidential DOCX/PDF
+manuscripts unless running locally and you understand where files are stored;
+this first app version expects structured YAML only.
+
 ## Current Scope
 
 This repository contains the journal schema, seed records, validation tests,
