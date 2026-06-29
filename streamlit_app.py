@@ -10,7 +10,11 @@ from typing import Any
 import streamlit as st
 
 from journal_recommender.feature_drafting import manuscript_features_to_yaml
-from journal_recommender.llm_refinement import refine_manuscript_features_with_llm
+from journal_recommender.llm_refinement import (
+    LLMRefinementError,
+    format_llm_refinement_error,
+    refine_manuscript_features_with_llm,
+)
 from journal_recommender.streamlit_helpers import (
     build_metrics_audit_for_app,
     example_feature_files,
@@ -394,8 +398,10 @@ def render_optional_llm_refinement(draft) -> None:
                         model=model,
                         api_key=api_key or None,
                     )
+                except LLMRefinementError as exc:
+                    render_llm_refinement_error(exc)
                 except Exception as exc:  # pragma: no cover - UI error rendering
-                    st.error(f"LLM refinement failed: {exc}")
+                    render_llm_refinement_error(exc)
                 else:
                     st.session_state["manuscript_yaml_text"] = (
                         manuscript_features_to_yaml(result.features)
@@ -416,9 +422,23 @@ def render_llm_refinement_result(result: dict[str, Any]) -> None:
         st.json(result.get("confidence", {}), expanded=False)
         st.write("Evidence snippets")
         st.json(result.get("evidence", {}), expanded=False)
+        if result.get("raw_confidence") or result.get("raw_evidence"):
+            with st.expander("Raw nested response", expanded=False):
+                st.write("Raw confidence")
+                st.json(result.get("raw_confidence", {}), expanded=False)
+                st.write("Raw evidence")
+                st.json(result.get("raw_evidence", {}), expanded=False)
         warnings = result.get("warnings", [])
         if warnings:
             st.warning("\n".join(str(item) for item in warnings))
+
+
+def render_llm_refinement_error(exc: Exception) -> None:
+    message, details = format_llm_refinement_error(exc)
+    st.error(message)
+    if details and details != message:
+        with st.expander("Details", expanded=False):
+            st.code(details)
 
 
 def render_metrics_audit(journals: list[Any]) -> None:

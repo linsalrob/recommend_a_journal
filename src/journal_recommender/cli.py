@@ -11,6 +11,11 @@ from journal_recommender.feature_drafting import (
     manuscript_features_to_yaml,
 )
 from journal_recommender.indexing import DEFAULT_INDEX_PATH, rebuild_index
+from journal_recommender.llm_refinement import (
+    LLMRefinementError,
+    format_llm_refinement_error,
+    refine_manuscript_features_with_llm,
+)
 from journal_recommender.manual_downloads import generate_manual_download_queue
 from journal_recommender.manual_sources import process_manual_sources
 from journal_recommender.manuscript import validate_manuscript_file
@@ -107,6 +112,19 @@ def build_parser() -> argparse.ArgumentParser:
     extract_parser.add_argument("--manuscript", required=True, type=Path)
     extract_parser.add_argument("--out", required=True, type=Path)
     extract_parser.add_argument("--text-out", required=True, type=Path)
+
+    refine_parser = subparsers.add_parser(
+        "refine-features-llm",
+        help="Refine deterministic manuscript features with an optional LLM.",
+    )
+    refine_parser.add_argument("--manuscript", required=True, type=Path)
+    refine_parser.add_argument("--out", required=True, type=Path)
+    refine_parser.add_argument("--draft-out", type=Path)
+    refine_parser.add_argument("--text-out", type=Path)
+    refine_parser.add_argument("--model", default="gpt-4.1-mini")
+    refine_parser.add_argument("--api-key", default=None)
+    refine_parser.add_argument("--prompt-path", type=Path)
+    refine_parser.add_argument("--verbose", action="store_true")
 
     rank_parser = subparsers.add_parser(
         "rank-journals",
@@ -228,6 +246,52 @@ def main(argv: list[str] | None = None) -> int:
         validate_manuscript_file(args.out)
         print(
             "Extracted manuscript features for "
+            f"{args.manuscript.name}; report written to {args.out}"
+        )
+        return 0
+
+    if args.command == "refine-features-llm":
+        extracted, draft = extract_and_draft_features(args.manuscript)
+        if args.text_out is not None:
+            args.text_out.parent.mkdir(parents=True, exist_ok=True)
+            args.text_out.write_text(extracted.full_text, encoding="utf-8")
+        if args.draft_out is not None:
+            args.draft_out.parent.mkdir(parents=True, exist_ok=True)
+            args.draft_out.write_text(
+                manuscript_features_to_yaml(draft),
+                encoding="utf-8",
+            )
+        try:
+            result = refine_manuscript_features_with_llm(
+                extracted,
+                draft,
+                model=args.model,
+                api_key=args.api_key,
+                prompt_path=args.prompt_path,
+            )
+        except LLMRefinementError as exc:
+            message, details = format_llm_refinement_error(exc)
+            print(message)
+            if args.verbose and details and details != message:
+                print(f"Details: {details}")
+            return 1
+        except Exception as exc:  # pragma: no cover - defensive guard
+            message = (
+                "LLM refinement failed. Continue with deterministic local "
+                "extraction and manual YAML editing."
+            )
+            print(message)
+            if args.verbose:
+                print(f"Details: {exc}")
+            return 1
+
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(
+            manuscript_features_to_yaml(result.features),
+            encoding="utf-8",
+        )
+        print(
+            "Refined manuscript features for "
             f"{args.manuscript.name}; report written to {args.out}"
         )
         return 0

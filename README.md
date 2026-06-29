@@ -201,6 +201,19 @@ ranking. Structured YAML remains the source of truth for the ranking engine.
 If you use the optional LLM refinement step, it rewrites the draft YAML only;
 you still need to validate and review the result before ranking.
 
+LLM refinement is optional and the app keeps the deterministic draft available
+if the call fails. Common errors are reported plainly:
+
+- insufficient quota;
+- missing `OPENAI_API_KEY`;
+- invalid or rejected API key;
+- ordinary rate limits;
+- network or timeout failures;
+- invalid LLM output that cannot be converted into manuscript features.
+
+In each case, continue with deterministic local extraction and manual YAML
+editing. The app never ranks from invalid LLM output.
+
 You can also run the same local extraction from the CLI:
 
 ```bash
