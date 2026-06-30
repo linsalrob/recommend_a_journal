@@ -1,1 +1,1169 @@
-manual_download_queue: []
+manual_download_queue:
+- journal: ASM Animal Microbiology
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: ASM Animal Microbiology
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: ASM Animal Microbiology
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
+  local_file: data_manual/pages/asm_am_art.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Applied and Environmental Microbiology
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: Applied and Environmental Microbiology
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Applied and Environmental Microbiology
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/aem
+  local_file: data_manual/pages/aem_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Applied and Environmental Microbiology
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/aem/article-types
+  local_file: data_manual/pages/aem_art.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: BMC Bioinformatics
+  source_type: homepage_or_scope
+  url: https://bmcbioinformatics.biomedcentral.com/
+  local_file: data_manual/pages/bmc_bioinformatics_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: BMC Genomics
+  source_type: homepage_or_scope
+  url: https://link.springer.com/journal/12864
+  local_file: data_manual/pages/bmc_genomics_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: BMC Microbiology
+  source_type: homepage_or_scope
+  url: https://link.springer.com/journal/12866
+  local_file: data_manual/pages/bmc_microbiology_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Bioinformatics
+  source_type: homepage_or_scope
+  url: https://academic.oup.com/bioinformatics
+  local_file: data_manual/pages/bioinformatics_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Briefings in Bioinformatics
+  source_type: homepage_or_scope
+  url: https://academic.oup.com/bib
+  local_file: data_manual/pages/briefings_in_bioinformatics_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Cell
+  source_type: guide_for_authors
+  url: https://www.cell.com/cell/authors
+  local_file: data_manual/pages/cell_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Cell
+  source_type: homepage_or_scope
+  url: https://www.cell.com/cell/home
+  local_file: data_manual/pages/cell_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Cell Host & Microbe
+  source_type: guide_for_authors
+  url: https://www.cell.com/cell-host-microbe/authors
+  local_file: data_manual/pages/cell_host_microbe_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Cell Host & Microbe
+  source_type: homepage_or_scope
+  url: https://www.cell.com/cell-host-microbe/home
+  local_file: data_manual/pages/cell_host_microbe_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Environmental Microbiology
+  source_type: homepage_or_scope
+  url: https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920
+  local_file: data_manual/pages/environmental_microbiology_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Environmental Microbiome
+  source_type: homepage_or_scope
+  url: https://environmentalmicrobiome.biomedcentral.com/
+  local_file: data_manual/pages/environmental_microbiome_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: FEMS Microbiology Ecology
+  source_type: homepage_or_scope
+  url: https://academic.oup.com/femsec
+  local_file: data_manual/pages/fems_microbiology_ecology_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Genome Biology
+  source_type: homepage_or_scope
+  url: https://genomebiology.biomedcentral.com/
+  local_file: data_manual/pages/genome_biology_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Genome Research
+  source_type: homepage_or_scope
+  url: https://genome.cshlp.org/
+  local_file: data_manual/pages/genome_research_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: GigaScience
+  source_type: homepage_or_scope
+  url: https://academic.oup.com/gigascience
+  local_file: data_manual/pages/gigascience_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: ISME Communications
+  source_type: homepage_or_scope
+  url: https://www.nature.com/ismecomms/
+  local_file: data_manual/pages/isme_communications_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: ISME Journal
+  source_type: homepage_or_scope
+  url: https://www.nature.com/ismej/
+  local_file: data_manual/pages/isme_journal_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Journal of Clinical Microbiology
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: Journal of Clinical Microbiology
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Journal of Clinical Microbiology
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/jcm/article-types
+  local_file: data_manual/pages/jcm_art.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Journal of Virology
+  source_type: aims_scope
+  url: https://journals.asm.org/journal/jvi/about
+  local_file: data_manual/pages/journal_of_virology_aims_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - aims_scope_url
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Journal of Virology
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: Journal of Virology
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Journal of Virology
+  source_type: data_policy
+  url: https://journals.asm.org/open-data-policy
+  local_file: data_manual/pages/journal_of_virology_data_policy.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - data_policy
+  - code_policy
+  status: manifested_but_missing_local_file
+- journal: Journal of Virology
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/jvi
+  local_file: data_manual/pages/journal_of_virology_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Microbial Genomics
+  source_type: homepage_or_scope
+  url: https://www.microbiologyresearch.org/content/journal/mgen
+  local_file: data_manual/pages/microbial_genomics_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Microbiology Spectrum
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: Microbiology Spectrum
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Microbiology Spectrum
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/spectrum
+  local_file: data_manual/pages/microbiology_spectrum_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Microbiology Spectrum
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/spectrum/article-types
+  local_file: data_manual/pages/ms_art.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Microbiome
+  source_type: homepage_or_scope
+  url: https://microbiomejournal.biomedcentral.com/
+  local_file: data_manual/pages/microbiome_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: NAR Genomics and Bioinformatics
+  source_type: homepage_or_scope
+  url: https://academic.oup.com/nargab
+  local_file: data_manual/pages/nar_genomics_and_bioinformatics_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Nature
+  source_type: homepage_or_scope
+  url: https://www.nature.com/nature/
+  local_file: data_manual/pages/nature_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Nature Biotechnology
+  source_type: homepage_or_scope
+  url: https://www.nature.com/nbt/
+  local_file: data_manual/pages/nature_biotechnology_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Nature Communications
+  source_type: homepage_or_scope
+  url: https://www.nature.com/ncomms/
+  local_file: data_manual/pages/nature_communications_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Nature Computational Science
+  source_type: homepage_or_scope
+  url: https://www.nature.com/natcomputsci
+  local_file: data_manual/pages/nat_compsci_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Nature Methods
+  source_type: homepage_or_scope
+  url: https://www.nature.com/nmeth/
+  local_file: data_manual/pages/nature_methods_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Nature Microbiology
+  source_type: homepage_or_scope
+  url: https://www.nature.com/nmicrobiol/
+  local_file: data_manual/pages/nature_microbiology_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: PLoS Biology
+  source_type: homepage_or_scope
+  url: https://journals.plos.org/plosbiology/
+  local_file: data_manual/pages/plos_bio_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: PNAS
+  source_type: author_instructions
+  url: https://www.pnas.org/author-center/submitting-your-manuscript
+  local_file: data_manual/pages/pnas_submitting_your_manuscript.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - open_access
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: PNAS
+  source_type: homepage_or_scope
+  url: https://www.pnas.org/
+  local_file: data_manual/pages/pnas_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: PeerJ Computer Science
+  source_type: apc
+  url: https://peerj.com/pricing/
+  local_file: data_manual/pages/peerj_computer_science_apc.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: PeerJ Computer Science
+  source_type: homepage_or_scope
+  url: https://peerj.com/computer-science/
+  local_file: data_manual/pages/peerj_computer_science_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Phage
+  source_type: author_instructions
+  url: https://www.sagepub.com/journals/information-for-authors
+  local_file: data_manual/pages/phage_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Phage
+  source_type: homepage_or_scope
+  url: https://www.liebertpub.com/journal/phage
+  local_file: data_manual/pages/phage_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - open_access
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Science
+  source_type: author_instructions
+  url: https://www.science.org/content/page/science-information-authors
+  local_file: data_manual/pages/science_information_for_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Science
+  source_type: homepage_or_scope
+  url: https://www.science.org/journal/science
+  local_file: data_manual/pages/science_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Science Advances
+  source_type: author_instructions
+  url: https://www.science.org/content/page/science-advances-information-authors
+  local_file: data_manual/pages/science_advances_information_for_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - open_access
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Science Advances
+  source_type: homepage_or_scope
+  url: https://www.science.org/journal/sciadv
+  local_file: data_manual/pages/science_advances_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Virology
+  source_type: aims_scope
+  url: https://www.sciencedirect.com/journal/virology/about/aims-and-scope
+  local_file: data_manual/pages/virology_aims_and_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - aims_scope_url
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Virology
+  source_type: guide_for_authors
+  url: https://www.elsevier.com/journals/virology/0042-6822/guide-for-authors
+  local_file: data_manual/pages/virology_guide_for_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Virology
+  source_type: homepage_or_scope
+  url: https://www.sciencedirect.com/journal/virology
+  local_file: data_manual/pages/virology_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Virology
+  source_type: open_access
+  url: https://www.elsevier.com/journals/virology/0042-6822/open-access-options
+  local_file: data_manual/pages/virology_open_access_options.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: Virus Evolution
+  source_type: homepage_or_scope
+  url: https://academic.oup.com/ve
+  local_file: data_manual/pages/virus_evolution_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Viruses
+  source_type: aims_scope
+  url: https://www.mdpi.com/journal/viruses/about
+  local_file: data_manual/pages/viruses_aims_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - aims_scope_url
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Viruses
+  source_type: apc
+  url: https://www.mdpi.com/journal/viruses/apc
+  local_file: data_manual/pages/viruses_apc.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: Viruses
+  source_type: author_instructions
+  url: https://www.mdpi.com/journal/viruses/instructions
+  local_file: data_manual/pages/viruses_instructions.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Viruses
+  source_type: homepage_or_scope
+  url: https://www.mdpi.com/ethics
+  local_file: data_manual/pages/viruses_homepage_or_scope.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: Viruses
+  source_type: homepage_or_scope
+  url: https://www.mdpi.com/journal/viruses
+  local_file: data_manual/pages/viruses_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - manuscript_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: mBio
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: mBio
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: mBio
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/mbio
+  local_file: data_manual/pages/mbio_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: mSphere
+  source_type: author_instructions
+  url: https://journals.asm.org/journal/msphere/article-types
+  local_file: data_manual/pages/msphere_art.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: mSystems
+  source_type: apc
+  url: https://journals.asm.org/publication-fees
+  local_file: data_manual/pages/asm_publishing_fees.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - open_access
+  status: manifested_but_missing_local_file
+- journal: mSystems
+  source_type: author_instructions
+  url: https://journals.asm.org/authors
+  local_file: data_manual/pages/asm_authors.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - author_instructions_url
+  - article_types
+  - data_policy
+  - code_policy
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: mSystems
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/msystems
+  local_file: data_manual/pages/msystems_home.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
+- journal: mSystems
+  source_type: homepage_or_scope
+  url: https://journals.asm.org/journal/msystems/article-types
+  local_file: data_manual/pages/msystems_art.html
+  automated_status: missing_local_file
+  status_code: null
+  quality_flags: []
+  reason: Manifest entry has no local file yet.
+  target_fields:
+  - homepage_url
+  - aims_scope_url
+  - article_types
+  - scope_tags
+  - suitable_for
+  - less_suitable_for
+  - editorial_notes
+  status: manifested_but_missing_local_file
