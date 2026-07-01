@@ -141,6 +141,20 @@ Raw downloaded publisher pages and extracted text stay local under
 git. The manifest, manual-download queue, suggestions YAML, review report, and
 dry-run report are intended for review and version control.
 
+To add missing journals from the manifest without inventing facts, run the
+stub-creation command in dry-run mode first:
+
+```bash
+python -m journal_recommender.cli add-journals-from-manifest \
+  --manifest data_manual/manifest.yaml \
+  --journals data/journals.yaml \
+  --out reports/add_journals_from_manifest.md
+```
+
+Use `--apply` only after reviewing the report. Apply mode appends complete stub
+records and can refresh local SCImago/OpenAlex metric fields when matching data
+sources are available.
+
 ## Add A Journal
 
 Add a complete structured record to `data/journals.yaml`, even when many fields

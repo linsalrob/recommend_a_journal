@@ -16,6 +16,7 @@ from journal_recommender.llm_refinement import (
     format_llm_refinement_error,
     refine_manuscript_features_with_llm,
 )
+from journal_recommender.manifest_journals import add_journals_from_manifest
 from journal_recommender.manual_downloads import generate_manual_download_queue
 from journal_recommender.manual_sources import process_manual_sources
 from journal_recommender.manuscript import validate_manuscript_file
@@ -174,6 +175,30 @@ def build_parser() -> argparse.ArgumentParser:
         default=DEFAULT_MANUAL_DRY_RUN,
         type=Path,
     )
+
+    add_journals_parser = subparsers.add_parser(
+        "add-journals-from-manifest",
+        help="Create safe stub journal records from the manual manifest.",
+    )
+    add_journals_parser.add_argument(
+        "--manifest",
+        default=DEFAULT_MANUAL_MANIFEST,
+        type=Path,
+    )
+    add_journals_parser.add_argument(
+        "--journals",
+        default=DEFAULT_JOURNAL_PATH,
+        type=Path,
+    )
+    add_journals_parser.add_argument(
+        "--out",
+        default=Path("reports/add_journals_from_manifest.md"),
+        type=Path,
+    )
+    add_journals_parser.add_argument("--dry-run", action="store_true")
+    add_journals_parser.add_argument("--apply", action="store_true")
+    add_journals_parser.add_argument("--rebuild-index", action="store_true")
+    add_journals_parser.add_argument("--index", default=DEFAULT_INDEX_PATH, type=Path)
 
     return parser
 
@@ -347,6 +372,26 @@ def main(argv: list[str] | None = None) -> int:
             f"{len(queue)} queued; "
             f"applied updates: {apply_result['applied']}"
             + (" (dry run)" if apply_result.get("dry_run") else "")
+        )
+        return 0
+
+    if args.command == "add-journals-from-manifest":
+        report = add_journals_from_manifest(
+            manifest_path=args.manifest,
+            journals_path=args.journals,
+            out_path=args.out,
+            dry_run=args.dry_run,
+            apply=args.apply,
+            rebuild_index=args.rebuild_index,
+            index_path=args.index,
+        )
+        print(
+            "Processed manifest journals: "
+            f"{report.manifest_journal_names} names, "
+            f"{len(report.already_present_journals)} already present, "
+            f"{report.missing_journals} missing; "
+            f"mode={report.mode}; "
+            f"report written to {args.out}"
         )
         return 0
 

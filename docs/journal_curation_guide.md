@@ -132,6 +132,24 @@ related-journal lists, footer text, cookie notices, and publisher-wide
 boilerplate for journal facts unless a relevant source section supports the
 field.
 
+## Adding Missing Manifest Journals
+
+If `data_manual/manifest.yaml` contains journals that do not yet exist in
+`data/journals.yaml`, use the stub-creation command to add complete empty
+records without inventing facts:
+
+```bash
+python -m journal_recommender.cli add-journals-from-manifest \
+  --manifest data_manual/manifest.yaml \
+  --journals data/journals.yaml \
+  --out reports/add_journals_from_manifest.md
+```
+
+The command is dry-run by default. Review the report before using `--apply`.
+Apply mode appends the missing stub records, validates the database, and can
+refresh local SCImago/OpenAlex metric fields when matching sources are
+available.
+
 ## Optional LLM Refinement
 
 The Streamlit app can optionally refine a deterministic manuscript feature
