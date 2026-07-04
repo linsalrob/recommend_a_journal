@@ -1,29 +1,29 @@
 # Journal Database Changed Report
 
-- Run date: 2026-06-29
-- Workflow trigger: push
+- Run date: 2026-07-01
+- Workflow trigger: schedule
 
 ## Summary
 
 - Journals checked: 35
 - URLs checked: 116
 - New URLs: 0
-- Changed URLs: 3
-- Unchanged URLs: 51
+- Changed URLs: 5
+- Unchanged URLs: 43
 - Failed URLs: 1
-- Blocked URLs: 48
+- Blocked URLs: 54
 - Suspicious fetched pages: 13
 - Skipped manual-curation URLs: 0
-- Crossref matched: 31
+- Crossref matched: 32
 - Crossref records updated: 0
 - Crossref skipped: 0
 - Crossref needs review: 0
-- Crossref failed: 4
-- OpenAlex matched: 35
-- OpenAlex records updated: 35
+- Crossref failed: 3
+- OpenAlex matched: 33
+- OpenAlex records updated: 33
 - OpenAlex skipped: 0
 - OpenAlex needs review: 0
-- OpenAlex failed: 0
+- OpenAlex failed: 2
 - APC candidates: 0
 - APCs unchanged: 0
 - APCs skipped: 24
@@ -39,19 +39,19 @@ Manual protected fields changed by this run: 0
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nature | suspicious | 200 | https://www.nature.com/nature/ | fb4565aace3d | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Microbiology | suspicious | 200 | https://www.nature.com/nmicrobiol/ | 5247a85a4fc2 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Biotechnology | suspicious | 200 | https://www.nature.com/nbt/ | bbef3769987b | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Methods | suspicious | 200 | https://www.nature.com/nmeth/ | a7b490c52cab | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Communications | suspicious | 200 | https://www.nature.com/ncomms/ | 5824bd1bbcbf | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Genome Biology | suspicious | 200 | https://genomebiology.biomedcentral.com/ | 0aecb5ceb68a | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Microbiome | suspicious | 200 | https://microbiomejournal.biomedcentral.com/ | a17d1b292e91 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| ISME Journal | suspicious | 200 | https://www.nature.com/ismej/ | 348bb8d235fb | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| ISME Communications | suspicious | 200 | https://www.nature.com/ismecomms/ | 9b481a6b8cc3 | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | 406918f8b5bb | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | 5c6b322ac18e | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature | suspicious | 200 | https://www.nature.com/nature/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Microbiology | suspicious | 200 | https://www.nature.com/nmicrobiol/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Biotechnology | suspicious | 200 | https://www.nature.com/nbt/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Methods | suspicious | 200 | https://www.nature.com/nmeth/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Communications | suspicious | 200 | https://www.nature.com/ncomms/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Genome Biology | suspicious | 200 | https://genomebiology.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Microbiome | suspicious | 200 | https://microbiomejournal.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| ISME Journal | suspicious | 200 | https://www.nature.com/ismej/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| ISME Communications | suspicious | 200 | https://www.nature.com/ismecomms/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ | 9498eee98cab | 9498eee98cab | very_short_body |  |
-| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 101a53e0cc9f | b5d564a7c3be | very_short_body |  |
+| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | b5d564a7c3be | 6b22a07893eb | very_short_body |  |
 
 ## Blocked URLs
 
@@ -59,14 +59,18 @@ Manual protected fields changed by this run: 0
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Science | blocked | 403 | https://www.science.org/journal/science |  |  |  | HTTP 403 |
 | Science | blocked | 403 | https://www.science.org/content/page/science-information-authors |  |  |  | HTTP 403 |
+| Science | blocked | 429 | https://portal.issn.org/resource/ISSN/1095-9203 | b6269aaa52bb | b6269aaa52bb | looks_valid | HTTP 429 |
 | Cell | blocked | 403 | https://www.cell.com/cell/home |  |  |  | HTTP 403 |
 | Cell | blocked | 403 | https://www.cell.com/cell/authors |  |  |  | HTTP 403 |
+| Nature Methods | blocked | 429 | https://portal.issn.org/resource/ISSN/1548-7091 | 1192f7eb555c | 1192f7eb555c | looks_valid | HTTP 429 |
+| Nature Methods | blocked | 429 | https://portal.issn.org/resource/ISSN/1548-7105 | 21c6e4a8f09b | 21c6e4a8f09b | looks_valid | HTTP 429 |
 | Science Advances | blocked | 403 | https://www.science.org/journal/sciadv |  |  |  | HTTP 403 |
 | Science Advances | blocked | 403 | https://www.science.org/content/page/science-advances-information-authors |  |  |  | HTTP 403 |
 | Cell Host & Microbe | blocked | 403 | https://www.cell.com/cell-host-microbe/home |  |  |  | HTTP 403 |
 | Cell Host & Microbe | blocked | 403 | https://www.cell.com/cell-host-microbe/authors |  |  |  | HTTP 403 |
 | PNAS | blocked | 403 | https://www.pnas.org/ |  |  |  | HTTP 403 |
 | PNAS | blocked | 403 | https://www.pnas.org/author-center/submitting-your-manuscript |  |  |  | HTTP 403 |
+| PNAS | blocked | 429 | https://portal.issn.org/resource/ISSN/1091-6490 | 7329cf7c4968 | 7329cf7c4968 | looks_valid | HTTP 429 |
 | mBio | blocked | 403 | https://journals.asm.org/journal/mbio |  |  |  | HTTP 403 |
 | mBio | blocked | 403 | https://journals.asm.org/authors |  |  |  | HTTP 403 |
 | mBio | blocked | 403 | https://journals.asm.org/publication-fees |  |  |  | HTTP 403 |
@@ -79,6 +83,7 @@ Manual protected fields changed by this run: 0
 | Microbiology Spectrum | blocked | 403 | https://journals.asm.org/publication-fees |  |  |  | HTTP 403 |
 | Microbiology Spectrum | blocked | 403 | https://journals.asm.org/journal/spectrum/article-types |  |  |  | HTTP 403 |
 | Microbial Genomics | blocked | 403 | https://www.microbiologyresearch.org/content/journal/mgen |  |  |  | HTTP 403 |
+| Microbial Genomics | blocked | 429 | https://portal.issn.org/resource/ISSN/2057-5858 | 87bb4b08c91f | 87bb4b08c91f | looks_valid | HTTP 429 |
 | Environmental Microbiology | blocked | 403 | https://enviromicro-journals.onlinelibrary.wiley.com/journal/14622920 |  |  |  | HTTP 403 |
 | Applied and Environmental Microbiology | blocked | 403 | https://journals.asm.org/journal/aem |  |  |  | HTTP 403 |
 | Applied and Environmental Microbiology | blocked | 403 | https://journals.asm.org/authors |  |  |  | HTTP 403 |
@@ -87,6 +92,7 @@ Manual protected fields changed by this run: 0
 | FEMS Microbiology Ecology | blocked | 403 | https://academic.oup.com/femsec |  |  |  | HTTP 403 |
 | Bioinformatics | blocked | 403 | https://academic.oup.com/bioinformatics |  |  |  | HTTP 403 |
 | Briefings in Bioinformatics | blocked | 403 | https://academic.oup.com/bib |  |  |  | HTTP 403 |
+| Briefings in Bioinformatics | blocked | 429 | https://portal.issn.org/resource/ISSN/1477-4054 | b94365185551 | b94365185551 | looks_valid | HTTP 429 |
 | NAR Genomics and Bioinformatics | blocked | 403 | https://academic.oup.com/nargab |  |  |  | HTTP 403 |
 | GigaScience | blocked | 403 | https://academic.oup.com/gigascience |  |  |  | HTTP 403 |
 | Virus Evolution | blocked | 403 | https://academic.oup.com/ve |  |  |  | HTTP 403 |
@@ -110,9 +116,11 @@ Manual protected fields changed by this run: 0
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | b970a6ab805e | fb9ce3896e60 | looks_valid |  |
-| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | ad4eb4aa8fb2 | b987c4080189 | looks_valid |  |
-| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 5498ee597483 | 32d833229db7 | looks_valid |  |
+| Nature | changed | 200 | https://portal.issn.org/resource/ISSN/1476-4687 | f59976c470ca | 6f452f0d5042 | looks_valid |  |
+| ISME Communications | changed | 200 | https://portal.issn.org/resource/ISSN/2730-6151 | 0334c3e86c2f | 957c1db0191b | looks_valid |  |
+| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | fb9ce3896e60 | a4bea19aa93e | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | b987c4080189 | db5ebbdad5d2 | looks_valid |  |
+| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 32d833229db7 | 9ea1aca8e987 | looks_valid |  |
 
 ## Failed URLs
 
@@ -144,7 +152,7 @@ No entries.
 | ISME Journal | matched |  | Matched by ISSN. Crossref title variant: The ISME Journal |
 | ISME Communications | matched |  | Matched by ISSN. |
 | mBio | matched |  | Matched by ISSN. |
-| mSystems | failed |  | Crossref lookup failed: HTTP Error 500: Server Error |
+| mSystems | matched |  | Matched by ISSN. |
 | Microbiology Spectrum | matched |  | Matched by ISSN. |
 | Microbial Genomics | matched |  | Matched by ISSN. |
 | Environmental Microbiology | matched |  | Matched by ISSN. |
@@ -168,41 +176,41 @@ No entries.
 
 | Journal | Status | Source ID | Works | Cited by | Metric year | Note |
 | --- | --- | --- | --- | --- | --- | --- |
-| Nature | matched | S137773608 | 448991 | 26997805 | 2026 | Matched by ISSN. |
-| Science | matched | S3880285 | 387014 | 22686706 | 2026 | Matched by ISSN. |
-| Cell | matched | S110447773 | 26990 | 8962560 | 2026 | Matched by ISSN. |
-| Nature Microbiology | matched | S2764926557 | 2835 | 242903 | 2026 | Matched by ISSN. |
-| Nature Biotechnology | matched | S106963461 | 19459 | 1874832 | 2026 | Matched by ISSN. |
-| Nature Methods | matched | S127827428 | 8403 | 1608232 | 2026 | Matched by ISSN. |
-| Nature Communications | matched | S64187185 | 90038 | 7511874 | 2026 | Matched by ISSN. |
-| Science Advances | matched | S2737427234 | 19345 | 1246595 | 2026 | Matched by ISSN. |
-| Cell Host & Microbe | matched | S207313999 | 3601 | 430213 | 2026 | Matched by ISSN. |
-| Genome Biology | matched | S81160022 | 6053 | 993960 | 2026 | Matched by ISSN. |
-| Genome Research | matched | S43092948 | 6394 | 1101183 | 2026 | Matched by ISSN. |
-| PNAS | matched | S125754415 | 171082 | 22816918 | 2026 | Matched by ISSN. |
-| Microbiome | matched | S3004984423 | 2462 | 233984 | 2026 | Matched by ISSN. |
-| ISME Journal | matched | S149218730 | 4476 | 523260 | 2026 | Matched by ISSN. |
-| ISME Communications | matched | S4210240812 | 964 | 12964 | 2026 | Matched by ISSN. |
-| mBio | matched | S4210201176 | 8977 | 408405 | 2026 | Matched by ISSN. |
-| mSystems | matched | S4210181942 | 2958 | 93010 | 2026 | Matched by ISSN. |
-| Microbiology Spectrum | matched | S2764766708 | 9418 | 162487 | 2026 | Matched by ISSN. |
-| Microbial Genomics | matched | S4210186362 | 1704 | 42023 | 2026 | Matched by ISSN. |
-| Environmental Microbiology | matched | S6919857 | 8122 | 516932 | 2026 | Matched by ISSN. |
-| Environmental Microbiome | matched | S4210205086 | 581 | 8904 | 2026 | Matched by exact normalized title. |
-| Applied and Environmental Microbiology | matched | S158228368 | 38711 | 3118035 | 2026 | Matched by ISSN. |
-| FEMS Microbiology Ecology | matched | S171282171 | 7373 | 384485 | 2026 | Matched by ISSN. |
-| Bioinformatics | matched | S52395412 | 19471 | 2802872 | 2026 | Matched by ISSN. |
-| Briefings in Bioinformatics | matched | S91767247 | 5815 | 278773 | 2026 | Matched by ISSN. |
-| PLOS Computational Biology | matched | S86033158 | 12780 | 679012 | 2026 | Matched by ISSN. |
-| NAR Genomics and Bioinformatics | matched | S4210241000 | 952 | 16346 | 2026 | Matched by ISSN. |
-| GigaScience | matched | S2735135405 | 1576 | 119721 | 2026 | Matched by ISSN. |
-| BMC Bioinformatics | matched | S19032547 | 13211 | 858395 | 2026 | Matched by ISSN. |
-| Virus Evolution | matched | S2734951655 | 1092 | 33284 | 2026 | Matched by ISSN. |
-| PeerJ Computer Science | matched | S4210178049 | 3831 | 56479 | 2026 | Matched by ISSN. |
-| Journal of Virology | matched | S96615428 | 52287 | 3464348 | 2026 | Matched by ISSN. |
-| Viruses | matched | S55776271 | 18066 | 408130 | 2026 | Matched by ISSN. |
-| Phage | matched | S4210206945 | 232 | 1852 | 2026 | Matched by exact normalized title. |
-| Virology | matched | S6147291 | 30420 | 1335261 | 2026 | Matched by ISSN. |
+| Nature | matched | S137773608 | 449000 | 27002206 | 2026 | Matched by ISSN. |
+| Science | matched | S3880285 | 387014 | 22690528 | 2026 | Matched by ISSN. |
+| Cell | matched | S110447773 | 26992 | 8963941 | 2026 | Matched by ISSN. |
+| Nature Microbiology | matched | S2764926557 | 2838 | 243052 | 2026 | Matched by ISSN. |
+| Nature Biotechnology | matched | S106963461 | 19462 | 1875292 | 2026 | Matched by ISSN. |
+| Nature Methods | matched | S127827428 | 8404 | 1608836 | 2026 | Matched by ISSN. |
+| Nature Communications | matched | S64187185 | 90098 | 7516618 | 2026 | Matched by ISSN. |
+| Science Advances | matched | S2737427234 | 19345 | 1247559 | 2026 | Matched by ISSN. |
+| Cell Host & Microbe | matched | S207313999 | 3601 | 430400 | 2026 | Matched by ISSN. |
+| Genome Biology | matched | S81160022 | 6055 | 994265 | 2026 | Matched by ISSN. |
+| Genome Research | matched | S43092948 | 6395 | 1101356 | 2026 | Matched by ISSN. |
+| PNAS | matched | S125754415 | 171134 | 22820266 | 2026 | Matched by ISSN. |
+| Microbiome | matched | S3004984423 | 2464 | 234122 | 2026 | Matched by ISSN. |
+| ISME Journal | matched | S149218730 | 4478 | 523460 | 2026 | Matched by ISSN. |
+| ISME Communications | matched | S4210240812 | 964 | 12975 | 2026 | Matched by ISSN. |
+| mBio | matched | S4210201176 | 8978 | 408606 | 2026 | Matched by ISSN. |
+| mSystems | matched | S4210181942 | 2962 | 93083 | 2026 | Matched by ISSN. |
+| Microbiology Spectrum | matched | S2764766708 | 9427 | 162665 | 2026 | Matched by ISSN. |
+| Microbial Genomics | matched | S4210186362 | 1706 | 42057 | 2026 | Matched by ISSN. |
+| Environmental Microbiology | matched | S6919857 | 8123 | 517044 | 2026 | Matched by ISSN. |
+| Environmental Microbiome | failed |  |  |  |  | OpenAlex lookup failed: HTTP Error 503: Service Unavailable |
+| Applied and Environmental Microbiology | matched | S158228368 | 38713 | 3118401 | 2026 | Matched by ISSN. |
+| FEMS Microbiology Ecology | matched | S171282171 | 7373 | 384565 | 2026 | Matched by ISSN. |
+| Bioinformatics | matched | S52395412 | 19475 | 2803584 | 2026 | Matched by ISSN. |
+| Briefings in Bioinformatics | matched | S91767247 | 5820 | 278910 | 2026 | Matched by ISSN. |
+| PLOS Computational Biology | matched | S86033158 | 12785 | 679228 | 2026 | Matched by ISSN. |
+| NAR Genomics and Bioinformatics | matched | S4210241000 | 952 | 16355 | 2026 | Matched by ISSN. |
+| GigaScience | matched | S2735135405 | 1576 | 119787 | 2026 | Matched by ISSN. |
+| BMC Bioinformatics | matched | S19032547 | 13212 | 858602 | 2026 | Matched by ISSN. |
+| Virus Evolution | matched | S2734951655 | 1092 | 33290 | 2026 | Matched by ISSN. |
+| PeerJ Computer Science | matched | S4210178049 | 3835 | 56541 | 2026 | Matched by ISSN. |
+| Journal of Virology | matched | S96615428 | 52290 | 3464572 | 2026 | Matched by ISSN. |
+| Viruses | matched | S55776271 | 18066 | 408344 | 2026 | Matched by ISSN. |
+| Phage | failed |  |  |  |  | OpenAlex lookup failed: HTTP Error 503: Service Unavailable |
+| Virology | matched | S6147291 | 30422 | 1335309 | 2026 | Matched by ISSN. |
 
 ## APC Updates And Review Needed
 
