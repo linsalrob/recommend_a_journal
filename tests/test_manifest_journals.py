@@ -5,6 +5,7 @@ from pathlib import Path
 
 import yaml
 
+import journal_recommender.manifest_journals as manifest_journals
 from journal_recommender.cli import main
 from journal_recommender.manifest_journals import (
     add_journals_from_manifest,
@@ -261,6 +262,59 @@ def test_apply_mode_appends_valid_records_and_enriches_metrics(
     assert new_record["prestige_metrics"]["openalex"]["openalex_source_id"] == "S123"
     assert validate_journal_file(journals)[-1].journal == "Applied Journal"
     assert index_path.exists()
+
+
+def test_apply_mode_uses_default_openalex_opener_when_none(
+    tmp_path: Path,
+    monkeypatch,
+) -> None:
+    journals = tmp_path / "journals.yaml"
+    write_minimal_journals(journals)
+    html = tmp_path / "page.html"
+    html.write_text("<html><body>stub</body></html>", encoding="utf-8")
+    manifest = write_manifest_for_journals(
+        tmp_path,
+        [
+            {
+                "journal": "Default Opener Journal",
+                "source_type": "homepage_or_scope",
+                "url": "https://example.org/home",
+                "local_file": str(html),
+            }
+        ],
+    )
+    out = tmp_path / "report.md"
+    scimago = tmp_path / "missing_scimago.csv"
+    calls = []
+
+    class FakeResponse:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args) -> None:
+            return None
+
+        def read(self) -> bytes:
+            return json.dumps({"results": []}).encode("utf-8")
+
+    def opener(request, timeout):
+        calls.append((request, timeout))
+        return FakeResponse()
+
+    monkeypatch.setattr(manifest_journals, "urlopen", opener)
+
+    report = add_journals_from_manifest(
+        manifest,
+        journals,
+        out,
+        apply=True,
+        scimago_path=scimago,
+    )
+
+    assert report.mode == "apply"
+    assert report.openalex_updates == 0
+    assert len(calls) == 1
+    assert out.exists()
 
 
 def test_cli_add_journals_from_manifest_reports_and_dry_runs(

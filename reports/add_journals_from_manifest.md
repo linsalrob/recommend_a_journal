@@ -5,9 +5,9 @@
 - Manifest journal names: 41
 - Already present: 34
 - Missing: 7
-- Mode: dry-run
-- SCImago matches updated: 0
-- OpenAlex matches updated: 0
+- Mode: apply
+- SCImago matches updated: 6
+- OpenAlex matches updated: 7
 
 ## Journals That Would Be Added
 
@@ -37,4 +37,4 @@
 
 ## Mode
 
-dry-run
+apply

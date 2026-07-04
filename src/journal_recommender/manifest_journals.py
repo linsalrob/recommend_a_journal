@@ -354,7 +354,7 @@ def add_journals_from_manifest(
         scimago_updates, openalex_updates, warnings = enrich_manifest_stubs(
             report.stubs,
             scimago_path=scimago_path,
-            openalex_opener=openalex_opener,
+            openalex_opener=openalex_opener or urlopen,
         )
         report.scimago_updates = scimago_updates
         report.openalex_updates = openalex_updates

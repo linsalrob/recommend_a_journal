@@ -8408,3 +8408,1046 @@
     accessed: '2026-06-29'
     notes: Parsed from local file data_manual/pages/virology_open_access_options.html.
   last_checked: '2026-06-28'
+- journal: ASM Animal Microbiology
+  abbreviated_title: ''
+  publisher: ''
+  issn:
+    print: ''
+    online: ''
+  homepage_url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
+  aims_scope_url: ''
+  author_instructions_url: https://journals.asm.org/authors
+  article_types: []
+  scope_tags: []
+  manuscript_tags: []
+  suitable_for: []
+  less_suitable_for: []
+  data_policy:
+    summary: ''
+    url: ''
+  code_policy:
+    summary: ''
+    url: ''
+  open_access:
+    model: ''
+    apc: null
+    currency: ''
+    url: https://journals.asm.org/publication-fees
+  prestige_metrics:
+    impact_factor: null
+    cite_score: null
+    sjr: null
+    h_index: null
+    quartile: ''
+    metric_year: null
+    metric_sources: []
+    openalex:
+      openalex_source_id: S5407056521
+      works_count: 14
+      cited_by_count: 5
+      counts_by_year:
+      - year: 2026
+        works_count: 14
+        cited_by_count: 5
+      openalex_h_index: 1
+      openalex_2yr_citation_rate: 0.357
+      openalex_4yr_citation_rate: 0.357
+      metric_year: 2026
+      source_url: https://openalex.org/S5407056521
+      last_checked: '2026-07-04'
+  editorial_notes: []
+  example_papers: []
+  source_evidence:
+  - label: Manual manifest source
+    url: https://journals.asm.org/journal/asm-animal-microbiology/article-types
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  - label: Manual manifest source
+    url: https://journals.asm.org/publication-fees
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  - label: Manual manifest source
+    url: https://journals.asm.org/authors
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  last_checked: ''
+- journal: Journal of Clinical Microbiology
+  abbreviated_title: ''
+  publisher: ''
+  issn:
+    print: ''
+    online: ''
+  homepage_url: https://journals.asm.org/journal/jcm/article-types
+  aims_scope_url: ''
+  author_instructions_url: https://journals.asm.org/authors
+  article_types: []
+  scope_tags: []
+  manuscript_tags: []
+  suitable_for: []
+  less_suitable_for: []
+  data_policy:
+    summary: ''
+    url: ''
+  code_policy:
+    summary: ''
+    url: ''
+  open_access:
+    model: ''
+    apc: null
+    currency: ''
+    url: https://journals.asm.org/publication-fees
+  prestige_metrics:
+    impact_factor: null
+    cite_score: null
+    sjr: 1.641
+    h_index: 305
+    quartile: Q1
+    metric_year: 2025
+    metric_sources:
+    - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
+    openalex:
+      openalex_source_id: S53087977
+      works_count: 33469
+      cited_by_count: 1912710
+      counts_by_year:
+      - year: 2026
+        works_count: 152
+        cited_by_count: 27
+      - year: 2025
+        works_count: 269
+        cited_by_count: 873
+      - year: 2024
+        works_count: 255
+        cited_by_count: 1751
+      - year: 2023
+        works_count: 264
+        cited_by_count: 3336
+      - year: 2022
+        works_count: 226
+        cited_by_count: 3584
+      - year: 2021
+        works_count: 365
+        cited_by_count: 11112
+      - year: 2020
+        works_count: 518
+        cited_by_count: 26923
+      - year: 2019
+        works_count: 433
+        cited_by_count: 10174
+      - year: 2018
+        works_count: 450
+        cited_by_count: 17940
+      - year: 2017
+        works_count: 469
+        cited_by_count: 20207
+      - year: 2016
+        works_count: 550
+        cited_by_count: 22015
+      - year: 2015
+        works_count: 714
+        cited_by_count: 28803
+      - year: 2014
+        works_count: 900
+        cited_by_count: 36646
+      - year: 2013
+        works_count: 876
+        cited_by_count: 39774
+      - year: 2012
+        works_count: 838
+        cited_by_count: 43601
+      - year: 2011
+        works_count: 994
+        cited_by_count: 51907
+      - year: 2010
+        works_count: 970
+        cited_by_count: 55135
+      - year: 2009
+        works_count: 840
+        cited_by_count: 48874
+      - year: 2008
+        works_count: 787
+        cited_by_count: 49991
+      - year: 2007
+        works_count: 822
+        cited_by_count: 57764
+      - year: 2006
+        works_count: 1041
+        cited_by_count: 76443
+      - year: 2005
+        works_count: 1194
+        cited_by_count: 87690
+      - year: 2004
+        works_count: 1161
+        cited_by_count: 89371
+      - year: 2003
+        works_count: 1151
+        cited_by_count: 91858
+      - year: 2002
+        works_count: 964
+        cited_by_count: 77298
+      - year: 2001
+        works_count: 949
+        cited_by_count: 70943
+      - year: 2000
+        works_count: 1082
+        cited_by_count: 85413
+      - year: 1999
+        works_count: 924
+        cited_by_count: 74324
+      - year: 1998
+        works_count: 827
+        cited_by_count: 64377
+      - year: 1997
+        works_count: 752
+        cited_by_count: 58438
+      - year: 1996
+        works_count: 738
+        cited_by_count: 48374
+      - year: 1995
+        works_count: 768
+        cited_by_count: 63658
+      - year: 1994
+        works_count: 698
+        cited_by_count: 44510
+      - year: 1993
+        works_count: 726
+        cited_by_count: 48271
+      - year: 1992
+        works_count: 691
+        cited_by_count: 46360
+      - year: 1991
+        works_count: 628
+        cited_by_count: 39004
+      - year: 1990
+        works_count: 654
+        cited_by_count: 43809
+      - year: 1989
+        works_count: 684
+        cited_by_count: 32793
+      - year: 1988
+        works_count: 647
+        cited_by_count: 29866
+      - year: 1987
+        works_count: 624
+        cited_by_count: 25239
+      - year: 1986
+        works_count: 550
+        cited_by_count: 22932
+      - year: 1985
+        works_count: 531
+        cited_by_count: 23583
+      - year: 1984
+        works_count: 553
+        cited_by_count: 20507
+      - year: 1983
+        works_count: 553
+        cited_by_count: 20144
+      - year: 1982
+        works_count: 506
+        cited_by_count: 21638
+      - year: 1981
+        works_count: 392
+        cited_by_count: 13819
+      - year: 1980
+        works_count: 358
+        cited_by_count: 14808
+      - year: 1979
+        works_count: 357
+        cited_by_count: 14136
+      - year: 1978
+        works_count: 291
+        cited_by_count: 9087
+      - year: 1977
+        works_count: 278
+        cited_by_count: 8692
+      - year: 1976
+        works_count: 256
+        cited_by_count: 7025
+      - year: 1975
+        works_count: 239
+        cited_by_count: 7852
+      - year: 1972
+        works_count: 2
+        cited_by_count: 3
+      - year: 1964
+        works_count: 3
+        cited_by_count: 8
+      - year: 1953
+        works_count: 1
+        cited_by_count: 0
+      - year: 1952
+        works_count: 1
+        cited_by_count: 0
+      - year: 1930
+        works_count: 1
+        cited_by_count: 0
+      - year: 1915
+        works_count: 1
+        cited_by_count: 0
+      - year: 1845
+        works_count: 1
+        cited_by_count: 0
+      openalex_h_index: 365
+      openalex_2yr_citation_rate: 2.138
+      openalex_4yr_citation_rate: 6.369
+      metric_year: 2026
+      source_url: https://openalex.org/S53087977
+      last_checked: '2026-07-04'
+  editorial_notes: []
+  example_papers: []
+  source_evidence:
+  - label: Manual manifest source
+    url: https://journals.asm.org/journal/jcm/article-types
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  - label: Manual manifest source
+    url: https://journals.asm.org/authors
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  - label: Manual manifest source
+    url: https://journals.asm.org/publication-fees
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  last_checked: ''
+- journal: mSphere
+  abbreviated_title: ''
+  publisher: ''
+  issn:
+    print: ''
+    online: ''
+  homepage_url: ''
+  aims_scope_url: ''
+  author_instructions_url: https://journals.asm.org/journal/msphere/article-types
+  article_types: []
+  scope_tags: []
+  manuscript_tags: []
+  suitable_for: []
+  less_suitable_for: []
+  data_policy:
+    summary: ''
+    url: ''
+  code_policy:
+    summary: ''
+    url: ''
+  open_access:
+    model: ''
+    apc: null
+    currency: ''
+    url: ''
+  prestige_metrics:
+    impact_factor: null
+    cite_score: null
+    sjr: 1.209
+    h_index: 86
+    quartile: Q1
+    metric_year: 2025
+    metric_sources:
+    - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
+    openalex:
+      openalex_source_id: S4210207018
+      works_count: 3199
+      cited_by_count: 75631
+      counts_by_year:
+      - year: 2026
+        works_count: 117
+        cited_by_count: 21
+      - year: 2025
+        works_count: 324
+        cited_by_count: 687
+      - year: 2024
+        works_count: 368
+        cited_by_count: 2792
+      - year: 2023
+        works_count: 262
+        cited_by_count: 2817
+      - year: 2022
+        works_count: 223
+        cited_by_count: 3078
+      - year: 2021
+        works_count: 399
+        cited_by_count: 9823
+      - year: 2020
+        works_count: 476
+        cited_by_count: 15143
+      - year: 2019
+        works_count: 330
+        cited_by_count: 8956
+      - year: 2018
+        works_count: 298
+        cited_by_count: 12164
+      - year: 2017
+        works_count: 214
+        cited_by_count: 11055
+      - year: 2016
+        works_count: 145
+        cited_by_count: 8295
+      - year: 2015
+        works_count: 14
+        cited_by_count: 774
+      - year: 2014
+        works_count: 2
+        cited_by_count: 7
+      - year: 2013
+        works_count: 3
+        cited_by_count: 6
+      - year: 2012
+        works_count: 1
+        cited_by_count: 0
+      - year: 2011
+        works_count: 2
+        cited_by_count: 3
+      - year: 2010
+        works_count: 2
+        cited_by_count: 0
+      - year: 2009
+        works_count: 1
+        cited_by_count: 0
+      - year: 2008
+        works_count: 3
+        cited_by_count: 2
+      - year: 2007
+        works_count: 4
+        cited_by_count: 5
+      - year: 2006
+        works_count: 1
+        cited_by_count: 0
+      - year: 2005
+        works_count: 2
+        cited_by_count: 0
+      - year: 2003
+        works_count: 1
+        cited_by_count: 0
+      - year: 2001
+        works_count: 1
+        cited_by_count: 0
+      - year: 1999
+        works_count: 1
+        cited_by_count: 0
+      - year: 1998
+        works_count: 1
+        cited_by_count: 0
+      - year: 1987
+        works_count: 1
+        cited_by_count: 2
+      - year: 1985
+        works_count: 1
+        cited_by_count: 0
+      - year: 1982
+        works_count: 1
+        cited_by_count: 1
+      - year: 1935
+        works_count: 1
+        cited_by_count: 0
+      openalex_h_index: 104
+      openalex_2yr_citation_rate: 1.605
+      openalex_4yr_citation_rate: 5.898
+      metric_year: 2026
+      source_url: https://openalex.org/S4210207018
+      last_checked: '2026-07-04'
+  editorial_notes: []
+  example_papers: []
+  source_evidence:
+  - label: Manual manifest source
+    url: https://journals.asm.org/journal/msphere/article-types
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  last_checked: ''
+- journal: BMC Microbiology
+  abbreviated_title: ''
+  publisher: ''
+  issn:
+    print: ''
+    online: ''
+  homepage_url: https://link.springer.com/journal/12866
+  aims_scope_url: ''
+  author_instructions_url: ''
+  article_types: []
+  scope_tags: []
+  manuscript_tags: []
+  suitable_for: []
+  less_suitable_for: []
+  data_policy:
+    summary: ''
+    url: ''
+  code_policy:
+    summary: ''
+    url: ''
+  open_access:
+    model: ''
+    apc: null
+    currency: ''
+    url: ''
+  prestige_metrics:
+    impact_factor: null
+    cite_score: null
+    sjr: 1.141
+    h_index: 157
+    quartile: Q1
+    metric_year: 2025
+    metric_sources:
+    - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
+    openalex:
+      openalex_source_id: S128543880
+      works_count: 7515
+      cited_by_count: 264107
+      counts_by_year:
+      - year: 2026
+        works_count: 695
+        cited_by_count: 93
+      - year: 2025
+        works_count: 901
+        cited_by_count: 2894
+      - year: 2024
+        works_count: 553
+        cited_by_count: 5283
+      - year: 2023
+        works_count: 404
+        cited_by_count: 6593
+      - year: 2022
+        works_count: 325
+        cited_by_count: 6984
+      - year: 2021
+        works_count: 352
+        cited_by_count: 9894
+      - year: 2020
+        works_count: 372
+        cited_by_count: 13134
+      - year: 2019
+        works_count: 312
+        cited_by_count: 13718
+      - year: 2018
+        works_count: 228
+        cited_by_count: 9038
+      - year: 2017
+        works_count: 233
+        cited_by_count: 11169
+      - year: 2016
+        works_count: 292
+        cited_by_count: 14660
+      - year: 2015
+        works_count: 284
+        cited_by_count: 13762
+      - year: 2014
+        works_count: 338
+        cited_by_count: 15768
+      - year: 2013
+        works_count: 307
+        cited_by_count: 14705
+      - year: 2012
+        works_count: 326
+        cited_by_count: 18542
+      - year: 2011
+        works_count: 273
+        cited_by_count: 15733
+      - year: 2010
+        works_count: 337
+        cited_by_count: 22912
+      - year: 2009
+        works_count: 296
+        cited_by_count: 21996
+      - year: 2008
+        works_count: 240
+        cited_by_count: 16463
+      - year: 2007
+        works_count: 116
+        cited_by_count: 8691
+      - year: 2006
+        works_count: 107
+        cited_by_count: 7322
+      - year: 2005
+        works_count: 67
+        cited_by_count: 6150
+      - year: 2004
+        works_count: 51
+        cited_by_count: 3099
+      - year: 2003
+        works_count: 26
+        cited_by_count: 1324
+      - year: 2002
+        works_count: 40
+        cited_by_count: 2095
+      - year: 2001
+        works_count: 34
+        cited_by_count: 2060
+      - year: 1995
+        works_count: 1
+        cited_by_count: 0
+      - year: 1992
+        works_count: 1
+        cited_by_count: 25
+      - year: 1989
+        works_count: 1
+        cited_by_count: 0
+      - year: 1971
+        works_count: 1
+        cited_by_count: 0
+      - year: 1921
+        works_count: 1
+        cited_by_count: 0
+      - year: 1887
+        works_count: 1
+        cited_by_count: 0
+      openalex_h_index: 179
+      openalex_2yr_citation_rate: 1.872
+      openalex_4yr_citation_rate: 5.822
+      metric_year: 2026
+      source_url: https://openalex.org/S128543880
+      last_checked: '2026-07-04'
+  editorial_notes: []
+  example_papers: []
+  source_evidence:
+  - label: Manual manifest source
+    url: https://link.springer.com/journal/12866
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  last_checked: ''
+- journal: BMC Genomics
+  abbreviated_title: ''
+  publisher: ''
+  issn:
+    print: ''
+    online: ''
+  homepage_url: https://link.springer.com/journal/12864
+  aims_scope_url: ''
+  author_instructions_url: ''
+  article_types: []
+  scope_tags: []
+  manuscript_tags: []
+  suitable_for: []
+  less_suitable_for: []
+  data_policy:
+    summary: ''
+    url: ''
+  code_policy:
+    summary: ''
+    url: ''
+  open_access:
+    model: ''
+    apc: null
+    currency: ''
+    url: ''
+  prestige_metrics:
+    impact_factor: null
+    cite_score: null
+    sjr: 0.985
+    h_index: 218
+    quartile: Q1
+    metric_year: 2025
+    metric_sources:
+    - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
+    openalex:
+      openalex_source_id: S28614077
+      works_count: 19518
+      cited_by_count: 885782
+      counts_by_year:
+      - year: 2026
+        works_count: 639
+        cited_by_count: 106
+      - year: 2025
+        works_count: 1268
+        cited_by_count: 3226
+      - year: 2024
+        works_count: 1266
+        cited_by_count: 9457
+      - year: 2023
+        works_count: 799
+        cited_by_count: 9235
+      - year: 2022
+        works_count: 865
+        cited_by_count: 17041
+      - year: 2021
+        works_count: 920
+        cited_by_count: 22602
+      - year: 2020
+        works_count: 900
+        cited_by_count: 35391
+      - year: 2019
+        works_count: 1040
+        cited_by_count: 41590
+      - year: 2018
+        works_count: 982
+        cited_by_count: 47525
+      - year: 2017
+        works_count: 995
+        cited_by_count: 49351
+      - year: 2016
+        works_count: 1041
+        cited_by_count: 50649
+      - year: 2015
+        works_count: 1254
+        cited_by_count: 72937
+      - year: 2014
+        works_count: 1408
+        cited_by_count: 79567
+      - year: 2013
+        works_count: 1027
+        cited_by_count: 68012
+      - year: 2012
+        works_count: 867
+        cited_by_count: 58209
+      - year: 2011
+        works_count: 726
+        cited_by_count: 53359
+      - year: 2010
+        works_count: 832
+        cited_by_count: 56453
+      - year: 2009
+        works_count: 726
+        cited_by_count: 52668
+      - year: 2008
+        works_count: 699
+        cited_by_count: 66323
+      - year: 2007
+        works_count: 490
+        cited_by_count: 34562
+      - year: 2006
+        works_count: 334
+        cited_by_count: 29811
+      - year: 2005
+        works_count: 187
+        cited_by_count: 13476
+      - year: 2004
+        works_count: 103
+        cited_by_count: 7591
+      - year: 2003
+        works_count: 59
+        cited_by_count: 3775
+      - year: 2002
+        works_count: 40
+        cited_by_count: 2057
+      - year: 2001
+        works_count: 14
+        cited_by_count: 718
+      - year: 2000
+        works_count: 3
+        cited_by_count: 32
+      - year: 1999
+        works_count: 3
+        cited_by_count: 2
+      - year: 1998
+        works_count: 3
+        cited_by_count: 0
+      - year: 1996
+        works_count: 2
+        cited_by_count: 7
+      - year: 1995
+        works_count: 1
+        cited_by_count: 0
+      - year: 1994
+        works_count: 3
+        cited_by_count: 2
+      - year: 1993
+        works_count: 3
+        cited_by_count: 16
+      - year: 1992
+        works_count: 2
+        cited_by_count: 1
+      - year: 1991
+        works_count: 2
+        cited_by_count: 29
+      - year: 1990
+        works_count: 1
+        cited_by_count: 0
+      - year: 1989
+        works_count: 1
+        cited_by_count: 0
+      - year: 1988
+        works_count: 1
+        cited_by_count: 0
+      - year: 1985
+        works_count: 1
+        cited_by_count: 0
+      - year: 1984
+        works_count: 1
+        cited_by_count: 0
+      - year: 1982
+        works_count: 1
+        cited_by_count: 0
+      - year: 1979
+        works_count: 2
+        cited_by_count: 2
+      - year: 1969
+        works_count: 1
+        cited_by_count: 0
+      - year: 1968
+        works_count: 1
+        cited_by_count: 0
+      - year: 1967
+        works_count: 1
+        cited_by_count: 0
+      - year: 1960
+        works_count: 1
+        cited_by_count: 0
+      - year: 1958
+        works_count: 1
+        cited_by_count: 0
+      - year: 1955
+        works_count: 1
+        cited_by_count: 0
+      - year: 1901
+        works_count: 1
+        cited_by_count: 0
+      openalex_h_index: 262
+      openalex_2yr_citation_rate: 1.747
+      openalex_4yr_citation_rate: 5.545
+      metric_year: 2026
+      source_url: https://openalex.org/S28614077
+      last_checked: '2026-07-04'
+  editorial_notes: []
+  example_papers: []
+  source_evidence:
+  - label: Manual manifest source
+    url: https://link.springer.com/journal/12864
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  last_checked: ''
+- journal: Nature Computational Science
+  abbreviated_title: ''
+  publisher: ''
+  issn:
+    print: ''
+    online: ''
+  homepage_url: https://www.nature.com/natcomputsci
+  aims_scope_url: ''
+  author_instructions_url: ''
+  article_types: []
+  scope_tags: []
+  manuscript_tags: []
+  suitable_for: []
+  less_suitable_for: []
+  data_policy:
+    summary: ''
+    url: ''
+  code_policy:
+    summary: ''
+    url: ''
+  open_access:
+    model: ''
+    apc: null
+    currency: ''
+    url: ''
+  prestige_metrics:
+    impact_factor: null
+    cite_score: null
+    sjr: 4.252
+    h_index: 56
+    quartile: Q1
+    metric_year: 2025
+    metric_sources:
+    - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
+    openalex:
+      openalex_source_id: S4210228084
+      works_count: 1013
+      cited_by_count: 21726
+      counts_by_year:
+      - year: 2026
+        works_count: 70
+        cited_by_count: 64
+      - year: 2025
+        works_count: 184
+        cited_by_count: 936
+      - year: 2024
+        works_count: 167
+        cited_by_count: 3037
+      - year: 2023
+        works_count: 198
+        cited_by_count: 4559
+      - year: 2022
+        works_count: 208
+        cited_by_count: 7327
+      - year: 2021
+        works_count: 180
+        cited_by_count: 5802
+      - year: 2014
+        works_count: 2
+        cited_by_count: 1
+      - year: 2013
+        works_count: 1
+        cited_by_count: 0
+      - year: 2011
+        works_count: 1
+        cited_by_count: 0
+      - year: 2000
+        works_count: 1
+        cited_by_count: 0
+      - year: 1972
+        works_count: 1
+        cited_by_count: 0
+      openalex_h_index: 73
+      openalex_2yr_citation_rate: 3.937
+      openalex_4yr_citation_rate: 13.887
+      metric_year: 2026
+      source_url: https://openalex.org/S4210228084
+      last_checked: '2026-07-04'
+  editorial_notes: []
+  example_papers: []
+  source_evidence:
+  - label: Manual manifest source
+    url: https://www.nature.com/natcomputsci
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  last_checked: ''
+- journal: PLoS Biology
+  abbreviated_title: ''
+  publisher: ''
+  issn:
+    print: ''
+    online: ''
+  homepage_url: https://journals.plos.org/plosbiology/
+  aims_scope_url: ''
+  author_instructions_url: ''
+  article_types: []
+  scope_tags: []
+  manuscript_tags: []
+  suitable_for: []
+  less_suitable_for: []
+  data_policy:
+    summary: ''
+    url: ''
+  code_policy:
+    summary: ''
+    url: ''
+  open_access:
+    model: ''
+    apc: null
+    currency: ''
+    url: ''
+  prestige_metrics:
+    impact_factor: null
+    cite_score: null
+    sjr: 2.525
+    h_index: 328
+    quartile: Q1
+    metric_year: 2025
+    metric_sources:
+    - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
+    openalex:
+      openalex_source_id: S154343897
+      works_count: 8644
+      cited_by_count: 800221
+      counts_by_year:
+      - year: 2026
+        works_count: 273
+        cited_by_count: 144
+      - year: 2025
+        works_count: 571
+        cited_by_count: 2422
+      - year: 2024
+        works_count: 488
+        cited_by_count: 6191
+      - year: 2023
+        works_count: 482
+        cited_by_count: 10696
+      - year: 2022
+        works_count: 411
+        cited_by_count: 13041
+      - year: 2021
+        works_count: 349
+        cited_by_count: 17151
+      - year: 2020
+        works_count: 359
+        cited_by_count: 32941
+      - year: 2019
+        works_count: 493
+        cited_by_count: 34088
+      - year: 2018
+        works_count: 427
+        cited_by_count: 35838
+      - year: 2017
+        works_count: 265
+        cited_by_count: 23593
+      - year: 2016
+        works_count: 308
+        cited_by_count: 35188
+      - year: 2015
+        works_count: 301
+        cited_by_count: 31328
+      - year: 2014
+        works_count: 287
+        cited_by_count: 28610
+      - year: 2013
+        works_count: 303
+        cited_by_count: 27041
+      - year: 2012
+        works_count: 257
+        cited_by_count: 26887
+      - year: 2011
+        works_count: 293
+        cited_by_count: 40009
+      - year: 2010
+        works_count: 336
+        cited_by_count: 57561
+      - year: 2009
+        works_count: 290
+        cited_by_count: 40659
+      - year: 2008
+        works_count: 343
+        cited_by_count: 57657
+      - year: 2007
+        works_count: 334
+        cited_by_count: 64631
+      - year: 2006
+        works_count: 438
+        cited_by_count: 68418
+      - year: 2005
+        works_count: 432
+        cited_by_count: 63547
+      - year: 2004
+        works_count: 484
+        cited_by_count: 67472
+      - year: 2003
+        works_count: 104
+        cited_by_count: 15036
+      - year: 2002
+        works_count: 1
+        cited_by_count: 0
+      - year: 1999
+        works_count: 1
+        cited_by_count: 3
+      - year: 1998
+        works_count: 1
+        cited_by_count: 21
+      - year: 1997
+        works_count: 1
+        cited_by_count: 0
+      - year: 1996
+        works_count: 2
+        cited_by_count: 19
+      - year: 1995
+        works_count: 2
+        cited_by_count: 2
+      - year: 1993
+        works_count: 1
+        cited_by_count: 1
+      - year: 1992
+        works_count: 1
+        cited_by_count: 0
+      - year: 1991
+        works_count: 2
+        cited_by_count: 24
+      - year: 1990
+        works_count: 1
+        cited_by_count: 0
+      - year: 1989
+        works_count: 1
+        cited_by_count: 0
+      - year: 1981
+        works_count: 1
+        cited_by_count: 2
+      - year: 1980
+        works_count: 1
+        cited_by_count: 0
+      openalex_h_index: 388
+      openalex_2yr_citation_rate: 3.04
+      openalex_4yr_citation_rate: 10.724
+      metric_year: 2026
+      source_url: https://openalex.org/S154343897
+      last_checked: '2026-07-04'
+  editorial_notes: []
+  example_papers: []
+  source_evidence:
+  - label: Manual manifest source
+    url: https://journals.plos.org/plosbiology/
+    accessed: '2026-07-04'
+    notes: Added from data_manual/manifest.yaml; requires manual curation.
+  last_checked: ''
