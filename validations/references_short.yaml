@@ -1,0 +1,162 @@
+validation_references:
+- id: Van_Kempen2024-il
+  entry_type: article
+  title: Fast and accurate protein structure search with Foldseek
+  authors: van Kempen, Michel and Kim, Stephanie S and Tumescheit, Charlotte and Mirdita, Milot and Lee, Jeongjae and Gilchrist, Cameron L M and Söding, Johannes and Steinegger, Martin
+  journal: Nat. Biotechnol.
+  actual_journal: Nat. Biotechnol.
+  year: 2024
+  doi: 10.1038/s41587-023-01773-0
+  pmid: '37156916'
+  pmc: PMC10869269
+  abstract: As structure prediction methods are generating millions of publicly available protein structures, searching these databases is becoming a bottleneck. Foldseek aligns the structure of a query protein against a database by describing tertiary amino acid interactions within proteins as sequences over a structural alphabet. Foldseek decreases computation times by four to five orders of magnitude with 86%, 88% and 133% of the sensitivities of Dali, TM-align and CE, respectively.
+  pdf: refs/V/van Kempen et al. 2024 - Fast and accurate protein structure search with Foldseek.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Van_Kempen2024-il_deterministic_features.yaml
+    llm_refined_features: validation/features/Van_Kempen2024-il_llm_refined_features.yaml
+    gold_features: validation/features/Van_Kempen2024-il_gold_features.yaml
+    extracted_text: validation/extracted/Van_Kempen2024-il_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Van_Kempen2024-il_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Van_Kempen2024-il_llm_refined.md
+    recommendation_gold: validation/recommendations/Van_Kempen2024-il_gold.md
+- id: Wirbel2026-yj
+  entry_type: article
+  title: Long-read metagenomics reveals phage dynamics in the human gut microbiome
+  authors: Wirbel, Jakob and Hickey, Angela S and Chang, Daniel and Enright, Nora J and Dvorak, Mai and Chanin, Rachael B and Schmidtke, Danica T and Bhatt, Ami S
+  journal: Nature
+  actual_journal: Nature
+  year: 2026
+  doi: 10.1038/s41586-025-09786-2
+  pmid: '41299176'
+  pmc: PMC12823448
+  abstract: Gut bacteriophages profoundly impact microbial ecology and health1-3; yet, they are understudied. Using deep long-read bulk metagenomic sequencing, we tracked prophage integration dynamics in stool samples from six healthy individuals, spanning a 2-year timescale. Although most prophages remained stably integrated into their hosts, approximately 5% of phages were dynamically gained or lost from persistent bacterial hosts. Within a sample, we found that bacterial hosts with and without a given prophage coexisted simultaneously. Furthermore, phage induction, when detected, occurred predominantly at low levels (1-3× coverage compared to the host region), in line with theoretical expectations4. We identified multiple instances of integration of the same phage into bacteria of different taxonomic families, challenging the dogma that phages are specific to a host of a given species or strain5. Finally, we describe a new class of 'IScream phages', which co-opt bacterial IS30 transposases
+    to mediate their mobilization, representing a previously unrecognized form of phage domestication of selfish bacterial elements. Taken together, these findings illuminate fundamental aspects of phage-bacterial dynamics in the human gut microbiome and expand our understanding of the evolutionary mechanisms that drive horizontal gene transfer and microbial genome plasticity.
+  pdf: refs/Wirbel2026-yj.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Wirbel2026-yj_deterministic_features.yaml
+    llm_refined_features: validation/features/Wirbel2026-yj_llm_refined_features.yaml
+    gold_features: validation/features/Wirbel2026-yj_gold_features.yaml
+    extracted_text: validation/extracted/Wirbel2026-yj_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Wirbel2026-yj_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Wirbel2026-yj_llm_refined.md
+    recommendation_gold: validation/recommendations/Wirbel2026-yj_gold.md
+- id: Rozwalak2024-wt
+  entry_type: article
+  title: Ultraconserved bacteriophage genome sequence identified in 1300-year-old human palaeofaeces
+  authors: Rozwalak, Piotr and Barylski, Jakub and Wijesekara, Yasas and Dutilh, Bas E and Zielezinski, Andrzej
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2024
+  doi: 10.1038/s41467-023-44370-0
+  pmid: '38263397'
+  pmc: PMC10805732
+  abstract: Bacteriophages are widely recognised as rapidly evolving biological entities. However, knowledge about ancient bacteriophages is limited. Here, we analyse DNA sequence datasets previously generated from ancient palaeofaeces and human gut-content samples, and identify an ancient phage genome nearly identical to present-day Mushuvirus mushu, a virus that infects gut commensal bacteria. The DNA damage patterns of the genome are consistent with its ancient origin and, despite 1300 years of evolution, the ancient Mushuvirus genome shares 97.7% nucleotide identity with its modern counterpart, indicating a long-term relationship between the prophage and its host. In addition, we reconstruct and authenticate 297 other phage genomes from the last 5300 years, including those belonging to unknown families. Our findings demonstrate the feasibility of reconstructing ancient phage genome sequences, thus expanding the known virosphere and offering insights into phage-bacteria interactions spanning
+    several millennia.
+  pdf: refs/R/Rozwalak et al. 2024 - Ultraconserved bacteriophage genome sequence identified in 1300-year-old human palaeofaeces.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Rozwalak2024-wt_deterministic_features.yaml
+    llm_refined_features: validation/features/Rozwalak2024-wt_llm_refined_features.yaml
+    gold_features: validation/features/Rozwalak2024-wt_gold_features.yaml
+    extracted_text: validation/extracted/Rozwalak2024-wt_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Rozwalak2024-wt_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Rozwalak2024-wt_llm_refined.md
+    recommendation_gold: validation/recommendations/Rozwalak2024-wt_gold.md
+- id: Eddy1998-ov
+  entry_type: article
+  title: Profile hidden Markov models
+  authors: Eddy, S R
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 1998
+  doi: 10.1093/bioinformatics/14.9.755
+  pmid: '9918945'
+  pmc: ''
+  abstract: The recent literature on profile hidden Markov model (profile HMM) methods and software is reviewed. Profile HMMs turn a multiple sequence alignment into a position-specific scoring system suitable for searching databases for remotely homologous sequences. Profile HMM analyses complement standard pairwise comparison methods for large-scale sequence analysis. Several software implementations and two large libraries of profile HMMs of common protein domains are available. HMM methods performed comparably to threading methods in the CASP2 structure prediction exercise.
+  pdf: refs/Eddy1998-ov.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Eddy1998-ov_deterministic_features.yaml
+    llm_refined_features: validation/features/Eddy1998-ov_llm_refined_features.yaml
+    gold_features: validation/features/Eddy1998-ov_gold_features.yaml
+    extracted_text: validation/extracted/Eddy1998-ov_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Eddy1998-ov_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Eddy1998-ov_llm_refined.md
+    recommendation_gold: validation/recommendations/Eddy1998-ov_gold.md
+- id: Brixi2026-yw
+  entry_type: article
+  title: Genome modelling and design across all domains of life with Evo 2
+  authors: Brixi, Garyk and Durrant, Matthew G and Ku, Jerome and Naghipourfar, Mohsen and Poli, Michael and Sun, Gwanggyu and Brockman, Greg and Chang, Daniel and Fanton, Alison and Gonzalez, Gabriel A and King, Samuel H and Li, David B and Merchant, Aditi T and Nguyen, Eric and Ricci-Tam, Chiara and Romero, David W and Schmok, Jonathan C and Taghibakhshi, Ali and Vorontsov, Anton and Yang, Brandon and Deng, Myra and Gorton, Liv and Nguyen, Nam and Wang, Nicholas K and Pearce, Michael T and Simon, Elana and Adams, Etowah and Amador, Zachary J and Ashley, Euan A and Baccus, Stephen A and Dai, Haoyu and Dillmann, Steven and Ermon, Stefano and Guo, Daniel and Herschl, Michael H and Ilango, Rajesh and Janik, Ken and Lu, Amy X and Mehta, Reshma and Mofrad, Mohammad R K and Ng, Madelena Y and Pannu, Jaspreet and Ré, Christopher and St John, John and Sullivan, Jeremy and Tey, Joseph and Viggiano, Ben and Zhu, Kevin and Zynda, Greg and Balsam, Daniel and Collison, Patrick and Costa, Anthony B and
+    Hernandez-Boussard, Tina and Ho, Eric and Liu, Ming-Yu and McGrath, Thomas and Powell, Kimberly and Pinglay, Sudarshan and Burke, Dave P and Goodarzi, Hani and Hsu, Patrick D and Hie, Brian L
+  journal: Nature
+  actual_journal: Nature
+  year: 2026
+  doi: 10.1038/s41586-026-10176-5
+  pmid: '41781614'
+  pmc: ''
+  abstract: All of life encodes information with DNA. Although tools for genome sequencing, synthesis and editing have transformed biological research, we still lack sufficient understanding of the immense complexity encoded by genomes to predict the effects of many classes of genomic changes or to intelligently compose new biological systems. Artificial intelligence models that learn information from genomic sequences across diverse organisms have increasingly advanced prediction and design capabilities1,2. Here we introduce Evo 2, a biological foundation model trained on 9 trillion DNA base pairs from a highly curated genomic atlas spanning all domains of life to have a 1 million token context window with single-nucleotide resolution. Evo 2 learns to accurately predict the functional impacts of genetic variation-from noncoding pathogenic mutations to clinically significant BRCA1 variants-without task-specific fine-tuning. Mechanistic interpretability analyses reveal that Evo 2 learns representations
+    associated with biological features, including exon-intron boundaries, transcription factor binding sites, protein structural elements and prophage genomic regions. The generative abilities of Evo 2 produce mitochondrial, prokaryotic and eukaryotic sequences at genome scale with greater naturalness and coherence than previous methods. Evo 2 also generates experimentally validated chromatin accessibility patterns when guided by predictive models3,4 and inference-time search. We have made Evo 2 fully open, including model parameters, training code5, inference code and the OpenGenome2 dataset, to accelerate the exploration and design of biological complexity.
+  pdf: refs/B/Brixi et al. 2026 - Genome modelling and design across all domains of life with Evo 2.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Brixi2026-yw_deterministic_features.yaml
+    llm_refined_features: validation/features/Brixi2026-yw_llm_refined_features.yaml
+    gold_features: validation/features/Brixi2026-yw_gold_features.yaml
+    extracted_text: validation/extracted/Brixi2026-yw_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Brixi2026-yw_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Brixi2026-yw_llm_refined.md
+    recommendation_gold: validation/recommendations/Brixi2026-yw_gold.md
+- id: Chklovski2023-gv
+  entry_type: article
+  title: '{CheckM2}: a rapid, scalable and accurate tool for assessing microbial genome quality using machine learning'
+  authors: Chklovski, Alex and Parks, Donovan H and Woodcroft, Ben J and Tyson, Gene W
+  journal: Nat. Methods
+  actual_journal: Nat. Methods
+  year: 2023
+  doi: 10.1038/s41592-023-01940-w
+  pmid: '37500759'
+  pmc: ''
+  abstract: Advances in sequencing technologies and bioinformatics tools have dramatically increased the recovery rate of microbial genomes from metagenomic data. Assessing the quality of metagenome-assembled genomes (MAGs) is a critical step before downstream analysis. Here, we present CheckM2, an improved method of predicting genome quality of MAGs using machine learning. Using synthetic and experimental data, we demonstrate that CheckM2 outperforms existing tools in both accuracy and computational speed. In addition, CheckM2's database can be rapidly updated with new high-quality reference genomes, including taxa represented only by a single genome. We also show that CheckM2 accurately predicts genome quality for MAGs from novel lineages, even for those with reduced genome size (for example, Patescibacteria and the DPANN superphylum). CheckM2 provides accurate genome quality predictions across bacterial and archaeal lineages, giving increased confidence when inferring biological conclusions
+    from MAGs.
+  pdf: refs/C/Chklovski et al. 2023 - CheckM2 - a rapid, scalable and accurate tool for assessing microbial genome quality using machine learning.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Chklovski2023-gv_deterministic_features.yaml
+    llm_refined_features: validation/features/Chklovski2023-gv_llm_refined_features.yaml
+    gold_features: validation/features/Chklovski2023-gv_gold_features.yaml
+    extracted_text: validation/extracted/Chklovski2023-gv_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Chklovski2023-gv_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Chklovski2023-gv_llm_refined.md
+    recommendation_gold: validation/recommendations/Chklovski2023-gv_gold.md

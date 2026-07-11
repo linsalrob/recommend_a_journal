@@ -1,0 +1,1958 @@
+validation_references:
+- id: Van_Kempen2024-il
+  entry_type: article
+  title: Fast and accurate protein structure search with Foldseek
+  authors: van Kempen, Michel and Kim, Stephanie S and Tumescheit, Charlotte and Mirdita, Milot and Lee, Jeongjae and Gilchrist, Cameron L M and Söding, Johannes and Steinegger, Martin
+  journal: Nat. Biotechnol.
+  actual_journal: Nat. Biotechnol.
+  year: 2024
+  doi: 10.1038/s41587-023-01773-0
+  pmid: '37156916'
+  pmc: PMC10869269
+  abstract: As structure prediction methods are generating millions of publicly available protein structures, searching these databases is becoming a bottleneck. Foldseek aligns the structure of a query protein against a database by describing tertiary amino acid interactions within proteins as sequences over a structural alphabet. Foldseek decreases computation times by four to five orders of magnitude with 86%, 88% and 133% of the sensitivities of Dali, TM-align and CE, respectively.
+  pdf: refs/V/van Kempen et al. 2024 - Fast and accurate protein structure search with Foldseek.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Van_Kempen2024-il_deterministic_features.yaml
+    llm_refined_features: validation/features/Van_Kempen2024-il_llm_refined_features.yaml
+    gold_features: validation/features/Van_Kempen2024-il_gold_features.yaml
+    extracted_text: validation/extracted/Van_Kempen2024-il_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Van_Kempen2024-il_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Van_Kempen2024-il_llm_refined.md
+    recommendation_gold: validation/recommendations/Van_Kempen2024-il_gold.md
+- id: Wirbel2026-yj
+  entry_type: article
+  title: Long-read metagenomics reveals phage dynamics in the human gut microbiome
+  authors: Wirbel, Jakob and Hickey, Angela S and Chang, Daniel and Enright, Nora J and Dvorak, Mai and Chanin, Rachael B and Schmidtke, Danica T and Bhatt, Ami S
+  journal: Nature
+  actual_journal: Nature
+  year: 2026
+  doi: 10.1038/s41586-025-09786-2
+  pmid: '41299176'
+  pmc: PMC12823448
+  abstract: Gut bacteriophages profoundly impact microbial ecology and health1-3; yet, they are understudied. Using deep long-read bulk metagenomic sequencing, we tracked prophage integration dynamics in stool samples from six healthy individuals, spanning a 2-year timescale. Although most prophages remained stably integrated into their hosts, approximately 5% of phages were dynamically gained or lost from persistent bacterial hosts. Within a sample, we found that bacterial hosts with and without a given prophage coexisted simultaneously. Furthermore, phage induction, when detected, occurred predominantly at low levels (1-3× coverage compared to the host region), in line with theoretical expectations4. We identified multiple instances of integration of the same phage into bacteria of different taxonomic families, challenging the dogma that phages are specific to a host of a given species or strain5. Finally, we describe a new class of 'IScream phages', which co-opt bacterial IS30 transposases
+    to mediate their mobilization, representing a previously unrecognized form of phage domestication of selfish bacterial elements. Taken together, these findings illuminate fundamental aspects of phage-bacterial dynamics in the human gut microbiome and expand our understanding of the evolutionary mechanisms that drive horizontal gene transfer and microbial genome plasticity.
+  pdf: refs/Wirbel2026-yj.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Wirbel2026-yj_deterministic_features.yaml
+    llm_refined_features: validation/features/Wirbel2026-yj_llm_refined_features.yaml
+    gold_features: validation/features/Wirbel2026-yj_gold_features.yaml
+    extracted_text: validation/extracted/Wirbel2026-yj_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Wirbel2026-yj_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Wirbel2026-yj_llm_refined.md
+    recommendation_gold: validation/recommendations/Wirbel2026-yj_gold.md
+- id: Rozwalak2024-wt
+  entry_type: article
+  title: Ultraconserved bacteriophage genome sequence identified in 1300-year-old human palaeofaeces
+  authors: Rozwalak, Piotr and Barylski, Jakub and Wijesekara, Yasas and Dutilh, Bas E and Zielezinski, Andrzej
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2024
+  doi: 10.1038/s41467-023-44370-0
+  pmid: '38263397'
+  pmc: PMC10805732
+  abstract: Bacteriophages are widely recognised as rapidly evolving biological entities. However, knowledge about ancient bacteriophages is limited. Here, we analyse DNA sequence datasets previously generated from ancient palaeofaeces and human gut-content samples, and identify an ancient phage genome nearly identical to present-day Mushuvirus mushu, a virus that infects gut commensal bacteria. The DNA damage patterns of the genome are consistent with its ancient origin and, despite 1300 years of evolution, the ancient Mushuvirus genome shares 97.7% nucleotide identity with its modern counterpart, indicating a long-term relationship between the prophage and its host. In addition, we reconstruct and authenticate 297 other phage genomes from the last 5300 years, including those belonging to unknown families. Our findings demonstrate the feasibility of reconstructing ancient phage genome sequences, thus expanding the known virosphere and offering insights into phage-bacteria interactions spanning
+    several millennia.
+  pdf: refs/R/Rozwalak et al. 2024 - Ultraconserved bacteriophage genome sequence identified in 1300-year-old human palaeofaeces.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Rozwalak2024-wt_deterministic_features.yaml
+    llm_refined_features: validation/features/Rozwalak2024-wt_llm_refined_features.yaml
+    gold_features: validation/features/Rozwalak2024-wt_gold_features.yaml
+    extracted_text: validation/extracted/Rozwalak2024-wt_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Rozwalak2024-wt_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Rozwalak2024-wt_llm_refined.md
+    recommendation_gold: validation/recommendations/Rozwalak2024-wt_gold.md
+- id: Eddy1998-ov
+  entry_type: article
+  title: Profile hidden Markov models
+  authors: Eddy, S R
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 1998
+  doi: 10.1093/bioinformatics/14.9.755
+  pmid: '9918945'
+  pmc: ''
+  abstract: The recent literature on profile hidden Markov model (profile HMM) methods and software is reviewed. Profile HMMs turn a multiple sequence alignment into a position-specific scoring system suitable for searching databases for remotely homologous sequences. Profile HMM analyses complement standard pairwise comparison methods for large-scale sequence analysis. Several software implementations and two large libraries of profile HMMs of common protein domains are available. HMM methods performed comparably to threading methods in the CASP2 structure prediction exercise.
+  pdf: refs/Eddy1998-ov.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Eddy1998-ov_deterministic_features.yaml
+    llm_refined_features: validation/features/Eddy1998-ov_llm_refined_features.yaml
+    gold_features: validation/features/Eddy1998-ov_gold_features.yaml
+    extracted_text: validation/extracted/Eddy1998-ov_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Eddy1998-ov_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Eddy1998-ov_llm_refined.md
+    recommendation_gold: validation/recommendations/Eddy1998-ov_gold.md
+- id: Brixi2026-yw
+  entry_type: article
+  title: Genome modelling and design across all domains of life with Evo 2
+  authors: Brixi, Garyk and Durrant, Matthew G and Ku, Jerome and Naghipourfar, Mohsen and Poli, Michael and Sun, Gwanggyu and Brockman, Greg and Chang, Daniel and Fanton, Alison and Gonzalez, Gabriel A and King, Samuel H and Li, David B and Merchant, Aditi T and Nguyen, Eric and Ricci-Tam, Chiara and Romero, David W and Schmok, Jonathan C and Taghibakhshi, Ali and Vorontsov, Anton and Yang, Brandon and Deng, Myra and Gorton, Liv and Nguyen, Nam and Wang, Nicholas K and Pearce, Michael T and Simon, Elana and Adams, Etowah and Amador, Zachary J and Ashley, Euan A and Baccus, Stephen A and Dai, Haoyu and Dillmann, Steven and Ermon, Stefano and Guo, Daniel and Herschl, Michael H and Ilango, Rajesh and Janik, Ken and Lu, Amy X and Mehta, Reshma and Mofrad, Mohammad R K and Ng, Madelena Y and Pannu, Jaspreet and Ré, Christopher and St John, John and Sullivan, Jeremy and Tey, Joseph and Viggiano, Ben and Zhu, Kevin and Zynda, Greg and Balsam, Daniel and Collison, Patrick and Costa, Anthony B and
+    Hernandez-Boussard, Tina and Ho, Eric and Liu, Ming-Yu and McGrath, Thomas and Powell, Kimberly and Pinglay, Sudarshan and Burke, Dave P and Goodarzi, Hani and Hsu, Patrick D and Hie, Brian L
+  journal: Nature
+  actual_journal: Nature
+  year: 2026
+  doi: 10.1038/s41586-026-10176-5
+  pmid: '41781614'
+  pmc: ''
+  abstract: All of life encodes information with DNA. Although tools for genome sequencing, synthesis and editing have transformed biological research, we still lack sufficient understanding of the immense complexity encoded by genomes to predict the effects of many classes of genomic changes or to intelligently compose new biological systems. Artificial intelligence models that learn information from genomic sequences across diverse organisms have increasingly advanced prediction and design capabilities1,2. Here we introduce Evo 2, a biological foundation model trained on 9 trillion DNA base pairs from a highly curated genomic atlas spanning all domains of life to have a 1 million token context window with single-nucleotide resolution. Evo 2 learns to accurately predict the functional impacts of genetic variation-from noncoding pathogenic mutations to clinically significant BRCA1 variants-without task-specific fine-tuning. Mechanistic interpretability analyses reveal that Evo 2 learns representations
+    associated with biological features, including exon-intron boundaries, transcription factor binding sites, protein structural elements and prophage genomic regions. The generative abilities of Evo 2 produce mitochondrial, prokaryotic and eukaryotic sequences at genome scale with greater naturalness and coherence than previous methods. Evo 2 also generates experimentally validated chromatin accessibility patterns when guided by predictive models3,4 and inference-time search. We have made Evo 2 fully open, including model parameters, training code5, inference code and the OpenGenome2 dataset, to accelerate the exploration and design of biological complexity.
+  pdf: refs/B/Brixi et al. 2026 - Genome modelling and design across all domains of life with Evo 2.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Brixi2026-yw_deterministic_features.yaml
+    llm_refined_features: validation/features/Brixi2026-yw_llm_refined_features.yaml
+    gold_features: validation/features/Brixi2026-yw_gold_features.yaml
+    extracted_text: validation/extracted/Brixi2026-yw_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Brixi2026-yw_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Brixi2026-yw_llm_refined.md
+    recommendation_gold: validation/recommendations/Brixi2026-yw_gold.md
+- id: Chklovski2023-gv
+  entry_type: article
+  title: '{CheckM2}: a rapid, scalable and accurate tool for assessing microbial genome quality using machine learning'
+  authors: Chklovski, Alex and Parks, Donovan H and Woodcroft, Ben J and Tyson, Gene W
+  journal: Nat. Methods
+  actual_journal: Nat. Methods
+  year: 2023
+  doi: 10.1038/s41592-023-01940-w
+  pmid: '37500759'
+  pmc: ''
+  abstract: Advances in sequencing technologies and bioinformatics tools have dramatically increased the recovery rate of microbial genomes from metagenomic data. Assessing the quality of metagenome-assembled genomes (MAGs) is a critical step before downstream analysis. Here, we present CheckM2, an improved method of predicting genome quality of MAGs using machine learning. Using synthetic and experimental data, we demonstrate that CheckM2 outperforms existing tools in both accuracy and computational speed. In addition, CheckM2's database can be rapidly updated with new high-quality reference genomes, including taxa represented only by a single genome. We also show that CheckM2 accurately predicts genome quality for MAGs from novel lineages, even for those with reduced genome size (for example, Patescibacteria and the DPANN superphylum). CheckM2 provides accurate genome quality predictions across bacterial and archaeal lineages, giving increased confidence when inferring biological conclusions
+    from MAGs.
+  pdf: refs/C/Chklovski et al. 2023 - CheckM2 - a rapid, scalable and accurate tool for assessing microbial genome quality using machine learning.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Chklovski2023-gv_deterministic_features.yaml
+    llm_refined_features: validation/features/Chklovski2023-gv_llm_refined_features.yaml
+    gold_features: validation/features/Chklovski2023-gv_gold_features.yaml
+    extracted_text: validation/extracted/Chklovski2023-gv_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Chklovski2023-gv_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Chklovski2023-gv_llm_refined.md
+    recommendation_gold: validation/recommendations/Chklovski2023-gv_gold.md
+- id: Gaborieau2024-ah
+  entry_type: article
+  title: Prediction of strain level phage-host interactions across the Escherichia genus using only genomic information
+  authors: Gaborieau, Baptiste and Vaysset, Hugo and Tesson, Florian and Charachon, Inès and Dib, Nicolas and Bernier, Juliette and Dequidt, Tanguy and Georjon, Héloïse and Clermont, Olivier and Hersen, Pascal and Debarbieux, Laurent and Ricard, Jean-Damien and Denamur, Erick and Bernheim, Aude
+  journal: Nat. Microbiol.
+  actual_journal: Nat. Microbiol.
+  year: 2024
+  doi: 10.1038/s41564-024-01832-5
+  pmid: '39482383'
+  pmc: ''
+  abstract: Predicting bacteriophage infection of specific bacterial strains promises advancements in phage therapy and microbial ecology. Whether the dynamics of well-established phage-host model systems generalize to the wide diversity of microbes is currently unknown. Here we show that we could accurately predict the outcomes of phage-bacteria interactions at the strain level in natural isolates from the genus Escherichia using only genomic data (area under the receiver operating characteristic curve (AUROC) of 86%). We experimentally established a dataset of interactions between 403 diverse Escherichia strains and 96 phages. Most interactions are explained by adsorption factors as opposed to antiphage systems which play a marginal role. We trained predictive algorithms and pinpoint poorly predicted interactions to direct future research efforts. Finally, we established a pipeline to recommend tailored phage cocktails, demonstrating efficiency on 100 pathogenic E. coli isolates. This
+    work provides quantitative insights into phage-host specificity and supports the use of predictive algorithms in phage therapy.
+  pdf: refs/G/Gaborieau et al. 2024 - Prediction of strain level phage-host interactions across the Escherichia genus using only genomic information.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Gaborieau2024-ah_deterministic_features.yaml
+    llm_refined_features: validation/features/Gaborieau2024-ah_llm_refined_features.yaml
+    gold_features: validation/features/Gaborieau2024-ah_gold_features.yaml
+    extracted_text: validation/extracted/Gaborieau2024-ah_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Gaborieau2024-ah_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Gaborieau2024-ah_llm_refined.md
+    recommendation_gold: validation/recommendations/Gaborieau2024-ah_gold.md
+- id: Mallawaarachchi2026-wa
+  entry_type: article
+  title: 'Agtools: A software framework to manipulate assembly graphs'
+  authors: Mallawaarachchi, Vijini and Bouras, George and Wick, Ryan R and Grigson, Susanna R and Papudeshi, Bhavya and Edwards, Robert A
+  journal: Bioinform. Adv.
+  actual_journal: Bioinform. Adv.
+  year: 2026
+  doi: 10.1093/bioadv/vbag126
+  pmid: '42180431'
+  pmc: PMC13197128
+  abstract: 'Motivation: Assembly graphs are a fundamental data structure used by genome and metagenome assemblers to represent sequences and their overlap information, facilitating the assembler in constructing longer genomic fragments. Apart from their core use in assemblers, assembly graphs have become increasingly important in a range of downstream applications such as metagenomic binning, plasmid detection, viral genome resolution, and haplotype phasing. However, there is a need for a comprehensive tool that allows programmatic access to manipulate assembly graphs (e.g. parse, convert, filter, and analyze) across different assembly graph formats. Results: Here we present agtools, an open-source Python framework to manipulate assembly graphs produced by commonly used assemblers. agtools provides a command-line interface for tasks such as assembly graph format conversion, segment filtering, and component extraction. It also exposes a Python package interface to load, query, and analyze
+    assembly graphs from popular genome and metagenome assemblers. This enables streamlined assembly-graph-based analyses that can be integrated into other bioinformatics software and workflows. Availability and implementation: The source code of agtools is hosted on GitHub at https://github.com/Vini2/agtools and the documentation is available at https://agtools.readthedocs.io/. agtools can also be installed from Bioconda (https://anaconda.org/bioconda/agtools) and PyPI (https://pypi.org/project/agtools/).'
+  pdf: refs/M/Mallawaarachchi et al. 2026 - Agtools - A software framework to manipulate assembly graphs.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Mallawaarachchi2026-wa_deterministic_features.yaml
+    llm_refined_features: validation/features/Mallawaarachchi2026-wa_llm_refined_features.yaml
+    gold_features: validation/features/Mallawaarachchi2026-wa_gold_features.yaml
+    extracted_text: validation/extracted/Mallawaarachchi2026-wa_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Mallawaarachchi2026-wa_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Mallawaarachchi2026-wa_llm_refined.md
+    recommendation_gold: validation/recommendations/Mallawaarachchi2026-wa_gold.md
+- id: Romano2025-hh
+  entry_type: article
+  title: Machine learning-based meta-analysis reveals gut microbiome alterations associated with Parkinson's disease
+  authors: Romano, Stefano and Wirbel, Jakob and Ansorge, Rebecca and Schudoma, Christian and Ducarmon, Quinten Raymond and Narbad, Arjan and Zeller, Georg
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2025
+  doi: 10.1038/s41467-025-56829-3
+  pmid: '40335465'
+  pmc: PMC12059030
+  abstract: There is strong interest in using the gut microbiome for Parkinson's disease (PD) diagnosis and treatment. However, a consensus on PD-associated microbiome features and a multi-study assessment of their diagnostic value is lacking. Here, we present a machine learning meta-analysis of PD microbiome studies of unprecedented scale (4489 samples). Within most studies, microbiome-based machine learning models accurately classify PD patients (average AUC 71.9%). However, these models are study-specific and do not generalise well across other studies (average AUC 61%). Training models on multiple datasets improves their generalizability (average LOSO AUC 68%) and disease specificity as assessed against microbiomes from other neurodegenerative diseases. Moreover, meta-analysis of shotgun metagenomes delineates PD-associated microbial pathways potentially contributing to gut health deterioration and favouring the translocation of pathogenic molecules along the gut-brain axis. Strikingly,
+    microbial pathways for solvent and pesticide biotransformation are enriched in PD. These results align with epidemiological evidence that exposure to these molecules increases PD risk and raise the question of whether gut microbes modulate their toxicity. Here, we offer the most comprehensive overview to date about the PD gut microbiome and provide future reference for its diagnostic and functional potential.
+  pdf: refs/R/Romano et al. 2025 - Machine learning-based meta-analysis reveals gut microbiome alterations associated with Parkinson's disease.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Romano2025-hh_deterministic_features.yaml
+    llm_refined_features: validation/features/Romano2025-hh_llm_refined_features.yaml
+    gold_features: validation/features/Romano2025-hh_gold_features.yaml
+    extracted_text: validation/extracted/Romano2025-hh_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Romano2025-hh_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Romano2025-hh_llm_refined.md
+    recommendation_gold: validation/recommendations/Romano2025-hh_gold.md
+- id: Bayfield2023-xh
+  entry_type: article
+  title: Structural atlas of a human gut crassvirus
+  authors: Bayfield, O W and Shkoporov, A N and Yutin, N and Khokhlova, E V and Smith, J L R and Dedp, Hawkins and Koonin, E V and Hill, C and Antson, A A
+  journal: Nature
+  actual_journal: Nature
+  year: 2023
+  doi: 10.1038/s41586-023-06019-2
+  pmid: '37138077'
+  pmc: '7886860'
+  abstract: CrAssphage and related viruses of the order Crassvirales (hereafter referred to as crassviruses) were originally discovered by cross-assembly of metagenomic sequences. They are the most abundant viruses in the human gut, are found in the majority of individual gut viromes, and account for up to 95% …
+  pdf: refs/B/Bayfield et al. 2023 - Structural atlas of a human gut crassvirus.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Bayfield2023-xh_deterministic_features.yaml
+    llm_refined_features: validation/features/Bayfield2023-xh_llm_refined_features.yaml
+    gold_features: validation/features/Bayfield2023-xh_gold_features.yaml
+    extracted_text: validation/extracted/Bayfield2023-xh_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Bayfield2023-xh_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Bayfield2023-xh_llm_refined.md
+    recommendation_gold: validation/recommendations/Bayfield2023-xh_gold.md
+- id: Von_Meijenfeldt2023-ho
+  entry_type: article
+  title: A social niche breadth score reveals niche range strategies of generalists and specialists
+  authors: von Meijenfeldt, F A Bastiaan and Hogeweg, Paulien and Dutilh, Bas E
+  journal: Nat Ecol Evol
+  actual_journal: Nat Ecol Evol
+  year: 2023
+  doi: 10.1038/s41559-023-02027-7
+  pmid: '37012375'
+  pmc: PMC10172124
+  abstract: Generalists can survive in many environments, whereas specialists are restricted to a single environment. Although a classical concept in ecology, niche breadth has remained challenging to quantify for microorganisms because it depends on an objective definition of the environment. Here, by defining the environment of a microorganism as the community it resides in, we integrated information from over 22,000 environmental sequencing samples to derive a quantitative measure of the niche, which we call social niche breadth. At the level of genera, we explored niche range strategies throughout the prokaryotic tree of life. We found that social generalists include opportunists that stochastically dominate local communities, whereas social specialists are stable but low in abundance. Social generalists have a more diverse and open pan-genome than social specialists, but we found no global correlation between social niche breadth and genome size. Instead, we observed two distinct evolutionary
+    strategies, whereby specialists have relatively small genomes in habitats with low local diversity, but relatively large genomes in habitats with high local diversity. Together, our analysis shines data-driven light on microbial niche range strategies.
+  pdf: refs/V/von Meijenfeldt et al. 2023 - A social niche breadth score reveals niche range strategies of generalists and specialists.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Von_Meijenfeldt2023-ho_deterministic_features.yaml
+    llm_refined_features: validation/features/Von_Meijenfeldt2023-ho_llm_refined_features.yaml
+    gold_features: validation/features/Von_Meijenfeldt2023-ho_gold_features.yaml
+    extracted_text: validation/extracted/Von_Meijenfeldt2023-ho_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Von_Meijenfeldt2023-ho_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Von_Meijenfeldt2023-ho_llm_refined.md
+    recommendation_gold: validation/recommendations/Von_Meijenfeldt2023-ho_gold.md
+- id: Adriaenssens2023-sx
+  entry_type: article
+  title: 'Author Correction: Guidelines for public database submission of uncultivated virus genome sequences for taxonomic classification'
+  authors: Adriaenssens, Evelien M and Roux, Simon and Brister, J Rodney and Karsch-Mizrachi, Ilene and Kuhn, Jens H and Varsani, Arvind and Yigang, Tong and Reyes, Alejandro and Lood, Cédric and Lefkowitz, Elliot J and Sullivan, Matthew B and Edwards, Robert A and Simmonds, Peter and Rubino, Luisa and Sabanadzovic, Sead and Krupovic, Mart and Dutilh, Bas E
+  journal: Nat. Biotechnol.
+  actual_journal: Nat. Biotechnol.
+  year: 2023
+  doi: 10.1038/s41587-023-01952-z
+  pmid: '37608068'
+  pmc: ''
+  abstract: ''
+  pdf: refs/A/Adriaenssens et al. 2023 - Author Correction - Guidelines for public dat ... n of uncultivated virus genome sequences for taxonomic classification.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Adriaenssens2023-sx_deterministic_features.yaml
+    llm_refined_features: validation/features/Adriaenssens2023-sx_llm_refined_features.yaml
+    gold_features: validation/features/Adriaenssens2023-sx_gold_features.yaml
+    extracted_text: validation/extracted/Adriaenssens2023-sx_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Adriaenssens2023-sx_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Adriaenssens2023-sx_llm_refined.md
+    recommendation_gold: validation/recommendations/Adriaenssens2023-sx_gold.md
+- id: Ugarcina-Perovic2025-qc
+  entry_type: article
+  title: '{argNorm}: normalization of antibiotic resistance gene annotations to the Antibiotic Resistance Ontology ({ARO})'
+  authors: Ugarcina Perovic, Svetlana and Ramji, Vedanth and Chong, Hui and Duan, Yiqian and Maguire, Finlay and Coelho, Luis Pedro
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2025
+  doi: 10.1093/bioinformatics/btaf173
+  pmid: '40238188'
+  pmc: ''
+  abstract: 'SUMMARY: Currently available and frequently used tools for annotating antimicrobial resistance genes (ARGs) in genomes and metagenomes provide results using inconsistent nomenclature. This makes the comparison of different ARG annotation outputs challenging. The comparability of ARG annotation outputs can be improved by mapping gene names and their categories to a common controlled vocabulary such as the Antibiotic Resistance Ontology (ARO). We developed argNorm, a command line tool and Python library, to normalize all detected genes across 6 ARG annotation tools (8 databases) to the ARO. argNorm also adds information to the outputs using the same ARG categorization so that they are comparable across tools. AVAILABILITY AND IMPLEMENTATION: argNorm is available as an open-source tool at: https://github.com/BigDataBiology/argNorm. It can also be downloaded as a PyPI package and is available on Bioconda and as an nf-core module.'
+  pdf: refs/U/Ugarcina Perovic et al. 2025 - argNorm - normalization of antibiotic resistance gene annotations to the Antibiotic Resistance Ontology (ARO).pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Ugarcina-Perovic2025-qc_deterministic_features.yaml
+    llm_refined_features: validation/features/Ugarcina-Perovic2025-qc_llm_refined_features.yaml
+    gold_features: validation/features/Ugarcina-Perovic2025-qc_gold_features.yaml
+    extracted_text: validation/extracted/Ugarcina-Perovic2025-qc_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Ugarcina-Perovic2025-qc_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Ugarcina-Perovic2025-qc_llm_refined.md
+    recommendation_gold: validation/recommendations/Ugarcina-Perovic2025-qc_gold.md
+- id: Knoll2025-mi
+  entry_type: article
+  title: '{CFTR} modulator therapy drives microbiome restructuring through improved host physiology in cystic fibrosis: the {IMMProveCF} phase {IV} trial'
+  authors: Knoll, Rebecca Luise and Brauny, Melanie Meihua and Robert, Evelyn and Cloos, Louisa and Waser, Lydia and Hilbert, Katja and Ulmer, Nina and Hillen, Barlo and Birkner, Till and Bartolomaeus, Theda Ulrike Patricia and Nitsche, Oliver and Jarquín-Díaz, Víctor Hugo and Lynch, Susan and Gehring, Stephan and Maier, Lisa and Poplawska, Krystyna and Forslund-Startceva, Sofia Kirke
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2025
+  doi: 10.1038/s41467-025-64218-z
+  pmid: '41253756'
+  pmc: PMC12627475
+  abstract: Cystic fibrosis (CF) is a genetic disorder caused by mutations in the CFTR gene, leading to impaired CFTR function, mucus accumulation, chronic infections, and inflammation. The triple combination elexacaftor/tezacaftor/ivacaftor (ETI) has transformed CF treatment by restoring CFTR function. However, how ETI-induced physiological improvements affect long-standing dysbiosis and pathogen colonization across microbiome habitats remains poorly understood. In this prospective longitudinal study (DRKS00023862), we analyzed sputum, throat, and stool microbiomes of pwCF (n = 35) before and after ETI initiation, alongside healthy controls (n = 49). The primary endpoint was longitudinal change in diversity, species richness, and microbial composition in the respiratory and intestinal microbiome, profiled by 16S rRNA gene sequencing. Secondary endpoints included changes in lung function, systemic and gastrointestinal inflammation. We show how improved CFTR function and direct antibacterial
+    effects of ETI create a niche disadvantage for Staphylococcus in the sputum microbiome. Respiratory microbiome shifts were immediate, while gut changes emerged gradually. Escherichia abundance in stool, initially elevated in pwCF, decreased post-ETI and correlated with lower fecal calprotectin. These findings demonstrate that ETI can partially reverse CF-associated dysbiosis through improved host physiology. They offer insights into host-microbiome dynamics under therapeutic modulation and emphasize the need for confounder-aware models in complex clinical populations.
+  pdf: refs/K/Knoll et al. 2025 - CFTR modulator therapy drives microbiome restructuri ... ed host physiology in cystic fibrosis - the IMMProveCF phase IV trial.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Knoll2025-mi_deterministic_features.yaml
+    llm_refined_features: validation/features/Knoll2025-mi_llm_refined_features.yaml
+    gold_features: validation/features/Knoll2025-mi_gold_features.yaml
+    extracted_text: validation/extracted/Knoll2025-mi_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Knoll2025-mi_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Knoll2025-mi_llm_refined.md
+    recommendation_gold: validation/recommendations/Knoll2025-mi_gold.md
+- id: Barrio-Hernandez2023-ay
+  entry_type: article
+  title: Clustering predicted structures at the scale of the known protein universe
+  authors: Barrio-Hernandez, Inigo and Yeo, Jingi and Jänes, Jürgen and Mirdita, Milot and Gilchrist, Cameron L M and Wein, Tanita and Varadi, Mihaly and Velankar, Sameer and Beltrao, Pedro and Steinegger, Martin
+  journal: Nature
+  actual_journal: Nature
+  year: 2023
+  doi: ''
+  pmid: ''
+  pmc: ''
+  abstract: Proteins are key to all cellular processes and their structure is important in understanding their function and evolution. Sequence-based predictions of protein structures have increased in accuracy, and over 214 million predicted structures are available in the AlphaFold database. However, studying protein structures at this scale requires highly efficient methods. Here, we developed a structural-alignment-based clustering algorithm—Foldseek cluster—that can cluster hundreds of millions of structures. Using this method, we have clustered all of the structures in the AlphaFold database, identifying 2.30 million non-singleton structural clusters, of which 31% lack annotations representing probable previously undescribed structures. Clusters without annotation tend to have few representatives covering only 4% of all proteins in the AlphaFold database. Evolutionary analysis suggests that most clusters are ancient in …
+  pdf: refs/B/Barrio-Hernandez et al. 2023 - Clustering predicted structures at the scale of the known protein universe.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Barrio-Hernandez2023-ay_deterministic_features.yaml
+    llm_refined_features: validation/features/Barrio-Hernandez2023-ay_llm_refined_features.yaml
+    gold_features: validation/features/Barrio-Hernandez2023-ay_gold_features.yaml
+    extracted_text: validation/extracted/Barrio-Hernandez2023-ay_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Barrio-Hernandez2023-ay_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Barrio-Hernandez2023-ay_llm_refined.md
+    recommendation_gold: validation/recommendations/Barrio-Hernandez2023-ay_gold.md
+- id: Moon2025-ag
+  entry_type: article
+  title: Considerations and perspectives on phage therapy from the transatlantic taskforce on antimicrobial resistance
+  authors: Moon, Kyung and Coxon, Carmen and Årdal, Christine and Botgros, Radu and Djebara, Sarah and Durno, Laura and Fiore, Cara R and Perrin, Jean-Baptiste and Dixon, Dennis M and Cavaleri, Marco
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2025
+  doi: 10.1038/s41467-025-64608-3
+  pmid: '41345089'
+  pmc: PMC12678583
+  abstract: Amid rising antimicrobial resistance and limited antibiotic innovation, bacteriophages are gaining attention as potential therapeutics across human health, animal, and food sectors. Despite historical use, their clinical application in humans remains constrained by scientific, industrial, and regulatory challenges. To address these issues, the Transatlantic Task Force on Antimicrobial Resistance (TATFAR) convened sessions with experts from member parties. This perspective synthesizes insights from the TATFAR group, highlighting regulatory differences, research gaps, and opportunities for international collaborations to advance bacteriophage therapy.
+  pdf: refs/M/Moon et al. 2025 - Considerations and perspectives on phage therapy from the transatlantic taskforce on antimicrobial resistance.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Moon2025-ag_deterministic_features.yaml
+    llm_refined_features: validation/features/Moon2025-ag_llm_refined_features.yaml
+    gold_features: validation/features/Moon2025-ag_gold_features.yaml
+    extracted_text: validation/extracted/Moon2025-ag_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Moon2025-ag_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Moon2025-ag_llm_refined.md
+    recommendation_gold: validation/recommendations/Moon2025-ag_gold.md
+- id: Ryan2025-xa
+  entry_type: article
+  title: Bifidobacteria support optimal infant vaccine responses
+  authors: Ryan, Feargal J and Clarke, Michelle and Lynn, Miriam A and Benson, Saoirse C and McAlister, Sonia and Giles, Lynne C and Choo, Jocelyn M and Rossouw, Charné and Ng, Yan Yung and Semchenko, Evgeny A and Richard, Alyson and Leong, Lex E X and Taylor, Steven L and Blake, Stephen J and Mugabushaka, Joyce I and Walker, Mary and Wesselingh, Steve L and Licciardi, Paul V and Seib, Kate L and Tumes, Damon J and Richmond, Peter and Rogers, Geraint B and Marshall, Helen S and Lynn, David J
+  journal: Nature
+  actual_journal: Nature
+  year: 2025
+  doi: 10.1038/s41586-025-08796-4
+  pmid: '40175554'
+  pmc: ''
+  abstract: Accumulating evidence indicates that antibiotic exposure may lead to impaired vaccine responses1-4; however, the mechanisms underlying this association remain poorly understood. Here we prospectively followed 191 healthy, vaginally born, term infants from birth to 15 months, using a systems vaccinology approach to assess the effects of antibiotic exposure on immune responses to vaccination. Exposure to direct neonatal but not intrapartum antibiotics was associated with significantly lower antibody titres against various polysaccharides in the 13-valent pneumococcal conjugate vaccine and the Haemophilus influenzae type b polyribosylribitol phosphate and diphtheria toxoid antigens in the combined 6-in-1 Infanrix Hexa vaccine at 7 months of age. Blood from infants exposed to neonatal antibiotics had an inflammatory transcriptional profile before vaccination; in addition, faecal metagenomics showed reduced abundance of Bifidobacterium species in these infants at the time of vaccination,
+    which was correlated with reduced vaccine antibody titres 6 months later. In preclinical models, responses to the 13-valent pneumococcal conjugate vaccine were strongly dependent on an intact microbiota but could be restored in germ-free mice by administering a consortium of Bifidobacterium species or a probiotic already widely used in neonatal units. Our data suggest that microbiota-targeted interventions could mitigate the detrimental effects of early-life antibiotics on vaccine immunogenicity.
+  pdf: refs/R/Ryan et al. 2025 - Bifidobacteria support optimal infant vaccine responses.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Ryan2025-xa_deterministic_features.yaml
+    llm_refined_features: validation/features/Ryan2025-xa_llm_refined_features.yaml
+    gold_features: validation/features/Ryan2025-xa_gold_features.yaml
+    extracted_text: validation/extracted/Ryan2025-xa_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Ryan2025-xa_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Ryan2025-xa_llm_refined.md
+    recommendation_gold: validation/recommendations/Ryan2025-xa_gold.md
+- id: Abramson2024-zr
+  entry_type: article
+  title: Accurate structure prediction of biomolecular interactions with {AlphaFold} 3
+  authors: Abramson, Josh and Adler, Jonas and Dunger, Jack and Evans, Richard and Green, Tim and Pritzel, Alexander and Ronneberger, Olaf and Willmore, Lindsay and Ballard, Andrew J and Bambrick, Joshua and Bodenstein, Sebastian W and Evans, David A and Hung, Chia-Chun and O'Neill, Michael and Reiman, David and Tunyasuvunakool, Kathryn and Wu, Zachary and Žemgulytė, Akvilė and Arvaniti, Eirini and Beattie, Charles and Bertolli, Ottavia and Bridgland, Alex and Cherepanov, Alexey and Congreve, Miles and Cowen-Rivers, Alexander I and Cowie, Andrew and Figurnov, Michael and Fuchs, Fabian B and Gladman, Hannah and Jain, Rishub and Khan, Yousuf A and Low, Caroline M R and Perlin, Kuba and Potapenko, Anna and Savy, Pascal and Singh, Sukhdeep and Stecula, Adrian and Thillaisundaram, Ashok and Tong, Catherine and Yakneen, Sergei and Zhong, Ellen D and Zielinski, Michal and Žídek, Augustin and Bapst, Victor and Kohli, Pushmeet and Jaderberg, Max and Hassabis, Demis and Jumper, John M
+  journal: Nature
+  actual_journal: Nature
+  year: 2024
+  doi: 10.1038/s41586-024-07487-w
+  pmid: '38718835'
+  pmc: ''
+  abstract: 'The introduction of AlphaFold 21 has spurred a revolution in modelling the structure of proteins and their interactions, enabling a huge range of applications in protein modelling and design2-6. In this paper, we describe our AlphaFold 3 model with a substantially updated diffusion-based architecture, which is capable of joint structure prediction of complexes including proteins, nucleic acids, small molecules, ions, and modified residues. The new AlphaFold model demonstrates significantly improved accuracy over many previous specialised tools: far greater accuracy on protein-ligand interactions than state of the art docking tools, much higher accuracy on protein-nucleic acid interactions than nucleic-acid-specific predictors, and significantly higher antibody-antigen prediction accuracy than AlphaFold-Multimer v2.37,8. Together these results show that high accuracy modelling across biomolecular space is possible within a single unified deep learning framework.'
+  pdf: refs/A/Abramson et al. 2024 - Accurate structure prediction of biomolecular interactions with AlphaFold 3.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Abramson2024-zr_deterministic_features.yaml
+    llm_refined_features: validation/features/Abramson2024-zr_llm_refined_features.yaml
+    gold_features: validation/features/Abramson2024-zr_gold_features.yaml
+    extracted_text: validation/extracted/Abramson2024-zr_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Abramson2024-zr_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Abramson2024-zr_llm_refined.md
+    recommendation_gold: validation/recommendations/Abramson2024-zr_gold.md
+- id: Mallawaarachchi2024-qn
+  entry_type: article
+  title: 'Solving genomic puzzles: computational methods for metagenomic binning'
+  authors: Mallawaarachchi, Vijini and Wickramarachchi, Anuradha and Xue, Hansheng and Papudeshi, Bhavya and Grigson, Susanna R and Bouras, George and Prahl, Rosa E and Kaphle, Anubhav and Verich, Andrey and Talamantes-Becerra, Berenice and Dinsdale, Elizabeth A and Edwards, Robert A
+  journal: Brief. Bioinform.
+  actual_journal: Brief. Bioinform.
+  year: 2024
+  doi: 10.1093/bib/bbae372
+  pmid: '39082646'
+  pmc: PMC11289683
+  abstract: Metagenomics involves the study of genetic material obtained directly from communities of microorganisms living in natural environments. The field of metagenomics has provided valuable insights into the structure, diversity and ecology of microbial communities. Once an environmental sample is sequenced and processed, metagenomic binning clusters the sequences into bins representing different taxonomic groups such as species, genera, or higher levels. Several computational tools have been developed to automate the process of metagenomic binning. These tools have enabled the recovery of novel draft genomes of microorganisms allowing us to study their behaviors and functions within microbial communities. This review classifies and analyzes different approaches of metagenomic binning and different refinement, visualization, and evaluation techniques used by these methods. Furthermore, the review highlights the current challenges and areas of improvement present within the field of
+    research.
+  pdf: refs/M/Mallawaarachchi et al. 2024 - bbae372.pdf;M/Mallawaarachchi et al. 2024 - bbae372 (1).pdf;M/Mallawaarachchi et al. 2024 - bbae372 (2).pdf;M/Mallawaarachchi et al. 2024 - bbae372 (3).pdf;M/Mallawaarachchi et al. 2024 - Solving genomic puzzles - computational methods for metagenomic binning.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Mallawaarachchi2024-qn_deterministic_features.yaml
+    llm_refined_features: validation/features/Mallawaarachchi2024-qn_llm_refined_features.yaml
+    gold_features: validation/features/Mallawaarachchi2024-qn_gold_features.yaml
+    extracted_text: validation/extracted/Mallawaarachchi2024-qn_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Mallawaarachchi2024-qn_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Mallawaarachchi2024-qn_llm_refined.md
+    recommendation_gold: validation/recommendations/Mallawaarachchi2024-qn_gold.md
+- id: Bouras2023-wx
+  entry_type: article
+  title: 'Pharokka: a fast scalable bacteriophage annotation tool'
+  authors: Bouras, George and Nepal, Roshan and Houtak, Ghais and Psaltis, Alkis James and Wormald, Peter-John and Vreugde, Sarah
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2023
+  doi: 10.1093/bioinformatics/btac776
+  pmid: '36453861'
+  pmc: PMC9805569
+  abstract: 'SUMMARY: In recent years, there has been an increasing interest in bacteriophages, which has led to growing numbers of bacteriophage genomic sequences becoming available. Consequently, there is a need for a rapid and consistent genomic annotation tool dedicated for bacteriophages. Existing tools either are not designed specifically for bacteriophages or are web- and email-based and require significant manual curation, which makes their integration into bioinformatic pipelines challenging. Pharokka was created to provide a tool that annotates bacteriophage genomes easily, rapidly and consistently with standards compliant outputs. Moreover, Pharokka requires only two lines of code to install and use and takes under 5 min to run for an average 50-kb bacteriophage genome. AVAILABILITY AND IMPLEMENTATION: Pharokka is implemented in Python and is available as a bioconda package using ''conda install -c bioconda pharokka''. The source code is available on GitHub (https://github.com/gbouras13/pharokka).
+    Pharokka has been tested on Linux-64 and MacOSX machines and on Windows using a Linux Virtual Machine.'
+  pdf: refs/B/Bouras et al. 2023 - Pharokka - a fast scalable bacteriophage annotation tool.pdf;B/Bouras et al. 2023 - btac776.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Bouras2023-wx_deterministic_features.yaml
+    llm_refined_features: validation/features/Bouras2023-wx_llm_refined_features.yaml
+    gold_features: validation/features/Bouras2023-wx_gold_features.yaml
+    extracted_text: validation/extracted/Bouras2023-wx_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Bouras2023-wx_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Bouras2023-wx_llm_refined.md
+    recommendation_gold: validation/recommendations/Bouras2023-wx_gold.md
+- id: Ortiz-de-Ora2025-kf
+  entry_type: article
+  title: Phollow reveals in situ phage transmission dynamics in the zebrafish gut microbiome at single-virion resolution
+  authors: Ortiz de Ora, Lizett and Wiles, Elizabeth T and Zünd, Mirjam and Bañuelos, Maria S and Haro-Ramirez, Nancy and Suder, Diana S and Ujagar, Naveena and Ayala-Angulo, Julio and Trinh, Calvin and Knitter, Courtney and Gonen, Shane and Nicholas, Dequina A and Wiles, Travis J
+  journal: Nat. Microbiol.
+  actual_journal: Nat. Microbiol.
+  year: 2025
+  doi: 10.1038/s41564-025-01981-1
+  pmid: '40251446'
+  pmc: ''
+  abstract: Bacteriophages show promise for microbiome engineering, but studying their transmission dynamics in multimember communities and animal hosts is technically challenging. We therefore created 'Phollow', a live imaging-based approach for tracking phage replication and spread in situ with single-virion resolution. Following interbacterial phage transmission is achieved by marking virions with distinct fluorescent proteins during assembly in newly infected cells. In vitro cell virology studies revealed clouds of phage virions dispersing upon bacterial lysis, leading to rampant transmission. Combining Phollow with optically transparent zebrafish, we visualized phage outbreaks within the vertebrate gut. We observed that virions from a zebrafish-derived Plesiomonas strain, but not a human-derived E. coli, rapidly disseminate systemically to the liver and brain. Moreover, antibiotics triggered waves of interbacterial transmission and sudden shifts in gut community ecology. Phollow ultimately
+    empowers multiscale investigations of phage transmission and transkingdom interactions that have the potential to open new avenues for phage-based microbiome therapies.
+  pdf: refs/O/Ortiz de Ora et al. 2025 - Phollow reveals in situ phage transmission dynamics in the zebrafish gut microbiome at single-virion resolution.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Ortiz-de-Ora2025-kf_deterministic_features.yaml
+    llm_refined_features: validation/features/Ortiz-de-Ora2025-kf_llm_refined_features.yaml
+    gold_features: validation/features/Ortiz-de-Ora2025-kf_gold_features.yaml
+    extracted_text: validation/extracted/Ortiz-de-Ora2025-kf_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Ortiz-de-Ora2025-kf_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Ortiz-de-Ora2025-kf_llm_refined.md
+    recommendation_gold: validation/recommendations/Ortiz-de-Ora2025-kf_gold.md
+- id: Grigson2026-wy
+  entry_type: article
+  title: Co-migration of hundreds of microbial species over metres drives selection and promotes non-motile hitchhikers
+  authors: Grigson, Susanna R and Hutton, Abbey L K and Carlson-Jones, Jessica A P and Paterson, James S and Giles, Sarah K and Harker, Clarice M and Grigson, Amelia K and Annells, Amy N and Roach, Michael J and Speck, Peter G and Edwards, Robert A and Mitchell, James G
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2026
+  doi: 10.1038/s41467-026-72998-1
+  pmid: '42156755'
+  pmc: ''
+  abstract: Bacteria dominate the biosphere and assemble into highly diverse communities, yet the mechanisms by which these communities migrate remain poorly understood. Here, we used a meso-tube chemotaxis assay to track taxonomic, functional and genomic shifts within sewage-derived microbial communities that migrate in self-organized bands over metre scales. Chemotactic bands accelerated during migration and incorporated non-motile bacterial hitchhikers as well as up to 10⁶ viruses/mL. Approximately 500 species co-migrated, with relative abundances fluctuating by orders of magnitude over time. The final communities exhibited enrichment of functional genes linked to motility and chemotaxis, consistent with adaptation to migration. Despite this functional convergence, replicate communities differed in taxonomic composition, reflecting environmental filtering that selects for functionally equivalent species. By revealing how chemotaxis governs large-scale microbial migration, this work provides
+    a framework for understanding microbial spread in natural ecosystems and host-associated environments.
+  pdf: refs/G/Grigson et al. 2026 - Co-migration of hundreds of microbial species over metres drives selection and promotes non-motile hitchhikers.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Grigson2026-wy_deterministic_features.yaml
+    llm_refined_features: validation/features/Grigson2026-wy_llm_refined_features.yaml
+    gold_features: validation/features/Grigson2026-wy_gold_features.yaml
+    extracted_text: validation/extracted/Grigson2026-wy_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Grigson2026-wy_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Grigson2026-wy_llm_refined.md
+    recommendation_gold: validation/recommendations/Grigson2026-wy_gold.md
+- id: Manghi2025-hd
+  entry_type: article
+  title: Meta-analysis of 22,710 human microbiome metagenomes defines an oral-to-gut microbial enrichment score and associations with host health and disease
+  authors: Manghi, Paolo and Antonello, Giacomo and Schiffer, Lucas and Golzato, Davide and Wokaty, Andres and Beghini, Francesco and Mirzayi, Chloe and Long, Kaelyn and Gravel-Pucillo, Kai and Piccinno, Gianmarco and Gamboa-Tuz, Samuel David and Bonetti, Arianna and D'Amato, Giacomo and Azhar, Rimsha and Eckenrode, Kelly and Zohra, Fatima and Giunchiglia, Valentina and Keller, Marisa and Pedrotti, Anna and Likhotkin, Ilya and Elsafoury, Shaimaa and Geistlinger, Ludwig and Blanco-Miguez, Aitor and Thomas, Andrew Maltez and Zolfo, Moreno and Ramos, Marcel and Valles-Colomer, Mireia and Tamburini, Sabrina and Asnicar, Francesco and Jones, Heidi E and Huttenhower, Curtis and Carey, Vincent and Davis, Sean and Pasolli, Edoardo and Oh, Sehyun and Segata, Nicola and Waldron, Levi
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2025
+  doi: 10.1038/s41467-025-66888-1
+  pmid: '41436448'
+  pmc: PMC12780261
+  abstract: Large public datasets of the human microbiome now exist but combining them for large-scale analysis is difficult due to a lack of standardization. We developed curatedMetagenomicData (cMD) 3, a uniformly processed collection of over 22,000 human microbiome samples with manually curated metadata from 94 studies and 42 countries. This large and diverse resource allows for meta-analysis of the links between microbes and human health. Through meta-analysis, we identified hundreds of microbial species and thousands of microbial functions significantly associated with a person's sex, age, body mass index, and disease status, and catalog these as references. We developed an ``oral enrichment score'' (OES) based on the relative abundance of bacteria typically found in the oral cavity and not in the gut. Higher OES in the gut is a consistent feature in individuals with disease, suggesting that the relative abundance of oral bacteria in the gut is a simple and quantifiable signal of altered
+    microbiome health. These analyses identify modest but widely shared patterns in human microbiomes, serving as a reproducible and readily updatable reference.
+  pdf: refs/M/Manghi et al. 2025 - Meta-analysis of 22,710 human microbiome metagenome ... robial enrichment score and associations with host health and disease.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Manghi2025-hd_deterministic_features.yaml
+    llm_refined_features: validation/features/Manghi2025-hd_llm_refined_features.yaml
+    gold_features: validation/features/Manghi2025-hd_gold_features.yaml
+    extracted_text: validation/extracted/Manghi2025-hd_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Manghi2025-hd_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Manghi2025-hd_llm_refined.md
+    recommendation_gold: validation/recommendations/Manghi2025-hd_gold.md
+- id: Martin2025-me
+  entry_type: article
+  title: A call for caution in the biological interpretation of viral auxiliary metabolic genes
+  authors: Martin, Cody and Emerson, Joanne B and Roux, Simon and Anantharaman, Karthik
+  journal: Nat. Microbiol.
+  actual_journal: Nat. Microbiol.
+  year: 2025
+  doi: 10.1038/s41564-025-02095-4
+  pmid: '40866482'
+  pmc: ''
+  abstract: Virus-encoded auxiliary metabolic genes (AMGs) are non-essential genes that increase viral fitness by maintaining or manipulating host metabolism during infection. AMGs are intriguing from an evolutionary perspective, as most viral genomes are highly compact and have limited coding capacity for accessory genes. Advances in viral (meta)genomics have expanded the detection of putative AMGs from viruses in diverse environments. However, this has also led to many instances of misannotation due to the limitations of annotation tools, resulting in misinterpretations about the roles of some viral genes. Here, we highlight studies that support claims about AMGs with more than just function predictions for guidance on best practices. We then propose the adoption of an expanded, inclusive view of all genes auxiliary to core viral functions with the term 'auxiliary viral genes' (AVGs), alongside an associated eco-evolutionary framework for considering the types of analyses that can better
+    support claims made about AVGs.
+  pdf: refs/Martin2025-me.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Martin2025-me_deterministic_features.yaml
+    llm_refined_features: validation/features/Martin2025-me_llm_refined_features.yaml
+    gold_features: validation/features/Martin2025-me_gold_features.yaml
+    extracted_text: validation/extracted/Martin2025-me_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Martin2025-me_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Martin2025-me_llm_refined.md
+    recommendation_gold: validation/recommendations/Martin2025-me_gold.md
+- id: Malajczuk2026-ka
+  entry_type: article
+  title: Towards accurate artificial intelligence models for strain-level phage-host prediction
+  authors: Malajczuk, Chris J and Vaitekenas, Andrew and Iszatt, Joshua J and Stick, Stephen M and Kicic, Anthony and Karpievitch, Yuliya V
+  journal: Brief. Bioinform.
+  actual_journal: Brief. Bioinform.
+  year: 2026
+  doi: 10.1093/bib/bbag085
+  pmid: '41744225'
+  pmc: PMC12936788
+  abstract: Strain-level prediction of phage-host interactions (PHIs) is essential for developing targeted phage therapies. Traditional empirical and homology-based methods often lack the resolution and scalability needed for precision applications. Recently, a new generation of artificial intelligence-driven models has emerged leveraging genomic information to infer PHIs at strain-level resolution. Here, we review recent advances in strain-level PHI prediction, spanning biologically grounded feature-based models, hybrid representation-learning frameworks, phylogeny-agnostic machine learning approaches, and end-to-end deep learning architectures. We examine how these modelling strategies navigate shared structural constraints arising from sparse and imbalanced outcome data, assay-dependent labels, infection complexity, and limited generalization. We further analyse how evaluation design, negative definition, and train-test splitting strategies shape apparent strain-level performance, and
+    why inappropriate benchmarking can inflate claims of biological resolution. Framing these issues in the context of clinical phage therapy, we examine how current strain-level PHI prediction frameworks perform under the biological, experimental, and data constraints characteristic of real-world therapeutic settings. Finally, we outline pragmatic pathways toward more robust, interpretable, and clinically translatable PHI prediction systems.
+  pdf: refs/M/Malajczuk et al. 2026 - Towards accurate artificial intelligence models for strain-level phage-host prediction.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Malajczuk2026-ka_deterministic_features.yaml
+    llm_refined_features: validation/features/Malajczuk2026-ka_llm_refined_features.yaml
+    gold_features: validation/features/Malajczuk2026-ka_gold_features.yaml
+    extracted_text: validation/extracted/Malajczuk2026-ka_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Malajczuk2026-ka_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Malajczuk2026-ka_llm_refined.md
+    recommendation_gold: validation/recommendations/Malajczuk2026-ka_gold.md
+- id: Shulgina2023-wj
+  entry_type: article
+  title: 'Codetta: predicting the genetic code from nucleotide sequence'
+  authors: Shulgina, Yekaterina and Eddy, Sean R
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2023
+  doi: 10.1093/bioinformatics/btac802
+  pmid: '36511586'
+  pmc: PMC9825746
+  abstract: 'SUMMARY: Codetta is a Python program for predicting the genetic code table of an organism from nucleotide sequences. Codetta can analyze an arbitrary nucleotide sequence and needs no sequence annotation or taxonomic placement. The most likely amino acid decoding for each of the 64 codons is inferred from alignments of profile hidden Markov models of conserved proteins to the input sequence. AVAILABILITY AND IMPLEMENTATION: Codetta 2.0 is implemented as a Python 3 program for MacOS and Linux and is available from http://eddylab.org/software/codetta/codetta2.tar.gz and at http://github.com/kshulgina/codetta. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.'
+  pdf: refs/S/Shulgina and Eddy 2023 - Codetta - predicting the genetic code from nucleotide sequence.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Shulgina2023-wj_deterministic_features.yaml
+    llm_refined_features: validation/features/Shulgina2023-wj_llm_refined_features.yaml
+    gold_features: validation/features/Shulgina2023-wj_gold_features.yaml
+    extracted_text: validation/extracted/Shulgina2023-wj_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Shulgina2023-wj_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Shulgina2023-wj_llm_refined.md
+    recommendation_gold: validation/recommendations/Shulgina2023-wj_gold.md
+- id: Gamaarachchi2025-on
+  entry_type: article
+  title: Targeted sequencing and iterative assembly of near-complete genomes
+  authors: Gamaarachchi, Hasindu and Stevanovski, Igor and Hammond, Jillian M and M Reis, Andre L and Rapadas, Melissa and Jayasooriya, Kavindu and Russell, Tonia and Yeow, Dennis and Hort, Yvonne and Patel, Chirag and Mallett, Andrew J and Stackpoole, Elaine and Roman, Lauren and Silver, Luke W and Hogg, Carolyn J and Streeting, Louise M and Bogdanovic, Ozren and Coelho Rodrigues Noronha, Renata and Santos do Nascimento, Luís Adriano and Lima Cardoso, Adauto and Georges, Arthur and Cheng, Haoyu and Patel, Hardip R and Kumar, Kishore Raj and Mallawaarachchi, Amali C and Deveson, Ira W
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2025
+  doi: 10.1038/s41467-025-65410-x
+  pmid: '41285770'
+  pmc: PMC12644460
+  abstract: Advances in long-read sequencing (LRS) and assembly algorithms have made it possible to create highly complete genome assemblies for humans, animals and plants. However, ongoing development is needed to improve accessibility, affordability, and assembly quality and completeness. 'Cornetto' is a new strategy in which we use programmable selective nanopore sequencing to focus LRS data production onto the unsolved regions of a nascent assembly. This improves assembly quality and streamlines the process, both for humans and non-human vertebrates. Cornetto enables us to generate highly complete diploid human genome assemblies using only nanopore LRS data, surpassing the quality of previous efforts at a fraction of the cost. Cornetto enables genome assembly from challenging sample types like human saliva. Finally, we obtain accurate assemblies for clinically-relevant repetitive loci at the extremes of the genome, demonstrating valid approaches for genetic diagnosis in facioscapulohumeral
+    muscular dystrophy (FSHD) and MUC1-autosomal dominant tubulointerstitial kidney disease (MUC1-ADTKD).
+  pdf: refs/G/Gamaarachchi et al. 2025 - Targeted sequencing and iterative assembly of near-complete genomes.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Gamaarachchi2025-on_deterministic_features.yaml
+    llm_refined_features: validation/features/Gamaarachchi2025-on_llm_refined_features.yaml
+    gold_features: validation/features/Gamaarachchi2025-on_gold_features.yaml
+    extracted_text: validation/extracted/Gamaarachchi2025-on_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Gamaarachchi2025-on_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Gamaarachchi2025-on_llm_refined.md
+    recommendation_gold: validation/recommendations/Gamaarachchi2025-on_gold.md
+- id: Davis2020-jf
+  entry_type: article
+  title: 'The {PATRIC} Bioinformatics Resource Center: expanding data and analysis capabilities'
+  authors: Davis, James J and Wattam, Alice R and Aziz, Ramy K and Brettin, Thomas and Butler, Ralph and Butler, Rory M and Chlenski, Philippe and Conrad, Neal and Dickerman, Allan and Dietrich, Emily M and Gabbard, Joseph L and Gerdes, Svetlana and Guard, Andrew and Kenyon, Ronald W and Machi, Dustin and Mao, Chunhong and Murphy-Olson, Dan and Nguyen, Marcus and Nordberg, Eric K and Olsen, Gary J and Olson, Robert D and Overbeek, Jamie C and Overbeek, Ross and Parrello, Bruce and Pusch, Gordon D and Shukla, Maulik and Thomas, Chris and VanOeffelen, Margo and Vonstein, Veronika and Warren, Andrew S and Xia, Fangfang and Xie, Dawen and Yoo, Hyunseung and Stevens, Rick
+  journal: Nucleic Acids Res.
+  actual_journal: Nucleic Acids Res.
+  year: 2020
+  doi: 10.1093/nar/gkz943
+  pmid: '31667520'
+  pmc: PMC7145515
+  abstract: The PathoSystems Resource Integration Center (PATRIC) is the bacterial Bioinformatics Resource Center funded by the National Institute of Allergy and Infectious Diseases (https://www.patricbrc.org). PATRIC supports bioinformatic analyses of all bacteria with a special emphasis on pathogens, offering a rich comparative analysis environment that provides users with access to over 250 000 uniformly annotated and publicly available genomes with curated metadata. PATRIC offers web-based visualization and comparative analysis tools, a private workspace in which users can analyze their own data in the context of the public collections, services that streamline complex bioinformatic workflows and command-line tools for bulk data analysis. Over the past several years, as genomic and other omics-related experiments have become more cost-effective and widespread, we have observed considerable growth in the usage of and demand for easy-to-use, publicly available bioinformatic tools and services.
+    Here we report the recent updates to the PATRIC resource, including new web-based comparative analysis tools, eight new services and the release of a command-line interface to access, query and analyze data.
+  pdf: refs/D/Davis et al. 2020 - The PATRIC Bioinformatics Resource Center - expanding data and analysis capabilities.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Davis2020-jf_deterministic_features.yaml
+    llm_refined_features: validation/features/Davis2020-jf_llm_refined_features.yaml
+    gold_features: validation/features/Davis2020-jf_gold_features.yaml
+    extracted_text: validation/extracted/Davis2020-jf_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Davis2020-jf_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Davis2020-jf_llm_refined.md
+    recommendation_gold: validation/recommendations/Davis2020-jf_gold.md
+- id: Rochette2026-og
+  entry_type: article
+  title: Diversity-generating retroelements for programmable targeted hypermutagenesis
+  authors: Rochette, Paul and Lopez-Rodriguez, Elena and Wen, David J and Régnier, Léo and Fan, Catherine and Maikova, Anna and Rostain, William and Wang, Linhan and Nooraddin, Imran and Maire, Amandine and Vittot, Paul and Barrabes, Nathan and Cerdas-Mejías, Karol Melissa and Bouvier, Auguste and Chrysostomou, Thea and Subrini, Orso and Wolff, Nicolas and Monasson, Rémi and Cocco, Simona and Shipman, Seth L and Laurenceau, Raphael and Bikard, David
+  journal: Nat. Biotechnol.
+  actual_journal: Nat. Biotechnol.
+  year: 2026
+  doi: 10.1038/s41587-026-03078-4
+  pmid: ''
+  pmc: ''
+  abstract: Diversity-generating retroelements (DGRs) are natural systems that accelerate the evolution of diverse bacterial functions through targeted hypermutation. We establish a method using DGRs coupled to recombineering (DGRec), which enables the diversification of any sequence of interest in Escherichia coli. Detailed characterization of reverse transcriptase sequence biases demonstrates how it maximizes the exploration of the sequence space while avoiding nonsense mutations. By leveraging the high error rate of the DGR reverse transcriptase at adenines, DGRec can efficiently diversify user-defined sequence windows of 50–200 bp. Mutations can be focused at specific positions, with rates reaching up to 1.38 × 10−2 per base per generation, allowing up to 24 mutations to accumulate within a single target sequence after 48 h. We apply DGRec to phage λ host-range engineering, to the evolution of dCas9 variants and to accelerated evolution of specific nanobodies through a bacterial display
+    setup. Lastly, we establish the feasibility of DGR-mediated mutagenesis in yeast by adapting a recombination and selection strategy previously developed for retrons. Diversity-generating retroelements are engineered for directed evolution in E.coli.
+  pdf: refs/Rochette2026-og.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Rochette2026-og_deterministic_features.yaml
+    llm_refined_features: validation/features/Rochette2026-og_llm_refined_features.yaml
+    gold_features: validation/features/Rochette2026-og_gold_features.yaml
+    extracted_text: validation/extracted/Rochette2026-og_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Rochette2026-og_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Rochette2026-og_llm_refined.md
+    recommendation_gold: validation/recommendations/Rochette2026-og_gold.md
+- id: Zhang2021-vb
+  entry_type: article
+  title: Exploring effectiveness of ab-initio protein-protein docking methods on a novel antibacterial protein complex dataset
+  authors: Zhang, Wei and Meng, Qiaozhen and Tang, Jijun and Guo, Fei
+  journal: Brief. Bioinform.
+  actual_journal: Brief. Bioinform.
+  year: 2021
+  doi: 10.1093/bib/bbab150
+  pmid: '33959764'
+  pmc: ''
+  abstract: Diseases caused by bacterial infections become a critical problem in public heath. Antibiotic, the traditional treatment, gradually loses their effectiveness due to the resistance. Meanwhile, antibacterial proteins attract more attention because of broad spectrum and little harm to host cells. Therefore, exploring new effective antibacterial proteins is urgent and necessary. In this paper, we are committed to evaluating the effectiveness of ab-initio docking methods in antibacterial protein-protein docking. For this purpose, we constructed a three-dimensional (3D) structure dataset of antibacterial protein complex, called APCset, which contained $19$ protein complexes whose receptors or ligands are homologous to antibacterial peptides from Antimicrobial Peptide Database. Then we selected five representative ab-initio protein-protein docking tools including ZDOCK3.0.2, FRODOCK3.0, ATTRACT, PatchDock and Rosetta to identify these complexes' structure, whose performance differences
+    were obtained by analyzing from five aspects, including top/best pose, first hit, success rate, average hit count and running time. Finally, according to different requirements, we assessed and recommended relatively efficient protein-protein docking tools. In terms of computational efficiency and performance, ZDOCK was more suitable as preferred computational tool, with average running time of $6.144$ minutes, average Fnat of best pose of $0.953$ and average rank of best pose of $4.158$. Meanwhile, ZDOCK still yielded better performance on Benchmark 5.0, which proved ZDOCK was effective in performing docking on large-scale dataset. Our survey can offer insights into the research on the treatment of bacterial infections by utilizing the appropriate docking methods.
+  pdf: refs/Zhang2021-vb.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Zhang2021-vb_deterministic_features.yaml
+    llm_refined_features: validation/features/Zhang2021-vb_llm_refined_features.yaml
+    gold_features: validation/features/Zhang2021-vb_gold_features.yaml
+    extracted_text: validation/extracted/Zhang2021-vb_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Zhang2021-vb_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Zhang2021-vb_llm_refined.md
+    recommendation_gold: validation/recommendations/Zhang2021-vb_gold.md
+- id: Handsley-Davis2023-oh
+  entry_type: article
+  title: Microbiome ownership for Indigenous peoples
+  authors: Handsley-Davis, Matilda and Anderson, Matthew Z and Bader, Alyssa C and Ehau-Taumaunu, Hanareia and Fox, Keolu and Kowal, Emma and Weyrich, Laura S
+  journal: Nat. Microbiol.
+  actual_journal: Nat. Microbiol.
+  year: 2023
+  doi: 10.1038/s41564-023-01470-3
+  pmid: '37770744'
+  pmc: ''
+  abstract: Several studies have reported increased microbial diversity, or distinct microbial community compositions, in the microbiomes of Indigenous peoples around the world. However, there is a widespread failure to include Indigenous cultures and perspectives in microbiome research programmes, and ethical issues pertaining to microbiome research involving Indigenous participants have not received enough attention. We discuss the benefits and risks arising from microbiome research involving Indigenous peoples and analyse microbiome ownership as an ethical concept in this context. We argue that microbiome ownership represents an opportunity for Indigenous peoples to steward and protect their resident microbial communities at every stage of research.
+  pdf: refs/H/Handsley-Davis et al. 2023 - Microbiome ownership for Indigenous peoples.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Handsley-Davis2023-oh_deterministic_features.yaml
+    llm_refined_features: validation/features/Handsley-Davis2023-oh_llm_refined_features.yaml
+    gold_features: validation/features/Handsley-Davis2023-oh_gold_features.yaml
+    extracted_text: validation/extracted/Handsley-Davis2023-oh_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Handsley-Davis2023-oh_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Handsley-Davis2023-oh_llm_refined.md
+    recommendation_gold: validation/recommendations/Handsley-Davis2023-oh_gold.md
+- id: Mallawaarachchi2023-ac
+  entry_type: article
+  title: 'Phables: from fragmented assemblies to high-quality bacteriophage genomes'
+  authors: Mallawaarachchi, Vijini and Roach, Michael J and Decewicz, Przemyslaw and Papudeshi, Bhavya and Giles, Sarah K and Grigson, Susanna R and Bouras, George and Hesse, Ryan D and Inglis, Laura K and Hutton, Abbey L K and Dinsdale, Elizabeth A and Edwards, Robert A
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2023
+  doi: 10.1093/bioinformatics/btad586
+  pmid: '37738590'
+  pmc: PMC10563150
+  abstract: 'MOTIVATION: Microbial communities have a profound impact on both human health and various environments. Viruses infecting bacteria, known as bacteriophages or phages, play a key role in modulating bacterial communities within environments. High-quality phage genome sequences are essential for advancing our understanding of phage biology, enabling comparative genomics studies and developing phage-based diagnostic tools. Most available viral identification tools consider individual sequences to determine whether they are of viral origin. As a result of challenges in viral assembly, fragmentation of genomes can occur, and existing tools may recover incomplete genome fragments. Therefore, the identification and characterisation of novel phage genomes remains a challenge, leading to the need of improved approaches for phage genome recovery. RESULTS: We introduce Phables, a new computational method to resolve phage genomes from fragmented viral metagenome assemblies. Phables identifies
+    phage-like components in the assembly graph, models each component as a flow network, and uses graph algorithms and flow decomposition techniques to identify genomic paths. Experimental results of viral metagenomic samples obtained from different environments show that Phables recovers on average over 49% more high-quality phage genomes compared to existing viral identification tools. Furthermore, Phables can resolve variant phage genomes with over 99% average nucleotide identity, a distinction that existing tools are unable to make. AVAILABILITY AND IMPLEMENTATION: Phables is available on GitHub at https://github.com/Vini2/phables.'
+  pdf: refs/M/Mallawaarachchi et al. 2023 - Phables - from fragmented assemblies to high-quality bacteriophage genomes.pdf;M/Mallawaarachchi et al. 2023 - Phables - from fragmented assemblies to high-quality bacteriophage genomes (1).pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Mallawaarachchi2023-ac_deterministic_features.yaml
+    llm_refined_features: validation/features/Mallawaarachchi2023-ac_llm_refined_features.yaml
+    gold_features: validation/features/Mallawaarachchi2023-ac_gold_features.yaml
+    extracted_text: validation/extracted/Mallawaarachchi2023-ac_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Mallawaarachchi2023-ac_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Mallawaarachchi2023-ac_llm_refined.md
+    recommendation_gold: validation/recommendations/Mallawaarachchi2023-ac_gold.md
+- id: Mallawaarachchi2020-dz
+  entry_type: article
+  title: '{GraphBin}: refined binning of metagenomic contigs using assembly graphs'
+  authors: Mallawaarachchi, Vijini and Wickramarachchi, Anuradha and Lin, Yu
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2020
+  doi: 10.1093/bioinformatics/btaa180
+  pmid: '32167528'
+  pmc: ''
+  abstract: 'MOTIVATION: The field of metagenomics has provided valuable insights into the structure, diversity and ecology within microbial communities. One key step in metagenomics analysis is to assemble reads into longer contigs which are then binned into groups of contigs that belong to different species present in the metagenomic sample. Binning of contigs plays an important role in metagenomics and most available binning algorithms bin contigs using genomic features such as oligonucleotide/k-mer composition and contig coverage. As metagenomic contigs are derived from the assembly process, they are output from the underlying assembly graph which contains valuable connectivity information between contigs that can be used for binning. RESULTS: We propose GraphBin, a new binning method that makes use of the assembly graph and applies a label propagation algorithm to refine the binning result of existing tools. We show that GraphBin can make use of the assembly graphs constructed from
+    both the de Bruijn graph and the overlap-layout-consensus approach. Moreover, we demonstrate improved experimental results from GraphBin in terms of identifying mis-binned contigs and binning of contigs discarded by existing binning tools. To the best of our knowledge, this is the first time that the information from the assembly graph has been used in a tool for the binning of metagenomic contigs. AVAILABILITY AND IMPLEMENTATION: The source code of GraphBin is available at https://github.com/Vini2/GraphBin. CONTACT: vijini.mallawaarachchi@anu.edu.au or yu.lin@anu.edu.au. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.'
+  pdf: refs/M/Mallawaarachchi et al. 2020 - GraphBin - refined binning of metagenomic contigs using assembly graphs.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Mallawaarachchi2020-dz_deterministic_features.yaml
+    llm_refined_features: validation/features/Mallawaarachchi2020-dz_llm_refined_features.yaml
+    gold_features: validation/features/Mallawaarachchi2020-dz_gold_features.yaml
+    extracted_text: validation/extracted/Mallawaarachchi2020-dz_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Mallawaarachchi2020-dz_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Mallawaarachchi2020-dz_llm_refined.md
+    recommendation_gold: validation/recommendations/Mallawaarachchi2020-dz_gold.md
+- id: Pfeifer2024-dl
+  entry_type: article
+  title: Phage-plasmids promote recombination and emergence of phages and plasmids
+  authors: Pfeifer, Eugen and Rocha, Eduardo P C
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2024
+  doi: 10.1038/s41467-024-45757-3
+  pmid: '38378896'
+  pmc: PMC10879196
+  abstract: Phages and plasmids are regarded as distinct types of mobile genetic elements that drive bacterial evolution by horizontal gene transfer. However, the distinction between both types is blurred by the existence of elements known as prophage-plasmids or phage-plasmids, which transfer horizontally between cells as viruses and vertically within cellular lineages as plasmids. Here, we study gene flow between the three types of elements. We show that the gene repertoire of phage-plasmids overlaps with those of phages and plasmids. By tracking recent recombination events, we find that phage-plasmids exchange genes more frequently with plasmids than with phages, and that direct gene exchange between plasmids and phages is less frequent in comparison. The results suggest that phage-plasmids can mediate gene flow between plasmids and phages, including exchange of mobile element core functions, defense systems, and antibiotic resistance. Moreover, a combination of gene transfer and gene
+    inactivation may result in the conversion of elements. For example, gene loss turns P1-like phage-plasmids into integrative prophages or into plasmids (that are no longer phages). Remarkably, some of the latter have acquired conjugation-related functions to became mobilisable by conjugation. Thus, our work indicates that phage-plasmids can play a key role in the transfer of genes across mobile elements within their hosts, and can act as intermediates in the conversion of one type of element into another.
+  pdf: refs/P/Pfeifer and Rocha 2024 - Phage-plasmids promote recombination and emergence of phages and plasmids.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Pfeifer2024-dl_deterministic_features.yaml
+    llm_refined_features: validation/features/Pfeifer2024-dl_llm_refined_features.yaml
+    gold_features: validation/features/Pfeifer2024-dl_gold_features.yaml
+    extracted_text: validation/extracted/Pfeifer2024-dl_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Pfeifer2024-dl_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Pfeifer2024-dl_llm_refined.md
+    recommendation_gold: validation/recommendations/Pfeifer2024-dl_gold.md
+- id: Southern2026-km
+  entry_type: article
+  title: Phage-assisted evolution of allosteric protein switches
+  authors: Southern, Nicholas T and von Bachmann, Anna and Hovsepyan, Alisa and Griebl, Marielouise and Wolf, Benedict and Lemmen, Nina and Kroell, Ann-Sophie and Westermann, Simon and Mathony, Jan and Niopek, Dominik
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2026
+  doi: 10.1038/s41467-026-71717-0
+  pmid: '41980963'
+  pmc: ''
+  abstract: Allostery, the transmission of locally induced conformational changes to distant functional sites, is a key mechanism for protein regulation. Artificial allosteric effectors enable remote manipulation of cell function; their engineering, however, is hampered by our limited understanding of allosteric residue networks. Here, we introduce a phage-assisted evolution platform for in vivo optimization of allosteric proteins. It applies opposing selection pressures to enhance activity and switchability of phage-encoded effectors and leverages retron-based recombineering to broadly explore fitness landscapes, introducing point mutations, insertions, and deletions. Applying this framework to the transcription factor AraC yielded near-binary optogenetic switches, with light-controlled activity spanning 1000-fold dynamic range. Long-read sequencing across selection cycles enabled high-resolution tracking of evolving variant pools, revealing adaptive trajectories and context-dependent residue
+    interactions. Mechanistically, we find that linker mutations promoting α-helix extension at the sensor-effector junction enhance conformational coupling between LOV2 and AraC. These variants emerge consistently across independently evolved pools, underscoring their functional relevance. Together, we develop a framework for the directed evolution of programmable allosteric switches in vivo. By coupling dynamic selection with deep mutational scanning and temporal sequencing, it enables both functional optimization and mechanistic insight into allosteric networks.
+  pdf: refs/S/Southern et al. 2026 - Phage-assisted evolution of allosteric protein switches.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Southern2026-km_deterministic_features.yaml
+    llm_refined_features: validation/features/Southern2026-km_llm_refined_features.yaml
+    gold_features: validation/features/Southern2026-km_gold_features.yaml
+    extracted_text: validation/extracted/Southern2026-km_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Southern2026-km_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Southern2026-km_llm_refined.md
+    recommendation_gold: validation/recommendations/Southern2026-km_gold.md
+- id: Camacho2009-uu
+  entry_type: article
+  title: '{BLAST+}: architecture and applications'
+  authors: Camacho, Christiam and Coulouris, George and Avagyan, Vahram and Ma, Ning and Papadopoulos, Jason and Bealer, Kevin and Madden, Thomas L
+  journal: BMC Bioinformatics
+  actual_journal: BMC Bioinformatics
+  year: 2009
+  doi: 10.1186/1471-2105-10-421
+  pmid: '20003500'
+  pmc: PMC2803857
+  abstract: 'BACKGROUND: Sequence similarity searching is a very important bioinformatics task. While Basic Local Alignment Search Tool (BLAST) outperforms exact methods through its use of heuristics, the speed of the current BLAST software is suboptimal for very long queries or database sequences. There are also some shortcomings in the user-interface of the current command-line applications. RESULTS: We describe features and improvements of rewritten BLAST software and introduce new command-line applications. Long query sequences are broken into chunks for processing, in some cases leading to dramatically shorter run times. For long database sequences, it is possible to retrieve only the relevant parts of the sequence, reducing CPU time and memory usage for searches of short queries against databases of contigs or chromosomes. The program can now retrieve masking information for database sequences from the BLAST databases. A new modular software library can now access subject sequence
+    data from arbitrary data sources. We introduce several new features, including strategy files that allow a user to save and reuse their favorite set of options. The strategy files can be uploaded to and downloaded from the NCBI BLAST web site. CONCLUSION: The new BLAST command-line applications, compared to the current BLAST tools, demonstrate substantial speed improvements for long queries as well as chromosome length database sequences. We have also improved the user interface of the command-line applications.'
+  pdf: refs/Camacho2009-uu.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Camacho2009-uu_deterministic_features.yaml
+    llm_refined_features: validation/features/Camacho2009-uu_llm_refined_features.yaml
+    gold_features: validation/features/Camacho2009-uu_gold_features.yaml
+    extracted_text: validation/extracted/Camacho2009-uu_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Camacho2009-uu_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Camacho2009-uu_llm_refined.md
+    recommendation_gold: validation/recommendations/Camacho2009-uu_gold.md
+- id: Harlington2025-yc
+  entry_type: article
+  title: Structural insights into {S}-lignin {O}-demethylation via a rare class of heme peroxygenase enzymes
+  authors: Harlington, Alix C and Das, Tuhin and Shearwin, Keith E and Bell, Stephen G and Whelan, Fiona
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2025
+  doi: 10.1038/s41467-025-57129-6
+  pmid: '39979323'
+  pmc: PMC11842817
+  abstract: The O-demethylation of lignin aromatics is a rate-limiting step in their bioconversion to higher-value compounds. A recently discovered cytochrome P450, SyoA, demethylates the S-lignin aromatic syringol. In this work, we solve high-resolution X-ray crystal structures of substrate-free and substrate-bound SyoA and evaluate demethylation of para-substituted S-lignin aromatics via monooxygenase and peroxide shunt pathways. We find that SyoA demethylates S-lignin aromatics exclusively using the peroxide shunt pathway. The atomic-resolution structures reveal the position of non-canonical residues in the I-helix (Gln252, Glu253). Mutagenesis of this amide-acid pair in SyoA shows they are critical for catalytic activity. This work expands the enzymatic toolkit for improving the capacity to funnel lignin derived aromatics towards higher value compounds and defines the chemistry within the active site of the enzyme that enables peroxygenase activity. These insights provide a framework
+    for engineering peroxygenase activity in other heme enzymes to generate easier to use biocatalysts.
+  pdf: refs/H/Harlington et al. 2025 - Structural insights into S-lignin O-demethylation via a rare class of heme peroxygenase enzymes.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Harlington2025-yc_deterministic_features.yaml
+    llm_refined_features: validation/features/Harlington2025-yc_llm_refined_features.yaml
+    gold_features: validation/features/Harlington2025-yc_gold_features.yaml
+    extracted_text: validation/extracted/Harlington2025-yc_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Harlington2025-yc_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Harlington2025-yc_llm_refined.md
+    recommendation_gold: validation/recommendations/Harlington2025-yc_gold.md
+- id: McNair2024-tj
+  entry_type: article
+  title: '{PRFect}: a tool to predict programmed ribosomal frameshifts in prokaryotic and viral genomes'
+  authors: McNair, Katelyn and Salamon, Peter and Edwards, Robert A and Segall, Anca M
+  journal: BMC Bioinformatics
+  actual_journal: BMC Bioinformatics
+  year: 2024
+  doi: 10.1186/s12859-024-05701-0
+  pmid: '38389044'
+  pmc: PMC10885494
+  abstract: 'BACKGROUND: One of the stranger phenomena that can occur during gene translation is where, as a ribosome reads along the mRNA, various cellular and molecular properties contribute to stalling the ribosome on a slippery sequence and shifting the ribosome into one of the other two alternate reading frames. The alternate frame has different codons, so different amino acids are added to the peptide chain. More importantly, the original stop codon is no longer in-frame, so the ribosome can bypass the stop codon and continue to translate the codons past it. This produces a longer version of the protein, a fusion of the original in-frame amino acids, followed by all the alternate frame amino acids. There is currently no automated software to predict the occurrence of these programmed ribosomal frameshifts (PRF), and they are currently only identified by manual curation. RESULTS: Here we present PRFect, an innovative machine-learning method for the detection and prediction of PRFs in
+    coding genes of various types. PRFect combines advanced machine learning techniques with the integration of multiple complex cellular properties, such as secondary structure, codon usage, ribosomal binding site interference, direction, and slippery site motif. Calculating and incorporating these diverse properties posed significant challenges, but through extensive research and development, we have achieved a user-friendly approach. The code for PRFect is freely available, open-source, and can be easily installed via a single command in the terminal. Our comprehensive evaluations on diverse organisms, including bacteria, archaea, and phages, demonstrate PRFect''s strong performance, achieving high sensitivity, specificity, and an accuracy exceeding 90%. The code for PRFect is freely available and installs with a single terminal command. CONCLUSION: PRFect represents a significant advancement in the field of PRF detection and prediction, offering a powerful tool for researchers and scientists
+    to unravel the intricacies of programmed ribosomal frameshifting in coding genes.'
+  pdf: refs/M/McNair et al. 2024 - PRFect - a tool to predict programmed ribosomal frameshifts in prokaryotic and viral genomes.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/McNair2024-tj_deterministic_features.yaml
+    llm_refined_features: validation/features/McNair2024-tj_llm_refined_features.yaml
+    gold_features: validation/features/McNair2024-tj_gold_features.yaml
+    extracted_text: validation/extracted/McNair2024-tj_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/McNair2024-tj_deterministic.md
+    recommendation_llm_refined: validation/recommendations/McNair2024-tj_llm_refined.md
+    recommendation_gold: validation/recommendations/McNair2024-tj_gold.md
+- id: Adriaenssens2023-sj
+  entry_type: article
+  title: Guidelines for public database submission of uncultivated virus genome sequences for taxonomic classification
+  authors: Adriaenssens, Evelien M and Roux, Simon and Brister, J Rodney and Karsch-Mizrachi, Ilene and Kuhn, Jens H and Varsani, Arvind and Yigang, Tong and Reyes, Alejandro and Lood, Cédric and Lefkowitz, Elliot J and Sullivan, Matthew B and Edwards, Robert A and Simmonds, Peter and Rubino, Luisa and Sabanadzovic, Sead and Krupovic, Mart and Dutilh, Bas E
+  journal: Nat. Biotechnol.
+  actual_journal: Nat. Biotechnol.
+  year: 2023
+  doi: 10.1038/s41587-023-01844-2
+  pmid: '37430074'
+  pmc: '7007245'
+  abstract: ''
+  pdf: refs/A/Adriaenssens et al. 2023 - Guidelines for public database submission of uncultivated virus genome sequences for taxonomic classification.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Adriaenssens2023-sj_deterministic_features.yaml
+    llm_refined_features: validation/features/Adriaenssens2023-sj_llm_refined_features.yaml
+    gold_features: validation/features/Adriaenssens2023-sj_gold_features.yaml
+    extracted_text: validation/extracted/Adriaenssens2023-sj_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Adriaenssens2023-sj_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Adriaenssens2023-sj_llm_refined.md
+    recommendation_gold: validation/recommendations/Adriaenssens2023-sj_gold.md
+- id: Haddock2023-nd
+  entry_type: article
+  title: Phage diversity in cell-free {DNA} identifies bacterial pathogens in human sepsis cases
+  authors: Haddock, Naomi L and Barkal, Layla J and Ram-Mohan, Nikhil and Kaber, Gernot and Chiu, Charles Y and Bhatt, Ami S and Yang, Samuel and Bollyky, Paul L
+  journal: Nat Microbiol
+  actual_journal: Nat Microbiol
+  year: 2023
+  doi: 10.1038/s41564-023-01406-x
+  pmid: '37308590'
+  pmc: '5594678'
+  abstract: Bacteriophages, viruses that infect bacteria, have great specificity for their bacterial hosts at the strain and species level. However, the relationship between the phageome and associated bacterial population dynamics is unclear. Here we generated a computational pipeline to identify sequences associated with bacteriophages and their bacterial hosts in cell-free DNA from plasma samples. Analysis of two independent cohorts, including a Stanford Cohort of 61 septic patients and 10 controls and the SeqStudy cohort of 224 septic patients and 167 controls, reveals a circulating phageome in the plasma of all sampled individuals. Moreover, infection is associated with overrepresentation of pathogen-specific phages, allowing for identification of bacterial pathogens. We find that information on phage diversity enables identification of the bacteria that produced these phages, including pathovariant strains of Escherichia coli. Phage sequences can likewise be used to distinguish between
+    closely related bacterial species such as Staphylococcus aureus, a frequent pathogen, and coagulase-negative Staphylococcus, a frequent contaminant. Phage cell-free DNA may have utility in studying bacterial infections.
+  pdf: refs/H/Haddock et al. 2023 - Phage diversity in cell-free DNA identifies bacterial pathogens in human sepsis cases.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Haddock2023-nd_deterministic_features.yaml
+    llm_refined_features: validation/features/Haddock2023-nd_llm_refined_features.yaml
+    gold_features: validation/features/Haddock2023-nd_gold_features.yaml
+    extracted_text: validation/extracted/Haddock2023-nd_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Haddock2023-nd_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Haddock2023-nd_llm_refined.md
+    recommendation_gold: validation/recommendations/Haddock2023-nd_gold.md
+- id: Blanco-Miguez2023-ej
+  entry_type: article
+  title: Extending and improving metagenomic taxonomic profiling with uncharacterized species using {MetaPhlAn} 4
+  authors: Blanco-Míguez, Aitor and Beghini, Francesco and Cumbo, Fabio and McIver, Lauren J and Thompson, Kelsey N and Zolfo, Moreno and Manghi, Paolo and Dubois, Leonard and Huang, Kun D and Thomas, Andrew Maltez and Nickols, William A and Piccinno, Gianmarco and Piperni, Elisa and Punčochář, Michal and Valles-Colomer, Mireia and Tett, Adrian and Giordano, Francesca and Davies, Richard and Wolf, Jonathan and Berry, Sarah E and Spector, Tim D and Franzosa, Eric A and Pasolli, Edoardo and Asnicar, Francesco and Huttenhower, Curtis and Segata, Nicola
+  journal: Nat. Biotechnol.
+  actual_journal: Nat. Biotechnol.
+  year: 2023
+  doi: 10.1038/s41587-023-01688-w
+  pmid: '36823356'
+  pmc: PMC10635831
+  abstract: Metagenomic assembly enables new organism discovery from microbial communities, but it can only capture few abundant organisms from most metagenomes. Here we present MetaPhlAn 4, which integrates information from metagenome assemblies and microbial isolate genomes for more comprehensive metagenomic taxonomic profiling. From a curated collection of 1.01 M prokaryotic reference and metagenome-assembled genomes, we define unique marker genes for 26,970 species-level genome bins, 4,992 of them taxonomically unidentified at the species level. MetaPhlAn 4 explains 20% more reads in most international human gut microbiomes and >40% in less-characterized environments such as the rumen microbiome and proves more accurate than available alternatives on synthetic evaluations while also reliably quantifying organisms with no cultured isolates. Application of the method to >24,500 metagenomes highlights previously undetected species to be strong biomarkers for host conditions and lifestyles
+    in human and mouse microbiomes and shows that even previously uncharacterized species can be genetically profiled at the resolution of single microbial strains.
+  pdf: refs/B/Blanco-Míguez et al. 2023 - Extending and improving metagenomic taxonomic profiling with uncharacterized species using MetaPhlAn 4.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Blanco-Miguez2023-ej_deterministic_features.yaml
+    llm_refined_features: validation/features/Blanco-Miguez2023-ej_llm_refined_features.yaml
+    gold_features: validation/features/Blanco-Miguez2023-ej_gold_features.yaml
+    extracted_text: validation/extracted/Blanco-Miguez2023-ej_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Blanco-Miguez2023-ej_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Blanco-Miguez2023-ej_llm_refined.md
+    recommendation_gold: validation/recommendations/Blanco-Miguez2023-ej_gold.md
+- id: Gow2023-fn
+  entry_type: article
+  title: Architecture of the dynamic fungal cell wall
+  authors: Gow, Neil A R and Lenardon, Megan D
+  journal: Nat. Rev. Microbiol.
+  actual_journal: Nat. Rev. Microbiol.
+  year: 2023
+  doi: 10.1038/s41579-022-00796-9
+  pmid: '36266346'
+  pmc: ''
+  abstract: The fungal cell wall is essential for growth and survival, and is a key target for antifungal drugs and the immune system. The cell wall must be robust but flexible, protective and shielding yet porous to nutrients and membrane vesicles and receptive to exogenous signals. Most fungi have a common inner wall skeleton of chitin and β-glucans that functions as a flexible viscoelastic frame to which a more diverse set of outer cell wall polymers and glycosylated proteins are attached. Whereas the inner wall largely determines shape and strength, the outer wall confers properties of hydrophobicity, adhesiveness, and chemical and immunological heterogeneity. The spatial organization and dynamic regulation of the wall in response to prevailing growth conditions enable fungi to thrive within changing, diverse and often hostile environments. Understanding this architecture provides opportunities to develop diagnostics and drugs to combat life-threatening fungal infections.
+  pdf: refs/G/Gow and Lenardon 2023 - Architecture of the dynamic fungal cell wall.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Gow2023-fn_deterministic_features.yaml
+    llm_refined_features: validation/features/Gow2023-fn_llm_refined_features.yaml
+    gold_features: validation/features/Gow2023-fn_gold_features.yaml
+    extracted_text: validation/extracted/Gow2023-fn_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Gow2023-fn_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Gow2023-fn_llm_refined.md
+    recommendation_gold: validation/recommendations/Gow2023-fn_gold.md
+- id: Mirdita2021-na
+  entry_type: article
+  title: Fast and sensitive taxonomic assignment to metagenomic contigs
+  authors: Mirdita, M and Steinegger, M and Breitwieser, F and Söding, J and Levy Karin, E
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2021
+  doi: 10.1093/bioinformatics/btab184
+  pmid: '33734313'
+  pmc: PMC8479651
+  abstract: 'SUMMARY: MMseqs2 taxonomy is a new tool to assign taxonomic labels to metagenomic contigs. It extracts all possible protein fragments from each contig, quickly retains those that can contribute to taxonomic annotation, assigns them with robust labels and determines the contig''s taxonomic identity by weighted voting. Its fragment extraction step is suitable for the analysis of all domains of life. MMseqs2 taxonomy is 2-18x faster than state-of-the-art tools and also contains new modules for creating and manipulating taxonomic reference databases as well as reporting and visualizing taxonomic assignments. AVAILABILITY: MMseqs2 taxonomy is part of the MMseqs2 free open-source software package available for Linux, macOS and Windows at https://mmseqs.com. SUPPLEMENTARY INFORMATION: Supplementary data is available at Bioinformatics online.'
+  pdf: refs/M/Mirdita et al. 2021 - Fast and sensitive taxonomic assignment to metagenomic contigs.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Mirdita2021-na_deterministic_features.yaml
+    llm_refined_features: validation/features/Mirdita2021-na_llm_refined_features.yaml
+    gold_features: validation/features/Mirdita2021-na_gold_features.yaml
+    extracted_text: validation/extracted/Mirdita2021-na_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Mirdita2021-na_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Mirdita2021-na_llm_refined.md
+    recommendation_gold: validation/recommendations/Mirdita2021-na_gold.md
+- id: Lima-Mendez2008-fv
+  entry_type: article
+  title: 'Prophinder: a computational tool for prophage prediction in prokaryotic genomes'
+  authors: Lima-Mendez, Gipsi and Van Helden, Jacques and Toussaint, Ariane and Leplae, Raphaël
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2008
+  doi: 10.1093/bioinformatics/btn043
+  pmid: '18238785'
+  pmc: ''
+  abstract: 'UNLABELLED: Prophinder is a prophage prediction tool coupled with a prediction database, a web server and web service. Predicted prophages will help to fill the gaps in the current sparse phage sequence space, which should cover an estimated 100 million species. Systematic and reliable predictions will enable further studies of prophages contribution to the bacteriophage gene pool and to better understand gene shuffling between prophages and phages infecting the same host. AVAILABILITY: Softare is available at http://aclame.ulb.ac.be/prophinder'
+  pdf: refs/L/Lima-Mendez et al. 2008 - btn043.html
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Lima-Mendez2008-fv_deterministic_features.yaml
+    llm_refined_features: validation/features/Lima-Mendez2008-fv_llm_refined_features.yaml
+    gold_features: validation/features/Lima-Mendez2008-fv_gold_features.yaml
+    extracted_text: validation/extracted/Lima-Mendez2008-fv_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Lima-Mendez2008-fv_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Lima-Mendez2008-fv_llm_refined.md
+    recommendation_gold: validation/recommendations/Lima-Mendez2008-fv_gold.md
+- id: Wawina-Bokalanga2026-oa
+  entry_type: article
+  title: Deciphering the etiology of the 2024 outbreak of undiagnosed febrile illness in Panzi, Democratic Republic of the Congo
+  authors: Wawina-Bokalanga, Tony and Makangara-Cigolo, Jean-Claude and Ola-Mpumbe, Rilia and Lokilo, Emmanuel and Mwakisenda-Tshakotsho, François and Delphine, Mbonga and Kahindo, Immaculée and Tshonaka-Nkololo, Alphonse and Vakaniaki, Emmanuel Hasivirwe and Loman, Nicholas and Houben, Sarah and Lumembe-Numbi, Raphael and Kinganda-Lusamaki, Eddy and Ponga-Museme, Ange and Mukota-Nungu, Yero and Kumar, Anuj and Meris, Matondo and Wilkinson, Sam and Colquhoun, Raquel and Kenye, Kelly-Michel and Akil-Bandali, Prince and Amuri-Aziza, Adrienne and Martinez, Gustavo Sganzerla and Kelvin, David J and Dijkman, Ronald and Hensley, Lisa E and Kasita, Cris and Kafua-Wemba, Franck and Mwamba, Dieudonné and Subissi, Lorenzo and Hoff, Nicole A and Peeters, Martine and Rimoin, Anne W and Mokili, John L and Lunguya-Metila, Octavie and Nkwembe, Edith and Rambaut, Andrew and Liesenborghs, Laurens and Low, Nicola and Kindrachuk, Jason and Vercauteren, Koen and Edwards, Robert and Kelly, Jenna N and Mbala-Kingebeni,
+    Placide and Ahuka-Mundeke, Steve and Mumba, Dieudonné and Muyembe-Tamfum, Jean-Jacques
+  journal: Nat. Med.
+  actual_journal: Nat. Med.
+  year: 2026
+  doi: 10.1038/s41591-026-04235-7
+  pmid: '41708925'
+  pmc: ''
+  abstract: In late 2024, an outbreak of over 400 cases of undiagnosed febrile illness, predominantly presenting as fever and cough, was reported in Panzi Health Zone, southwestern Democratic Republic of the Congo. Here we conducted an epidemiological and laboratory investigation to determine the etiology of the outbreak. Clinical data and specimens were prospectively collected from 108 individuals, of whom 59/108 (54.6%) were female. Children aged <5 years were the most affected (47/108, 43.5%); 14/32 (43.7%) were malnourished. Oro/nasopharyngeal swabs from 96/108 individuals were PCR tested; 26 blood samples were sequenced. Plasmodium falciparum was detected in 56/108 (51.8%) individuals. Co-infections were also detected, with influenza A(H1N1)pdm09 virus in 16/56 (28.6%) and severe acute respiratory syndrome coronavirus 2 in 10/56 (17.9%) individuals. No novel pathogens were detected via metagenomics. Our findings suggest that the outbreak was primarily associated with a surge in malaria
+    cases, with concurrent viral respiratory infections. Increasing decentralized laboratory capacity and strengthening broader health systems remain crucial for faster outbreak detection and investigation.
+  pdf: refs/W/Wawina-Bokalanga et al. 2026 - Deciphering the etiology of the 2024 outb ... ndiagnosed febrile illness in Panzi, Democratic Republic of the Congo.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Wawina-Bokalanga2026-oa_deterministic_features.yaml
+    llm_refined_features: validation/features/Wawina-Bokalanga2026-oa_llm_refined_features.yaml
+    gold_features: validation/features/Wawina-Bokalanga2026-oa_gold_features.yaml
+    extracted_text: validation/extracted/Wawina-Bokalanga2026-oa_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Wawina-Bokalanga2026-oa_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Wawina-Bokalanga2026-oa_llm_refined.md
+    recommendation_gold: validation/recommendations/Wawina-Bokalanga2026-oa_gold.md
+- id: Dowell2004-jn
+  entry_type: article
+  title: Evaluation of several lightweight stochastic context-free grammars for {RNA} secondary structure prediction
+  authors: Dowell, Robin D and Eddy, Sean R
+  journal: BMC Bioinformatics
+  actual_journal: BMC Bioinformatics
+  year: 2004
+  doi: 10.1186/1471-2105-5-71
+  pmid: '15180907'
+  pmc: PMC442121
+  abstract: 'BACKGROUND: RNA secondary structure prediction methods based on probabilistic modeling can be developed using stochastic context-free grammars (SCFGs). Such methods can readily combine different sources of information that can be expressed probabilistically, such as an evolutionary model of comparative RNA sequence analysis and a biophysical model of structure plausibility. However, the number of free parameters in an integrated model for consensus RNA structure prediction can become untenable if the underlying SCFG design is too complex. Thus a key question is, what small, simple SCFG designs perform best for RNA secondary structure prediction? RESULTS: Nine different small SCFGs were implemented to explore the tradeoffs between model complexity and prediction accuracy. Each model was tested for single sequence structure prediction accuracy on a benchmark set of RNA secondary structures. CONCLUSIONS: Four SCFG designs had prediction accuracies near the performance of current
+    energy minimization programs. One of these designs, introduced by Knudsen and Hein in their PFOLD algorithm, has only 21 free parameters and is significantly simpler than the others.'
+  pdf: refs/Dowell2004-jn.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Dowell2004-jn_deterministic_features.yaml
+    llm_refined_features: validation/features/Dowell2004-jn_llm_refined_features.yaml
+    gold_features: validation/features/Dowell2004-jn_gold_features.yaml
+    extracted_text: validation/extracted/Dowell2004-jn_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Dowell2004-jn_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Dowell2004-jn_llm_refined.md
+    recommendation_gold: validation/recommendations/Dowell2004-jn_gold.md
+- id: Olson2023-fx
+  entry_type: article
+  title: 'Introducing the Bacterial and Viral Bioinformatics Resource Center ({BV}-{BRC}): a resource combining {PATRIC}, {IRD} and {ViPR}'
+  authors: Olson, Robert D and Assaf, Rida and Brettin, Thomas and Conrad, Neal and Cucinell, Clark and Davis, James J and Dempsey, Donald M and Dickerman, Allan and Dietrich, Emily M and Kenyon, Ronald W and Kuscuoglu, Mehmet and Lefkowitz, Elliot J and Lu, Jian and Machi, Dustin and Macken, Catherine and Mao, Chunhong and Niewiadomska, Anna and Nguyen, Marcus and Olsen, Gary J and Overbeek, Jamie C and Parrello, Bruce and Parrello, Victoria and Porter, Jacob S and Pusch, Gordon D and Shukla, Maulik and Singh, Indresh and Stewart, Lucy and Tan, Gene and Thomas, Chris and VanOeffelen, Margo and Vonstein, Veronika and Wallace, Zachary S and Warren, Andrew S and Wattam, Alice R and Xia, Fangfang and Yoo, Hyunseung and Zhang, Yun and Zmasek, Christian M and Scheuermann, Richard H and Stevens, Rick L
+  journal: Nucleic Acids Res.
+  actual_journal: Nucleic Acids Res.
+  year: 2023
+  doi: 10.1093/nar/gkac1003
+  pmid: '36350631'
+  pmc: PMC9825582
+  abstract: The National Institute of Allergy and Infectious Diseases (NIAID) established the Bioinformatics Resource Center (BRC) program to assist researchers with analyzing the growing body of genome sequence and other omics-related data. In this report, we describe the merger of the PAThosystems Resource Integration Center (PATRIC), the Influenza Research Database (IRD) and the Virus Pathogen Database and Analysis Resource (ViPR) BRCs to form the Bacterial and Viral Bioinformatics Resource Center (BV-BRC) https://www.bv-brc.org/. The combined BV-BRC leverages the functionality of the bacterial and viral resources to provide a unified data model, enhanced web-based visualization and analysis tools, bioinformatics services, and a powerful suite of command line tools that benefit the bacterial and viral research communities.
+  pdf: refs/O/Olson et al. 2023 - Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC) - a resource combining PATRIC, IRD and ViPR.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Olson2023-fx_deterministic_features.yaml
+    llm_refined_features: validation/features/Olson2023-fx_llm_refined_features.yaml
+    gold_features: validation/features/Olson2023-fx_gold_features.yaml
+    extracted_text: validation/extracted/Olson2023-fx_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Olson2023-fx_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Olson2023-fx_llm_refined.md
+    recommendation_gold: validation/recommendations/Olson2023-fx_gold.md
+- id: Bouras2023-sa
+  entry_type: article
+  title: 'Plassembler: an automated bacterial plasmid assembly tool'
+  authors: Bouras, G and Sheppard, A and Mallawaarachchi, V and Vreugde, S
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2023
+  doi: 10.1093/bioinformatics/btad409
+  pmid: '37369026'
+  pmc: ''
+  abstract: Abstract Summary With recent advances in sequencing technologies, it is now possible to obtain near-perfect complete bacterial chromosome assemblies cheaply and efficiently by combining a long-read-first assembly approach with short-read polishing. However, existing methods for assembling bacterial plasmids from long-read-first assemblies often misassemble or even miss bacterial plasmids entirely and accordingly require manual curation. Plassembler was developed to provide a tool that automatically assembles and outputs bacterial plasmids using a hybrid assembly approach. It achieves increased accuracy and computational efficiency compared to the existing gold standard tool Unicycler by removing chromosomal reads from the input read sets using a mapping approach. Availability and implementation Plassembler is implemented in Python and is installable as a bioconda package using ‘conda install -c bioconda plassembler’. The source code is available on GitHub at https://github.com/gbouras13/plassembler.
+    The full benchmarking pipeline can be found at https://github.com/gbouras13/plassembler_simulation_benchmarking, while the benchmarking input FASTQ and output files can be found at https://doi.org/10.5281/zenodo.7996690.
+  pdf: refs/B/Bouras et al. 2023 - Plassembler - an automated bacterial plasmid assembly tool.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Bouras2023-sa_deterministic_features.yaml
+    llm_refined_features: validation/features/Bouras2023-sa_llm_refined_features.yaml
+    gold_features: validation/features/Bouras2023-sa_gold_features.yaml
+    extracted_text: validation/extracted/Bouras2023-sa_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Bouras2023-sa_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Bouras2023-sa_llm_refined.md
+    recommendation_gold: validation/recommendations/Bouras2023-sa_gold.md
+- id: Quinn-Bohmann2024-mp
+  entry_type: article
+  title: Microbial community-scale metabolic modelling predicts personalized short-chain fatty acid production profiles in the human gut
+  authors: Quinn-Bohmann, Nick and Wilmanski, Tomasz and Sarmiento, Katherine Ramos and Levy, Lisa and Lampe, Johanna W and Gurry, Thomas and Rappaport, Noa and Ostrem, Erin M and Venturelli, Ophelia S and Diener, Christian and Gibbons, Sean M
+  journal: Nat. Microbiol.
+  actual_journal: Nat. Microbiol.
+  year: 2024
+  doi: 10.1038/s41564-024-01728-4
+  pmid: ''
+  pmc: ''
+  abstract: Microbially derived short-chain fatty acids (SCFAs) in the human gut are tightly coupled to host metabolism, immune regulation and integrity of the intestinal epithelium. However, the production of SCFAs can vary widely between individuals consuming the same diet, with lower levels often associated with disease. A systems-scale mechanistic understanding of this heterogeneity is lacking. Here we use a microbial community-scale metabolic modelling (MCMM) approach to predict individual-specific SCFA production profiles to assess the impact of different dietary, prebiotic and probiotic inputs. We evaluate the quantitative accuracy of our MCMMs using in vitro and ex vivo data, plus published human cohort data. We find that MCMM SCFA predictions are significantly associated with blood-derived clinical chemistries, including cardiometabolic and immunological health markers, across a large human cohort. Finally, we demonstrate how MCMMs can be leveraged to design personalized dietary,
+    prebiotic and probiotic interventions aimed at optimizing SCFA production in the gut. Our model represents an approach to direct gut microbiome engineering for precision health and nutrition. Microbial community-scale metabolic modelling predicts person-specific short-chain fatty acid profiles and can be used to estimate the impact of dietary, prebiotic and probiotic interventions.
+  pdf: refs/Q/Quinn-Bohmann et al. 2024 - Microbial community-scale metabolic modellin ... sonalized short-chain fatty acid production profiles in the human gut.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Quinn-Bohmann2024-mp_deterministic_features.yaml
+    llm_refined_features: validation/features/Quinn-Bohmann2024-mp_llm_refined_features.yaml
+    gold_features: validation/features/Quinn-Bohmann2024-mp_gold_features.yaml
+    extracted_text: validation/extracted/Quinn-Bohmann2024-mp_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Quinn-Bohmann2024-mp_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Quinn-Bohmann2024-mp_llm_refined.md
+    recommendation_gold: validation/recommendations/Quinn-Bohmann2024-mp_gold.md
+- id: Levrier2025-xe
+  entry_type: article
+  title: A synthetic cell phage cycle
+  authors: Levrier, Antoine and Soudier, Paul and Garenne, David and Izri, Ziane and Bowden, Steven and Lindner, Ariel B and Noireaux, Vincent
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2025
+  doi: 10.1038/s41467-025-67249-8
+  pmid: '41398148'
+  pmc: PMC12808745
+  abstract: Viral infection of living cells, exemplified by bacteriophage interaction with bacteria, is fundamental to biology and universal across living systems. Here, we establish an all-cell-free viral cycle where T7 phages infect synthetic cells, equipped with lipopolysaccharides on the outer leaflet of the lipid membrane, while encapsulating a cell-free gene expression system. We track each cycle step to demonstrate T7 phage-specific adsorption onto the liposomes, genome entry, replication, expression, and assembly of new infectious virions within the synthetic cells. We quantify key characteristics of the cycle, including the multiplicity of infection, replication efficiency, liposome size constraints, and phage rebinding dynamics. This work establishes a versatile, fully defined in vitro platform for reconstructing and investigating viral infections from individual molecular components.
+  pdf: refs/L/Levrier et al. 2025 - A synthetic cell phage cycle.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Levrier2025-xe_deterministic_features.yaml
+    llm_refined_features: validation/features/Levrier2025-xe_llm_refined_features.yaml
+    gold_features: validation/features/Levrier2025-xe_gold_features.yaml
+    extracted_text: validation/extracted/Levrier2025-xe_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Levrier2025-xe_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Levrier2025-xe_llm_refined.md
+    recommendation_gold: validation/recommendations/Levrier2025-xe_gold.md
+- id: Du2023-sk
+  entry_type: article
+  title: Enhancing bacteriophage therapeutics through in situ production and release of heterologous antimicrobial effectors
+  authors: Du, Jiemin and Meile, Susanne and Baggenstos, Jasmin and Jäggi, Tobias and Piffaretti, Pietro and Hunold, Laura and Matter, Cassandra I and Leitner, Lorenz and Kessler, Thomas M and Loessner, Martin J and Kilcher, Samuel and Dunne, Matthew
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2023
+  doi: 10.1038/s41467-023-39612-0
+  pmid: '37474516'
+  pmc: PMC10359290
+  abstract: Bacteriophages operate via pathogen-specific mechanisms of action distinct from conventional, broad-spectrum antibiotics and are emerging as promising alternative antimicrobials. However, phage-mediated killing is often limited by bacterial resistance development. Here, we engineer phages for target-specific effector gene delivery and host-dependent production of colicin-like bacteriocins and cell wall hydrolases. Using urinary tract infection (UTI) as a model, we show how heterologous effector phage therapeutics (HEPTs) suppress resistance and improve uropathogen killing by dual phage- and effector-mediated targeting. Moreover, we designed HEPTs to control polymicrobial uropathogen communities through production of effectors with cross-genus activity. Using phage-based companion diagnostics, we identified potential HEPT responder patients and treated their urine ex vivo. Compared to wildtype phage, a colicin E7-producing HEPT demonstrated superior control of patient E. coli
+    bacteriuria. Arming phages with heterologous effectors paves the way for successful UTI treatment and represents a versatile tool to enhance and adapt phage-based precision antimicrobials.
+  pdf: refs/D/Du et al. 2023 - Enhancing bacteriophage therapeutics through in situ production and release of heterologous antimicrobial effectors.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Du2023-sk_deterministic_features.yaml
+    llm_refined_features: validation/features/Du2023-sk_llm_refined_features.yaml
+    gold_features: validation/features/Du2023-sk_gold_features.yaml
+    extracted_text: validation/extracted/Du2023-sk_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Du2023-sk_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Du2023-sk_llm_refined.md
+    recommendation_gold: validation/recommendations/Du2023-sk_gold.md
+- id: Mirhakkak2023-lx
+  entry_type: article
+  title: Genome-scale metabolic modeling of Aspergillus fumigatus strains reveals growth dependencies on the lung microbiome
+  authors: Mirhakkak, Mohammad H and Chen, Xiuqiang and Ni, Yueqiong and Heinekamp, Thorsten and Sae-Ong, Tongta and Xu, Lin-Lin and Kurzai, Oliver and Barber, Amelia E and Brakhage, Axel A and Boutin, Sebastien and Schäuble, Sascha and Panagiotou, Gianni
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2023
+  doi: 10.1038/s41467-023-39982-5
+  pmid: '37474497'
+  pmc: PMC10359302
+  abstract: Aspergillus fumigatus, an opportunistic human pathogen, frequently infects the lungs of people with cystic fibrosis and is one of the most common causes of infectious-disease death in immunocompromised patients. Here, we construct 252 strain-specific, genome-scale metabolic models of this important fungal pathogen to study and better understand the metabolic component of its pathogenic versatility. The models show that 23.1% of A. fumigatus metabolic reactions are not conserved across strains and are mainly associated with amino acid, nucleotide, and nitrogen metabolism. Profiles of non-conserved reactions and growth-supporting reaction fluxes are sufficient to differentiate strains, for example by environmental or clinical origin. In addition, shotgun metagenomics analysis of sputum from 40 cystic fibrosis patients (15 females, 25 males) before and after diagnosis with an A. fumigatus colonization suggests that the fungus shapes the lung microbiome towards a more beneficial
+    fungal growth environment associated with aromatic amino acid availability and the shikimate pathway. Our findings are starting points for the development of drugs or microbiome intervention strategies targeting fungal metabolic needs for survival and colonization in the non-native environment of the human lung.
+  pdf: refs/M/Mirhakkak et al. 2023 - Genome-scale metabolic modeling of Aspergillus fumigatus strains reveals growth dependencies on the lung microbiome.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Mirhakkak2023-lx_deterministic_features.yaml
+    llm_refined_features: validation/features/Mirhakkak2023-lx_llm_refined_features.yaml
+    gold_features: validation/features/Mirhakkak2023-lx_gold_features.yaml
+    extracted_text: validation/extracted/Mirhakkak2023-lx_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Mirhakkak2023-lx_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Mirhakkak2023-lx_llm_refined.md
+    recommendation_gold: validation/recommendations/Mirhakkak2023-lx_gold.md
+- id: Coshic2024-ce
+  entry_type: article
+  title: The structure and physical properties of a packaged bacteriophage particle
+  authors: Coshic, Kush and Maffeo, Christopher and Winogradoff, David and Aksimentiev, Aleksei
+  journal: Nature
+  actual_journal: Nature
+  year: 2024
+  doi: 10.1038/s41586-024-07150-4
+  pmid: '38448589'
+  pmc: PMC11196859
+  abstract: A string of nucleotides confined within a protein capsid contains all the instructions necessary to make a functional virus particle, a virion. Although the structure of the protein capsid is known for many virus species1,2, the three-dimensional organization of viral genomes has mostly eluded experimental probes3,4. Here we report all-atom structural models of an HK97 virion5, including its entire 39,732 base pair genome, obtained through multiresolution simulations. Mimicking the action of a packaging motor6, the genome was gradually loaded into the capsid. The structure of the packaged capsid was then refined through simulations of increasing resolution, which produced a 26 million atom model of the complete virion, including water and ions confined within the capsid. DNA packaging occurs through a loop extrusion mechanism7 that produces globally different configurations of the packaged genome and gives each viral particle individual traits. Multiple microsecond-long all-atom
+    simulations characterized the effect of the packaged genome on capsid structure, internal pressure, electrostatics and diffusion of water, ions and DNA, and revealed the structural imprints of the capsid onto the genome. Our approach can be generalized to obtain complete all-atom structural models of other virus species, thereby potentially revealing new drug targets at the genome-capsid interface.
+  pdf: refs/C/Coshic et al. 2024 - The structure and physical properties of a packaged bacteriophage particle.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Coshic2024-ce_deterministic_features.yaml
+    llm_refined_features: validation/features/Coshic2024-ce_llm_refined_features.yaml
+    gold_features: validation/features/Coshic2024-ce_gold_features.yaml
+    extracted_text: validation/extracted/Coshic2024-ce_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Coshic2024-ce_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Coshic2024-ce_llm_refined.md
+    recommendation_gold: validation/recommendations/Coshic2024-ce_gold.md
+- id: Doyle2025-zi
+  entry_type: article
+  title: Absolute quantification of prokaryotes in the microbiome by {16S} {rRNA} {qPCR} or {ddPCR}
+  authors: Doyle, Boryana and Reynolds, Gabriella Z M and Dvorak, Mai and Maghini, Dylan G and Natarajan, Aravind and Bhatt, Ami S
+  journal: Nat. Protoc.
+  actual_journal: Nat. Protoc.
+  year: 2025
+  doi: 10.1038/s41596-025-01165-5
+  pmid: '40389632'
+  pmc: ''
+  abstract: Measurements of prokaryotic absolute abundance can provide important insights into human gut microbiome biology and correct misinterpretations of relative abundance data. Despite the existence of several relatively well-established methods for making these measurements, most microbiome studies do not report absolute abundance. To enable researchers equipped with standard molecular biology capabilities to incorporate absolute quantification into their microbiome studies, we present a detailed, step-by-step protocol for rigorous and reproducible quantification of prokaryotic concentration in stool samples. We include methods for measuring stool sample moisture content, quantifying the concentration of the 16S rRNA prokaryotic marker gene by qPCR or digital droplet PCR (ddPCR) and analyzing the resulting data. We also highlight and provide strategies to overcome common pitfalls of the quantification method, such as 16S rRNA gene contamination. The final output of this approach is
+    16S rRNA copies per wet or dry gram of stool. In cases where samples have matched metagenomic sequencing information, data can be converted into absolute concentration of prokaryotes and taxon-specific absolute concentrations. To enable researchers to choose the appropriate method for their specific applications, we also compare and contrast our qPCR and ddPCR methods. In 4 days, 80 samples can be taken from frozen stool to absolute concentration by using qPCR or ddPCR without the need for resequencing. Overall, this protocol provides a sensitive and straightforward way to measure the absolute concentration of prokaryotes in human gut microbiome samples stored with or without preservative.
+  pdf: refs/D/Doyle et al. 2025 - Absolute quantification of prokaryotes in the microbiome by 16S rRNA qPCR or ddPCR.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Doyle2025-zi_deterministic_features.yaml
+    llm_refined_features: validation/features/Doyle2025-zi_llm_refined_features.yaml
+    gold_features: validation/features/Doyle2025-zi_gold_features.yaml
+    extracted_text: validation/extracted/Doyle2025-zi_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Doyle2025-zi_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Doyle2025-zi_llm_refined.md
+    recommendation_gold: validation/recommendations/Doyle2025-zi_gold.md
+- id: Nicholls2021-ua
+  entry_type: article
+  title: On the complexity of haplotyping a microbial community
+  authors: Nicholls, Samuel M and Aubrey, Wayne and De Grave, Kurt and Schietgat, Leander and Creevey, Christopher J and Clare, Amanda
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2021
+  doi: 10.1093/bioinformatics/btaa977
+  pmid: '33444437'
+  pmc: PMC8208737
+  abstract: 'MOTIVATION: Population-level genetic variation enables competitiveness and niche specialization in microbial communities. Despite the difficulty in culturing many microbes from an environment, we can still study these communities by isolating and sequencing DNA directly from an environment (metagenomics). Recovering the genomic sequences of all isoforms of a given gene across all organisms in a metagenomic sample would aid evolutionary and ecological insights into microbial ecosystems with potential benefits for medicine and biotechnology. A significant obstacle to this goal arises from the lack of a computationally tractable solution that can recover these sequences from sequenced read fragments. This poses a problem analogous to reconstructing the two sequences that make up the genome of a diploid organism (i.e. haplotypes) but for an unknown number of individuals and haplotypes. RESULTS: The problem of single individual haplotyping was first formalized by Lancia et al. in
+    2001. Now, nearly two decades later, we discuss the complexity of ''haplotyping'' metagenomic samples, with a new formalization of Lancia et al.''s data structure that allows us to effectively extend the single individual haplotype problem to microbial communities. This work describes and formalizes the problem of recovering genes (and other genomic subsequences) from all individuals within a complex community sample, which we term the metagenomic individual haplotyping problem. We also provide software implementations for a pairwise single nucleotide variant (SNV) co-occurrence matrix and greedy graph traversal algorithm. AVAILABILITY AND IMPLEMENTATION: Our reference implementation of the described pairwise SNV matrix (Hansel) and greedy haplotype path traversal algorithm (Gretel) is open source, MIT licensed and freely available online at github.com/samstudio8/hansel and github.com/samstudio8/gretel, respectively.'
+  pdf: refs/Nicholls2021-ua.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Nicholls2021-ua_deterministic_features.yaml
+    llm_refined_features: validation/features/Nicholls2021-ua_llm_refined_features.yaml
+    gold_features: validation/features/Nicholls2021-ua_gold_features.yaml
+    extracted_text: validation/extracted/Nicholls2021-ua_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Nicholls2021-ua_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Nicholls2021-ua_llm_refined.md
+    recommendation_gold: validation/recommendations/Nicholls2021-ua_gold.md
+- id: Doane2023-pt
+  entry_type: article
+  title: Emergent community architecture despite distinct diversity in the global whale shark (Rhincodon typus) epidermal microbiome
+  authors: Doane, Michael P and Reed, Michael B and McKerral, Jody and Farias Oliveira Lima, Laís and Morris, Megan and Goodman, Asha Z and Johri, Shaili and Papudeshi, Bhavya and Dillon, Taylor and Turnlund, Abigail C and Peterson, Meredith and Mora, Maria and de la Parra Venegas, Rafael and Pillans, Richard and Rohner, Christoph A and Pierce, Simon J and Legaspi, Christine G and Araujo, Gonzalo and Ramirez-Macias, Deni and Edwards, Robert A and Dinsdale, Elizabeth A
+  journal: Sci. Rep.
+  actual_journal: Sci. Rep.
+  year: 2023
+  doi: 10.1038/s41598-023-39184-5
+  pmid: '37550406'
+  pmc: PMC10406844
+  abstract: Microbiomes confer beneficial physiological traits to their host, but microbial diversity is inherently variable, challenging the relationship between microbes and their contribution to host health. Here, we compare the diversity and architectural complexity of the epidermal microbiome from 74 individual whale sharks (Rhincodon typus) across five aggregations globally to determine if network properties may be more indicative of the microbiome-host relationship. On the premise that microbes are expected to exhibit biogeographic patterns globally and that distantly related microbial groups can perform similar functions, we hypothesized that microbiome co-occurrence patterns would occur independently of diversity trends and that keystone microbes would vary across locations. We found that whale shark aggregation was the most important factor in discriminating taxonomic diversity patterns. Further, microbiome network architecture was similar across all aggregations, with degree distributions
+    matching Erdos-Renyi-type networks. The microbiome-derived networks, however, display modularity indicating a definitive microbiome structure on the epidermis of whale sharks. In addition, whale sharks hosted 35 high-quality metagenome assembled genomes (MAGs) of which 25 were present from all sample locations, termed the abundant 'core'. Two main MAG groups formed, defined here as Ecogroup 1 and 2, based on the number of genes present in metabolic pathways, suggesting there are at least two important metabolic niches within the whale shark microbiome. Therefore, while variability in microbiome diversity is high, network structure and core taxa are inherent characteristics of the epidermal microbiome in whale sharks. We suggest the host-microbiome and microbe-microbe interactions that drive the self-assembly of the microbiome help support a functionally redundant abundant core and that network characteristics should be considered when linking microbiomes with host health.
+  pdf: refs/D/Doane et al. 2023 - Emergent community architecture despite distinct diversity in the global whale shark (Rhincodon typus) epidermal microbiome.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Doane2023-pt_deterministic_features.yaml
+    llm_refined_features: validation/features/Doane2023-pt_llm_refined_features.yaml
+    gold_features: validation/features/Doane2023-pt_gold_features.yaml
+    extracted_text: validation/extracted/Doane2023-pt_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Doane2023-pt_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Doane2023-pt_llm_refined.md
+    recommendation_gold: validation/recommendations/Doane2023-pt_gold.md
+- id: Shalon2023-ma
+  entry_type: article
+  title: Profiling the human intestinal environment under physiological conditions
+  authors: Shalon, Dari and Culver, Rebecca Neal and Grembi, Jessica A and Folz, Jacob and Treit, Peter V and Shi, Handuo and Rosenberger, Florian A and Dethlefsen, Les and Meng, Xiandong and Yaffe, Eitan and Aranda-Díaz, Andrés and Geyer, Philipp E and Mueller-Reif, Johannes B and Spencer, Sean and Patterson, Andrew D and Triadafilopoulos, George and Holmes, Susan P and Mann, Matthias and Fiehn, Oliver and Relman, David A and Huang, Kerwyn Casey
+  journal: Nature
+  actual_journal: Nature
+  year: 2023
+  doi: 10.1038/s41586-023-05989-7
+  pmid: '37165188'
+  pmc: PMC10191855
+  abstract: The spatiotemporal structure of the human microbiome1,2, proteome3 and metabolome4,5 reflects and determines regional intestinal physiology and may have implications for disease6. Yet, little is known about the distribution of microorganisms, their environment and their biochemical activity in the gut because of reliance on stool samples and limited access to only some regions of the gut using endoscopy in fasting or sedated individuals7. To address these deficiencies, we developed an ingestible device that collects samples from multiple regions of the human intestinal tract during normal digestion. Collection of 240 intestinal samples from 15 healthy individuals using the device and subsequent multi-omics analyses identified significant differences between bacteria, phages, host proteins and metabolites in the intestines versus stool. Certain microbial taxa were differentially enriched and prophage induction was more prevalent in the intestines than in stool. The host proteome
+    and bile acid profiles varied along the intestines and were highly distinct from those of stool. Correlations between gradients in bile acid concentrations and microbial abundance predicted species that altered the bile acid pool through deconjugation. Furthermore, microbially conjugated bile acid concentrations exhibited amino acid-dependent trends that were not apparent in stool. Overall, non-invasive, longitudinal profiling of microorganisms, proteins and bile acids along the intestinal tract under physiological conditions can help elucidate the roles of the gut microbiome and metabolome in human physiology and disease.
+  pdf: refs/S/Shalon et al. 2023 - Profiling the human intestinal environment under physiological conditions.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Shalon2023-ma_deterministic_features.yaml
+    llm_refined_features: validation/features/Shalon2023-ma_llm_refined_features.yaml
+    gold_features: validation/features/Shalon2023-ma_gold_features.yaml
+    extracted_text: validation/extracted/Shalon2023-ma_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Shalon2023-ma_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Shalon2023-ma_llm_refined.md
+    recommendation_gold: validation/recommendations/Shalon2023-ma_gold.md
+- id: Welsh2025-oh
+  entry_type: article
+  title: A widespread hydrogenase supports fermentative growth of gut bacteria in healthy people
+  authors: Welsh, Caitlin and Cabotaje, Princess R and Marcelino, Vanessa R and Watts, Thomas D and Kountz, Duncan J and Jespersen, Marion and Gould, Jodee A and Doan, Nhu Quynh and Lingford, James P and Koralegedara, Thilini and Solari, Jessica and D'Adamo, Gemma L and Huang, Ping and Bong, Natasha and Gulliver, Emily L and Young, Remy B and Land, Henrik and Walter, Kaija and Cann, Isaac and Pereira, Gabriel V and Martens, Eric C and Wolf, Patricia G and Ridlon, Jason M and Gaskins, H Rex and Giles, Edward M and Lyras, Dena and Lappan, Rachael and Berggren, Gustav and Forster, Samuel C and Greening, Chris
+  journal: Nat. Microbiol.
+  actual_journal: Nat. Microbiol.
+  year: 2025
+  doi: 10.1038/s41564-025-02154-w
+  pmid: ''
+  pmc: ''
+  abstract: Abstract Disruption of hydrogen (H 2 ) cycling in the gut is linked to gastrointestinal disorders, infections and cancers. However, the mechanisms and microorganisms controlling H 2 production in the gut remain unresolved. Here we show that gut H 2 production is primarily driven by the microbial group B [FeFe]-hydrogenase. Metagenomics and metatranscriptomics of stool and tissue biopsy samples show that hydrogenase-encoding genes are widely present and transcribed in gut bacteria. Assessment of 19 taxonomically diverse gut isolates revealed that the group B [FeFe]-hydrogenases produce large amounts of H 2 gas and support fermentative growth of Bacteroidetes and Firmicutes. Further biochemical and spectroscopic characterization of purified enzymes show that they are catalytically active, bind a di-iron active site and reoxidize ferredoxin derived from the pyruvate:ferredoxin oxidoreductase reaction. Group B hydrogenase-encoding genes are significantly depleted in favour of other
+    fermentative hydrogenases in patients with Crohn’s disease. Finally, metabolically flexible respiratory bacteria may be the dominant hydrogenotrophs in the gut, rather than acetogens, methanogens and sulfate reducers. These results uncover the enzymes and microorganisms controlling H 2 cycling in the healthy human gut.
+  pdf: refs/W/Welsh et al. 2025 - A widespread hydrogenase supports fermentative growth of gut bacteria in healthy people.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Welsh2025-oh_deterministic_features.yaml
+    llm_refined_features: validation/features/Welsh2025-oh_llm_refined_features.yaml
+    gold_features: validation/features/Welsh2025-oh_gold_features.yaml
+    extracted_text: validation/extracted/Welsh2025-oh_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Welsh2025-oh_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Welsh2025-oh_llm_refined.md
+    recommendation_gold: validation/recommendations/Welsh2025-oh_gold.md
+- id: Prabakaran2026-pb
+  entry_type: article
+  title: Quantifying uncertainty in protein representations across models and tasks
+  authors: Prabakaran, R and Bromberg, Yana
+  journal: Nat. Methods
+  actual_journal: Nat. Methods
+  year: 2026
+  doi: 10.1038/s41592-026-03028-7
+  pmid: '41922570'
+  pmc: PMC13076229
+  abstract: Biomolecular embeddings serve as efficient representations of sequence and structure, enabling tasks such as similarity searches, structure and function prediction and estimation of biophysical properties. However, relying on embeddings without assessing their ability to accurately represent biomolecules is a critical flaw-akin to using a scalpel in surgery without verifying its sharpness. Here we propose a means to evaluate the capacity of protein language models to encode biologically meaningful information. For each protein, representation uncertainty is scored as the fraction of non-biological 'synthetic' sequences among its nearest neighbors in latent space. Our analysis reveals that low-quality embeddings often fail to capture meaningful biology, displaying vector properties indistinguishable from those of randomly generated sequences. Our model-agnostic scoring framework is, to our knowledge, the first to quantify protein sequence embedding reliability. It enables embedding
+    screening prior to downstream applications and inferences, significantly improving their reliability. We propose that embedding evaluation should be undertaken for other uses of language models in science as well.
+  pdf: refs/P/Prabakaran and Bromberg 2026 - Quantifying uncertainty in protein representations across models and tasks.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Prabakaran2026-pb_deterministic_features.yaml
+    llm_refined_features: validation/features/Prabakaran2026-pb_llm_refined_features.yaml
+    gold_features: validation/features/Prabakaran2026-pb_gold_features.yaml
+    extracted_text: validation/extracted/Prabakaran2026-pb_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Prabakaran2026-pb_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Prabakaran2026-pb_llm_refined.md
+    recommendation_gold: validation/recommendations/Prabakaran2026-pb_gold.md
+- id: Saghaei2026-mh
+  entry_type: article
+  title: '{VirJenDB}: a {FAIR} (meta)data and bioinformatics platform for all viruses'
+  authors: Saghaei, Shahram and Siemers, Malte and Ossetek, Kilian L and Richter, Stephan and Edwards, Robert A and Roux, Simon and Zielezinski, Andrzej and Dutilh, Bas E and Marz, Manja and Cassman, Noriko A
+  journal: Nucleic Acids Res.
+  actual_journal: Nucleic Acids Res.
+  year: 2026
+  doi: 10.1093/nar/gkaf1224
+  pmid: '41404704'
+  pmc: PMC12807664
+  abstract: High-throughput sequencing has generated an unprecedented volume of data. However, researcher-submitted data in repositories requires extensive curation and quality control for reuse. These tasks are hindered by the multiplicity of repositories, the sheer volume of the data, and the complexity of virus (meta)data curation. To address these challenges, VirJenDB offers a user-friendly platform to facilitate versioned, community-driven curation, and ontology development. Virus sequences were ingested from 16 sources, including 200 fields of metadata or standards, covering taxonomy, sample, and host information. Up to 85 metadata fields have undergone at least one round of curation, and are linked to 15.4 million virus sequences, with 88 % from those infecting eukaryotes and the remaining infecting prokaryotes. Subsets were created, including a novel collection of 0.91 million viral operational taxonomic unit (vOTU) sequences across all viruses, while keeping the original sequences
+    from each vOTU to facilitate downstream analyses, e.g. sequence variation. The VirJenDB web portal (https://www.virjendb.org) provides HTTPS and Application Programming Interface (API) access to the sequence datasets and metadata, offering a search engine, filtering, download, visualizations, and documentation. VirJenDB aims to connect the phage and eukaryotic virus research communities by supporting webtool integration, meta-analyses, and metadata schema extensions.
+  pdf: refs/S/Saghaei et al. 2026 - VirJenDB - a FAIR (meta)data and bioinformatics platform for all viruses.pdf;S/Saghaei et al. 2026 - gkaf1224.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Saghaei2026-mh_deterministic_features.yaml
+    llm_refined_features: validation/features/Saghaei2026-mh_llm_refined_features.yaml
+    gold_features: validation/features/Saghaei2026-mh_gold_features.yaml
+    extracted_text: validation/extracted/Saghaei2026-mh_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Saghaei2026-mh_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Saghaei2026-mh_llm_refined.md
+    recommendation_gold: validation/recommendations/Saghaei2026-mh_gold.md
+- id: Silpe2023-lg
+  entry_type: article
+  title: Small protein modules dictate prophage fates during polylysogeny
+  authors: Silpe, Justin E and Duddy, Olivia P and Johnson, Grace E and Beggs, Grace A and Hussain, Fatima A and Forsberg, Kevin J and Bassler, Bonnie L
+  journal: Nature
+  actual_journal: Nature
+  year: 2023
+  doi: 10.1038/s41586-023-06376-y
+  pmid: '37495698'
+  pmc: PMC10432266
+  abstract: Most bacteria in the biosphere are predicted to be polylysogens harbouring multiple prophages1-5. In studied systems, prophage induction from lysogeny to lysis is near-universally driven by DNA-damaging agents6. Thus, how co-residing prophages compete for cell resources if they respond to an identical trigger is unknown. Here we discover regulatory modules that control prophage induction independently of the DNA-damage cue. The modules bear little resemblance at the sequence level but share a regulatory logic by having a transcription factor that activates the expression of a neighbouring gene that encodes a small protein. The small protein inactivates the master repressor of lysis, which leads to induction. Polylysogens that harbour two prophages exposed to DNA damage release mixed populations of phages. Single-cell analyses reveal that this blend is a consequence of discrete subsets of cells producing one, the other or both phages. By contrast, induction through the DNA-damage-independent
+    module results in cells producing only the phage sensitive to that specific cue. Thus, in the polylysogens tested, the stimulus used to induce lysis determines phage productivity. Considering the lack of potent DNA-damaging agents in natural habitats, additional phage-encoded sensory pathways to lysis likely have fundamental roles in phage-host biology and inter-prophage competition.
+  pdf: refs/S/Silpe et al. 2023 - Small protein modules dictate prophage fates during polylysogeny.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Silpe2023-lg_deterministic_features.yaml
+    llm_refined_features: validation/features/Silpe2023-lg_llm_refined_features.yaml
+    gold_features: validation/features/Silpe2023-lg_gold_features.yaml
+    extracted_text: validation/extracted/Silpe2023-lg_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Silpe2023-lg_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Silpe2023-lg_llm_refined.md
+    recommendation_gold: validation/recommendations/Silpe2023-lg_gold.md
+- id: Grigson2022-xr
+  entry_type: article
+  title: Organizing the bacterial annotation space with amino acid sequence embeddings
+  authors: Grigson, Susanna R and McKerral, Jody C and Mitchell, James G and Edwards, Robert A
+  journal: BMC Bioinformatics
+  actual_journal: BMC Bioinformatics
+  year: 2022
+  doi: 10.1186/s12859-022-04930-5
+  pmid: '36151519'
+  pmc: PMC9502642
+  abstract: 'BACKGROUND: Due to the ever-expanding gap between the number of proteins being discovered and their functional characterization, protein function inference remains a fundamental challenge in computational biology. Currently, known protein annotations are organized in human-curated ontologies, however, all possible protein functions may not be organized accurately. Meanwhile, recent advancements in natural language processing and machine learning have developed models which embed amino acid sequences as vectors in n-dimensional space. So far, these embeddings have primarily been used to classify protein sequences using manually constructed protein classification schemes. RESULTS: In this work, we describe the use of amino acid sequence embeddings as a systematic framework for studying protein ontologies. Using a sequence embedding, we show that the bacterial carbohydrate metabolism class within the SEED annotation system contains 48 clusters of embedded sequences despite this
+    class containing 29 functional labels. Furthermore, by embedding Bacillus amino acid sequences with unknown functions, we show that these unknown sequences form clusters that are likely to have similar biological roles. CONCLUSIONS: This study demonstrates that amino acid sequence embeddings may be a powerful tool for developing more robust ontologies for annotating protein sequence data. In addition, embeddings may be beneficial for clustering protein sequences with unknown functions and selecting optimal candidate proteins to characterize experimentally.'
+  pdf: refs/G/Grigson et al. 2022 - Organizing the bacterial annotation space with amino acid sequence embeddings.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Grigson2022-xr_deterministic_features.yaml
+    llm_refined_features: validation/features/Grigson2022-xr_llm_refined_features.yaml
+    gold_features: validation/features/Grigson2022-xr_gold_features.yaml
+    extracted_text: validation/extracted/Grigson2022-xr_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Grigson2022-xr_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Grigson2022-xr_llm_refined.md
+    recommendation_gold: validation/recommendations/Grigson2022-xr_gold.md
+- id: Shaw2023-rr
+  entry_type: article
+  title: 'Sensitive poliovirus detection using nested {PCR} and nanopore sequencing: a prospective validation study'
+  authors: Shaw, Alexander G and Mampuela, Tresor Kabeya and Lofiko, Emmanuel Lokilo and Pratt, Catherine and Troman, Catherine and Bujaki, Erika and O'Toole, Áine and Akello, Joyce Odeke and Aziza, Adrienne Amuri and Lusamaki, Eddy Kinganda and Makangara, Jean Claude and Akonga, Marceline and Lay, Yvonne and Nsunda, Bibiche and White, Bailey and Jorgensen, David and Pukuta, Elizabeth and Riziki, Yogolelo and Rankin, Kathleen E and Rambaut, Andrew and Ahuka-Mundeke, Steve and Muyembe, Jean-Jacques and Martin, Javier and Grassly, Nicholas C and Mbala-Kingebeni, Placide
+  journal: Nat. Microbiol.
+  actual_journal: Nat. Microbiol.
+  year: 2023
+  doi: 10.1038/s41564-023-01453-4
+  pmid: '37591995'
+  pmc: PMC10465353
+  abstract: Timely detection of outbreaks is needed for poliovirus eradication, but gold standard detection in the Democratic Republic of the Congo takes 30 days (median). Direct molecular detection and nanopore sequencing (DDNS) of poliovirus in stool samples is a promising fast method. Here we report prospective testing of stool samples from suspected polio cases, and their contacts, in the Democratic Republic of the Congo between 10 August 2021 and 4 February 2022. DDNS detected polioviruses in 62/2,339 (2.7%) of samples, while gold standard combination of cell culture, quantitative PCR and Sanger sequencing detected polioviruses in 51/2,339 (2.2%) of the same samples. DDNS provided case confirmation in 7 days (median) in routine surveillance conditions. DDNS enabled confirmation of three serotype 2 circulating vaccine-derived poliovirus outbreaks 23 days (mean) earlier (range 6-30 days) than the gold standard method. The mean sequence similarity between sequences obtained by the two
+    methods was 99.98%. Our data confirm the feasibility of implementing DDNS in a national poliovirus laboratory.
+  pdf: refs/S/Shaw et al. 2023 - Sensitive poliovirus detection using nested PCR and nanopore sequencing - a prospective validation study.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Shaw2023-rr_deterministic_features.yaml
+    llm_refined_features: validation/features/Shaw2023-rr_llm_refined_features.yaml
+    gold_features: validation/features/Shaw2023-rr_gold_features.yaml
+    extracted_text: validation/extracted/Shaw2023-rr_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Shaw2023-rr_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Shaw2023-rr_llm_refined.md
+    recommendation_gold: validation/recommendations/Shaw2023-rr_gold.md
+- id: Rostol2024-kl
+  entry_type: article
+  title: Bacteriophages avoid autoimmunity from cognate immune systems as an intrinsic part of their life cycles
+  authors: Rostøl, Jakob T and Quiles-Puchalt, Nuria and Iturbe-Sanz, Pablo and Lasa, Íñigo and Penadés, José R
+  journal: Nat Microbiol
+  actual_journal: Nat Microbiol
+  year: 2024
+  doi: 10.1038/s41564-024-01661-6
+  pmid: '38565896'
+  pmc: PMC11087260
+  abstract: Dormant prophages protect lysogenic cells by expressing diverse immune systems, which must avoid targeting their cognate prophages upon activation. Here we report that multiple Staphylococcus aureus prophages encode Tha (tail-activated, HEPN (higher eukaryotes and prokaryotes nucleotide-binding) domain-containing anti-phage system), a defence system activated by structural tail proteins of incoming phages. We demonstrate the function of two Tha systems, Tha-1 and Tha-2, activated by distinct tail proteins. Interestingly, Tha systems can also block reproduction of the induced tha-positive prophages. To prevent autoimmunity after prophage induction, these systems are inhibited by the product of a small overlapping antisense gene previously believed to encode an excisionase. This genetic organization, conserved in S. aureus prophages, allows Tha systems to protect prophages and their bacterial hosts against phage predation and to be turned off during prophage induction, balancing
+    immunity and autoimmunity. Our results show that the fine regulation of these processes is essential for the correct development of prophages' life cycle.
+  pdf: refs/R/Rostøl et al. 2024 - Bacteriophages avoid autoimmunity from cognate immune systems as an intrinsic part of their life cycles.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Rostol2024-kl_deterministic_features.yaml
+    llm_refined_features: validation/features/Rostol2024-kl_llm_refined_features.yaml
+    gold_features: validation/features/Rostol2024-kl_gold_features.yaml
+    extracted_text: validation/extracted/Rostol2024-kl_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Rostol2024-kl_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Rostol2024-kl_llm_refined.md
+    recommendation_gold: validation/recommendations/Rostol2024-kl_gold.md
+- id: Tomofuji2023-ex
+  entry_type: article
+  title: Reconstruction of the personal information from human genome reads in gut metagenome sequencing data
+  authors: Tomofuji, Yoshihiko and Sonehara, Kyuto and Kishikawa, Toshihiro and Maeda, Yuichi and Ogawa, Kotaro and Kawabata, Shuhei and Nii, Takuro and Okuno, Tatsusada and Oguro-Igashira, Eri and Kinoshita, Makoto and Takagaki, Masatoshi and Yamamoto, Kenichi and Kurakawa, Takashi and Yagita-Sakamaki, Mayu and Hosokawa, Akiko and Motooka, Daisuke and Matsumoto, Yuki and Matsuoka, Hidetoshi and Yoshimura, Maiko and Ohshima, Shiro and Nakamura, Shota and Inohara, Hidenori and Kishima, Haruhiko and Mochizuki, Hideki and Takeda, Kiyoshi and Kumanogoh, Atsushi and Okada, Yukinori
+  journal: Nat. Microbiol.
+  actual_journal: Nat. Microbiol.
+  year: 2023
+  doi: 10.1038/s41564-023-01381-3
+  pmid: '37188815'
+  pmc: PMC10234815
+  abstract: Human DNA present in faecal samples can result in a small number of human reads in gut shotgun metagenomic sequencing data. However, it is presently unclear how much personal information can be reconstructed from such reads, and this has not been quantitatively evaluated. Such a quantitative evaluation is necessary to clarify the ethical concerns related to data sharing and to enable efficient use of human genetic information in stool samples, such as for research and forensics. Here we used genomic approaches to reconstruct personal information from the faecal metagenomes of 343 Japanese individuals with associated human genotype data. Genetic sex could be accurately predicted based on the sequencing depth of sex chromosomes for 97.3% of the samples. Individuals could be re-identified from the matched genotype data based on human reads recovered from the faecal metagenomic data with 93.3% sensitivity using a likelihood score-based method. This method also enabled us to predict
+    the ancestries of 98.3% of the samples. Finally, we performed ultra-deep shotgun metagenomic sequencing of five faecal samples as well as whole-genome sequencing of blood samples. Using genotype-calling approaches, we demonstrated that the genotypes of both common and rare variants could be reconstructed from faecal samples. This included clinically relevant variants. Our approach can be used to quantify personal information contained within gut metagenome data.
+  pdf: refs/T/Tomofuji et al. 2023 - Reconstruction of the personal information from human genome reads in gut metagenome sequencing data.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Tomofuji2023-ex_deterministic_features.yaml
+    llm_refined_features: validation/features/Tomofuji2023-ex_llm_refined_features.yaml
+    gold_features: validation/features/Tomofuji2023-ex_gold_features.yaml
+    extracted_text: validation/extracted/Tomofuji2023-ex_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Tomofuji2023-ex_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Tomofuji2023-ex_llm_refined.md
+    recommendation_gold: validation/recommendations/Tomofuji2023-ex_gold.md
+- id: Dahlman2025-uv
+  entry_type: article
+  title: Isolation, engineering and ecology of temperate phages from the human gut
+  authors: Dahlman, Sofia and Avellaneda-Franco, Laura and Rutten, Emily L and Gulliver, Emily L and Solari, Sean and Chonwerawong, Michelle and Kett, Ciaren and Subedi, Dinesh and Young, Remy B and Campbell, Nathan and Gould, Jodee A and Bell, Jasmine D and Docherty, Callum A H and Turkington, Christopher J R and Nezam-Abadi, Neda and Grasis, Juris A and Lyras, Dena and Edwards, Robert A and Forster, Samuel C and Barr, Jeremy J
+  journal: Nature
+  actual_journal: Nature
+  year: 2025
+  doi: 10.1038/s41586-025-09614-7
+  pmid: ''
+  pmc: ''
+  abstract: Abstract Large-scale metagenomic and data-mining efforts have revealed an expansive diversity of bacteriophages (phages) within the human gut1–3. However, functional understanding of phage–host interactions within this complex environment is limited, largely due to a lack of cultured isolates available for experimental validation. Here we characterize 134 inducible prophages originating from 252 human gut bacterial isolates using 10 different induction conditions to expand the experimentally validated temperate phage–host pairs originating from the human gut. Importantly, only 18% of computationally predicted prophages could be induced in pure cultures. Moreover, we construct a 78-member synthetic microbiome that, when co-cultured in the presence of human colonic cells (Caco2), led to the induction of 35% phage species. Using cultured isolates, we demonstrate that human host-associated cellular products may act as induction agents, providing a possible link between gastrointestinal
+    cell lysis and temperate phage populations4,5. We provide key insights into prophage diversity and genetics, including a genetic pathway for domestication, finding that polylysogeny was common and resulted in coordinated prophage induction, and that differential induction can be influenced by divergent prophage integration sites. More broadly, our study highlights the importance of culture-based techniques, alongside experimental validation, genomics and computational prediction, to understand the biology and function of temperate phages in the human gut microbiome. These culture-based approaches will enable applications across synthetic biology, biotechnology and microbiome fields.
+  pdf: refs/D/Dahlman et al. 2025 - Isolation, engineering and ecology of temperate phages from the human gut.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Dahlman2025-uv_deterministic_features.yaml
+    llm_refined_features: validation/features/Dahlman2025-uv_llm_refined_features.yaml
+    gold_features: validation/features/Dahlman2025-uv_gold_features.yaml
+    extracted_text: validation/extracted/Dahlman2025-uv_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Dahlman2025-uv_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Dahlman2025-uv_llm_refined.md
+    recommendation_gold: validation/recommendations/Dahlman2025-uv_gold.md
+- id: Ramos-Barbero2023-xo
+  entry_type: article
+  title: Characterization of {crAss}-like phage isolates highlights Crassvirales genetic heterogeneity and worldwide distribution
+  authors: Ramos-Barbero, María Dolores and Gómez-Gómez, Clara and Sala-Comorera, Laura and Rodríguez-Rubio, Lorena and Morales-Cortes, Sara and Mendoza-Barberá, Elena and Vique, Gloria and Toribio-Avedillo, Daniel and Blanch, Anicet R and Ballesté, Elisenda and Garcia-Aljaro, Cristina and Muniesa, Maite
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2023
+  doi: 10.1038/s41467-023-40098-z
+  pmid: '37463935'
+  pmc: PMC10354031
+  abstract: Crassvirales (crAss-like phages) are an abundant group of human gut-specific bacteriophages discovered in silico. The use of crAss-like phages as human fecal indicators is proposed but the isolation of only seven cultured strains of crAss-like phages to date has greatly hindered their study. Here, we report the isolation and genetic characterization of 25 new crAss-like phages (termed crAssBcn) infecting Bacteroides intestinalis, belonging to the order Crassvirales, genus Kehishuvirus and, based on their genomic variability, classified into six species. CrAssBcn phage genomes are similar to ΦCrAss001 but show genomic and aminoacidic differences when compared to other crAss-like phages of the same family. CrAssBcn phages are detected in fecal metagenomes around the world at a higher frequency than ΦCrAss001. This study increases the known crAss-like phage isolates and their abundance and heterogeneity open the question of what member of the Crassvirales group should be selected
+    as human fecal marker.
+  pdf: refs/R/Ramos-Barbero et al. 2023 - Characterization of crAss-like phage isolates highlights Crassvirales genetic heterogeneity and worldwide distribution.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Ramos-Barbero2023-xo_deterministic_features.yaml
+    llm_refined_features: validation/features/Ramos-Barbero2023-xo_llm_refined_features.yaml
+    gold_features: validation/features/Ramos-Barbero2023-xo_gold_features.yaml
+    extracted_text: validation/extracted/Ramos-Barbero2023-xo_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Ramos-Barbero2023-xo_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Ramos-Barbero2023-xo_llm_refined.md
+    recommendation_gold: validation/recommendations/Ramos-Barbero2023-xo_gold.md
+- id: Shah2023-es
+  entry_type: article
+  title: Expanding known viral diversity in the healthy infant gut
+  authors: Shah, Shiraz A and Deng, Ling and Thorsen, Jonathan and Pedersen, Anders G and Dion, Moïra B and Castro-Mejía, Josué L and Silins, Ronalds and Romme, Fie O and Sausset, Romain and Jessen, Leon E and Ndela, Eric Olo and Hjelmsø, Mathis and Rasmussen, Morten A and Redgwell, Tamsin A and Leal Rodríguez, Cristina and Vestergaard, Gisle and Zhang, Yichang and Chawes, Bo and Bønnelykke, Klaus and Sørensen, Søren J and Bisgaard, Hans and Enault, Francois and Stokholm, Jakob and Moineau, Sylvain and Petit, Marie-Agnès and Nielsen, Dennis S
+  journal: Nat Microbiol
+  actual_journal: Nat Microbiol
+  year: 2023
+  doi: 10.1038/s41564-023-01345-7
+  pmid: '37037943'
+  pmc: PMC10159846
+  abstract: The gut microbiome is shaped through infancy and impacts the maturation of the immune system, thus protecting against chronic disease later in life. Phages, or viruses that infect bacteria, modulate bacterial growth by lysis and lysogeny, with the latter being especially prominent in the infant gut. Viral metagenomes (viromes) are difficult to analyse because they span uncharted viral diversity, lacking marker genes and standardized detection methods. Here we systematically resolved the viral diversity in faecal viromes from 647 1-year-olds belonging to Copenhagen Prospective Studies on Asthma in Childhood 2010, an unselected Danish cohort of healthy mother-child pairs. By assembly and curation we uncovered 10,000 viral species from 248 virus family-level clades (VFCs). Most (232 VFCs) were previously unknown, belonging to the Caudoviricetes viral class. Hosts were determined for 79% of phage using clustered regularly interspaced short palindromic repeat spacers within bacterial
+    metagenomes from the same children. Typical Bacteroides-infecting crAssphages were outnumbered by undescribed phage families infecting Clostridiales and Bifidobacterium. Phage lifestyles were conserved at the viral family level, with 33 virulent and 118 temperate phage families. Virulent phages were more abundant, while temperate ones were more prevalent and diverse. Together, the viral families found in this study expand existing phage taxonomy and provide a resource aiding future infant gut virome research.
+  pdf: refs/S/Shah et al. 2023 - Expanding known viral diversity in the healthy infant gut.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Shah2023-es_deterministic_features.yaml
+    llm_refined_features: validation/features/Shah2023-es_llm_refined_features.yaml
+    gold_features: validation/features/Shah2023-es_gold_features.yaml
+    extracted_text: validation/extracted/Shah2023-es_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Shah2023-es_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Shah2023-es_llm_refined.md
+    recommendation_gold: validation/recommendations/Shah2023-es_gold.md
+- id: Medvedeva2023-hh
+  entry_type: article
+  title: A compendium of viruses from methanogenic archaea reveals their diversity and adaptations to the gut environment
+  authors: Medvedeva, Sofia and Borrel, Guillaume and Krupovic, Mart and Gribaldo, Simonetta
+  journal: Nat Microbiol
+  actual_journal: Nat Microbiol
+  year: 2023
+  doi: 10.1038/s41564-023-01485-w
+  pmid: '37749252'
+  pmc: '4402960'
+  abstract: Methanogenic archaea are major producers of methane, a potent greenhouse gas and biofuel, and are widespread in diverse environments, including the animal gut. The ecophysiology of methanogens is likely impacted by viruses, which remain, however, largely uncharacterized. Here we carried out a global investigation of viruses associated with all current diversity of methanogens by assembling an extensive CRISPR database consisting of 156,000 spacers. We report 282 high-quality (pro)viral and 205 virus-like/plasmid sequences assigned to hosts belonging to ten main orders of methanogenic archaea. Viruses of methanogens can be classified into 87 families, underscoring a still largely undiscovered genetic diversity. Viruses infecting gut-associated archaea provide evidence of convergence in adaptation with viruses infecting gut-associated bacteria. These viruses contain a large repertoire of lysin proteins that cleave archaeal pseudomurein and are enriched in glycan-binding domains
+    (Ig-like/Flg_new) and diversity-generating retroelements. The characterization of this vast repertoire of viruses paves the way towards a better understanding of their role in regulating methanogen communities globally, as well as the development of much-needed genetic tools.
+  pdf: refs/M/Medvedeva et al. 2023 - A compendium of viruses from methanogenic archaea reveals their diversity and adaptations to the gut environment.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Medvedeva2023-hh_deterministic_features.yaml
+    llm_refined_features: validation/features/Medvedeva2023-hh_llm_refined_features.yaml
+    gold_features: validation/features/Medvedeva2023-hh_gold_features.yaml
+    extracted_text: validation/extracted/Medvedeva2023-hh_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Medvedeva2023-hh_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Medvedeva2023-hh_llm_refined.md
+    recommendation_gold: validation/recommendations/Medvedeva2023-hh_gold.md
+- id: Starikova2020-wz
+  entry_type: article
+  title: 'Phigaro: high-throughput prophage sequence annotation'
+  authors: Starikova, Elizaveta V and Tikhonova, Polina O and Prianichnikov, Nikita A and Rands, Chris M and Zdobnov, Evgeny M and Ilina, Elena N and Govorun, Vadim M
+  journal: Bioinformatics
+  actual_journal: Bioinformatics
+  year: 2020
+  doi: 10.1093/bioinformatics/btaa250
+  pmid: '32311023'
+  pmc: ''
+  abstract: 'SUMMARY: Phigaro is a standalone command-line application that is able to detect prophage regions taking raw genome and metagenome assemblies as an input. It also produces dynamic annotated ''prophage genome maps'' and marks possible transposon insertion spots inside prophages. It is applicable for mining prophage regions from large metagenomic datasets. AVAILABILITY AND IMPLEMENTATION: Source code for Phigaro is freely available for download at https://github.com/bobeobibo/phigaro along with test data. The code is written in Python. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.'
+  pdf: refs/S/Starikova et al. 2020 - Phigaro - high-throughput prophage sequence annotation.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Starikova2020-wz_deterministic_features.yaml
+    llm_refined_features: validation/features/Starikova2020-wz_llm_refined_features.yaml
+    gold_features: validation/features/Starikova2020-wz_gold_features.yaml
+    extracted_text: validation/extracted/Starikova2020-wz_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Starikova2020-wz_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Starikova2020-wz_llm_refined.md
+    recommendation_gold: validation/recommendations/Starikova2020-wz_gold.md
+- id: Widder2024-gl
+  entry_type: article
+  title: Microbial community organization designates distinct pulmonary exacerbation types and predicts treatment outcome in cystic fibrosis
+  authors: Widder, Stefanie and Carmody, Lisa A and Opron, Kristopher and Kalikin, Linda M and Caverly, Lindsay J and LiPuma, John J
+  journal: Nat. Commun.
+  actual_journal: Nat. Commun.
+  year: 2024
+  doi: 10.1038/s41467-024-49150-y
+  pmid: '38849369'
+  pmc: PMC11161516
+  abstract: Polymicrobial infection of the airways is a hallmark of obstructive lung diseases such as cystic fibrosis (CF), non-CF bronchiectasis, and chronic obstructive pulmonary disease. Pulmonary exacerbations (PEx) in these conditions are associated with accelerated lung function decline and higher mortality rates. Understanding PEx ecology is challenged by high inter-patient variability in airway microbial community profiles. We analyze bacterial communities in 880 CF sputum samples collected during an observational prospective cohort study and develop microbiome descriptors to model community reorganization prior to and during 18 PEx. We identify two microbial dysbiosis regimes with opposing ecology and dynamics. Pathogen-governed PEx show hierarchical community reorganization and reduced diversity, whereas anaerobic bloom PEx display stochasticity and increased diversity. A simulation of antimicrobial treatment predicts better efficacy for hierarchically organized communities. This
+    link between PEx, microbiome organization, and treatment success advances the development of personalized clinical management in CF and, potentially, other obstructive lung diseases.
+  pdf: refs/W/Widder et al. 2024 - Microbial community organization designates distinc ... exacerbation types and predicts treatment outcome in cystic fibrosis.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Widder2024-gl_deterministic_features.yaml
+    llm_refined_features: validation/features/Widder2024-gl_llm_refined_features.yaml
+    gold_features: validation/features/Widder2024-gl_gold_features.yaml
+    extracted_text: validation/extracted/Widder2024-gl_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Widder2024-gl_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Widder2024-gl_llm_refined.md
+    recommendation_gold: validation/recommendations/Widder2024-gl_gold.md
+- id: Papudeshi2025-xm
+  entry_type: article
+  title: 'Sphae: an automated toolkit for predicting phage therapy candidates from sequencing data'
+  authors: Papudeshi, Bhavya and Roach, Michael J and Mallawaarachchi, Vijini and Bouras, George and Grigson, Susanna R and Giles, Sarah K and Harker, Clarice M and Hutton, Abbey L K and Tarasenko, Anita and Inglis, Laura K and Vega, Alejandro A and Souza, Cole and Boling, Lance and Hajama, Hamza and Cobián Güemes, Ana Georgina and Segall, Anca M and Dinsdale, Elizabeth A and Edwards, Robert A
+  journal: Bioinform. Adv.
+  actual_journal: Bioinform. Adv.
+  year: 2025
+  doi: 10.1093/bioadv/vbaf004
+  pmid: '39897948'
+  pmc: PMC11783317
+  abstract: 'Motivation: Phage therapy offers a viable alternative for bacterial infections amid rising antimicrobial resistance. Its success relies on selecting safe and effective phage candidates that require comprehensive genomic screening to identify potential risks. However, this process is often labor intensive and time-consuming, hindering rapid clinical deployment. Results: We developed Sphae, an automated bioinformatics pipeline designed to streamline the therapeutic potential of a phage in under 10 minutes. Using Snakemake workflow manager, Sphae integrates tools for quality control, assembly, genome assessment, and annotation tailored specifically for phage biology. Sphae automates the detection of key genomic markers, including virulence factors, antimicrobial resistance genes, and lysogeny indicators such as integrase, recombinase, and transposase, which could preclude therapeutic use. Among the 65 phage sequences analyzed, 28 showed therapeutic potential, 8 failed due to low
+    sequencing depth, 22 contained prophage or virulent markers, and 23 had multiple phage genomes. This workflow produces a report to assess phage safety and therapy suitability quickly. Sphae is scalable and portable, facilitating efficient deployment across most high-performance computing and cloud platforms, accelerating the genomic evaluation process. Availability and implementation: Sphae source code is freely available at https://github.com/linsalrob/sphae, with installation supported on Conda, PyPi, Docker containers.'
+  pdf: refs/P/Papudeshi et al. 2025 - vbaf004.pdf;P/Papudeshi et al. 2025 - vbaf004 (1).pdf;P/Papudeshi et al. 2025 - Sphae - an automated toolkit for predicting phage therapy candidates from sequencing data.pdf;P/Papudeshi et al. 2025 - Papudeshi_Sphae_P2025.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Papudeshi2025-xm_deterministic_features.yaml
+    llm_refined_features: validation/features/Papudeshi2025-xm_llm_refined_features.yaml
+    gold_features: validation/features/Papudeshi2025-xm_gold_features.yaml
+    extracted_text: validation/extracted/Papudeshi2025-xm_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Papudeshi2025-xm_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Papudeshi2025-xm_llm_refined.md
+    recommendation_gold: validation/recommendations/Papudeshi2025-xm_gold.md
+- id: Bader2023-vo
+  entry_type: article
+  title: A relational framework for microbiome research with Indigenous communities
+  authors: Bader, Alyssa C and Van Zuylen, Essie M and Handsley-Davis, Matilda and Alegado, Rosanna A and Benezra, Amber and Pollet, Rebecca M and Ehau-Taumaunu, Hanareia and Weyrich, Laura S and Anderson, Matthew Z
+  journal: Nature Microbiology
+  actual_journal: Nature Microbiology
+  year: 2023
+  doi: 10.1038/s41564-023-01471-2
+  pmid: ''
+  pmc: ''
+  abstract: Ethical practices in human microbiome research have failed to keep pace with scientific advances in the field. Researchers seeking to ‘preserve’ microbial species associated with Indigenous groups, but absent from industrialized populations, have largely failed to include Indigenous people in knowledge co-production or benefit, perpetuating a legacy of intellectual and material extraction. We propose a framework centred on relationality among Indigenous peoples, researchers and microbes, to guide ethical microbiome research. Our framework centres accountability to flatten historical power imbalances that favour researcher perspectives and interests to provide space for Indigenous worldviews in pursuit of Indigenous research sovereignty. Ethical inclusion of Indigenous communities in microbiome research can provide health benefits for all populations and reinforce mutually beneficial partnerships between researchers and the public. A framework centred on relationality among Indigenous
+    peoples, researchers and microorganisms is presented, to guide ethical microbiome research.
+  pdf: refs/B/Bader et al. 2023 - A relational framework for microbiome research with Indigenous communities.pdf
+  validation:
+    expected_good_fits: []
+    acceptable_fits: []
+    poor_fits: []
+    aspirational_if_reframed: []
+    notes: ''
+  outputs:
+    deterministic_features: validation/features/Bader2023-vo_deterministic_features.yaml
+    llm_refined_features: validation/features/Bader2023-vo_llm_refined_features.yaml
+    gold_features: validation/features/Bader2023-vo_gold_features.yaml
+    extracted_text: validation/extracted/Bader2023-vo_extracted_text.txt
+    recommendation_deterministic: validation/recommendations/Bader2023-vo_deterministic.md
+    recommendation_llm_refined: validation/recommendations/Bader2023-vo_llm_refined.md
+    recommendation_gold: validation/recommendations/Bader2023-vo_gold.md
