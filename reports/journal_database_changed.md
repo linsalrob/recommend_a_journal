@@ -1,15 +1,15 @@
 # Journal Database Changed Report
 
-- Run date: 2026-08-01
+- Run date: 2026-09-01
 - Workflow trigger: schedule
 
 ## Summary
 
 - Journals checked: 42
 - URLs checked: 127
-- New URLs: 1
-- Changed URLs: 38
-- Unchanged URLs: 16
+- New URLs: 0
+- Changed URLs: 37
+- Unchanged URLs: 18
 - Failed URLs: 1
 - Blocked URLs: 55
 - Suspicious fetched pages: 16
@@ -51,10 +51,10 @@ Manual protected fields changed by this run: 0
 | Environmental Microbiome | suspicious | 200 | https://environmentalmicrobiome.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | BMC Bioinformatics | suspicious | 200 | https://bmcbioinformatics.biomedcentral.com/ | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 | PeerJ Computer Science | suspicious | 201 | https://peerj.com/computer-science/ | 9498eee98cab | 9498eee98cab | very_short_body |  |
-| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 6b22a07893eb | 9e84899606ba | very_short_body |  |
-| BMC Microbiology | suspicious | 200 | https://link.springer.com/journal/12866 |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| BMC Genomics | suspicious | 200 | https://link.springer.com/journal/12864 |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
-| Nature Computational Science | suspicious | 200 | https://www.nature.com/natcomputsci |  | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| PeerJ Computer Science | suspicious | 200 | https://peerj.com/pricing/ | 9e84899606ba | d53d8afeab1a | very_short_body |  |
+| BMC Microbiology | suspicious | 200 | https://link.springer.com/journal/12866 | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| BMC Genomics | suspicious | 200 | https://link.springer.com/journal/12864 | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
+| Nature Computational Science | suspicious | 200 | https://www.nature.com/natcomputsci | b86aed68e7af | b86aed68e7af | looks_valid, duplicate_hash_across_many_urls |  |
 
 ## Blocked URLs
 
@@ -120,45 +120,43 @@ Manual protected fields changed by this run: 0
 
 | Journal | Status | HTTP | URL | Previous hash | New hash | Quality flags | Error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nature | changed | 200 | https://portal.issn.org/resource/ISSN/1476-4687 | 6f452f0d5042 | bc3412f50f8f | looks_valid |  |
-| Science | changed | 200 | https://portal.issn.org/resource/ISSN/1095-9203 | b6269aaa52bb | c1f51f1978f7 | looks_valid |  |
-| Cell | changed | 200 | https://portal.issn.org/resource/ISSN/1097-4172 | d095c30ddaeb | caa69d275cd5 | looks_valid |  |
-| Nature Microbiology | changed | 200 | https://portal.issn.org/resource/ISSN/2058-5276 | 6cb3a4d092fd | 18554f779a49 | looks_valid |  |
-| Nature Biotechnology | changed | 200 | https://portal.issn.org/resource/ISSN/1546-1696 | 1c9594a01e15 | 44c19a6e4e61 | looks_valid |  |
-| Nature Methods | changed | 200 | https://portal.issn.org/resource/ISSN/1548-7091 | 1192f7eb555c | e8845516efe7 | looks_valid |  |
-| Nature Methods | changed | 200 | https://portal.issn.org/resource/ISSN/1548-7105 | 21c6e4a8f09b | 810a5cd3dcf4 | looks_valid |  |
-| Nature Communications | changed | 200 | https://portal.issn.org/resource/ISSN/2041-1723 | 8cc27e094c9c | 65cf357257e9 | looks_valid |  |
-| Science Advances | changed | 200 | https://portal.issn.org/resource/ISSN/2375-2548 | 0881005fb4f8 | 0ba97b0b0101 | looks_valid |  |
-| Cell Host & Microbe | changed | 200 | https://portal.issn.org/resource/ISSN/1934-6069 | 0fca1d253af7 | 4c5afa5d49d5 | looks_valid |  |
-| Genome Biology | changed | 200 | https://portal.issn.org/resource/ISSN/1474-760X | f2511eab772c | 54c034ce08e4 | looks_valid |  |
-| Genome Research | changed | 200 | https://portal.issn.org/resource/ISSN/1549-5469 | 27b064f2c38a | 08970d4e06fa | looks_valid |  |
-| PNAS | changed | 200 | https://portal.issn.org/resource/ISSN/0027-8424 | c54de66479df | a0fb0247e73e | looks_valid |  |
-| PNAS | changed | 200 | https://portal.issn.org/resource/ISSN/1091-6490 | 7329cf7c4968 | 644f975768a8 | looks_valid |  |
-| Microbiome | changed | 200 | https://portal.issn.org/resource/ISSN/2049-2618 | e6dd6ba47fd2 | 60e43f97aa00 | looks_valid |  |
-| ISME Journal | changed | 200 | https://portal.issn.org/resource/ISSN/1751-7370 | 0b3bba510af5 | ac6755fab332 | looks_valid |  |
-| ISME Communications | changed | 200 | https://portal.issn.org/resource/ISSN/2730-6151 | 957c1db0191b | 47b6a5d24f64 | looks_valid |  |
-| mBio | changed | 200 | https://portal.issn.org/resource/ISSN/2150-7511 | 511a899605aa | a36f1ab3de17 | looks_valid |  |
-| mSystems | changed | 200 | https://portal.issn.org/resource/ISSN/2379-5077 | 762a535d44a3 | e52e56e347a2 | looks_valid |  |
-| Microbiology Spectrum | changed | 200 | https://portal.issn.org/resource/ISSN/2165-0497 | 553152623ed8 | 9fc0d6983abe | looks_valid |  |
-| Microbial Genomics | changed | 200 | https://portal.issn.org/resource/ISSN/2057-5858 | 87bb4b08c91f | f2b1147b4273 | looks_valid |  |
-| Environmental Microbiology | changed | 200 | https://portal.issn.org/resource/ISSN/1462-2920 | c80108741989 | 8f4a1224a9df | looks_valid |  |
-| Applied and Environmental Microbiology | changed | 200 | https://portal.issn.org/resource/ISSN/1098-5336 | cb60952c4290 | ba54b1615ad3 | looks_valid |  |
-| FEMS Microbiology Ecology | changed | 200 | https://portal.issn.org/resource/ISSN/1574-6941 | 0dfef6bc6db7 | 5fa5dfbc4adb | looks_valid |  |
-| Bioinformatics | changed | 200 | https://portal.issn.org/resource/ISSN/1460-2059 | 0088ee86248f | aee3f4909758 | looks_valid |  |
-| Briefings in Bioinformatics | changed | 200 | https://portal.issn.org/resource/ISSN/1477-4054 | b94365185551 | 780ea5217eb5 | looks_valid |  |
-| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | a4bea19aa93e | 08f5200bec12 | looks_valid |  |
-| PLOS Computational Biology | changed | 200 | https://portal.issn.org/resource/ISSN/1553-7358 | cc617ed591d2 | 3a3d12e174b5 | looks_valid |  |
-| NAR Genomics and Bioinformatics | changed | 200 | https://portal.issn.org/resource/ISSN/2631-9268 | 3dade75716c1 | 9d93cfaeee35 | looks_valid |  |
-| GigaScience | changed | 200 | https://portal.issn.org/resource/ISSN/2047-217X | b5850ad51eac | daa7db559835 | looks_valid |  |
-| BMC Bioinformatics | changed | 200 | https://portal.issn.org/resource/ISSN/1471-2105 | 7add9739e75e | 3790a3287938 | looks_valid |  |
-| Virus Evolution | changed | 200 | https://portal.issn.org/resource/ISSN/2057-1577 | cb897496954a | 1522b4664c3c | looks_valid |  |
-| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | db5ebbdad5d2 | bc9c0eaf8548 | looks_valid |  |
-| PeerJ Computer Science | changed | 200 | https://portal.issn.org/resource/ISSN/2376-5992 | 95e2831163bd | 8f505124a0cf | looks_valid |  |
-| Journal of Virology | changed | 200 | https://portal.issn.org/resource/ISSN/1098-5514 | 3746907ad5fa | d262966cc31b | looks_valid |  |
-| Viruses | changed | 200 | https://portal.issn.org/resource/ISSN/1999-4915 | 7a90c0c31b00 | 7b0cba94a559 | looks_valid |  |
-| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 9ea1aca8e987 | 2bfcecbd3124 | looks_valid |  |
-| Virology | changed | 200 | https://portal.issn.org/resource/ISSN/1096-0341 | e3b9199b6615 | a3d2fceae948 | looks_valid |  |
-| PLoS Biology | new | 200 | https://journals.plos.org/plosbiology/ |  | 7f030e63cff7 | looks_valid |  |
+| Nature | changed | 200 | https://portal.issn.org/resource/ISSN/1476-4687 | bc3412f50f8f | a6ef1dd888bd | looks_valid |  |
+| Science | changed | 200 | https://portal.issn.org/resource/ISSN/1095-9203 | c1f51f1978f7 | b9dcc5235835 | looks_valid |  |
+| Cell | changed | 200 | https://portal.issn.org/resource/ISSN/1097-4172 | caa69d275cd5 | 104c7a647253 | looks_valid |  |
+| Nature Microbiology | changed | 200 | https://portal.issn.org/resource/ISSN/2058-5276 | 18554f779a49 | 24b3b5a6c1f0 | looks_valid |  |
+| Nature Biotechnology | changed | 200 | https://portal.issn.org/resource/ISSN/1546-1696 | 44c19a6e4e61 | 637ac827f5a1 | looks_valid |  |
+| Nature Methods | changed | 200 | https://portal.issn.org/resource/ISSN/1548-7105 | 810a5cd3dcf4 | 47e76246786d | looks_valid |  |
+| Nature Communications | changed | 200 | https://portal.issn.org/resource/ISSN/2041-1723 | 65cf357257e9 | aaf0add988e9 | looks_valid |  |
+| Science Advances | changed | 200 | https://portal.issn.org/resource/ISSN/2375-2548 | 0ba97b0b0101 | 29206afbcc94 | looks_valid |  |
+| Cell Host & Microbe | changed | 200 | https://portal.issn.org/resource/ISSN/1934-6069 | 4c5afa5d49d5 | 658379e80bf1 | looks_valid |  |
+| Genome Biology | changed | 200 | https://portal.issn.org/resource/ISSN/1474-760X | 54c034ce08e4 | 47dcc82acc53 | looks_valid |  |
+| Genome Research | changed | 200 | https://portal.issn.org/resource/ISSN/1549-5469 | 08970d4e06fa | 42ce00c860b3 | looks_valid |  |
+| PNAS | changed | 200 | https://portal.issn.org/resource/ISSN/0027-8424 | a0fb0247e73e | c54de66479df | looks_valid |  |
+| PNAS | changed | 200 | https://portal.issn.org/resource/ISSN/1091-6490 | 644f975768a8 | 9237f4d3b8b0 | looks_valid |  |
+| Microbiome | changed | 200 | https://portal.issn.org/resource/ISSN/2049-2618 | 60e43f97aa00 | 1df16653c18d | looks_valid |  |
+| ISME Journal | changed | 200 | https://portal.issn.org/resource/ISSN/1751-7370 | ac6755fab332 | 7aafe10350bf | looks_valid |  |
+| ISME Communications | changed | 200 | https://portal.issn.org/resource/ISSN/2730-6151 | 47b6a5d24f64 | 90846cf16078 | looks_valid |  |
+| mBio | changed | 200 | https://portal.issn.org/resource/ISSN/2150-7511 | a36f1ab3de17 | f18dde2ffd02 | looks_valid |  |
+| mSystems | changed | 200 | https://portal.issn.org/resource/ISSN/2379-5077 | e52e56e347a2 | f459415b5c96 | looks_valid |  |
+| Microbiology Spectrum | changed | 200 | https://portal.issn.org/resource/ISSN/2165-0497 | 9fc0d6983abe | 290ef05e3b68 | looks_valid |  |
+| Microbial Genomics | changed | 200 | https://portal.issn.org/resource/ISSN/2057-5858 | f2b1147b4273 | 4b3197be1695 | looks_valid |  |
+| Environmental Microbiology | changed | 200 | https://portal.issn.org/resource/ISSN/1462-2920 | 8f4a1224a9df | 3ec01ffedbac | looks_valid |  |
+| Applied and Environmental Microbiology | changed | 200 | https://portal.issn.org/resource/ISSN/1098-5336 | ba54b1615ad3 | eeaa2a8773e6 | looks_valid |  |
+| FEMS Microbiology Ecology | changed | 200 | https://portal.issn.org/resource/ISSN/1574-6941 | 5fa5dfbc4adb | 80f3b9ef5580 | looks_valid |  |
+| Briefings in Bioinformatics | changed | 200 | https://portal.issn.org/resource/ISSN/1477-4054 | 780ea5217eb5 | e2c21e8b7c03 | looks_valid |  |
+| PLOS Computational Biology | changed | 200 | https://journals.plos.org/ploscompbiol/ | 08f5200bec12 | 68fb42056307 | looks_valid |  |
+| PLOS Computational Biology | changed | 200 | https://portal.issn.org/resource/ISSN/1553-7358 | 3a3d12e174b5 | 9b2e99208001 | looks_valid |  |
+| NAR Genomics and Bioinformatics | changed | 200 | https://portal.issn.org/resource/ISSN/2631-9268 | 9d93cfaeee35 | c52c00e49301 | looks_valid |  |
+| GigaScience | changed | 200 | https://portal.issn.org/resource/ISSN/2047-217X | daa7db559835 | 7456f8ff12f5 | looks_valid |  |
+| BMC Bioinformatics | changed | 200 | https://portal.issn.org/resource/ISSN/1471-2105 | 3790a3287938 | 48ce1fe5e84c | looks_valid |  |
+| Virus Evolution | changed | 200 | https://portal.issn.org/resource/ISSN/2057-1577 | 1522b4664c3c | 221466356759 | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://peerj.com/about/author-instructions/ | bc9c0eaf8548 | eee1639bcbe5 | looks_valid |  |
+| PeerJ Computer Science | changed | 200 | https://portal.issn.org/resource/ISSN/2376-5992 | 8f505124a0cf | 0033bb06e7d4 | looks_valid |  |
+| Journal of Virology | changed | 200 | https://portal.issn.org/resource/ISSN/1098-5514 | d262966cc31b | dc3c6dbf3145 | looks_valid |  |
+| Viruses | changed | 200 | https://portal.issn.org/resource/ISSN/1999-4915 | 7b0cba94a559 | c7c95b0a6263 | looks_valid |  |
+| Phage | changed | 200 | https://www.sagepub.com/journals/information-for-authors | 2bfcecbd3124 | 2b23c5b37035 | looks_valid |  |
+| Virology | changed | 200 | https://portal.issn.org/resource/ISSN/1096-0341 | a3d2fceae948 | 6f7c585480a2 | looks_valid |  |
+| PLoS Biology | changed | 200 | https://journals.plos.org/plosbiology/ | 7f030e63cff7 | 0aa249f29bcf | looks_valid |  |
 
 ## Failed URLs
 
@@ -221,48 +219,48 @@ No entries.
 
 | Journal | Status | Source ID | Works | Cited by | Metric year | Note |
 | --- | --- | --- | --- | --- | --- | --- |
-| Nature | matched | S137773608 | 449374 | 27138810 | 2026 | Matched by ISSN. |
-| Science | matched | S3880285 | 393785 | 22826665 | 2026 | Matched by ISSN. |
-| Cell | matched | S110447773 | 27036 | 9017084 | 2026 | Matched by ISSN. |
-| Nature Microbiology | matched | S2764926557 | 2863 | 247201 | 2026 | Matched by ISSN. |
-| Nature Biotechnology | matched | S106963461 | 20251 | 1917668 | 2026 | Matched by ISSN. |
-| Nature Methods | matched | S127827428 | 8438 | 1629034 | 2026 | Matched by ISSN. |
-| Nature Communications | matched | S64187185 | 91333 | 7638288 | 2026 | Matched by ISSN. |
-| Science Advances | matched | S2737427234 | 19756 | 1271929 | 2026 | Matched by ISSN. |
-| Cell Host & Microbe | matched | S207313999 | 3627 | 435314 | 2026 | Matched by ISSN. |
-| Genome Biology | matched | S81160022 | 9137 | 1117870 | 2026 | Matched by ISSN. |
-| Genome Research | matched | S43092948 | 6429 | 1108928 | 2026 | Matched by ISSN. |
-| PNAS | matched | S125754415 | 172132 | 22920179 | 2026 | Matched by ISSN. |
-| Microbiome | matched | S3004984423 | 2494 | 238300 | 2026 | Matched by ISSN. |
-| ISME Journal | matched | S149218730 | 4510 | 529277 | 2026 | Matched by ISSN. |
-| ISME Communications | matched | S4210240812 | 1002 | 13595 | 2026 | Matched by ISSN. |
-| mBio | matched | S4210201176 | 9107 | 413762 | 2026 | Matched by ISSN. |
-| mSystems | matched | S4210181942 | 3002 | 94867 | 2026 | Matched by ISSN. |
-| Microbiology Spectrum | matched | S2764766708 | 9655 | 166536 | 2026 | Matched by ISSN. |
-| Microbial Genomics | matched | S4210186362 | 1743 | 42757 | 2026 | Matched by ISSN. |
-| Environmental Microbiology | matched | S6919857 | 8155 | 520323 | 2026 | Matched by ISSN. |
-| Environmental Microbiome | matched | S4210205086 | 601 | 9305 | 2026 | Matched by exact normalized title. |
-| Applied and Environmental Microbiology | matched | S158228368 | 38788 | 3128959 | 2026 | Matched by ISSN. |
-| FEMS Microbiology Ecology | matched | S171282171 | 7389 | 386531 | 2026 | Matched by ISSN. |
-| Bioinformatics | matched | S52395412 | 19631 | 2830467 | 2026 | Matched by ISSN. |
-| Briefings in Bioinformatics | matched | S91767247 | 5885 | 282999 | 2026 | Matched by ISSN. |
-| PLOS Computational Biology | matched | S86033158 | 12945 | 685481 | 2026 | Matched by ISSN. |
-| NAR Genomics and Bioinformatics | matched | S4210241000 | 970 | 16702 | 2026 | Matched by ISSN. |
-| GigaScience | matched | S2735135405 | 1582 | 121708 | 2026 | Matched by ISSN. |
-| BMC Bioinformatics | matched | S19032547 | 13251 | 865632 | 2026 | Matched by ISSN. |
-| Virus Evolution | matched | S2734951655 | 1100 | 33698 | 2026 | Matched by ISSN. |
-| PeerJ Computer Science | matched | S4210178049 | 3918 | 58181 | 2026 | Matched by ISSN. |
-| Journal of Virology | matched | S96615428 | 52375 | 3474483 | 2026 | Matched by ISSN. |
-| Viruses | matched | S55776271 | 18210 | 414050 | 2026 | Matched by ISSN. |
-| Phage | matched | S4210206945 | 235 | 1885 | 2026 | Matched by exact normalized title. |
-| Virology | matched | S6147291 | 30430 | 1337862 | 2026 | Matched by ISSN. |
-| ASM Animal Microbiology | matched | S5407056521 | 14 | 6 | 2026 | Matched by exact normalized title. |
-| Journal of Clinical Microbiology | matched | S53087977 | 33496 | 1917008 | 2026 | Matched by exact normalized title. |
-| mSphere | matched | S4210207018 | 3223 | 76691 | 2026 | Matched by exact normalized title. |
-| BMC Microbiology | matched | S128543880 | 7635 | 266574 | 2026 | Matched by exact normalized title. |
-| BMC Genomics | matched | S28614077 | 19638 | 892006 | 2026 | Matched by exact normalized title. |
-| Nature Computational Science | matched | S4210228084 | 1031 | 22494 | 2026 | Matched by exact normalized title. |
-| PLoS Biology | matched | S154343897 | 8696 | 806282 | 2026 | Matched by exact normalized title. |
+| Nature | matched | S137773608 | 448433 | 27252048 | 2026 | Matched by ISSN. |
+| Science | matched | S3880285 | 394128 | 22921344 | 2026 | Matched by ISSN. |
+| Cell | matched | S110447773 | 26900 | 9053501 | 2026 | Matched by ISSN. |
+| Nature Microbiology | matched | S2764926557 | 2883 | 250341 | 2026 | Matched by ISSN. |
+| Nature Biotechnology | matched | S106963461 | 20213 | 1928334 | 2026 | Matched by ISSN. |
+| Nature Methods | matched | S127827428 | 8415 | 1643300 | 2026 | Matched by ISSN. |
+| Nature Communications | matched | S64187185 | 92140 | 7749529 | 2026 | Matched by ISSN. |
+| Science Advances | matched | S2737427234 | 20108 | 1294833 | 2026 | Matched by ISSN. |
+| Cell Host & Microbe | matched | S207313999 | 3634 | 439048 | 2026 | Matched by ISSN. |
+| Genome Biology | matched | S81160022 | 9154 | 1124571 | 2026 | Matched by ISSN. |
+| Genome Research | matched | S43092948 | 6399 | 1112718 | 2026 | Matched by ISSN. |
+| PNAS | matched | S125754415 | 172652 | 23005987 | 2026 | Matched by ISSN. |
+| Microbiome | matched | S3004984423 | 2521 | 241419 | 2026 | Matched by ISSN. |
+| ISME Journal | matched | S149218730 | 4522 | 533464 | 2026 | Matched by ISSN. |
+| ISME Communications | matched | S4210240812 | 1026 | 14051 | 2026 | Matched by ISSN. |
+| mBio | matched | S4210201176 | 9108 | 417537 | 2026 | Matched by ISSN. |
+| mSystems | matched | S4210181942 | 3006 | 96369 | 2026 | Matched by ISSN. |
+| Microbiology Spectrum | matched | S2764766708 | 9753 | 169983 | 2026 | Matched by ISSN. |
+| Microbial Genomics | matched | S4210186362 | 1750 | 43316 | 2026 | Matched by ISSN. |
+| Environmental Microbiology | matched | S6919857 | 8159 | 523076 | 2026 | Matched by ISSN. |
+| Environmental Microbiome | matched | S4210205086 | 612 | 9637 | 2026 | Matched by exact normalized title. |
+| Applied and Environmental Microbiology | matched | S158228368 | 38588 | 3138832 | 2026 | Matched by ISSN. |
+| FEMS Microbiology Ecology | matched | S171282171 | 7357 | 388253 | 2026 | Matched by ISSN. |
+| Bioinformatics | matched | S52395412 | 19775 | 2846950 | 2026 | Matched by ISSN. |
+| Briefings in Bioinformatics | matched | S91767247 | 5892 | 286184 | 2026 | Matched by ISSN. |
+| PLOS Computational Biology | matched | S86033158 | 12976 | 690250 | 2026 | Matched by ISSN. |
+| NAR Genomics and Bioinformatics | matched | S4210241000 | 986 | 17006 | 2026 | Matched by ISSN. |
+| GigaScience | matched | S2735135405 | 1581 | 123063 | 2026 | Matched by ISSN. |
+| BMC Bioinformatics | matched | S19032547 | 13238 | 872714 | 2026 | Matched by ISSN. |
+| Virus Evolution | matched | S2734951655 | 1103 | 34030 | 2026 | Matched by ISSN. |
+| PeerJ Computer Science | matched | S4210178049 | 3948 | 60062 | 2026 | Matched by ISSN. |
+| Journal of Virology | matched | S96615428 | 52054 | 3479706 | 2026 | Matched by ISSN. |
+| Viruses | matched | S55776271 | 18183 | 418894 | 2026 | Matched by ISSN. |
+| Phage | matched | S4210206945 | 240 | 1910 | 2026 | Matched by exact normalized title. |
+| Virology | matched | S6147291 | 30202 | 1339639 | 2026 | Matched by ISSN. |
+| ASM Animal Microbiology | matched | S5407056521 | 15 | 7 | 2026 | Matched by exact normalized title. |
+| Journal of Clinical Microbiology | matched | S53087977 | 33259 | 1921284 | 2026 | Matched by exact normalized title. |
+| mSphere | matched | S4210207018 | 3219 | 77579 | 2026 | Matched by exact normalized title. |
+| BMC Microbiology | matched | S128543880 | 7714 | 269062 | 2026 | Matched by exact normalized title. |
+| BMC Genomics | matched | S28614077 | 19590 | 896629 | 2026 | Matched by exact normalized title. |
+| Nature Computational Science | matched | S4210228084 | 1042 | 23389 | 2026 | Matched by exact normalized title. |
+| PLoS Biology | matched | S154343897 | 8720 | 811175 | 2026 | Matched by exact normalized title. |
 
 ## APC Updates And Review Needed
 
