@@ -52,489 +52,489 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S137773608
-      works_count: 448433
-      cited_by_count: 27252048
+      works_count: 448777
+      cited_by_count: 27451863
       counts_by_year:
       - year: 2026
-        works_count: 2965
-        cited_by_count: 5713
+        works_count: 3336
+        cited_by_count: 7852
       - year: 2025
         works_count: 4567
-        cited_by_count: 62767
+        cited_by_count: 68885
       - year: 2024
         works_count: 4404
-        cited_by_count: 152906
+        cited_by_count: 159860
       - year: 2023
         works_count: 4339
-        cited_by_count: 241879
+        cited_by_count: 248363
       - year: 2022
         works_count: 4111
-        cited_by_count: 261112
+        cited_by_count: 266852
       - year: 2021
-        works_count: 3760
-        cited_by_count: 396628
+        works_count: 3759
+        cited_by_count: 408193
       - year: 2020
-        works_count: 3654
-        cited_by_count: 554730
+        works_count: 3652
+        cited_by_count: 561383
       - year: 2019
-        works_count: 4000
-        cited_by_count: 459560
+        works_count: 3999
+        cited_by_count: 466093
       - year: 2018
         works_count: 3991
-        cited_by_count: 492697
+        cited_by_count: 498425
       - year: 2017
-        works_count: 3796
-        cited_by_count: 511043
+        works_count: 3794
+        cited_by_count: 518316
       - year: 2016
-        works_count: 3997
-        cited_by_count: 552134
+        works_count: 3996
+        cited_by_count: 558208
       - year: 2015
-        works_count: 4203
-        cited_by_count: 670513
+        works_count: 4202
+        cited_by_count: 677797
       - year: 2014
         works_count: 4139
-        cited_by_count: 579166
+        cited_by_count: 582010
       - year: 2013
-        works_count: 4255
-        cited_by_count: 622704
+        works_count: 4254
+        cited_by_count: 628453
       - year: 2012
         works_count: 4377
-        cited_by_count: 753005
+        cited_by_count: 759251
       - year: 2011
-        works_count: 4141
-        cited_by_count: 638625
+        works_count: 4140
+        cited_by_count: 636839
       - year: 2010
         works_count: 4232
-        cited_by_count: 649588
+        cited_by_count: 656693
       - year: 2009
-        works_count: 4426
-        cited_by_count: 604271
+        works_count: 4424
+        cited_by_count: 610263
       - year: 2008
-        works_count: 4713
-        cited_by_count: 732309
+        works_count: 4711
+        cited_by_count: 737150
       - year: 2007
-        works_count: 4114
-        cited_by_count: 592367
+        works_count: 4113
+        cited_by_count: 599450
       - year: 2006
         works_count: 4118
-        cited_by_count: 713817
+        cited_by_count: 718395
       - year: 2005
         works_count: 4069
-        cited_by_count: 765439
+        cited_by_count: 772691
       - year: 2004
         works_count: 3744
-        cited_by_count: 619293
+        cited_by_count: 625860
       - year: 2003
-        works_count: 3754
-        cited_by_count: 697980
+        works_count: 3753
+        cited_by_count: 705778
       - year: 2002
-        works_count: 3693
-        cited_by_count: 745858
+        works_count: 3694
+        cited_by_count: 749613
       - year: 2001
-        works_count: 3880
-        cited_by_count: 827354
+        works_count: 3879
+        cited_by_count: 831974
       - year: 2000
-        works_count: 3860
-        cited_by_count: 867325
+        works_count: 3861
+        cited_by_count: 879007
       - year: 1999
         works_count: 3935
-        cited_by_count: 631650
+        cited_by_count: 634343
       - year: 1998
-        works_count: 3529
-        cited_by_count: 718201
+        works_count: 3528
+        cited_by_count: 720884
       - year: 1997
-        works_count: 3327
-        cited_by_count: 668168
+        works_count: 3326
+        cited_by_count: 671510
       - year: 1996
-        works_count: 3298
-        cited_by_count: 519338
+        works_count: 3296
+        cited_by_count: 520947
       - year: 1995
         works_count: 3281
-        cited_by_count: 501496
+        cited_by_count: 502872
       - year: 1994
-        works_count: 3472
-        cited_by_count: 462282
+        works_count: 3469
+        cited_by_count: 463637
       - year: 1993
-        works_count: 3543
-        cited_by_count: 478627
+        works_count: 3537
+        cited_by_count: 480788
       - year: 1992
         works_count: 3572
-        cited_by_count: 443014
+        cited_by_count: 444399
       - year: 1991
         works_count: 3531
-        cited_by_count: 442574
+        cited_by_count: 443810
       - year: 1990
         works_count: 3793
-        cited_by_count: 435462
+        cited_by_count: 436755
       - year: 1989
         works_count: 3773
-        cited_by_count: 335228
+        cited_by_count: 336013
       - year: 1988
         works_count: 3821
-        cited_by_count: 373731
+        cited_by_count: 374761
       - year: 1987
         works_count: 3990
-        cited_by_count: 336284
+        cited_by_count: 336854
       - year: 1986
         works_count: 3680
-        cited_by_count: 311405
+        cited_by_count: 312595
       - year: 1985
         works_count: 3564
-        cited_by_count: 291821
+        cited_by_count: 292680
       - year: 1984
-        works_count: 3646
-        cited_by_count: 300031
+        works_count: 3647
+        cited_by_count: 300887
       - year: 1983
-        works_count: 3610
-        cited_by_count: 240943
+        works_count: 3609
+        cited_by_count: 241342
       - year: 1982
-        works_count: 3409
-        cited_by_count: 231577
+        works_count: 3408
+        cited_by_count: 231994
       - year: 1981
         works_count: 3496
-        cited_by_count: 225663
+        cited_by_count: 226148
       - year: 1980
         works_count: 3516
-        cited_by_count: 229532
+        cited_by_count: 229963
       - year: 1979
         works_count: 3438
-        cited_by_count: 199798
+        cited_by_count: 200189
       - year: 1978
         works_count: 3544
-        cited_by_count: 203504
+        cited_by_count: 203838
       - year: 1977
-        works_count: 3632
-        cited_by_count: 193784
+        works_count: 3633
+        cited_by_count: 194253
       - year: 1976
         works_count: 3585
-        cited_by_count: 179424
+        cited_by_count: 179767
       - year: 1975
         works_count: 3852
-        cited_by_count: 170834
+        cited_by_count: 171706
       - year: 1974
-        works_count: 3918
-        cited_by_count: 140335
+        works_count: 3919
+        cited_by_count: 140565
       - year: 1973
-        works_count: 3438
-        cited_by_count: 106373
+        works_count: 3437
+        cited_by_count: 106574
       - year: 1972
-        works_count: 3230
-        cited_by_count: 115622
+        works_count: 3229
+        cited_by_count: 116053
       - year: 1971
         works_count: 3736
-        cited_by_count: 98316
+        cited_by_count: 98429
       - year: 1970
         works_count: 5174
-        cited_by_count: 401652
+        cited_by_count: 401731
       - year: 1969
         works_count: 5011
-        cited_by_count: 124492
+        cited_by_count: 124672
       - year: 1968
-        works_count: 5085
-        cited_by_count: 118396
+        works_count: 5086
+        cited_by_count: 118568
       - year: 1967
         works_count: 5387
-        cited_by_count: 127452
+        cited_by_count: 127554
       - year: 1966
         works_count: 5650
-        cited_by_count: 101944
+        cited_by_count: 102002
       - year: 1965
         works_count: 5501
-        cited_by_count: 124019
+        cited_by_count: 124147
       - year: 1964
-        works_count: 5666
-        cited_by_count: 124860
+        works_count: 5667
+        cited_by_count: 125008
       - year: 1963
         works_count: 5704
-        cited_by_count: 106011
+        cited_by_count: 106145
       - year: 1962
         works_count: 5536
-        cited_by_count: 111145
+        cited_by_count: 111266
       - year: 1961
         works_count: 5508
-        cited_by_count: 107499
+        cited_by_count: 107755
       - year: 1960
         works_count: 5173
-        cited_by_count: 97810
+        cited_by_count: 98176
       - year: 1959
         works_count: 4757
-        cited_by_count: 82858
+        cited_by_count: 83015
       - year: 1958
         works_count: 4615
-        cited_by_count: 82480
+        cited_by_count: 82744
       - year: 1957
         works_count: 3741
-        cited_by_count: 53329
+        cited_by_count: 53411
       - year: 1956
         works_count: 3644
-        cited_by_count: 54039
+        cited_by_count: 54195
       - year: 1955
         works_count: 3125
-        cited_by_count: 41666
+        cited_by_count: 41750
       - year: 1954
         works_count: 3334
-        cited_by_count: 40933
+        cited_by_count: 41063
       - year: 1953
         works_count: 3177
-        cited_by_count: 62821
+        cited_by_count: 63220
       - year: 1952
         works_count: 3055
-        cited_by_count: 34980
+        cited_by_count: 35058
       - year: 1951
         works_count: 3078
-        cited_by_count: 34432
+        cited_by_count: 34537
       - year: 1950
         works_count: 3090
-        cited_by_count: 36947
+        cited_by_count: 37049
       - year: 1949
         works_count: 3214
-        cited_by_count: 65884
+        cited_by_count: 66195
       - year: 1948
         works_count: 3134
-        cited_by_count: 44026
+        cited_by_count: 44647
       - year: 1947
         works_count: 2619
-        cited_by_count: 27911
+        cited_by_count: 27965
       - year: 1946
         works_count: 2917
-        cited_by_count: 35528
+        cited_by_count: 35585
       - year: 1945
         works_count: 2253
-        cited_by_count: 18305
+        cited_by_count: 18334
       - year: 1944
         works_count: 2324
-        cited_by_count: 15646
+        cited_by_count: 15682
       - year: 1943
         works_count: 2089
-        cited_by_count: 13303
+        cited_by_count: 13318
       - year: 1942
         works_count: 2183
-        cited_by_count: 20046
+        cited_by_count: 20129
       - year: 1941
         works_count: 2179
-        cited_by_count: 18613
+        cited_by_count: 18596
       - year: 1940
         works_count: 2762
-        cited_by_count: 17589
+        cited_by_count: 17657
       - year: 1939
         works_count: 3282
-        cited_by_count: 23440
+        cited_by_count: 23480
       - year: 1938
         works_count: 3500
-        cited_by_count: 34947
+        cited_by_count: 35024
       - year: 1937
         works_count: 3344
-        cited_by_count: 22487
+        cited_by_count: 22551
       - year: 1936
         works_count: 3319
-        cited_by_count: 34378
+        cited_by_count: 34457
       - year: 1935
         works_count: 3387
-        cited_by_count: 22867
+        cited_by_count: 22868
       - year: 1934
         works_count: 3247
-        cited_by_count: 21073
+        cited_by_count: 21096
       - year: 1933
         works_count: 3128
-        cited_by_count: 21766
+        cited_by_count: 21796
       - year: 1932
         works_count: 3109
-        cited_by_count: 25718
+        cited_by_count: 25711
       - year: 1931
         works_count: 2152
-        cited_by_count: 9925
+        cited_by_count: 9963
       - year: 1930
         works_count: 2089
-        cited_by_count: 11487
+        cited_by_count: 11524
       - year: 1929
         works_count: 2084
         cited_by_count: 13371
       - year: 1928
         works_count: 1961
-        cited_by_count: 16057
+        cited_by_count: 16205
       - year: 1927
         works_count: 2092
-        cited_by_count: 11086
+        cited_by_count: 11158
       - year: 1926
         works_count: 2036
-        cited_by_count: 12965
+        cited_by_count: 13024
       - year: 1925
         works_count: 2040
-        cited_by_count: 15265
+        cited_by_count: 15279
       - year: 1924
         works_count: 2047
-        cited_by_count: 13203
+        cited_by_count: 13210
       - year: 1923
         works_count: 2080
-        cited_by_count: 9875
+        cited_by_count: 9893
       - year: 1922
         works_count: 2088
-        cited_by_count: 15241
+        cited_by_count: 16339
       - year: 1921
         works_count: 1868
-        cited_by_count: 6193
+        cited_by_count: 6211
       - year: 1920
         works_count: 1917
-        cited_by_count: 6897
+        cited_by_count: 7681
       - year: 1919
         works_count: 1119
-        cited_by_count: 2003
+        cited_by_count: 2011
       - year: 1918
         works_count: 1137
-        cited_by_count: 2536
+        cited_by_count: 2534
       - year: 1917
         works_count: 1116
-        cited_by_count: 2184
+        cited_by_count: 2191
       - year: 1916
         works_count: 1194
-        cited_by_count: 6488
+        cited_by_count: 6473
       - year: 1915
         works_count: 1335
-        cited_by_count: 7306
+        cited_by_count: 7311
       - year: 1914
         works_count: 1348
-        cited_by_count: 5072
+        cited_by_count: 5066
       - year: 1913
         works_count: 1369
-        cited_by_count: 4210
+        cited_by_count: 4225
       - year: 1912
         works_count: 1423
-        cited_by_count: 4318
+        cited_by_count: 4322
       - year: 1911
         works_count: 1885
-        cited_by_count: 13430
+        cited_by_count: 13400
       - year: 1910
         works_count: 1648
-        cited_by_count: 5491
+        cited_by_count: 5488
       - year: 1909
         works_count: 1538
-        cited_by_count: 4933
+        cited_by_count: 4937
       - year: 1908
         works_count: 1387
-        cited_by_count: 4658
+        cited_by_count: 4662
       - year: 1907
         works_count: 1283
-        cited_by_count: 8348
+        cited_by_count: 8365
       - year: 1906
         works_count: 1283
-        cited_by_count: 6655
+        cited_by_count: 6652
       - year: 1905
         works_count: 1246
-        cited_by_count: 4434
+        cited_by_count: 4440
       - year: 1904
         works_count: 1349
-        cited_by_count: 3607
+        cited_by_count: 3612
       - year: 1903
         works_count: 1368
-        cited_by_count: 7375
+        cited_by_count: 7379
       - year: 1902
         works_count: 1349
-        cited_by_count: 3672
+        cited_by_count: 3671
       - year: 1901
         works_count: 1211
-        cited_by_count: 4027
+        cited_by_count: 4021
       - year: 1900
         works_count: 1120
-        cited_by_count: 2996
+        cited_by_count: 2989
       - year: 1899
         works_count: 1239
-        cited_by_count: 3231
+        cited_by_count: 3254
       - year: 1898
         works_count: 1258
-        cited_by_count: 5408
+        cited_by_count: 5422
       - year: 1897
         works_count: 1244
-        cited_by_count: 3434
+        cited_by_count: 3441
       - year: 1896
         works_count: 1328
-        cited_by_count: 2797
+        cited_by_count: 2815
       - year: 1895
         works_count: 1227
-        cited_by_count: 2643
+        cited_by_count: 2646
       - year: 1894
         works_count: 1197
-        cited_by_count: 2118
+        cited_by_count: 2122
       - year: 1893
         works_count: 1200
-        cited_by_count: 6441
+        cited_by_count: 6436
       - year: 1892
         works_count: 1186
-        cited_by_count: 1771
+        cited_by_count: 1776
       - year: 1891
         works_count: 1226
-        cited_by_count: 2406
+        cited_by_count: 2422
       - year: 1890
         works_count: 1210
-        cited_by_count: 1939
+        cited_by_count: 1937
       - year: 1889
         works_count: 1230
-        cited_by_count: 3179
+        cited_by_count: 3185
       - year: 1888
         works_count: 1301
-        cited_by_count: 1996
+        cited_by_count: 2006
       - year: 1887
         works_count: 1272
-        cited_by_count: 1951
+        cited_by_count: 1953
       - year: 1886
         works_count: 1270
-        cited_by_count: 2178
+        cited_by_count: 2177
       - year: 1885
         works_count: 1257
-        cited_by_count: 2591
+        cited_by_count: 2595
       - year: 1884
         works_count: 1263
-        cited_by_count: 2704
+        cited_by_count: 2709
       - year: 1883
         works_count: 1284
-        cited_by_count: 2955
+        cited_by_count: 2960
       - year: 1882
         works_count: 1278
-        cited_by_count: 2066
+        cited_by_count: 2073
       - year: 1881
         works_count: 1259
-        cited_by_count: 2949
+        cited_by_count: 2953
       - year: 1880
         works_count: 1388
-        cited_by_count: 3114
+        cited_by_count: 3161
       - year: 1879
         works_count: 1301
         cited_by_count: 1851
       - year: 1878
         works_count: 1255
-        cited_by_count: 7668
+        cited_by_count: 7694
       - year: 1877
         works_count: 1135
-        cited_by_count: 2770
+        cited_by_count: 2773
       - year: 1876
         works_count: 1050
-        cited_by_count: 1990
+        cited_by_count: 1991
       - year: 1875
         works_count: 1036
-        cited_by_count: 3135
+        cited_by_count: 3145
       - year: 1874
         works_count: 999
-        cited_by_count: 2946
+        cited_by_count: 2954
       - year: 1873
         works_count: 1113
-        cited_by_count: 7217
+        cited_by_count: 7231
       - year: 1872
         works_count: 1119
         cited_by_count: 2136
       - year: 1871
         works_count: 1258
-        cited_by_count: 4436
+        cited_by_count: 4438
       - year: 1870
         works_count: 1198
-        cited_by_count: 4548
+        cited_by_count: 4550
       - year: 1869
         works_count: 228
-        cited_by_count: 1080
-      openalex_h_index: 1854
-      openalex_2yr_citation_rate: 9.092
-      openalex_4yr_citation_rate: 28.465
+        cited_by_count: 1083
+      openalex_h_index: 1864
+      openalex_2yr_citation_rate: 9.71
+      openalex_4yr_citation_rate: 29.134
       metric_year: 2026
       source_url: https://openalex.org/S137773608
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Aspirational broad-science target; desk-rejection risk is high without field-wide
     significance.
@@ -617,456 +617,456 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S3880285
-      works_count: 394128
-      cited_by_count: 22921344
+      works_count: 393773
+      cited_by_count: 23120948
       counts_by_year:
       - year: 2026
-        works_count: 1384
-        cited_by_count: 2999
+        works_count: 1542
+        cited_by_count: 4118
       - year: 2025
         works_count: 2064
-        cited_by_count: 32635
+        cited_by_count: 35718
       - year: 2024
         works_count: 2047
-        cited_by_count: 77279
+        cited_by_count: 80775
       - year: 2023
         works_count: 2091
-        cited_by_count: 123778
+        cited_by_count: 127233
       - year: 2022
         works_count: 2055
-        cited_by_count: 177065
+        cited_by_count: 181920
       - year: 2021
-        works_count: 3513
-        cited_by_count: 232607
+        works_count: 3510
+        cited_by_count: 236712
       - year: 2020
-        works_count: 4661
-        cited_by_count: 425209
+        works_count: 4659
+        cited_by_count: 430839
       - year: 2019
-        works_count: 4721
-        cited_by_count: 323185
+        works_count: 4719
+        cited_by_count: 327576
       - year: 2018
-        works_count: 4794
-        cited_by_count: 435043
+        works_count: 4790
+        cited_by_count: 440795
       - year: 2017
-        works_count: 5018
-        cited_by_count: 420238
+        works_count: 4976
+        cited_by_count: 425745
       - year: 2016
-        works_count: 5014
-        cited_by_count: 449087
+        works_count: 4952
+        cited_by_count: 454500
       - year: 2015
-        works_count: 5787
-        cited_by_count: 552600
+        works_count: 5761
+        cited_by_count: 558349
       - year: 2014
-        works_count: 4158
-        cited_by_count: 459530
+        works_count: 4144
+        cited_by_count: 470236
       - year: 2013
-        works_count: 4200
-        cited_by_count: 567967
+        works_count: 4196
+        cited_by_count: 580470
       - year: 2012
-        works_count: 4266
-        cited_by_count: 498352
+        works_count: 4262
+        cited_by_count: 507703
       - year: 2011
-        works_count: 4327
-        cited_by_count: 575264
+        works_count: 4320
+        cited_by_count: 590230
       - year: 2010
-        works_count: 4456
-        cited_by_count: 575445
+        works_count: 4452
+        cited_by_count: 581159
       - year: 2009
-        works_count: 4568
-        cited_by_count: 655469
+        works_count: 4569
+        cited_by_count: 669659
       - year: 2008
-        works_count: 4963
-        cited_by_count: 663997
+        works_count: 4962
+        cited_by_count: 675438
       - year: 2007
-        works_count: 4667
-        cited_by_count: 630508
+        works_count: 4666
+        cited_by_count: 635937
       - year: 2006
         works_count: 4881
-        cited_by_count: 674544
+        cited_by_count: 678806
       - year: 2005
-        works_count: 5108
-        cited_by_count: 634590
+        works_count: 4997
+        cited_by_count: 639509
       - year: 2004
-        works_count: 5040
-        cited_by_count: 752538
+        works_count: 4942
+        cited_by_count: 756774
       - year: 2003
-        works_count: 4889
-        cited_by_count: 660644
+        works_count: 4869
+        cited_by_count: 664035
       - year: 2002
         works_count: 4827
-        cited_by_count: 776307
+        cited_by_count: 780243
       - year: 2001
         works_count: 4719
-        cited_by_count: 710739
+        cited_by_count: 714149
       - year: 2000
-        works_count: 4551
-        cited_by_count: 647793
+        works_count: 4550
+        cited_by_count: 650503
       - year: 1999
-        works_count: 4331
-        cited_by_count: 648516
+        works_count: 4319
+        cited_by_count: 650884
       - year: 1998
-        works_count: 4257
-        cited_by_count: 638621
+        works_count: 4244
+        cited_by_count: 638594
       - year: 1997
-        works_count: 3975
-        cited_by_count: 661246
+        works_count: 3956
+        cited_by_count: 663806
       - year: 1996
         works_count: 4818
-        cited_by_count: 543146
+        cited_by_count: 550158
       - year: 1995
-        works_count: 4003
-        cited_by_count: 548481
+        works_count: 3994
+        cited_by_count: 550254
       - year: 1994
-        works_count: 4573
-        cited_by_count: 452546
+        works_count: 4544
+        cited_by_count: 453919
       - year: 1993
-        works_count: 4453
-        cited_by_count: 396283
+        works_count: 4425
+        cited_by_count: 397470
       - year: 1992
-        works_count: 4243
-        cited_by_count: 382591
+        works_count: 4242
+        cited_by_count: 383651
       - year: 1991
-        works_count: 4549
-        cited_by_count: 372510
+        works_count: 4548
+        cited_by_count: 373578
       - year: 1990
         works_count: 4436
-        cited_by_count: 328167
+        cited_by_count: 328953
       - year: 1989
         works_count: 3704
-        cited_by_count: 315636
+        cited_by_count: 316633
       - year: 1988
         works_count: 3808
-        cited_by_count: 331853
+        cited_by_count: 332404
       - year: 1987
         works_count: 3694
-        cited_by_count: 289231
+        cited_by_count: 290079
       - year: 1986
-        works_count: 3692
-        cited_by_count: 220078
+        works_count: 3693
+        cited_by_count: 220692
       - year: 1985
-        works_count: 3232
-        cited_by_count: 222637
+        works_count: 3233
+        cited_by_count: 223081
       - year: 1984
-        works_count: 3271
-        cited_by_count: 183588
+        works_count: 3273
+        cited_by_count: 183827
       - year: 1983
-        works_count: 3225
-        cited_by_count: 246685
+        works_count: 3226
+        cited_by_count: 247301
       - year: 1982
         works_count: 3480
-        cited_by_count: 189710
+        cited_by_count: 190144
       - year: 1981
-        works_count: 3572
-        cited_by_count: 204721
+        works_count: 3573
+        cited_by_count: 205008
       - year: 1980
         works_count: 2953
-        cited_by_count: 170716
+        cited_by_count: 171007
       - year: 1979
         works_count: 2982
-        cited_by_count: 129607
+        cited_by_count: 129781
       - year: 1978
         works_count: 2886
-        cited_by_count: 129868
+        cited_by_count: 130183
       - year: 1977
         works_count: 2894
-        cited_by_count: 167542
+        cited_by_count: 168278
       - year: 1976
         works_count: 2905
-        cited_by_count: 142225
+        cited_by_count: 142570
       - year: 1975
-        works_count: 3107
-        cited_by_count: 112970
+        works_count: 3108
+        cited_by_count: 113298
       - year: 1974
-        works_count: 3020
-        cited_by_count: 143208
+        works_count: 3019
+        cited_by_count: 143888
       - year: 1973
-        works_count: 3260
-        cited_by_count: 139198
+        works_count: 3259
+        cited_by_count: 139368
       - year: 1972
         works_count: 3185
-        cited_by_count: 140062
+        cited_by_count: 140464
       - year: 1971
         works_count: 3038
-        cited_by_count: 129048
+        cited_by_count: 129265
       - year: 1970
         works_count: 3918
-        cited_by_count: 125586
+        cited_by_count: 126220
       - year: 1969
         works_count: 3713
-        cited_by_count: 122317
+        cited_by_count: 122734
       - year: 1968
         works_count: 3743
-        cited_by_count: 127198
+        cited_by_count: 127781
       - year: 1967
         works_count: 3898
-        cited_by_count: 115445
+        cited_by_count: 116048
       - year: 1966
         works_count: 3914
-        cited_by_count: 116242
+        cited_by_count: 119381
       - year: 1965
         works_count: 4404
-        cited_by_count: 117383
+        cited_by_count: 117880
       - year: 1964
         works_count: 4032
-        cited_by_count: 87911
+        cited_by_count: 87982
       - year: 1963
         works_count: 3680
-        cited_by_count: 66025
+        cited_by_count: 66058
       - year: 1962
         works_count: 2761
-        cited_by_count: 39867
+        cited_by_count: 39930
       - year: 1961
         works_count: 2405
-        cited_by_count: 49552
+        cited_by_count: 49677
       - year: 1960
         works_count: 2758
-        cited_by_count: 35013
+        cited_by_count: 35129
       - year: 1959
         works_count: 2076
-        cited_by_count: 36755
+        cited_by_count: 36822
       - year: 1958
         works_count: 2363
-        cited_by_count: 23729
+        cited_by_count: 23753
       - year: 1957
         works_count: 2248
-        cited_by_count: 28627
+        cited_by_count: 28686
       - year: 1956
         works_count: 2173
-        cited_by_count: 39972
+        cited_by_count: 40493
       - year: 1955
         works_count: 2060
-        cited_by_count: 23975
+        cited_by_count: 24094
       - year: 1954
         works_count: 2249
-        cited_by_count: 18238
+        cited_by_count: 18266
       - year: 1953
         works_count: 1660
-        cited_by_count: 22420
+        cited_by_count: 22508
       - year: 1952
         works_count: 1639
-        cited_by_count: 13654
+        cited_by_count: 13678
       - year: 1951
         works_count: 1814
-        cited_by_count: 17585
+        cited_by_count: 17622
       - year: 1950
         works_count: 1401
-        cited_by_count: 16861
+        cited_by_count: 16896
       - year: 1949
         works_count: 1218
-        cited_by_count: 19381
+        cited_by_count: 19449
       - year: 1948
         works_count: 1213
-        cited_by_count: 15561
+        cited_by_count: 15658
       - year: 1947
         works_count: 1468
-        cited_by_count: 13261
+        cited_by_count: 13289
       - year: 1946
         works_count: 1471
-        cited_by_count: 13655
+        cited_by_count: 13697
       - year: 1945
         works_count: 2122
-        cited_by_count: 13491
+        cited_by_count: 13519
       - year: 1944
         works_count: 1944
-        cited_by_count: 8539
+        cited_by_count: 8552
       - year: 1943
         works_count: 2211
-        cited_by_count: 10593
+        cited_by_count: 10589
       - year: 1942
         works_count: 2525
-        cited_by_count: 7859
+        cited_by_count: 7871
       - year: 1941
         works_count: 2559
-        cited_by_count: 8304
+        cited_by_count: 8310
       - year: 1940
         works_count: 2574
-        cited_by_count: 7657
+        cited_by_count: 7670
       - year: 1939
         works_count: 2617
-        cited_by_count: 8378
+        cited_by_count: 8394
       - year: 1938
-        works_count: 2337
-        cited_by_count: 7358
+        works_count: 2336
+        cited_by_count: 7370
       - year: 1937
         works_count: 2562
-        cited_by_count: 7907
+        cited_by_count: 7919
       - year: 1936
         works_count: 2263
-        cited_by_count: 7871
+        cited_by_count: 7883
       - year: 1935
         works_count: 2408
-        cited_by_count: 6036
+        cited_by_count: 6069
       - year: 1934
         works_count: 2442
-        cited_by_count: 7638
+        cited_by_count: 7679
       - year: 1933
         works_count: 2385
-        cited_by_count: 5003
+        cited_by_count: 5000
       - year: 1932
         works_count: 2508
-        cited_by_count: 6063
+        cited_by_count: 6077
       - year: 1931
         works_count: 2395
-        cited_by_count: 5784
+        cited_by_count: 5789
       - year: 1930
         works_count: 2396
-        cited_by_count: 5352
+        cited_by_count: 5361
       - year: 1929
         works_count: 2773
         cited_by_count: 3568
       - year: 1928
         works_count: 2545
-        cited_by_count: 6253
+        cited_by_count: 6256
       - year: 1927
         works_count: 2527
-        cited_by_count: 7843
+        cited_by_count: 7860
       - year: 1926
         works_count: 2161
-        cited_by_count: 4204
+        cited_by_count: 4207
       - year: 1925
         works_count: 2504
-        cited_by_count: 5093
+        cited_by_count: 5096
       - year: 1924
         works_count: 2238
-        cited_by_count: 2845
+        cited_by_count: 2851
       - year: 1923
         works_count: 2110
-        cited_by_count: 3105
+        cited_by_count: 3119
       - year: 1922
         works_count: 1576
-        cited_by_count: 5212
+        cited_by_count: 5220
       - year: 1921
         works_count: 1396
-        cited_by_count: 2890
+        cited_by_count: 2894
       - year: 1920
         works_count: 1303
-        cited_by_count: 4367
+        cited_by_count: 4374
       - year: 1919
         works_count: 1225
-        cited_by_count: 12597
+        cited_by_count: 12588
       - year: 1918
         works_count: 1208
-        cited_by_count: 3428
+        cited_by_count: 3426
       - year: 1917
         works_count: 1215
-        cited_by_count: 3170
+        cited_by_count: 3169
       - year: 1916
         works_count: 1129
-        cited_by_count: 4538
+        cited_by_count: 4558
       - year: 1915
         works_count: 1212
-        cited_by_count: 16897
+        cited_by_count: 16892
       - year: 1914
         works_count: 1153
-        cited_by_count: 3472
+        cited_by_count: 3492
       - year: 1913
         works_count: 1214
-        cited_by_count: 2857
+        cited_by_count: 2862
       - year: 1912
         works_count: 1195
-        cited_by_count: 3863
+        cited_by_count: 3886
       - year: 1911
         works_count: 1203
-        cited_by_count: 2875
+        cited_by_count: 2883
       - year: 1910
         works_count: 1245
-        cited_by_count: 5507
+        cited_by_count: 5535
       - year: 1909
         works_count: 1434
-        cited_by_count: 3557
+        cited_by_count: 3571
       - year: 1908
         works_count: 1259
-        cited_by_count: 5142
+        cited_by_count: 5163
       - year: 1907
         works_count: 1316
-        cited_by_count: 5161
+        cited_by_count: 5173
       - year: 1906
         works_count: 1332
-        cited_by_count: 3521
+        cited_by_count: 3525
       - year: 1905
         works_count: 1335
-        cited_by_count: 3039
+        cited_by_count: 3054
       - year: 1904
         works_count: 1355
-        cited_by_count: 2980
+        cited_by_count: 2982
       - year: 1903
         works_count: 1331
-        cited_by_count: 2194
+        cited_by_count: 2196
       - year: 1902
         works_count: 1462
-        cited_by_count: 3441
+        cited_by_count: 3436
       - year: 1901
         works_count: 1505
-        cited_by_count: 4353
+        cited_by_count: 4347
       - year: 1900
         works_count: 1418
-        cited_by_count: 3363
+        cited_by_count: 3367
       - year: 1899
         works_count: 1434
-        cited_by_count: 3959
+        cited_by_count: 3957
       - year: 1898
         works_count: 1496
-        cited_by_count: 2045
+        cited_by_count: 2050
       - year: 1897
         works_count: 1589
-        cited_by_count: 4172
+        cited_by_count: 4169
       - year: 1896
         works_count: 1815
-        cited_by_count: 4157
+        cited_by_count: 4193
       - year: 1895
         works_count: 1591
-        cited_by_count: 2725
+        cited_by_count: 2729
       - year: 1894
         works_count: 299
         cited_by_count: 193
       - year: 1893
         works_count: 1638
-        cited_by_count: 1449
+        cited_by_count: 1448
       - year: 1892
         works_count: 1297
-        cited_by_count: 1709
+        cited_by_count: 1711
       - year: 1891
         works_count: 960
-        cited_by_count: 728
+        cited_by_count: 729
       - year: 1890
         works_count: 1149
-        cited_by_count: 1195
+        cited_by_count: 1203
       - year: 1889
         works_count: 1822
-        cited_by_count: 1221
+        cited_by_count: 1222
       - year: 1888
         works_count: 1584
-        cited_by_count: 898
+        cited_by_count: 900
       - year: 1887
         works_count: 1572
-        cited_by_count: 2125
+        cited_by_count: 2133
       - year: 1886
         works_count: 1555
-        cited_by_count: 1211
+        cited_by_count: 1213
       - year: 1885
         works_count: 1492
-        cited_by_count: 1108
+        cited_by_count: 1111
       - year: 1884
         works_count: 1443
-        cited_by_count: 1612
+        cited_by_count: 1613
       - year: 1883
         works_count: 1339
-        cited_by_count: 882
+        cited_by_count: 888
       - year: 1882
         works_count: 71
         cited_by_count: 27
       - year: 1881
         works_count: 1369
-        cited_by_count: 1448
+        cited_by_count: 1454
       - year: 1880
         works_count: 891
-        cited_by_count: 997
-      openalex_h_index: 1761
-      openalex_2yr_citation_rate: 10.335
-      openalex_4yr_citation_rate: 31.201
+        cited_by_count: 1003
+      openalex_h_index: 1768
+      openalex_2yr_citation_rate: 11.047
+      openalex_4yr_citation_rate: 32.005
       metric_year: 2026
       source_url: https://openalex.org/S3880285
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Aspirational broad-science target; requires broad conceptual significance.
   - 'Manual source suggests scope note: rent Issue First release papers Archive About
@@ -1164,177 +1164,177 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S110447773
-      works_count: 26900
-      cited_by_count: 9053501
+      works_count: 26958
+      cited_by_count: 9132436
       counts_by_year:
       - year: 2026
-        works_count: 364
-        cited_by_count: 1841
+        works_count: 424
+        cited_by_count: 2567
       - year: 2025
         works_count: 512
-        cited_by_count: 14555
+        cited_by_count: 15883
       - year: 2024
         works_count: 581
-        cited_by_count: 42325
+        cited_by_count: 44287
       - year: 2023
         works_count: 457
-        cited_by_count: 57156
+        cited_by_count: 58810
       - year: 2022
         works_count: 424
-        cited_by_count: 71708
+        cited_by_count: 73133
       - year: 2021
         works_count: 522
-        cited_by_count: 128305
+        cited_by_count: 130300
       - year: 2020
         works_count: 612
-        cited_by_count: 238992
+        cited_by_count: 241355
       - year: 2019
-        works_count: 583
-        cited_by_count: 185077
+        works_count: 582
+        cited_by_count: 188124
       - year: 2018
         works_count: 653
-        cited_by_count: 223132
+        cited_by_count: 226205
       - year: 2017
         works_count: 556
-        cited_by_count: 237556
+        cited_by_count: 241162
       - year: 2016
         works_count: 722
-        cited_by_count: 240730
+        cited_by_count: 244379
       - year: 2015
         works_count: 699
-        cited_by_count: 245939
+        cited_by_count: 249267
       - year: 2014
         works_count: 671
-        cited_by_count: 243969
+        cited_by_count: 247691
       - year: 2013
         works_count: 642
-        cited_by_count: 239934
+        cited_by_count: 245706
       - year: 2012
         works_count: 604
-        cited_by_count: 255838
+        cited_by_count: 258555
       - year: 2011
         works_count: 563
-        cited_by_count: 249785
+        cited_by_count: 252453
       - year: 2010
         works_count: 536
-        cited_by_count: 212745
+        cited_by_count: 214972
       - year: 2009
-        works_count: 628
-        cited_by_count: 257892
+        works_count: 629
+        cited_by_count: 261704
       - year: 2008
         works_count: 607
-        cited_by_count: 217045
+        cited_by_count: 221073
       - year: 2007
         works_count: 622
-        cited_by_count: 261729
+        cited_by_count: 264227
       - year: 2006
         works_count: 619
-        cited_by_count: 285477
+        cited_by_count: 288103
       - year: 2005
         works_count: 490
-        cited_by_count: 209369
+        cited_by_count: 211012
       - year: 2004
         works_count: 430
-        cited_by_count: 205190
+        cited_by_count: 206575
       - year: 2003
         works_count: 408
-        cited_by_count: 174577
+        cited_by_count: 176300
       - year: 2002
         works_count: 411
-        cited_by_count: 191209
+        cited_by_count: 192833
       - year: 2001
         works_count: 433
-        cited_by_count: 173128
+        cited_by_count: 174138
       - year: 2000
         works_count: 399
-        cited_by_count: 210702
+        cited_by_count: 212203
       - year: 1999
         works_count: 406
-        cited_by_count: 193974
+        cited_by_count: 195015
       - year: 1998
         works_count: 441
-        cited_by_count: 229790
+        cited_by_count: 230791
       - year: 1997
         works_count: 481
-        cited_by_count: 292729
+        cited_by_count: 294089
       - year: 1996
         works_count: 478
-        cited_by_count: 273217
+        cited_by_count: 274347
       - year: 1995
         works_count: 546
-        cited_by_count: 265970
+        cited_by_count: 266901
       - year: 1994
         works_count: 538
-        cited_by_count: 264073
+        cited_by_count: 264891
       - year: 1993
         works_count: 600
-        cited_by_count: 314873
+        cited_by_count: 315837
       - year: 1992
         works_count: 541
-        cited_by_count: 227136
+        cited_by_count: 227785
       - year: 1991
         works_count: 609
-        cited_by_count: 241877
+        cited_by_count: 242462
       - year: 1990
-        works_count: 632
-        cited_by_count: 213730
+        works_count: 631
+        cited_by_count: 214264
       - year: 1989
         works_count: 653
-        cited_by_count: 189985
+        cited_by_count: 190440
       - year: 1988
         works_count: 539
-        cited_by_count: 150469
+        cited_by_count: 150816
       - year: 1987
-        works_count: 583
-        cited_by_count: 158548
+        works_count: 582
+        cited_by_count: 158857
       - year: 1986
         works_count: 616
-        cited_by_count: 145991
+        cited_by_count: 146266
       - year: 1985
         works_count: 503
-        cited_by_count: 115581
+        cited_by_count: 115825
       - year: 1984
         works_count: 472
-        cited_by_count: 106500
+        cited_by_count: 106663
       - year: 1983
         works_count: 526
-        cited_by_count: 105900
+        cited_by_count: 106145
       - year: 1982
         works_count: 476
-        cited_by_count: 89690
+        cited_by_count: 89861
       - year: 1981
         works_count: 466
-        cited_by_count: 80047
+        cited_by_count: 80160
       - year: 1980
         works_count: 490
-        cited_by_count: 87617
+        cited_by_count: 87764
       - year: 1979
         works_count: 376
-        cited_by_count: 53774
+        cited_by_count: 53859
       - year: 1978
         works_count: 318
-        cited_by_count: 58488
+        cited_by_count: 58562
       - year: 1977
         works_count: 285
-        cited_by_count: 47868
+        cited_by_count: 47943
       - year: 1976
         works_count: 215
-        cited_by_count: 27989
+        cited_by_count: 28011
       - year: 1975
         works_count: 181
-        cited_by_count: 27173
+        cited_by_count: 27249
       - year: 1974
         works_count: 139
-        cited_by_count: 14583
+        cited_by_count: 14592
       - year: 1973
         works_count: 42
         cited_by_count: 24
-      openalex_h_index: 1233
-      openalex_2yr_citation_rate: 18.717
-      openalex_4yr_citation_rate: 60.542
+      openalex_h_index: 1242
+      openalex_2yr_citation_rate: 19.712
+      openalex_4yr_citation_rate: 61.574
       metric_year: 2026
       source_url: https://openalex.org/S110447773
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Aspirational life-science target; fit depends on mechanistic depth and conceptual
     advance.
@@ -1427,48 +1427,48 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S2764926557
-      works_count: 2883
-      cited_by_count: 250341
+      works_count: 2916
+      cited_by_count: 255141
       counts_by_year:
       - year: 2026
-        works_count: 237
-        cited_by_count: 409
+        works_count: 270
+        cited_by_count: 552
       - year: 2025
         works_count: 345
-        cited_by_count: 4686
+        cited_by_count: 5157
       - year: 2024
         works_count: 331
-        cited_by_count: 10203
+        cited_by_count: 10662
       - year: 2023
         works_count: 269
-        cited_by_count: 12066
+        cited_by_count: 12357
       - year: 2022
         works_count: 238
-        cited_by_count: 18382
+        cited_by_count: 18711
       - year: 2021
         works_count: 206
-        cited_by_count: 18496
+        cited_by_count: 18754
       - year: 2020
         works_count: 189
-        cited_by_count: 37739
+        cited_by_count: 38052
       - year: 2019
         works_count: 307
-        cited_by_count: 38579
+        cited_by_count: 39181
       - year: 2018
         works_count: 243
-        cited_by_count: 33650
+        cited_by_count: 34224
       - year: 2017
         works_count: 230
-        cited_by_count: 35979
+        cited_by_count: 36632
       - year: 2016
         works_count: 288
-        cited_by_count: 40152
-      openalex_h_index: 231
-      openalex_2yr_citation_rate: 8.754
-      openalex_4yr_citation_rate: 23.151
+        cited_by_count: 40859
+      openalex_h_index: 234
+      openalex_2yr_citation_rate: 9.283
+      openalex_4yr_citation_rate: 23.644
       metric_year: 2026
       source_url: https://openalex.org/S2764926557
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Strong aspirational target for microbiology with broad significance.
   example_papers: []
@@ -1548,147 +1548,147 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S106963461
-      works_count: 20213
-      cited_by_count: 1928334
+      works_count: 20246
+      cited_by_count: 1955234
       counts_by_year:
       - year: 2026
-        works_count: 331
-        cited_by_count: 427
+        works_count: 365
+        cited_by_count: 604
       - year: 2025
         works_count: 437
-        cited_by_count: 3124
+        cited_by_count: 3440
       - year: 2024
         works_count: 468
-        cited_by_count: 11999
+        cited_by_count: 12559
       - year: 2023
         works_count: 467
-        cited_by_count: 33538
+        cited_by_count: 34619
       - year: 2022
         works_count: 429
-        cited_by_count: 34301
+        cited_by_count: 35066
       - year: 2021
         works_count: 395
-        cited_by_count: 35537
+        cited_by_count: 36145
       - year: 2020
         works_count: 427
-        cited_by_count: 79204
+        cited_by_count: 80414
       - year: 2019
         works_count: 418
-        cited_by_count: 115557
+        cited_by_count: 117235
       - year: 2018
         works_count: 388
-        cited_by_count: 79693
+        cited_by_count: 80685
       - year: 2017
         works_count: 395
-        cited_by_count: 54531
+        cited_by_count: 55376
       - year: 2016
-        works_count: 453
-        cited_by_count: 62625
+        works_count: 452
+        cited_by_count: 63278
       - year: 2015
         works_count: 476
-        cited_by_count: 87223
+        cited_by_count: 88221
       - year: 2014
         works_count: 500
-        cited_by_count: 89274
+        cited_by_count: 92715
       - year: 2013
         works_count: 476
-        cited_by_count: 77794
+        cited_by_count: 84431
       - year: 2012
         works_count: 533
-        cited_by_count: 58760
+        cited_by_count: 59577
       - year: 2011
         works_count: 469
-        cited_by_count: 88078
+        cited_by_count: 89346
       - year: 2010
         works_count: 492
-        cited_by_count: 82356
+        cited_by_count: 83207
       - year: 2009
         works_count: 485
-        cited_by_count: 42978
+        cited_by_count: 43312
       - year: 2008
         works_count: 489
-        cited_by_count: 87081
+        cited_by_count: 87630
       - year: 2007
         works_count: 465
-        cited_by_count: 72030
+        cited_by_count: 72389
       - year: 2006
         works_count: 554
-        cited_by_count: 61074
+        cited_by_count: 61360
       - year: 2005
         works_count: 479
-        cited_by_count: 70525
+        cited_by_count: 70828
       - year: 2004
         works_count: 506
-        cited_by_count: 66691
+        cited_by_count: 67107
       - year: 2003
         works_count: 498
-        cited_by_count: 81297
+        cited_by_count: 82184
       - year: 2002
         works_count: 494
-        cited_by_count: 59696
+        cited_by_count: 59866
       - year: 2001
         works_count: 576
-        cited_by_count: 59806
+        cited_by_count: 59999
       - year: 2000
         works_count: 874
-        cited_by_count: 60493
+        cited_by_count: 60629
       - year: 1999
         works_count: 975
-        cited_by_count: 50837
+        cited_by_count: 50953
       - year: 1998
         works_count: 590
-        cited_by_count: 33349
+        cited_by_count: 33410
       - year: 1997
         works_count: 517
-        cited_by_count: 27854
+        cited_by_count: 27933
       - year: 1996
         works_count: 494
-        cited_by_count: 31697
+        cited_by_count: 31761
       - year: 1995
         works_count: 367
-        cited_by_count: 14534
+        cited_by_count: 14538
       - year: 1994
         works_count: 397
-        cited_by_count: 11087
+        cited_by_count: 11082
       - year: 1993
         works_count: 444
         cited_by_count: 13617
       - year: 1992
         works_count: 430
-        cited_by_count: 12281
+        cited_by_count: 12284
       - year: 1991
         works_count: 360
-        cited_by_count: 14832
+        cited_by_count: 14845
       - year: 1990
         works_count: 343
-        cited_by_count: 10499
+        cited_by_count: 10493
       - year: 1989
         works_count: 347
-        cited_by_count: 7545
+        cited_by_count: 7546
       - year: 1988
         works_count: 409
-        cited_by_count: 11901
+        cited_by_count: 11909
       - year: 1987
         works_count: 360
-        cited_by_count: 7811
+        cited_by_count: 7827
       - year: 1986
         works_count: 323
-        cited_by_count: 5275
+        cited_by_count: 5278
       - year: 1985
         works_count: 321
-        cited_by_count: 5176
+        cited_by_count: 5184
       - year: 1984
         works_count: 272
-        cited_by_count: 3587
+        cited_by_count: 3590
       - year: 1983
         works_count: 290
-        cited_by_count: 10760
-      openalex_h_index: 640
-      openalex_2yr_citation_rate: 4.624
-      openalex_4yr_citation_rate: 28.824
+        cited_by_count: 10762
+      openalex_h_index: 644
+      openalex_2yr_citation_rate: 5.042
+      openalex_4yr_citation_rate: 29.489
       metric_year: 2026
       source_url: https://openalex.org/S106963461
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Best reserved for major methodological or biotechnological advances.
   example_papers: []
@@ -1771,84 +1771,84 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S127827428
-      works_count: 8415
-      cited_by_count: 1643300
+      works_count: 8451
+      cited_by_count: 1674145
       counts_by_year:
       - year: 2026
-        works_count: 217
-        cited_by_count: 496
+        works_count: 253
+        cited_by_count: 843
       - year: 2025
         works_count: 433
-        cited_by_count: 6146
+        cited_by_count: 6790
       - year: 2024
         works_count: 431
-        cited_by_count: 16891
+        cited_by_count: 17755
       - year: 2023
         works_count: 408
-        cited_by_count: 21370
+        cited_by_count: 22101
       - year: 2022
         works_count: 363
-        cited_by_count: 37436
+        cited_by_count: 38257
       - year: 2021
         works_count: 341
-        cited_by_count: 51252
+        cited_by_count: 52633
       - year: 2020
         works_count: 324
-        cited_by_count: 85950
+        cited_by_count: 87580
       - year: 2019
         works_count: 394
-        cited_by_count: 76931
+        cited_by_count: 79344
       - year: 2018
         works_count: 445
-        cited_by_count: 59905
+        cited_by_count: 60639
       - year: 2017
         works_count: 396
-        cited_by_count: 131515
+        cited_by_count: 133500
       - year: 2016
         works_count: 404
-        cited_by_count: 104682
+        cited_by_count: 106147
       - year: 2015
         works_count: 487
-        cited_by_count: 114431
+        cited_by_count: 115635
       - year: 2014
         works_count: 451
-        cited_by_count: 98361
+        cited_by_count: 101846
       - year: 2013
         works_count: 461
-        cited_by_count: 104233
+        cited_by_count: 105057
       - year: 2012
         works_count: 460
-        cited_by_count: 279533
+        cited_by_count: 286190
       - year: 2011
         works_count: 384
-        cited_by_count: 71186
+        cited_by_count: 71659
       - year: 2010
         works_count: 359
-        cited_by_count: 102999
+        cited_by_count: 105561
       - year: 2009
         works_count: 331
-        cited_by_count: 65866
+        cited_by_count: 67044
       - year: 2008
         works_count: 309
-        cited_by_count: 72429
+        cited_by_count: 72920
       - year: 2007
         works_count: 320
-        cited_by_count: 49305
+        cited_by_count: 49627
       - year: 2006
         works_count: 298
-        cited_by_count: 44090
+        cited_by_count: 44381
       - year: 2005
         works_count: 299
-        cited_by_count: 39251
+        cited_by_count: 39554
       - year: 2004
         works_count: 100
-        cited_by_count: 9042
-      openalex_h_index: 515
-      openalex_2yr_citation_rate: 10.218
-      openalex_4yr_citation_rate: 30.156
+        cited_by_count: 9082
+      openalex_h_index: 522
+      openalex_2yr_citation_rate: 11.127
+      openalex_4yr_citation_rate: 31.14
       metric_year: 2026
       source_url: https://openalex.org/S127827428
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Aspirational methods target; requires broad method utility and validation.
   example_papers: []
@@ -1929,69 +1929,69 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S64187185
-      works_count: 92140
-      cited_by_count: 7749529
+      works_count: 93052
+      cited_by_count: 7917325
       counts_by_year:
       - year: 2026
-        works_count: 9262
-        cited_by_count: 11136
+        works_count: 10177
+        cited_by_count: 16091
       - year: 2025
         works_count: 12683
-        cited_by_count: 171030
+        cited_by_count: 190531
       - year: 2024
         works_count: 10963
-        cited_by_count: 381922
+        cited_by_count: 400712
       - year: 2023
-        works_count: 8552
-        cited_by_count: 454922
+        works_count: 8551
+        cited_by_count: 468499
       - year: 2022
         works_count: 7985
-        cited_by_count: 573269
+        cited_by_count: 587011
       - year: 2021
         works_count: 7375
-        cited_by_count: 704223
+        cited_by_count: 724270
       - year: 2020
         works_count: 6471
-        cited_by_count: 816641
+        cited_by_count: 830756
       - year: 2019
         works_count: 5782
-        cited_by_count: 780357
+        cited_by_count: 793051
       - year: 2018
         works_count: 5517
-        cited_by_count: 781902
+        cited_by_count: 791811
       - year: 2017
         works_count: 4621
-        cited_by_count: 706783
+        cited_by_count: 716302
       - year: 2016
         works_count: 3707
-        cited_by_count: 585282
+        cited_by_count: 592436
       - year: 2015
-        works_count: 3355
-        cited_by_count: 598285
+        works_count: 3354
+        cited_by_count: 605257
       - year: 2014
         works_count: 2864
-        cited_by_count: 549260
+        cited_by_count: 558221
       - year: 2013
-        works_count: 1668
-        cited_by_count: 340795
+        works_count: 1667
+        cited_by_count: 346106
       - year: 2012
         works_count: 720
-        cited_by_count: 158798
+        cited_by_count: 160253
       - year: 2011
         works_count: 460
-        cited_by_count: 96653
+        cited_by_count: 97482
       - year: 2010
         works_count: 154
-        cited_by_count: 38271
+        cited_by_count: 38536
       - year: 1970
         works_count: 1
         cited_by_count: 0
-      openalex_h_index: 751
-      openalex_2yr_citation_rate: 8.301
-      openalex_4yr_citation_rate: 24.578
+      openalex_h_index: 758
+      openalex_2yr_citation_rate: 9.039
+      openalex_4yr_citation_rate: 25.389
       metric_year: 2026
       source_url: https://openalex.org/S64187185
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Selective multidisciplinary open-access venue; broad relevance still matters.
   example_papers: []
@@ -2070,51 +2070,51 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S2737427234
-      works_count: 20108
-      cited_by_count: 1294833
+      works_count: 20465
+      cited_by_count: 1332208
       counts_by_year:
       - year: 2026
-        works_count: 2365
-        cited_by_count: 2776
+        works_count: 2722
+        cited_by_count: 4025
       - year: 2025
         works_count: 3190
-        cited_by_count: 34182
+        cited_by_count: 38196
       - year: 2024
-        works_count: 2325
-        cited_by_count: 62039
+        works_count: 2324
+        cited_by_count: 65341
       - year: 2023
         works_count: 2139
-        cited_by_count: 96575
+        cited_by_count: 99567
       - year: 2022
         works_count: 2215
-        cited_by_count: 129892
+        cited_by_count: 134013
       - year: 2021
         works_count: 2022
-        cited_by_count: 159165
+        cited_by_count: 164089
       - year: 2020
-        works_count: 2137
-        cited_by_count: 223674
+        works_count: 2138
+        cited_by_count: 230677
       - year: 2019
         works_count: 1262
-        cited_by_count: 160927
+        cited_by_count: 164798
       - year: 2018
         works_count: 919
-        cited_by_count: 131921
+        cited_by_count: 133911
       - year: 2017
         works_count: 759
-        cited_by_count: 144494
+        cited_by_count: 146424
       - year: 2016
         works_count: 507
-        cited_by_count: 92148
+        cited_by_count: 93435
       - year: 2015
         works_count: 268
-        cited_by_count: 57040
-      openalex_h_index: 379
-      openalex_2yr_citation_rate: 6.653
-      openalex_4yr_citation_rate: 19.52
+        cited_by_count: 57732
+      openalex_h_index: 384
+      openalex_2yr_citation_rate: 7.142
+      openalex_4yr_citation_rate: 19.964
       metric_year: 2026
       source_url: https://openalex.org/S2737427234
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Aspirational open-access broad-science option.
   - 'Manual source suggests scope note: e First release papers Archive About About
@@ -2212,75 +2212,75 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S207313999
-      works_count: 3634
-      cited_by_count: 439048
+      works_count: 3651
+      cited_by_count: 446213
       counts_by_year:
       - year: 2026
-        works_count: 168
-        cited_by_count: 245
+        works_count: 186
+        cited_by_count: 320
       - year: 2025
         works_count: 219
-        cited_by_count: 2016
+        cited_by_count: 2253
       - year: 2024
         works_count: 216
-        cited_by_count: 6814
+        cited_by_count: 7161
       - year: 2023
         works_count: 206
-        cited_by_count: 10562
+        cited_by_count: 10900
       - year: 2022
         works_count: 209
-        cited_by_count: 12773
+        cited_by_count: 13011
       - year: 2021
         works_count: 191
-        cited_by_count: 19205
+        cited_by_count: 19440
       - year: 2020
         works_count: 225
-        cited_by_count: 34933
+        cited_by_count: 35227
       - year: 2019
         works_count: 206
-        cited_by_count: 27365
+        cited_by_count: 27791
       - year: 2018
         works_count: 207
-        cited_by_count: 32091
+        cited_by_count: 32691
       - year: 2017
         works_count: 203
-        cited_by_count: 26172
+        cited_by_count: 26583
       - year: 2016
         works_count: 217
-        cited_by_count: 34434
+        cited_by_count: 34974
       - year: 2015
         works_count: 198
-        cited_by_count: 35378
+        cited_by_count: 35943
       - year: 2014
         works_count: 191
-        cited_by_count: 32111
+        cited_by_count: 32625
       - year: 2013
         works_count: 168
-        cited_by_count: 29250
+        cited_by_count: 29871
       - year: 2012
         works_count: 161
-        cited_by_count: 27550
+        cited_by_count: 27954
       - year: 2011
         works_count: 139
-        cited_by_count: 22223
+        cited_by_count: 22518
       - year: 2010
         works_count: 131
-        cited_by_count: 22261
+        cited_by_count: 22536
       - year: 2009
         works_count: 144
-        cited_by_count: 23030
+        cited_by_count: 23320
       - year: 2008
         works_count: 139
-        cited_by_count: 25689
+        cited_by_count: 26011
       - year: 2007
-        works_count: 96
-        cited_by_count: 14946
-      openalex_h_index: 318
-      openalex_2yr_citation_rate: 5.842
-      openalex_4yr_citation_rate: 24.273
+        works_count: 95
+        cited_by_count: 15084
+      openalex_h_index: 321
+      openalex_2yr_citation_rate: 6.353
+      openalex_4yr_citation_rate: 24.95
       metric_year: 2026
       source_url: https://openalex.org/S207313999
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Strong fit for mechanistic host-microbe and infection biology.
   - 'Manual source suggests scope note: cation alerts Sneak Peak - preprints Collections
@@ -2374,96 +2374,96 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S81160022
-      works_count: 9154
-      cited_by_count: 1124571
+      works_count: 9183
+      cited_by_count: 1136501
       counts_by_year:
       - year: 2026
-        works_count: 351
-        cited_by_count: 317
+        works_count: 381
+        cited_by_count: 411
       - year: 2025
         works_count: 452
-        cited_by_count: 3161
+        cited_by_count: 3478
       - year: 2024
         works_count: 325
-        cited_by_count: 6990
+        cited_by_count: 7248
       - year: 2023
         works_count: 296
-        cited_by_count: 11038
+        cited_by_count: 11260
       - year: 2022
         works_count: 271
-        cited_by_count: 17677
+        cited_by_count: 17999
       - year: 2021
         works_count: 352
-        cited_by_count: 29050
+        cited_by_count: 29698
       - year: 2020
         works_count: 304
-        cited_by_count: 44567
+        cited_by_count: 45287
       - year: 2019
         works_count: 303
-        cited_by_count: 74341
+        cited_by_count: 75343
       - year: 2018
         works_count: 229
-        cited_by_count: 43611
+        cited_by_count: 44260
       - year: 2017
         works_count: 245
-        cited_by_count: 40073
+        cited_by_count: 40631
       - year: 2016
         works_count: 268
-        cited_by_count: 69439
+        cited_by_count: 70182
       - year: 2015
         works_count: 295
-        cited_by_count: 58975
+        cited_by_count: 59498
       - year: 2014
         works_count: 365
-        cited_by_count: 164363
+        cited_by_count: 166419
       - year: 2013
         works_count: 234
-        cited_by_count: 50986
+        cited_by_count: 51477
       - year: 2012
         works_count: 238
-        cited_by_count: 33358
+        cited_by_count: 33596
       - year: 2011
         works_count: 345
-        cited_by_count: 53645
+        cited_by_count: 54089
       - year: 2010
         works_count: 328
-        cited_by_count: 60135
+        cited_by_count: 60505
       - year: 2009
         works_count: 230
-        cited_by_count: 48021
+        cited_by_count: 48333
       - year: 2008
         works_count: 301
-        cited_by_count: 51664
+        cited_by_count: 52108
       - year: 2007
         works_count: 361
-        cited_by_count: 50714
+        cited_by_count: 50982
       - year: 2006
         works_count: 250
-        cited_by_count: 31085
+        cited_by_count: 31477
       - year: 2005
         works_count: 289
-        cited_by_count: 22249
+        cited_by_count: 22376
       - year: 2004
         works_count: 406
-        cited_by_count: 45773
+        cited_by_count: 46011
       - year: 2003
         works_count: 457
-        cited_by_count: 42260
+        cited_by_count: 42385
       - year: 2002
-        works_count: 595
-        cited_by_count: 44033
+        works_count: 594
+        cited_by_count: 44266
       - year: 2001
         works_count: 618
-        cited_by_count: 19137
+        cited_by_count: 19220
       - year: 2000
         works_count: 446
-        cited_by_count: 7909
-      openalex_h_index: 400
-      openalex_2yr_citation_rate: 4.331
-      openalex_4yr_citation_rate: 15.103
+        cited_by_count: 7962
+      openalex_h_index: 403
+      openalex_2yr_citation_rate: 4.669
+      openalex_4yr_citation_rate: 15.404
       metric_year: 2026
       source_url: https://openalex.org/S81160022
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Good strategic target for genomics plus computational or systems insight.
   - Manual source indicates journal scope includes genomics.
@@ -2547,123 +2547,123 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S43092948
-      works_count: 6399
-      cited_by_count: 1112718
+      works_count: 6416
+      cited_by_count: 1120841
       counts_by_year:
       - year: 2026
-        works_count: 140
-        cited_by_count: 62
+        works_count: 155
+        cited_by_count: 73
       - year: 2025
         works_count: 217
-        cited_by_count: 1068
+        cited_by_count: 1143
       - year: 2024
         works_count: 206
-        cited_by_count: 3362
+        cited_by_count: 3516
       - year: 2023
         works_count: 162
-        cited_by_count: 3364
+        cited_by_count: 3440
       - year: 2022
         works_count: 152
-        cited_by_count: 4399
+        cited_by_count: 4471
       - year: 2021
         works_count: 196
-        cited_by_count: 10413
+        cited_by_count: 10572
       - year: 2020
         works_count: 170
-        cited_by_count: 10879
+        cited_by_count: 11034
       - year: 2019
         works_count: 183
-        cited_by_count: 17303
+        cited_by_count: 17595
       - year: 2018
         works_count: 177
-        cited_by_count: 22616
+        cited_by_count: 22913
       - year: 2017
         works_count: 181
-        cited_by_count: 42500
+        cited_by_count: 43018
       - year: 2016
         works_count: 177
-        cited_by_count: 23885
+        cited_by_count: 24160
       - year: 2015
         works_count: 170
-        cited_by_count: 38817
+        cited_by_count: 39354
       - year: 2014
         works_count: 170
-        cited_by_count: 33603
+        cited_by_count: 33939
       - year: 2013
         works_count: 183
-        cited_by_count: 32474
+        cited_by_count: 32733
       - year: 2012
         works_count: 241
-        cited_by_count: 67926
+        cited_by_count: 68468
       - year: 2011
-        works_count: 220
-        cited_by_count: 52908
+        works_count: 221
+        cited_by_count: 53291
       - year: 2010
-        works_count: 191
-        cited_by_count: 68430
+        works_count: 192
+        cited_by_count: 68961
       - year: 2009
         works_count: 223
-        cited_by_count: 75805
+        cited_by_count: 76334
       - year: 2008
         works_count: 214
-        cited_by_count: 63938
+        cited_by_count: 64309
       - year: 2007
         works_count: 210
-        cited_by_count: 41072
+        cited_by_count: 41421
       - year: 2006
         works_count: 164
-        cited_by_count: 31818
+        cited_by_count: 32054
       - year: 2005
         works_count: 224
-        cited_by_count: 43179
+        cited_by_count: 43573
       - year: 2004
         works_count: 284
-        cited_by_count: 68035
+        cited_by_count: 68421
       - year: 2003
         works_count: 296
-        cited_by_count: 108358
+        cited_by_count: 109086
       - year: 2002
         works_count: 247
-        cited_by_count: 60428
+        cited_by_count: 60554
       - year: 2001
         works_count: 286
-        cited_by_count: 47177
+        cited_by_count: 47301
       - year: 2000
         works_count: 210
-        cited_by_count: 30941
+        cited_by_count: 31027
       - year: 1999
         works_count: 140
-        cited_by_count: 20838
+        cited_by_count: 20905
       - year: 1998
         works_count: 139
-        cited_by_count: 30227
+        cited_by_count: 30259
       - year: 1997
         works_count: 132
-        cited_by_count: 16078
+        cited_by_count: 16087
       - year: 1996
         works_count: 127
-        cited_by_count: 16948
+        cited_by_count: 16960
       - year: 1995
         works_count: 93
-        cited_by_count: 7186
+        cited_by_count: 7180
       - year: 1994
         works_count: 91
-        cited_by_count: 3587
+        cited_by_count: 3593
       - year: 1993
         works_count: 82
-        cited_by_count: 4942
+        cited_by_count: 4947
       - year: 1992
         works_count: 72
-        cited_by_count: 4576
+        cited_by_count: 4579
       - year: 1991
         works_count: 29
-        cited_by_count: 3576
-      openalex_h_index: 412
-      openalex_2yr_citation_rate: 3.165
-      openalex_4yr_citation_rate: 10.836
+        cited_by_count: 3570
+      openalex_h_index: 413
+      openalex_2yr_citation_rate: 3.269
+      openalex_4yr_citation_rate: 11.043
       metric_year: 2026
       source_url: https://openalex.org/S43092948
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Strong fit for rigorous genome-scale studies and resources.
   example_papers: []
@@ -2750,351 +2750,351 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S125754415
-      works_count: 172652
-      cited_by_count: 23005987
+      works_count: 173054
+      cited_by_count: 23183738
       counts_by_year:
       - year: 2026
-        works_count: 3329
-        cited_by_count: 2724
+        works_count: 3745
+        cited_by_count: 3756
       - year: 2025
-        works_count: 4375
-        cited_by_count: 26731
+        works_count: 4374
+        cited_by_count: 29687
       - year: 2024
         works_count: 3973
-        cited_by_count: 68594
+        cited_by_count: 71863
       - year: 2023
-        works_count: 3647
-        cited_by_count: 105781
+        works_count: 3645
+        cited_by_count: 108807
       - year: 2022
         works_count: 3945
-        cited_by_count: 155559
+        cited_by_count: 159511
       - year: 2021
         works_count: 4211
-        cited_by_count: 242350
+        cited_by_count: 251300
       - year: 2020
-        works_count: 4365
-        cited_by_count: 337640
+        works_count: 4364
+        cited_by_count: 346623
       - year: 2019
-        works_count: 4050
-        cited_by_count: 353479
+        works_count: 4049
+        cited_by_count: 360622
       - year: 2018
         works_count: 4089
-        cited_by_count: 399999
+        cited_by_count: 406864
       - year: 2017
         works_count: 4038
-        cited_by_count: 425672
+        cited_by_count: 431585
       - year: 2016
         works_count: 3908
-        cited_by_count: 453675
+        cited_by_count: 460274
       - year: 2015
         works_count: 4086
-        cited_by_count: 505245
+        cited_by_count: 511322
       - year: 2014
         works_count: 4273
-        cited_by_count: 576977
+        cited_by_count: 583990
       - year: 2013
-        works_count: 4643
-        cited_by_count: 657070
+        works_count: 4642
+        cited_by_count: 663827
       - year: 2012
         works_count: 4473
-        cited_by_count: 672534
+        cited_by_count: 679300
       - year: 2011
-        works_count: 4187
-        cited_by_count: 691630
+        works_count: 4188
+        cited_by_count: 698271
       - year: 2010
         works_count: 4262
-        cited_by_count: 773592
+        cited_by_count: 780804
       - year: 2009
-        works_count: 4474
-        cited_by_count: 827656
+        works_count: 4475
+        cited_by_count: 838699
       - year: 2008
-        works_count: 4025
-        cited_by_count: 764975
+        works_count: 4024
+        cited_by_count: 771515
       - year: 2007
         works_count: 3794
-        cited_by_count: 754462
+        cited_by_count: 760876
       - year: 2006
         works_count: 3707
-        cited_by_count: 755576
+        cited_by_count: 762887
       - year: 2005
-        works_count: 3530
-        cited_by_count: 772197
+        works_count: 3531
+        cited_by_count: 777808
       - year: 2004
         works_count: 3348
-        cited_by_count: 708466
+        cited_by_count: 713080
       - year: 2003
         works_count: 2971
-        cited_by_count: 696764
+        cited_by_count: 700773
       - year: 2002
         works_count: 3136
-        cited_by_count: 702978
+        cited_by_count: 707108
       - year: 2001
         works_count: 3064
-        cited_by_count: 652562
+        cited_by_count: 655324
       - year: 2000
         works_count: 2961
-        cited_by_count: 639772
+        cited_by_count: 642290
       - year: 1999
         works_count: 2838
-        cited_by_count: 585991
+        cited_by_count: 588698
       - year: 1998
         works_count: 2898
-        cited_by_count: 636122
+        cited_by_count: 639103
       - year: 1997
-        works_count: 2744
-        cited_by_count: 526701
+        works_count: 2742
+        cited_by_count: 529302
       - year: 1996
         works_count: 2872
-        cited_by_count: 548732
+        cited_by_count: 550431
       - year: 1995
         works_count: 2651
-        cited_by_count: 440831
+        cited_by_count: 442371
       - year: 1994
         works_count: 2729
-        cited_by_count: 464007
+        cited_by_count: 465250
       - year: 1993
         works_count: 2592
-        cited_by_count: 421750
+        cited_by_count: 422655
       - year: 1992
         works_count: 2624
-        cited_by_count: 424280
+        cited_by_count: 425177
       - year: 1991
-        works_count: 2491
-        cited_by_count: 387877
+        works_count: 2490
+        cited_by_count: 388488
       - year: 1990
         works_count: 2163
-        cited_by_count: 351683
+        cited_by_count: 352335
       - year: 1989
         works_count: 2172
-        cited_by_count: 331100
+        cited_by_count: 331562
       - year: 1988
         works_count: 2086
-        cited_by_count: 311693
+        cited_by_count: 312066
       - year: 1987
         works_count: 1970
-        cited_by_count: 289865
+        cited_by_count: 290447
       - year: 1986
-        works_count: 2089
-        cited_by_count: 293007
+        works_count: 2088
+        cited_by_count: 293289
       - year: 1985
         works_count: 1904
-        cited_by_count: 249937
+        cited_by_count: 250252
       - year: 1984
         works_count: 1742
-        cited_by_count: 231395
+        cited_by_count: 231607
       - year: 1983
         works_count: 1648
-        cited_by_count: 194804
+        cited_by_count: 195011
       - year: 1982
         works_count: 1737
-        cited_by_count: 208995
+        cited_by_count: 209824
       - year: 1981
         works_count: 1710
-        cited_by_count: 206000
+        cited_by_count: 206252
       - year: 1980
         works_count: 1661
-        cited_by_count: 206443
+        cited_by_count: 206654
       - year: 1979
         works_count: 1487
-        cited_by_count: 245096
+        cited_by_count: 245516
       - year: 1978
         works_count: 1390
-        cited_by_count: 155123
+        cited_by_count: 155277
       - year: 1977
         works_count: 1292
-        cited_by_count: 220236
+        cited_by_count: 220589
       - year: 1976
         works_count: 1049
-        cited_by_count: 117793
+        cited_by_count: 118021
       - year: 1975
         works_count: 1132
-        cited_by_count: 143096
+        cited_by_count: 143545
       - year: 1974
         works_count: 1138
-        cited_by_count: 113603
+        cited_by_count: 113794
       - year: 1973
         works_count: 899
-        cited_by_count: 97576
+        cited_by_count: 97737
       - year: 1972
         works_count: 891
-        cited_by_count: 91462
+        cited_by_count: 91550
       - year: 1971
         works_count: 761
-        cited_by_count: 82861
+        cited_by_count: 83011
       - year: 1970
         works_count: 662
-        cited_by_count: 51586
+        cited_by_count: 51612
       - year: 1969
         works_count: 601
-        cited_by_count: 47513
+        cited_by_count: 47459
       - year: 1968
         works_count: 653
-        cited_by_count: 52656
+        cited_by_count: 52725
       - year: 1967
-        works_count: 657
-        cited_by_count: 53382
+        works_count: 656
+        cited_by_count: 53447
       - year: 1966
         works_count: 568
-        cited_by_count: 46079
+        cited_by_count: 46109
       - year: 1965
         works_count: 570
-        cited_by_count: 44493
+        cited_by_count: 44562
       - year: 1964
         works_count: 487
-        cited_by_count: 39653
+        cited_by_count: 39768
       - year: 1963
         works_count: 395
-        cited_by_count: 33032
+        cited_by_count: 33055
       - year: 1962
         works_count: 372
-        cited_by_count: 31261
+        cited_by_count: 31302
       - year: 1961
         works_count: 318
-        cited_by_count: 23583
+        cited_by_count: 23630
       - year: 1960
         works_count: 241
-        cited_by_count: 17506
+        cited_by_count: 17517
       - year: 1959
         works_count: 269
-        cited_by_count: 17410
+        cited_by_count: 17419
       - year: 1958
         works_count: 217
-        cited_by_count: 18443
+        cited_by_count: 18561
       - year: 1957
         works_count: 192
-        cited_by_count: 11749
+        cited_by_count: 11767
       - year: 1956
         works_count: 199
-        cited_by_count: 12263
+        cited_by_count: 12259
       - year: 1955
-        works_count: 217
-        cited_by_count: 11156
+        works_count: 215
+        cited_by_count: 11174
       - year: 1954
         works_count: 221
-        cited_by_count: 10330
+        cited_by_count: 10365
       - year: 1953
         works_count: 206
-        cited_by_count: 12272
+        cited_by_count: 12278
       - year: 1952
-        works_count: 192
-        cited_by_count: 13663
+        works_count: 190
+        cited_by_count: 13740
       - year: 1951
         works_count: 163
-        cited_by_count: 13029
+        cited_by_count: 13057
       - year: 1950
         works_count: 131
-        cited_by_count: 14284
+        cited_by_count: 14363
       - year: 1949
         works_count: 133
-        cited_by_count: 6670
+        cited_by_count: 6682
       - year: 1948
         works_count: 111
-        cited_by_count: 5599
+        cited_by_count: 5618
       - year: 1947
         works_count: 83
-        cited_by_count: 4288
+        cited_by_count: 4310
       - year: 1946
         works_count: 70
-        cited_by_count: 2104
+        cited_by_count: 2100
       - year: 1945
         works_count: 86
-        cited_by_count: 2463
+        cited_by_count: 2472
       - year: 1944
         works_count: 85
-        cited_by_count: 10761
+        cited_by_count: 10830
       - year: 1943
         works_count: 81
-        cited_by_count: 1929
+        cited_by_count: 1932
       - year: 1942
         works_count: 115
-        cited_by_count: 3987
+        cited_by_count: 4016
       - year: 1941
         works_count: 129
-        cited_by_count: 7731
+        cited_by_count: 7752
       - year: 1940
         works_count: 143
-        cited_by_count: 2772
+        cited_by_count: 2771
       - year: 1939
         works_count: 144
-        cited_by_count: 3332
+        cited_by_count: 3342
       - year: 1938
         works_count: 118
-        cited_by_count: 2412
+        cited_by_count: 2416
       - year: 1937
         works_count: 137
-        cited_by_count: 3516
+        cited_by_count: 3527
       - year: 1936
         works_count: 148
-        cited_by_count: 5384
+        cited_by_count: 5414
       - year: 1935
         works_count: 151
-        cited_by_count: 2875
+        cited_by_count: 2879
       - year: 1934
         works_count: 157
-        cited_by_count: 4509
+        cited_by_count: 4531
       - year: 1933
-        works_count: 206
-        cited_by_count: 3298
+        works_count: 205
+        cited_by_count: 3309
       - year: 1932
         works_count: 150
-        cited_by_count: 5747
+        cited_by_count: 5757
       - year: 1931
         works_count: 143
-        cited_by_count: 6037
+        cited_by_count: 6062
       - year: 1930
         works_count: 153
-        cited_by_count: 3578
+        cited_by_count: 3599
       - year: 1929
         works_count: 195
-        cited_by_count: 5719
+        cited_by_count: 5878
       - year: 1928
         works_count: 215
-        cited_by_count: 4391
+        cited_by_count: 4531
       - year: 1927
         works_count: 206
-        cited_by_count: 1582
+        cited_by_count: 1606
       - year: 1926
         works_count: 178
-        cited_by_count: 4341
+        cited_by_count: 4382
       - year: 1925
         works_count: 196
-        cited_by_count: 2593
+        cited_by_count: 2602
       - year: 1924
         works_count: 122
-        cited_by_count: 1885
+        cited_by_count: 1886
       - year: 1923
         works_count: 112
-        cited_by_count: 2065
+        cited_by_count: 2059
       - year: 1922
         works_count: 102
-        cited_by_count: 2610
+        cited_by_count: 2613
       - year: 1921
         works_count: 82
-        cited_by_count: 2870
+        cited_by_count: 2903
       - year: 1920
         works_count: 146
-        cited_by_count: 3557
+        cited_by_count: 3571
       - year: 1919
         works_count: 134
-        cited_by_count: 740
+        cited_by_count: 1026
       - year: 1918
         works_count: 104
-        cited_by_count: 2444
+        cited_by_count: 2458
       - year: 1917
         works_count: 183
-        cited_by_count: 1690
+        cited_by_count: 1707
       - year: 1916
         works_count: 200
         cited_by_count: 1262
       - year: 1915
         works_count: 179
-        cited_by_count: 1184
-      openalex_h_index: 1178
-      openalex_2yr_citation_rate: 3.823
-      openalex_4yr_citation_rate: 13.301
+        cited_by_count: 1186
+      openalex_h_index: 1182
+      openalex_2yr_citation_rate: 4.119
+      openalex_4yr_citation_rate: 13.606
       metric_year: 2026
       source_url: https://openalex.org/S125754415
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Broad selective venue; significance beyond specialty audience is important.
   - 'Manual source suggests scope note: e biological, physical, and social sciences.
@@ -3187,57 +3187,57 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S3004984423
-      works_count: 2521
-      cited_by_count: 241419
+      works_count: 2542
+      cited_by_count: 245918
       counts_by_year:
       - year: 2026
-        works_count: 218
-        cited_by_count: 183
+        works_count: 239
+        cited_by_count: 286
       - year: 2025
         works_count: 305
-        cited_by_count: 3139
+        cited_by_count: 3471
       - year: 2024
         works_count: 277
-        cited_by_count: 8183
+        cited_by_count: 8633
       - year: 2023
         works_count: 277
-        cited_by_count: 12241
+        cited_by_count: 12623
       - year: 2022
         works_count: 247
-        cited_by_count: 17600
+        cited_by_count: 17984
       - year: 2021
         works_count: 245
-        cited_by_count: 26162
+        cited_by_count: 26587
       - year: 2020
         works_count: 170
-        cited_by_count: 23968
+        cited_by_count: 24312
       - year: 2019
         works_count: 160
-        cited_by_count: 25505
+        cited_by_count: 25822
       - year: 2018
         works_count: 231
-        cited_by_count: 50879
+        cited_by_count: 51801
       - year: 2017
         works_count: 164
-        cited_by_count: 32346
+        cited_by_count: 32750
       - year: 2016
         works_count: 70
-        cited_by_count: 11577
+        cited_by_count: 11722
       - year: 2015
         works_count: 79
-        cited_by_count: 11598
+        cited_by_count: 11737
       - year: 2014
         works_count: 47
-        cited_by_count: 11474
+        cited_by_count: 11569
       - year: 2013
         works_count: 31
-        cited_by_count: 6564
-      openalex_h_index: 236
-      openalex_2yr_citation_rate: 6.352
-      openalex_4yr_citation_rate: 22.048
+        cited_by_count: 6621
+      openalex_h_index: 238
+      openalex_2yr_citation_rate: 6.906
+      openalex_4yr_citation_rate: 22.781
       metric_year: 2026
       source_url: https://openalex.org/S3004984423
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Primary specialist target for substantive microbiome manuscripts.
   example_papers: []
@@ -3316,75 +3316,75 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S149218730
-      works_count: 4522
-      cited_by_count: 533464
+      works_count: 4547
+      cited_by_count: 541756
       counts_by_year:
       - year: 2026
-        works_count: 223
-        cited_by_count: 140
+        works_count: 248
+        cited_by_count: 221
       - year: 2025
         works_count: 298
-        cited_by_count: 2178
+        cited_by_count: 2461
       - year: 2024
         works_count: 300
-        cited_by_count: 5985
+        cited_by_count: 6326
       - year: 2023
         works_count: 201
-        cited_by_count: 7483
+        cited_by_count: 7744
       - year: 2022
         works_count: 177
-        cited_by_count: 8857
+        cited_by_count: 9042
       - year: 2021
         works_count: 319
-        cited_by_count: 25105
+        cited_by_count: 25617
       - year: 2020
         works_count: 285
-        cited_by_count: 24774
+        cited_by_count: 25173
       - year: 2019
         works_count: 243
-        cited_by_count: 26551
+        cited_by_count: 26953
       - year: 2018
         works_count: 281
-        cited_by_count: 34182
+        cited_by_count: 34733
       - year: 2017
         works_count: 234
-        cited_by_count: 37530
+        cited_by_count: 38223
       - year: 2016
         works_count: 214
-        cited_by_count: 31113
+        cited_by_count: 31594
       - year: 2015
         works_count: 247
-        cited_by_count: 36486
+        cited_by_count: 37000
       - year: 2014
         works_count: 275
-        cited_by_count: 44530
+        cited_by_count: 45105
       - year: 2013
         works_count: 234
-        cited_by_count: 43686
+        cited_by_count: 44224
       - year: 2012
         works_count: 182
-        cited_by_count: 44026
+        cited_by_count: 44439
       - year: 2011
         works_count: 218
-        cited_by_count: 53042
+        cited_by_count: 53450
       - year: 2010
         works_count: 206
-        cited_by_count: 39408
+        cited_by_count: 40377
       - year: 2009
         works_count: 147
-        cited_by_count: 27171
+        cited_by_count: 27392
       - year: 2008
         works_count: 137
-        cited_by_count: 22894
+        cited_by_count: 23258
       - year: 2007
         works_count: 101
-        cited_by_count: 18323
-      openalex_h_index: 310
-      openalex_2yr_citation_rate: 4.449
-      openalex_4yr_citation_rate: 15.446
+        cited_by_count: 18424
+      openalex_h_index: 313
+      openalex_2yr_citation_rate: 4.912
+      openalex_4yr_citation_rate: 16.0
       metric_year: 2026
       source_url: https://openalex.org/S149218730
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - High-quality microbial ecology and microbiome target.
   example_papers: []
@@ -3465,33 +3465,33 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210240812
-      works_count: 1026
-      cited_by_count: 14051
+      works_count: 1060
+      cited_by_count: 14586
       counts_by_year:
       - year: 2026
-        works_count: 252
-        cited_by_count: 74
+        works_count: 286
+        cited_by_count: 101
       - year: 2025
         works_count: 246
-        cited_by_count: 818
+        cited_by_count: 925
       - year: 2024
         works_count: 187
-        cited_by_count: 2224
+        cited_by_count: 2354
       - year: 2023
         works_count: 135
-        cited_by_count: 3446
+        cited_by_count: 3550
       - year: 2022
         works_count: 122
-        cited_by_count: 3924
+        cited_by_count: 4001
       - year: 2021
         works_count: 84
-        cited_by_count: 3565
-      openalex_h_index: 53
-      openalex_2yr_citation_rate: 1.791
-      openalex_4yr_citation_rate: 8.002
+        cited_by_count: 3655
+      openalex_h_index: 54
+      openalex_2yr_citation_rate: 1.929
+      openalex_4yr_citation_rate: 8.115
       metric_year: 2026
       source_url: https://openalex.org/S4210240812
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Good current-manuscript fit for solid specialist microbial ecology work.
   example_papers: []
@@ -3582,66 +3582,66 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210201176
-      works_count: 9108
-      cited_by_count: 417537
+      works_count: 9171
+      cited_by_count: 424611
       counts_by_year:
       - year: 2026
-        works_count: 446
-        cited_by_count: 200
+        works_count: 509
+        cited_by_count: 302
       - year: 2025
         works_count: 826
-        cited_by_count: 3140
+        cited_by_count: 3483
       - year: 2024
         works_count: 794
-        cited_by_count: 8868
+        cited_by_count: 9251
       - year: 2023
         works_count: 772
-        cited_by_count: 12447
+        cited_by_count: 12843
       - year: 2022
         works_count: 817
-        cited_by_count: 20327
+        cited_by_count: 20761
       - year: 2021
         works_count: 867
-        cited_by_count: 29308
+        cited_by_count: 29916
       - year: 2020
         works_count: 733
-        cited_by_count: 35950
+        cited_by_count: 36543
       - year: 2019
         works_count: 714
-        cited_by_count: 36576
+        cited_by_count: 37171
       - year: 2018
         works_count: 589
-        cited_by_count: 40265
+        cited_by_count: 40865
       - year: 2017
         works_count: 514
-        cited_by_count: 36610
+        cited_by_count: 37255
       - year: 2016
         works_count: 483
-        cited_by_count: 38852
+        cited_by_count: 39432
       - year: 2015
         works_count: 452
-        cited_by_count: 40680
+        cited_by_count: 41264
       - year: 2014
         works_count: 410
-        cited_by_count: 41659
+        cited_by_count: 42176
       - year: 2013
         works_count: 288
-        cited_by_count: 31136
+        cited_by_count: 31443
       - year: 2012
         works_count: 194
-        cited_by_count: 18853
+        cited_by_count: 19049
       - year: 2011
         works_count: 137
-        cited_by_count: 13623
+        cited_by_count: 13748
       - year: 2010
         works_count: 72
-        cited_by_count: 9043
-      openalex_h_index: 232
-      openalex_2yr_citation_rate: 2.626
-      openalex_4yr_citation_rate: 8.687
+        cited_by_count: 9109
+      openalex_h_index: 234
+      openalex_2yr_citation_rate: 2.835
+      openalex_4yr_citation_rate: 8.921
       metric_year: 2026
       source_url: https://openalex.org/S4210201176
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Selective ASM journal for significant microbiology.
   - 'Manual source suggests scope note: CURRENT ISSUE COLLECTIONS ARCHIVE ABOUT THE
@@ -3751,51 +3751,51 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210181942
-      works_count: 3006
-      cited_by_count: 96369
+      works_count: 3044
+      cited_by_count: 98399
       counts_by_year:
       - year: 2026
-        works_count: 226
-        cited_by_count: 85
+        works_count: 264
+        cited_by_count: 128
       - year: 2025
         works_count: 413
-        cited_by_count: 1737
+        cited_by_count: 1936
       - year: 2024
         works_count: 387
-        cited_by_count: 4386
+        cited_by_count: 4618
       - year: 2023
         works_count: 298
-        cited_by_count: 4458
+        cited_by_count: 4606
       - year: 2022
         works_count: 351
-        cited_by_count: 8992
+        cited_by_count: 9216
       - year: 2021
         works_count: 479
-        cited_by_count: 15388
+        cited_by_count: 15691
       - year: 2020
         works_count: 331
-        cited_by_count: 18080
+        cited_by_count: 18324
       - year: 2019
         works_count: 229
-        cited_by_count: 12827
+        cited_by_count: 13068
       - year: 2018
         works_count: 145
-        cited_by_count: 11962
+        cited_by_count: 12101
       - year: 2017
         works_count: 81
-        cited_by_count: 9858
+        cited_by_count: 9973
       - year: 2016
         works_count: 61
-        cited_by_count: 6254
+        cited_by_count: 6374
       - year: 2015
         works_count: 5
-        cited_by_count: 2342
-      openalex_h_index: 122
-      openalex_2yr_citation_rate: 2.851
-      openalex_4yr_citation_rate: 8.056
+        cited_by_count: 2364
+      openalex_h_index: 123
+      openalex_2yr_citation_rate: 3.049
+      openalex_4yr_citation_rate: 8.288
       metric_year: 2026
       source_url: https://openalex.org/S4210181942
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Strong fit for systems microbiology and microbiome informatics.
   - 'Manual source suggests scope note: ch Ashley Shade is the Director of Research
@@ -3908,57 +3908,57 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S2764766708
-      works_count: 9753
-      cited_by_count: 169983
+      works_count: 9914
+      cited_by_count: 174920
       counts_by_year:
       - year: 2026
-        works_count: 1123
-        cited_by_count: 264
+        works_count: 1285
+        cited_by_count: 395
       - year: 2025
         works_count: 1601
-        cited_by_count: 4425
+        cited_by_count: 4975
       - year: 2024
-        works_count: 1396
-        cited_by_count: 10521
+        works_count: 1395
+        cited_by_count: 11140
       - year: 2023
         works_count: 2160
-        cited_by_count: 26781
+        cited_by_count: 27649
       - year: 2022
         works_count: 2054
-        cited_by_count: 41133
+        cited_by_count: 41929
       - year: 2021
         works_count: 563
-        cited_by_count: 13757
+        cited_by_count: 13999
       - year: 2020
         works_count: 5
-        cited_by_count: 228
+        cited_by_count: 234
       - year: 2019
         works_count: 112
-        cited_by_count: 10470
+        cited_by_count: 10802
       - year: 2018
         works_count: 90
-        cited_by_count: 8392
+        cited_by_count: 8594
       - year: 2017
         works_count: 126
-        cited_by_count: 13458
+        cited_by_count: 13746
       - year: 2016
         works_count: 225
-        cited_by_count: 17950
+        cited_by_count: 18324
       - year: 2015
         works_count: 130
-        cited_by_count: 12358
+        cited_by_count: 12653
       - year: 2014
         works_count: 145
-        cited_by_count: 9458
+        cited_by_count: 9678
       - year: 2013
         works_count: 23
-        cited_by_count: 788
-      openalex_h_index: 138
-      openalex_2yr_citation_rate: 1.721
-      openalex_4yr_citation_rate: 6.686
+        cited_by_count: 802
+      openalex_h_index: 140
+      openalex_2yr_citation_rate: 1.861
+      openalex_4yr_citation_rate: 6.856
       metric_year: 2026
       source_url: https://openalex.org/S2764766708
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Broad ASM specialist venue and safer credible option for many microbiology manuscripts.
   - 'Manual source suggests scope note: ENT ISSUE COLLECTIONS ARCHIVE ABOUT THE JOURNAL
@@ -4069,51 +4069,51 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210186362
-      works_count: 1750
-      cited_by_count: 43316
+      works_count: 1781
+      cited_by_count: 44165
       counts_by_year:
       - year: 2026
-        works_count: 217
-        cited_by_count: 56
+        works_count: 247
+        cited_by_count: 79
       - year: 2025
-        works_count: 253
-        cited_by_count: 543
+        works_count: 254
+        cited_by_count: 610
       - year: 2024
         works_count: 170
-        cited_by_count: 1546
+        cited_by_count: 1590
       - year: 2023
         works_count: 249
-        cited_by_count: 3287
+        cited_by_count: 3375
       - year: 2022
         works_count: 174
-        cited_by_count: 4137
+        cited_by_count: 4215
       - year: 2021
         works_count: 235
-        cited_by_count: 7083
+        cited_by_count: 7222
       - year: 2020
         works_count: 156
-        cited_by_count: 5612
+        cited_by_count: 5705
       - year: 2019
         works_count: 81
-        cited_by_count: 3655
+        cited_by_count: 3699
       - year: 2018
         works_count: 96
-        cited_by_count: 6280
+        cited_by_count: 6391
       - year: 2017
         works_count: 38
-        cited_by_count: 3474
+        cited_by_count: 3534
       - year: 2016
         works_count: 56
-        cited_by_count: 6279
+        cited_by_count: 6361
       - year: 2015
         works_count: 25
-        cited_by_count: 1364
+        cited_by_count: 1384
       openalex_h_index: 78
-      openalex_2yr_citation_rate: 1.274
-      openalex_4yr_citation_rate: 6.11
+      openalex_2yr_citation_rate: 1.375
+      openalex_4yr_citation_rate: 6.146
       metric_year: 2026
       source_url: https://openalex.org/S4210186362
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Good fit for microbial genome analysis and genomic methods.
   - 'Manual source suggests scope note: ith clinical, veterinary or environmental
@@ -4195,93 +4195,93 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S6919857
-      works_count: 8159
-      cited_by_count: 523076
+      works_count: 8184
+      cited_by_count: 530350
       counts_by_year:
       - year: 2026
-        works_count: 218
-        cited_by_count: 67
+        works_count: 244
+        cited_by_count: 96
       - year: 2025
         works_count: 233
-        cited_by_count: 749
+        cited_by_count: 824
       - year: 2024
         works_count: 176
-        cited_by_count: 1221
+        cited_by_count: 1287
       - year: 2023
         works_count: 262
-        cited_by_count: 2713
+        cited_by_count: 2804
       - year: 2022
         works_count: 478
-        cited_by_count: 8314
+        cited_by_count: 8491
       - year: 2021
         works_count: 493
-        cited_by_count: 13022
+        cited_by_count: 13258
       - year: 2020
-        works_count: 473
-        cited_by_count: 16276
+        works_count: 472
+        cited_by_count: 16519
       - year: 2019
         works_count: 385
-        cited_by_count: 15518
+        cited_by_count: 15778
       - year: 2018
         works_count: 389
-        cited_by_count: 17147
+        cited_by_count: 17418
       - year: 2017
         works_count: 371
-        cited_by_count: 19931
+        cited_by_count: 20258
       - year: 2016
         works_count: 368
-        cited_by_count: 24377
+        cited_by_count: 24753
       - year: 2015
         works_count: 356
-        cited_by_count: 28090
+        cited_by_count: 28499
       - year: 2014
         works_count: 385
-        cited_by_count: 25175
+        cited_by_count: 25543
       - year: 2013
         works_count: 308
-        cited_by_count: 24033
+        cited_by_count: 24363
       - year: 2012
         works_count: 307
-        cited_by_count: 26079
+        cited_by_count: 26393
       - year: 2011
         works_count: 299
-        cited_by_count: 30297
+        cited_by_count: 30645
       - year: 2010
         works_count: 277
-        cited_by_count: 28187
+        cited_by_count: 28492
       - year: 2009
         works_count: 404
-        cited_by_count: 36082
+        cited_by_count: 37728
       - year: 2008
         works_count: 359
-        cited_by_count: 38035
+        cited_by_count: 38340
       - year: 2007
         works_count: 293
-        cited_by_count: 29541
+        cited_by_count: 29808
       - year: 2006
         works_count: 239
-        cited_by_count: 26800
+        cited_by_count: 27015
       - year: 2005
         works_count: 288
-        cited_by_count: 33413
+        cited_by_count: 33640
       - year: 2004
         works_count: 170
-        cited_by_count: 16798
+        cited_by_count: 16896
       - year: 2003
         works_count: 187
-        cited_by_count: 19413
+        cited_by_count: 19536
       - year: 2002
         works_count: 140
-        cited_by_count: 14941
+        cited_by_count: 14990
       - year: 2001
         works_count: 113
-        cited_by_count: 10830
+        cited_by_count: 10882
       - year: 2000
         works_count: 94
-        cited_by_count: 9591
+        cited_by_count: 9640
       - year: 1999
         works_count: 82
-        cited_by_count: 6353
+        cited_by_count: 6372
       - year: 1998
         works_count: 1
         cited_by_count: 56
@@ -4290,13 +4290,13 @@
         cited_by_count: 7
       - year: 1981
         works_count: 10
-        cited_by_count: 20
-      openalex_h_index: 273
-      openalex_2yr_citation_rate: 1.809
-      openalex_4yr_citation_rate: 5.343
+        cited_by_count: 19
+      openalex_h_index: 275
+      openalex_2yr_citation_rate: 1.929
+      openalex_4yr_citation_rate: 5.477
       metric_year: 2026
       source_url: https://openalex.org/S6919857
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Specialist environmental microbiology target.
   - 'Manual source suggests scope note: microbial interactions and microbial processes
@@ -4380,39 +4380,39 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210205086
-      works_count: 612
-      cited_by_count: 9637
+      works_count: 622
+      cited_by_count: 10022
       counts_by_year:
       - year: 2026
-        works_count: 114
-        cited_by_count: 42
+        works_count: 124
+        cited_by_count: 69
       - year: 2025
         works_count: 182
-        cited_by_count: 969
+        cited_by_count: 1090
       - year: 2024
         works_count: 113
-        cited_by_count: 1586
+        cited_by_count: 1668
       - year: 2023
         works_count: 87
-        cited_by_count: 1921
+        cited_by_count: 1971
       - year: 2022
         works_count: 61
-        cited_by_count: 1933
+        cited_by_count: 1973
       - year: 2021
         works_count: 25
-        cited_by_count: 1335
+        cited_by_count: 1369
       - year: 2020
         works_count: 21
-        cited_by_count: 1342
+        cited_by_count: 1363
       - year: 2019
         works_count: 9
-        cited_by_count: 509
+        cited_by_count: 519
       openalex_h_index: 44
-      openalex_2yr_citation_rate: 3.416
-      openalex_4yr_citation_rate: 9.109
+      openalex_2yr_citation_rate: 3.788
+      openalex_4yr_citation_rate: 9.482
       metric_year: 2026
       source_url: https://openalex.org/S4210205086
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Specialist open-access target for environmental microbiome manuscripts.
   example_papers: []
@@ -4499,162 +4499,162 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S158228368
-      works_count: 38588
-      cited_by_count: 3138832
+      works_count: 38639
+      cited_by_count: 3158056
       counts_by_year:
       - year: 2026
-        works_count: 496
-        cited_by_count: 203
+        works_count: 552
+        cited_by_count: 310
       - year: 2025
         works_count: 652
-        cited_by_count: 2428
+        cited_by_count: 2673
       - year: 2024
         works_count: 571
-        cited_by_count: 4608
+        cited_by_count: 4886
       - year: 2023
         works_count: 461
-        cited_by_count: 6066
+        cited_by_count: 6275
       - year: 2022
         works_count: 524
-        cited_by_count: 9106
+        cited_by_count: 9322
       - year: 2021
         works_count: 625
-        cited_by_count: 14663
+        cited_by_count: 14929
       - year: 2020
-        works_count: 685
-        cited_by_count: 19918
+        works_count: 684
+        cited_by_count: 20205
       - year: 2019
         works_count: 608
-        cited_by_count: 22508
+        cited_by_count: 22824
       - year: 2018
         works_count: 689
-        cited_by_count: 34842
+        cited_by_count: 35252
       - year: 2017
         works_count: 637
-        cited_by_count: 29402
+        cited_by_count: 29806
       - year: 2016
         works_count: 725
-        cited_by_count: 37754
+        cited_by_count: 38308
       - year: 2015
-        works_count: 891
-        cited_by_count: 47845
+        works_count: 890
+        cited_by_count: 48443
       - year: 2014
         works_count: 894
-        cited_by_count: 59200
+        cited_by_count: 59938
       - year: 2013
         works_count: 1016
-        cited_by_count: 69693
+        cited_by_count: 70507
       - year: 2012
         works_count: 1252
-        cited_by_count: 79836
+        cited_by_count: 80713
       - year: 2011
         works_count: 1244
-        cited_by_count: 96610
+        cited_by_count: 97465
       - year: 2010
-        works_count: 1136
-        cited_by_count: 85620
+        works_count: 1135
+        cited_by_count: 86370
       - year: 2009
-        works_count: 1144
-        cited_by_count: 110805
+        works_count: 1143
+        cited_by_count: 111598
       - year: 2008
         works_count: 1058
-        cited_by_count: 92488
+        cited_by_count: 93245
       - year: 2007
         works_count: 1180
-        cited_by_count: 128424
+        cited_by_count: 129373
       - year: 2006
-        works_count: 1294
-        cited_by_count: 142466
+        works_count: 1293
+        cited_by_count: 143408
       - year: 2005
-        works_count: 1230
-        cited_by_count: 146673
+        works_count: 1229
+        cited_by_count: 147544
       - year: 2004
         works_count: 1021
-        cited_by_count: 117532
+        cited_by_count: 118162
       - year: 2003
         works_count: 1045
-        cited_by_count: 127279
+        cited_by_count: 127991
       - year: 2002
-        works_count: 927
-        cited_by_count: 121237
+        works_count: 926
+        cited_by_count: 121870
       - year: 2001
-        works_count: 877
-        cited_by_count: 108903
+        works_count: 879
+        cited_by_count: 109420
       - year: 2000
-        works_count: 905
-        cited_by_count: 124607
+        works_count: 904
+        cited_by_count: 125549
       - year: 1999
         works_count: 935
-        cited_by_count: 112194
+        cited_by_count: 112751
       - year: 1998
-        works_count: 881
-        cited_by_count: 102153
+        works_count: 882
+        cited_by_count: 102718
       - year: 1997
         works_count: 844
-        cited_by_count: 96248
+        cited_by_count: 96815
       - year: 1996
         works_count: 819
-        cited_by_count: 89855
+        cited_by_count: 90067
       - year: 1995
-        works_count: 815
-        cited_by_count: 86838
+        works_count: 816
+        cited_by_count: 87124
       - year: 1994
         works_count: 754
-        cited_by_count: 69612
+        cited_by_count: 69804
       - year: 1993
         works_count: 739
-        cited_by_count: 78728
+        cited_by_count: 78857
       - year: 1992
-        works_count: 701
-        cited_by_count: 64894
+        works_count: 700
+        cited_by_count: 64985
       - year: 1991
         works_count: 635
-        cited_by_count: 57687
+        cited_by_count: 57783
       - year: 1990
         works_count: 673
-        cited_by_count: 62230
+        cited_by_count: 62387
       - year: 1989
         works_count: 594
-        cited_by_count: 45664
+        cited_by_count: 45764
       - year: 1988
         works_count: 600
-        cited_by_count: 48849
+        cited_by_count: 48956
       - year: 1987
         works_count: 562
-        cited_by_count: 44469
+        cited_by_count: 44557
       - year: 1986
         works_count: 533
-        cited_by_count: 35649
+        cited_by_count: 35710
       - year: 1985
         works_count: 602
-        cited_by_count: 44759
+        cited_by_count: 44846
       - year: 1984
         works_count: 535
-        cited_by_count: 36320
+        cited_by_count: 36330
       - year: 1983
         works_count: 594
-        cited_by_count: 40270
+        cited_by_count: 40343
       - year: 1982
         works_count: 499
-        cited_by_count: 38082
+        cited_by_count: 38125
       - year: 1981
         works_count: 462
-        cited_by_count: 27766
+        cited_by_count: 27785
       - year: 1980
         works_count: 421
-        cited_by_count: 24263
+        cited_by_count: 24304
       - year: 1979
         works_count: 433
-        cited_by_count: 24921
+        cited_by_count: 24932
       - year: 1978
         works_count: 405
-        cited_by_count: 21367
+        cited_by_count: 21391
       - year: 1977
         works_count: 401
-        cited_by_count: 27313
+        cited_by_count: 27341
       - year: 1976
         works_count: 336
-        cited_by_count: 17876
+        cited_by_count: 17886
       - year: 1975
         works_count: 2
         cited_by_count: 5
@@ -4706,12 +4706,12 @@
       - year: 1953
         works_count: 1
         cited_by_count: 0
-      openalex_h_index: 480
-      openalex_2yr_citation_rate: 2.292
-      openalex_4yr_citation_rate: 6.103
+      openalex_h_index: 481
+      openalex_2yr_citation_rate: 2.478
+      openalex_4yr_citation_rate: 6.326
       metric_year: 2026
       source_url: https://openalex.org/S158228368
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Established applied/environmental microbiology venue.
   - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT THE
@@ -4816,129 +4816,129 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S171282171
-      works_count: 7357
-      cited_by_count: 388253
+      works_count: 7367
+      cited_by_count: 391756
       counts_by_year:
       - year: 2026
-        works_count: 98
-        cited_by_count: 37
+        works_count: 108
+        cited_by_count: 48
       - year: 2025
         works_count: 132
-        cited_by_count: 560
+        cited_by_count: 615
       - year: 2024
         works_count: 168
-        cited_by_count: 1621
+        cited_by_count: 1708
       - year: 2023
         works_count: 166
-        cited_by_count: 1887
+        cited_by_count: 1942
       - year: 2022
         works_count: 155
-        cited_by_count: 2492
+        cited_by_count: 2531
       - year: 2021
         works_count: 168
-        cited_by_count: 3277
+        cited_by_count: 3327
       - year: 2020
         works_count: 266
-        cited_by_count: 10110
+        cited_by_count: 10337
       - year: 2019
         works_count: 208
-        cited_by_count: 7133
+        cited_by_count: 7246
       - year: 2018
         works_count: 241
-        cited_by_count: 10921
+        cited_by_count: 11101
       - year: 2017
         works_count: 190
-        cited_by_count: 10736
+        cited_by_count: 10923
       - year: 2016
         works_count: 256
-        cited_by_count: 16708
+        cited_by_count: 16965
       - year: 2015
         works_count: 171
-        cited_by_count: 9256
+        cited_by_count: 9378
       - year: 2014
         works_count: 227
-        cited_by_count: 14066
+        cited_by_count: 14235
       - year: 2013
         works_count: 209
-        cited_by_count: 14729
+        cited_by_count: 14877
       - year: 2012
         works_count: 276
-        cited_by_count: 19076
+        cited_by_count: 19255
       - year: 2011
         works_count: 264
-        cited_by_count: 20249
+        cited_by_count: 20399
       - year: 2010
         works_count: 214
-        cited_by_count: 16516
+        cited_by_count: 16684
       - year: 2009
         works_count: 211
-        cited_by_count: 16330
+        cited_by_count: 16571
       - year: 2008
         works_count: 234
-        cited_by_count: 21510
+        cited_by_count: 21736
       - year: 2007
         works_count: 172
-        cited_by_count: 17380
+        cited_by_count: 17503
       - year: 2006
         works_count: 347
-        cited_by_count: 29050
+        cited_by_count: 29158
       - year: 2005
         works_count: 138
-        cited_by_count: 9420
+        cited_by_count: 9464
       - year: 2004
         works_count: 270
-        cited_by_count: 23675
+        cited_by_count: 23789
       - year: 2003
         works_count: 272
-        cited_by_count: 20242
+        cited_by_count: 20343
       - year: 2002
         works_count: 298
-        cited_by_count: 15508
+        cited_by_count: 15572
       - year: 2001
         works_count: 273
-        cited_by_count: 14433
+        cited_by_count: 14496
       - year: 2000
         works_count: 216
-        cited_by_count: 11282
+        cited_by_count: 11336
       - year: 1999
         works_count: 232
-        cited_by_count: 12804
+        cited_by_count: 12853
       - year: 1998
         works_count: 229
-        cited_by_count: 10009
+        cited_by_count: 10037
       - year: 1997
         works_count: 116
-        cited_by_count: 1520
+        cited_by_count: 1543
       - year: 1996
         works_count: 202
-        cited_by_count: 6774
+        cited_by_count: 6792
       - year: 1995
         works_count: 211
-        cited_by_count: 8511
+        cited_by_count: 8532
       - year: 1994
         works_count: 204
-        cited_by_count: 4348
+        cited_by_count: 4360
       - year: 1993
         works_count: 114
-        cited_by_count: 2605
+        cited_by_count: 2619
       - year: 1992
         works_count: 88
         cited_by_count: 2048
       - year: 1991
         works_count: 78
-        cited_by_count: 882
+        cited_by_count: 885
       - year: 1990
         works_count: 40
         cited_by_count: 548
       - year: 1980
         works_count: 3
         cited_by_count: 0
-      openalex_h_index: 227
-      openalex_2yr_citation_rate: 2.596
-      openalex_4yr_citation_rate: 7.278
+      openalex_h_index: 228
+      openalex_2yr_citation_rate: 2.763
+      openalex_4yr_citation_rate: 7.514
       metric_year: 2026
       source_url: https://openalex.org/S171282171
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Specialist microbial ecology journal.
   - 'Manual source suggests scope note: ration instructions Instructions to authors
@@ -5036,108 +5036,108 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S52395412
-      works_count: 19775
-      cited_by_count: 2846950
+      works_count: 19843
+      cited_by_count: 2876525
       counts_by_year:
       - year: 2026
-        works_count: 644
-        cited_by_count: 225
+        works_count: 713
+        cited_by_count: 341
       - year: 2025
         works_count: 662
-        cited_by_count: 2977
+        cited_by_count: 3318
       - year: 2024
         works_count: 803
-        cited_by_count: 9451
+        cited_by_count: 9965
       - year: 2023
         works_count: 810
-        cited_by_count: 16221
+        cited_by_count: 16701
       - year: 2022
-        works_count: 861
-        cited_by_count: 31392
+        works_count: 863
+        cited_by_count: 33520
       - year: 2021
         works_count: 929
-        cited_by_count: 33141
+        cited_by_count: 33998
       - year: 2020
         works_count: 996
-        cited_by_count: 47448
+        cited_by_count: 48543
       - year: 2019
         works_count: 980
-        cited_by_count: 86513
+        cited_by_count: 88036
       - year: 2018
         works_count: 1071
-        cited_by_count: 147300
+        cited_by_count: 150098
       - year: 2017
         works_count: 895
-        cited_by_count: 80077
+        cited_by_count: 81285
       - year: 2016
         works_count: 860
-        cited_by_count: 88040
+        cited_by_count: 89223
       - year: 2015
         works_count: 772
-        cited_by_count: 127674
+        cited_by_count: 129103
       - year: 2014
         works_count: 853
-        cited_by_count: 266780
+        cited_by_count: 270074
       - year: 2013
         works_count: 861
-        cited_by_count: 133151
+        cited_by_count: 134553
       - year: 2012
-        works_count: 739
-        cited_by_count: 207303
+        works_count: 738
+        cited_by_count: 209553
       - year: 2011
         works_count: 734
-        cited_by_count: 170254
+        cited_by_count: 171650
       - year: 2010
         works_count: 723
-        cited_by_count: 199283
+        cited_by_count: 200641
       - year: 2009
-        works_count: 750
-        cited_by_count: 332531
+        works_count: 749
+        cited_by_count: 334933
       - year: 2008
-        works_count: 696
-        cited_by_count: 86597
+        works_count: 695
+        cited_by_count: 87423
       - year: 2007
         works_count: 726
-        cited_by_count: 133064
+        cited_by_count: 133553
       - year: 2006
         works_count: 644
-        cited_by_count: 109328
+        cited_by_count: 109831
       - year: 2005
         works_count: 302
-        cited_by_count: 45784
+        cited_by_count: 46053
       - year: 2004
-        works_count: 801
-        cited_by_count: 142310
+        works_count: 800
+        cited_by_count: 142643
       - year: 2003
         works_count: 571
-        cited_by_count: 117503
+        cited_by_count: 117855
       - year: 2002
-        works_count: 397
-        cited_by_count: 59885
+        works_count: 398
+        cited_by_count: 60613
       - year: 2001
         works_count: 248
-        cited_by_count: 78297
+        cited_by_count: 78451
       - year: 2000
         works_count: 178
-        cited_by_count: 33645
+        cited_by_count: 33741
       - year: 1999
         works_count: 134
-        cited_by_count: 18775
+        cited_by_count: 18804
       - year: 1998
         works_count: 131
-        cited_by_count: 41999
+        cited_by_count: 42021
       - year: 1986
         works_count: 1
         cited_by_count: 0
       - year: 1914
         works_count: 3
         cited_by_count: 2
-      openalex_h_index: 572
-      openalex_2yr_citation_rate: 2.452
-      openalex_4yr_citation_rate: 9.892
+      openalex_h_index: 575
+      openalex_2yr_citation_rate: 2.661
+      openalex_4yr_citation_rate: 10.149
       metric_year: 2026
       source_url: https://openalex.org/S52395412
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Primary target for concise bioinformatics tools and methods.
   example_papers: []
@@ -5226,96 +5226,96 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S91767247
-      works_count: 5892
-      cited_by_count: 286184
+      works_count: 5960
+      cited_by_count: 290654
       counts_by_year:
       - year: 2026
-        works_count: 464
-        cited_by_count: 287
+        works_count: 533
+        cited_by_count: 399
       - year: 2025
         works_count: 718
-        cited_by_count: 3279
+        cited_by_count: 3708
       - year: 2024
         works_count: 808
-        cited_by_count: 10375
+        cited_by_count: 10931
       - year: 2023
         works_count: 557
-        cited_by_count: 14906
+        cited_by_count: 15304
       - year: 2022
         works_count: 610
-        cited_by_count: 21376
+        cited_by_count: 21958
       - year: 2021
         works_count: 606
-        cited_by_count: 28919
+        cited_by_count: 29549
       - year: 2020
         works_count: 442
-        cited_by_count: 25931
+        cited_by_count: 26222
       - year: 2019
         works_count: 173
-        cited_by_count: 14451
+        cited_by_count: 14586
       - year: 2018
         works_count: 128
-        cited_by_count: 10051
+        cited_by_count: 10144
       - year: 2017
         works_count: 180
-        cited_by_count: 27282
+        cited_by_count: 28037
       - year: 2016
         works_count: 158
-        cited_by_count: 15089
+        cited_by_count: 15210
       - year: 2015
         works_count: 112
-        cited_by_count: 9179
+        cited_by_count: 9243
       - year: 2014
         works_count: 53
-        cited_by_count: 3741
+        cited_by_count: 3773
       - year: 2013
         works_count: 95
-        cited_by_count: 7133
+        cited_by_count: 7182
       - year: 2012
         works_count: 89
-        cited_by_count: 20635
+        cited_by_count: 20815
       - year: 2011
         works_count: 88
-        cited_by_count: 8449
+        cited_by_count: 8495
       - year: 2010
         works_count: 62
-        cited_by_count: 4732
+        cited_by_count: 4761
       - year: 2009
         works_count: 54
-        cited_by_count: 5794
+        cited_by_count: 5803
       - year: 2008
-        works_count: 59
-        cited_by_count: 11976
+        works_count: 58
+        cited_by_count: 11890
       - year: 2007
         works_count: 60
-        cited_by_count: 3648
+        cited_by_count: 3662
       - year: 2006
         works_count: 64
-        cited_by_count: 6433
+        cited_by_count: 6471
       - year: 2005
         works_count: 47
-        cited_by_count: 3304
+        cited_by_count: 3299
       - year: 2004
         works_count: 54
-        cited_by_count: 14944
+        cited_by_count: 14936
       - year: 2003
         works_count: 46
-        cited_by_count: 1743
+        cited_by_count: 1742
       - year: 2002
         works_count: 57
-        cited_by_count: 5764
+        cited_by_count: 5770
       - year: 2001
         works_count: 54
-        cited_by_count: 4051
+        cited_by_count: 4054
       - year: 2000
         works_count: 54
-        cited_by_count: 2712
-      openalex_h_index: 211
-      openalex_2yr_citation_rate: 3.017
-      openalex_4yr_citation_rate: 11.326
+        cited_by_count: 2710
+      openalex_h_index: 214
+      openalex_2yr_citation_rate: 3.283
+      openalex_4yr_citation_rate: 11.599
       metric_year: 2026
       source_url: https://openalex.org/S91767247
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Strong fit for reviews and high-level computational biology manuscripts.
   - 'Manual source suggests scope note: Issues In addition to its regular issues,
@@ -5402,81 +5402,81 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S86033158
-      works_count: 12976
-      cited_by_count: 690250
+      works_count: 13076
+      cited_by_count: 701435
       counts_by_year:
       - year: 2026
-        works_count: 642
-        cited_by_count: 279
+        works_count: 745
+        cited_by_count: 390
       - year: 2025
         works_count: 895
-        cited_by_count: 2664
+        cited_by_count: 2957
       - year: 2024
         works_count: 756
-        cited_by_count: 6733
+        cited_by_count: 7036
       - year: 2023
         works_count: 722
-        cited_by_count: 10648
+        cited_by_count: 10952
       - year: 2022
         works_count: 911
-        cited_by_count: 19637
+        cited_by_count: 20148
       - year: 2021
         works_count: 1029
-        cited_by_count: 31247
+        cited_by_count: 32048
       - year: 2020
         works_count: 773
-        cited_by_count: 28882
+        cited_by_count: 29292
       - year: 2019
-        works_count: 713
-        cited_by_count: 35480
+        works_count: 711
+        cited_by_count: 35917
       - year: 2018
         works_count: 585
-        cited_by_count: 33830
+        cited_by_count: 34335
       - year: 2017
         works_count: 638
-        cited_by_count: 52287
+        cited_by_count: 53230
       - year: 2016
         works_count: 609
-        cited_by_count: 38816
+        cited_by_count: 39717
       - year: 2015
         works_count: 646
-        cited_by_count: 48083
+        cited_by_count: 48573
       - year: 2014
         works_count: 611
-        cited_by_count: 53622
+        cited_by_count: 54341
       - year: 2013
         works_count: 566
-        cited_by_count: 46904
+        cited_by_count: 47455
       - year: 2012
         works_count: 530
-        cited_by_count: 47743
+        cited_by_count: 49281
       - year: 2011
         works_count: 431
-        cited_by_count: 45091
+        cited_by_count: 45728
       - year: 2010
         works_count: 430
-        cited_by_count: 40766
+        cited_by_count: 41415
       - year: 2009
-        works_count: 411
-        cited_by_count: 48456
+        works_count: 410
+        cited_by_count: 48908
       - year: 2008
         works_count: 306
-        cited_by_count: 37331
+        cited_by_count: 37480
       - year: 2007
         works_count: 250
-        cited_by_count: 29270
+        cited_by_count: 29386
       - year: 2006
         works_count: 170
-        cited_by_count: 19212
+        cited_by_count: 19256
       - year: 2005
         works_count: 352
-        cited_by_count: 13269
-      openalex_h_index: 290
-      openalex_2yr_citation_rate: 1.915
-      openalex_4yr_citation_rate: 6.741
+        cited_by_count: 13590
+      openalex_h_index: 292
+      openalex_2yr_citation_rate: 2.041
+      openalex_4yr_citation_rate: 6.843
       metric_year: 2026
       source_url: https://openalex.org/S86033158
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Good target for computational biology with clear biological relevance.
   example_papers: []
@@ -5562,39 +5562,39 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210241000
-      works_count: 986
-      cited_by_count: 17006
+      works_count: 1000
+      cited_by_count: 17358
       counts_by_year:
       - year: 2026
-        works_count: 101
-        cited_by_count: 54
+        works_count: 115
+        cited_by_count: 69
       - year: 2025
         works_count: 218
-        cited_by_count: 465
+        cited_by_count: 523
       - year: 2024
         works_count: 187
-        cited_by_count: 1449
+        cited_by_count: 1516
       - year: 2023
         works_count: 95
-        cited_by_count: 1021
+        cited_by_count: 1042
       - year: 2022
         works_count: 132
-        cited_by_count: 2021
+        cited_by_count: 2053
       - year: 2021
         works_count: 123
-        cited_by_count: 5444
+        cited_by_count: 5515
       - year: 2020
         works_count: 107
-        cited_by_count: 5812
+        cited_by_count: 5894
       - year: 2019
         works_count: 23
-        cited_by_count: 740
-      openalex_h_index: 50
-      openalex_2yr_citation_rate: 1.627
-      openalex_4yr_citation_rate: 4.973
+        cited_by_count: 746
+      openalex_h_index: 51
+      openalex_2yr_citation_rate: 1.778
+      openalex_4yr_citation_rate: 5.122
       metric_year: 2026
       source_url: https://openalex.org/S4210241000
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Strong target for genomics and bioinformatics resources.
   - 'Manual source suggests scope note: focused on genomics and bioinformatics large-scale
@@ -5690,60 +5690,60 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S2735135405
-      works_count: 1581
-      cited_by_count: 123063
+      works_count: 1586
+      cited_by_count: 125466
       counts_by_year:
       - year: 2026
-        works_count: 90
-        cited_by_count: 70
+        works_count: 96
+        cited_by_count: 84
       - year: 2025
         works_count: 170
-        cited_by_count: 971
+        cited_by_count: 1107
       - year: 2024
         works_count: 120
-        cited_by_count: 2067
+        cited_by_count: 2175
       - year: 2023
         works_count: 12
-        cited_by_count: 132
+        cited_by_count: 134
       - year: 2022
         works_count: 239
-        cited_by_count: 4643
+        cited_by_count: 4758
       - year: 2021
         works_count: 105
-        cited_by_count: 23206
+        cited_by_count: 23831
       - year: 2020
         works_count: 163
-        cited_by_count: 10896
+        cited_by_count: 11385
       - year: 2019
         works_count: 153
-        cited_by_count: 13693
+        cited_by_count: 13888
       - year: 2018
         works_count: 166
-        cited_by_count: 12761
+        cited_by_count: 12962
       - year: 2017
         works_count: 149
-        cited_by_count: 16974
+        cited_by_count: 17148
       - year: 2016
         works_count: 76
-        cited_by_count: 3676
+        cited_by_count: 3714
       - year: 2015
         works_count: 66
-        cited_by_count: 19389
+        cited_by_count: 19575
       - year: 2014
-        works_count: 37
-        cited_by_count: 3551
+        works_count: 36
+        cited_by_count: 3581
       - year: 2013
         works_count: 17
-        cited_by_count: 3429
+        cited_by_count: 3457
       - year: 2012
         works_count: 18
-        cited_by_count: 7605
-      openalex_h_index: 137
-      openalex_2yr_citation_rate: 4.004
-      openalex_4yr_citation_rate: 8.265
+        cited_by_count: 7667
+      openalex_h_index: 138
+      openalex_2yr_citation_rate: 4.477
+      openalex_4yr_citation_rate: 8.794
       metric_year: 2026
       source_url: https://openalex.org/S2735135405
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Good fit for data-rich open-science resources.
   - 'Manual source suggests scope note: his review systematically examines how the
@@ -5828,96 +5828,96 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S19032547
-      works_count: 13238
-      cited_by_count: 872714
+      works_count: 13289
+      cited_by_count: 880370
       counts_by_year:
       - year: 2026
-        works_count: 259
-        cited_by_count: 80
+        works_count: 310
+        cited_by_count: 109
       - year: 2025
         works_count: 336
-        cited_by_count: 1028
+        cited_by_count: 1122
       - year: 2024
         works_count: 396
-        cited_by_count: 3555
+        cited_by_count: 3690
       - year: 2023
         works_count: 502
-        cited_by_count: 10091
+        cited_by_count: 10321
       - year: 2022
         works_count: 586
-        cited_by_count: 10157
+        cited_by_count: 10351
       - year: 2021
         works_count: 618
-        cited_by_count: 15753
+        cited_by_count: 16088
       - year: 2020
         works_count: 585
-        cited_by_count: 15740
+        cited_by_count: 15982
       - year: 2019
         works_count: 764
-        cited_by_count: 27886
+        cited_by_count: 28259
       - year: 2018
         works_count: 537
-        cited_by_count: 31138
+        cited_by_count: 31591
       - year: 2017
         works_count: 587
-        cited_by_count: 32292
+        cited_by_count: 32620
       - year: 2016
         works_count: 551
-        cited_by_count: 23152
+        cited_by_count: 23352
       - year: 2015
         works_count: 604
-        cited_by_count: 23647
+        cited_by_count: 23879
       - year: 2014
         works_count: 621
-        cited_by_count: 34221
+        cited_by_count: 34555
       - year: 2013
         works_count: 611
-        cited_by_count: 62171
+        cited_by_count: 62758
       - year: 2012
         works_count: 611
-        cited_by_count: 44230
+        cited_by_count: 44552
       - year: 2011
         works_count: 724
-        cited_by_count: 89012
+        cited_by_count: 89752
       - year: 2010
         works_count: 864
-        cited_by_count: 79650
+        cited_by_count: 80283
       - year: 2009
         works_count: 737
-        cited_by_count: 71638
+        cited_by_count: 72188
       - year: 2008
         works_count: 746
-        cited_by_count: 94133
+        cited_by_count: 94845
       - year: 2007
         works_count: 619
-        cited_by_count: 50709
+        cited_by_count: 50982
       - year: 2006
         works_count: 636
-        cited_by_count: 65542
+        cited_by_count: 65888
       - year: 2005
         works_count: 416
-        cited_by_count: 31545
+        cited_by_count: 31709
       - year: 2004
         works_count: 210
-        cited_by_count: 29923
+        cited_by_count: 30023
       - year: 2003
         works_count: 67
-        cited_by_count: 18178
+        cited_by_count: 18234
       - year: 2002
         works_count: 41
-        cited_by_count: 5460
+        cited_by_count: 5450
       - year: 2001
         works_count: 9
-        cited_by_count: 1508
+        cited_by_count: 1510
       - year: 2000
         works_count: 1
-        cited_by_count: 275
-      openalex_h_index: 315
-      openalex_2yr_citation_rate: 1.862
-      openalex_4yr_citation_rate: 9.882
+        cited_by_count: 277
+      openalex_h_index: 316
+      openalex_2yr_citation_rate: 1.906
+      openalex_4yr_citation_rate: 9.872
       metric_year: 2026
       source_url: https://openalex.org/S19032547
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Safer credible option for bioinformatics software and methods.
   - Manual source indicates journal scope includes bioinformatics, computational biology,
@@ -6010,51 +6010,51 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S2734951655
-      works_count: 1103
-      cited_by_count: 34030
+      works_count: 1111
+      cited_by_count: 34576
       counts_by_year:
       - year: 2026
-        works_count: 57
-        cited_by_count: 36
+        works_count: 65
+        cited_by_count: 49
       - year: 2025
         works_count: 105
-        cited_by_count: 287
+        cited_by_count: 312
       - year: 2024
         works_count: 119
-        cited_by_count: 1074
+        cited_by_count: 1134
       - year: 2023
         works_count: 88
-        cited_by_count: 1262
+        cited_by_count: 1289
       - year: 2022
         works_count: 126
-        cited_by_count: 2959
+        cited_by_count: 3013
       - year: 2021
         works_count: 109
-        cited_by_count: 4034
+        cited_by_count: 4089
       - year: 2020
         works_count: 104
-        cited_by_count: 4713
+        cited_by_count: 4775
       - year: 2019
         works_count: 130
-        cited_by_count: 2021
+        cited_by_count: 2050
       - year: 2018
         works_count: 108
-        cited_by_count: 5421
+        cited_by_count: 5496
       - year: 2017
         works_count: 97
-        cited_by_count: 3691
+        cited_by_count: 3742
       - year: 2016
         works_count: 40
-        cited_by_count: 4176
+        cited_by_count: 4233
       - year: 2015
         works_count: 20
-        cited_by_count: 4356
-      openalex_h_index: 69
-      openalex_2yr_citation_rate: 1.994
-      openalex_4yr_citation_rate: 7.206
+        cited_by_count: 4394
+      openalex_h_index: 70
+      openalex_2yr_citation_rate: 2.124
+      openalex_4yr_citation_rate: 7.385
       metric_year: 2026
       source_url: https://openalex.org/S2734951655
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Specialist target for viral evolution and genomics.
   - 'Manual source suggests scope note: gy homepage_or_scope data_manual/pages/virology_home.html
@@ -6135,51 +6135,51 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210178049
-      works_count: 3948
-      cited_by_count: 60062
+      works_count: 3970
+      cited_by_count: 61864
       counts_by_year:
       - year: 2026
-        works_count: 620
-        cited_by_count: 156
+        works_count: 642
+        cited_by_count: 215
       - year: 2025
         works_count: 785
-        cited_by_count: 2779
+        cited_by_count: 3066
       - year: 2024
         works_count: 821
-        cited_by_count: 6914
+        cited_by_count: 7279
       - year: 2023
         works_count: 551
-        cited_by_count: 6831
+        cited_by_count: 7033
       - year: 2022
         works_count: 372
-        cited_by_count: 7524
+        cited_by_count: 7639
       - year: 2021
         works_count: 468
-        cited_by_count: 17559
+        cited_by_count: 17999
       - year: 2020
         works_count: 87
-        cited_by_count: 2615
+        cited_by_count: 2733
       - year: 2019
         works_count: 76
-        cited_by_count: 1732
+        cited_by_count: 1811
       - year: 2018
         works_count: 26
-        cited_by_count: 940
+        cited_by_count: 952
       - year: 2017
         works_count: 41
-        cited_by_count: 5713
+        cited_by_count: 5809
       - year: 2016
         works_count: 63
-        cited_by_count: 5668
+        cited_by_count: 5690
       - year: 2015
         works_count: 38
-        cited_by_count: 1631
-      openalex_h_index: 86
-      openalex_2yr_citation_rate: 2.089
-      openalex_4yr_citation_rate: 6.006
+        cited_by_count: 1638
+      openalex_h_index: 88
+      openalex_2yr_citation_rate: 2.299
+      openalex_4yr_citation_rate: 6.285
       metric_year: 2026
       source_url: https://openalex.org/S4210178049
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Broad computer-science venue; fit depends on computational novelty.
   example_papers: []
@@ -6269,195 +6269,195 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S96615428
-      works_count: 52054
-      cited_by_count: 3479706
+      works_count: 52121
+      cited_by_count: 3503833
       counts_by_year:
       - year: 2026
-        works_count: 424
-        cited_by_count: 153
+        works_count: 491
+        cited_by_count: 218
       - year: 2025
-        works_count: 747
-        cited_by_count: 2674
+        works_count: 746
+        cited_by_count: 2975
       - year: 2024
         works_count: 649
-        cited_by_count: 5270
+        cited_by_count: 5517
       - year: 2023
         works_count: 565
-        cited_by_count: 6988
+        cited_by_count: 7179
       - year: 2022
         works_count: 625
-        cited_by_count: 9966
+        cited_by_count: 10256
       - year: 2021
         works_count: 747
-        cited_by_count: 17071
+        cited_by_count: 17346
       - year: 2020
         works_count: 783
-        cited_by_count: 28279
+        cited_by_count: 28588
       - year: 2019
         works_count: 859
-        cited_by_count: 28389
+        cited_by_count: 28832
       - year: 2018
         works_count: 959
-        cited_by_count: 33937
+        cited_by_count: 34494
       - year: 2017
         works_count: 986
-        cited_by_count: 40074
+        cited_by_count: 40788
       - year: 2016
         works_count: 908
-        cited_by_count: 38004
+        cited_by_count: 38633
       - year: 2015
         works_count: 1218
-        cited_by_count: 58377
+        cited_by_count: 59266
       - year: 2014
-        works_count: 1325
-        cited_by_count: 70266
+        works_count: 1326
+        cited_by_count: 71271
       - year: 2013
         works_count: 1418
-        cited_by_count: 79218
+        cited_by_count: 80250
       - year: 2012
-        works_count: 1618
-        cited_by_count: 88327
+        works_count: 1619
+        cited_by_count: 89327
       - year: 2011
-        works_count: 1405
-        cited_by_count: 88820
+        works_count: 1407
+        cited_by_count: 89709
       - year: 2010
         works_count: 1314
-        cited_by_count: 96145
+        cited_by_count: 97230
       - year: 2009
         works_count: 1351
-        cited_by_count: 96575
+        cited_by_count: 97602
       - year: 2008
         works_count: 1291
-        cited_by_count: 96706
+        cited_by_count: 97909
       - year: 2007
         works_count: 1482
-        cited_by_count: 121118
+        cited_by_count: 122342
       - year: 2006
         works_count: 1518
-        cited_by_count: 136492
+        cited_by_count: 137660
       - year: 2005
-        works_count: 1621
-        cited_by_count: 145351
+        works_count: 1622
+        cited_by_count: 146482
       - year: 2004
         works_count: 1538
-        cited_by_count: 139683
+        cited_by_count: 140586
       - year: 2003
-        works_count: 1381
-        cited_by_count: 119142
+        works_count: 1380
+        cited_by_count: 119782
       - year: 2002
         works_count: 1582
-        cited_by_count: 140155
+        cited_by_count: 140995
       - year: 2001
-        works_count: 1381
-        cited_by_count: 120725
+        works_count: 1382
+        cited_by_count: 121417
       - year: 2000
         works_count: 1507
-        cited_by_count: 135519
+        cited_by_count: 136315
       - year: 1999
         works_count: 1267
-        cited_by_count: 122629
+        cited_by_count: 123200
       - year: 1998
         works_count: 1328
-        cited_by_count: 130886
+        cited_by_count: 131436
       - year: 1997
         works_count: 1256
-        cited_by_count: 110496
+        cited_by_count: 110970
       - year: 1996
         works_count: 1157
-        cited_by_count: 104506
+        cited_by_count: 104850
       - year: 1995
         works_count: 1080
-        cited_by_count: 96631
+        cited_by_count: 97007
       - year: 1994
         works_count: 1023
-        cited_by_count: 95023
+        cited_by_count: 95585
       - year: 1993
         works_count: 964
-        cited_by_count: 86230
+        cited_by_count: 86491
       - year: 1992
         works_count: 982
-        cited_by_count: 83267
+        cited_by_count: 83483
       - year: 1991
-        works_count: 949
-        cited_by_count: 76293
+        works_count: 948
+        cited_by_count: 76439
       - year: 1990
-        works_count: 845
-        cited_by_count: 69485
+        works_count: 844
+        cited_by_count: 69645
       - year: 1989
         works_count: 757
-        cited_by_count: 62764
+        cited_by_count: 62881
       - year: 1988
         works_count: 681
-        cited_by_count: 55581
+        cited_by_count: 55670
       - year: 1987
-        works_count: 586
-        cited_by_count: 45017
+        works_count: 585
+        cited_by_count: 45057
       - year: 1986
         works_count: 577
-        cited_by_count: 40967
+        cited_by_count: 41121
       - year: 1985
         works_count: 555
-        cited_by_count: 36148
+        cited_by_count: 36195
       - year: 1984
         works_count: 563
-        cited_by_count: 34013
+        cited_by_count: 34020
       - year: 1983
         works_count: 451
-        cited_by_count: 23514
+        cited_by_count: 23531
       - year: 1982
         works_count: 530
         cited_by_count: 27051
       - year: 1981
         works_count: 491
-        cited_by_count: 23306
+        cited_by_count: 23346
       - year: 1980
         works_count: 444
-        cited_by_count: 21007
+        cited_by_count: 21265
       - year: 1979
         works_count: 477
-        cited_by_count: 22624
+        cited_by_count: 22640
       - year: 1978
         works_count: 419
-        cited_by_count: 16939
+        cited_by_count: 16957
       - year: 1977
         works_count: 462
-        cited_by_count: 19160
+        cited_by_count: 19175
       - year: 1976
         works_count: 465
-        cited_by_count: 19355
+        cited_by_count: 19377
       - year: 1975
         works_count: 401
-        cited_by_count: 17693
+        cited_by_count: 17707
       - year: 1974
         works_count: 408
-        cited_by_count: 17580
+        cited_by_count: 17607
       - year: 1973
         works_count: 353
-        cited_by_count: 15966
+        cited_by_count: 15968
       - year: 1972
         works_count: 310
-        cited_by_count: 17626
+        cited_by_count: 17649
       - year: 1971
-        works_count: 239
-        cited_by_count: 10955
+        works_count: 238
+        cited_by_count: 10960
       - year: 1970
         works_count: 236
-        cited_by_count: 8969
+        cited_by_count: 8974
       - year: 1969
         works_count: 230
-        cited_by_count: 8624
+        cited_by_count: 8622
       - year: 1968
         works_count: 206
-        cited_by_count: 9382
+        cited_by_count: 9392
       - year: 1967
         works_count: 160
-        cited_by_count: 6595
-      openalex_h_index: 422
-      openalex_2yr_citation_rate: 2.414
-      openalex_4yr_citation_rate: 6.325
+        cited_by_count: 6593
+      openalex_h_index: 424
+      openalex_2yr_citation_rate: 2.581
+      openalex_4yr_citation_rate: 6.483
       metric_year: 2026
       source_url: https://openalex.org/S96615428
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Established specialist virology target.
   - 'Manual source suggests scope note: ATEST ARTICLES COLLECTIONS ARCHIVE ABOUT THE
@@ -6590,63 +6590,63 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S55776271
-      works_count: 18183
-      cited_by_count: 418894
+      works_count: 18327
+      cited_by_count: 426913
       counts_by_year:
       - year: 2026
-        works_count: 889
-        cited_by_count: 276
+        works_count: 1027
+        cited_by_count: 394
       - year: 2025
-        works_count: 1645
-        cited_by_count: 5142
+        works_count: 1648
+        cited_by_count: 5712
       - year: 2024
         works_count: 1950
-        cited_by_count: 13855
+        cited_by_count: 14513
       - year: 2023
         works_count: 2470
-        cited_by_count: 30555
+        cited_by_count: 31413
       - year: 2022
         works_count: 2895
-        cited_by_count: 49195
+        cited_by_count: 50116
       - year: 2021
         works_count: 2584
-        cited_by_count: 65103
+        cited_by_count: 66216
       - year: 2020
         works_count: 1481
-        cited_by_count: 52773
+        cited_by_count: 53413
       - year: 2019
         works_count: 1196
-        cited_by_count: 49645
+        cited_by_count: 50392
       - year: 2018
         works_count: 759
-        cited_by_count: 32421
+        cited_by_count: 32941
       - year: 2017
         works_count: 477
-        cited_by_count: 22867
+        cited_by_count: 23299
       - year: 2016
-        works_count: 337
-        cited_by_count: 16086
+        works_count: 338
+        cited_by_count: 16441
       - year: 2015
         works_count: 383
-        cited_by_count: 21187
+        cited_by_count: 21511
       - year: 2014
         works_count: 269
-        cited_by_count: 14603
+        cited_by_count: 14825
       - year: 2013
         works_count: 188
-        cited_by_count: 8938
+        cited_by_count: 9051
       - year: 2012
         works_count: 196
-        cited_by_count: 14903
+        cited_by_count: 15058
       - year: 2011
         works_count: 140
-        cited_by_count: 9506
+        cited_by_count: 9638
       - year: 2010
         works_count: 149
-        cited_by_count: 8684
+        cited_by_count: 8783
       - year: 2009
         works_count: 70
-        cited_by_count: 3138
+        cited_by_count: 3180
       - year: 2005
         works_count: 1
         cited_by_count: 0
@@ -6699,7 +6699,7 @@
         works_count: 19
         cited_by_count: 5
       - year: 1955
-        works_count: 10
+        works_count: 12
         cited_by_count: 0
       - year: 1954
         works_count: 8
@@ -6713,12 +6713,12 @@
       - year: 1951
         works_count: 4
         cited_by_count: 0
-      openalex_h_index: 189
-      openalex_2yr_citation_rate: 2.138
-      openalex_4yr_citation_rate: 7.165
+      openalex_h_index: 191
+      openalex_2yr_citation_rate: 2.283
+      openalex_4yr_citation_rate: 7.334
       metric_year: 2026
       source_url: https://openalex.org/S55776271
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Broad open-access virology journal.
   - 'Manual source suggests scope note: s Review for Viruses Share Journal Menu ►
@@ -6843,39 +6843,39 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210206945
-      works_count: 240
-      cited_by_count: 1910
+      works_count: 243
+      cited_by_count: 1951
       counts_by_year:
       - year: 2026
-        works_count: 21
-        cited_by_count: 3
+        works_count: 23
+        cited_by_count: 4
       - year: 2025
-        works_count: 45
-        cited_by_count: 100
+        works_count: 46
+        cited_by_count: 104
       - year: 2024
         works_count: 36
-        cited_by_count: 91
+        cited_by_count: 97
       - year: 2023
         works_count: 30
-        cited_by_count: 157
+        cited_by_count: 160
       - year: 2022
         works_count: 37
-        cited_by_count: 181
+        cited_by_count: 183
       - year: 2021
         works_count: 31
-        cited_by_count: 795
+        cited_by_count: 812
       - year: 2020
         works_count: 33
-        cited_by_count: 446
+        cited_by_count: 450
       - year: 2019
         works_count: 7
-        cited_by_count: 137
+        cited_by_count: 141
       openalex_h_index: 20
-      openalex_2yr_citation_rate: 1.561
-      openalex_4yr_citation_rate: 2.659
+      openalex_2yr_citation_rate: 1.565
+      openalex_4yr_citation_rate: 2.704
       metric_year: 2026
       source_url: https://openalex.org/S4210206945
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Niche specialist target for phage-focused manuscripts.
   example_papers: []
@@ -6964,231 +6964,231 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S6147291
-      works_count: 30202
-      cited_by_count: 1339639
+      works_count: 30227
+      cited_by_count: 1346294
       counts_by_year:
       - year: 2026
-        works_count: 219
-        cited_by_count: 50
+        works_count: 247
+        cited_by_count: 69
       - year: 2025
         works_count: 313
-        cited_by_count: 783
+        cited_by_count: 855
       - year: 2024
         works_count: 322
-        cited_by_count: 1625
+        cited_by_count: 1702
       - year: 2023
         works_count: 227
-        cited_by_count: 1764
+        cited_by_count: 1807
       - year: 2022
         works_count: 161
-        cited_by_count: 1867
+        cited_by_count: 1895
       - year: 2021
         works_count: 199
-        cited_by_count: 2965
+        cited_by_count: 3003
       - year: 2020
         works_count: 180
-        cited_by_count: 4101
+        cited_by_count: 4140
       - year: 2019
         works_count: 271
-        cited_by_count: 5687
+        cited_by_count: 5752
       - year: 2018
         works_count: 323
-        cited_by_count: 8595
+        cited_by_count: 8734
       - year: 2017
         works_count: 342
-        cited_by_count: 9991
+        cited_by_count: 10141
       - year: 2016
         works_count: 368
-        cited_by_count: 11187
+        cited_by_count: 11356
       - year: 2015
         works_count: 419
-        cited_by_count: 23837
+        cited_by_count: 24206
       - year: 2014
         works_count: 467
-        cited_by_count: 15158
+        cited_by_count: 15357
       - year: 2013
         works_count: 417
-        cited_by_count: 18296
+        cited_by_count: 18583
       - year: 2012
         works_count: 460
-        cited_by_count: 15460
+        cited_by_count: 15735
       - year: 2011
         works_count: 392
-        cited_by_count: 16402
+        cited_by_count: 16675
       - year: 2010
         works_count: 499
-        cited_by_count: 21721
+        cited_by_count: 21959
       - year: 2009
         works_count: 551
-        cited_by_count: 27800
+        cited_by_count: 28036
       - year: 2008
         works_count: 572
-        cited_by_count: 26607
+        cited_by_count: 26833
       - year: 2007
-        works_count: 543
-        cited_by_count: 24323
+        works_count: 544
+        cited_by_count: 24515
       - year: 2006
         works_count: 589
-        cited_by_count: 28835
+        cited_by_count: 29011
       - year: 2005
         works_count: 552
-        cited_by_count: 34243
+        cited_by_count: 34553
       - year: 2004
         works_count: 616
-        cited_by_count: 33484
+        cited_by_count: 33879
       - year: 2003
         works_count: 617
-        cited_by_count: 29609
+        cited_by_count: 29762
       - year: 2002
         works_count: 517
-        cited_by_count: 27558
+        cited_by_count: 27682
       - year: 2001
         works_count: 529
-        cited_by_count: 32152
+        cited_by_count: 32294
       - year: 2000
         works_count: 628
-        cited_by_count: 35008
+        cited_by_count: 35218
       - year: 1999
         works_count: 566
-        cited_by_count: 32980
+        cited_by_count: 33162
       - year: 1998
         works_count: 593
-        cited_by_count: 34437
+        cited_by_count: 34686
       - year: 1997
         works_count: 603
-        cited_by_count: 36351
+        cited_by_count: 36481
       - year: 1996
         works_count: 676
-        cited_by_count: 34715
+        cited_by_count: 34936
       - year: 1995
         works_count: 799
-        cited_by_count: 44404
+        cited_by_count: 44542
       - year: 1994
         works_count: 691
-        cited_by_count: 38407
+        cited_by_count: 38574
       - year: 1993
-        works_count: 668
-        cited_by_count: 36229
+        works_count: 667
+        cited_by_count: 36392
       - year: 1992
         works_count: 721
-        cited_by_count: 36702
+        cited_by_count: 36818
       - year: 1991
-        works_count: 672
-        cited_by_count: 39191
+        works_count: 671
+        cited_by_count: 39329
       - year: 1990
-        works_count: 565
-        cited_by_count: 28052
+        works_count: 564
+        cited_by_count: 28216
       - year: 1989
         works_count: 505
-        cited_by_count: 26755
+        cited_by_count: 26803
       - year: 1988
         works_count: 533
-        cited_by_count: 25629
+        cited_by_count: 25700
       - year: 1987
         works_count: 426
-        cited_by_count: 21443
+        cited_by_count: 21461
       - year: 1986
         works_count: 413
-        cited_by_count: 15790
+        cited_by_count: 15801
       - year: 1985
         works_count: 416
-        cited_by_count: 18112
+        cited_by_count: 18137
       - year: 1984
         works_count: 417
-        cited_by_count: 16660
+        cited_by_count: 16684
       - year: 1983
         works_count: 462
-        cited_by_count: 21002
+        cited_by_count: 21014
       - year: 1982
         works_count: 459
-        cited_by_count: 14271
+        cited_by_count: 14277
       - year: 1981
         works_count: 532
-        cited_by_count: 20637
+        cited_by_count: 20658
       - year: 1980
         works_count: 483
-        cited_by_count: 15878
+        cited_by_count: 15884
       - year: 1979
         works_count: 512
-        cited_by_count: 18385
+        cited_by_count: 18390
       - year: 1978
         works_count: 471
-        cited_by_count: 16545
+        cited_by_count: 16564
       - year: 1977
         works_count: 514
-        cited_by_count: 17818
+        cited_by_count: 17833
       - year: 1976
         works_count: 468
-        cited_by_count: 16110
+        cited_by_count: 16137
       - year: 1975
         works_count: 398
-        cited_by_count: 15020
+        cited_by_count: 15027
       - year: 1974
         works_count: 382
-        cited_by_count: 17383
+        cited_by_count: 17399
       - year: 1973
         works_count: 399
-        cited_by_count: 26967
+        cited_by_count: 26968
       - year: 1972
         works_count: 431
-        cited_by_count: 16855
+        cited_by_count: 16849
       - year: 1971
         works_count: 384
-        cited_by_count: 15787
+        cited_by_count: 15798
       - year: 1970
         works_count: 375
-        cited_by_count: 17708
+        cited_by_count: 17710
       - year: 1969
         works_count: 321
         cited_by_count: 15004
       - year: 1968
         works_count: 293
-        cited_by_count: 12145
+        cited_by_count: 12141
       - year: 1967
         works_count: 309
-        cited_by_count: 11977
+        cited_by_count: 11979
       - year: 1966
         works_count: 296
-        cited_by_count: 12277
+        cited_by_count: 12267
       - year: 1965
         works_count: 283
-        cited_by_count: 10587
+        cited_by_count: 10582
       - year: 1964
         works_count: 297
-        cited_by_count: 12162
+        cited_by_count: 12150
       - year: 1963
         works_count: 285
-        cited_by_count: 11391
+        cited_by_count: 11384
       - year: 1962
         works_count: 281
-        cited_by_count: 12231
+        cited_by_count: 12259
       - year: 1961
-        works_count: 248
-        cited_by_count: 11685
+        works_count: 247
+        cited_by_count: 11688
       - year: 1960
         works_count: 211
-        cited_by_count: 8055
+        cited_by_count: 8059
       - year: 1959
         works_count: 193
-        cited_by_count: 7449
+        cited_by_count: 7456
       - year: 1958
         works_count: 129
         cited_by_count: 4996
       - year: 1957
         works_count: 104
-        cited_by_count: 5897
+        cited_by_count: 5899
       - year: 1956
         works_count: 82
-        cited_by_count: 3573
+        cited_by_count: 3578
       - year: 1955
         works_count: 43
-        cited_by_count: 4879
-      openalex_h_index: 287
-      openalex_2yr_citation_rate: 1.566
-      openalex_4yr_citation_rate: 3.906
+        cited_by_count: 4870
+      openalex_h_index: 288
+      openalex_2yr_citation_rate: 1.65
+      openalex_4yr_citation_rate: 3.997
       metric_year: 2026
       source_url: https://openalex.org/S6147291
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes:
   - Established specialist virology venue.
   - 'Manual source suggests scope note: Order journal Submit your article Guide for
@@ -7285,18 +7285,18 @@
     metric_sources: []
     openalex:
       openalex_source_id: S5407056521
-      works_count: 15
-      cited_by_count: 7
+      works_count: 17
+      cited_by_count: 9
       counts_by_year:
       - year: 2026
-        works_count: 15
-        cited_by_count: 7
+        works_count: 17
+        cited_by_count: 9
       openalex_h_index: 2
-      openalex_2yr_citation_rate: 0.467
-      openalex_4yr_citation_rate: 0.467
+      openalex_2yr_citation_rate: 0.529
+      openalex_4yr_citation_rate: 0.529
       metric_year: 2026
       source_url: https://openalex.org/S5407056521
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes: []
   example_papers: []
   source_evidence:
@@ -7349,171 +7349,171 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S53087977
-      works_count: 33259
-      cited_by_count: 1921284
+      works_count: 33288
+      cited_by_count: 1927635
       counts_by_year:
       - year: 2026
-        works_count: 201
-        cited_by_count: 65
+        works_count: 231
+        cited_by_count: 97
       - year: 2025
         works_count: 269
-        cited_by_count: 1114
+        cited_by_count: 1268
       - year: 2024
         works_count: 255
-        cited_by_count: 1958
+        cited_by_count: 2062
       - year: 2023
         works_count: 263
-        cited_by_count: 3537
+        cited_by_count: 3648
       - year: 2022
         works_count: 226
-        cited_by_count: 3724
+        cited_by_count: 3811
       - year: 2021
         works_count: 365
-        cited_by_count: 11336
+        cited_by_count: 11487
       - year: 2020
         works_count: 518
-        cited_by_count: 27237
+        cited_by_count: 27431
       - year: 2019
         works_count: 433
-        cited_by_count: 10362
+        cited_by_count: 10490
       - year: 2018
         works_count: 450
-        cited_by_count: 18225
+        cited_by_count: 18462
       - year: 2017
         works_count: 469
-        cited_by_count: 20479
+        cited_by_count: 20712
       - year: 2016
         works_count: 549
-        cited_by_count: 22287
+        cited_by_count: 22503
       - year: 2015
         works_count: 711
-        cited_by_count: 29130
+        cited_by_count: 29399
       - year: 2014
         works_count: 883
-        cited_by_count: 36965
+        cited_by_count: 37311
       - year: 2013
         works_count: 861
-        cited_by_count: 40064
+        cited_by_count: 40604
       - year: 2012
         works_count: 819
-        cited_by_count: 43936
+        cited_by_count: 44301
       - year: 2011
         works_count: 966
-        cited_by_count: 52223
+        cited_by_count: 52530
       - year: 2010
         works_count: 951
-        cited_by_count: 55408
+        cited_by_count: 55760
       - year: 2009
         works_count: 824
-        cited_by_count: 49132
+        cited_by_count: 49449
       - year: 2008
         works_count: 770
-        cited_by_count: 50248
+        cited_by_count: 50511
       - year: 2007
         works_count: 811
-        cited_by_count: 58046
+        cited_by_count: 58286
       - year: 2006
         works_count: 1035
-        cited_by_count: 76787
+        cited_by_count: 77001
       - year: 2005
         works_count: 1186
-        cited_by_count: 88108
+        cited_by_count: 88367
       - year: 2004
         works_count: 1153
-        cited_by_count: 89709
+        cited_by_count: 89944
       - year: 2003
         works_count: 1142
-        cited_by_count: 92228
+        cited_by_count: 92377
       - year: 2002
-        works_count: 959
-        cited_by_count: 77576
+        works_count: 960
+        cited_by_count: 77732
       - year: 2001
         works_count: 939
-        cited_by_count: 71161
+        cited_by_count: 71251
       - year: 2000
         works_count: 1079
-        cited_by_count: 85680
+        cited_by_count: 86330
       - year: 1999
         works_count: 918
-        cited_by_count: 74514
+        cited_by_count: 75015
       - year: 1998
         works_count: 825
-        cited_by_count: 64543
+        cited_by_count: 64691
       - year: 1997
         works_count: 747
-        cited_by_count: 58583
+        cited_by_count: 58556
       - year: 1996
         works_count: 731
-        cited_by_count: 48493
+        cited_by_count: 48466
       - year: 1995
         works_count: 768
-        cited_by_count: 63793
+        cited_by_count: 63769
       - year: 1994
         works_count: 693
-        cited_by_count: 44560
+        cited_by_count: 44511
       - year: 1993
         works_count: 720
-        cited_by_count: 48365
+        cited_by_count: 48328
       - year: 1992
         works_count: 689
-        cited_by_count: 46437
+        cited_by_count: 46514
       - year: 1991
         works_count: 627
-        cited_by_count: 39102
+        cited_by_count: 39083
       - year: 1990
         works_count: 654
-        cited_by_count: 43895
+        cited_by_count: 43874
       - year: 1989
-        works_count: 681
-        cited_by_count: 32843
+        works_count: 680
+        cited_by_count: 32804
       - year: 1988
         works_count: 645
-        cited_by_count: 29912
+        cited_by_count: 29839
       - year: 1987
         works_count: 623
-        cited_by_count: 25265
+        cited_by_count: 25199
       - year: 1986
         works_count: 547
-        cited_by_count: 22918
+        cited_by_count: 22886
       - year: 1985
         works_count: 531
-        cited_by_count: 23630
+        cited_by_count: 23586
       - year: 1984
         works_count: 553
-        cited_by_count: 20523
+        cited_by_count: 20490
       - year: 1983
         works_count: 552
-        cited_by_count: 20174
+        cited_by_count: 20110
       - year: 1982
         works_count: 503
-        cited_by_count: 21562
+        cited_by_count: 21517
       - year: 1981
         works_count: 391
-        cited_by_count: 13824
+        cited_by_count: 13796
       - year: 1980
         works_count: 357
-        cited_by_count: 14820
+        cited_by_count: 14794
       - year: 1979
         works_count: 357
-        cited_by_count: 14152
+        cited_by_count: 14119
       - year: 1978
         works_count: 290
-        cited_by_count: 9093
+        cited_by_count: 9076
       - year: 1977
         works_count: 277
-        cited_by_count: 8698
+        cited_by_count: 8667
       - year: 1976
-        works_count: 256
-        cited_by_count: 7030
+        works_count: 255
+        cited_by_count: 7016
       - year: 1975
         works_count: 237
-        cited_by_count: 7830
-      openalex_h_index: 367
-      openalex_2yr_citation_rate: 2.509
-      openalex_4yr_citation_rate: 6.755
+        cited_by_count: 7805
+      openalex_h_index: 368
+      openalex_2yr_citation_rate: 2.73
+      openalex_4yr_citation_rate: 6.95
       metric_year: 2026
       source_url: https://openalex.org/S53087977
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes: []
   example_papers: []
   source_evidence:
@@ -7566,51 +7566,51 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210207018
-      works_count: 3219
-      cited_by_count: 77579
+      works_count: 3242
+      cited_by_count: 78955
       counts_by_year:
       - year: 2026
-        works_count: 165
-        cited_by_count: 39
+        works_count: 188
+        cited_by_count: 62
       - year: 2025
         works_count: 324
-        cited_by_count: 849
+        cited_by_count: 951
       - year: 2024
         works_count: 368
-        cited_by_count: 3089
+        cited_by_count: 3228
       - year: 2023
         works_count: 262
-        cited_by_count: 2992
+        cited_by_count: 3073
       - year: 2022
         works_count: 223
-        cited_by_count: 3191
+        cited_by_count: 3264
       - year: 2021
         works_count: 400
-        cited_by_count: 10054
+        cited_by_count: 10237
       - year: 2020
         works_count: 476
-        cited_by_count: 15455
+        cited_by_count: 15665
       - year: 2019
         works_count: 330
-        cited_by_count: 9099
+        cited_by_count: 9215
       - year: 2018
         works_count: 298
-        cited_by_count: 12415
+        cited_by_count: 12589
       - year: 2017
         works_count: 214
-        cited_by_count: 11204
+        cited_by_count: 11361
       - year: 2016
         works_count: 145
-        cited_by_count: 8411
+        cited_by_count: 8525
       - year: 2015
         works_count: 14
-        cited_by_count: 781
-      openalex_h_index: 104
-      openalex_2yr_citation_rate: 1.816
-      openalex_4yr_citation_rate: 6.228
+        cited_by_count: 785
+      openalex_h_index: 106
+      openalex_2yr_citation_rate: 1.979
+      openalex_4yr_citation_rate: 6.405
       metric_year: 2026
       source_url: https://openalex.org/S4210207018
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes: []
   example_papers: []
   source_evidence:
@@ -7655,93 +7655,93 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S128543880
-      works_count: 7714
-      cited_by_count: 269062
+      works_count: 7849
+      cited_by_count: 272706
       counts_by_year:
       - year: 2026
-        works_count: 924
-        cited_by_count: 219
+        works_count: 1059
+        cited_by_count: 325
       - year: 2025
         works_count: 900
-        cited_by_count: 3637
+        cited_by_count: 4035
       - year: 2024
         works_count: 552
-        cited_by_count: 5925
+        cited_by_count: 6234
       - year: 2023
         works_count: 405
-        cited_by_count: 7028
+        cited_by_count: 7256
       - year: 2022
         works_count: 325
-        cited_by_count: 7298
+        cited_by_count: 7453
       - year: 2021
         works_count: 353
-        cited_by_count: 10168
+        cited_by_count: 10324
       - year: 2020
         works_count: 372
-        cited_by_count: 13443
+        cited_by_count: 13656
       - year: 2019
         works_count: 312
-        cited_by_count: 13953
+        cited_by_count: 14140
       - year: 2018
         works_count: 228
-        cited_by_count: 9160
+        cited_by_count: 9271
       - year: 2017
         works_count: 233
-        cited_by_count: 11325
+        cited_by_count: 11492
       - year: 2016
         works_count: 292
-        cited_by_count: 14840
+        cited_by_count: 14984
       - year: 2015
         works_count: 284
-        cited_by_count: 13932
+        cited_by_count: 14101
       - year: 2014
         works_count: 335
-        cited_by_count: 15978
+        cited_by_count: 16152
       - year: 2013
         works_count: 307
-        cited_by_count: 14846
+        cited_by_count: 14976
       - year: 2012
         works_count: 323
-        cited_by_count: 18705
+        cited_by_count: 18870
       - year: 2011
         works_count: 270
-        cited_by_count: 15880
+        cited_by_count: 16019
       - year: 2010
         works_count: 333
-        cited_by_count: 23119
+        cited_by_count: 23331
       - year: 2009
         works_count: 294
-        cited_by_count: 22168
+        cited_by_count: 22345
       - year: 2008
         works_count: 238
-        cited_by_count: 16553
+        cited_by_count: 16683
       - year: 2007
         works_count: 116
-        cited_by_count: 8748
+        cited_by_count: 8824
       - year: 2006
         works_count: 104
-        cited_by_count: 7367
+        cited_by_count: 7394
       - year: 2005
         works_count: 67
-        cited_by_count: 6179
+        cited_by_count: 6208
       - year: 2004
         works_count: 49
-        cited_by_count: 3117
+        cited_by_count: 3133
       - year: 2003
         works_count: 25
-        cited_by_count: 1304
+        cited_by_count: 1309
       - year: 2002
         works_count: 39
-        cited_by_count: 2102
+        cited_by_count: 2119
       - year: 2001
         works_count: 34
-        cited_by_count: 2068
-      openalex_h_index: 181
-      openalex_2yr_citation_rate: 2.114
-      openalex_4yr_citation_rate: 6.044
+        cited_by_count: 2072
+      openalex_h_index: 183
+      openalex_2yr_citation_rate: 2.226
+      openalex_4yr_citation_rate: 6.121
       metric_year: 2026
       source_url: https://openalex.org/S128543880
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes: []
   example_papers: []
   source_evidence:
@@ -7786,96 +7786,96 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S28614077
-      works_count: 19590
-      cited_by_count: 896629
+      works_count: 19681
+      cited_by_count: 906113
       counts_by_year:
       - year: 2026
-        works_count: 853
-        cited_by_count: 217
+        works_count: 946
+        cited_by_count: 307
       - year: 2025
         works_count: 1255
-        cited_by_count: 3979
+        cited_by_count: 4369
       - year: 2024
         works_count: 1266
-        cited_by_count: 10358
+        cited_by_count: 10875
       - year: 2023
         works_count: 799
-        cited_by_count: 9720
+        cited_by_count: 9971
       - year: 2022
         works_count: 868
-        cited_by_count: 17668
+        cited_by_count: 17978
       - year: 2021
         works_count: 916
-        cited_by_count: 23113
+        cited_by_count: 23452
       - year: 2020
         works_count: 901
-        cited_by_count: 36225
+        cited_by_count: 36974
       - year: 2019
         works_count: 1040
-        cited_by_count: 42225
+        cited_by_count: 42650
       - year: 2018
         works_count: 982
-        cited_by_count: 48222
+        cited_by_count: 48859
       - year: 2017
         works_count: 995
-        cited_by_count: 49863
+        cited_by_count: 50450
       - year: 2016
-        works_count: 1039
-        cited_by_count: 51235
+        works_count: 1040
+        cited_by_count: 51811
       - year: 2015
-        works_count: 1253
-        cited_by_count: 73647
+        works_count: 1252
+        cited_by_count: 74357
       - year: 2014
         works_count: 1401
-        cited_by_count: 80255
+        cited_by_count: 81006
       - year: 2013
-        works_count: 1016
-        cited_by_count: 68565
+        works_count: 1015
+        cited_by_count: 69048
       - year: 2012
         works_count: 861
-        cited_by_count: 58616
+        cited_by_count: 59129
       - year: 2011
         works_count: 717
-        cited_by_count: 53729
+        cited_by_count: 54031
       - year: 2010
         works_count: 820
-        cited_by_count: 56807
+        cited_by_count: 57188
       - year: 2009
         works_count: 716
-        cited_by_count: 52926
+        cited_by_count: 53261
       - year: 2008
-        works_count: 693
-        cited_by_count: 66800
+        works_count: 692
+        cited_by_count: 67237
       - year: 2007
         works_count: 483
-        cited_by_count: 34744
+        cited_by_count: 34934
       - year: 2006
         works_count: 331
-        cited_by_count: 29949
+        cited_by_count: 30373
       - year: 2005
         works_count: 183
-        cited_by_count: 13547
+        cited_by_count: 13578
       - year: 2004
         works_count: 100
-        cited_by_count: 7626
+        cited_by_count: 7655
       - year: 2003
         works_count: 53
-        cited_by_count: 3796
+        cited_by_count: 3813
       - year: 2002
         works_count: 36
-        cited_by_count: 2046
+        cited_by_count: 2050
       - year: 2001
         works_count: 11
-        cited_by_count: 719
+        cited_by_count: 725
       - year: 2000
         works_count: 2
         cited_by_count: 32
       openalex_h_index: 265
-      openalex_2yr_citation_rate: 1.991
-      openalex_4yr_citation_rate: 5.817
+      openalex_2yr_citation_rate: 2.124
+      openalex_4yr_citation_rate: 5.983
       metric_year: 2026
       source_url: https://openalex.org/S28614077
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes: []
   example_papers: []
   source_evidence:
@@ -7920,33 +7920,33 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S4210228084
-      works_count: 1042
-      cited_by_count: 23389
+      works_count: 1055
+      cited_by_count: 25765
       counts_by_year:
       - year: 2026
-        works_count: 107
-        cited_by_count: 162
+        works_count: 120
+        cited_by_count: 219
       - year: 2025
         works_count: 183
-        cited_by_count: 1217
+        cited_by_count: 1375
       - year: 2024
         works_count: 167
-        cited_by_count: 3441
+        cited_by_count: 3644
       - year: 2023
         works_count: 197
-        cited_by_count: 4875
+        cited_by_count: 5012
       - year: 2022
         works_count: 208
-        cited_by_count: 7697
+        cited_by_count: 7989
       - year: 2021
         works_count: 180
-        cited_by_count: 5997
-      openalex_h_index: 75
-      openalex_2yr_citation_rate: 4.755
-      openalex_4yr_citation_rate: 14.824
+        cited_by_count: 7526
+      openalex_h_index: 77
+      openalex_2yr_citation_rate: 5.261
+      openalex_4yr_citation_rate: 15.367
       metric_year: 2026
       source_url: https://openalex.org/S4210228084
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes: []
   example_papers: []
   source_evidence:
@@ -7991,87 +7991,87 @@
     - 'SCImago Journal Rank 2025 dataset: data/scimagojr_2025.csv'
     openalex:
       openalex_source_id: S154343897
-      works_count: 8720
-      cited_by_count: 811175
+      works_count: 8766
+      cited_by_count: 822879
       counts_by_year:
       - year: 2026
-        works_count: 376
-        cited_by_count: 281
+        works_count: 423
+        cited_by_count: 375
       - year: 2025
         works_count: 576
-        cited_by_count: 2935
+        cited_by_count: 3226
       - year: 2024
         works_count: 490
-        cited_by_count: 6753
+        cited_by_count: 7048
       - year: 2023
         works_count: 485
-        cited_by_count: 11254
+        cited_by_count: 11560
       - year: 2022
         works_count: 413
-        cited_by_count: 13463
+        cited_by_count: 13749
       - year: 2021
         works_count: 353
-        cited_by_count: 17543
+        cited_by_count: 17890
       - year: 2020
         works_count: 362
-        cited_by_count: 33795
+        cited_by_count: 34492
       - year: 2019
         works_count: 497
-        cited_by_count: 34642
+        cited_by_count: 35116
       - year: 2018
         works_count: 427
-        cited_by_count: 36479
+        cited_by_count: 36960
       - year: 2017
         works_count: 263
-        cited_by_count: 23953
+        cited_by_count: 24275
       - year: 2016
         works_count: 305
-        cited_by_count: 35733
+        cited_by_count: 36216
       - year: 2015
         works_count: 300
-        cited_by_count: 31774
+        cited_by_count: 32231
       - year: 2014
         works_count: 285
-        cited_by_count: 28962
+        cited_by_count: 29685
       - year: 2013
         works_count: 299
-        cited_by_count: 27340
+        cited_by_count: 27913
       - year: 2012
         works_count: 254
-        cited_by_count: 27225
+        cited_by_count: 27965
       - year: 2011
         works_count: 291
-        cited_by_count: 40405
+        cited_by_count: 41218
       - year: 2010
-        works_count: 333
-        cited_by_count: 58135
+        works_count: 332
+        cited_by_count: 59170
       - year: 2009
         works_count: 285
-        cited_by_count: 41051
+        cited_by_count: 41726
       - year: 2008
-        works_count: 341
-        cited_by_count: 58140
+        works_count: 340
+        cited_by_count: 58597
       - year: 2007
         works_count: 332
-        cited_by_count: 65192
+        cited_by_count: 65657
       - year: 2006
-        works_count: 434
-        cited_by_count: 68996
+        works_count: 435
+        cited_by_count: 69841
       - year: 2005
         works_count: 432
-        cited_by_count: 64079
+        cited_by_count: 64510
       - year: 2004
         works_count: 484
-        cited_by_count: 67914
+        cited_by_count: 68267
       - year: 2003
         works_count: 103
-        cited_by_count: 15131
-      openalex_h_index: 392
-      openalex_2yr_citation_rate: 3.378
-      openalex_4yr_citation_rate: 11.013
+        cited_by_count: 15192
+      openalex_h_index: 394
+      openalex_2yr_citation_rate: 3.605
+      openalex_4yr_citation_rate: 11.251
       metric_year: 2026
       source_url: https://openalex.org/S154343897
-      last_checked: '2026-09-01'
+      last_checked: '2026-10-01'
   editorial_notes: []
   example_papers: []
   source_evidence:
